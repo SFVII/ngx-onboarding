@@ -1,25 +1,23 @@
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
-import * as i0 from "@angular/core";
-import * as i1 from "./onboarding.service";
-import * as i2 from "@angular/router";
+import { OnboardingService } from './onboarding.service';
 // @ts-ignore
-export class OnboardingComponent {
+let OnboardingComponent = class OnboardingComponent {
     constructor(service) {
         this.service = service;
     }
     ngOnInit() {
     }
-}
-OnboardingComponent.ɵfac = function OnboardingComponent_Factory(t) { return new (t || OnboardingComponent)(i0.ɵɵdirectiveInject(i1.OnboardingService)); };
-OnboardingComponent.ɵcmp = i0.ɵɵdefineComponent({ type: OnboardingComponent, selectors: [["ngx-onboarding"]], decls: 1, vars: 0, template: function OnboardingComponent_Template(rf, ctx) { if (rf & 1) {
-        i0.ɵɵelement(0, "router-outlet");
-    } }, directives: [i2.RouterOutlet], styles: [".main[_ngcontent-%COMP%]{background-color:red!important}"] });
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(OnboardingComponent, [{
-        type: Component,
-        args: [{
-                selector: 'ngx-onboarding',
-                templateUrl: 'onboarding.component.html',
-                styleUrls: ['../../assets/main.scss']
-            }]
-    }], function () { return [{ type: i1.OnboardingService }]; }, null); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoib25ib2FyZGluZy5jb21wb25lbnQuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9vbmJvYXJkaW5nLyIsInNvdXJjZXMiOlsibGliL29uYm9hcmRpbmcuY29tcG9uZW50LnRzIiwibGliL29uYm9hcmRpbmcuY29tcG9uZW50Lmh0bWwiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUFFLFNBQVMsRUFBZ0MsTUFBTSxlQUFlLENBQUM7Ozs7QUFHeEUsYUFBYTtBQU1iLE1BQU0sT0FBTyxtQkFBbUI7SUFDOUIsWUFBb0IsT0FBMEI7UUFBMUIsWUFBTyxHQUFQLE9BQU8sQ0FBbUI7SUFDOUMsQ0FBQztJQUNELFFBQVE7SUFFUixDQUFDOztzRkFMVSxtQkFBbUI7d0RBQW5CLG1CQUFtQjtRQ1JoQyxnQ0FBK0I7O2tERFFsQixtQkFBbUI7Y0FML0IsU0FBUztlQUFDO2dCQUNULFFBQVEsRUFBRSxnQkFBZ0I7Z0JBQzFCLFdBQVcsRUFBRSwyQkFBMkI7Z0JBQ3hDLFNBQVMsRUFBRSxDQUFDLHdCQUF3QixDQUFDO2FBQ3RDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50LCBFdmVudEVtaXR0ZXIsIE9uSW5pdCwgT3V0cHV0IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5pbXBvcnQgeyBPbmJvYXJkaW5nU2VydmljZSB9IGZyb20gJy4vb25ib2FyZGluZy5zZXJ2aWNlJztcblxuLy8gQHRzLWlnbm9yZVxuQENvbXBvbmVudCh7XG4gIHNlbGVjdG9yOiAnbmd4LW9uYm9hcmRpbmcnLFxuICB0ZW1wbGF0ZVVybDogJ29uYm9hcmRpbmcuY29tcG9uZW50Lmh0bWwnLFxuICBzdHlsZVVybHM6IFsnLi4vLi4vYXNzZXRzL21haW4uc2NzcyddXG59KVxuZXhwb3J0IGNsYXNzIE9uYm9hcmRpbmdDb21wb25lbnQgaW1wbGVtZW50cyBPbkluaXQge1xuICBjb25zdHJ1Y3Rvcihwcml2YXRlIHNlcnZpY2U6IE9uYm9hcmRpbmdTZXJ2aWNlKSB7XG4gIH1cbiAgbmdPbkluaXQoKSB7XG5cbiAgfVxuXG5cbn1cbiIsIjwhLS0gPG9uYm9hcmRpbmctY3JlYXRlLXByb2ZpbGUtdGVtcGxhdGU+PC9vbmJvYXJkaW5nLWNyZWF0ZS1wcm9maWxlLXRlbXBsYXRlPiAtLT5cbjxyb3V0ZXItb3V0bGV0Pjwvcm91dGVyLW91dGxldD4iXX0=
+};
+OnboardingComponent.ctorParameters = () => [
+    { type: OnboardingService }
+];
+OnboardingComponent = __decorate([
+    Component({
+        selector: 'ngx-onboarding',
+        template: "<!-- <onboarding-create-profile-template></onboarding-create-profile-template> -->\n<router-outlet></router-outlet>",
+        styles: [".main{background-color:red!important}"]
+    })
+], OnboardingComponent);
+export { OnboardingComponent };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoib25ib2FyZGluZy5jb21wb25lbnQuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9vbmJvYXJkaW5nLyIsInNvdXJjZXMiOlsibGliL29uYm9hcmRpbmcuY29tcG9uZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxPQUFPLEVBQUUsU0FBUyxFQUFnQyxNQUFNLGVBQWUsQ0FBQztBQUN4RSxPQUFPLEVBQUUsaUJBQWlCLEVBQUUsTUFBTSxzQkFBc0IsQ0FBQztBQUV6RCxhQUFhO0FBTWIsSUFBYSxtQkFBbUIsR0FBaEMsTUFBYSxtQkFBbUI7SUFDOUIsWUFBb0IsT0FBMEI7UUFBMUIsWUFBTyxHQUFQLE9BQU8sQ0FBbUI7SUFDOUMsQ0FBQztJQUNELFFBQVE7SUFFUixDQUFDO0NBR0YsQ0FBQTs7WUFQOEIsaUJBQWlCOztBQURuQyxtQkFBbUI7SUFML0IsU0FBUyxDQUFDO1FBQ1QsUUFBUSxFQUFFLGdCQUFnQjtRQUMxQiwrSEFBd0M7O0tBRXpDLENBQUM7R0FDVyxtQkFBbUIsQ0FRL0I7U0FSWSxtQkFBbUIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQsIEV2ZW50RW1pdHRlciwgT25Jbml0LCBPdXRwdXQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IE9uYm9hcmRpbmdTZXJ2aWNlIH0gZnJvbSAnLi9vbmJvYXJkaW5nLnNlcnZpY2UnO1xuXG4vLyBAdHMtaWdub3JlXG5AQ29tcG9uZW50KHtcbiAgc2VsZWN0b3I6ICduZ3gtb25ib2FyZGluZycsXG4gIHRlbXBsYXRlVXJsOiAnb25ib2FyZGluZy5jb21wb25lbnQuaHRtbCcsXG4gIHN0eWxlVXJsczogWycuLi8uLi9hc3NldHMvbWFpbi5zY3NzJ11cbn0pXG5leHBvcnQgY2xhc3MgT25ib2FyZGluZ0NvbXBvbmVudCBpbXBsZW1lbnRzIE9uSW5pdCB7XG4gIGNvbnN0cnVjdG9yKHByaXZhdGUgc2VydmljZTogT25ib2FyZGluZ1NlcnZpY2UpIHtcbiAgfVxuICBuZ09uSW5pdCgpIHtcblxuICB9XG5cblxufVxuIl19
