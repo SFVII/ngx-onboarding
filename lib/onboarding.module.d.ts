@@ -1,0 +1,31 @@
+import { ModuleWithProviders } from '@angular/core';
+import { OnboardingInterface } from '../interface/OnboardingInterface';
+import * as i0 from "@angular/core";
+import * as i1 from "./onboarding.component";
+import * as i2 from "./create-profile-template/create-profile-template.component";
+import * as i3 from "./profile-list/profile-list.component";
+import * as i4 from "@angular/forms";
+import * as i5 from "@angular/common/http";
+import * as i6 from "@angular/material/form-field";
+import * as i7 from "@angular/material/button";
+import * as i8 from "@angular/common";
+import * as i9 from "@angular/platform-browser";
+import * as i10 from "@angular/platform-browser/animations";
+import * as i11 from "@angular/material/checkbox";
+import * as i12 from "@angular/material/icon";
+import * as i13 from "@angular/material/select";
+import * as i14 from "@angular/material/input";
+import * as i15 from "@angular/material/chips";
+import * as i16 from "@angular/material/grid-list";
+import * as i17 from "@angular/material/radio";
+import * as i18 from "@angular/material/paginator";
+import * as i19 from "@angular/cdk/table";
+import * as i20 from "@angular/material/sort";
+import * as i21 from "@angular/material/table";
+import * as i22 from "@angular/router";
+export declare class OnboardingModule {
+    constructor(parentModule?: OnboardingModule);
+    static forRoot(config: OnboardingInterface): ModuleWithProviders<OnboardingModule>;
+    static ɵmod: i0.ɵɵNgModuleDefWithMeta<OnboardingModule, [typeof i1.OnboardingComponent, typeof i2.CreateProfileTemplateComponent, typeof i3.ProfileListComponent], [typeof i4.FormsModule, typeof i5.HttpClientModule, typeof i6.MatFormFieldModule, typeof i7.MatButtonModule, typeof i8.CommonModule, typeof i9.BrowserModule, typeof i10.BrowserAnimationsModule, typeof i4.FormsModule, typeof i4.ReactiveFormsModule, typeof i11.MatCheckboxModule, typeof i12.MatIconModule, typeof i13.MatSelectModule, typeof i14.MatInputModule, typeof i15.MatChipsModule, typeof i16.MatGridListModule, typeof i17.MatRadioModule, typeof i18.MatPaginatorModule, typeof i19.CdkTableModule, typeof i20.MatSortModule, typeof i21.MatTableModule, typeof i22.RouterModule], [typeof i1.OnboardingComponent, typeof i5.HttpClientModule, typeof i2.CreateProfileTemplateComponent, typeof i3.ProfileListComponent, typeof i1.OnboardingComponent]>;
+    static ɵinj: i0.ɵɵInjectorDef<OnboardingModule>;
+}
