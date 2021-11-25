@@ -73,8 +73,8 @@ var OnboardingService = /** @class */ (function () {
                 this.locale = config.lang;
                 this.lang.next(this.locale);
                 this.user = {
-                    userId: this.guid(),
-                    lang: config.lang
+                    lang: config.lang,
+                    token: config.token
                 };
             }
             if (config.token) {
