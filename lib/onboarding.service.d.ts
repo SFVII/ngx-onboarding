@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { EventEmitter } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { OnboardingUser } from '../interface/OnboardingInterface';
-import * as i0 from "@angular/core";
 export declare class OnboardingService {
     private http;
     private token;
@@ -44,6 +43,4 @@ export declare class OnboardingService {
     asignProfil(): Promise<void>;
     getTags(): Promise<void>;
     getCategory(): Promise<void>;
-    static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingService, never>;
-    static ɵprov: i0.ɵɵInjectableDeclaration<OnboardingService>;
 }
