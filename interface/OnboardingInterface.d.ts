@@ -8,6 +8,6 @@ export interface OnboardingInterface {
     lang?: string;
 }
 export interface OnboardingUser {
-    token: string;
     lang: string;
+    token: string;
 }

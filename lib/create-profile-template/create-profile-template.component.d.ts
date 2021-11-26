@@ -1,5 +1,6 @@
 import { OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { MatChipInputEvent } from '@angular/material/chips';
 import { OnboardingService } from '../onboarding.service';
 import { ActivatedRoute, Router } from '@angular/router';
 export declare class CreateProfileTemplateComponent implements OnInit {
@@ -9,6 +10,7 @@ export declare class CreateProfileTemplateComponent implements OnInit {
     private router;
     form: FormGroup;
     validCategory: boolean;
+    separatorKeysCodes: number[];
     currentProfil: any;
     tags: any[];
     id: string;
@@ -24,4 +26,5 @@ export declare class CreateProfileTemplateComponent implements OnInit {
     onChangeType(type: string, indexCategory: number, indexField: any): void;
     onKeyPress(event: any, indexCategory: any, indexField: any): void;
     removeKeyword(keyword: string, indexCategory: number, indexField: any): void;
+    addKeywordFromInput(event: MatChipInputEvent, indexCategory: number, indexField: any): void;
 }
