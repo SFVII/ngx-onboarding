@@ -2,16 +2,20 @@
   "name": "onboarding",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^12.2.0",
-    "@angular/core": "^12.2.0"
+    "@angular/common": "~9.0.7",
+    "@angular/core": "~9.0.7",
+    "@angular/material": "^9.2.4"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "mustache": "^4.2.0",
+    "tslib": "~1.10.0"
   },
   "main": "bundles/onboarding.umd.js",
-  "module": "fesm2015/onboarding.js",
+  "module": "fesm5/onboarding.js",
   "es2015": "fesm2015/onboarding.js",
+  "esm5": "esm5/onboarding.js",
   "esm2015": "esm2015/onboarding.js",
+  "fesm5": "fesm5/onboarding.js",
   "fesm2015": "fesm2015/onboarding.js",
   "typings": "onboarding.d.ts",
   "metadata": "onboarding.metadata.json",

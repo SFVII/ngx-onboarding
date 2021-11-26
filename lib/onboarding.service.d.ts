@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { OnboardingUser } from '../interface/OnboardingInterface';
+import { OnboardingInterface, OnboardingUser } from '../interface/OnboardingInterface';
 export declare class OnboardingService {
     private http;
     private token;
@@ -13,7 +13,7 @@ export declare class OnboardingService {
     private user;
     lang: BehaviorSubject<string>;
     _auth: boolean;
-    constructor(http: HttpClient);
+    constructor(config: OnboardingInterface, http: HttpClient);
     /**
    * @private
    * Generate Header for backend call

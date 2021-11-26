@@ -13,7 +13,7 @@ export declare class CreateProfileTemplateComponent implements OnInit {
     separatorKeysCodes: number[];
     currentProfil: any;
     tags: any[];
-    id: any;
+    id: string;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router);
     categories: any;
     ngOnInit(): Promise<void>;
