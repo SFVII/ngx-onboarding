@@ -453,15 +453,15 @@ var OnboardingModule_1;
 const routes = [
     {
         path: 'onboarding',
-        component: OnboardingComponent,
+        component: ProfileListComponent,
         children: [{
                 path: '',
-                component: OnboardingComponent
-            },
-            {
-                path: 'template',
                 component: ProfileListComponent
             },
+            // {
+            //   path: 'template',
+            //   component: ProfileListComponent
+            // },
             {
                 path: 'template-builder/:id',
                 component: CreateProfileTemplateComponent
