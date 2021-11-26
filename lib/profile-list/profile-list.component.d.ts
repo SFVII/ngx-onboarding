@@ -4,6 +4,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 import { OnboardingService } from '../onboarding.service';
+import * as i0 from "@angular/core";
 export declare class ProfileListComponent implements OnInit {
     private service;
     private router;
@@ -17,4 +18,6 @@ export declare class ProfileListComponent implements OnInit {
     onAddProfil(): void;
     onDelete(id: any): Promise<void>;
     getAllProfils(): Promise<void>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ProfileListComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ProfileListComponent, "onboarding-profile-list", never, {}, {}, never, never>;
 }

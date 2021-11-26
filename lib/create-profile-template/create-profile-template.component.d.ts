@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatChipInputEvent } from '@angular/material/chips';
 import { OnboardingService } from '../onboarding.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import * as i0 from "@angular/core";
 export declare class CreateProfileTemplateComponent implements OnInit {
     private fb;
     private service;
@@ -13,7 +14,7 @@ export declare class CreateProfileTemplateComponent implements OnInit {
     separatorKeysCodes: number[];
     currentProfil: any;
     tags: any[];
-    id: string;
+    id: any;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router);
     categories: any;
     ngOnInit(): Promise<void>;
@@ -27,4 +28,6 @@ export declare class CreateProfileTemplateComponent implements OnInit {
     onKeyPress(event: any, indexCategory: any, indexField: any): void;
     removeKeyword(keyword: string, indexCategory: number, indexField: any): void;
     addKeywordFromInput(event: MatChipInputEvent, indexCategory: number, indexField: any): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<CreateProfileTemplateComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CreateProfileTemplateComponent, "onboarding-create-profile-template", never, {}, {}, never, never>;
 }

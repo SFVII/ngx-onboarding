@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { OnboardingInterface, OnboardingUser } from '../interface/OnboardingInterface';
+import { OnboardingUser } from '../interface/OnboardingInterface';
+import * as i0 from "@angular/core";
 export declare class OnboardingService {
     private http;
     private token;
@@ -13,7 +14,7 @@ export declare class OnboardingService {
     private user;
     lang: BehaviorSubject<string>;
     _auth: boolean;
-    constructor(config: OnboardingInterface, http: HttpClient);
+    constructor(http: HttpClient);
     /**
    * @private
    * Generate Header for backend call
@@ -43,4 +44,6 @@ export declare class OnboardingService {
     asignProfil(): Promise<void>;
     getTags(): Promise<void>;
     getCategory(): Promise<void>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<OnboardingService>;
 }
