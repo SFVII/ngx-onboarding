@@ -13,6 +13,7 @@ export declare class OnboardingService {
     private user;
     lang: BehaviorSubject<string>;
     _auth: boolean;
+    mainPath: string;
     constructor(config: OnboardingInterface, http: HttpClient);
     /**
    * @private

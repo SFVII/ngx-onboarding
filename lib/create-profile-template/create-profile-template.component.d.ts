@@ -5,7 +5,7 @@ import { OnboardingService } from '../onboarding.service';
 import { ActivatedRoute, Router } from '@angular/router';
 export declare class CreateProfileTemplateComponent implements OnInit {
     private fb;
-    private service;
+    service: OnboardingService;
     private route;
     private router;
     form: FormGroup;

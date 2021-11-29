@@ -5,7 +5,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 import { OnboardingService } from '../onboarding.service';
 export declare class ProfileListComponent implements OnInit {
-    private service;
+    service: OnboardingService;
     private router;
     displayedColumns: string[];
     datas: any;
