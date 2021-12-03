@@ -1,8 +1,9 @@
-import { OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { MatChipInputEvent } from '@angular/material/chips';
-import { OnboardingService } from '../onboarding.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { OnInit } from "@angular/core";
+import { FormBuilder, FormGroup } from "@angular/forms";
+import { MatChipInputEvent } from "@angular/material/chips";
+import { OnboardingService } from "../onboarding.service";
+import { ActivatedRoute, Router } from "@angular/router";
+import { CdkDragDrop } from "@angular/cdk/drag-drop";
 export declare class CreateProfileTemplateComponent implements OnInit {
     private fb;
     service: OnboardingService;
@@ -14,17 +15,22 @@ export declare class CreateProfileTemplateComponent implements OnInit {
     currentProfil: any;
     tags: any[];
     id: string;
+    parent: any[];
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router);
     categories: any;
     ngOnInit(): Promise<void>;
     onAddNewCategory(e: any): void;
-    onAddNewField(e: any, i: any): void;
-    onRemoveField(e: any, categoryIndex: any, fieldIndex: any): void;
+    onAddNewField(...params: any[]): void;
+    onAddNewSubLevelField(...params: any[]): void;
+    onRemoveField(...params: any[]): void;
     onRemoveCategory(e: any, i: any): void;
     onChangeCategory(): any;
     onSubmit(): Promise<void>;
-    onChangeType(type: string, indexCategory: number, indexField: any): void;
-    onKeyPress(event: any, indexCategory: any, indexField: any): void;
-    removeKeyword(keyword: string, indexCategory: number, indexField: any): void;
-    addKeywordFromInput(event: MatChipInputEvent, indexCategory: number, indexField: any): void;
+    onChangeType(type: string, ...params: any[]): void;
+    onKeyPress(event: any, ...params: any[]): void;
+    removeKeyword(keyword: string, ...params: any[]): void;
+    onExpendMore(event: any, ...params: any[]): void;
+    addKeywordFromInput(event: MatChipInputEvent, ...params: any[]): void;
+    drop(event: CdkDragDrop<string[]>): void;
+    ingoreDefaultAction(e: any): void;
 }

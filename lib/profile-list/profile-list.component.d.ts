@@ -10,11 +10,13 @@ export declare class ProfileListComponent implements OnInit {
     displayedColumns: string[];
     datas: any;
     dataSource: MatTableDataSource<any>;
+    defaultElevation: number;
+    raisedElevation: number;
     paginator: MatPaginator;
     sort: MatSort;
     constructor(service: OnboardingService, router: Router);
     ngOnInit(): Promise<void>;
     onAddProfil(): void;
-    onDelete(id: any): Promise<void>;
+    onDelete(e: any, id: any): Promise<void>;
     getAllProfils(): Promise<void>;
 }
