@@ -18,5 +18,5 @@ export declare class ProfileListComponent implements OnInit {
     ngOnInit(): Promise<void>;
     onAddProfil(): void;
     onDelete(e: any, id: any): Promise<void>;
-    getAllProfils(): Promise<void>;
+    getAllProfils(recall: any): Promise<void>;
 }

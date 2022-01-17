@@ -5,8 +5,14 @@ import { OnboardingInterface, OnboardingUser } from '../interface/OnboardingInte
 export declare class OnboardingService {
     private http;
     private token;
-    authentication: EventEmitter<OnboardingUser>;
     private _token;
+    templates: BehaviorSubject<any>;
+    _templates: import("rxjs").Observable<any>;
+    onboarding: BehaviorSubject<any>;
+    _onboarding: import("rxjs").Observable<any>;
+    contacts: BehaviorSubject<any>;
+    _contacts: import("rxjs").Observable<any>;
+    authentication: EventEmitter<OnboardingUser>;
     private header;
     locale: string;
     private endpoint;
@@ -41,7 +47,13 @@ export declare class OnboardingService {
     getProfil(id: any): Promise<string | any>;
     getAllProfil(): Promise<string | any>;
     getAllTags(): Promise<string | any>;
+    getContacts(): Promise<string | any>;
     asignProfil(): Promise<void>;
     getTags(): Promise<void>;
     getCategory(): Promise<void>;
+    createOnboarding(data: any): Promise<string | any>;
+    updateOnboarding(data: any): Promise<string | any>;
+    deleteOnboarding(id: any): Promise<string | any>;
+    getOnboarding(id: any): Promise<string | any>;
+    getAllOnboarding(recall?: boolean): Promise<string | any>;
 }

@@ -1,5 +1,5 @@
 import { OnInit, EventEmitter } from '@angular/core';
-export declare class SubCategoryComponent implements OnInit {
+export declare class SubOnboaringComponent implements OnInit {
     field: any;
     length: any;
     i: any;
@@ -24,6 +24,6 @@ export declare class SubCategoryComponent implements OnInit {
     changeType(type: any, i: any, j: any): void;
     removeKeyword(event: any, i: any, j: any): void;
     addNewSubLevelField(e: any): void;
-    expendMore(e: any, field: any): void;
+    expendMore(e: any): void;
     ingoreDefaultAction(e: any): void;
 }

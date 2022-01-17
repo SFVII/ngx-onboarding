@@ -16,6 +16,12 @@ export declare class CreateProfileTemplateComponent implements OnInit {
     tags: any[];
     id: string;
     parent: any[];
+    showProfileName: boolean;
+    matIconList: {
+        name: string;
+    }[];
+    isPictoListShow: boolean;
+    picto: string;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router);
     categories: any;
     ngOnInit(): Promise<void>;
@@ -33,4 +39,7 @@ export declare class CreateProfileTemplateComponent implements OnInit {
     addKeywordFromInput(event: MatChipInputEvent, ...params: any[]): void;
     drop(event: CdkDragDrop<string[]>): void;
     ingoreDefaultAction(e: any): void;
+    onShowCategory(): void;
+    onSelectPicto(e: any, picto: any): void;
+    onShowPictoList(e: any): void;
 }
