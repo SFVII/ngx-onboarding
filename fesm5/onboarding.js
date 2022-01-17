@@ -2212,7 +2212,7 @@ var MaterialElevationDirective = /** @class */ (function () {
             args: ['mouseleave']
         }] }); })();
 
-function ProfileListComponent_div_17_div_2_Template(rf, ctx) { if (rf & 1) {
+function ProfileListComponent_div_13_div_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 13);
     ɵɵelementStart(1, "mat-icon", 14);
     ɵɵtext(2);
@@ -2223,7 +2223,7 @@ function ProfileListComponent_div_17_div_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(2);
     ɵɵtextInterpolate(d_r523 == null ? null : d_r523.Picto);
 } }
-function ProfileListComponent_div_17_div_3_Template(rf, ctx) { if (rf & 1) {
+function ProfileListComponent_div_13_div_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 13);
     ɵɵelementStart(1, "h3");
     ɵɵtext(2);
@@ -2235,18 +2235,18 @@ function ProfileListComponent_div_17_div_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵtextInterpolate(d_r523.Name.substr(0, 2));
 } }
 var _c0$2 = function (a0) { return [a0]; };
-function ProfileListComponent_div_17_Template(rf, ctx) { if (rf & 1) {
+function ProfileListComponent_div_13_Template(rf, ctx) { if (rf & 1) {
     var _r529 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 9);
     ɵɵelementStart(1, "div", 10);
-    ɵɵtemplate(2, ProfileListComponent_div_17_div_2_Template, 3, 1, "div", 11);
-    ɵɵtemplate(3, ProfileListComponent_div_17_div_3_Template, 3, 1, "div", 11);
+    ɵɵtemplate(2, ProfileListComponent_div_13_div_2_Template, 3, 1, "div", 11);
+    ɵɵtemplate(3, ProfileListComponent_div_13_div_3_Template, 3, 1, "div", 11);
     ɵɵelementStart(4, "p");
     ɵɵtext(5);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(6, "button", 12);
-    ɵɵlistener("click", function ProfileListComponent_div_17_Template_button_click_6_listener($event) { ɵɵrestoreView(_r529); var d_r523 = ctx.$implicit; var ctx_r528 = ɵɵnextContext(); return ctx_r528.onDelete($event, d_r523._id); });
+    ɵɵlistener("click", function ProfileListComponent_div_13_Template_button_click_6_listener($event) { ɵɵrestoreView(_r529); var d_r523 = ctx.$implicit; var ctx_r528 = ɵɵnextContext(); return ctx_r528.onDelete($event, d_r523._id); });
     ɵɵelementStart(7, "mat-icon");
     ɵɵtext(8, "close");
     ɵɵelementEnd();
@@ -2347,42 +2347,36 @@ var ProfileListComponent = /** @class */ (function () {
             var _t;
             ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.paginator = _t.first);
             ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.sort = _t.first);
-        } }, decls: 18, vars: 4, consts: [[1, "main"], [1, "header-list"], [1, "content-list"], [1, "title"], [1, "sub-title"], [1, "list"], [1, "box-template", "new-template"], ["role", "button", "mat-raised-button", "", "color", "primary", 1, "add-profil", 3, "routerLink"], ["appMaterialElevation", "", "raisedElevation", "16", "class", "box-template", 3, "defaultElevation", 4, "ngFor", "ngForOf"], ["appMaterialElevation", "", "raisedElevation", "16", 1, "box-template", 3, "defaultElevation"], [1, "box-content", 3, "routerLink"], ["class", "picto-preview", 4, "ngIf"], ["mat-mini-fab", "", "color", "accent", "appMaterialElevation", "", "raisedElevation", "16", 3, "defaultElevation", "click"], [1, "picto-preview"], [2, "font-size", "50px", "width", "100%", "height", "40%"]], template: function ProfileListComponent_Template(rf, ctx) { if (rf & 1) {
+        } }, decls: 14, vars: 4, consts: [[1, "main"], [1, "header-list"], [1, "title"], [1, "sub-title"], [1, "content-list"], [1, "list"], [1, "box-template", "new-template"], ["role", "button", "mat-raised-button", "", "color", "primary", 1, "add-profil", 3, "routerLink"], ["appMaterialElevation", "", "raisedElevation", "16", "class", "box-template", 3, "defaultElevation", 4, "ngFor", "ngForOf"], ["appMaterialElevation", "", "raisedElevation", "16", 1, "box-template", 3, "defaultElevation"], [1, "box-content", 3, "routerLink"], ["class", "picto-preview", 4, "ngIf"], ["mat-mini-fab", "", "color", "accent", "appMaterialElevation", "", "raisedElevation", "16", 3, "defaultElevation", "click"], [1, "picto-preview"], [2, "font-size", "50px", "width", "100%", "height", "40%"]], template: function ProfileListComponent_Template(rf, ctx) { if (rf & 1) {
             ɵɵelementStart(0, "div", 0);
             ɵɵelementStart(1, "div", 1);
-            ɵɵelementStart(2, "h2");
-            ɵɵtext(3, "On boarding");
+            ɵɵelementStart(2, "h3", 2);
+            ɵɵtext(3, "Profils");
             ɵɵelementEnd();
-            ɵɵelementStart(4, "p");
-            ɵɵtext(5, "Retrouvez ici, l\u2019ensemble des formulaires d\u2019on boarding que vous avez cr\u00E9\u00E9s");
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementStart(6, "div", 2);
-            ɵɵelementStart(7, "h3", 3);
-            ɵɵtext(8, "Profils");
-            ɵɵelementEnd();
-            ɵɵelementStart(9, "p", 4);
-            ɵɵtext(10, "Retrouvez ici, l\u2019ensemble des profils d\u2019onboarding que vous avez cr\u00E9\u00E9s");
-            ɵɵelementEnd();
-            ɵɵelementStart(11, "div", 5);
-            ɵɵelementStart(12, "div", 6);
-            ɵɵelementStart(13, "p");
-            ɵɵtext(14, "Nouveau profil");
-            ɵɵelementEnd();
-            ɵɵelementStart(15, "a", 7);
-            ɵɵtext(16, " Cr\u00E9er un nouveau profil ");
+            ɵɵelementStart(4, "p", 3);
+            ɵɵtext(5, "Retrouvez ici, l\u2019ensemble des profils d\u2019onboarding que vous avez cr\u00E9\u00E9s");
             ɵɵelementEnd();
             ɵɵelementEnd();
-            ɵɵtemplate(17, ProfileListComponent_div_17_Template, 9, 8, "div", 8);
+            ɵɵelementStart(6, "div", 4);
+            ɵɵelementStart(7, "div", 5);
+            ɵɵelementStart(8, "div", 6);
+            ɵɵelementStart(9, "p");
+            ɵɵtext(10, "Nouveau profil");
+            ɵɵelementEnd();
+            ɵɵelementStart(11, "a", 7);
+            ɵɵtext(12, " Cr\u00E9er un nouveau profil ");
+            ɵɵelementEnd();
+            ɵɵelementEnd();
+            ɵɵtemplate(13, ProfileListComponent_div_13_Template, 9, 8, "div", 8);
             ɵɵelementEnd();
             ɵɵelementEnd();
             ɵɵelementEnd();
         } if (rf & 2) {
-            ɵɵadvance(15);
+            ɵɵadvance(11);
             ɵɵproperty("routerLink", ɵɵpureFunction1(2, _c0$2, ctx.service.mainPath + "/template-builder/0"));
             ɵɵadvance(2);
             ɵɵproperty("ngForOf", ctx.datas);
-        } }, directives: [MatAnchor, RouterLinkWithHref, NgForOf, MaterialElevationDirective, RouterLink, NgIf, MatButton, MatIcon], styles: [".main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;opacity:1;height:100%}.main[_ngcontent-%COMP%]   .header-list[_ngcontent-%COMP%]{margin-left:50px;padding-top:10px}.main[_ngcontent-%COMP%]   .header-list[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{text-align:left;font:bold 32px/30px Nexa Text;letter-spacing:0;color:#171f26;opacity:1}.main[_ngcontent-%COMP%]   .header-list[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{text-align:left;font:20px/26px Nexa Text;letter-spacing:0;color:#171f26;opacity:1}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]{background-color:#fff;border-radius:8px;opacity:1;margin:57px;height:80%;padding:49px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:left;font:bold 23px/30px Nexa Text;letter-spacing:0;color:#171f26;opacity:1;margin-bottom:0}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   p.sub-title[_ngcontent-%COMP%]{margin-bottom:57px;font:20px/26px Nexa Text;letter-spacing:0;color:#171f26;width:300px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]{width:328px;position:relative;height:228px;margin-right:50px;margin-bottom:50px;background:no-repeat padding-box #f4f7f9;border:1px solid #dce4e9;border-radius:6px;opacity:1;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{width:81px;height:81px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{text-align:center;font:bold 16px/25px Nexa Text;letter-spacing:.1px;color:#000;opacity:1;margin-top:17px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{background:no-repeat padding-box #171f26;border-radius:7px;font-size:15px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .mat-mini-fab[_ngcontent-%COMP%]{display:none}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]{width:100%;height:90%;text-align:center;margin-top:10%}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]   .picto-preview[_ngcontent-%COMP%]{width:113px;height:113px;background:no-repeat padding-box #fff;margin:auto;border-radius:113px;display:flex;align-items:center;justify-content:center}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]   .picto-preview[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:40px;color:#dce4e9}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .new-template[_ngcontent-%COMP%]{border:1px solid #dce4e9;border-radius:6px;background-color:transparent}  .box-template:hover .mat-mini-fab .mat-button-wrapper{padding:0!important;display:inline-block;line-height:0}  .box-template:hover .mat-mini-fab{display:initial!important;position:absolute;right:6px;top:7px;background-color:red;width:25px;height:25px}  .box-template:hover .mat-mini-fab .mat-icon{background-repeat:no-repeat;display:inline-block;fill:currentColor;height:37px;width:24px}"] });
+        } }, directives: [MatAnchor, RouterLinkWithHref, NgForOf, MaterialElevationDirective, RouterLink, NgIf, MatButton, MatIcon], styles: [".main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;opacity:1;height:100%}.main[_ngcontent-%COMP%]   .header-list[_ngcontent-%COMP%]{margin-left:50px;padding-top:10px}.main[_ngcontent-%COMP%]   .header-list[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:left;font:bold 32px/30px Nexa Text;letter-spacing:0;color:#171f26;opacity:1}.main[_ngcontent-%COMP%]   .header-list[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{text-align:left;font:20px/26px Nexa Text;letter-spacing:0;color:#171f26;opacity:1;max-width:300px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]{background-color:#fff;border-radius:8px;opacity:1;margin:57px;height:80%;padding:49px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:left;font:bold 23px/30px Nexa Text;letter-spacing:0;color:#171f26;opacity:1;margin-bottom:0;margin-top:0}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   p.sub-title[_ngcontent-%COMP%]{margin-bottom:57px;font:20px/26px Nexa Text;letter-spacing:0;color:#171f26;width:300px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]{width:328px;position:relative;height:228px;margin-right:50px;margin-bottom:50px;background:no-repeat padding-box #f4f7f9;border:1px solid #dce4e9;border-radius:6px;opacity:1;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{width:81px;height:81px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{text-align:center;font:bold 16px/25px Nexa Text;letter-spacing:.1px;color:#000;opacity:1;margin-top:17px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{background:no-repeat padding-box #171f26;border-radius:7px;font-size:15px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .mat-mini-fab[_ngcontent-%COMP%]{display:none}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]{width:100%;height:90%;text-align:center;margin-top:10%}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]   .picto-preview[_ngcontent-%COMP%]{width:113px;height:113px;background:no-repeat padding-box #fff;margin:auto;border-radius:113px;display:flex;align-items:center;justify-content:center}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]   .picto-preview[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:40px;color:#dce4e9}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .new-template[_ngcontent-%COMP%]{border:1px solid #dce4e9;border-radius:6px;background-color:transparent}  .box-template:hover .mat-mini-fab .mat-button-wrapper{padding:0!important;display:inline-block;line-height:0}  .box-template:hover .mat-mini-fab{display:initial!important;position:absolute;right:6px;top:7px;background-color:red;width:25px;height:25px}  .box-template:hover .mat-mini-fab .mat-icon{background-repeat:no-repeat;display:inline-block;fill:currentColor;height:37px;width:24px}"] });
     return ProfileListComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(ProfileListComponent, [{
