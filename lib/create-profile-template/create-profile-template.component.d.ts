@@ -4,6 +4,7 @@ import { MatChipInputEvent } from "@angular/material/chips";
 import { OnboardingService } from "../onboarding.service";
 import { ActivatedRoute, Router } from "@angular/router";
 import { CdkDragDrop } from "@angular/cdk/drag-drop";
+import * as i0 from "@angular/core";
 export declare class CreateProfileTemplateComponent implements OnInit {
     private fb;
     service: OnboardingService;
@@ -42,4 +43,6 @@ export declare class CreateProfileTemplateComponent implements OnInit {
     onShowCategory(): void;
     onSelectPicto(e: any, picto: any): void;
     onShowPictoList(e: any): void;
+    static ɵfac: i0.ɵɵFactoryDef<CreateProfileTemplateComponent>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CreateProfileTemplateComponent, "onboarding-create-profile-template", never, {}, {}, never>;
 }

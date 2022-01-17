@@ -1,4 +1,5 @@
 import { OnInit, EventEmitter } from '@angular/core';
+import * as i0 from "@angular/core";
 export declare class SubCategoryComponent implements OnInit {
     field: any;
     length: any;
@@ -26,4 +27,6 @@ export declare class SubCategoryComponent implements OnInit {
     addNewSubLevelField(e: any): void;
     expendMore(e: any, field: any): void;
     ingoreDefaultAction(e: any): void;
+    static ɵfac: i0.ɵɵFactoryDef<SubCategoryComponent>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<SubCategoryComponent, "lib-sub-category", never, { "field": "field"; "length": "length"; "i": "i"; "j": "j"; }, { "onAddKeywordFromInput": "onAddKeywordFromInput"; "onKeyPress": "onKeyPress"; "onDrop": "onDrop"; "onAddNewField": "onAddNewField"; "onRemoveField": "onRemoveField"; "onChangeType": "onChangeType"; "onRemoveKeyword": "onRemoveKeyword"; "onAddNewSubLevelField": "onAddNewSubLevelField"; "onExpendMore": "onExpendMore"; }, never>;
 }

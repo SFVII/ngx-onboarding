@@ -4,6 +4,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 import { CdkDragDrop } from '@angular/cdk/drag-drop';
 import { MatChipInputEvent } from '@angular/material/chips';
 import { ActivatedRoute } from '@angular/router';
+import * as i0 from "@angular/core";
 export declare class OnboardingFormComponent implements OnInit {
     service: OnboardingService;
     private fb;
@@ -36,4 +37,6 @@ export declare class OnboardingFormComponent implements OnInit {
     addKeywordFromInput(event: MatChipInputEvent, ...params: any[]): void;
     drop(event: CdkDragDrop<string[]>): void;
     ingoreDefaultAction(e: any): void;
+    static ɵfac: i0.ɵɵFactoryDef<OnboardingFormComponent>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<OnboardingFormComponent, "lib-onboarding-form", never, {}, {}, never>;
 }
