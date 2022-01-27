@@ -2948,8 +2948,8 @@ var OnboardingModule = /** @class */ (function () {
                 HttpClientModule,
                 TemplateProfileCreateComponent,
                 TemplateProfileListComponent,
+                OnboardingListComponent,
                 RouterModule,
-                OnboardingListComponent
             ]
         }),
         __param(0, Optional()), __param(0, SkipSelf())
