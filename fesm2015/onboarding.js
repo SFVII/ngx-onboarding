@@ -2698,8 +2698,8 @@ OnboardingModule = OnboardingModule_1 = __decorate([
             HttpClientModule,
             TemplateProfileCreateComponent,
             TemplateProfileListComponent,
-            OnboardingComponent,
-            RouterModule
+            RouterModule,
+            OnboardingListComponent
         ]
     }),
     __param(0, Optional()), __param(0, SkipSelf())

@@ -3142,8 +3142,8 @@
                     http.HttpClientModule,
                     TemplateProfileCreateComponent,
                     TemplateProfileListComponent,
-                    OnboardingComponent,
-                    router.RouterModule
+                    router.RouterModule,
+                    OnboardingListComponent
                 ]
             }),
             __param(0, core.Optional()), __param(0, core.SkipSelf())
