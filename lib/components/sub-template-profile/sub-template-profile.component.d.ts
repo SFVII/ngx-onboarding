@@ -1,6 +1,5 @@
 import { OnInit, EventEmitter } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import * as i0 from "@angular/core";
 export declare class SubTemplateProfileComponent implements OnInit {
     field: any;
     length: any;
@@ -44,6 +43,4 @@ export declare class SubTemplateProfileComponent implements OnInit {
     get chips(): any;
     checkedDefault(value: any): void;
     onShowCondition(event?: any): void;
-    static ɵfac: i0.ɵɵFactoryDef<SubTemplateProfileComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<SubTemplateProfileComponent, "lib-sub-category", never, { "field": "field"; "length": "length"; "i": "i"; "j": "j"; "conditionData": "conditionData"; }, { "onAddKeywordFromInput": "onAddKeywordFromInput"; "onKeyPress": "onKeyPress"; "onDrop": "onDrop"; "onAddNewField": "onAddNewField"; "onRemoveField": "onRemoveField"; "onChangeType": "onChangeType"; "onRemoveKeyword": "onRemoveKeyword"; "onAddNewSubLevelField": "onAddNewSubLevelField"; "onExpendMore": "onExpendMore"; "onChangeLabel": "onChangeLabel"; "onCheckedChip": "onCheckedChip"; "onCheckedDefault": "onCheckedDefault"; "onGetConditionValues": "onGetConditionValues"; }, never>;
 }

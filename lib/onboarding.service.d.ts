@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { EventEmitter } from '@angular/core';
 import { BehaviorSubject, Subject } from 'rxjs';
 import { OnboardingInterface, OnboardingUser } from '../interface/OnboardingInterface';
-import * as i0 from "@angular/core";
 export declare class OnboardingService {
     private http;
     canExit$: Subject<boolean>;
@@ -58,6 +57,4 @@ export declare class OnboardingService {
     deleteOnboarding(id: any): Promise<string | any>;
     getOnboarding(id: any): Promise<string | any>;
     getAllOnboarding(recall?: boolean): Promise<string | any>;
-    static ɵfac: i0.ɵɵFactoryDef<OnboardingService>;
-    static ɵprov: i0.ɵɵInjectableDef<OnboardingService>;
 }
