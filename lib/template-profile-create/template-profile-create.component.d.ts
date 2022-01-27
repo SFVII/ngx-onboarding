@@ -5,6 +5,7 @@ import { OnboardingService } from "../onboarding.service";
 import { ActivatedRoute, Router } from "@angular/router";
 import { CdkDragDrop } from "@angular/cdk/drag-drop";
 import { MatDialog } from "@angular/material/dialog";
+import * as i0 from "@angular/core";
 export declare class TemplateProfileCreateComponent implements OnInit {
     private fb;
     service: OnboardingService;
@@ -58,4 +59,6 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onEditCategoryName(i: any, name: any): void;
     onAcrelink(e: any): void;
     getConditionValues(): void;
+    static ɵfac: i0.ɵɵFactoryDef<TemplateProfileCreateComponent>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<TemplateProfileCreateComponent, "onboarding-create-profile-template", never, {}, {}, never>;
 }

@@ -4,3 +4,5 @@ export * from './lib/onboarding.component';
 export * from './lib/template-profile-create/template-profile-create.component';
 export * from './lib/template-profile-list/template-profile-list.component';
 export * from './lib/onboarding.module';
+export * from './lib/onboarding-list/onboarding-list.component';
+export * from './lib/onboarding-create/onboarding-create.component';

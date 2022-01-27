@@ -4,6 +4,7 @@ import { OnboardingService } from "../onboarding.service";
 import { ActivatedRoute, Router } from "@angular/router";
 import { CdkDragDrop } from "@angular/cdk/drag-drop";
 import { MatDialog } from "@angular/material/dialog";
+import * as i0 from "@angular/core";
 export declare class OnboardingCreateComponent implements OnInit {
     private fb;
     service: OnboardingService;
@@ -52,4 +53,6 @@ export declare class OnboardingCreateComponent implements OnInit {
     onCheckConditionLocationValue(iscondition: any, location: any, conditionValue: any): boolean;
     checkSubForm(forms: any): boolean;
     onSelectMenu(i: any): void;
+    static ɵfac: i0.ɵɵFactoryDef<OnboardingCreateComponent>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<OnboardingCreateComponent, "create-onboarding", never, {}, {}, never>;
 }
