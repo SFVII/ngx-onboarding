@@ -3143,6 +3143,7 @@
                     TemplateProfileCreateComponent,
                     TemplateProfileListComponent,
                     OnboardingListComponent,
+                    OnboardingCreateComponent,
                     router.RouterModule,
                 ]
             }),

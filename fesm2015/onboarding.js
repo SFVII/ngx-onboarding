@@ -2699,6 +2699,7 @@ OnboardingModule = OnboardingModule_1 = __decorate([
             TemplateProfileCreateComponent,
             TemplateProfileListComponent,
             OnboardingListComponent,
+            OnboardingCreateComponent,
             RouterModule,
         ]
     }),

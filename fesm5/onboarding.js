@@ -2949,6 +2949,7 @@ var OnboardingModule = /** @class */ (function () {
                 TemplateProfileCreateComponent,
                 TemplateProfileListComponent,
                 OnboardingListComponent,
+                OnboardingCreateComponent,
                 RouterModule,
             ]
         }),
