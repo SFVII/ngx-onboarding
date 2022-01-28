@@ -4195,10 +4195,18 @@ class OnboardingListComponent {
                 key: 'createdAt',
                 value: 'Date de création',
                 order: 1,
-                class: 'u-4',
+                class: 'u-1',
                 module: CellsComponentList.DateFormat,
                 sort: true
-            }
+            },
+            {
+                key: 'ContactName',
+                value: 'Contact',
+                order: 2,
+                class: 'u-2',
+                module: CellsComponentList.NameAvatar,
+                sort: true
+            },
         ];
         this._loading_table = true;
         this.HiddenIndex = 0;
@@ -4220,7 +4228,10 @@ class OnboardingListComponent {
                 }, 2000);
                 if (onboarding) {
                     //this.onboardingList=onboarding;
-                    this.onboardingList = new CoreMatTable(onboarding, {
+                    let x = onboarding.map((row) => {
+                        row.ContactName = row.vcontacts[0].Name;
+                    });
+                    this.onboardingList = new CoreMatTable(x, {
                         active: 'CreatedDate', direction: 'desc'
                     }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
                 }

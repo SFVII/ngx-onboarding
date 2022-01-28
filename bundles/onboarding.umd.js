@@ -4639,10 +4639,18 @@
                     key: 'createdAt',
                     value: 'Date de création',
                     order: 1,
-                    class: 'u-4',
+                    class: 'u-1',
                     module: table$2.CellsComponentList.DateFormat,
                     sort: true
-                }
+                },
+                {
+                    key: 'ContactName',
+                    value: 'Contact',
+                    order: 2,
+                    class: 'u-2',
+                    module: table$2.CellsComponentList.NameAvatar,
+                    sort: true
+                },
             ];
             this._loading_table = true;
             this.HiddenIndex = 0;
@@ -4673,7 +4681,10 @@
                         }, 2000);
                         if (onboarding) {
                             //this.onboardingList=onboarding;
-                            _this.onboardingList = new table$2.CoreMatTable(onboarding, {
+                            var x = onboarding.map(function (row) {
+                                row.ContactName = row.vcontacts[0].Name;
+                            });
+                            _this.onboardingList = new table$2.CoreMatTable(x, {
                                 active: 'CreatedDate', direction: 'desc'
                             }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
                         }
