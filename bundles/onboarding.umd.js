@@ -4565,14 +4565,14 @@
         core.ɵɵelement(0, "ngx-design-table", 21);
     } if (rf & 2) {
         var ctx_r739 = core.ɵɵnextContext(3);
-        core.ɵɵproperty("columnDefinitions", ctx_r739.columnDefinitions)("displayDetail", false)("data", ctx_r739.onboardingList)("lang", ctx_r739.lang)("btnOverride", true)("inputSearch", ctx_r739.inputSearch)("EmptyRow", true);
+        core.ɵɵproperty("columnDefinitions", ctx_r739.columnDefinitions)("displayDetail", false)("data", ctx_r739.onboardingList)("lang", ctx_r739.lang)("btnOverride", true)("inputSearch", ctx_r739.inputSearch)("EmptyRow", true)("blockDetails", true);
     } }
     var _c0$4 = function () { return { "margin-bottom": "100vh" }; };
     function OnboardingListComponent_div_1_ng_template_16_Template(rf, ctx) { if (rf & 1) {
         core.ɵɵtemplate(0, OnboardingListComponent_div_1_ng_template_16_div_0_Template, 1, 0, "div", 17);
         core.ɵɵelement(1, "div", 18);
         core.ɵɵelementStart(2, "div");
-        core.ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template, 1, 7, "ngx-design-table", 19);
+        core.ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template, 1, 8, "ngx-design-table", 19);
         core.ɵɵelementEnd();
     } if (rf & 2) {
         var ctx_r735 = core.ɵɵnextContext(2);
@@ -4713,7 +4713,7 @@
             }
         };
         OnboardingListComponent.ɵfac = function OnboardingListComponent_Factory(t) { return new (t || OnboardingListComponent)(core.ɵɵdirectiveInject(OnboardingService), core.ɵɵdirectiveInject(router.Router), core.ɵɵdirectiveInject(router.ActivatedRoute)); };
-        OnboardingListComponent.ɵcmp = core.ɵɵdefineComponent({ type: OnboardingListComponent, selectors: [["lib-onboarding-list"]], decls: 2, vars: 3, consts: [[1, "full-height", 2, "background", "#F4F7F9 0% 0% no-repeat padding-box", 3, "ngStyle"], ["class", "main-all-ticket-list", 4, "ngIf"], [1, "main-all-ticket-list"], [1, "page-title-container"], [1, "page-title"], [1, "page-search"], ["placeholder", "Recherche", "type", "text", 1, "search-box", 3, "ngModel", "ngModelChange"], [3, "src", "click", 4, "ngIf"], [1, "content-view-list-ticket"], [1, "mat-tab-left"], ["class", "mat-tab-left-count", 4, "ngIf"], [1, "list-ticket-tab", 3, "selectedIndex", "selectedIndexChange", "selectedTabChange"], [2, "background-image", "none"], ["mat-tab-label", ""], ["matTabContent", ""], [3, "src", "click"], [1, "mat-tab-left-count"], ["class", "bt-spinner", 4, "ngIf"], [3, "ngStyle"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", 4, "ngIf"], [1, "bt-spinner"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow"]], template: function OnboardingListComponent_Template(rf, ctx) { if (rf & 1) {
+        OnboardingListComponent.ɵcmp = core.ɵɵdefineComponent({ type: OnboardingListComponent, selectors: [["lib-onboarding-list"]], decls: 2, vars: 3, consts: [[1, "full-height", 2, "background", "#F4F7F9 0% 0% no-repeat padding-box", 3, "ngStyle"], ["class", "main-all-ticket-list", 4, "ngIf"], [1, "main-all-ticket-list"], [1, "page-title-container"], [1, "page-title"], [1, "page-search"], ["placeholder", "Recherche", "type", "text", 1, "search-box", 3, "ngModel", "ngModelChange"], [3, "src", "click", 4, "ngIf"], [1, "content-view-list-ticket"], [1, "mat-tab-left"], ["class", "mat-tab-left-count", 4, "ngIf"], [1, "list-ticket-tab", 3, "selectedIndex", "selectedIndexChange", "selectedTabChange"], [2, "background-image", "none"], ["mat-tab-label", ""], ["matTabContent", ""], [3, "src", "click"], [1, "mat-tab-left-count"], ["class", "bt-spinner", 4, "ngIf"], [3, "ngStyle"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", "blockDetails", 4, "ngIf"], [1, "bt-spinner"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", "blockDetails"]], template: function OnboardingListComponent_Template(rf, ctx) { if (rf & 1) {
                 core.ɵɵelementStart(0, "mat-card", 0);
                 core.ɵɵtemplate(1, OnboardingListComponent_div_1_Template, 17, 5, "div", 1);
                 core.ɵɵelementEnd();
