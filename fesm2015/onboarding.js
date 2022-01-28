@@ -3080,7 +3080,9 @@ class TemplateProfileListComponent {
     }
     ngOnInit() {
         return __awaiter(this, void 0, void 0, function* () {
-            yield this.getAllProfils(true);
+            setTimeout(() => __awaiter(this, void 0, void 0, function* () {
+                yield this.getAllProfils(true);
+            }), 500);
         });
     }
     onAddProfil() {
