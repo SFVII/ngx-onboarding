@@ -257,6 +257,11 @@
                 });
             });
         };
+        OnboardingService.prototype.checkHeaderNull = function () {
+            if (!this.token) {
+                this.buildHeaders();
+            }
+        };
         /**
        * @param config
        * @private
@@ -385,6 +390,7 @@
                                 headers: _this.header
                             };
                             console.log(options);
+                            console.log(_this.token);
                             _this.http.get(_this.endpoint + "/profils", options)
                                 .subscribe(function (data) {
                                 _this.templates.next(data);

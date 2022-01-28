@@ -63,6 +63,11 @@ class OnboardingService {
             });
         });
     }
+    checkHeaderNull() {
+        if (!this.token) {
+            this.buildHeaders();
+        }
+    }
     /**
    * @param config
    * @private
@@ -176,6 +181,7 @@ class OnboardingService {
                     headers: this.header
                 };
                 console.log(options);
+                console.log(this.token);
                 this.http.get(`${this.endpoint}/profils`, options)
                     .subscribe((data) => {
                     this.templates.next(data);
