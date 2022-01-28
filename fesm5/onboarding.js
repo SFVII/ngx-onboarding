@@ -76,7 +76,6 @@ var OnboardingService = /** @class */ (function () {
             this.endpoint = config.endpoint;
             if (config.auth) {
                 this.authentication.subscribe(function (user) {
-                    console.log(user);
                     if (!user.lang && config.lang) {
                         user.lang = config.lang;
                     }
@@ -319,6 +318,7 @@ var OnboardingService = /** @class */ (function () {
                         var options = {
                             headers: _this.header
                         };
+                        console.log(options);
                         _this.http.get(_this.endpoint + "/onboarding/" + id, options)
                             .subscribe(function (data) {
                             resolve(data);
