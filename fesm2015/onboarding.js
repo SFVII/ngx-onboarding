@@ -4229,10 +4229,12 @@ class OnboardingListComponent {
                 if (onboarding) {
                     //this.onboardingList=onboarding;
                     let x = onboarding.map((row) => {
+                        console.log(row.vcontacts);
                         row.ContactName = row.vcontacts[0].Name;
                         return row;
                     });
-                    this.onboardingList = new CoreMatTable(x, {
+                    console.log(x);
+                    this.onboardingList = new CoreMatTable(onboarding, {
                         active: 'CreatedDate', direction: 'desc'
                     }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
                 }

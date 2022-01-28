@@ -4491,10 +4491,12 @@ var OnboardingListComponent = /** @class */ (function () {
                     if (onboarding) {
                         //this.onboardingList=onboarding;
                         var x = onboarding.map(function (row) {
+                            console.log(row.vcontacts);
                             row.ContactName = row.vcontacts[0].Name;
                             return row;
                         });
-                        _this.onboardingList = new CoreMatTable(x, {
+                        console.log(x);
+                        _this.onboardingList = new CoreMatTable(onboarding, {
                             active: 'CreatedDate', direction: 'desc'
                         }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
                     }
