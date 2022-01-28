@@ -4647,8 +4647,10 @@
                     key: 'ContactName',
                     value: 'Contact',
                     order: 2,
-                    class: 'u-2',
-                    sort: true
+                    class: 'u-1',
+                    sort: true,
+                    module: table$2.CellsComponentList.NameAvatar,
+                    override: ['ContactName', 'Email'],
                 },
             ];
             this._loading_table = true;
@@ -4683,6 +4685,7 @@
                             var x = onboarding.map(function (row) {
                                 console.log(row.vcontacts);
                                 row.ContactName = row.vcontacts[0].Name;
+                                row.Email = row.vcontacts[0].Email;
                                 return row;
                             });
                             console.log(x);
