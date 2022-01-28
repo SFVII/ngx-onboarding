@@ -54,19 +54,11 @@ class OnboardingService {
    */
     buildHeaders() {
         this._token.subscribe((token) => {
-            console.log(token);
-            console.log('localstorage', localStorage.getItem('token'));
-            console.log((token || localStorage.getItem('token')));
-            const bearer = 'Bearer ' + (token || localStorage.getItem('token'));
+            const bearer = 'Bearer ' + token;
             this.header = new HttpHeaders({
                 'Authorization': bearer
             });
         });
-    }
-    checkHeaderNull() {
-        if (!this.token) {
-            this.buildHeaders();
-        }
     }
     /**
    * @param config
@@ -180,8 +172,6 @@ class OnboardingService {
                 const options = {
                     headers: this.header
                 };
-                console.log(options);
-                console.log(this.token);
                 this.http.get(`${this.endpoint}/profils`, options)
                     .subscribe((data) => {
                     this.templates.next(data);
@@ -4100,7 +4090,9 @@ class OnboardingListComponent {
     }
     ngOnInit() {
         return __awaiter(this, void 0, void 0, function* () {
-            yield this.service.getAllOnboarding();
+            setTimeout(() => __awaiter(this, void 0, void 0, function* () {
+                yield this.service.getAllOnboarding();
+            }), 500);
             this.service.onboarding.subscribe((onboarding) => {
                 console.log(onboarding);
                 if (onboarding) {

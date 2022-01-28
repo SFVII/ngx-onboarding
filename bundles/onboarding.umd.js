@@ -248,19 +248,11 @@
         OnboardingService.prototype.buildHeaders = function () {
             var _this = this;
             this._token.subscribe(function (token) {
-                console.log(token);
-                console.log('localstorage', localStorage.getItem('token'));
-                console.log((token || localStorage.getItem('token')));
-                var bearer = 'Bearer ' + (token || localStorage.getItem('token'));
+                var bearer = 'Bearer ' + token;
                 _this.header = new http.HttpHeaders({
                     'Authorization': bearer
                 });
             });
-        };
-        OnboardingService.prototype.checkHeaderNull = function () {
-            if (!this.token) {
-                this.buildHeaders();
-            }
         };
         /**
        * @param config
@@ -389,8 +381,6 @@
                             var options = {
                                 headers: _this.header
                             };
-                            console.log(options);
-                            console.log(_this.token);
                             _this.http.get(_this.endpoint + "/profils", options)
                                 .subscribe(function (data) {
                                 _this.templates.next(data);
@@ -4540,18 +4530,23 @@
             return __awaiter(this, void 0, void 0, function () {
                 var _this = this;
                 return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0: return [4 /*yield*/, this.service.getAllOnboarding()];
-                        case 1:
-                            _a.sent();
-                            this.service.onboarding.subscribe(function (onboarding) {
-                                console.log(onboarding);
-                                if (onboarding) {
-                                    _this.onboardingList = onboarding;
-                                }
-                            });
-                            return [2 /*return*/];
-                    }
+                    setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
+                        return __generator(this, function (_a) {
+                            switch (_a.label) {
+                                case 0: return [4 /*yield*/, this.service.getAllOnboarding()];
+                                case 1:
+                                    _a.sent();
+                                    return [2 /*return*/];
+                            }
+                        });
+                    }); }, 500);
+                    this.service.onboarding.subscribe(function (onboarding) {
+                        console.log(onboarding);
+                        if (onboarding) {
+                            _this.onboardingList = onboarding;
+                        }
+                    });
+                    return [2 /*return*/];
                 });
             });
         };

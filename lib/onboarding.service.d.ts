@@ -28,7 +28,6 @@ export declare class OnboardingService {
    * Generate Header for backend call
    */
     private buildHeaders;
-    private checkHeaderNull;
     /**
    * @param config
    * @private
