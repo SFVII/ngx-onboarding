@@ -4230,6 +4230,7 @@ class OnboardingListComponent {
                     //this.onboardingList=onboarding;
                     let x = onboarding.map((row) => {
                         row.ContactName = row.vcontacts[0].Name;
+                        return row;
                     });
                     this.onboardingList = new CoreMatTable(x, {
                         active: 'CreatedDate', direction: 'desc'

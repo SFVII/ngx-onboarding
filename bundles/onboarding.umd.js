@@ -4683,6 +4683,7 @@
                             //this.onboardingList=onboarding;
                             var x = onboarding.map(function (row) {
                                 row.ContactName = row.vcontacts[0].Name;
+                                return row;
                             });
                             _this.onboardingList = new table$2.CoreMatTable(x, {
                                 active: 'CreatedDate', direction: 'desc'
