@@ -55,7 +55,8 @@ var OnboardingService = /** @class */ (function () {
     OnboardingService.prototype.buildHeaders = function () {
         var _this = this;
         this._token.subscribe(function (token) {
-            var bearer = 'Bearer ' + token;
+            console.log(token);
+            var bearer = 'Bearer ' + (token || localStorage.getItem('token'));
             _this.header = new HttpHeaders({
                 'Authorization': bearer
             });

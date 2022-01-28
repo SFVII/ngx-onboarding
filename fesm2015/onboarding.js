@@ -54,7 +54,8 @@ class OnboardingService {
    */
     buildHeaders() {
         this._token.subscribe((token) => {
-            const bearer = 'Bearer ' + token;
+            console.log(token);
+            const bearer = 'Bearer ' + (token || localStorage.getItem('token'));
             this.header = new HttpHeaders({
                 'Authorization': bearer
             });
