@@ -4445,7 +4445,7 @@ var OnboardingListComponent = /** @class */ (function () {
         this.search = '';
         this.columnDefinitions = [
             {
-                key: 'CreatedDate',
+                key: 'createdAt',
                 value: 'Date de création',
                 order: 1,
                 class: 'u-4',
