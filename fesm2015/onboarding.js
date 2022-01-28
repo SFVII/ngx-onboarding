@@ -3818,7 +3818,9 @@ class OnboardingCreateComponent {
         return __awaiter(this, void 0, void 0, function* () {
             this.onCreateDynamicForm();
             this.id = this.route.snapshot.paramMap.get("id");
-            yield this.service.getAllProfil();
+            setTimeout(() => __awaiter(this, void 0, void 0, function* () {
+                yield this.service.getAllProfil();
+            }), 500);
             this.service._templates.subscribe((data) => {
                 this.templates = data;
             });

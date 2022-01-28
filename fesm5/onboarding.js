@@ -4001,24 +4001,31 @@ var OnboardingCreateComponent = /** @class */ (function () {
                     case 0:
                         this.onCreateDynamicForm();
                         this.id = this.route.snapshot.paramMap.get("id");
-                        return [4 /*yield*/, this.service.getAllProfil()];
-                    case 1:
-                        _c.sent();
+                        setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
+                            return __generator(this, function (_a) {
+                                switch (_a.label) {
+                                    case 0: return [4 /*yield*/, this.service.getAllProfil()];
+                                    case 1:
+                                        _a.sent();
+                                        return [2 /*return*/];
+                                }
+                            });
+                        }); }, 500);
                         this.service._templates.subscribe(function (data) {
                             _this.templates = data;
                         });
                         this.id = this.route.snapshot.paramMap.get("id");
-                        if (!(this.id !== "0")) return [3 /*break*/, 3];
+                        if (!(this.id !== "0")) return [3 /*break*/, 2];
                         _b = this;
                         return [4 /*yield*/, this.service.getOnboarding(this.id)];
-                    case 2:
+                    case 1:
                         _b.currentOnboarding = _c.sent();
                         this.form.patchValue(this.currentOnboarding);
                         this.categories = this.currentOnboarding.categories;
                         this.currentTemplate = (_a = this.currentOnboarding) === null || _a === void 0 ? void 0 : _a.vtemplates[0];
                         this.onSelectContactTemplate();
-                        _c.label = 3;
-                    case 3: return [2 /*return*/];
+                        _c.label = 2;
+                    case 2: return [2 /*return*/];
                 }
             });
         });
