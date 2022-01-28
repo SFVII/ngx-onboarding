@@ -4093,14 +4093,14 @@ OnboardingCreateComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingCreateCo
 
 function OnboardingListComponent_div_1_img_8_Template(rf, ctx) { if (rf & 1) {
     const _r365 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "img", 14);
+    ɵɵelementStart(0, "img", 15);
     ɵɵlistener("click", function OnboardingListComponent_div_1_img_8_Template_img_click_0_listener() { ɵɵrestoreView(_r365); const ctx_r364 = ɵɵnextContext(2); return ctx_r364.cancelSearch(); });
     ɵɵelementEnd();
 } if (rf & 2) {
     ɵɵproperty("src", "/assets/icons/search_off-24px.svg", ɵɵsanitizeUrl);
 } }
 function OnboardingListComponent_div_1_span_12_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "span", 15);
+    ɵɵelementStart(0, "span", 16);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -4115,20 +4115,20 @@ function OnboardingListComponent_div_1_ng_template_15_Template(rf, ctx) { if (rf
     ɵɵtextInterpolate1(" Onboarding (", (ctx_r362.onboardingList == null ? null : ctx_r362.onboardingList.totalElements) || (ctx_r362.onboardingList == null ? null : ctx_r362.onboardingList.data == null ? null : ctx_r362.onboardingList.data.length), ") ");
 } }
 function OnboardingListComponent_div_1_ng_template_16_div_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "div", 19);
+    ɵɵelement(0, "div", 20);
 } }
 function OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "ngx-design-table", 20);
+    ɵɵelement(0, "ngx-design-table", 21);
 } if (rf & 2) {
     const ctx_r367 = ɵɵnextContext(3);
     ɵɵproperty("columnDefinitions", ctx_r367.columnDefinitions)("displayDetail", false)("data", ctx_r367.onboardingList)("lang", ctx_r367.lang)("btnOverride", true)("inputSearch", ctx_r367.inputSearch)("EmptyRow", true);
 } }
 const _c0$4 = function () { return { "margin-bottom": "100vh" }; };
 function OnboardingListComponent_div_1_ng_template_16_Template(rf, ctx) { if (rf & 1) {
-    ɵɵtemplate(0, OnboardingListComponent_div_1_ng_template_16_div_0_Template, 1, 0, "div", 16);
-    ɵɵelement(1, "div", 17);
+    ɵɵtemplate(0, OnboardingListComponent_div_1_ng_template_16_div_0_Template, 1, 0, "div", 17);
+    ɵɵelement(1, "div", 18);
     ɵɵelementStart(2, "div");
-    ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template, 1, 7, "ngx-design-table", 18);
+    ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template, 1, 7, "ngx-design-table", 19);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r363 = ɵɵnextContext(2);
@@ -4164,9 +4164,9 @@ function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementStart(13, "mat-tab-group", 11);
     ɵɵlistener("selectedIndexChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedIndexChange_13_listener($event) { ɵɵrestoreView(_r369); const ctx_r370 = ɵɵnextContext(); return ctx_r370.index = $event; })("selectedTabChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedTabChange_13_listener($event) { ɵɵrestoreView(_r369); const ctx_r371 = ɵɵnextContext(); return ctx_r371.triggerChange($event); });
-    ɵɵelementStart(14, "mat-tab");
-    ɵɵtemplate(15, OnboardingListComponent_div_1_ng_template_15_Template, 1, 1, "ng-template", 12);
-    ɵɵtemplate(16, OnboardingListComponent_div_1_ng_template_16_Template, 4, 6, "ng-template", 13);
+    ɵɵelementStart(14, "mat-tab", 12);
+    ɵɵtemplate(15, OnboardingListComponent_div_1_ng_template_15_Template, 1, 1, "ng-template", 13);
+    ɵɵtemplate(16, OnboardingListComponent_div_1_ng_template_16_Template, 4, 6, "ng-template", 14);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -4244,7 +4244,7 @@ class OnboardingListComponent {
     }
 }
 OnboardingListComponent.ɵfac = function OnboardingListComponent_Factory(t) { return new (t || OnboardingListComponent)(ɵɵdirectiveInject(OnboardingService), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(ActivatedRoute)); };
-OnboardingListComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingListComponent, selectors: [["lib-onboarding-list"]], decls: 2, vars: 3, consts: [[1, "full-height", 2, "background", "#F4F7F9 0% 0% no-repeat padding-box", 3, "ngStyle"], ["class", "main-all-ticket-list", 4, "ngIf"], [1, "main-all-ticket-list"], [1, "page-title-container"], [1, "page-title"], [1, "page-search"], ["placeholder", "Recherche", "type", "text", 1, "search-box", 3, "ngModel", "ngModelChange"], [3, "src", "click", 4, "ngIf"], [1, "content-view-list-ticket"], [1, "mat-tab-left"], ["class", "mat-tab-left-count", 4, "ngIf"], [1, "list-ticket-tab", 3, "selectedIndex", "selectedIndexChange", "selectedTabChange"], ["mat-tab-label", ""], ["matTabContent", ""], [3, "src", "click"], [1, "mat-tab-left-count"], ["class", "bt-spinner", 4, "ngIf"], [3, "ngStyle"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", 4, "ngIf"], [1, "bt-spinner"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow"]], template: function OnboardingListComponent_Template(rf, ctx) { if (rf & 1) {
+OnboardingListComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingListComponent, selectors: [["lib-onboarding-list"]], decls: 2, vars: 3, consts: [[1, "full-height", 2, "background", "#F4F7F9 0% 0% no-repeat padding-box", 3, "ngStyle"], ["class", "main-all-ticket-list", 4, "ngIf"], [1, "main-all-ticket-list"], [1, "page-title-container"], [1, "page-title"], [1, "page-search"], ["placeholder", "Recherche", "type", "text", 1, "search-box", 3, "ngModel", "ngModelChange"], [3, "src", "click", 4, "ngIf"], [1, "content-view-list-ticket"], [1, "mat-tab-left"], ["class", "mat-tab-left-count", 4, "ngIf"], [1, "list-ticket-tab", 3, "selectedIndex", "selectedIndexChange", "selectedTabChange"], [2, "background-image", "none"], ["mat-tab-label", ""], ["matTabContent", ""], [3, "src", "click"], [1, "mat-tab-left-count"], ["class", "bt-spinner", 4, "ngIf"], [3, "ngStyle"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", 4, "ngIf"], [1, "bt-spinner"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow"]], template: function OnboardingListComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "mat-card", 0);
         ɵɵtemplate(1, OnboardingListComponent_div_1_Template, 17, 5, "div", 1);
         ɵɵelementEnd();

@@ -4537,14 +4537,14 @@
 
     function OnboardingListComponent_div_1_img_8_Template(rf, ctx) { if (rf & 1) {
         var _r737 = core.ɵɵgetCurrentView();
-        core.ɵɵelementStart(0, "img", 14);
+        core.ɵɵelementStart(0, "img", 15);
         core.ɵɵlistener("click", function OnboardingListComponent_div_1_img_8_Template_img_click_0_listener() { core.ɵɵrestoreView(_r737); var ctx_r736 = core.ɵɵnextContext(2); return ctx_r736.cancelSearch(); });
         core.ɵɵelementEnd();
     } if (rf & 2) {
         core.ɵɵproperty("src", "/assets/icons/search_off-24px.svg", core.ɵɵsanitizeUrl);
     } }
     function OnboardingListComponent_div_1_span_12_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 15);
+        core.ɵɵelementStart(0, "span", 16);
         core.ɵɵtext(1);
         core.ɵɵelementEnd();
     } if (rf & 2) {
@@ -4559,20 +4559,20 @@
         core.ɵɵtextInterpolate1(" Onboarding (", (ctx_r734.onboardingList == null ? null : ctx_r734.onboardingList.totalElements) || (ctx_r734.onboardingList == null ? null : ctx_r734.onboardingList.data == null ? null : ctx_r734.onboardingList.data.length), ") ");
     } }
     function OnboardingListComponent_div_1_ng_template_16_div_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "div", 19);
+        core.ɵɵelement(0, "div", 20);
     } }
     function OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "ngx-design-table", 20);
+        core.ɵɵelement(0, "ngx-design-table", 21);
     } if (rf & 2) {
         var ctx_r739 = core.ɵɵnextContext(3);
         core.ɵɵproperty("columnDefinitions", ctx_r739.columnDefinitions)("displayDetail", false)("data", ctx_r739.onboardingList)("lang", ctx_r739.lang)("btnOverride", true)("inputSearch", ctx_r739.inputSearch)("EmptyRow", true);
     } }
     var _c0$4 = function () { return { "margin-bottom": "100vh" }; };
     function OnboardingListComponent_div_1_ng_template_16_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵtemplate(0, OnboardingListComponent_div_1_ng_template_16_div_0_Template, 1, 0, "div", 16);
-        core.ɵɵelement(1, "div", 17);
+        core.ɵɵtemplate(0, OnboardingListComponent_div_1_ng_template_16_div_0_Template, 1, 0, "div", 17);
+        core.ɵɵelement(1, "div", 18);
         core.ɵɵelementStart(2, "div");
-        core.ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template, 1, 7, "ngx-design-table", 18);
+        core.ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template, 1, 7, "ngx-design-table", 19);
         core.ɵɵelementEnd();
     } if (rf & 2) {
         var ctx_r735 = core.ɵɵnextContext(2);
@@ -4608,9 +4608,9 @@
         core.ɵɵelementEnd();
         core.ɵɵelementStart(13, "mat-tab-group", 11);
         core.ɵɵlistener("selectedIndexChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedIndexChange_13_listener($event) { core.ɵɵrestoreView(_r741); var ctx_r742 = core.ɵɵnextContext(); return ctx_r742.index = $event; })("selectedTabChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedTabChange_13_listener($event) { core.ɵɵrestoreView(_r741); var ctx_r743 = core.ɵɵnextContext(); return ctx_r743.triggerChange($event); });
-        core.ɵɵelementStart(14, "mat-tab");
-        core.ɵɵtemplate(15, OnboardingListComponent_div_1_ng_template_15_Template, 1, 1, "ng-template", 12);
-        core.ɵɵtemplate(16, OnboardingListComponent_div_1_ng_template_16_Template, 4, 6, "ng-template", 13);
+        core.ɵɵelementStart(14, "mat-tab", 12);
+        core.ɵɵtemplate(15, OnboardingListComponent_div_1_ng_template_15_Template, 1, 1, "ng-template", 13);
+        core.ɵɵtemplate(16, OnboardingListComponent_div_1_ng_template_16_Template, 4, 6, "ng-template", 14);
         core.ɵɵelementEnd();
         core.ɵɵelementEnd();
         core.ɵɵelementEnd();
@@ -4699,7 +4699,7 @@
             }
         };
         OnboardingListComponent.ɵfac = function OnboardingListComponent_Factory(t) { return new (t || OnboardingListComponent)(core.ɵɵdirectiveInject(OnboardingService), core.ɵɵdirectiveInject(router.Router), core.ɵɵdirectiveInject(router.ActivatedRoute)); };
-        OnboardingListComponent.ɵcmp = core.ɵɵdefineComponent({ type: OnboardingListComponent, selectors: [["lib-onboarding-list"]], decls: 2, vars: 3, consts: [[1, "full-height", 2, "background", "#F4F7F9 0% 0% no-repeat padding-box", 3, "ngStyle"], ["class", "main-all-ticket-list", 4, "ngIf"], [1, "main-all-ticket-list"], [1, "page-title-container"], [1, "page-title"], [1, "page-search"], ["placeholder", "Recherche", "type", "text", 1, "search-box", 3, "ngModel", "ngModelChange"], [3, "src", "click", 4, "ngIf"], [1, "content-view-list-ticket"], [1, "mat-tab-left"], ["class", "mat-tab-left-count", 4, "ngIf"], [1, "list-ticket-tab", 3, "selectedIndex", "selectedIndexChange", "selectedTabChange"], ["mat-tab-label", ""], ["matTabContent", ""], [3, "src", "click"], [1, "mat-tab-left-count"], ["class", "bt-spinner", 4, "ngIf"], [3, "ngStyle"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", 4, "ngIf"], [1, "bt-spinner"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow"]], template: function OnboardingListComponent_Template(rf, ctx) { if (rf & 1) {
+        OnboardingListComponent.ɵcmp = core.ɵɵdefineComponent({ type: OnboardingListComponent, selectors: [["lib-onboarding-list"]], decls: 2, vars: 3, consts: [[1, "full-height", 2, "background", "#F4F7F9 0% 0% no-repeat padding-box", 3, "ngStyle"], ["class", "main-all-ticket-list", 4, "ngIf"], [1, "main-all-ticket-list"], [1, "page-title-container"], [1, "page-title"], [1, "page-search"], ["placeholder", "Recherche", "type", "text", 1, "search-box", 3, "ngModel", "ngModelChange"], [3, "src", "click", 4, "ngIf"], [1, "content-view-list-ticket"], [1, "mat-tab-left"], ["class", "mat-tab-left-count", 4, "ngIf"], [1, "list-ticket-tab", 3, "selectedIndex", "selectedIndexChange", "selectedTabChange"], [2, "background-image", "none"], ["mat-tab-label", ""], ["matTabContent", ""], [3, "src", "click"], [1, "mat-tab-left-count"], ["class", "bt-spinner", 4, "ngIf"], [3, "ngStyle"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", 4, "ngIf"], [1, "bt-spinner"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow"]], template: function OnboardingListComponent_Template(rf, ctx) { if (rf & 1) {
                 core.ɵɵelementStart(0, "mat-card", 0);
                 core.ɵɵtemplate(1, OnboardingListComponent_div_1_Template, 17, 5, "div", 1);
                 core.ɵɵelementEnd();
