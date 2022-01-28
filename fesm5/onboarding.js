@@ -56,6 +56,7 @@ var OnboardingService = /** @class */ (function () {
         var _this = this;
         this._token.subscribe(function (token) {
             console.log(token);
+            console.log('localstorage', localStorage.getItem('token'));
             var bearer = 'Bearer ' + (token || localStorage.getItem('token'));
             _this.header = new HttpHeaders({
                 'Authorization': bearer
