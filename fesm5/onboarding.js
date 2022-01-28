@@ -191,6 +191,7 @@ var OnboardingService = /** @class */ (function () {
                         var options = {
                             headers: _this.header
                         };
+                        console.log(options);
                         _this.http.get(_this.endpoint + "/profils", options)
                             .subscribe(function (data) {
                             _this.templates.next(data);
@@ -337,7 +338,6 @@ var OnboardingService = /** @class */ (function () {
                                 var options = {
                                     headers: _this.header
                                 };
-                                console.log(options);
                                 _this.http.get(_this.endpoint + "/onboarding", options)
                                     .subscribe(function (data) {
                                     _this.onboarding.next(data);

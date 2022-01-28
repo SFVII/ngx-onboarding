@@ -175,6 +175,7 @@ class OnboardingService {
                 const options = {
                     headers: this.header
                 };
+                console.log(options);
                 this.http.get(`${this.endpoint}/profils`, options)
                     .subscribe((data) => {
                     this.templates.next(data);
@@ -290,7 +291,6 @@ class OnboardingService {
                         const options = {
                             headers: this.header
                         };
-                        console.log(options);
                         this.http.get(`${this.endpoint}/onboarding`, options)
                             .subscribe((data) => {
                             this.onboarding.next(data);
