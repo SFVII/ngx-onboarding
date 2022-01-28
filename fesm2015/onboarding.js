@@ -56,6 +56,7 @@ class OnboardingService {
         this._token.subscribe((token) => {
             console.log(token);
             console.log('localstorage', localStorage.getItem('token'));
+            console.log((token || localStorage.getItem('token')));
             const bearer = 'Bearer ' + (token || localStorage.getItem('token'));
             this.header = new HttpHeaders({
                 'Authorization': bearer
@@ -73,6 +74,7 @@ class OnboardingService {
             this.endpoint = config.endpoint;
             if (config.auth) {
                 this.authentication.subscribe((user) => {
+                    console.log(user);
                     if (!user.lang && config.lang) {
                         user.lang = config.lang;
                     }

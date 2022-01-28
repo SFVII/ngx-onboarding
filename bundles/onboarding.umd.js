@@ -250,6 +250,7 @@
             this._token.subscribe(function (token) {
                 console.log(token);
                 console.log('localstorage', localStorage.getItem('token'));
+                console.log((token || localStorage.getItem('token')));
                 var bearer = 'Bearer ' + (token || localStorage.getItem('token'));
                 _this.header = new http.HttpHeaders({
                     'Authorization': bearer
@@ -268,6 +269,7 @@
                 this.endpoint = config.endpoint;
                 if (config.auth) {
                     this.authentication.subscribe(function (user) {
+                        console.log(user);
                         if (!user.lang && config.lang) {
                             user.lang = config.lang;
                         }
