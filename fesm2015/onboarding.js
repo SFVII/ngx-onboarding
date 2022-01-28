@@ -1,6 +1,6 @@
 import { __awaiter } from 'tslib';
 import { HttpHeaders, HttpClient, HttpClientModule } from '@angular/common/http';
-import { EventEmitter, ɵɵinject, ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, Inject, ɵɵdirectiveInject, ɵɵdefineComponent, ɵɵelement, Component, ɵɵgetCurrentView, ɵɵelementStart, ɵɵlistener, ɵɵrestoreView, ɵɵnextContext, ɵɵtext, ɵɵelementEnd, ɵɵstyleProp, ɵɵadvance, ɵɵtextInterpolate1, ɵɵtemplate, ɵɵproperty, ɵɵtextInterpolate, ɵɵpureFunction0, ɵɵreference, ɵɵprojectionDef, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵprojection, ɵɵclassMap, Input, Output, ɵɵtextInterpolate2, ElementRef, Renderer2, ɵɵdefineDirective, ɵɵNgOnChangesFeature, Directive, HostListener, ɵɵpureFunction1, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ViewChild, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, Optional, SkipSelf } from '@angular/core';
+import { EventEmitter, ɵɵinject, ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, Inject, ɵɵdirectiveInject, ɵɵdefineComponent, ɵɵelement, Component, ɵɵgetCurrentView, ɵɵelementStart, ɵɵlistener, ɵɵrestoreView, ɵɵnextContext, ɵɵtext, ɵɵelementEnd, ɵɵstyleProp, ɵɵadvance, ɵɵtextInterpolate1, ɵɵtemplate, ɵɵproperty, ɵɵtextInterpolate, ɵɵpureFunction0, ɵɵreference, ɵɵprojectionDef, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵprojection, ɵɵclassMap, Input, Output, ɵɵtextInterpolate2, ElementRef, Renderer2, ɵɵdefineDirective, ɵɵNgOnChangesFeature, Directive, HostListener, ɵɵpureFunction1, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ViewChild, ɵɵsanitizeUrl, ɵɵclassProp, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, Optional, SkipSelf } from '@angular/core';
 import { Subject, BehaviorSubject } from 'rxjs';
 import { Router, RouterOutlet, ActivatedRoute, RouterLinkWithHref, RouterLink, RouterModule } from '@angular/router';
 import { ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, DefaultValueAccessor, NgControlStatus, FormControlName, RequiredValidator, FormControl, NgModel, Validators, FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -11,7 +11,7 @@ import { MatButton, MatAnchor, MatButtonModule } from '@angular/material/button'
 import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatFormField, MatLabel, MatFormFieldModule } from '@angular/material/form-field';
 import { MatInput, MatInputModule } from '@angular/material/input';
-import { NgIf, NgForOf, NgSwitch, NgSwitchCase, NgSwitchDefault, CommonModule } from '@angular/common';
+import { NgIf, NgForOf, NgSwitch, NgSwitchCase, NgSwitchDefault, NgStyle, CommonModule } from '@angular/common';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
 import { MatCheckbox, MatCheckboxRequiredValidator, MatCheckboxModule } from '@angular/material/checkbox';
 import { MatOption } from '@angular/material/core';
@@ -28,7 +28,9 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { CdkTableModule } from '@angular/cdk/table';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { MatCardModule } from '@angular/material/card';
+import { MatCard, MatCardModule } from '@angular/material/card';
+import { CellsComponentList, CoreMatTable, TableComponent, TableModule } from 'table';
+import { MatTabGroup, MatTab, MatTabLabel, MatTabContent, MatTabsModule } from '@angular/material/tabs';
 
 class OnboardingService {
     constructor(config, http) {
@@ -4089,9 +4091,122 @@ OnboardingCreateComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingCreateCo
             }]
     }], function () { return [{ type: FormBuilder }, { type: OnboardingService }, { type: ActivatedRoute }, { type: Router }, { type: MatDialog }]; }, null); })();
 
+function OnboardingListComponent_div_1_img_8_Template(rf, ctx) { if (rf & 1) {
+    const _r365 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "img", 14);
+    ɵɵlistener("click", function OnboardingListComponent_div_1_img_8_Template_img_click_0_listener() { ɵɵrestoreView(_r365); const ctx_r364 = ɵɵnextContext(2); return ctx_r364.cancelSearch(); });
+    ɵɵelementEnd();
+} if (rf & 2) {
+    ɵɵproperty("src", "/assets/icons/search_off-24px.svg", ɵɵsanitizeUrl);
+} }
+function OnboardingListComponent_div_1_span_12_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "span", 15);
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r361 = ɵɵnextContext(2);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate1(" ", ctx_r361.onboardingList == null ? null : ctx_r361.onboardingList.totalElements, " ticket(s) ");
+} }
+function OnboardingListComponent_div_1_ng_template_15_Template(rf, ctx) { if (rf & 1) {
+    ɵɵtext(0);
+} if (rf & 2) {
+    const ctx_r362 = ɵɵnextContext(2);
+    ɵɵtextInterpolate1(" Onboarding (", (ctx_r362.onboardingList == null ? null : ctx_r362.onboardingList.totalElements) || (ctx_r362.onboardingList == null ? null : ctx_r362.onboardingList.data == null ? null : ctx_r362.onboardingList.data.length), ") ");
+} }
+function OnboardingListComponent_div_1_ng_template_16_div_0_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "div", 19);
+} }
+function OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "ngx-design-table", 20);
+} if (rf & 2) {
+    const ctx_r367 = ɵɵnextContext(3);
+    ɵɵproperty("columnDefinitions", ctx_r367.columnDefinitions)("displayDetail", true)("data", ctx_r367.onboardingList)("lang", ctx_r367.lang)("btnOverride", true)("inputSearch", ctx_r367.inputSearch)("EmptyRow", true);
+} }
+const _c0$4 = function () { return { "margin-bottom": "100vh" }; };
+function OnboardingListComponent_div_1_ng_template_16_Template(rf, ctx) { if (rf & 1) {
+    ɵɵtemplate(0, OnboardingListComponent_div_1_ng_template_16_div_0_Template, 1, 0, "div", 16);
+    ɵɵelement(1, "div", 17);
+    ɵɵelementStart(2, "div");
+    ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template, 1, 7, "ngx-design-table", 18);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r363 = ɵɵnextContext(2);
+    ɵɵproperty("ngIf", ctx_r363._loading_table || !ctx_r363.onboardingList);
+    ɵɵadvance(1);
+    ɵɵproperty("ngStyle", ctx_r363._loading_table && ɵɵpureFunction0(5, _c0$4));
+    ɵɵadvance(1);
+    ɵɵclassProp("ticket-list", !ctx_r363._loading_table);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", ctx_r363.onboardingList);
+} }
+function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
+    const _r369 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 2);
+    ɵɵelementStart(1, "div", 3);
+    ɵɵelementStart(2, "div", 4);
+    ɵɵtext(3, " Suivi des demandes ");
+    ɵɵelementEnd();
+    ɵɵelementStart(4, "div", 5);
+    ɵɵelementStart(5, "mat-icon");
+    ɵɵtext(6, "search");
+    ɵɵelementEnd();
+    ɵɵelementStart(7, "input", 6);
+    ɵɵlistener("ngModelChange", function OnboardingListComponent_div_1_Template_input_ngModelChange_7_listener($event) { ɵɵrestoreView(_r369); const ctx_r368 = ɵɵnextContext(); return ctx_r368.inputSearch = $event; });
+    ɵɵelementEnd();
+    ɵɵtemplate(8, OnboardingListComponent_div_1_img_8_Template, 1, 1, "img", 7);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(9, "div", 8);
+    ɵɵelementStart(10, "span", 9);
+    ɵɵtext(11, " Vous avez actuellement ");
+    ɵɵtemplate(12, OnboardingListComponent_div_1_span_12_Template, 2, 1, "span", 10);
+    ɵɵelementEnd();
+    ɵɵelementStart(13, "mat-tab-group", 11);
+    ɵɵlistener("selectedIndexChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedIndexChange_13_listener($event) { ɵɵrestoreView(_r369); const ctx_r370 = ɵɵnextContext(); return ctx_r370.index = $event; })("selectedTabChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedTabChange_13_listener($event) { ɵɵrestoreView(_r369); const ctx_r371 = ɵɵnextContext(); return ctx_r371.triggerChange($event); });
+    ɵɵelementStart(14, "mat-tab");
+    ɵɵtemplate(15, OnboardingListComponent_div_1_ng_template_15_Template, 1, 1, "ng-template", 12);
+    ɵɵtemplate(16, OnboardingListComponent_div_1_ng_template_16_Template, 4, 6, "ng-template", 13);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r359 = ɵɵnextContext();
+    ɵɵadvance(7);
+    ɵɵproperty("ngModel", ctx_r359.inputSearch);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", ctx_r359.inputSearch && ctx_r359.inputSearch != "");
+    ɵɵadvance(4);
+    ɵɵproperty("ngIf", ctx_r359.index == 0);
+    ɵɵadvance(1);
+    ɵɵproperty("@.disabled", true)("selectedIndex", ctx_r359.index);
+} }
+const _c1$2 = function () { return { "overflow-y": "hidden", "height": "100%", "display": "flex", "position": "absolute" }; };
 class OnboardingListComponent {
-    constructor(service) {
+    constructor(service, router, route) {
         this.service = service;
+        this.router = router;
+        this.route = route;
+        this.inputSearch = '';
+        this.search = '';
+        this.columnDefinitions = [
+            {
+                key: 'CreatedDate',
+                value: 'Date de création',
+                order: 1,
+                class: 'u-4',
+                module: CellsComponentList.DateFormat,
+                sort: true
+            }
+        ];
+        this._loading_table = true;
+        this.HiddenIndex = 0;
+        this.index = 0;
+        this.lang = 'fr';
+    }
+    cancelSearch() {
+        this.inputSearch = '';
     }
     ngOnInit() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -4100,17 +4215,44 @@ class OnboardingListComponent {
             }), 500);
             this.service.onboarding.subscribe((onboarding) => {
                 console.log(onboarding);
+                setTimeout(() => {
+                    this._loading_table = false;
+                }, 2000);
                 if (onboarding) {
-                    this.onboardingList = onboarding;
+                    //this.onboardingList=onboarding;
+                    this.onboardingList = new CoreMatTable(onboarding, {
+                        active: 'CreatedDate', direction: 'desc'
+                    }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
                 }
             });
         });
     }
+    triggerChange($event) {
+        if ($event.index !== this.HiddenIndex) {
+            this._loading_table = true;
+            this.index = $event.index;
+            this.router.navigate([], {
+                relativeTo: this.route,
+                queryParams: { page: null, tab: $event.index + 1 },
+                queryParamsHandling: 'merge',
+            });
+            this.HiddenIndex = $event.index;
+            setTimeout(() => {
+                this._loading_table = false;
+            }, 2000);
+        }
+    }
 }
-OnboardingListComponent.ɵfac = function OnboardingListComponent_Factory(t) { return new (t || OnboardingListComponent)(ɵɵdirectiveInject(OnboardingService)); };
-OnboardingListComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingListComponent, selectors: [["lib-onboarding-list"]], decls: 1, vars: 0, template: function OnboardingListComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵtext(0, " List onboarding");
-    } }, styles: [""] });
+OnboardingListComponent.ɵfac = function OnboardingListComponent_Factory(t) { return new (t || OnboardingListComponent)(ɵɵdirectiveInject(OnboardingService), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(ActivatedRoute)); };
+OnboardingListComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingListComponent, selectors: [["lib-onboarding-list"]], decls: 2, vars: 3, consts: [[1, "full-height", 2, "background", "#F4F7F9 0% 0% no-repeat padding-box", 3, "ngStyle"], ["class", "main-all-ticket-list", 4, "ngIf"], [1, "main-all-ticket-list"], [1, "page-title-container"], [1, "page-title"], [1, "page-search"], ["placeholder", "Recherche", "type", "text", 1, "search-box", 3, "ngModel", "ngModelChange"], [3, "src", "click", 4, "ngIf"], [1, "content-view-list-ticket"], [1, "mat-tab-left"], ["class", "mat-tab-left-count", 4, "ngIf"], [1, "list-ticket-tab", 3, "selectedIndex", "selectedIndexChange", "selectedTabChange"], ["mat-tab-label", ""], ["matTabContent", ""], [3, "src", "click"], [1, "mat-tab-left-count"], ["class", "bt-spinner", 4, "ngIf"], [3, "ngStyle"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", 4, "ngIf"], [1, "bt-spinner"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow"]], template: function OnboardingListComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵelementStart(0, "mat-card", 0);
+        ɵɵtemplate(1, OnboardingListComponent_div_1_Template, 17, 5, "div", 1);
+        ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵɵproperty("ngStyle", ctx._loading_table && ɵɵpureFunction0(2, _c1$2));
+        ɵɵadvance(1);
+        ɵɵproperty("ngIf", ctx.onboardingList);
+    } }, directives: [MatCard, NgStyle, NgIf, MatIcon, DefaultValueAccessor, NgControlStatus, NgModel, MatTabGroup, MatTab, MatTabLabel, MatTabContent, TableComponent], styles: ["mat-card[_ngcontent-%COMP%]{display:block;width:100%}md-tooltip[_ngcontent-%COMP%]   ._md-content[_ngcontent-%COMP%], md-tooltip.tt-multiline[_ngcontent-%COMP%]   ._md-content[_ngcontent-%COMP%]{height:auto}table[_ngcontent-%COMP%]{width:100%}.element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]{display:table;width:90%}.element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]   .block1[_ngcontent-%COMP%]{display:inline-table;float:left;width:50%;text-align:left}.element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]   .block1[_ngcontent-%COMP%]   strong[_ngcontent-%COMP%]{font:bold 13px/20px nexa;letter-spacing:0;color:#171f26}.element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]   .block1[_ngcontent-%COMP%]   p[_ngcontent-%COMP%], .element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]   .block1[_ngcontent-%COMP%]   small[_ngcontent-%COMP%]{font-size:13px!important;letter-spacing:0;color:#171f26}.main-all-ticket-list[_ngcontent-%COMP%]{display:block;grid-column-gap:0;grid-row-gap:0;max-width:1500px;margin-left:auto;margin-right:auto;width:100%;animation:.7s fadein!important;-moz-animation:.7s fadein!important;-webkit-animation:.7s fadein!important;-o-animation:.7s fadein!important}.main-all-ticket-list[_ngcontent-%COMP%]   .component-title[_ngcontent-%COMP%]{-ms-grid-row:1;-ms-grid-column:1;-ms-grid-column-span:2;grid-area:1/1/1/3;padding-left:5px;padding-top:40px;padding-bottom:40px;vertical-align:middle;width:100%}.main-all-ticket-list[_ngcontent-%COMP%]   .content-view-list-ticket[_ngcontent-%COMP%]{-ms-grid-row:2;-ms-grid-row-span:2;-ms-grid-column:1;-ms-grid-column-span:2;grid-area:2/1/4/3;margin-left:18px;padding-left:0;padding-right:0;padding-top:20px}.main-all-ticket-list[_ngcontent-%COMP%]   .content-view-list-ticket[_ngcontent-%COMP%]   table[_ngcontent-%COMP%], app-list-preview[_ngcontent-%COMP%]{width:100%}  .mat-tab-label-active{background:#b6d1cd;opacity:1!important}  .mat-tab-label-active .mat-tab-label-content{color:#510b4e;font-weight:600}.col-lg-6[_ngcontent-%COMP%]{width:50%;vertical-align:top;display:inline-table}@-webkit-keyframes three-quarters-loader{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes three-quarters-loader{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.three-quarters-loader[_ngcontent-%COMP%]:not(:required){-webkit-animation:1.25s linear infinite three-quarters-loader;animation:1.25s linear infinite three-quarters-loader;border:4px solid #4285f4;border-right-color:transparent;border-radius:16px;box-sizing:border-box;display:inline-block;margin-left:10px;position:relative;overflow:hidden;text-indent:-9999px;width:20px;height:20px}@keyframes fadein{from{opacity:0;margin-top:20px}to{opacity:1;margin-top:0}}@-webkit-keyframes fadein{from{opacity:0;margin-top:20px}to{opacity:1;margin-top:0}}.mat-tab-left[_ngcontent-%COMP%]{color:#171f26;font:18px/20px \"Nexa Text\";letter-spacing:0;margin-left:48px;margin-top:15px;position:absolute;text-align:left}.mat-tab-left-count[_ngcontent-%COMP%]{color:#171f26;font:17px/20px \"Nexa Text Bold\";letter-spacing:0;text-align:left}.page-title-container[_ngcontent-%COMP%]{display:flex;margin-right:48px}.page-title[_ngcontent-%COMP%]{text-align:left;font:bold 32px/30px \"Nexa Text Bold\";letter-spacing:0;color:#171f26;margin-left:2em;margin-top:-8px}.page-search[_ngcontent-%COMP%]{margin-left:auto;position:relative;width:400px}.page-search[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{left:18%;margin-top:10px;position:absolute}.page-search[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{cursor:pointer;margin-top:10px;position:absolute;right:10px}.list-ticket-tab[_ngcontent-%COMP%]{padding-left:48px;padding-right:48px}.detail-view-ticket[_ngcontent-%COMP%]{float:right;margin-right:20px;margin-top:-30px}@media (min-width:1800px){.page-search[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{left:16%}}.ticket-list[_ngcontent-%COMP%]{animation:.7s fadein!important;-moz-animation:.7s fadein!important;-webkit-animation:.7s fadein!important;-o-animation:.7s fadein!important}.bt-spinner[_ngcontent-%COMP%]{width:75px;height:75px;border-radius:50%;background-color:transparent;border:none;border-top:2px solid #03a9f4;-webkit-animation:1s linear infinite spin;animation:1s linear infinite spin;position:relative;left:50%;top:25vh}@-webkit-keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}"] });
 /*@__PURE__*/ (function () { ɵsetClassMetadata(OnboardingListComponent, [{
         type: Component,
         args: [{
@@ -4118,7 +4260,7 @@ OnboardingListComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingListCompon
                 templateUrl: './onboarding-list.component.html',
                 styleUrls: ['./onboarding-list.component.scss']
             }]
-    }], function () { return [{ type: OnboardingService }]; }, null); })();
+    }], function () { return [{ type: OnboardingService }, { type: Router }, { type: ActivatedRoute }]; }, null); })();
 
 ;
 const onBoardingRoutes = [
@@ -4190,10 +4332,13 @@ OnboardingModule.ɵinj = ɵɵdefineInjector({ factory: function OnboardingModule
             MatDialogModule,
             MatStepperModule,
             MatProgressBarModule,
-            MatTooltipModule
+            MatTooltipModule,
+            TableModule,
+            MatTabsModule
         ],
         HttpClientModule,
-        RouterModule] });
+        RouterModule,
+        MatTabsModule] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(OnboardingModule, { declarations: [MaterialElevationDirective,
         OnboardingComponent,
         TemplateProfileCreateComponent,
@@ -4226,13 +4371,16 @@ OnboardingModule.ɵinj = ɵɵdefineInjector({ factory: function OnboardingModule
         MatDialogModule,
         MatStepperModule,
         MatProgressBarModule,
-        MatTooltipModule], exports: [OnboardingComponent,
+        MatTooltipModule,
+        TableModule,
+        MatTabsModule], exports: [OnboardingComponent,
         HttpClientModule,
         TemplateProfileCreateComponent,
         TemplateProfileListComponent,
         OnboardingListComponent,
         OnboardingCreateComponent,
-        RouterModule] }); })();
+        RouterModule,
+        MatTabsModule] }); })();
 /*@__PURE__*/ (function () { ɵsetClassMetadata(OnboardingModule, [{
         type: NgModule,
         args: [{
@@ -4275,7 +4423,9 @@ OnboardingModule.ɵinj = ɵɵdefineInjector({ factory: function OnboardingModule
                     MatDialogModule,
                     MatStepperModule,
                     MatProgressBarModule,
-                    MatTooltipModule
+                    MatTooltipModule,
+                    TableModule,
+                    MatTabsModule
                 ],
                 providers: [OnboardingService, CanDeactivateGuard],
                 entryComponents: [UpdateProfilComponent, ExitConfirmComponent],
@@ -4287,6 +4437,7 @@ OnboardingModule.ɵinj = ɵɵdefineInjector({ factory: function OnboardingModule
                     OnboardingListComponent,
                     OnboardingCreateComponent,
                     RouterModule,
+                    MatTabsModule
                 ]
             }]
     }], function () { return [{ type: OnboardingModule, decorators: [{
