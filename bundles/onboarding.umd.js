@@ -4687,7 +4687,7 @@
                                 return row;
                             });
                             console.log(x);
-                            _this.onboardingList = new table$2.CoreMatTable(onboarding, {
+                            _this.onboardingList = new table$2.CoreMatTable(x, {
                                 active: 'CreatedDate', direction: 'desc'
                             }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
                         }

@@ -4234,7 +4234,7 @@ class OnboardingListComponent {
                         return row;
                     });
                     console.log(x);
-                    this.onboardingList = new CoreMatTable(onboarding, {
+                    this.onboardingList = new CoreMatTable(x, {
                         active: 'CreatedDate', direction: 'desc'
                     }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
                 }
