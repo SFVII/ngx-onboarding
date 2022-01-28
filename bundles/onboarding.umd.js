@@ -4639,7 +4639,7 @@
                     key: 'createdAt',
                     value: 'Date de création',
                     order: 1,
-                    class: 'u-1',
+                    class: 'u-2',
                     module: table$2.CellsComponentList.DateFormat,
                     sort: true
                 },
@@ -4647,7 +4647,7 @@
                     key: 'ContactName',
                     value: 'Contact',
                     order: 2,
-                    class: 'u-1',
+                    class: 'u-2',
                     sort: true,
                     module: table$2.CellsComponentList.NameAvatar,
                     override: ['ContactName', 'Email'],
@@ -4683,12 +4683,10 @@
                         if (onboarding) {
                             //this.onboardingList=onboarding;
                             var x = onboarding.map(function (row) {
-                                console.log(row.vcontacts);
                                 row.ContactName = row.vcontacts[0].Name;
                                 row.Email = row.vcontacts[0].Email;
                                 return row;
                             });
-                            console.log(x);
                             _this.onboardingList = new table$2.CoreMatTable(x, {
                                 active: 'CreatedDate', direction: 'desc'
                             }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);

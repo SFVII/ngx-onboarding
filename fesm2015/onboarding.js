@@ -4195,7 +4195,7 @@ class OnboardingListComponent {
                 key: 'createdAt',
                 value: 'Date de création',
                 order: 1,
-                class: 'u-1',
+                class: 'u-2',
                 module: CellsComponentList.DateFormat,
                 sort: true
             },
@@ -4203,7 +4203,7 @@ class OnboardingListComponent {
                 key: 'ContactName',
                 value: 'Contact',
                 order: 2,
-                class: 'u-1',
+                class: 'u-2',
                 sort: true,
                 module: CellsComponentList.NameAvatar,
                 override: ['ContactName', 'Email'],
@@ -4230,12 +4230,10 @@ class OnboardingListComponent {
                 if (onboarding) {
                     //this.onboardingList=onboarding;
                     let x = onboarding.map((row) => {
-                        console.log(row.vcontacts);
                         row.ContactName = row.vcontacts[0].Name;
                         row.Email = row.vcontacts[0].Email;
                         return row;
                     });
-                    console.log(x);
                     this.onboardingList = new CoreMatTable(x, {
                         active: 'CreatedDate', direction: 'desc'
                     }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
