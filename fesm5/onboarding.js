@@ -4457,7 +4457,6 @@ var OnboardingListComponent = /** @class */ (function () {
                 value: 'Contact',
                 order: 2,
                 class: 'u-2',
-                module: CellsComponentList.NameAvatar,
                 sort: true
             },
         ];

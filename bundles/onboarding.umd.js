@@ -4648,7 +4648,6 @@
                     value: 'Contact',
                     order: 2,
                     class: 'u-2',
-                    module: table$2.CellsComponentList.NameAvatar,
                     sort: true
                 },
             ];
