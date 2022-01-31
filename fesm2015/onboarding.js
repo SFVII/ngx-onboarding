@@ -3835,7 +3835,7 @@ class OnboardingCreateComponent {
                     this.form.patchValue(this.currentOnboarding);
                     this.categories = this.currentOnboarding.categories;
                     this.currentTemplate = (_a = this.currentOnboarding) === null || _a === void 0 ? void 0 : _a.vtemplates[0];
-                    this.onSelectContactTemplate();
+                    //this.onSelectContactTemplate()
                 }), 500);
             }
         });
