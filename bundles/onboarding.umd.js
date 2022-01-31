@@ -4204,6 +4204,7 @@
                         _this.templates = data;
                     });
                     this.id = this.route.snapshot.paramMap.get("id");
+                    console.log(this.id);
                     if (this.id !== "0") {
                         setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
                             var _a;
