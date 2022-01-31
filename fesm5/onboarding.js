@@ -4496,6 +4496,7 @@ var OnboardingListComponent = /** @class */ (function () {
                             row.Email = row.vcontacts[0].Email;
                             return row;
                         });
+                        console.log(x);
                         _this.onboardingList = new CoreMatTable(x, {
                             active: 'CreatedDate', direction: 'desc'
                         }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
