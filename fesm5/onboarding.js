@@ -4049,6 +4049,7 @@ var OnboardingCreateComponent = /** @class */ (function () {
     OnboardingCreateComponent.prototype.onSelect = function (id) {
         this.currentTemplate = this.templates.find(function (t) { return t._id === id; });
         this.categories = this.currentTemplate.categories;
+        console.log(this.categories);
     };
     OnboardingCreateComponent.prototype.existSubForm = function (forms) {
         var e_1, _a;
