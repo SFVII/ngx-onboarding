@@ -4024,6 +4024,8 @@ var OnboardingCreateComponent = /** @class */ (function () {
                                     return [4 /*yield*/, this.service.getOnboarding(this.id)];
                                 case 1:
                                     _a.currentOnboarding = _c.sent();
+                                    console.log(this.currentOnboarding);
+                                    console.log(this.currentOnboarding.categories);
                                     this.form.patchValue(this.currentOnboarding);
                                     this.categories = this.currentOnboarding.categories;
                                     this.currentTemplate = (_b = this.currentOnboarding) === null || _b === void 0 ? void 0 : _b.vtemplates[0];
@@ -4494,7 +4496,6 @@ var OnboardingListComponent = /** @class */ (function () {
                             row.Email = row.vcontacts[0].Email;
                             return row;
                         });
-                        console.log(x);
                         _this.onboardingList = new CoreMatTable(x, {
                             active: 'CreatedDate', direction: 'desc'
                         }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
