@@ -3381,6 +3381,7 @@ class SubOnboardingCreateComponent {
         };
     }
     ngOnInit() {
+        console.log(this.field);
     }
     drop(event) {
         this.onDrop.emit(event);
@@ -3831,7 +3832,6 @@ class OnboardingCreateComponent {
                     var _a;
                     this.currentOnboarding = yield this.service.getOnboarding(this.id);
                     console.log(this.currentOnboarding);
-                    console.log(this.currentOnboarding.categories);
                     this.form.patchValue(this.currentOnboarding);
                     this.categories = this.currentOnboarding.categories;
                     this.currentTemplate = (_a = this.currentOnboarding) === null || _a === void 0 ? void 0 : _a.vtemplates[0];
@@ -3851,7 +3851,6 @@ class OnboardingCreateComponent {
     onSelect(id) {
         this.currentTemplate = this.templates.find((t) => t._id === id);
         this.categories = this.currentTemplate.categories;
-        console.log(this.categories);
     }
     existSubForm(forms) {
         let exist = false;

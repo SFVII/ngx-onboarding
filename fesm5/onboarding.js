@@ -3554,6 +3554,7 @@ var SubOnboardingCreateComponent = /** @class */ (function () {
         };
     }
     SubOnboardingCreateComponent.prototype.ngOnInit = function () {
+        console.log(this.field);
     };
     SubOnboardingCreateComponent.prototype.drop = function (event) {
         this.onDrop.emit(event);
@@ -4025,7 +4026,6 @@ var OnboardingCreateComponent = /** @class */ (function () {
                                 case 1:
                                     _a.currentOnboarding = _c.sent();
                                     console.log(this.currentOnboarding);
-                                    console.log(this.currentOnboarding.categories);
                                     this.form.patchValue(this.currentOnboarding);
                                     this.categories = this.currentOnboarding.categories;
                                     this.currentTemplate = (_b = this.currentOnboarding) === null || _b === void 0 ? void 0 : _b.vtemplates[0];
@@ -4049,7 +4049,6 @@ var OnboardingCreateComponent = /** @class */ (function () {
     OnboardingCreateComponent.prototype.onSelect = function (id) {
         this.currentTemplate = this.templates.find(function (t) { return t._id === id; });
         this.categories = this.currentTemplate.categories;
-        console.log(this.categories);
     };
     OnboardingCreateComponent.prototype.existSubForm = function (forms) {
         var e_1, _a;
