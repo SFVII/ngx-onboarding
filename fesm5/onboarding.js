@@ -4011,7 +4011,6 @@ var OnboardingCreateComponent = /** @class */ (function () {
                 }); }, 500);
                 this.service._templates.subscribe(function (data) {
                     _this.templates = data;
-                    console.log(_this.templates);
                 });
                 this.id = this.route.snapshot.paramMap.get("id");
                 if (this.id !== "0") {
@@ -4025,7 +4024,6 @@ var OnboardingCreateComponent = /** @class */ (function () {
                                     return [4 /*yield*/, this.service.getOnboarding(this.id)];
                                 case 1:
                                     _a.currentOnboarding = _c.sent();
-                                    console.log(this.currentOnboarding);
                                     this.form.patchValue(this.currentOnboarding);
                                     this.categories = this.currentOnboarding.categories;
                                     this.currentTemplate = (_b = this.currentOnboarding) === null || _b === void 0 ? void 0 : _b.vtemplates[0];
