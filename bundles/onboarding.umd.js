@@ -3394,7 +3394,7 @@
             this.defaultElevation = 2;
             this.raisedElevation = 8;
             this.service.templates.subscribe(function (templates) {
-                if (templates.length > 0) {
+                if (templates && templates.length > 0) {
                     _this.datas = templates;
                 }
             });
@@ -4202,6 +4202,7 @@
                     }); }, 500);
                     this.service._templates.subscribe(function (data) {
                         _this.templates = data;
+                        console.log(_this.templates);
                     });
                     this.id = this.route.snapshot.paramMap.get("id");
                     if (this.id !== "0") {

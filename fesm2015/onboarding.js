@@ -3065,7 +3065,7 @@ class TemplateProfileListComponent {
         this.defaultElevation = 2;
         this.raisedElevation = 8;
         this.service.templates.subscribe((templates) => {
-            if (templates.length > 0) {
+            if (templates && templates.length > 0) {
                 this.datas = templates;
             }
         });
@@ -3824,6 +3824,7 @@ class OnboardingCreateComponent {
             }), 500);
             this.service._templates.subscribe((data) => {
                 this.templates = data;
+                console.log(this.templates);
             });
             this.id = this.route.snapshot.paramMap.get("id");
             if (this.id !== "0") {
