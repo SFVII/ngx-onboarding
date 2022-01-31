@@ -4303,7 +4303,7 @@
                         case 5:
                             _b.sent();
                             this.canExit = true;
-                            this.router.navigate([this.service.mainPath + '/onboarding']);
+                            console.log(this.service.mainPath + '/onboarding');
                             return [3 /*break*/, 7];
                         case 6:
                             console.log("errror......");
