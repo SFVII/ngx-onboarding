@@ -3554,7 +3554,6 @@ var SubOnboardingCreateComponent = /** @class */ (function () {
         };
     }
     SubOnboardingCreateComponent.prototype.ngOnInit = function () {
-        console.log(this.field);
     };
     SubOnboardingCreateComponent.prototype.drop = function (event) {
         this.onDrop.emit(event);

@@ -3381,7 +3381,6 @@ class SubOnboardingCreateComponent {
         };
     }
     ngOnInit() {
-        console.log(this.field);
     }
     drop(event) {
         this.onDrop.emit(event);
