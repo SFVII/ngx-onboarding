@@ -4565,14 +4565,14 @@
         core.ɵɵelement(0, "ngx-design-table", 21);
     } if (rf & 2) {
         var ctx_r739 = core.ɵɵnextContext(3);
-        core.ɵɵproperty("columnDefinitions", ctx_r739.columnDefinitions)("displayDetail", false)("data", ctx_r739.onboardingList)("lang", ctx_r739.lang)("btnOverride", true)("inputSearch", ctx_r739.inputSearch)("EmptyRow", true)("blockDetails", false);
+        core.ɵɵproperty("columnDefinitions", ctx_r739.columnDefinitions)("displayDetail", false)("data", ctx_r739.onboardingList)("lang", ctx_r739.lang)("btnOverride", true)("inputSearch", ctx_r739.inputSearch)("EmptyRow", true)("displayDetail", true)("blockDetails", true);
     } }
     var _c0$4 = function () { return { "margin-bottom": "100vh" }; };
     function OnboardingListComponent_div_1_ng_template_16_Template(rf, ctx) { if (rf & 1) {
         core.ɵɵtemplate(0, OnboardingListComponent_div_1_ng_template_16_div_0_Template, 1, 0, "div", 17);
         core.ɵɵelement(1, "div", 18);
         core.ɵɵelementStart(2, "div");
-        core.ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template, 1, 8, "ngx-design-table", 19);
+        core.ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template, 1, 9, "ngx-design-table", 19);
         core.ɵɵelementEnd();
     } if (rf & 2) {
         var ctx_r735 = core.ɵɵnextContext(2);
