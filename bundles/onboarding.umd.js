@@ -3040,7 +3040,10 @@
                     key: '_id',
                     value: 'Id',
                     order: 1,
-                    class: 'u-1'
+                    class: 'u-1',
+                    module: table$2.CellsComponentList.ButtonLink,
+                    sort: true,
+                    override: ['/administration/onboarding/requests', '_id']
                 },
                 {
                     key: 'createdAt',
