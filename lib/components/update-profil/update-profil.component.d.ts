@@ -1,7 +1,6 @@
 import { OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { FormGroup } from '@angular/forms';
-import * as i0 from "@angular/core";
 export declare class UpdateProfilComponent implements OnInit {
     private data;
     private dialogRef;
@@ -15,6 +14,4 @@ export declare class UpdateProfilComponent implements OnInit {
     onClose(): void;
     onSelectPicto(e: any, picto: any): void;
     onShowPictoList(e: any): void;
-    static ɵfac: i0.ɵɵFactoryDef<UpdateProfilComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<UpdateProfilComponent, "lib-update-profil", never, {}, {}, never>;
 }

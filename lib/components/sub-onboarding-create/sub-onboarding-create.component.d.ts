@@ -1,6 +1,5 @@
 import { OnInit, EventEmitter } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import * as i0 from "@angular/core";
 export declare class SubOnboardingCreateComponent implements OnInit {
     field: any;
     length: any;
@@ -39,6 +38,4 @@ export declare class SubOnboardingCreateComponent implements OnInit {
     get chips(): any;
     formatOther(other: string): string;
     checkSubForm(forms: any): boolean;
-    static ɵfac: i0.ɵɵFactoryDef<SubOnboardingCreateComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<SubOnboardingCreateComponent, "lib-sub-create-onboarding", never, { "field": "field"; "length": "length"; "i": "i"; "j": "j"; }, { "onAddKeywordFromInput": "onAddKeywordFromInput"; "onKeyPress": "onKeyPress"; "onDrop": "onDrop"; "onAddNewField": "onAddNewField"; "onRemoveField": "onRemoveField"; "onChangeType": "onChangeType"; "onRemoveKeyword": "onRemoveKeyword"; "onAddNewSubLevelField": "onAddNewSubLevelField"; "onExpendMore": "onExpendMore"; "onChangeLabel": "onChangeLabel"; "onCheckedChip": "onCheckedChip"; }, never>;
 }
