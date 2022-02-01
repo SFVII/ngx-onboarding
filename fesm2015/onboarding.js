@@ -2193,18 +2193,18 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
             });
             this.id = this.route.snapshot.paramMap.get("id");
             if (this.id !== "0") {
+                this.showMode = true;
                 setTimeout(() => __awaiter(this, void 0, void 0, function* () {
                     var _a;
                     this.currentOnboarding = yield this.service.getOnboarding(this.id);
                     console.log(this.currentOnboarding);
+                    console.log(this.showMode);
                     this.form.patchValue(this.currentOnboarding);
                     this.categories = this.currentOnboarding.categories;
                     this.currentTemplate = (_a = this.currentOnboarding) === null || _a === void 0 ? void 0 : _a.vtemplates[0];
                     if (this.currentOnboarding.TemplateId) {
                         this.onSelectContactTemplate();
                     }
-                    this.showMode = true;
-                    console.log(this.showMode);
                 }), 500);
             }
             else {

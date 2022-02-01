@@ -2566,6 +2566,7 @@
                     });
                     this.id = this.route.snapshot.paramMap.get("id");
                     if (this.id !== "0") {
+                        this.showMode = true;
                         setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
                             var _a;
                             var _b;
@@ -2577,14 +2578,13 @@
                                     case 1:
                                         _a.currentOnboarding = _c.sent();
                                         console.log(this.currentOnboarding);
+                                        console.log(this.showMode);
                                         this.form.patchValue(this.currentOnboarding);
                                         this.categories = this.currentOnboarding.categories;
                                         this.currentTemplate = (_b = this.currentOnboarding) === null || _b === void 0 ? void 0 : _b.vtemplates[0];
                                         if (this.currentOnboarding.TemplateId) {
                                             this.onSelectContactTemplate();
                                         }
-                                        this.showMode = true;
-                                        console.log(this.showMode);
                                         return [2 /*return*/];
                                 }
                             });
