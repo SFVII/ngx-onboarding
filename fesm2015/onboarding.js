@@ -792,7 +792,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                                 expandMore: false,
                             },
                             {
-                                label: "Votre mot de passe.",
+                                label: "Votre mot de passe",
                                 key: "YourPassword",
                                 expandOnboarding: true,
                                 defaultValue: null,
@@ -883,7 +883,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                 defaultValue: false,
                 forms: [
                     {
-                        label: "Adresse mail à créer.",
+                        label: "Adresse mail à créer",
                         key: "EmailToCreate",
                         expandOnboarding: true,
                         defaultValue: null,
@@ -939,7 +939,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                         ],
                     },
                     {
-                        label: "Listes  de distribution.",
+                        label: "Listes  de distribution",
                         key: "DistributionList",
                         expandOnboarding: true,
                         defaultValue: null,
@@ -975,7 +975,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                                 expandMore: false,
                             },
                             {
-                                label: "Descriptions.",
+                                label: "Descriptions",
                                 key: "Description",
                                 expandOnboarding: true,
                                 defaultValue: null,
@@ -995,7 +995,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                         ],
                     },
                     {
-                        label: "Ajouter des boites mails délégués.",
+                        label: "Ajouter des boites mails délégués",
                         key: "AddInboxMailDelegate",
                         expandOnboarding: true,
                         defaultValue: null,
@@ -1013,7 +1013,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                         expandMore: false,
                         forms: [
                             {
-                                label: "Descriptions.",
+                                label: "Descriptions",
                                 key: "Description",
                                 expandOnboarding: true,
                                 defaultValue: null,
@@ -1048,7 +1048,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                 defaultValue: false,
                 forms: [
                     {
-                        label: "Accès aux lecteurs réseaux.",
+                        label: "Accès aux lecteurs réseaux",
                         key: "ReadNetworkAccess",
                         expandOnboarding: true,
                         defaultValue: null,
@@ -1170,7 +1170,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                 defaultValue: false,
                 forms: [
                     {
-                        label: "Accès aux imprimantes.",
+                        label: "Accès aux imprimantes",
                         key: "PrinterAccess",
                         expandOnboarding: true,
                         defaultValue: null,

@@ -1036,7 +1036,7 @@
                                     expandMore: false,
                                 },
                                 {
-                                    label: "Votre mot de passe.",
+                                    label: "Votre mot de passe",
                                     key: "YourPassword",
                                     expandOnboarding: true,
                                     defaultValue: null,
@@ -1127,7 +1127,7 @@
                     defaultValue: false,
                     forms: [
                         {
-                            label: "Adresse mail à créer.",
+                            label: "Adresse mail à créer",
                             key: "EmailToCreate",
                             expandOnboarding: true,
                             defaultValue: null,
@@ -1183,7 +1183,7 @@
                             ],
                         },
                         {
-                            label: "Listes  de distribution.",
+                            label: "Listes  de distribution",
                             key: "DistributionList",
                             expandOnboarding: true,
                             defaultValue: null,
@@ -1219,7 +1219,7 @@
                                     expandMore: false,
                                 },
                                 {
-                                    label: "Descriptions.",
+                                    label: "Descriptions",
                                     key: "Description",
                                     expandOnboarding: true,
                                     defaultValue: null,
@@ -1239,7 +1239,7 @@
                             ],
                         },
                         {
-                            label: "Ajouter des boites mails délégués.",
+                            label: "Ajouter des boites mails délégués",
                             key: "AddInboxMailDelegate",
                             expandOnboarding: true,
                             defaultValue: null,
@@ -1257,7 +1257,7 @@
                             expandMore: false,
                             forms: [
                                 {
-                                    label: "Descriptions.",
+                                    label: "Descriptions",
                                     key: "Description",
                                     expandOnboarding: true,
                                     defaultValue: null,
@@ -1292,7 +1292,7 @@
                     defaultValue: false,
                     forms: [
                         {
-                            label: "Accès aux lecteurs réseaux.",
+                            label: "Accès aux lecteurs réseaux",
                             key: "ReadNetworkAccess",
                             expandOnboarding: true,
                             defaultValue: null,
@@ -1414,7 +1414,7 @@
                     defaultValue: false,
                     forms: [
                         {
-                            label: "Accès aux imprimantes.",
+                            label: "Accès aux imprimantes",
                             key: "PrinterAccess",
                             expandOnboarding: true,
                             defaultValue: null,
