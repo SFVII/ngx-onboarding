@@ -2383,10 +2383,28 @@ var OnboardingCreateComponent = /** @class */ (function () {
                                     return [4 /*yield*/, this.service.getOnboarding(this.id)];
                                 case 1:
                                     _a.currentOnboarding = _c.sent();
-                                    console.log(this.currentOnboarding);
                                     this.form.patchValue(this.currentOnboarding);
                                     this.categories = this.currentOnboarding.categories;
                                     this.currentTemplate = (_b = this.currentOnboarding) === null || _b === void 0 ? void 0 : _b.vtemplates[0];
+                                    this.onSelectContactTemplate();
+                                    return [2 /*return*/];
+                            }
+                        });
+                    }); }, 500);
+                }
+                else {
+                    setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
+                        var _a;
+                        return __generator(this, function (_b) {
+                            switch (_b.label) {
+                                case 0:
+                                    _a = this;
+                                    return [4 /*yield*/, this.service.getOnboarding(this.id)];
+                                case 1:
+                                    _a.currentOnboarding = _b.sent();
+                                    console.log(this.currentOnboarding);
+                                    this.form.patchValue(this.currentOnboarding);
+                                    this.categories = this.currentOnboarding.categories;
                                     return [2 /*return*/];
                             }
                         });
