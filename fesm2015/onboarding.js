@@ -2594,9 +2594,15 @@ let OnboardingListComponent = class OnboardingListComponent {
         this.search = '';
         this.columnDefinitions = [
             {
+                key: '_id',
+                value: 'Id',
+                order: 1,
+                class: 'u-1'
+            },
+            {
                 key: 'createdAt',
                 value: 'Date de création',
-                order: 1,
+                order: 2,
                 class: 'u-2',
                 module: CellsComponentList.DateFormat,
                 sort: true
@@ -2604,7 +2610,7 @@ let OnboardingListComponent = class OnboardingListComponent {
             {
                 key: 'ContactName',
                 value: 'Contact',
-                order: 2,
+                order: 3,
                 class: 'u-2',
                 sort: true,
                 module: CellsComponentList.NameAvatar,
@@ -2613,7 +2619,8 @@ let OnboardingListComponent = class OnboardingListComponent {
             {
                 key: 'TemplateName',
                 value: 'Template',
-                order: 3
+                order: 4,
+                class: 'u-2'
             }
         ];
         this._loading_table = true;
