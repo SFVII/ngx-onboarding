@@ -2387,7 +2387,9 @@ var OnboardingCreateComponent = /** @class */ (function () {
                                     this.form.patchValue(this.currentOnboarding);
                                     this.categories = this.currentOnboarding.categories;
                                     this.currentTemplate = (_b = this.currentOnboarding) === null || _b === void 0 ? void 0 : _b.vtemplates[0];
-                                    this.onSelectContactTemplate();
+                                    if (this.currentOnboarding.TemplateId) {
+                                        this.onSelectContactTemplate();
+                                    }
                                     return [2 /*return*/];
                             }
                         });
