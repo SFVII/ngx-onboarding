@@ -2204,6 +2204,7 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
                         this.onSelectContactTemplate();
                     }
                     this.showMode = true;
+                    console.log(this.showMode);
                 }), 500);
             }
             else {

@@ -2392,6 +2392,7 @@ var OnboardingCreateComponent = /** @class */ (function () {
                                         this.onSelectContactTemplate();
                                     }
                                     this.showMode = true;
+                                    console.log(this.showMode);
                                     return [2 /*return*/];
                             }
                         });
