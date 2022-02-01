@@ -2256,6 +2256,7 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
         }));
     }
     onSubmit() {
+        var _a;
         return __awaiter(this, void 0, void 0, function* () {
             console.log(this.categories);
             if (this.form.valid && this.onChangeCategory()) {
@@ -2263,11 +2264,10 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
                     ? yield this.service.updateOnboarding(Object.assign(Object.assign({}, this.form.value), { categories: this.categories, _id: this.id }))
                     : yield this.service.createOnboarding(Object.assign(Object.assign({}, this.form.value), { categories: this.categories }));
                 if (result) {
-                    console.log(result);
                     yield this.service.getAllProfil();
                     this.canExit = true;
                     console.log(this.service.mainPath + '/onboarding');
-                    //this.router.navigate([this.service.mainPath+'/onboarding']);
+                    this.router.navigate([this.service.mainPath + '/requests/' + ((_a = result) === null || _a === void 0 ? void 0 : _a._id)]);
                 }
                 else {
                     console.log("errror......");

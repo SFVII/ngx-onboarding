@@ -2468,35 +2468,36 @@ var OnboardingCreateComponent = /** @class */ (function () {
         }); });
     };
     OnboardingCreateComponent.prototype.onSubmit = function () {
+        var _a;
         return __awaiter(this, void 0, void 0, function () {
-            var result, _a;
-            return __generator(this, function (_b) {
-                switch (_b.label) {
+            var result, _b;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
                     case 0:
                         console.log(this.categories);
                         if (!(this.form.valid && this.onChangeCategory())) return [3 /*break*/, 7];
                         if (!(this.id && this.id !== "0")) return [3 /*break*/, 2];
                         return [4 /*yield*/, this.service.updateOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, _id: this.id }))];
                     case 1:
-                        _a = _b.sent();
+                        _b = _c.sent();
                         return [3 /*break*/, 4];
                     case 2: return [4 /*yield*/, this.service.createOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories }))];
                     case 3:
-                        _a = _b.sent();
-                        _b.label = 4;
+                        _b = _c.sent();
+                        _c.label = 4;
                     case 4:
-                        result = _a;
+                        result = _b;
                         if (!result) return [3 /*break*/, 6];
-                        console.log(result);
                         return [4 /*yield*/, this.service.getAllProfil()];
                     case 5:
-                        _b.sent();
+                        _c.sent();
                         this.canExit = true;
                         console.log(this.service.mainPath + '/onboarding');
+                        this.router.navigate([this.service.mainPath + '/requests/' + ((_a = result) === null || _a === void 0 ? void 0 : _a._id)]);
                         return [3 /*break*/, 7];
                     case 6:
                         console.log("errror......");
-                        _b.label = 7;
+                        _c.label = 7;
                     case 7: return [2 /*return*/];
                 }
             });
