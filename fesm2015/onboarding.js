@@ -2606,7 +2606,7 @@ let OnboardingListComponent = class OnboardingListComponent {
         this.search = '';
         this.columnDefinitions = [
             {
-                key: '_id',
+                key: 'Id',
                 value: 'Id',
                 order: 1,
                 class: 'u-1',
@@ -2658,10 +2658,11 @@ let OnboardingListComponent = class OnboardingListComponent {
                 }, 2000);
                 if (onboarding) {
                     //this.onboardingList=onboarding;
-                    let x = onboarding.map((row) => {
+                    let x = onboarding.map((row, index) => {
                         row.ContactName = row.vcontacts[0].Name;
                         row.Email = row.vcontacts[0].Email;
                         row.TemplateName = row.vtemplates.length > 0 ? row.vtemplates[0].Name : '';
+                        row.Id = index + 1;
                         return row;
                     });
                     this.onboardingList = new CoreMatTable(x, {

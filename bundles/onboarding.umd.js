@@ -3058,7 +3058,7 @@
             this.search = '';
             this.columnDefinitions = [
                 {
-                    key: '_id',
+                    key: 'Id',
                     value: 'Id',
                     order: 1,
                     class: 'u-1',
@@ -3119,10 +3119,11 @@
                         }, 2000);
                         if (onboarding) {
                             //this.onboardingList=onboarding;
-                            var x = onboarding.map(function (row) {
+                            var x = onboarding.map(function (row, index) {
                                 row.ContactName = row.vcontacts[0].Name;
                                 row.Email = row.vcontacts[0].Email;
                                 row.TemplateName = row.vtemplates.length > 0 ? row.vtemplates[0].Name : '';
+                                row.Id = index + 1;
                                 return row;
                             });
                             _this.onboardingList = new table$2.CoreMatTable(x, {
