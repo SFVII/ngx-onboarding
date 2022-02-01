@@ -2259,7 +2259,7 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
         return __awaiter(this, void 0, void 0, function* () {
             console.log(this.categories);
             if (this.form.valid && this.onChangeCategory()) {
-                const result = this.id !== "0"
+                const result = this.id && this.id !== "0"
                     ? yield this.service.updateOnboarding(Object.assign(Object.assign({}, this.form.value), { categories: this.categories, _id: this.id }))
                     : yield this.service.createOnboarding(Object.assign(Object.assign({}, this.form.value), { categories: this.categories }));
                 if (result) {

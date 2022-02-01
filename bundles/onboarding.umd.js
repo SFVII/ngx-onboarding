@@ -2667,7 +2667,7 @@
                         case 0:
                             console.log(this.categories);
                             if (!(this.form.valid && this.onChangeCategory())) return [3 /*break*/, 7];
-                            if (!(this.id !== "0")) return [3 /*break*/, 2];
+                            if (!(this.id && this.id !== "0")) return [3 /*break*/, 2];
                             return [4 /*yield*/, this.service.updateOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, _id: this.id }))];
                         case 1:
                             _a = _b.sent();
