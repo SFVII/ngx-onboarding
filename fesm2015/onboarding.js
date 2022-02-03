@@ -2230,6 +2230,7 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
     onSelect(id) {
         this.currentTemplate = this.templates.find((t) => t._id === id);
         this.categories = this.currentTemplate.categories;
+        console.log(this.categories);
     }
     existSubForm(forms) {
         let exist = false;
