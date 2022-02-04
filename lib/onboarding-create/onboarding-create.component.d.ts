@@ -34,7 +34,7 @@ export declare class OnboardingCreateComponent implements OnInit {
     showMode: boolean;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog);
     categories: any;
-    IsJsonString(str: any): boolean;
+    isObject(obj: any): boolean;
     canDeactivate(): true | import("rxjs").Subject<boolean>;
     ngOnInit(): Promise<void>;
     onCreateDynamicForm(): void;
