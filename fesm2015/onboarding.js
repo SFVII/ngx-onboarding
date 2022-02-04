@@ -2173,6 +2173,7 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
         this.showMode = false;
     }
     IsJsonString(str) {
+        console.log(str);
         try {
             JSON.parse(str);
         }

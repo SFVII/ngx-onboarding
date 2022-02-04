@@ -2345,6 +2345,7 @@ var OnboardingCreateComponent = /** @class */ (function () {
         this.showMode = false;
     }
     OnboardingCreateComponent.prototype.IsJsonString = function (str) {
+        console.log(str);
         try {
             JSON.parse(str);
         }
