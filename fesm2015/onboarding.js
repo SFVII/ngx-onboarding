@@ -2173,8 +2173,8 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
         this.showMode = false;
     }
     IsJsonString(str) {
-        console.log(str);
         try {
+            console.log(JSON.parse(str));
             JSON.parse(str);
         }
         catch (e) {

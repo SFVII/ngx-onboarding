@@ -2537,8 +2537,8 @@
             this.showMode = false;
         }
         OnboardingCreateComponent.prototype.IsJsonString = function (str) {
-            console.log(str);
             try {
+                console.log(JSON.parse(str));
                 JSON.parse(str);
             }
             catch (e) {
