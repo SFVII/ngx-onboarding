@@ -1604,6 +1604,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                     case 2:
                         this.showProfileName = true;
                         this.categories = this.defaultCategorie;
+                        console.log(this.categories);
                         _b.label = 3;
                     case 3:
                         setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {

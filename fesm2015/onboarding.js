@@ -1544,6 +1544,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
             else {
                 this.showProfileName = true;
                 this.categories = this.defaultCategorie;
+                console.log(this.categories);
             }
             setTimeout(() => __awaiter(this, void 0, void 0, function* () {
                 this.tags = yield this.service.getAllTags();
