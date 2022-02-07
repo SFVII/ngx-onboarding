@@ -2195,7 +2195,7 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
                 this.templates = data;
             });
             this.id = this.route.snapshot.paramMap.get("id");
-            if (this.id !== "0") {
+            if (this.id && this.id !== "0") {
                 this.showMode = true;
                 setTimeout(() => __awaiter(this, void 0, void 0, function* () {
                     var _a;
