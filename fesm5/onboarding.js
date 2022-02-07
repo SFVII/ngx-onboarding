@@ -2404,10 +2404,6 @@ var OnboardingCreateComponent = /** @class */ (function () {
                 else {
                     setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
                         return __generator(this, function (_a) {
-                            //this.currentOnboarding = await this.service.getOnboarding(this.id);
-                            console.log(this.currentOnboarding);
-                            this.form.patchValue(this.currentOnboarding);
-                            this.categories = this.currentOnboarding.categories;
                             return [2 /*return*/];
                         });
                     }); }, 500);
