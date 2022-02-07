@@ -460,7 +460,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: "Nowteam"
+                    value: { value: "Nowteam", checked: true }
                 },
                 forms: [
                     {
@@ -690,7 +690,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: "Nowteam"
+                    value: { value: "Nowteam", checked: true }
                 },
                 forms: [
                     {
@@ -714,7 +714,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
+                            value: { value: "Nowteam", checked: true }
                         },
                         forms: [
                             {
@@ -776,7 +776,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
+                            value: { value: "Nowteam", checked: true }
                         },
                         forms: [
                             {
@@ -909,7 +909,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: "Nowteam"
+                    value: { value: "Nowteam", checked: true }
                 },
                 forms: [
                     {
@@ -933,7 +933,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
+                            value: { value: "Nowteam", checked: true }
                         },
                         forms: [
                             {
@@ -995,7 +995,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
+                            value: { value: "Nowteam", checked: true }
                         },
                         forms: [
                             {
@@ -1057,7 +1057,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
+                            value: { value: "Nowteam", checked: true }
                         },
                         forms: [
                             {
@@ -1098,7 +1098,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: "Nowteam"
+                    value: { value: "Nowteam", checked: true }
                 },
                 forms: [
                     {
@@ -1122,7 +1122,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
+                            value: { value: "Nowteam", checked: true }
                         },
                         forms: [
                             {
@@ -1199,7 +1199,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: "Nowteam"
+                    value: { value: "Nowteam", checked: true }
                 },
                 forms: [
                     {
@@ -1238,7 +1238,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: "Nowteam"
+                    value: { value: "Nowteam", checked: true }
                 },
                 forms: [
                     {
@@ -1262,7 +1262,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
+                            value: { value: "Nowteam", checked: true }
                         },
                         forms: [
                             {
@@ -1303,7 +1303,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: "Nowteam"
+                    value: { value: "Nowteam", checked: true }
                 },
                 forms: [
                     {
@@ -1327,7 +1327,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
+                            value: { value: "Nowteam", checked: true }
                         },
                         forms: [
                             {
@@ -1368,7 +1368,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: "Nowteam"
+                    value: { value: "Nowteam", checked: true }
                 },
                 forms: [
                     {
@@ -1392,7 +1392,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
+                            value: { value: "Nowteam", checked: true }
                         },
                         forms: [
                             {
@@ -1489,7 +1489,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: "Nowteam"
+                    value: { value: "Nowteam", checked: true }
                 },
                 forms: [
                     {
