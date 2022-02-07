@@ -2212,7 +2212,7 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
             }
             else {
                 setTimeout(() => __awaiter(this, void 0, void 0, function* () {
-                    this.currentOnboarding = yield this.service.getOnboarding(this.id);
+                    //this.currentOnboarding = await this.service.getOnboarding(this.id);
                     console.log(this.currentOnboarding);
                     this.form.patchValue(this.currentOnboarding);
                     this.categories = this.currentOnboarding.categories;
