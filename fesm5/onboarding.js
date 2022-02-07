@@ -512,7 +512,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: null
+                    value: "Nowteam"
                 },
                 forms: [
                     {
@@ -742,7 +742,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: null
+                    value: "Nowteam"
                 },
                 forms: [
                     {
@@ -766,7 +766,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: null
+                            value: "Nowteam"
                         },
                         forms: [
                             {
@@ -828,7 +828,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: null
+                            value: "Nowteam"
                         },
                         forms: [
                             {
@@ -961,7 +961,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: null
+                    value: "Nowteam"
                 },
                 forms: [
                     {
@@ -985,7 +985,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: null
+                            value: "Nowteam"
                         },
                         forms: [
                             {
@@ -1047,7 +1047,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: null
+                            value: "Nowteam"
                         },
                         forms: [
                             {
@@ -1109,7 +1109,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: null
+                            value: "Nowteam"
                         },
                         forms: [
                             {
@@ -1150,7 +1150,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: null
+                    value: "Nowteam"
                 },
                 forms: [
                     {
@@ -1174,7 +1174,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: null
+                            value: "Nowteam"
                         },
                         forms: [
                             {
@@ -1251,7 +1251,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: null
+                    value: "Nowteam"
                 },
                 forms: [
                     {
@@ -1290,7 +1290,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: null
+                    value: "Nowteam"
                 },
                 forms: [
                     {
@@ -1314,7 +1314,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: null
+                            value: "Nowteam"
                         },
                         forms: [
                             {
@@ -1355,7 +1355,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: null
+                    value: "Nowteam"
                 },
                 forms: [
                     {
@@ -1379,7 +1379,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: null
+                            value: "Nowteam"
                         },
                         forms: [
                             {
@@ -1420,7 +1420,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: null
+                    value: "Nowteam"
                 },
                 forms: [
                     {
@@ -1444,7 +1444,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                             label: "Company",
                             key: "Company",
                             defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: null
+                            value: "Nowteam"
                         },
                         forms: [
                             {
@@ -1541,7 +1541,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                     label: "Company",
                     key: "Company",
                     defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                    value: null
+                    value: "Nowteam"
                 },
                 forms: [
                     {
@@ -1640,7 +1640,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                 label: "Company",
                 key: "Company",
                 defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                value: null
+                value: "Nowteam"
             },
             forms: [
                 {
