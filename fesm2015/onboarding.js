@@ -1545,7 +1545,9 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                 this.showProfileName = true;
                 this.categories = this.defaultCategorie;
             }
-            this.tags = yield this.service.getAllTags();
+            setTimeout(() => __awaiter(this, void 0, void 0, function* () {
+                this.tags = yield this.service.getAllTags();
+            }), 500);
         });
     }
     onAddNewCategory(e) {
@@ -1560,6 +1562,12 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
             deleteable: true,
             expandMore: true,
             suffixEndpoint: "",
+            selector: {
+                label: "Company",
+                key: "Company",
+                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                value: null
+            },
             forms: [
                 {
                     label: "",

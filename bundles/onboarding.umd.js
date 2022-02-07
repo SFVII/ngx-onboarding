@@ -1769,10 +1769,10 @@
         };
         TemplateProfileCreateComponent.prototype.ngOnInit = function () {
             return __awaiter(this, void 0, void 0, function () {
-                var _a, _b;
+                var _a;
                 var _this = this;
-                return __generator(this, function (_c) {
-                    switch (_c.label) {
+                return __generator(this, function (_b) {
+                    switch (_b.label) {
                         case 0:
                             this.id = this.route.snapshot.paramMap.get("id");
                             this.form = this.fb.group({
@@ -1789,19 +1789,28 @@
                             _a = this;
                             return [4 /*yield*/, this.service.getProfil(this.id)];
                         case 1:
-                            _a.currentProfil = _c.sent();
+                            _a.currentProfil = _b.sent();
                             this.form.patchValue(this.currentProfil);
                             this.categories = this.currentProfil.categories;
                             return [3 /*break*/, 3];
                         case 2:
                             this.showProfileName = true;
                             this.categories = this.defaultCategorie;
-                            _c.label = 3;
+                            _b.label = 3;
                         case 3:
-                            _b = this;
-                            return [4 /*yield*/, this.service.getAllTags()];
-                        case 4:
-                            _b.tags = _c.sent();
+                            setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
+                                var _a;
+                                return __generator(this, function (_b) {
+                                    switch (_b.label) {
+                                        case 0:
+                                            _a = this;
+                                            return [4 /*yield*/, this.service.getAllTags()];
+                                        case 1:
+                                            _a.tags = _b.sent();
+                                            return [2 /*return*/];
+                                    }
+                                });
+                            }); }, 500);
                             return [2 /*return*/];
                     }
                 });
@@ -1819,6 +1828,12 @@
                 deleteable: true,
                 expandMore: true,
                 suffixEndpoint: "",
+                selector: {
+                    label: "Company",
+                    key: "Company",
+                    defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                    value: null
+                },
                 forms: [
                     {
                         label: "",
