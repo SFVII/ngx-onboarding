@@ -1594,6 +1594,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                 },
             ],
         });
+        console.log(this.categories);
     }
     onAddNewField(...params) {
         this.canExit = false;

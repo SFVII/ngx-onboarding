@@ -1668,6 +1668,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                 },
             ],
         });
+        console.log(this.categories);
     };
     TemplateProfileCreateComponent.prototype.onAddNewField = function () {
         var params = [];
