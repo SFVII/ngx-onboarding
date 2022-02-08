@@ -2792,9 +2792,9 @@ let OnboardingListComponent = class OnboardingListComponent {
                 if (onboarding) {
                     //this.onboardingList=onboarding;
                     let x = onboarding.map((row, index) => {
-                        var _a, _b;
+                        var _a, _b, _c, _d;
                         row.ContactName = ((_b = (_a = row) === null || _a === void 0 ? void 0 : _a.vcontacts[0]) === null || _b === void 0 ? void 0 : _b.Name) || '';
-                        row.Email = row.vcontacts[0].Email;
+                        row.Email = ((_d = (_c = row) === null || _c === void 0 ? void 0 : _c.vcontacts[0]) === null || _d === void 0 ? void 0 : _d.Email) || '';
                         row.TemplateName = row.vtemplates.length > 0 ? row.vtemplates[0].Name : '';
                         row.Id = index + 1;
                         return row;
