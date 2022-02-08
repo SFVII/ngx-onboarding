@@ -2417,6 +2417,7 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
                 if (result) {
                     yield this.service.getAllProfil();
                     this.canExit = true;
+                    this.showMode = true;
                     console.log(this.service.mainPath + '/onboarding');
                     this.router.navigate([this.service.mainPath + '/requests/' + ((_a = result) === null || _a === void 0 ? void 0 : _a._id)]);
                 }
