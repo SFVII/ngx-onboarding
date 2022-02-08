@@ -2637,7 +2637,7 @@ var OnboardingCreateComponent = /** @class */ (function () {
                         if (this.id && this.id !== "0") {
                             this.categories = result.categories;
                             this.currentOnboarding = result;
-                            console.log('on passe dans le if id');
+                            console.log(this.currentOnboarding.view);
                         }
                         return [4 /*yield*/, this.service.getAllProfil()];
                     case 5:
