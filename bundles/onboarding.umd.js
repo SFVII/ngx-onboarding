@@ -930,12 +930,12 @@
                     expandOnboarding: true,
                     defaultValue: false,
                     suffixEndpoint: "category/user-session",
-                    /*selector: {
-                      label: "Company",
-                      key: "Company",
-                      defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                      value: "Nowteam"
-                    },*/
+                    selector: {
+                        label: "Company",
+                        key: "Company",
+                        defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                        value: "Nowteam"
+                    },
                     forms: [
                         {
                             label: "Utilisateur local à créer",
@@ -954,12 +954,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            /*selector: {
-                              label: "Company",
-                              key: "Company",
-                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                              value: "Nowteam"
-                            },*/
+                            selector: {
+                                label: "Company",
+                                key: "Company",
+                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                value: "Nowteam"
+                            },
                             forms: [
                                 {
                                     label: "Login",
@@ -1016,12 +1016,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            /*selector: {
-                              label: "Company",
-                              key: "Company",
-                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                              value: "Nowteam"
-                            },*/
+                            selector: {
+                                label: "Company",
+                                key: "Company",
+                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                value: "Nowteam"
+                            },
                             forms: [
                                 {
                                     label: "Nom de domaine",
@@ -1094,12 +1094,12 @@
                                     deleteable: true,
                                     subLevel: 2,
                                     expandMore: false,
-                                    /*selector: {
-                                      label: "Company",
-                                      key: "Company",
-                                      defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                      value: "Nowteam"
-                                    },*/
+                                    selector: {
+                                        label: "Company",
+                                        key: "Company",
+                                        defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                        value: "Nowteam"
+                                    },
                                     forms: [
                                         {
                                             label: "Utilisateur avec les droits similaires *",
@@ -1179,12 +1179,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            /*selector: {
-                              label: "Company",
-                              key: "Company",
-                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                              value: "Nowteam"
-                            },*/
+                            selector: {
+                                label: "Company",
+                                key: "Company",
+                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                value: "Nowteam"
+                            },
                             forms: [
                                 {
                                     label: "Adresse mail",
@@ -1241,12 +1241,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            /*selector: {
-                              label: "Company",
-                              key: "Company",
-                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                              value: "Nowteam"
-                            },*/
+                            selector: {
+                                label: "Company",
+                                key: "Company",
+                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                value: "Nowteam"
+                            },
                             forms: [
                                 {
                                     label: "Utilisateur avec les listes similaires *",
@@ -1303,12 +1303,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            /*selector: {
-                              label: "Company",
-                              key: "Company",
-                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                              value: "Nowteam"
-                            },*/
+                            selector: {
+                                label: "Company",
+                                key: "Company",
+                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                value: "Nowteam"
+                            },
                             forms: [
                                 {
                                     label: "Descriptions",
@@ -1344,12 +1344,12 @@
                     deleteable: true,
                     expandOnboarding: true,
                     defaultValue: false,
-                    /*selector: {
-                      label: "Company",
-                      key: "Company",
-                      defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                      value: "Nowteam"
-                    },*/
+                    selector: {
+                        label: "Company",
+                        key: "Company",
+                        defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                        value: "Nowteam"
+                    },
                     forms: [
                         {
                             label: "Accès aux lecteurs réseaux",
@@ -1368,12 +1368,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            /*selector: {
-                              label: "Company",
-                              key: "Company",
-                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                              value: "Nowteam"
-                            },*/
+                            selector: {
+                                label: "Company",
+                                key: "Company",
+                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                value: "Nowteam"
+                            },
                             forms: [
                                 {
                                     label: "Nom du serveur",
@@ -1445,12 +1445,12 @@
                     conditionValue: "",
                     conditionLocation: {},
                     deleteable: true,
-                    /*selector: {
-                      label: "Company",
-                      key: "Company",
-                      defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                      value: "Nowteam"
-                    },*/
+                    selector: {
+                        label: "Company",
+                        key: "Company",
+                        defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                        value: "Nowteam"
+                    },
                     forms: [
                         {
                             label: "Accès au VPN",
@@ -1484,12 +1484,12 @@
                     deleteable: true,
                     expandOnboarding: true,
                     defaultValue: false,
-                    /*selector: {
-                      label: "Company",
-                      key: "Company",
-                      defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                      value: "Nowteam"
-                    },*/
+                    selector: {
+                        label: "Company",
+                        key: "Company",
+                        defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                        value: "Nowteam"
+                    },
                     forms: [
                         {
                             label: "Accès aux imprimantes",
@@ -1508,12 +1508,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            /*selector: {
-                              label: "Company",
-                              key: "Company",
-                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                              value: "Nowteam"
-                            },*/
+                            selector: {
+                                label: "Company",
+                                key: "Company",
+                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                value: "Nowteam"
+                            },
                             forms: [
                                 {
                                     label: "Nom / Modèle de l'imprimante / localisation",
@@ -1549,12 +1549,12 @@
                     expandOnboarding: true,
                     defaultValue: false,
                     deleteable: true,
-                    /*selector: {
-                      label: "Company",
-                      key: "Company",
-                      defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                      value: "Nowteam"
-                    },*/
+                    selector: {
+                        label: "Company",
+                        key: "Company",
+                        defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                        value: "Nowteam"
+                    },
                     forms: [
                         {
                             label: "Accès aux applications ?",
@@ -1573,12 +1573,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            /*selector: {
-                              label: "Company",
-                              key: "Company",
-                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                              value: "Nowteam"
-                            },*/
+                            selector: {
+                                label: "Company",
+                                key: "Company",
+                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                value: "Nowteam"
+                            },
                             forms: [
                                 {
                                     label: "Descriptions",
@@ -1614,12 +1614,12 @@
                     conditionValue: "",
                     conditionLocation: {},
                     deleteable: true,
-                    /*selector: {
-                      label: "Company",
-                      key: "Company",
-                      defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                      value: "Nowteam"
-                    },*/
+                    selector: {
+                        label: "Company",
+                        key: "Company",
+                        defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                        value: "Nowteam"
+                    },
                     forms: [
                         {
                             label: "Paramétrage de poste",
@@ -1638,12 +1638,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            /*selector: {
-                              label: "Company",
-                              key: "Company",
-                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                              value: "Nowteam"
-                            },*/
+                            selector: {
+                                label: "Company",
+                                key: "Company",
+                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                value: "Nowteam"
+                            },
                             forms: [
                                 {
                                     label: "RealocatedEquipment",
