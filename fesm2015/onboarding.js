@@ -2415,7 +2415,8 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
                     console.log(result);
                     if (this.id && this.id !== "0") {
                         this.categories = result.categories;
-                        this.currentOnboarding.view = result.view;
+                        this.currentOnboarding = result;
+                        console.log('on passe dans le if id');
                     }
                     yield this.service.getAllProfil();
                     this.canExit = true;
