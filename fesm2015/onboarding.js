@@ -1547,9 +1547,11 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                 this.canExit = false;
             });
             if (this.id !== "0") {
-                this.currentProfil = yield this.service.getProfil(this.id);
-                this.form.patchValue(this.currentProfil);
-                this.categories = this.currentProfil.categories;
+                setTimeout(() => __awaiter(this, void 0, void 0, function* () {
+                    this.currentProfil = yield this.service.getProfil(this.id);
+                    this.form.patchValue(this.currentProfil);
+                    this.categories = this.currentProfil.categories;
+                }), 500);
             }
             else {
                 this.showProfileName = true;

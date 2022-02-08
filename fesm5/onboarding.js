@@ -1587,50 +1587,54 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
     };
     TemplateProfileCreateComponent.prototype.ngOnInit = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var _a;
             var _this = this;
-            return __generator(this, function (_b) {
-                switch (_b.label) {
-                    case 0:
-                        this.id = this.route.snapshot.paramMap.get("id");
-                        this.form = this.fb.group({
-                            Name: ["", Validators.required],
-                            Picto: [""],
-                            Description: [""],
-                            Tags: ["", Validators.required],
-                            Status: [false, Validators.required],
+            return __generator(this, function (_a) {
+                this.id = this.route.snapshot.paramMap.get("id");
+                this.form = this.fb.group({
+                    Name: ["", Validators.required],
+                    Picto: [""],
+                    Description: [""],
+                    Tags: ["", Validators.required],
+                    Status: [false, Validators.required],
+                });
+                this.form.valueChanges.subscribe(function (c) {
+                    _this.canExit = false;
+                });
+                if (this.id !== "0") {
+                    setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
+                        var _a;
+                        return __generator(this, function (_b) {
+                            switch (_b.label) {
+                                case 0:
+                                    _a = this;
+                                    return [4 /*yield*/, this.service.getProfil(this.id)];
+                                case 1:
+                                    _a.currentProfil = _b.sent();
+                                    this.form.patchValue(this.currentProfil);
+                                    this.categories = this.currentProfil.categories;
+                                    return [2 /*return*/];
+                            }
                         });
-                        this.form.valueChanges.subscribe(function (c) {
-                            _this.canExit = false;
-                        });
-                        if (!(this.id !== "0")) return [3 /*break*/, 2];
-                        _a = this;
-                        return [4 /*yield*/, this.service.getProfil(this.id)];
-                    case 1:
-                        _a.currentProfil = _b.sent();
-                        this.form.patchValue(this.currentProfil);
-                        this.categories = this.currentProfil.categories;
-                        return [3 /*break*/, 3];
-                    case 2:
-                        this.showProfileName = true;
-                        this.categories = this.defaultCategorie;
-                        _b.label = 3;
-                    case 3:
-                        setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
-                            var _a;
-                            return __generator(this, function (_b) {
-                                switch (_b.label) {
-                                    case 0:
-                                        _a = this;
-                                        return [4 /*yield*/, this.service.getAllTags()];
-                                    case 1:
-                                        _a.tags = _b.sent();
-                                        return [2 /*return*/];
-                                }
-                            });
-                        }); }, 500);
-                        return [2 /*return*/];
+                    }); }, 500);
                 }
+                else {
+                    this.showProfileName = true;
+                    this.categories = this.defaultCategorie;
+                }
+                setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
+                    var _a;
+                    return __generator(this, function (_b) {
+                        switch (_b.label) {
+                            case 0:
+                                _a = this;
+                                return [4 /*yield*/, this.service.getAllTags()];
+                            case 1:
+                                _a.tags = _b.sent();
+                                return [2 /*return*/];
+                        }
+                    });
+                }); }, 500);
+                return [2 /*return*/];
             });
         });
     };
