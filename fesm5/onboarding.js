@@ -3087,7 +3087,7 @@ var OnboardingListComponent = /** @class */ (function () {
                             return row;
                         });
                         _this.onboardingList = new CoreMatTable(x, {
-                            active: 'CreatedDate', direction: 'desc'
+                            active: 'Id', direction: 'desc'
                         }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
                     }
                 });
