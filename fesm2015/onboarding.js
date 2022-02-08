@@ -2413,6 +2413,10 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
                     : yield this.service.createOnboarding(Object.assign(Object.assign({}, this.form.value), { categories: this.categories }));
                 if (result) {
                     console.log(result);
+                    if (this.id && this.id !== "0") {
+                        this.categories = result.categories;
+                        this.currentOnboarding.view = result.view;
+                    }
                     yield this.service.getAllProfil();
                     this.canExit = true;
                     this.showMode = true;

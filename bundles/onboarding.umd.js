@@ -2826,6 +2826,10 @@
                             result = _b;
                             if (!result) return [3 /*break*/, 6];
                             console.log(result);
+                            if (this.id && this.id !== "0") {
+                                this.categories = result.categories;
+                                this.currentOnboarding.view = result.view;
+                            }
                             return [4 /*yield*/, this.service.getAllProfil()];
                         case 5:
                             _c.sent();
