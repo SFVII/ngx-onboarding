@@ -1757,12 +1757,12 @@
                     expandOnboarding: true,
                     defaultValue: false,
                     deleteable: true,
-                    /*selector: {
-                      label: "Company",
-                      key: "Company",
-                      defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                      value: "Nowteam"
-                    },*/
+                    selector: {
+                        label: "Company",
+                        key: "Company",
+                        defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                        value: "Nowteam"
+                    },
                     forms: [
                         {
                             label: "Descriptions",
