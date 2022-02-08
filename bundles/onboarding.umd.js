@@ -1469,7 +1469,6 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            forms: []
                         },
                     ],
                 },
