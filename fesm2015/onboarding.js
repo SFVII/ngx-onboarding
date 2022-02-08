@@ -124,6 +124,8 @@ let OnboardingService = class OnboardingService {
                 this.http.post(`${this.endpoint}/profils`, data, options)
                     .subscribe((data) => {
                     resolve(data);
+                }, () => {
+                    resolve(false);
                 });
             });
         });
@@ -137,6 +139,8 @@ let OnboardingService = class OnboardingService {
                 this.http.put(`${this.endpoint}/profils`, data, options)
                     .subscribe((data) => {
                     resolve(data);
+                }, () => {
+                    resolve(false);
                 });
             });
         });

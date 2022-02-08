@@ -320,6 +320,8 @@
                             _this.http.post(_this.endpoint + "/profils", data, options)
                                 .subscribe(function (data) {
                                 resolve(data);
+                            }, function () {
+                                resolve(false);
                             });
                         })];
                 });
@@ -336,6 +338,8 @@
                             _this.http.put(_this.endpoint + "/profils", data, options)
                                 .subscribe(function (data) {
                                 resolve(data);
+                            }, function () {
+                                resolve(false);
                             });
                         })];
                 });

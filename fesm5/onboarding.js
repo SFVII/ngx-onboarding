@@ -128,6 +128,8 @@ var OnboardingService = /** @class */ (function () {
                         _this.http.post(_this.endpoint + "/profils", data, options)
                             .subscribe(function (data) {
                             resolve(data);
+                        }, function () {
+                            resolve(false);
                         });
                     })];
             });
@@ -144,6 +146,8 @@ var OnboardingService = /** @class */ (function () {
                         _this.http.put(_this.endpoint + "/profils", data, options)
                             .subscribe(function (data) {
                             resolve(data);
+                        }, function () {
+                            resolve(false);
                         });
                     })];
             });
