@@ -3059,7 +3059,8 @@ var OnboardingListComponent = /** @class */ (function () {
                     if (onboarding) {
                         //this.onboardingList=onboarding;
                         var x = onboarding.map(function (row, index) {
-                            row.ContactName = row.vcontacts[0].Name;
+                            var _a, _b;
+                            row.ContactName = ((_b = (_a = row) === null || _a === void 0 ? void 0 : _a.vcontacts[0]) === null || _b === void 0 ? void 0 : _b.Name) || '';
                             row.Email = row.vcontacts[0].Email;
                             row.TemplateName = row.vtemplates.length > 0 ? row.vtemplates[0].Name : '';
                             row.Id = index + 1;
