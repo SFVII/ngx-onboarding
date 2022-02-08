@@ -766,12 +766,12 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Login",
@@ -828,12 +828,12 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Nom de domaine",
@@ -852,12 +852,6 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                                 deleteable: false,
                                 subLevel: 2,
                                 expandMore: false,
-                                selector: {
-                                    label: "Companie",
-                                    key: "Company",
-                                    defaultValue: [{ value: "Nowteams", checked: true }, { value: "Internal", checked: false }],
-                                    value: "Nowteams"
-                                },
                             },
                             {
                                 label: "Votre login",
@@ -876,12 +870,6 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                                 deleteable: true,
                                 subLevel: 2,
                                 expandMore: false,
-                                selector: {
-                                    label: "Companie",
-                                    key: "Company",
-                                    defaultValue: [{ value: "Nowteams", checked: true }, { value: "Internal", checked: false }],
-                                    value: "Nowteams"
-                                },
                             },
                             {
                                 label: "Votre mot de passe",
@@ -900,12 +888,6 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                                 deleteable: true,
                                 subLevel: 2,
                                 expandMore: false,
-                                selector: {
-                                    label: "Companie",
-                                    key: "Company",
-                                    defaultValue: [{ value: "Nowteams", checked: true }, { value: "Internal", checked: false }],
-                                    value: "Nowteams"
-                                },
                             },
                             {
                                 label: "Groupe de sécurité",
@@ -924,12 +906,12 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                                 deleteable: true,
                                 subLevel: 2,
                                 expandMore: false,
-                                selector: {
-                                    label: "Company",
-                                    key: "Company",
-                                    defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                    value: "Nowteam"
-                                },
+                                /*selector: {
+                                  label: "Company",
+                                  key: "Company",
+                                  defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                  value: "Nowteam"
+                                },*/
                                 forms: [
                                     {
                                         label: "Utilisateur avec les droits similaires *",
@@ -1009,12 +991,12 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Adresse mail",
@@ -1071,12 +1053,12 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Utilisateur avec les listes similaires *",
@@ -1133,12 +1115,12 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Descriptions",
@@ -1198,12 +1180,12 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Nom du serveur",
@@ -1338,12 +1320,12 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Nom / Modèle de l'imprimante / localisation",
@@ -1403,12 +1385,12 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Descriptions",
@@ -1468,12 +1450,12 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "RealocatedEquipment",

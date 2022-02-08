@@ -958,12 +958,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            selector: {
-                                label: "Company",
-                                key: "Company",
-                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                value: "Nowteam"
-                            },
+                            /*selector: {
+                              label: "Company",
+                              key: "Company",
+                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                              value: "Nowteam"
+                            },*/
                             forms: [
                                 {
                                     label: "Login",
@@ -1020,12 +1020,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            selector: {
-                                label: "Company",
-                                key: "Company",
-                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                value: "Nowteam"
-                            },
+                            /*selector: {
+                              label: "Company",
+                              key: "Company",
+                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                              value: "Nowteam"
+                            },*/
                             forms: [
                                 {
                                     label: "Nom de domaine",
@@ -1044,12 +1044,6 @@
                                     deleteable: false,
                                     subLevel: 2,
                                     expandMore: false,
-                                    selector: {
-                                        label: "Companie",
-                                        key: "Company",
-                                        defaultValue: [{ value: "Nowteams", checked: true }, { value: "Internal", checked: false }],
-                                        value: "Nowteams"
-                                    },
                                 },
                                 {
                                     label: "Votre login",
@@ -1068,12 +1062,6 @@
                                     deleteable: true,
                                     subLevel: 2,
                                     expandMore: false,
-                                    selector: {
-                                        label: "Companie",
-                                        key: "Company",
-                                        defaultValue: [{ value: "Nowteams", checked: true }, { value: "Internal", checked: false }],
-                                        value: "Nowteams"
-                                    },
                                 },
                                 {
                                     label: "Votre mot de passe",
@@ -1092,12 +1080,6 @@
                                     deleteable: true,
                                     subLevel: 2,
                                     expandMore: false,
-                                    selector: {
-                                        label: "Companie",
-                                        key: "Company",
-                                        defaultValue: [{ value: "Nowteams", checked: true }, { value: "Internal", checked: false }],
-                                        value: "Nowteams"
-                                    },
                                 },
                                 {
                                     label: "Groupe de sécurité",
@@ -1116,12 +1098,12 @@
                                     deleteable: true,
                                     subLevel: 2,
                                     expandMore: false,
-                                    selector: {
-                                        label: "Company",
-                                        key: "Company",
-                                        defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                        value: "Nowteam"
-                                    },
+                                    /*selector: {
+                                      label: "Company",
+                                      key: "Company",
+                                      defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                      value: "Nowteam"
+                                    },*/
                                     forms: [
                                         {
                                             label: "Utilisateur avec les droits similaires *",
@@ -1201,12 +1183,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            selector: {
-                                label: "Company",
-                                key: "Company",
-                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                value: "Nowteam"
-                            },
+                            /*selector: {
+                              label: "Company",
+                              key: "Company",
+                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                              value: "Nowteam"
+                            },*/
                             forms: [
                                 {
                                     label: "Adresse mail",
@@ -1263,12 +1245,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            selector: {
-                                label: "Company",
-                                key: "Company",
-                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                value: "Nowteam"
-                            },
+                            /*selector: {
+                              label: "Company",
+                              key: "Company",
+                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                              value: "Nowteam"
+                            },*/
                             forms: [
                                 {
                                     label: "Utilisateur avec les listes similaires *",
@@ -1325,12 +1307,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            selector: {
-                                label: "Company",
-                                key: "Company",
-                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                value: "Nowteam"
-                            },
+                            /*selector: {
+                              label: "Company",
+                              key: "Company",
+                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                              value: "Nowteam"
+                            },*/
                             forms: [
                                 {
                                     label: "Descriptions",
@@ -1390,12 +1372,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            selector: {
-                                label: "Company",
-                                key: "Company",
-                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                value: "Nowteam"
-                            },
+                            /*selector: {
+                              label: "Company",
+                              key: "Company",
+                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                              value: "Nowteam"
+                            },*/
                             forms: [
                                 {
                                     label: "Nom du serveur",
@@ -1530,12 +1512,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            selector: {
-                                label: "Company",
-                                key: "Company",
-                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                value: "Nowteam"
-                            },
+                            /*selector: {
+                              label: "Company",
+                              key: "Company",
+                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                              value: "Nowteam"
+                            },*/
                             forms: [
                                 {
                                     label: "Nom / Modèle de l'imprimante / localisation",
@@ -1595,12 +1577,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            selector: {
-                                label: "Company",
-                                key: "Company",
-                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                value: "Nowteam"
-                            },
+                            /*selector: {
+                              label: "Company",
+                              key: "Company",
+                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                              value: "Nowteam"
+                            },*/
                             forms: [
                                 {
                                     label: "Descriptions",
@@ -1660,12 +1642,12 @@
                             deleteable: true,
                             subLevel: 1,
                             expandMore: false,
-                            selector: {
-                                label: "Company",
-                                key: "Company",
-                                defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                value: "Nowteam"
-                            },
+                            /*selector: {
+                              label: "Company",
+                              key: "Company",
+                              defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                              value: "Nowteam"
+                            },*/
                             forms: [
                                 {
                                     label: "RealocatedEquipment",

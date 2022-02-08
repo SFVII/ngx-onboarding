@@ -714,12 +714,12 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Login",
@@ -776,12 +776,12 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Nom de domaine",
@@ -800,12 +800,6 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                                 deleteable: false,
                                 subLevel: 2,
                                 expandMore: false,
-                                selector: {
-                                    label: "Companie",
-                                    key: "Company",
-                                    defaultValue: [{ value: "Nowteams", checked: true }, { value: "Internal", checked: false }],
-                                    value: "Nowteams"
-                                },
                             },
                             {
                                 label: "Votre login",
@@ -824,12 +818,6 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                                 deleteable: true,
                                 subLevel: 2,
                                 expandMore: false,
-                                selector: {
-                                    label: "Companie",
-                                    key: "Company",
-                                    defaultValue: [{ value: "Nowteams", checked: true }, { value: "Internal", checked: false }],
-                                    value: "Nowteams"
-                                },
                             },
                             {
                                 label: "Votre mot de passe",
@@ -848,12 +836,6 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                                 deleteable: true,
                                 subLevel: 2,
                                 expandMore: false,
-                                selector: {
-                                    label: "Companie",
-                                    key: "Company",
-                                    defaultValue: [{ value: "Nowteams", checked: true }, { value: "Internal", checked: false }],
-                                    value: "Nowteams"
-                                },
                             },
                             {
                                 label: "Groupe de sécurité",
@@ -872,12 +854,12 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                                 deleteable: true,
                                 subLevel: 2,
                                 expandMore: false,
-                                selector: {
-                                    label: "Company",
-                                    key: "Company",
-                                    defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                                    value: "Nowteam"
-                                },
+                                /*selector: {
+                                  label: "Company",
+                                  key: "Company",
+                                  defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                                  value: "Nowteam"
+                                },*/
                                 forms: [
                                     {
                                         label: "Utilisateur avec les droits similaires *",
@@ -957,12 +939,12 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Adresse mail",
@@ -1019,12 +1001,12 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Utilisateur avec les listes similaires *",
@@ -1081,12 +1063,12 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Descriptions",
@@ -1146,12 +1128,12 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Nom du serveur",
@@ -1286,12 +1268,12 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Nom / Modèle de l'imprimante / localisation",
@@ -1351,12 +1333,12 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "Descriptions",
@@ -1416,12 +1398,12 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
                         deleteable: true,
                         subLevel: 1,
                         expandMore: false,
-                        selector: {
-                            label: "Company",
-                            key: "Company",
-                            defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
-                            value: "Nowteam"
-                        },
+                        /*selector: {
+                          label: "Company",
+                          key: "Company",
+                          defaultValue: [{ value: "Nowteam", checked: true }, { value: "Internal", checked: false }],
+                          value: "Nowteam"
+                        },*/
                         forms: [
                             {
                                 label: "RealocatedEquipment",
