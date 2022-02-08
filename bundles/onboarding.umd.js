@@ -2710,8 +2710,7 @@
                                         return [4 /*yield*/, this.service.getOnboarding(this.id)];
                                     case 1:
                                         _a.currentOnboarding = _c.sent();
-                                        console.log(this.currentOnboarding);
-                                        console.log(this.showMode);
+                                        //console.log(this.currentOnboarding);
                                         this.form.patchValue(this.currentOnboarding);
                                         this.categories = this.currentOnboarding.categories;
                                         this.currentTemplate = (_b = this.currentOnboarding) === null || _b === void 0 ? void 0 : _b.vtemplates[0];
@@ -2767,7 +2766,6 @@
                 }
                 return cat;
             });
-            console.log(this.categories);
         };
         OnboardingCreateComponent.prototype.existSubForm = function (forms) {
             var e_1, _a;
@@ -2814,7 +2812,6 @@
                 return __generator(this, function (_c) {
                     switch (_c.label) {
                         case 0:
-                            console.log(this.categories);
                             if (!(this.form.valid && this.onChangeCategory())) return [3 /*break*/, 7];
                             if (!(this.id && this.id !== "0")) return [3 /*break*/, 2];
                             return [4 /*yield*/, this.service.updateOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, _id: this.id }))];
@@ -2833,7 +2830,6 @@
                             _c.sent();
                             this.canExit = true;
                             this.showMode = true;
-                            console.log(this.service.mainPath + '/onboarding');
                             this.router.navigate([this.service.mainPath + '/requests/' + ((_a = result) === null || _a === void 0 ? void 0 : _a._id)]);
                             return [3 /*break*/, 7];
                         case 6:

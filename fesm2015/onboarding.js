@@ -2323,8 +2323,7 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
                 setTimeout(() => __awaiter(this, void 0, void 0, function* () {
                     var _a;
                     this.currentOnboarding = yield this.service.getOnboarding(this.id);
-                    console.log(this.currentOnboarding);
-                    console.log(this.showMode);
+                    //console.log(this.currentOnboarding);
                     this.form.patchValue(this.currentOnboarding);
                     this.categories = this.currentOnboarding.categories;
                     this.currentTemplate = (_a = this.currentOnboarding) === null || _a === void 0 ? void 0 : _a.vtemplates[0];
@@ -2377,7 +2376,6 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
             }
             return cat;
         });
-        console.log(this.categories);
     }
     existSubForm(forms) {
         let exist = false;
@@ -2409,7 +2407,6 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
     onSubmit() {
         var _a;
         return __awaiter(this, void 0, void 0, function* () {
-            console.log(this.categories);
             if (this.form.valid && this.onChangeCategory()) {
                 const result = this.id && this.id !== "0"
                     ? yield this.service.updateOnboarding(Object.assign(Object.assign({}, this.form.value), { categories: this.categories, _id: this.id }))
@@ -2418,7 +2415,6 @@ let OnboardingCreateComponent = class OnboardingCreateComponent {
                     yield this.service.getAllProfil();
                     this.canExit = true;
                     this.showMode = true;
-                    console.log(this.service.mainPath + '/onboarding');
                     this.router.navigate([this.service.mainPath + '/requests/' + ((_a = result) === null || _a === void 0 ? void 0 : _a._id)]);
                 }
                 else {
