@@ -1885,6 +1885,7 @@
                 conditionValue: "",
                 conditionLocation: {},
                 subLevel: params.length,
+                forms: null
             });
         };
         TemplateProfileCreateComponent.prototype.onAddNewSubLevelField = function () {
@@ -1914,6 +1915,7 @@
                 conditionLocation: {},
                 subLevel: params.length,
                 expandMore: true,
+                forms: null
             });
         };
         TemplateProfileCreateComponent.prototype.onRemoveField = function () {

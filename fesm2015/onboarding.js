@@ -1615,6 +1615,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
             conditionValue: "",
             conditionLocation: {},
             subLevel: params.length,
+            forms: null
         });
     }
     onAddNewSubLevelField(...params) {
@@ -1640,6 +1641,7 @@ let TemplateProfileCreateComponent = class TemplateProfileCreateComponent {
             conditionLocation: {},
             subLevel: params.length,
             expandMore: true,
+            forms: null
         });
     }
     onRemoveField(...params) {

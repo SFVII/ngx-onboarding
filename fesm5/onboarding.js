@@ -1693,6 +1693,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
             conditionValue: "",
             conditionLocation: {},
             subLevel: params.length,
+            forms: null
         });
     };
     TemplateProfileCreateComponent.prototype.onAddNewSubLevelField = function () {
@@ -1722,6 +1723,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
             conditionLocation: {},
             subLevel: params.length,
             expandMore: true,
+            forms: null
         });
     };
     TemplateProfileCreateComponent.prototype.onRemoveField = function () {
