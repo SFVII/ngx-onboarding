@@ -2633,6 +2633,7 @@ var OnboardingCreateComponent = /** @class */ (function () {
                     case 4:
                         result = _b;
                         if (!result) return [3 /*break*/, 6];
+                        console.log(result);
                         return [4 /*yield*/, this.service.getAllProfil()];
                     case 5:
                         _c.sent();
