@@ -5124,7 +5124,7 @@
                     canDeactivate: [CanDeactivateGuard],
                 },
                 {
-                    path: '',
+                    path: 'template',
                     component: TemplateProfileListComponent
                 },
                 {
