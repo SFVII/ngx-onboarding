@@ -2896,7 +2896,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                     case 5:
                         _b.sent();
                         this.canExit = true;
-                        this.router.navigate([this.service.mainPath]);
+                        this.router.navigate([this.service.mainPath + '/template']);
                         return [3 /*break*/, 7];
                     case 6:
                         console.log("errror......");

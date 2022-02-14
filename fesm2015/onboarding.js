@@ -2787,7 +2787,7 @@ class TemplateProfileCreateComponent {
                 if (result) {
                     yield this.service.getAllProfil();
                     this.canExit = true;
-                    this.router.navigate([this.service.mainPath]);
+                    this.router.navigate([this.service.mainPath + '/template']);
                 }
                 else {
                     console.log("errror......");
