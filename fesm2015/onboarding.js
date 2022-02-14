@@ -4552,7 +4552,7 @@ class OnboardingListComponent {
                 class: 'u-1',
                 module: CellsComponentList.ButtonLink,
                 sort: true,
-                override: [`${this.service.mainPath}/onboarding/requests`, '_id']
+                override: [`${this.service.mainPath}/requests`, '_id']
             },
             {
                 key: 'createdAt',
