@@ -4812,7 +4812,7 @@ var OnboardingListComponent = /** @class */ (function () {
                 class: 'u-1',
                 module: CellsComponentList.ButtonLink,
                 sort: true,
-                override: [this.service.mainPath + "/onboarding/onboarding", '_id']
+                override: [this.service.mainPath + "/onboarding/requests", '_id']
             },
             {
                 key: 'createdAt',
@@ -4937,11 +4937,11 @@ var onBoardingRoutes = [
                 component: TemplateProfileListComponent
             },
             {
-                path: 'onboarding',
+                path: 'requests',
                 component: OnboardingListComponent
             },
             {
-                path: 'onboarding/:id',
+                path: 'requests/:id',
                 component: OnboardingCreateComponent
             }
         ]

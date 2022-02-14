@@ -5003,7 +5003,7 @@
                     class: 'u-1',
                     module: table$2.CellsComponentList.ButtonLink,
                     sort: true,
-                    override: [this.service.mainPath + "/onboarding/onboarding", '_id']
+                    override: [this.service.mainPath + "/onboarding/requests", '_id']
                 },
                 {
                     key: 'createdAt',
@@ -5128,11 +5128,11 @@
                     component: TemplateProfileListComponent
                 },
                 {
-                    path: 'onboarding',
+                    path: 'requests',
                     component: OnboardingListComponent
                 },
                 {
-                    path: 'onboarding/:id',
+                    path: 'requests/:id',
                     component: OnboardingCreateComponent
                 }
             ]
