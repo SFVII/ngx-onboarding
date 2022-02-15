@@ -4551,7 +4551,7 @@ class OnboardingListComponent {
                 class: 'u-1',
                 module: CellsComponentList.ButtonLink,
                 sort: true,
-                override: [`${this.service.mainPath}/requests`, '_id']
+                override: [`${this.service.mainPath}/request`, '_id']
             },
             {
                 key: 'createdAt',
@@ -4667,7 +4667,7 @@ const onBoardingRoutes = [
                 component: OnboardingListComponent
             },
             {
-                path: 'requests/:id',
+                path: 'request/:id',
                 component: OnboardingCreateComponent
             }
         ]
