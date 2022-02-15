@@ -4660,7 +4660,7 @@
                             _b.sent();
                             this.canExit = true;
                             this.showMode = true;
-                            this.router.navigate([this.service.mainPath + '/requests/']);
+                            this.router.navigate([this.service.mainPath + '/requests']);
                             return [3 /*break*/, 7];
                         case 6:
                             console.log("errror......");

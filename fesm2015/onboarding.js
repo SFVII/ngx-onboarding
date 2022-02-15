@@ -4238,7 +4238,7 @@ class OnboardingCreateComponent {
                     yield this.service.getAllProfil();
                     this.canExit = true;
                     this.showMode = true;
-                    this.router.navigate([this.service.mainPath + '/requests/']);
+                    this.router.navigate([this.service.mainPath + '/requests']);
                 }
                 else {
                     console.log("errror......");
