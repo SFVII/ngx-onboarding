@@ -11,9 +11,9 @@ import * as i6 from "@angular/forms";
 import * as i7 from "@angular/material/tabs";
 import * as i8 from "table";
 function OnboardingListComponent_div_1_img_8_Template(rf, ctx) { if (rf & 1) {
-    var _r823 = i0.ɵɵgetCurrentView();
+    var _r827 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "img", 15);
-    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_img_8_Template_img_click_0_listener() { i0.ɵɵrestoreView(_r823); var ctx_r822 = i0.ɵɵnextContext(2); return ctx_r822.cancelSearch(); });
+    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_img_8_Template_img_click_0_listener() { i0.ɵɵrestoreView(_r827); var ctx_r826 = i0.ɵɵnextContext(2); return ctx_r826.cancelSearch(); });
     i0.ɵɵelementEnd();
 } if (rf & 2) {
     i0.ɵɵproperty("src", "/assets/icons/search_off-24px.svg", i0.ɵɵsanitizeUrl);
@@ -23,15 +23,15 @@ function OnboardingListComponent_div_1_span_12_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r819 = i0.ɵɵnextContext(2);
+    var ctx_r823 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" ", ctx_r819.onboardingList == null ? null : ctx_r819.onboardingList.totalElements, " ticket(s) ");
+    i0.ɵɵtextInterpolate1(" ", ctx_r823.onboardingList == null ? null : ctx_r823.onboardingList.totalElements, " ticket(s) ");
 } }
 function OnboardingListComponent_div_1_ng_template_15_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵtext(0);
 } if (rf & 2) {
-    var ctx_r820 = i0.ɵɵnextContext(2);
-    i0.ɵɵtextInterpolate1(" Onboarding (", (ctx_r820.onboardingList == null ? null : ctx_r820.onboardingList.totalElements) || (ctx_r820.onboardingList == null ? null : ctx_r820.onboardingList.data == null ? null : ctx_r820.onboardingList.data.length), ") ");
+    var ctx_r824 = i0.ɵɵnextContext(2);
+    i0.ɵɵtextInterpolate1(" Onboarding (", (ctx_r824.onboardingList == null ? null : ctx_r824.onboardingList.totalElements) || (ctx_r824.onboardingList == null ? null : ctx_r824.onboardingList.data == null ? null : ctx_r824.onboardingList.data.length), ") ");
 } }
 function OnboardingListComponent_div_1_ng_template_16_div_0_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelement(0, "div", 20);
@@ -39,8 +39,8 @@ function OnboardingListComponent_div_1_ng_template_16_div_0_Template(rf, ctx) { 
 function OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelement(0, "ngx-design-table", 21);
 } if (rf & 2) {
-    var ctx_r825 = i0.ɵɵnextContext(3);
-    i0.ɵɵproperty("columnDefinitions", ctx_r825.columnDefinitions)("displayDetail", false)("data", ctx_r825.onboardingList)("lang", ctx_r825.lang)("btnOverride", true)("inputSearch", ctx_r825.inputSearch)("EmptyRow", true)("displayDetail", true)("blockDetails", true);
+    var ctx_r829 = i0.ɵɵnextContext(3);
+    i0.ɵɵproperty("columnDefinitions", ctx_r829.columnDefinitions)("displayDetail", false)("data", ctx_r829.onboardingList)("lang", ctx_r829.lang)("btnOverride", true)("inputSearch", ctx_r829.inputSearch)("EmptyRow", true)("displayDetail", true)("blockDetails", true);
 } }
 var _c0 = function () { return { "margin-bottom": "100vh" }; };
 function OnboardingListComponent_div_1_ng_template_16_Template(rf, ctx) { if (rf & 1) {
@@ -50,17 +50,17 @@ function OnboardingListComponent_div_1_ng_template_16_Template(rf, ctx) { if (rf
     i0.ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template, 1, 9, "ngx-design-table", 19);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r821 = i0.ɵɵnextContext(2);
-    i0.ɵɵproperty("ngIf", ctx_r821._loading_table || !ctx_r821.onboardingList);
+    var ctx_r825 = i0.ɵɵnextContext(2);
+    i0.ɵɵproperty("ngIf", ctx_r825._loading_table || !ctx_r825.onboardingList);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngStyle", ctx_r821._loading_table && i0.ɵɵpureFunction0(5, _c0));
+    i0.ɵɵproperty("ngStyle", ctx_r825._loading_table && i0.ɵɵpureFunction0(5, _c0));
     i0.ɵɵadvance(1);
-    i0.ɵɵclassProp("ticket-list", !ctx_r821._loading_table);
+    i0.ɵɵclassProp("ticket-list", !ctx_r825._loading_table);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", ctx_r821.onboardingList);
+    i0.ɵɵproperty("ngIf", ctx_r825.onboardingList);
 } }
 function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r827 = i0.ɵɵgetCurrentView();
+    var _r831 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 2);
     i0.ɵɵelementStart(1, "div", 3);
     i0.ɵɵelementStart(2, "div", 4);
@@ -71,7 +71,7 @@ function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵtext(6, "search");
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(7, "input", 6);
-    i0.ɵɵlistener("ngModelChange", function OnboardingListComponent_div_1_Template_input_ngModelChange_7_listener($event) { i0.ɵɵrestoreView(_r827); var ctx_r826 = i0.ɵɵnextContext(); return ctx_r826.inputSearch = $event; });
+    i0.ɵɵlistener("ngModelChange", function OnboardingListComponent_div_1_Template_input_ngModelChange_7_listener($event) { i0.ɵɵrestoreView(_r831); var ctx_r830 = i0.ɵɵnextContext(); return ctx_r830.inputSearch = $event; });
     i0.ɵɵelementEnd();
     i0.ɵɵtemplate(8, OnboardingListComponent_div_1_img_8_Template, 1, 1, "img", 7);
     i0.ɵɵelementEnd();
@@ -82,7 +82,7 @@ function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵtemplate(12, OnboardingListComponent_div_1_span_12_Template, 2, 1, "span", 10);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(13, "mat-tab-group", 11);
-    i0.ɵɵlistener("selectedIndexChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedIndexChange_13_listener($event) { i0.ɵɵrestoreView(_r827); var ctx_r828 = i0.ɵɵnextContext(); return ctx_r828.index = $event; })("selectedTabChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedTabChange_13_listener($event) { i0.ɵɵrestoreView(_r827); var ctx_r829 = i0.ɵɵnextContext(); return ctx_r829.triggerChange($event); });
+    i0.ɵɵlistener("selectedIndexChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedIndexChange_13_listener($event) { i0.ɵɵrestoreView(_r831); var ctx_r832 = i0.ɵɵnextContext(); return ctx_r832.index = $event; })("selectedTabChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedTabChange_13_listener($event) { i0.ɵɵrestoreView(_r831); var ctx_r833 = i0.ɵɵnextContext(); return ctx_r833.triggerChange($event); });
     i0.ɵɵelementStart(14, "mat-tab", 12);
     i0.ɵɵtemplate(15, OnboardingListComponent_div_1_ng_template_15_Template, 1, 1, "ng-template", 13);
     i0.ɵɵtemplate(16, OnboardingListComponent_div_1_ng_template_16_Template, 4, 6, "ng-template", 14);
@@ -91,15 +91,15 @@ function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r817 = i0.ɵɵnextContext();
+    var ctx_r821 = i0.ɵɵnextContext();
     i0.ɵɵadvance(7);
-    i0.ɵɵproperty("ngModel", ctx_r817.inputSearch);
+    i0.ɵɵproperty("ngModel", ctx_r821.inputSearch);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", ctx_r817.inputSearch && ctx_r817.inputSearch != "");
+    i0.ɵɵproperty("ngIf", ctx_r821.inputSearch && ctx_r821.inputSearch != "");
     i0.ɵɵadvance(4);
-    i0.ɵɵproperty("ngIf", ctx_r817.index == 0);
+    i0.ɵɵproperty("ngIf", ctx_r821.index == 0);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("@.disabled", true)("selectedIndex", ctx_r817.index);
+    i0.ɵɵproperty("@.disabled", true)("selectedIndex", ctx_r821.index);
 } }
 var _c1 = function () { return { "overflow-y": "hidden", "height": "100%", "display": "flex", "position": "absolute" }; };
 var OnboardingListComponent = /** @class */ (function () {

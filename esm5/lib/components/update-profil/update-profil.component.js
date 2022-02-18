@@ -12,36 +12,36 @@ import * as i8 from "@angular/material/select";
 import * as i9 from "@angular/material/checkbox";
 import * as i10 from "@angular/material/core";
 function UpdateProfilComponent_div_17_mat_icon_1_Template(rf, ctx) { if (rf & 1) {
-    var _r420 = i0.ɵɵgetCurrentView();
+    var _r422 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "mat-icon", 20);
-    i0.ɵɵlistener("click", function UpdateProfilComponent_div_17_mat_icon_1_Template_mat_icon_click_0_listener($event) { i0.ɵɵrestoreView(_r420); var icon_r418 = ctx.$implicit; var ctx_r419 = i0.ɵɵnextContext(2); return ctx_r419.onSelectPicto($event, icon_r418.name); });
+    i0.ɵɵlistener("click", function UpdateProfilComponent_div_17_mat_icon_1_Template_mat_icon_click_0_listener($event) { i0.ɵɵrestoreView(_r422); var icon_r420 = ctx.$implicit; var ctx_r421 = i0.ɵɵnextContext(2); return ctx_r421.onSelectPicto($event, icon_r420.name); });
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var icon_r418 = ctx.$implicit;
-    var ctx_r417 = i0.ɵɵnextContext(2);
-    i0.ɵɵstyleProp("color", ctx_r417.form.get("Picto").value === icon_r418.name ? "#830B6B" : "#000");
+    var icon_r420 = ctx.$implicit;
+    var ctx_r419 = i0.ɵɵnextContext(2);
+    i0.ɵɵstyleProp("color", ctx_r419.form.get("Picto").value === icon_r420.name ? "#830B6B" : "#000");
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" ", icon_r418.name, " ");
+    i0.ɵɵtextInterpolate1(" ", icon_r420.name, " ");
 } }
 function UpdateProfilComponent_div_17_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 18);
     i0.ɵɵtemplate(1, UpdateProfilComponent_div_17_mat_icon_1_Template, 2, 3, "mat-icon", 19);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r415 = i0.ɵɵnextContext();
+    var ctx_r417 = i0.ɵɵnextContext();
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", ctx_r415.matIconList);
+    i0.ɵɵproperty("ngForOf", ctx_r417.matIconList);
 } }
 function UpdateProfilComponent_mat_option_26_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "mat-option", 21);
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var tag_r421 = ctx.$implicit;
-    i0.ɵɵproperty("value", tag_r421);
+    var tag_r423 = ctx.$implicit;
+    i0.ɵɵproperty("value", tag_r423);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate(tag_r421);
+    i0.ɵɵtextInterpolate(tag_r423);
 } }
 var UpdateProfilComponent = /** @class */ (function () {
     function UpdateProfilComponent(data, dialogRef) {

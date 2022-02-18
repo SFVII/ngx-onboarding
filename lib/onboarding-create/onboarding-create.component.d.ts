@@ -34,6 +34,7 @@ export declare class OnboardingCreateComponent implements OnInit {
     currentActive: any;
     showMode: boolean;
     selectedCategoryIndex: any;
+    loading: boolean;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog);
     categories: any;
     isObject(obj: any): boolean;
