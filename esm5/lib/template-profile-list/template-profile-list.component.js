@@ -17,9 +17,9 @@ function TemplateProfileListComponent_div_13_div_2_Template(rf, ctx) { if (rf & 
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var d_r661 = i0.ɵɵnextContext().$implicit;
+    var d_r669 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(d_r661 == null ? null : d_r661.Picto);
+    i0.ɵɵtextInterpolate(d_r669 == null ? null : d_r669.Picto);
 } }
 function TemplateProfileListComponent_div_13_div_3_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 13);
@@ -28,13 +28,13 @@ function TemplateProfileListComponent_div_13_div_3_Template(rf, ctx) { if (rf & 
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var d_r661 = i0.ɵɵnextContext().$implicit;
+    var d_r669 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(d_r661.Name.substr(0, 2));
+    i0.ɵɵtextInterpolate(d_r669.Name.substr(0, 2));
 } }
 var _c0 = function (a0) { return [a0]; };
 function TemplateProfileListComponent_div_13_Template(rf, ctx) { if (rf & 1) {
-    var _r667 = i0.ɵɵgetCurrentView();
+    var _r675 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 9);
     i0.ɵɵelementStart(1, "div", 10);
     i0.ɵɵtemplate(2, TemplateProfileListComponent_div_13_div_2_Template, 3, 1, "div", 11);
@@ -44,26 +44,26 @@ function TemplateProfileListComponent_div_13_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(6, "button", 12);
-    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_13_Template_button_click_6_listener($event) { i0.ɵɵrestoreView(_r667); var d_r661 = ctx.$implicit; var ctx_r666 = i0.ɵɵnextContext(); return ctx_r666.onDelete($event, d_r661._id); });
+    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_13_Template_button_click_6_listener($event) { i0.ɵɵrestoreView(_r675); var d_r669 = ctx.$implicit; var ctx_r674 = i0.ɵɵnextContext(); return ctx_r674.onDelete($event, d_r669._id); });
     i0.ɵɵelementStart(7, "mat-icon");
     i0.ɵɵtext(8, "close");
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var d_r661 = ctx.$implicit;
-    var ctx_r660 = i0.ɵɵnextContext();
+    var d_r669 = ctx.$implicit;
+    var ctx_r668 = i0.ɵɵnextContext();
     i0.ɵɵproperty("defaultElevation", 0);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("routerLink", i0.ɵɵpureFunction1(6, _c0, ctx_r660.service.mainPath + "/template/" + d_r661._id));
+    i0.ɵɵproperty("routerLink", i0.ɵɵpureFunction1(6, _c0, ctx_r668.service.mainPath + "/template/" + d_r669._id));
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", d_r661 == null ? null : d_r661.Picto);
+    i0.ɵɵproperty("ngIf", d_r669 == null ? null : d_r669.Picto);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", !(d_r661 == null ? null : d_r661.Picto));
+    i0.ɵɵproperty("ngIf", !(d_r669 == null ? null : d_r669.Picto));
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1(" ", d_r661.Name, "");
+    i0.ɵɵtextInterpolate1(" ", d_r669.Name, "");
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("defaultElevation", ctx_r660.defaultElevation);
+    i0.ɵɵproperty("defaultElevation", ctx_r668.defaultElevation);
 } }
 var TemplateProfileListComponent = /** @class */ (function () {
     function TemplateProfileListComponent(service, router) {

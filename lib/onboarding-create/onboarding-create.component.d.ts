@@ -35,6 +35,7 @@ export declare class OnboardingCreateComponent implements OnInit {
     showMode: boolean;
     selectedCategoryIndex: any;
     loading: boolean;
+    invalideValue: boolean;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog);
     categories: any;
     isObject(obj: any): boolean;
@@ -57,6 +58,7 @@ export declare class OnboardingCreateComponent implements OnInit {
     onCheckConditionLocationValue(iscondition: any, location: any, conditionValue: any): boolean;
     checkSubForm(forms: any): boolean;
     onSelectMenu(i: any): void;
+    onCheckValue(event: boolean): void;
     static ɵfac: i0.ɵɵFactoryDef<OnboardingCreateComponent>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<OnboardingCreateComponent, "create-onboarding", never, {}, {}, never>;
 }

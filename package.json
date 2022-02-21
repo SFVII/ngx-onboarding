@@ -4,7 +4,9 @@
   "peerDependencies": {
     "@angular/common": "~9.0.7",
     "@angular/core": "~9.0.7",
-    "@angular/material": "^9.2.4"
+    "@angular/material": "^9.2.4",
+    "ngx-intl-tel-input": "2.6.0",
+    "@nicky-lenaers/ngx-scroll-to": "^9.0.0"
   },
   "dependencies": {
     "mustache": "^4.2.0",
