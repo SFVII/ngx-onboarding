@@ -10,6 +10,10 @@ export declare class OnboardingService {
     private _token;
     templates: BehaviorSubject<any>;
     _templates: import("rxjs").Observable<any>;
+    currentTemplate: BehaviorSubject<any>;
+    _currentTemplate: import("rxjs").Observable<any>;
+    currentOnboarding: BehaviorSubject<any>;
+    _currentOnboarding: import("rxjs").Observable<any>;
     onboarding: BehaviorSubject<any>;
     _onboarding: import("rxjs").Observable<any>;
     contacts: BehaviorSubject<any>;

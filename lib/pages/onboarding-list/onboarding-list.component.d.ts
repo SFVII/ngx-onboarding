@@ -1,0 +1,32 @@
+import { ActivatedRoute, Router } from '@angular/router';
+import { displayedColumnsInterface } from "table";
+import { OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { OnboardingService } from '../../onboarding.service';
+import * as i0 from "@angular/core";
+export declare class OnboardingListComponent implements OnInit {
+    private service;
+    private router;
+    private route;
+    private dialog;
+    onboardingList: any;
+    inputSearch: string;
+    currentFilter: string;
+    search: string;
+    onboardingFormatList: any[];
+    templates: any[];
+    columnDefinitions: displayedColumnsInterface[];
+    localService: any;
+    _loading_table: boolean;
+    private HiddenIndex;
+    index: number;
+    lang: string;
+    cancelSearch(): void;
+    constructor(service: OnboardingService, router: Router, route: ActivatedRoute, dialog: MatDialog);
+    ngOnInit(): Promise<void>;
+    triggerChange($event: any): void;
+    filterOnboarding(name: any): void;
+    openDialog(): void;
+    static ɵfac: i0.ɵɵFactoryDef<OnboardingListComponent>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<OnboardingListComponent, "lib-onboarding-list", never, {}, {}, never>;
+}

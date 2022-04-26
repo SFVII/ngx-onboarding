@@ -1,4 +1,4 @@
-import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from "@angular/router";
+import { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot } from "@angular/router";
 import { Observable } from "rxjs";
 import * as i0 from "@angular/core";
 export interface CanComponentDeactivate {

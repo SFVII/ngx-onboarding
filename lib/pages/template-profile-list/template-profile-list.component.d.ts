@@ -1,0 +1,38 @@
+import { OnInit } from "@angular/core";
+import { MatDialog } from "@angular/material/dialog";
+import { MatPaginator } from "@angular/material/paginator";
+import { MatSort } from "@angular/material/sort";
+import { MatTableDataSource } from "@angular/material/table";
+import { OnboardingService } from "../../onboarding.service";
+import { Router } from "@angular/router";
+import * as i0 from "@angular/core";
+export declare class TemplateProfileListComponent implements OnInit {
+    service: OnboardingService;
+    private router;
+    private dialog;
+    displayedColumns: string[];
+    datas: any;
+    publishTemplate: any;
+    draftTemplate: any;
+    dataSource: MatTableDataSource<any>;
+    defaultElevation: number;
+    raisedElevation: number;
+    currentFilter: string;
+    paginator: MatPaginator;
+    sort: MatSort;
+    publishTemplateLength: any;
+    draftTemplateLength: any;
+    tags: any[];
+    constructor(service: OnboardingService, router: Router, dialog: MatDialog);
+    ngOnInit(): Promise<void>;
+    onAddProfil(): void;
+    onEditProfil(id: any): void;
+    onChangeStatus(data: any, Status: any): Promise<void>;
+    onDelete(id: any): Promise<void>;
+    getAllProfils(): Promise<void>;
+    filterTemplate(value: any, name: any): void;
+    copyTemplate(data: any): Promise<void>;
+    openDialog(): void;
+    static ɵfac: i0.ɵɵFactoryDef<TemplateProfileListComponent>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<TemplateProfileListComponent, "onboarding-profile-list", never, {}, {}, never>;
+}

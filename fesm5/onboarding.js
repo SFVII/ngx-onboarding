@@ -1,25 +1,25 @@
-import { __awaiter, __generator, __assign, __values } from 'tslib';
+import { __awaiter, __generator, __assign, __rest, __values } from 'tslib';
 import { HttpHeaders, HttpClient, HttpClientModule } from '@angular/common/http';
-import { EventEmitter, ɵɵinject, ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, Inject, ɵɵdirectiveInject, ɵɵdefineComponent, ɵɵelement, Component, ɵɵgetCurrentView, ɵɵelementStart, ɵɵlistener, ɵɵrestoreView, ɵɵnextContext, ɵɵtext, ɵɵelementEnd, ɵɵstyleProp, ɵɵadvance, ɵɵtextInterpolate1, ɵɵtemplate, ɵɵproperty, ɵɵtextInterpolate, ɵɵpureFunction0, ɵɵreference, ɵɵprojectionDef, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵprojection, ɵɵclassMap, Input, Output, ɵɵtextInterpolate2, ElementRef, Renderer2, ɵɵdefineDirective, ɵɵNgOnChangesFeature, Directive, HostListener, ɵɵpureFunction1, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ViewChild, ɵɵpipe, ɵɵpipeBind1, ɵɵsanitizeUrl, ɵɵclassProp, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, Optional, SkipSelf } from '@angular/core';
+import { EventEmitter, ɵɵinject, ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, Inject, ɵɵdirectiveInject, ɵɵdefineComponent, ɵɵelement, Component, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, ɵɵproperty, ɵɵadvance, ɵɵtextInterpolate, ɵɵlistener, ɵɵtemplate, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵnextContext, ɵɵclassMap, ɵɵtextInterpolate1, ɵɵpureFunction0, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵprojectionDef, ɵɵprojection, Input, Output, ɵɵstyleProp, ɵɵreference, ElementRef, Renderer2, ɵɵdefineDirective, ɵɵNgOnChangesFeature, Directive, HostListener, ɵɵpipe, ɵɵpureFunction1, ɵɵpipeBind2, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ViewChild, ɵɵtextInterpolate2, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, Optional, SkipSelf } from '@angular/core';
 import { Subject, BehaviorSubject } from 'rxjs';
-import { Router, RouterOutlet, ActivatedRoute, RouterLinkWithHref, RouterLink, RouterModule } from '@angular/router';
-import { ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, DefaultValueAccessor, NgControlStatus, FormControlName, RequiredValidator, FormControl, NgModel, Validators, FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Router, RouterOutlet, ActivatedRoute, RouterLink, RouterModule } from '@angular/router';
 import { ENTER, COMMA, SEMICOLON } from '@angular/cdk/keycodes';
-import { CdkDropList, CdkDrag, moveItemInArray, transferArrayItem, CdkDropListGroup, CdkDragHandle, DragDropModule } from '@angular/cdk/drag-drop';
+import { moveItemInArray, transferArrayItem, CdkDropListGroup, CdkDropList, CdkDrag, CdkDragHandle, DragDropModule } from '@angular/cdk/drag-drop';
+import { DefaultValueAccessor, NgControlStatus, NgModel, RequiredValidator, FormControl, Validators, FormBuilder, ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef, MatDialogContent, MatDialog, MatDialogModule } from '@angular/material/dialog';
-import { MatButton, MatAnchor, MatButtonModule } from '@angular/material/button';
-import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatFormField, MatLabel, MatError, MatFormFieldModule } from '@angular/material/form-field';
 import { MatInput, MatInputModule } from '@angular/material/input';
 import { NativeElementInjectorDirective, CountryISO, PhoneNumberFormat, NgxIntlTelInputComponent, NgxIntlTelInputModule } from 'ngx-intl-tel-input';
-import { NgIf, NgForOf, NgSwitch, NgSwitchCase, NgSwitchDefault, NgStyle, KeyValuePipe, CommonModule } from '@angular/common';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
-import { MatCheckbox, MatCheckboxRequiredValidator, MatCheckboxModule } from '@angular/material/checkbox';
+import { NgForOf, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault, NgStyle, DatePipe, CommonModule } from '@angular/common';
+import { MatButton, MatAnchor, MatButtonModule } from '@angular/material/button';
 import { MatOption } from '@angular/material/core';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { ScrollToDirective, ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
-import { MatChipList, MatChipInput, MatChip, MatChipRemove, MatChipsModule } from '@angular/material/chips';
+import { MatCheckbox, MatCheckboxRequiredValidator, MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioGroup, MatRadioButton, MatRadioModule } from '@angular/material/radio';
+import { MatSlideToggle, MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatChipList, MatChipInput, MatChip, MatChipRemove, MatChipsModule } from '@angular/material/chips';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
@@ -28,11 +28,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { CdkTableModule } from '@angular/cdk/table';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressBar, MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatCard, MatCardModule } from '@angular/material/card';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { isValidPhoneNumber, parsePhoneNumber } from 'libphonenumber-js';
-import { CellsComponentList, CoreMatTable, TableComponent, TableModule } from 'table';
-import { MatTabGroup, MatTab, MatTabLabel, MatTabContent, MatTabsModule } from '@angular/material/tabs';
+import { TableComponent, CellsComponentList, CoreMatTable, TableModule } from 'table';
+import { MatTabsModule } from '@angular/material/tabs';
 
 var OnboardingService = /** @class */ (function () {
     function OnboardingService(config, http) {
@@ -42,6 +43,10 @@ var OnboardingService = /** @class */ (function () {
         this._token = this.token.asObservable();
         this.templates = new BehaviorSubject(null);
         this._templates = this.templates.asObservable();
+        this.currentTemplate = new BehaviorSubject(null);
+        this._currentTemplate = this.currentTemplate.asObservable();
+        this.currentOnboarding = new BehaviorSubject(null);
+        this._currentOnboarding = this.currentOnboarding.asObservable();
         this.onboarding = new BehaviorSubject(null);
         this._onboarding = this.onboarding.asObservable();
         this.contacts = new BehaviorSubject(null);
@@ -182,6 +187,7 @@ var OnboardingService = /** @class */ (function () {
                         };
                         _this.http.get(_this.endpoint + "/profils/" + id, options)
                             .subscribe(function (data) {
+                            _this.currentTemplate.next(data);
                             resolve(data);
                         });
                     })];
@@ -394,153 +400,103 @@ var OnboardingComponent = /** @class */ (function () {
             }]
     }], function () { return [{ type: OnboardingService }, { type: Router }]; }, null); })();
 
-function UpdateProfilComponent_div_17_mat_icon_1_Template(rf, ctx) { if (rf & 1) {
-    var _r437 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-icon", 20);
-    ɵɵlistener("click", function UpdateProfilComponent_div_17_mat_icon_1_Template_mat_icon_click_0_listener($event) { ɵɵrestoreView(_r437); var icon_r435 = ctx.$implicit; var ctx_r436 = ɵɵnextContext(2); return ctx_r436.onSelectPicto($event, icon_r435.name); });
+function DialogCreateTemplateComponent_mat_option_11_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-option", 8);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var icon_r435 = ctx.$implicit;
-    var ctx_r434 = ɵɵnextContext(2);
-    ɵɵstyleProp("color", ctx_r434.form.get("Picto").value === icon_r435.name ? "#830B6B" : "#000");
+    var tag_r463 = ctx.$implicit;
+    ɵɵproperty("value", tag_r463);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", icon_r435.name, " ");
+    ɵɵtextInterpolate(tag_r463);
 } }
-function UpdateProfilComponent_div_17_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 18);
-    ɵɵtemplate(1, UpdateProfilComponent_div_17_mat_icon_1_Template, 2, 3, "mat-icon", 19);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r432 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r432.matIconList);
-} }
-function UpdateProfilComponent_mat_option_26_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-option", 21);
-    ɵɵtext(1);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var tag_r438 = ctx.$implicit;
-    ɵɵproperty("value", tag_r438);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(tag_r438);
-} }
-var UpdateProfilComponent = /** @class */ (function () {
-    function UpdateProfilComponent(data, dialogRef) {
+var DialogCreateTemplateComponent = /** @class */ (function () {
+    function DialogCreateTemplateComponent(data, dialogRef, service) {
         this.data = data;
         this.dialogRef = dialogRef;
-        this.form = this.data.form;
-        this.tags = this.data.tags;
-        this.matIconList = this.data.matIconList;
+        this.service = service;
+        this.tags = [];
+        this.profil = {
+            Name: '',
+            Tags: ''
+        };
     }
-    UpdateProfilComponent.prototype.ngOnInit = function () {
+    DialogCreateTemplateComponent.prototype.ngOnInit = function () {
+        var _a;
+        this.tags = this.data.tags;
+        this.profil = ((_a = this.data) === null || _a === void 0 ? void 0 : _a.profil) || this.profil;
     };
-    UpdateProfilComponent.prototype.onConfirm = function () {
-        this.dialogRef.close(true);
+    DialogCreateTemplateComponent.prototype.onSelect = function (type) {
+        this.dialogRef.close(type);
     };
-    UpdateProfilComponent.prototype.onClose = function () {
+    DialogCreateTemplateComponent.prototype.createProfil = function () {
+        if (!this.disabled()) {
+            this.dialogRef.close(this.profil);
+        }
+    };
+    DialogCreateTemplateComponent.prototype.close = function () {
         this.dialogRef.close(false);
     };
-    UpdateProfilComponent.prototype.onSelectPicto = function (e, picto) {
-        e.preventDefault();
-        this.form.patchValue({ Picto: picto });
-        this.isPictoListShow = !this.isPictoListShow;
+    DialogCreateTemplateComponent.prototype.disabled = function () {
+        return !(this.profil.Name !== "" && this.profil.Tags !== "");
     };
-    UpdateProfilComponent.prototype.onShowPictoList = function (e) {
-        e.preventDefault();
-        this.isPictoListShow = !this.isPictoListShow;
-    };
-    UpdateProfilComponent.ɵfac = function UpdateProfilComponent_Factory(t) { return new (t || UpdateProfilComponent)(ɵɵdirectiveInject(MAT_DIALOG_DATA), ɵɵdirectiveInject(MatDialogRef)); };
-    UpdateProfilComponent.ɵcmp = ɵɵdefineComponent({ type: UpdateProfilComponent, selectors: [["lib-update-profil"]], decls: 36, vars: 7, consts: [[3, "formGroup"], [1, "box-title"], [1, "box-title-content"], [1, "title"], [1, "profil-name-content"], ["mat-raised-button", "", "color", "primary", 1, "add-picto", 3, "click"], ["appearance", "outline", 1, "full-width"], ["type", "text", "matInput", "", "formControlName", "Name", "placeholder", "Ex. Manager"], ["class", "list-picto", 4, "ngIf"], ["type", "text", "matInput", "", "formControlName", "Description", "rows", "4", "placeholder", ""], ["appearance", "outline", 1, "full-width", "margin-top"], ["formControlName", "Tags", "required", ""], [3, "value", 4, "ngFor", "ngForOf"], ["formControlName", "Status", 1, "form-field"], [1, "action"], [1, "link-create-profil"], ["mat-raised-button", "", "color", "primary", 1, "link-add-profil", 3, "click"], ["mat-raised-button", "", "color", "primary", 1, "link-add-profil", 3, "disabled", "click"], [1, "list-picto"], [3, "color", "click", 4, "ngFor", "ngForOf"], [3, "click"], [3, "value"]], template: function UpdateProfilComponent_Template(rf, ctx) { if (rf & 1) {
+    DialogCreateTemplateComponent.ɵfac = function DialogCreateTemplateComponent_Factory(t) { return new (t || DialogCreateTemplateComponent)(ɵɵdirectiveInject(MAT_DIALOG_DATA), ɵɵdirectiveInject(MatDialogRef), ɵɵdirectiveInject(OnboardingService)); };
+    DialogCreateTemplateComponent.ɵcmp = ɵɵdefineComponent({ type: DialogCreateTemplateComponent, selectors: [["lib-dialog-create-template"]], decls: 17, vars: 4, consts: [[1, "title"], ["appearance", "outline", 1, "full-width"], ["type", "text", "matInput", "", "placeholder", "Ex. Manager", 3, "ngModel", "ngModelChange"], ["required", "", 3, "ngModel", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [1, "action-content"], ["mat-raised-button", "", 1, "create-profil", 3, "disabled", "click"], ["mat-raised-button", "", 1, "abandon-profil", 3, "click"], [3, "value"]], template: function DialogCreateTemplateComponent_Template(rf, ctx) { if (rf & 1) {
             ɵɵelementStart(0, "mat-dialog-content");
-            ɵɵelementStart(1, "main");
-            ɵɵelementStart(2, "form", 0);
-            ɵɵelementStart(3, "div", 1);
-            ɵɵelementStart(4, "div", 2);
-            ɵɵelementStart(5, "h3", 3);
-            ɵɵtext(6, "Modification votre profil d\u2019onboarding");
+            ɵɵelementStart(1, "h3", 0);
+            ɵɵtext(2, "Cr\u00E9ation d\u2019un nouveau profil");
             ɵɵelementEnd();
-            ɵɵelementStart(7, "p");
-            ɵɵtext(8, "S\u00E9lectionnez l\u2019icon de votre choix et modifiez votre profil d\u2019onboarding");
+            ɵɵelementStart(3, "mat-form-field", 1);
+            ɵɵelementStart(4, "mat-label");
+            ɵɵtext(5, "Nom de votre nouveau profil");
             ɵɵelementEnd();
-            ɵɵelementStart(9, "div", 4);
-            ɵɵelementStart(10, "button", 5);
-            ɵɵlistener("click", function UpdateProfilComponent_Template_button_click_10_listener($event) { return ctx.onShowPictoList($event); });
-            ɵɵelementStart(11, "mat-icon");
-            ɵɵtext(12);
+            ɵɵelementStart(6, "input", 2);
+            ɵɵlistener("ngModelChange", function DialogCreateTemplateComponent_Template_input_ngModelChange_6_listener($event) { return ctx.profil.Name = $event; });
             ɵɵelementEnd();
             ɵɵelementEnd();
-            ɵɵelementStart(13, "mat-form-field", 6);
-            ɵɵelementStart(14, "mat-label");
-            ɵɵtext(15, "Nom de votre nouveau profil");
+            ɵɵelementStart(7, "mat-form-field", 1);
+            ɵɵelementStart(8, "mat-label");
+            ɵɵtext(9, "Tags");
             ɵɵelementEnd();
-            ɵɵelement(16, "input", 7);
-            ɵɵelementEnd();
-            ɵɵtemplate(17, UpdateProfilComponent_div_17_Template, 2, 1, "div", 8);
-            ɵɵelementEnd();
-            ɵɵelementStart(18, "mat-form-field", 6);
-            ɵɵelementStart(19, "mat-label");
-            ɵɵtext(20, "Description");
-            ɵɵelementEnd();
-            ɵɵelement(21, "textarea", 9);
-            ɵɵelementEnd();
-            ɵɵelementStart(22, "mat-form-field", 10);
-            ɵɵelementStart(23, "mat-label");
-            ɵɵtext(24, "Tags");
-            ɵɵelementEnd();
-            ɵɵelementStart(25, "mat-select", 11);
-            ɵɵtemplate(26, UpdateProfilComponent_mat_option_26_Template, 2, 2, "mat-option", 12);
+            ɵɵelementStart(10, "mat-select", 3);
+            ɵɵlistener("ngModelChange", function DialogCreateTemplateComponent_Template_mat_select_ngModelChange_10_listener($event) { return ctx.profil.Tags = $event; });
+            ɵɵtemplate(11, DialogCreateTemplateComponent_mat_option_11_Template, 2, 2, "mat-option", 4);
             ɵɵelementEnd();
             ɵɵelementEnd();
-            ɵɵelementStart(27, "mat-checkbox", 13);
-            ɵɵtext(28, "Active");
+            ɵɵelementStart(12, "div", 5);
+            ɵɵelementStart(13, "button", 6);
+            ɵɵlistener("click", function DialogCreateTemplateComponent_Template_button_click_13_listener() { return ctx.createProfil(); });
+            ɵɵtext(14, " Cr\u00E9er profil ");
             ɵɵelementEnd();
-            ɵɵelementStart(29, "div", 14);
-            ɵɵelementStart(30, "div", 15);
-            ɵɵelementStart(31, "button", 16);
-            ɵɵlistener("click", function UpdateProfilComponent_Template_button_click_31_listener() { return ctx.onClose(); });
-            ɵɵtext(32, " Annuler ");
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementStart(33, "div", 15);
-            ɵɵelementStart(34, "button", 17);
-            ɵɵlistener("click", function UpdateProfilComponent_Template_button_click_34_listener() { return ctx.onConfirm(); });
-            ɵɵtext(35, " Modifier un profil ");
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementEnd();
+            ɵɵelementStart(15, "button", 7);
+            ɵɵlistener("click", function DialogCreateTemplateComponent_Template_button_click_15_listener() { return ctx.close(); });
+            ɵɵtext(16, " Abandonner ");
             ɵɵelementEnd();
             ɵɵelementEnd();
             ɵɵelementEnd();
         } if (rf & 2) {
-            ɵɵadvance(2);
-            ɵɵproperty("formGroup", ctx.form);
-            ɵɵadvance(10);
-            ɵɵtextInterpolate(ctx.form.get("Picto").value === "" ? "contact_phone" : ctx.form.get("Picto").value);
-            ɵɵadvance(5);
-            ɵɵproperty("ngIf", ctx.isPictoListShow);
-            ɵɵadvance(9);
+            ɵɵadvance(6);
+            ɵɵproperty("ngModel", ctx.profil.Name);
+            ɵɵadvance(4);
+            ɵɵproperty("ngModel", ctx.profil.Tags);
+            ɵɵadvance(1);
             ɵɵproperty("ngForOf", ctx.tags);
-            ɵɵadvance(8);
-            ɵɵstyleProp("opacity", ctx.form.get("Name").value === "" || ctx.form.get("Tags").value == "" ? 0.4 : 1);
-            ɵɵproperty("disabled", ctx.form.get("Name").value === "" || ctx.form.get("Tags").value == "");
-        } }, directives: [MatDialogContent, ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, MatButton, MatIcon, MatFormField, MatLabel, MatInput, DefaultValueAccessor, NgControlStatus, FormControlName, NativeElementInjectorDirective, NgIf, MatSelect, RequiredValidator, NgForOf, MatCheckbox, MatOption], styles: ["main[_ngcontent-%COMP%]{width:100%;display:flex;flex-direction:column;align-items:center}main[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{background-color:transparent!important}main[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]{display:flex;height:100%;width:100%}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]{width:786px;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;opacity:1;margin:auto;padding:0 25px;-ms-grid-row-align:center;align-self:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:center;font:900 32px/48px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%], main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{font:18px/24px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]{display:flex;align-items:center;position:relative;margin-bottom:10px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]{margin-right:15px;min-width:50px;width:30px;padding:9px 12px;border:1px solid #171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-right:10px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]{position:absolute;height:200px;width:100%;background:no-repeat padding-box #fff;border:1px solid #171f26;border-radius:8px;top:100%;z-index:1}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin:15px;border:none;font-size:40px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]:hover{color:#830b6b!important;cursor:pointer}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .box-title-content[_ngcontent-%COMP%]{width:100%;margin:25px auto}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]{font:900 32px/38px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:15px/26px Nexa Text;letter-spacing:0;color:#171f26;text-align:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .link-create-profil[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:center;margin-top:10px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6}main[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.input-category-name[_ngcontent-%COMP%]{border:none;outline:0;text-align:left;font:bold 20px/48px Nexa Text;letter-spacing:0;color:#171f26}.full-width[_ngcontent-%COMP%]{width:100%}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]{width:90%;margin:auto 2% auto auto}.margin-top[_ngcontent-%COMP%]{margin-top:10px}.action[_ngcontent-%COMP%]{display:flex;align-items:center}"] });
-    return UpdateProfilComponent;
+            ɵɵadvance(2);
+            ɵɵproperty("disabled", ctx.disabled());
+        } }, directives: [MatDialogContent, MatFormField, MatLabel, MatInput, DefaultValueAccessor, NgControlStatus, NgModel, NativeElementInjectorDirective, MatSelect, RequiredValidator, NgForOf, MatButton, MatOption], styles: ["mat-dialog-content[_ngcontent-%COMP%]{display:flex!important;flex-direction:column;justify-content:flex-start;max-width:555px;min-width:555px}mat-dialog-content[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]{margin-bottom:10px}mat-dialog-content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:20px;line-height:110%;display:flex;align-items:center;color:#242731}mat-dialog-content[_ngcontent-%COMP%]   .abandon-profil[_ngcontent-%COMP%]{background-color:transparent;border:1px solid #171f26;color:#171f26;margin-left:20px}mat-dialog-content[_ngcontent-%COMP%]   .create-profil[_ngcontent-%COMP%]{background-color:#171f26;border:1px solid #171f26;color:#fff}mat-dialog-content[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:disabled, mat-dialog-content[_ngcontent-%COMP%]   button[disabled][_ngcontent-%COMP%]{opacity:.5}"] });
+    return DialogCreateTemplateComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(UpdateProfilComponent, [{
+/*@__PURE__*/ (function () { ɵsetClassMetadata(DialogCreateTemplateComponent, [{
         type: Component,
         args: [{
-                selector: 'lib-update-profil',
-                templateUrl: './update-profil.component.html',
-                styleUrls: ['./update-profil.component.scss']
+                selector: 'lib-dialog-create-template',
+                templateUrl: './dialog-create-template.component.html',
+                styleUrls: ['./dialog-create-template.component.scss']
             }]
     }], function () { return [{ type: undefined, decorators: [{
                 type: Inject,
                 args: [MAT_DIALOG_DATA]
-            }] }, { type: MatDialogRef }]; }, null); })();
+            }] }, { type: MatDialogRef }, { type: OnboardingService }]; }, null); })();
 
 var ExitConfirmComponent = /** @class */ (function () {
     function ExitConfirmComponent(data, dialogRef, service) {
@@ -591,174 +547,298 @@ var ExitConfirmComponent = /** @class */ (function () {
                 args: [MAT_DIALOG_DATA]
             }] }, { type: MatDialogRef }, { type: OnboardingService }]; }, null); })();
 
+function TypeComponent_button_1_Template(rf, ctx) { if (rf & 1) {
+    var _r467 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "button", 1);
+    ɵɵlistener("click", function TypeComponent_button_1_Template_button_click_0_listener() { ɵɵrestoreView(_r467); var item_r465 = ctx.$implicit; var ctx_r466 = ɵɵnextContext(); return ctx_r466.onSelect(item_r465.value); });
+    ɵɵtext(1);
+    ɵɵelementStart(2, "mat-icon");
+    ɵɵtext(3);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var item_r465 = ctx.$implicit;
+    var ctx_r464 = ɵɵnextContext();
+    ɵɵclassMap(ctx_r464.selectedType === item_r465.value ? "active" : "");
+    ɵɵadvance(1);
+    ɵɵtextInterpolate1(" ", item_r465.label, " ");
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(item_r465.icon);
+} }
+var TypeComponent = /** @class */ (function () {
+    function TypeComponent(data, dialogRef, service) {
+        this.data = data;
+        this.dialogRef = dialogRef;
+        this.service = service;
+        this.typeList = [{
+                label: 'Text Court',
+                icon: 'list_alt',
+                value: 'text'
+            },
+            {
+                label: 'Text Long',
+                icon: 'description',
+                value: 'textarea'
+            },
+            {
+                label: 'Options à choix unique',
+                icon: 'radio_button_checked',
+                value: 'radio'
+            },
+            {
+                label: 'Bouton On/Off',
+                icon: 'check_box',
+                value: 'checkbox'
+            },
+            {
+                label: 'Checkbox multiple',
+                icon: 'check_box',
+                value: 'checkbox_multiple'
+            },
+            {
+                label: 'Liste déroulante',
+                icon: 'keyboard_arrow_down',
+                value: 'select'
+            },
+            {
+                label: 'Email',
+                icon: 'mail',
+                value: 'email'
+            },
+            {
+                label: 'Mot de passe',
+                icon: 'lock',
+                value: 'password'
+            },
+            {
+                label: 'Téléphone',
+                icon: 'phone',
+                value: 'tel'
+            },
+            {
+                label: 'Date',
+                icon: 'date_range',
+                value: 'date'
+            }];
+        this.selectedType = "";
+        this.selectedType = this.data.selectedType;
+    }
+    TypeComponent.prototype.ngOnInit = function () {
+    };
+    TypeComponent.prototype.onSelect = function (type) {
+        this.dialogRef.close(type);
+    };
+    TypeComponent.ɵfac = function TypeComponent_Factory(t) { return new (t || TypeComponent)(ɵɵdirectiveInject(MAT_DIALOG_DATA), ɵɵdirectiveInject(MatDialogRef), ɵɵdirectiveInject(OnboardingService)); };
+    TypeComponent.ɵcmp = ɵɵdefineComponent({ type: TypeComponent, selectors: [["lib-type"]], decls: 2, vars: 1, consts: [["mat-button", "", "class", "nowboard-btn", "style", "margin-top: 10px", 3, "class", "click", 4, "ngFor", "ngForOf"], ["mat-button", "", 1, "nowboard-btn", 2, "margin-top", "10px", 3, "click"]], template: function TypeComponent_Template(rf, ctx) { if (rf & 1) {
+            ɵɵelementStart(0, "mat-dialog-content");
+            ɵɵtemplate(1, TypeComponent_button_1_Template, 4, 4, "button", 0);
+            ɵɵelementEnd();
+        } if (rf & 2) {
+            ɵɵadvance(1);
+            ɵɵproperty("ngForOf", ctx.typeList);
+        } }, directives: [MatDialogContent, NgForOf, MatButton, MatIcon], styles: ["mat-dialog-content[_ngcontent-%COMP%]{display:flex!important;justify-content:center;align-items:center;flex-wrap:wrap;max-width:555px;overflow:hidden}mat-dialog-content[_ngcontent-%COMP%]   .nowboard-btn[_ngcontent-%COMP%]{background:#e5e8ee;border-radius:4px;margin:5px;height:48px}mat-dialog-content[_ngcontent-%COMP%]   .nowboard-btn.active[_ngcontent-%COMP%], mat-dialog-content[_ngcontent-%COMP%]   .nowboard-btn[_ngcontent-%COMP%]:hover{background-color:transparent!important;background-image:linear-gradient(90deg,#9d107d,#8b3391,#7647a0,#5f56a8,#4862ab)!important;color:#fff}"] });
+    return TypeComponent;
+}());
+/*@__PURE__*/ (function () { ɵsetClassMetadata(TypeComponent, [{
+        type: Component,
+        args: [{
+                selector: 'lib-type',
+                templateUrl: './type.component.html',
+                styleUrls: ['./type.component.scss']
+            }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [MAT_DIALOG_DATA]
+            }] }, { type: MatDialogRef }, { type: OnboardingService }]; }, null); })();
+
+function SubTemplateProfileComponent_div_0_div_5_div_1_mat_select_3_mat_option_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-option", 12);
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var select_r762 = ctx.$implicit;
+    ɵɵproperty("value", select_r762.value);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate1(" ", select_r762.value, "");
+} }
 var _c0 = function () { return { standalone: true }; };
-function SubTemplateProfileComponent_div_34_Template(rf, ctx) { if (rf & 1) {
-    var _r693 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 28);
-    ɵɵelementStart(1, "mat-checkbox", 24);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_34_Template_mat_checkbox_ngModelChange_1_listener($event) { ɵɵrestoreView(_r693); var ctx_r692 = ɵɵnextContext(); return ctx_r692.field.expandOnboarding = $event; });
-    ɵɵtext(2, " Coch\u00E9 par default ");
-    ɵɵelementEnd();
+function SubTemplateProfileComponent_div_0_div_5_div_1_mat_select_3_Template(rf, ctx) { if (rf & 1) {
+    var _r764 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-select", 10);
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_5_div_1_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { ɵɵrestoreView(_r764); var ctx_r763 = ɵɵnextContext(4); return ctx_r763.field.selector.value = $event; });
+    ɵɵtemplate(1, SubTemplateProfileComponent_div_0_div_5_div_1_mat_select_3_mat_option_1_Template, 2, 2, "mat-option", 11);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r683 = ɵɵnextContext();
+    var ctx_r760 = ɵɵnextContext(4);
+    ɵɵproperty("ngModel", ctx_r760.field.selector.value)("ngModelOptions", ɵɵpureFunction0(3, _c0));
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r683.field.expandOnboarding)("ngModelOptions", ɵɵpureFunction0(2, _c0));
+    ɵɵproperty("ngForOf", ctx_r760.field.selector.defaultValue);
 } }
-function SubTemplateProfileComponent_mat_form_field_35_mat_chip_6_Template(rf, ctx) { if (rf & 1) {
-    var _r700 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-chip", 35);
-    ɵɵlistener("dblclick", function SubTemplateProfileComponent_mat_form_field_35_mat_chip_6_Template_mat_chip_dblclick_0_listener() { ɵɵrestoreView(_r700); var option_r698 = ctx.$implicit; var ctx_r699 = ɵɵnextContext(2); return ctx_r699.toggleChip(option_r698); })("click", function SubTemplateProfileComponent_mat_form_field_35_mat_chip_6_Template_mat_chip_click_0_listener() { ɵɵrestoreView(_r700); var option_r698 = ctx.$implicit; var ctx_r701 = ɵɵnextContext(2); return ctx_r701.onEditChip(option_r698); })("removed", function SubTemplateProfileComponent_mat_form_field_35_mat_chip_6_Template_mat_chip_removed_0_listener() { ɵɵrestoreView(_r700); var option_r698 = ctx.$implicit; var ctx_r702 = ɵɵnextContext(2); return ctx_r702.removeKeyword(option_r698, ctx_r702.i, ctx_r702.j); });
-    ɵɵtext(1);
-    ɵɵelementStart(2, "mat-icon", 36);
-    ɵɵtext(3, "cancel");
+var _c1 = function () { return { display: "inine-block" }; };
+function SubTemplateProfileComponent_div_0_div_5_div_1_Template(rf, ctx) { if (rf & 1) {
+    var _r766 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 7);
+    ɵɵelementStart(1, "mat-checkbox", 8);
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_5_div_1_Template_mat_checkbox_ngModelChange_1_listener($event) { ɵɵrestoreView(_r766); var ctx_r765 = ɵɵnextContext(3); return ctx_r765.field.value = $event; });
+    ɵɵtext(2);
     ɵɵelementEnd();
+    ɵɵtemplate(3, SubTemplateProfileComponent_div_0_div_5_div_1_mat_select_3_Template, 2, 4, "mat-select", 9);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var option_r698 = ctx.$implicit;
-    ɵɵproperty("selected", option_r698.checked)("value", option_r698.value)("removable", true);
+    var ctx_r759 = ɵɵnextContext(3);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", option_r698.value, " ");
-} }
-function SubTemplateProfileComponent_mat_form_field_35_Template(rf, ctx) { if (rf & 1) {
-    var _r704 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-form-field", 29);
-    ɵɵelementStart(1, "mat-label");
-    ɵɵtext(2, " Valeur par default ");
-    ɵɵelementEnd();
-    ɵɵelementStart(3, "mat-chip-list", 30, 31);
-    ɵɵlistener("cdkDropListDropped", function SubTemplateProfileComponent_mat_form_field_35_Template_mat_chip_list_cdkDropListDropped_3_listener($event) { ɵɵrestoreView(_r704); var ctx_r703 = ɵɵnextContext(); return ctx_r703.drop($event); });
-    ɵɵtemplate(6, SubTemplateProfileComponent_mat_form_field_35_mat_chip_6_Template, 4, 4, "mat-chip", 32);
-    ɵɵelementStart(7, "input", 33, 34);
-    ɵɵlistener("matChipInputTokenEnd", function SubTemplateProfileComponent_mat_form_field_35_Template_input_matChipInputTokenEnd_7_listener($event) { ɵɵrestoreView(_r704); var ctx_r705 = ɵɵnextContext(); return ctx_r705.addKeywordFromInput($event, ctx_r705.i, ctx_r705.j); })("keyup", function SubTemplateProfileComponent_mat_form_field_35_Template_input_keyup_7_listener($event) { ɵɵrestoreView(_r704); var ctx_r706 = ɵɵnextContext(); return ctx_r706.keyUp($event, ctx_r706.i, ctx_r706.j); })("ngModelChange", function SubTemplateProfileComponent_mat_form_field_35_Template_input_ngModelChange_7_listener($event) { ɵɵrestoreView(_r704); var ctx_r707 = ɵɵnextContext(); return ctx_r707.currentChip = $event; });
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var _r695 = ɵɵreference(5);
-    var ctx_r684 = ɵɵnextContext();
-    ɵɵadvance(3);
-    ɵɵproperty("cdkDropListData", ctx_r684.field.defaultValue);
-    ɵɵadvance(3);
-    ɵɵproperty("ngForOf", ctx_r684.field.defaultValue);
+    ɵɵproperty("ngModel", ctx_r759.field.value)("ngModelOptions", ɵɵpureFunction0(5, _c0))("ngStyle", ctx_r759.field.selector && ɵɵpureFunction0(6, _c1));
     ɵɵadvance(1);
-    ɵɵproperty("matChipInputFor", _r695)("matChipInputAddOnBlur", true)("matChipInputSeparatorKeyCodes", ctx_r684.separatorKeysCodes)("ngModel", ctx_r684.currentChip)("ngModelOptions", ɵɵpureFunction0(7, _c0));
+    ɵɵtextInterpolate1(" ", ctx_r759.field.label, " ");
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", ctx_r759.field.selector);
 } }
-function SubTemplateProfileComponent_mat_form_field_36_Template(rf, ctx) { if (rf & 1) {
-    var _r709 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-form-field", 1);
-    ɵɵelementStart(1, "mat-label");
-    ɵɵtext(2, "Valeur par default");
-    ɵɵelementEnd();
-    ɵɵelementStart(3, "input", 37);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_mat_form_field_36_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r709); var ctx_r708 = ɵɵnextContext(); return ctx_r708.field.defaultValue = $event; });
-    ɵɵelementEnd();
+function SubTemplateProfileComponent_div_0_div_5_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 7);
+    ɵɵtemplate(1, SubTemplateProfileComponent_div_0_div_5_div_1_Template, 4, 7, "div", 5);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r685 = ɵɵnextContext();
-    ɵɵadvance(3);
-    ɵɵproperty("ngModelOptions", ɵɵpureFunction0(2, _c0))("ngModel", ctx_r685.field.defaultValue);
+    ɵɵadvance(1);
+    ɵɵproperty("ngSwitchCase", "checkbox");
 } }
-function SubTemplateProfileComponent_mat_form_field_37_Template(rf, ctx) { if (rf & 1) {
-    var _r711 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-form-field", 1);
-    ɵɵelementStart(1, "mat-label");
-    ɵɵtext(2, "Valeur par default");
-    ɵɵelementEnd();
-    ɵɵelementStart(3, "input", 38);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_mat_form_field_37_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r711); var ctx_r710 = ɵɵnextContext(); return ctx_r710.field.defaultValue = $event; });
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r686 = ɵɵnextContext();
-    ɵɵstyleProp("opacity", ctx_r686.field.type !== "tel" ? 1 : 0);
-    ɵɵadvance(3);
-    ɵɵproperty("type", ctx_r686.field.type)("disabled", ctx_r686.field.type === "tel")("ngModelOptions", ɵɵpureFunction0(6, _c0))("ngModel", ctx_r686.field.defaultValue);
-} }
-function SubTemplateProfileComponent_mat_checkbox_39_Template(rf, ctx) { if (rf & 1) {
-    var _r713 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-checkbox", 24);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_mat_checkbox_39_Template_mat_checkbox_ngModelChange_0_listener($event) { ɵɵrestoreView(_r713); var ctx_r712 = ɵɵnextContext(); return ctx_r712.field.isConditional = $event; })("ngModelChange", function SubTemplateProfileComponent_mat_checkbox_39_Template_mat_checkbox_ngModelChange_0_listener() { ɵɵrestoreView(_r713); var ctx_r714 = ɵɵnextContext(); return ctx_r714.getConditionValues(); });
-    ɵɵtext(1, " \u00E0 condition ");
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r687 = ɵɵnextContext();
-    ɵɵproperty("ngModel", ctx_r687.field.isConditional)("ngModelOptions", ɵɵpureFunction0(2, _c0));
-} }
-function SubTemplateProfileComponent_div_40_mat_option_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-option", 46);
+function SubTemplateProfileComponent_div_0_div_6_mat_checkbox_4_Template(rf, ctx) { if (rf & 1) {
+    var _r770 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-checkbox", 15);
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_6_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { ɵɵrestoreView(_r770); var opt_r768 = ctx.$implicit; return opt_r768.checked = $event; });
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var cond_r717 = ctx.$implicit;
-    ɵɵproperty("value", cond_r717);
+    var opt_r768 = ctx.$implicit;
+    ɵɵproperty("checked", opt_r768.checked)("ngModel", opt_r768.checked)("ngModelOptions", ɵɵpureFunction0(4, _c0));
     ɵɵadvance(1);
-    ɵɵtextInterpolate(cond_r717.label);
+    ɵɵtextInterpolate1(" ", opt_r768.value, " ");
 } }
-function SubTemplateProfileComponent_div_40_mat_radio_button_7_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-radio-button", 47);
+function SubTemplateProfileComponent_div_0_div_6_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 7);
+    ɵɵelementStart(1, "label");
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "div", 13);
+    ɵɵtemplate(4, SubTemplateProfileComponent_div_0_div_6_mat_checkbox_4_Template, 2, 5, "mat-checkbox", 14);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r755 = ɵɵnextContext(2);
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(ctx_r755.field.label);
+    ɵɵadvance(2);
+    ɵɵproperty("ngForOf", ctx_r755.field.defaultValue);
+} }
+function SubTemplateProfileComponent_div_0_div_7_mat_radio_button_4_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-radio-button", 12);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var item_r718 = ctx.$implicit;
-    ɵɵproperty("value", item_r718.value);
+    var opt_r772 = ctx.$implicit;
+    ɵɵproperty("value", opt_r772.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", item_r718.value, " ");
+    ɵɵtextInterpolate1("", opt_r772.value, " ");
 } }
-function SubTemplateProfileComponent_div_40_Template(rf, ctx) { if (rf & 1) {
-    var _r720 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 39);
-    ɵɵelementStart(1, "mat-form-field", 40);
+function SubTemplateProfileComponent_div_0_div_7_Template(rf, ctx) { if (rf & 1) {
+    var _r774 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 7);
+    ɵɵelementStart(1, "label", 16);
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "mat-radio-group", 17);
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_7_Template_mat_radio_group_ngModelChange_3_listener($event) { ɵɵrestoreView(_r774); var ctx_r773 = ɵɵnextContext(2); return ctx_r773.field.value = $event; });
+    ɵɵtemplate(4, SubTemplateProfileComponent_div_0_div_7_mat_radio_button_4_Template, 2, 2, "mat-radio-button", 11);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r756 = ɵɵnextContext(2);
+    ɵɵadvance(2);
+    ɵɵtextInterpolate1(" ", ctx_r756.field.label, " ");
+    ɵɵadvance(1);
+    ɵɵproperty("ngModel", ctx_r756.field.value)("required", ctx_r756.field.isMandatory);
+    ɵɵadvance(1);
+    ɵɵproperty("ngForOf", ctx_r756.field.defaultValue);
+} }
+function SubTemplateProfileComponent_div_0_div_8_mat_option_5_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-option", 12);
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var opt_r776 = ctx.$implicit;
+    ɵɵproperty("value", opt_r776.value);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(opt_r776.value);
+} }
+function SubTemplateProfileComponent_div_0_div_8_Template(rf, ctx) { if (rf & 1) {
+    var _r778 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 7);
+    ɵɵelementStart(1, "mat-form-field", 18);
     ɵɵelementStart(2, "mat-label");
-    ɵɵtext(3, "Champ de condition :");
+    ɵɵtext(3);
     ɵɵelementEnd();
-    ɵɵelementStart(4, "mat-select", 41);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_40_Template_mat_select_ngModelChange_4_listener($event) { ɵɵrestoreView(_r720); var ctx_r719 = ɵɵnextContext(); return ctx_r719.field.conditionLocation = $event; });
-    ɵɵtemplate(5, SubTemplateProfileComponent_div_40_mat_option_5_Template, 2, 2, "mat-option", 42);
+    ɵɵelementStart(4, "mat-select", 19);
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_8_Template_mat_select_ngModelChange_4_listener($event) { ɵɵrestoreView(_r778); var ctx_r777 = ɵɵnextContext(2); return ctx_r777.field.value = $event; });
+    ɵɵtemplate(5, SubTemplateProfileComponent_div_0_div_8_mat_option_5_Template, 2, 2, "mat-option", 11);
     ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(6, "mat-radio-group", 43);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_40_Template_mat_radio_group_ngModelChange_6_listener($event) { ɵɵrestoreView(_r720); var ctx_r721 = ɵɵnextContext(); return ctx_r721.field.conditionValue = $event; });
-    ɵɵtemplate(7, SubTemplateProfileComponent_div_40_mat_radio_button_7_Template, 2, 2, "mat-radio-button", 44);
-    ɵɵelementEnd();
-    ɵɵelementStart(8, "button", 45);
-    ɵɵlistener("click", function SubTemplateProfileComponent_div_40_Template_button_click_8_listener($event) { ɵɵrestoreView(_r720); var ctx_r722 = ɵɵnextContext(); return ctx_r722.onShowCondition($event); });
-    ɵɵelementStart(9, "mat-icon");
-    ɵɵtext(10, "close");
-    ɵɵelementEnd();
-    ɵɵtext(11, "Fermer ");
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r688 = ɵɵnextContext();
+    var ctx_r757 = ɵɵnextContext(2);
+    ɵɵadvance(3);
+    ɵɵtextInterpolate1(" ", ctx_r757.field.label, " ");
+    ɵɵadvance(1);
+    ɵɵproperty("ngModel", ctx_r757.field.value)("ngModelOptions", ɵɵpureFunction0(4, _c0));
+    ɵɵadvance(1);
+    ɵɵproperty("ngForOf", ctx_r757.field.defaultValue);
+} }
+function SubTemplateProfileComponent_div_0_mat_form_field_9_Template(rf, ctx) { if (rf & 1) {
+    var _r780 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-form-field", 20);
+    ɵɵelementStart(1, "mat-label");
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "input", 21);
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_mat_form_field_9_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r780); var ctx_r779 = ɵɵnextContext(2); return ctx_r779.field.value = $event; });
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r758 = ɵɵnextContext(2);
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(ctx_r758.field.label);
+    ɵɵadvance(1);
+    ɵɵproperty("type", ctx_r758.field.type)("ngModelOptions", ɵɵpureFunction0(4, _c0))("ngModel", ctx_r758.field.value);
+} }
+function SubTemplateProfileComponent_div_0_Template(rf, ctx) { if (rf & 1) {
+    var _r782 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 1);
+    ɵɵelementStart(1, "button", 2);
+    ɵɵlistener("click", function SubTemplateProfileComponent_div_0_Template_button_click_1_listener($event) { ɵɵrestoreView(_r782); var ctx_r781 = ɵɵnextContext(); return ctx_r781.editBLock($event); });
+    ɵɵelementStart(2, "mat-icon", 3);
+    ɵɵtext(3, "settings");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementContainerStart(4, 4);
+    ɵɵtemplate(5, SubTemplateProfileComponent_div_0_div_5_Template, 2, 1, "div", 5);
+    ɵɵtemplate(6, SubTemplateProfileComponent_div_0_div_6_Template, 5, 2, "div", 5);
+    ɵɵtemplate(7, SubTemplateProfileComponent_div_0_div_7_Template, 5, 4, "div", 5);
+    ɵɵtemplate(8, SubTemplateProfileComponent_div_0_div_8_Template, 6, 5, "div", 5);
+    ɵɵtemplate(9, SubTemplateProfileComponent_div_0_mat_form_field_9_Template, 4, 5, "mat-form-field", 6);
+    ɵɵelementContainerEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r753 = ɵɵnextContext();
     ɵɵadvance(4);
-    ɵɵproperty("ngModel", ctx_r688.field.conditionLocation)("ngModelOptions", ɵɵpureFunction0(6, _c0));
+    ɵɵproperty("ngSwitch", ctx_r753.field.type);
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r688.conditionData);
+    ɵɵproperty("ngSwitchCase", "checkbox");
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r688.field.conditionValue)("ngModelOptions", ɵɵpureFunction0(7, _c0));
+    ɵɵproperty("ngSwitchCase", "checkbox_multiple");
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r688.field.conditionLocation.possibleValues);
+    ɵɵproperty("ngSwitchCase", "radio");
+    ɵɵadvance(1);
+    ɵɵproperty("ngSwitchCase", "select");
 } }
-function SubTemplateProfileComponent_mat_icon_41_Template(rf, ctx) { if (rf & 1) {
-    var _r724 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-icon", 48);
-    ɵɵlistener("click", function SubTemplateProfileComponent_mat_icon_41_Template_mat_icon_click_0_listener() { ɵɵrestoreView(_r724); var ctx_r723 = ɵɵnextContext(); return ctx_r723.onShowCondition(); });
-    ɵɵtext(1, "help ");
-    ɵɵelementEnd();
-} }
-function SubTemplateProfileComponent_mat_icon_48_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-icon");
-    ɵɵtext(1, "expand_less");
-    ɵɵelementEnd();
-} }
-function SubTemplateProfileComponent_mat_icon_49_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-icon");
-    ɵɵtext(1, "expand_more");
-    ɵɵelementEnd();
-} }
-var _c1 = [[["", 8, "child"]]];
-var _c2 = function () { return ["select", "radio", "checkbox_multiple"]; };
+var _c2 = [[["", 8, "child"]]];
 var _c3 = [".child"];
 var SubTemplateProfileComponent = /** @class */ (function () {
     function SubTemplateProfileComponent() {
@@ -776,6 +856,7 @@ var SubTemplateProfileComponent = /** @class */ (function () {
         this.onCheckedChip = new EventEmitter();
         this.onCheckedDefault = new EventEmitter();
         this.onGetConditionValues = new EventEmitter();
+        this.onEditBlock = new EventEmitter();
         this.conditionData = [];
         this.chipControl = new FormControl(new Set());
         this.separatorKeysCodes = [ENTER, COMMA, SEMICOLON];
@@ -853,130 +934,21 @@ var SubTemplateProfileComponent = /** @class */ (function () {
         }
         this.showCondition = !this.showCondition;
     };
+    // checked(locationValue,value){
+    //   return locationValue.includes(value)
+    // }
+    SubTemplateProfileComponent.prototype.editBLock = function (event) {
+        event.preventDefault();
+        this.onEditBlock.emit(true);
+    };
     SubTemplateProfileComponent.ɵfac = function SubTemplateProfileComponent_Factory(t) { return new (t || SubTemplateProfileComponent)(); };
-    SubTemplateProfileComponent.ɵcmp = ɵɵdefineComponent({ type: SubTemplateProfileComponent, selectors: [["lib-sub-category"]], inputs: { field: "field", length: "length", i: "i", j: "j", conditionData: "conditionData" }, outputs: { onAddKeywordFromInput: "onAddKeywordFromInput", onKeyPress: "onKeyPress", onDrop: "onDrop", onAddNewField: "onAddNewField", onRemoveField: "onRemoveField", onChangeType: "onChangeType", onRemoveKeyword: "onRemoveKeyword", onAddNewSubLevelField: "onAddNewSubLevelField", onExpendMore: "onExpendMore", onChangeLabel: "onChangeLabel", onCheckedChip: "onCheckedChip", onCheckedDefault: "onCheckedDefault", onGetConditionValues: "onGetConditionValues" }, ngContentSelectors: _c3, decls: 51, vars: 35, consts: [[1, "field-item"], ["appearance", "outline", 1, "form-field", "field-size"], ["type", "text", "matInput", "", "required", "", "placeholder", "", 3, "readonly", "ngModelOptions", "ngModel", "ngModelChange"], ["appearance", "outline", 1, "form-field", "field-size", 2, "display", "none"], ["required", "", 3, "disabled", "ngModel", "ngModelOptions", "ngModelChange"], ["value", "text"], ["value", "textarea"], ["value", "radio"], ["value", "select"], ["value", "checkbox"], ["value", "checkbox_multiple"], ["value", "email"], ["value", "password"], ["value", "date"], ["value", "tel"], [3, "ngSwitch"], ["class", "flex-auto w-30 field-size", 4, "ngSwitchCase"], ["class", "flex-auto w-30 field-size", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field field-size", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field field-size", "appearance", "outline", 3, "opacity", 4, "ngSwitchDefault"], [1, "checkbox-condition"], ["class", "form-field", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], ["class", "condition-container", 4, "ngIf"], ["class", "condition-help", "matTooltip", "Param\u00E8trer la condition ici !", 3, "click", 4, "ngIf"], [1, "form-field", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["mat-mini-fab", "", "color", "success", "matTooltip", "Ajouter une sous-cat\u00E9gorie", 1, "transparent-button", 3, "disabled", "click"], ["mat-mini-fab", "", "color", "primary", 1, "expand-button", 3, "disabled", "click"], [4, "ngIf"], [1, "flex-auto", "w-30", "field-size"], ["appearance", "outline", 1, "flex-auto", "w-30", "field-size"], ["cdkDropList", "", "aria-label", "Video keywords; let index=index", "multiple", "", "selectable", "", 3, "cdkDropListData", "cdkDropListDropped"], ["childList", "cdkDropList", "chipList", ""], ["style", "min-height: 25px;", "cdkDrag", "", 3, "selected", "value", "removable", "dblclick", "click", "removed", 4, "ngFor", "ngForOf"], ["placeholder", "add...", 3, "matChipInputFor", "matChipInputAddOnBlur", "matChipInputSeparatorKeyCodes", "ngModel", "ngModelOptions", "matChipInputTokenEnd", "keyup", "ngModelChange"], ["chipsInput", ""], ["cdkDrag", "", 2, "min-height", "25px", 3, "selected", "value", "removable", "dblclick", "click", "removed"], ["matChipRemove", ""], ["type", "text", "matInput", "", "placeholder", "Description...", 3, "ngModelOptions", "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", 3, "type", "disabled", "ngModelOptions", "ngModel", "ngModelChange"], [1, "condition-container"], ["appearance", "outline", 1, "form-field", "field-size", "full-width"], ["required", "", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], ["aria-labelledby", "example-radio-group-label", 1, "example-radio-group", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["class", "example-radio-button", 3, "value", 4, "ngFor", "ngForOf"], ["mat-button", "", "color", "primary", 3, "click"], [3, "value"], [1, "example-radio-button", 3, "value"], ["matTooltip", "Param\u00E8trer la condition ici !", 1, "condition-help", 3, "click"]], template: function SubTemplateProfileComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵprojectionDef(_c1);
-            ɵɵelementStart(0, "div", 0);
-            ɵɵelementStart(1, "mat-form-field", 1);
-            ɵɵelementStart(2, "mat-label");
-            ɵɵtext(3, "Label");
-            ɵɵelementEnd();
-            ɵɵelementStart(4, "input", 2);
-            ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_Template_input_ngModelChange_4_listener($event) { return ctx.field.label = $event; })("ngModelChange", function SubTemplateProfileComponent_Template_input_ngModelChange_4_listener() { return ctx.changeLabel(ctx.field.label, ctx.field.key); });
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementStart(5, "mat-form-field", 3);
-            ɵɵelementStart(6, "mat-label");
-            ɵɵtext(7, "Cl\u00E9 du champ");
-            ɵɵelementEnd();
-            ɵɵelementStart(8, "input", 2);
-            ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_Template_input_ngModelChange_8_listener($event) { return ctx.field.key = $event; });
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementStart(9, "mat-form-field", 1);
-            ɵɵelementStart(10, "mat-label");
-            ɵɵtext(11, "Type");
-            ɵɵelementEnd();
-            ɵɵelementStart(12, "mat-select", 4);
-            ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_Template_mat_select_ngModelChange_12_listener($event) { return ctx.field.type = $event; })("ngModelChange", function SubTemplateProfileComponent_Template_mat_select_ngModelChange_12_listener() { return ctx.changeType(ctx.field.type, ctx.i, ctx.j); });
-            ɵɵelementStart(13, "mat-option", 5);
-            ɵɵtext(14, "Text(80)");
-            ɵɵelementEnd();
-            ɵɵelementStart(15, "mat-option", 6);
-            ɵɵtext(16, "Text(80+)");
-            ɵɵelementEnd();
-            ɵɵelementStart(17, "mat-option", 7);
-            ɵɵtext(18, "Radio");
-            ɵɵelementEnd();
-            ɵɵelementStart(19, "mat-option", 8);
-            ɵɵtext(20, "Selecteur");
-            ɵɵelementEnd();
-            ɵɵelementStart(21, "mat-option", 9);
-            ɵɵtext(22, "Checkbox");
-            ɵɵelementEnd();
-            ɵɵelementStart(23, "mat-option", 10);
-            ɵɵtext(24, "Checkbox multiple");
-            ɵɵelementEnd();
-            ɵɵelementStart(25, "mat-option", 11);
-            ɵɵtext(26, "Email");
-            ɵɵelementEnd();
-            ɵɵelementStart(27, "mat-option", 12);
-            ɵɵtext(28, "Password");
-            ɵɵelementEnd();
-            ɵɵelementStart(29, "mat-option", 13);
-            ɵɵtext(30, "Date");
-            ɵɵelementEnd();
-            ɵɵelementStart(31, "mat-option", 14);
-            ɵɵtext(32, "Phone");
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementContainerStart(33, 15);
-            ɵɵtemplate(34, SubTemplateProfileComponent_div_34_Template, 3, 3, "div", 16);
-            ɵɵtemplate(35, SubTemplateProfileComponent_mat_form_field_35_Template, 9, 8, "mat-form-field", 17);
-            ɵɵtemplate(36, SubTemplateProfileComponent_mat_form_field_36_Template, 4, 3, "mat-form-field", 18);
-            ɵɵtemplate(37, SubTemplateProfileComponent_mat_form_field_37_Template, 4, 7, "mat-form-field", 19);
-            ɵɵelementContainerEnd();
-            ɵɵelementStart(38, "div", 20);
-            ɵɵtemplate(39, SubTemplateProfileComponent_mat_checkbox_39_Template, 2, 3, "mat-checkbox", 21);
-            ɵɵtemplate(40, SubTemplateProfileComponent_div_40_Template, 12, 8, "div", 22);
-            ɵɵelementEnd();
-            ɵɵtemplate(41, SubTemplateProfileComponent_mat_icon_41_Template, 2, 0, "mat-icon", 23);
-            ɵɵelementStart(42, "mat-checkbox", 24);
-            ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_Template_mat_checkbox_ngModelChange_42_listener($event) { return ctx.field.isMandatory = $event; });
-            ɵɵtext(43, " obligatoire ");
-            ɵɵelementEnd();
-            ɵɵelementStart(44, "button", 25);
-            ɵɵlistener("click", function SubTemplateProfileComponent_Template_button_click_44_listener($event) { return ctx.addNewSubLevelField($event); });
-            ɵɵelementStart(45, "mat-icon");
-            ɵɵtext(46, "device_hub");
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementStart(47, "button", 26);
-            ɵɵlistener("click", function SubTemplateProfileComponent_Template_button_click_47_listener($event) { return ctx.expendMore($event, ctx.field); });
-            ɵɵtemplate(48, SubTemplateProfileComponent_mat_icon_48_Template, 2, 0, "mat-icon", 27);
-            ɵɵtemplate(49, SubTemplateProfileComponent_mat_icon_49_Template, 2, 0, "mat-icon", 27);
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵprojection(50);
+    SubTemplateProfileComponent.ɵcmp = ɵɵdefineComponent({ type: SubTemplateProfileComponent, selectors: [["lib-sub-category"]], inputs: { field: "field", length: "length", i: "i", j: "j", conditionData: "conditionData" }, outputs: { onAddKeywordFromInput: "onAddKeywordFromInput", onKeyPress: "onKeyPress", onDrop: "onDrop", onAddNewField: "onAddNewField", onRemoveField: "onRemoveField", onChangeType: "onChangeType", onRemoveKeyword: "onRemoveKeyword", onAddNewSubLevelField: "onAddNewSubLevelField", onExpendMore: "onExpendMore", onChangeLabel: "onChangeLabel", onCheckedChip: "onCheckedChip", onCheckedDefault: "onCheckedDefault", onGetConditionValues: "onGetConditionValues", onEditBlock: "onEditBlock" }, ngContentSelectors: _c3, decls: 2, vars: 1, consts: [["class", "field-item", 4, "ngIf"], [1, "field-item"], ["mat-raised-button", "", 1, "transparent-button", "setting", 3, "click"], [1, "setting-icon"], [3, "ngSwitch"], ["class", "flex-auto w-30 field-size", 4, "ngSwitchCase"], ["class", "form-field field-size", "appearance", "outline", 4, "ngSwitchDefault"], [1, "flex-auto", "w-30", "field-size"], [1, "form-field", 3, "ngModel", "ngModelOptions", "ngStyle", "ngModelChange"], ["placeholder", "Company", "style", "display: inline-block; width: 50%", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], ["placeholder", "Company", 2, "display", "inline-block", "width", "50%", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], [2, "margin-top", "20px"], ["class", "form-field", "style", "display: block; margin-bottom: 5px; margin-top: 10px", 3, "checked", "ngModel", "ngModelOptions", "ngModelChange", 4, "ngFor", "ngForOf"], [1, "form-field", 2, "display", "block", "margin-bottom", "5px", "margin-top", "10px", 3, "checked", "ngModel", "ngModelOptions", "ngModelChange"], [2, "display", "block"], ["aria-label", "Select an option", 1, "form-field", "radio-group", "field-size", 3, "ngModel", "required", "ngModelChange"], ["appearance", "outline", 1, "mat-select", "flex-auto", "w-30", "field-size"], [3, "ngModel", "ngModelOptions", "ngModelChange"], ["appearance", "outline", 1, "form-field", "field-size"], ["matInput", "", "placeholder", "", 3, "type", "ngModelOptions", "ngModel", "ngModelChange"]], template: function SubTemplateProfileComponent_Template(rf, ctx) { if (rf & 1) {
+            ɵɵprojectionDef(_c2);
+            ɵɵtemplate(0, SubTemplateProfileComponent_div_0_Template, 10, 5, "div", 0);
+            ɵɵprojection(1);
         } if (rf & 2) {
-            ɵɵadvance(1);
-            ɵɵclassMap(!ctx.field.editable ? "readonly" : "");
-            ɵɵadvance(3);
-            ɵɵproperty("readonly", !ctx.field.editable)("ngModelOptions", ɵɵpureFunction0(30, _c0))("ngModel", ctx.field.label);
-            ɵɵadvance(1);
-            ɵɵclassMap(!ctx.field.editable ? "readonly" : "");
-            ɵɵadvance(3);
-            ɵɵproperty("readonly", !ctx.field.editable)("ngModelOptions", ɵɵpureFunction0(31, _c0))("ngModel", ctx.field.key);
-            ɵɵadvance(4);
-            ɵɵproperty("disabled", !ctx.field.editable)("ngModel", ctx.field.type)("ngModelOptions", ɵɵpureFunction0(32, _c0));
-            ɵɵadvance(21);
-            ɵɵproperty("ngSwitch", ctx.field.type);
-            ɵɵadvance(1);
-            ɵɵproperty("ngSwitchCase", "checkbox");
-            ɵɵadvance(1);
-            ɵɵproperty("ngSwitchCase", ɵɵpureFunction0(33, _c2).includes(ctx.field.type) ? ctx.field.type : !ctx.field.type);
-            ɵɵadvance(1);
-            ɵɵproperty("ngSwitchCase", "textarea");
-            ɵɵadvance(3);
-            ɵɵproperty("ngIf", ctx.field.editable);
-            ɵɵadvance(1);
-            ɵɵproperty("ngIf", ctx.showCondition);
-            ɵɵadvance(1);
-            ɵɵproperty("ngIf", ctx.field.isConditional);
-            ɵɵadvance(1);
-            ɵɵproperty("ngModel", ctx.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(34, _c0));
-            ɵɵadvance(2);
-            ɵɵstyleProp("opacity", ctx.field.subLevel > 2 || !ctx.field.editable ? 0 : 1);
-            ɵɵproperty("disabled", ctx.field.subLevel > 2 || !ctx.field.editable);
-            ɵɵadvance(3);
-            ɵɵstyleProp("opacity", ctx.field.forms && ctx.field.forms.length > 0 ? 1 : 0);
-            ɵɵproperty("disabled", !(ctx.field.forms && ctx.field.forms.length > 0));
-            ɵɵadvance(1);
-            ɵɵproperty("ngIf", !ctx.field.expandMore);
-            ɵɵadvance(1);
-            ɵɵproperty("ngIf", ctx.field.expandMore);
-        } }, directives: [MatFormField, MatLabel, MatInput, DefaultValueAccessor, RequiredValidator, NgControlStatus, NgModel, NativeElementInjectorDirective, MatSelect, MatOption, NgSwitch, NgSwitchCase, NgSwitchDefault, NgIf, MatCheckbox, MatButton, MatTooltip, MatIcon, MatChipList, CdkDropList, NgForOf, MatChipInput, MatChip, CdkDrag, MatChipRemove, MatRadioGroup, MatRadioButton], styles: [".container[_ngcontent-%COMP%]{max-width:98%;margin:50px auto auto;padding-bottom:50px}.container[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.input-category-name[_ngcontent-%COMP%]{font-size:15px;font-weight:500}.full-width[_ngcontent-%COMP%]{width:100%}.field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap}.field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.field-action[_ngcontent-%COMP%]{width:10%}hr[_ngcontent-%COMP%]{margin:50px 0}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}.category-action[_ngcontent-%COMP%]{display:flex;width:100%}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%]{display:flex;align-items:baseline;width:100%;border:1px solid #dce4e9;border-radius:8px}  .readonly.mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}.field-content[_ngcontent-%COMP%]{width:100%}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12)}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%], .example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform 250ms cubic-bezier(0,0,.2,1)}.add-button-container[_ngcontent-%COMP%]{background:no-repeat padding-box #fff;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98%;margin-left:0;margin-bottom:22px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;font:17px/26px Nexa Text;letter-spacing:0;color:#c2c8d5;box-shadow:none}.expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:48px;margin-top:-20px;margin-right:15px}.transparent-button[_ngcontent-%COMP%]{background-color:transparent!important;box-shadow:none!important;width:40px!important;padding:0!important;margin:0!important;min-width:auto!important}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.checkbox-condition[_ngcontent-%COMP%]{position:relative}.checkbox-condition[_ngcontent-%COMP%]   .condition-container[_ngcontent-%COMP%]{position:absolute;top:30px;width:500px;height:150px;background-color:#fff;border:1px dashed #dce4e9;z-index:1;left:0;border-radius:5px}.checkbox-condition[_ngcontent-%COMP%]   .condition-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{position:absolute;bottom:5px;left:0}.condition-help[_ngcontent-%COMP%]{cursor:pointer}.cdk-overlay-pane[_ngcontent-%COMP%]{width:100%}"] });
+            ɵɵproperty("ngIf", !ctx.field.forms);
+        } }, directives: [NgIf, MatButton, MatIcon, NgSwitch, NgSwitchCase, NgSwitchDefault, MatCheckbox, NgControlStatus, NgModel, NativeElementInjectorDirective, NgStyle, MatSelect, NgForOf, MatOption, MatRadioGroup, RequiredValidator, MatRadioButton, MatFormField, MatLabel, MatInput, DefaultValueAccessor], styles: [".container[_ngcontent-%COMP%]{max-width:98%;margin:50px auto auto;padding-bottom:50px}.container[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.input-category-name[_ngcontent-%COMP%]{font-size:15px;font-weight:500}.full-width[_ngcontent-%COMP%]{width:100%}.field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;position:relative}.field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.field-item[_ngcontent-%COMP%]   .setting[_ngcontent-%COMP%]{position:absolute;top:-5px;right:11px;z-index:1;background-color:#d5d6d7!important;border-radius:50px;width:40px!important;height:40px!important;display:none}.field-item[_ngcontent-%COMP%]:hover   .setting[_ngcontent-%COMP%]{display:block}.field-action[_ngcontent-%COMP%]{width:10%}hr[_ngcontent-%COMP%]{margin:50px 0}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}.category-action[_ngcontent-%COMP%]{display:flex;width:100%}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%]{display:flex;align-items:baseline;width:100%;border:1px solid #dce4e9;border-radius:8px}  .readonly.mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}.field-content[_ngcontent-%COMP%]{width:100%}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12)}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%], .example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform 250ms cubic-bezier(0,0,.2,1)}.add-button-container[_ngcontent-%COMP%]{background:no-repeat padding-box #fff;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98%;margin-left:0;margin-bottom:22px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;font:17px/26px Nexa Text;letter-spacing:0;color:#c2c8d5;box-shadow:none}.expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:48px;margin-top:-20px;margin-right:15px}.transparent-button[_ngcontent-%COMP%]{background-color:transparent!important;box-shadow:none!important;width:40px!important;padding:0!important;margin:0!important;min-width:auto!important}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.checkbox-condition[_ngcontent-%COMP%]{position:relative}.checkbox-condition[_ngcontent-%COMP%]   .condition-container[_ngcontent-%COMP%]{position:absolute;top:30px;width:500px;height:150px;background-color:#fff;border:1px dashed #dce4e9;z-index:1;left:0;border-radius:5px}.checkbox-condition[_ngcontent-%COMP%]   .condition-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{position:absolute;bottom:5px;left:0}.condition-help[_ngcontent-%COMP%]{cursor:pointer}.cdk-overlay-pane[_ngcontent-%COMP%]{width:100%}.child[_ngcontent-%COMP%]{margin-left:0}.child[_ngcontent-%COMP%]   .cdk-drop-list[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}"] });
     return SubTemplateProfileComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(SubTemplateProfileComponent, [{
@@ -1020,213 +992,160 @@ var SubTemplateProfileComponent = /** @class */ (function () {
             type: Output
         }], onGetConditionValues: [{
             type: Output
+        }], onEditBlock: [{
+            type: Output
         }], conditionData: [{
             type: Input
         }] }); })();
 
-function TemplateProfileCreateComponent_div_2_div_14_mat_icon_1_Template(rf, ctx) { if (rf & 1) {
-    var _r446 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-icon", 19);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_2_div_14_mat_icon_1_Template_mat_icon_click_0_listener($event) { ɵɵrestoreView(_r446); var icon_r444 = ctx.$implicit; var ctx_r445 = ɵɵnextContext(3); return ctx_r445.onSelectPicto($event, icon_r444.name); });
-    ɵɵtext(1);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var icon_r444 = ctx.$implicit;
-    var ctx_r443 = ɵɵnextContext(3);
-    ɵɵstyleProp("color", ctx_r443.form.get("Picto").value === icon_r444.name ? "#830B6B" : "#000");
-    ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", icon_r444.name, " ");
-} }
-function TemplateProfileCreateComponent_div_2_div_14_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 17);
-    ɵɵtemplate(1, TemplateProfileCreateComponent_div_2_div_14_mat_icon_1_Template, 2, 3, "mat-icon", 18);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r441 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r441.matIconList);
-} }
-function TemplateProfileCreateComponent_div_2_mat_option_23_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-option", 20);
-    ɵɵtext(1);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var tag_r447 = ctx.$implicit;
-    ɵɵproperty("value", tag_r447);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(tag_r447);
-} }
-function TemplateProfileCreateComponent_div_2_Template(rf, ctx) { if (rf & 1) {
-    var _r449 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 3);
-    ɵɵelementStart(1, "div", 4);
-    ɵɵelementStart(2, "h3", 5);
-    ɵɵtext(3, "Cr\u00E9ation d\u2019un nouveau profil d\u2019onboarding");
-    ɵɵelementEnd();
-    ɵɵelementStart(4, "p");
-    ɵɵtext(5, "S\u00E9lectionnez l\u2019icon de votre choix et indiquez le nom de votre nouveau profil d\u2019onboarding");
-    ɵɵelementEnd();
-    ɵɵelementStart(6, "div", 6);
-    ɵɵelementStart(7, "button", 7);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_2_Template_button_click_7_listener($event) { ɵɵrestoreView(_r449); var ctx_r448 = ɵɵnextContext(); return ctx_r448.onShowPictoList($event); });
-    ɵɵelementStart(8, "mat-icon");
-    ɵɵtext(9);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(10, "mat-form-field", 8);
-    ɵɵelementStart(11, "mat-label");
-    ɵɵtext(12, "Nom de votre nouveau profil");
-    ɵɵelementEnd();
-    ɵɵelement(13, "input", 9);
-    ɵɵelementEnd();
-    ɵɵtemplate(14, TemplateProfileCreateComponent_div_2_div_14_Template, 2, 1, "div", 10);
-    ɵɵelementEnd();
-    ɵɵelementStart(15, "mat-form-field", 8);
-    ɵɵelementStart(16, "mat-label");
-    ɵɵtext(17, "Description");
-    ɵɵelementEnd();
-    ɵɵelement(18, "textarea", 11);
-    ɵɵelementEnd();
-    ɵɵelementStart(19, "mat-form-field", 8);
-    ɵɵelementStart(20, "mat-label");
-    ɵɵtext(21, "Tags");
-    ɵɵelementEnd();
-    ɵɵelementStart(22, "mat-select", 12);
-    ɵɵtemplate(23, TemplateProfileCreateComponent_div_2_mat_option_23_Template, 2, 2, "mat-option", 13);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(24, "mat-checkbox", 14);
-    ɵɵtext(25, "Active");
-    ɵɵelementEnd();
-    ɵɵelementStart(26, "div", 15);
-    ɵɵelementStart(27, "button", 16);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_2_Template_button_click_27_listener() { ɵɵrestoreView(_r449); var ctx_r450 = ɵɵnextContext(); return ctx_r450.onShowCategory(); });
-    ɵɵtext(28);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r439 = ɵɵnextContext();
-    ɵɵadvance(9);
-    ɵɵtextInterpolate(ctx_r439.form.get("Picto").value === "" ? "contact_phone" : ctx_r439.form.get("Picto").value);
-    ɵɵadvance(5);
-    ɵɵproperty("ngIf", ctx_r439.isPictoListShow);
-    ɵɵadvance(9);
-    ɵɵproperty("ngForOf", ctx_r439.tags);
-    ɵɵadvance(4);
-    ɵɵstyleProp("opacity", ctx_r439.form.get("Name").value === "" || ctx_r439.form.get("Tags").value == "" ? 0.4 : 1);
-    ɵɵproperty("disabled", ctx_r439.form.get("Name").value === "" || ctx_r439.form.get("Tags").value == "");
-    ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", ctx_r439.id !== "0" ? "Modifier un profil" : "Cr\u00E9er un nouveau profil", " ");
-} }
-function TemplateProfileCreateComponent_div_3_li_9_span_2_Template(rf, ctx) { if (rf & 1) {
-    var _r461 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "span", 37);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_li_9_span_2_Template_span_click_0_listener() { ɵɵrestoreView(_r461); var ctx_r460 = ɵɵnextContext(); var cat_r454 = ctx_r460.$implicit; var i_r455 = ctx_r460.index; var ctx_r459 = ɵɵnextContext(2); return ctx_r459.onExpendMore({ field: cat_r454 }, i_r455); });
-    ɵɵtext(1);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var cat_r454 = ɵɵnextContext().$implicit;
-    ɵɵproperty("ngxScrollTo", "#" + cat_r454.name);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(cat_r454.name);
-} }
-var _c0$1 = function () { return { standalone: true }; };
-function TemplateProfileCreateComponent_div_3_li_9_input_3_Template(rf, ctx) { if (rf & 1) {
-    var _r465 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "input", 38, 39);
-    ɵɵlistener("blur", function TemplateProfileCreateComponent_div_3_li_9_input_3_Template_input_blur_0_listener() { ɵɵrestoreView(_r465); var ctx_r464 = ɵɵnextContext(3); return ctx_r464.onEdit(); })("ngModelChange", function TemplateProfileCreateComponent_div_3_li_9_input_3_Template_input_ngModelChange_0_listener($event) { ɵɵrestoreView(_r465); var cat_r454 = ɵɵnextContext().$implicit; return cat_r454.name = $event; })("ngModelChange", function TemplateProfileCreateComponent_div_3_li_9_input_3_Template_input_ngModelChange_0_listener() { ɵɵrestoreView(_r465); var ctx_r469 = ɵɵnextContext(); var i_r455 = ctx_r469.index; var cat_r454 = ctx_r469.$implicit; var ctx_r468 = ɵɵnextContext(2); return ctx_r468.onEditCategoryName(i_r455, cat_r454.name); });
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var cat_r454 = ɵɵnextContext().$implicit;
-    ɵɵproperty("ngModel", cat_r454.name)("ngModelOptions", ɵɵpureFunction0(2, _c0$1));
-} }
-function TemplateProfileCreateComponent_div_3_li_9_ng_container_7_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+function TemplateProfileCreateComponent_li_11_Template(rf, ctx) { if (rf & 1) {
     var _r476 = ɵɵgetCurrentView();
-    ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "li", 19);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_li_9_ng_container_7_ng_container_1_Template_li_click_1_listener() { ɵɵrestoreView(_r476); var ctx_r475 = ɵɵnextContext(); var sub_r471 = ctx_r475.$implicit; var j_r472 = ctx_r475.index; var i_r455 = ɵɵnextContext().index; var ctx_r474 = ɵɵnextContext(2); return ctx_r474.onExpendMore({ field: sub_r471 }, i_r455, j_r472); });
-    ɵɵelementStart(2, "span", 41);
+    ɵɵelementStart(0, "li", 15);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_li_11_Template_li_click_0_listener() { ɵɵrestoreView(_r476); var cat_r473 = ctx.$implicit; var i_r474 = ctx.index; var ctx_r475 = ɵɵnextContext(); return ctx_r475.onActiveMenu(cat_r473, i_r474); });
+    ɵɵelementStart(1, "span");
+    ɵɵelementStart(2, "span", 16);
     ɵɵtext(3);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementContainerEnd();
+    ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r478 = ɵɵnextContext();
-    var sub_r471 = ctx_r478.$implicit;
-    var j_r472 = ctx_r478.index;
+    var cat_r473 = ctx.$implicit;
+    var i_r474 = ctx.index;
+    var ctx_r468 = ɵɵnextContext();
+    ɵɵclassMap(ctx_r468.editIndex === i_r474 ? "active" : "");
+    ɵɵadvance(2);
+    ɵɵproperty("ngxScrollTo", "#" + cat_r473.name);
     ɵɵadvance(1);
-    ɵɵclassMap(sub_r471.expandMore ? "sub-title active" : "sub-title");
-    ɵɵadvance(1);
-    ɵɵproperty("ngxScrollTo", "#" + sub_r471.key);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate2("", j_r472 + 1, ". ", sub_r471.label, "");
+    ɵɵtextInterpolate(cat_r473.name);
 } }
-function TemplateProfileCreateComponent_div_3_li_9_ng_container_7_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, TemplateProfileCreateComponent_div_3_li_9_ng_container_7_ng_container_1_Template, 4, 5, "ng-container", 40);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var sub_r471 = ctx.$implicit;
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", sub_r471 == null ? null : sub_r471.forms);
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_3_Template(rf, ctx) { if (rf & 1) {
+    var _r492 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 40);
+    ɵɵelementStart(1, "button", 19);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_3_Template_button_click_1_listener($event) { ɵɵrestoreView(_r492); return $event.preventDefault(); });
+    ɵɵelementStart(2, "mat-icon", 20);
+    ɵɵtext(3, "drag_indicator");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
 } }
-function TemplateProfileCreateComponent_div_3_li_9_Template(rf, ctx) { if (rf & 1) {
-    var _r480 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "li", 33);
-    ɵɵelementStart(1, "span");
-    ɵɵtemplate(2, TemplateProfileCreateComponent_div_3_li_9_span_2_Template, 2, 2, "span", 34);
-    ɵɵtemplate(3, TemplateProfileCreateComponent_div_3_li_9_input_3_Template, 2, 3, "input", 35);
-    ɵɵelementStart(4, "mat-icon", 19);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_li_9_Template_mat_icon_click_4_listener() { ɵɵrestoreView(_r480); var i_r455 = ctx.index; var ctx_r479 = ɵɵnextContext(2); return ctx_r479.onPassInEditMode(i_r455); });
-    ɵɵtext(5, "edit");
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_5_mat_icon_8_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-icon");
+    ɵɵtext(1, "expand_less ");
+    ɵɵelementEnd();
+} }
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_5_mat_icon_9_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-icon");
+    ɵɵtext(1, "expand_more ");
+    ɵɵelementEnd();
+} }
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_5_Template(rf, ctx) { if (rf & 1) {
+    var _r496 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 41);
+    ɵɵelementStart(1, "div", 42);
+    ɵɵelementStart(2, "div", 43);
+    ɵɵelementStart(3, "p", 23);
+    ɵɵtext(4);
+    ɵɵelementEnd();
+    ɵɵelementStart(5, "p", 24);
+    ɵɵtext(6);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(6, "ol");
-    ɵɵtemplate(7, TemplateProfileCreateComponent_div_3_li_9_ng_container_7_Template, 2, 1, "ng-container", 36);
+    ɵɵelementStart(7, "button", 44);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_5_Template_button_click_7_listener($event) { ɵɵrestoreView(_r496); var ctx_r497 = ɵɵnextContext(); var field_r485 = ctx_r497.$implicit; var j_r486 = ctx_r497.index; var i_r478 = ɵɵnextContext(3).index; var ctx_r495 = ɵɵnextContext(); return ctx_r495.onExpendMore({ event: $event, field: field_r485 }, i_r478, j_r486); });
+    ɵɵtemplate(8, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_5_mat_icon_8_Template, 2, 0, "mat-icon", 27);
+    ɵɵtemplate(9, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_5_mat_icon_9_Template, 2, 0, "mat-icon", 27);
+    ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var cat_r454 = ctx.$implicit;
-    var i_r455 = ctx.index;
-    var ctx_r451 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵclassMap(ctx_r451.editIndex === i_r455 ? "edition-mode" : "");
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r451.editIndex !== i_r455);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r451.editIndex === i_r455);
+    var field_r485 = ɵɵnextContext().$implicit;
+    var ctx_r488 = ɵɵnextContext(4);
     ɵɵadvance(4);
-    ɵɵproperty("ngForOf", cat_r454.forms);
+    ɵɵtextInterpolate1(" ", field_r485.label, " ");
+    ɵɵadvance(2);
+    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r488.catNameStart(field_r485.label) ? "l'" + field_r485.label : field_r485.label, " ");
+    ɵɵadvance(1);
+    ɵɵstyleProp("opacity", field_r485.forms && field_r485.forms.length > 0 ? 1 : 0);
+    ɵɵproperty("disabled", !(field_r485.forms && field_r485.forms.length > 0));
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !field_r485.expandMore);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", field_r485.expandMore);
 } }
-function TemplateProfileCreateComponent_div_3_div_19_mat_select_11_mat_option_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-option", 20);
-    ɵɵtext(1);
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_3_Template(rf, ctx) { if (rf & 1) {
+    var _r510 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 51);
+    ɵɵelementStart(1, "button", 19);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_3_Template_button_click_1_listener($event) { ɵɵrestoreView(_r510); return $event.preventDefault(); });
+    ɵɵelementStart(2, "mat-icon", 20);
+    ɵɵtext(3, " drag_indicator");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} }
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_5_mat_icon_7_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-icon");
+    ɵɵtext(1, " expand_less ");
+    ɵɵelementEnd();
+} }
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_5_mat_icon_8_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-icon");
+    ɵɵtext(1, " expand_more ");
+    ɵɵelementEnd();
+} }
+var _c0$1 = function () { return { standalone: true }; };
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_5_Template(rf, ctx) { if (rf & 1) {
+    var _r515 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 41);
+    ɵɵelementStart(1, "div", 42);
+    ɵɵelementStart(2, "div", 43);
+    ɵɵelementStart(3, "input", 52);
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_5_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r515); var child_r503 = ɵɵnextContext().$implicit; return child_r503.label = $event; });
+    ɵɵelementEnd();
+    ɵɵelementStart(4, "p", 24);
+    ɵɵtext(5);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(6, "button", 44);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_5_Template_button_click_6_listener($event) { ɵɵrestoreView(_r515); var ctx_r517 = ɵɵnextContext(); var child_r503 = ctx_r517.$implicit; var k_r504 = ctx_r517.index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r516 = ɵɵnextContext(); return ctx_r516.onExpendMore({ event: $event, field: child_r503 }, i_r478, j_r486, k_r504); });
+    ɵɵtemplate(7, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_5_mat_icon_7_Template, 2, 0, "mat-icon", 27);
+    ɵɵtemplate(8, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_5_mat_icon_8_Template, 2, 0, "mat-icon", 27);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var select_r488 = ctx.$implicit;
-    ɵɵproperty("value", select_r488.value);
+    var child_r503 = ɵɵnextContext().$implicit;
+    var category_r477 = ɵɵnextContext(6).$implicit;
+    var ctx_r506 = ɵɵnextContext();
+    ɵɵadvance(3);
+    ɵɵproperty("readonly", ctx_r506.categories.length < 4 || !category_r477.editable)("readonly", !category_r477.editable)("ngModel", child_r503.label)("ngModelOptions", ɵɵpureFunction0(10, _c0$1));
+    ɵɵadvance(2);
+    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r506.catNameStart(child_r503.label) ? "l'" + child_r503.label : child_r503.label, " ");
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", select_r488.value, "");
+    ɵɵstyleProp("opacity", child_r503.forms && child_r503.forms.length > 0 ? 1 : 0);
+    ɵɵproperty("disabled", !(child_r503.forms && child_r503.forms.length > 0));
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !child_r503.expandMore);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", child_r503.expandMore);
 } }
-function TemplateProfileCreateComponent_div_3_div_19_mat_select_11_Template(rf, ctx) { if (rf & 1) {
-    var _r491 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-select", 52);
-    ɵɵlistener("valueChange", function TemplateProfileCreateComponent_div_3_div_19_mat_select_11_Template_mat_select_valueChange_0_listener($event) { ɵɵrestoreView(_r491); var category_r481 = ɵɵnextContext().$implicit; return category_r481.selector.value = $event; })("ngModelChange", function TemplateProfileCreateComponent_div_3_div_19_mat_select_11_Template_mat_select_ngModelChange_0_listener($event) { ɵɵrestoreView(_r491); var category_r481 = ɵɵnextContext().$implicit; return category_r481.selector.value = $event; });
-    ɵɵtemplate(1, TemplateProfileCreateComponent_div_3_div_19_mat_select_11_mat_option_1_Template, 2, 2, "mat-option", 13);
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_3_Template(rf, ctx) { if (rf & 1) {
+    var _r530 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 56);
+    ɵɵelementStart(1, "button", 19);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_3_Template_button_click_1_listener($event) { ɵɵrestoreView(_r530); return $event.preventDefault(); });
+    ɵɵelementStart(2, "mat-icon", 20);
+    ɵɵtext(3, " drag_indicator ");
     ɵɵelementEnd();
-} if (rf & 2) {
-    var category_r481 = ɵɵnextContext().$implicit;
-    ɵɵproperty("value", category_r481.selector.value)("ngModel", category_r481.selector.value)("ngModelOptions", ɵɵpureFunction0(4, _c0$1));
-    ɵɵadvance(1);
-    ɵɵproperty("ngForOf", category_r481.selector.defaultValue);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
 } }
-function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_div_10_Template(rf, ctx) { if (rf & 1) {
-    var _r517 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 72);
-    ɵɵelementStart(1, "button", 73);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_div_10_Template_button_click_1_listener() { ɵɵrestoreView(_r517); var k_r506 = ɵɵnextContext(4).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r515 = ɵɵnextContext(2); return ctx_r515.onAddNewField(i_r482, j_r499, k_r506); });
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_7_Template(rf, ctx) { if (rf & 1) {
+    var _r533 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 57);
+    ɵɵelementStart(1, "button", 58);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_7_Template_button_click_1_listener() { ɵɵrestoreView(_r533); var k_r504 = ɵɵnextContext(4).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r531 = ɵɵnextContext(); return ctx_r531.onAddNewField(i_r478, j_r486, k_r504); });
     ɵɵelementStart(2, "mat-icon");
     ɵɵtext(3, " add_box ");
     ɵɵelementEnd();
@@ -1236,160 +1155,69 @@ function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var l_r513 = ɵɵnextContext().index;
-    var child_r505 = ɵɵnextContext(3).$implicit;
+    var l_r526 = ɵɵnextContext().index;
+    var child_r503 = ɵɵnextContext(3).$implicit;
     ɵɵadvance(1);
-    ɵɵstyleProp("opacity", (child_r505 == null ? null : child_r505.forms == null ? null : child_r505.forms.length) - 1 === l_r513 ? 1 : 0);
-    ɵɵproperty("disabled", (child_r505 == null ? null : child_r505.forms == null ? null : child_r505.forms.length) - 1 !== l_r513);
+    ɵɵstyleProp("opacity", (child_r503 == null ? null : child_r503.forms == null ? null : child_r503.forms.length) - 1 === l_r526 ? 1 : 0);
+    ɵɵproperty("disabled", (child_r503 == null ? null : child_r503.forms == null ? null : child_r503.forms.length) - 1 !== l_r526);
 } }
-function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template(rf, ctx) { if (rf & 1) {
-    var _r524 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 70);
-    ɵɵelementStart(1, "div", 57);
-    ɵɵelementStart(2, "div", 58);
-    ɵɵelementStart(3, "div", 71);
-    ɵɵelementStart(4, "button", 60);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_button_click_4_listener() { ɵɵrestoreView(_r524); var l_r513 = ctx.index; var k_r506 = ɵɵnextContext(3).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r522 = ɵɵnextContext(2); return ctx_r522.onRemoveField(i_r482, j_r499, k_r506, l_r513); });
-    ɵɵelementStart(5, "mat-icon");
-    ɵɵtext(6, " delete ");
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(7, "div", 61);
-    ɵɵelementStart(8, "lib-sub-category", 62);
-    ɵɵlistener("onAddKeywordFromInput", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onAddKeywordFromInput_8_listener($event) { ɵɵrestoreView(_r524); var l_r513 = ctx.index; var k_r506 = ɵɵnextContext(3).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r527 = ɵɵnextContext(2); return ctx_r527.addKeywordFromInput($event.event, $event.prev, i_r482, j_r499, k_r506, l_r513); })("onKeyPress", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onKeyPress_8_listener($event) { ɵɵrestoreView(_r524); var l_r513 = ctx.index; var k_r506 = ɵɵnextContext(3).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r531 = ɵɵnextContext(2); return ctx_r531.onKeyPress($event.event, i_r482, j_r499, k_r506, l_r513); })("onAddNewField", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onAddNewField_8_listener() { ɵɵrestoreView(_r524); var k_r506 = ɵɵnextContext(3).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r535 = ɵɵnextContext(2); return ctx_r535.onAddNewField(i_r482, j_r499, k_r506); })("onRemoveField", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onRemoveField_8_listener() { ɵɵrestoreView(_r524); var l_r513 = ctx.index; var k_r506 = ɵɵnextContext(3).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r539 = ɵɵnextContext(2); return ctx_r539.onRemoveField(i_r482, j_r499, k_r506, l_r513); })("onChangeType", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onChangeType_8_listener() { ɵɵrestoreView(_r524); var c2_r512 = ctx.$implicit; var l_r513 = ctx.index; var k_r506 = ɵɵnextContext(3).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r543 = ɵɵnextContext(2); return ctx_r543.onChangeType(c2_r512.type, i_r482, j_r499, k_r506, l_r513); })("onRemoveKeyword", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onRemoveKeyword_8_listener($event) { ɵɵrestoreView(_r524); var l_r513 = ctx.index; var k_r506 = ɵɵnextContext(3).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r547 = ɵɵnextContext(2); return ctx_r547.removeKeyword($event.event, i_r482, j_r499, k_r506, l_r513); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onAddNewSubLevelField_8_listener() { ɵɵrestoreView(_r524); var l_r513 = ctx.index; var k_r506 = ɵɵnextContext(3).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r551 = ɵɵnextContext(2); return ctx_r551.onAddNewSubLevelField(i_r482, j_r499, k_r506, l_r513); })("onExpendMore", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onExpendMore_8_listener($event) { ɵɵrestoreView(_r524); var l_r513 = ctx.index; var k_r506 = ɵɵnextContext(3).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r555 = ɵɵnextContext(2); return ctx_r555.onExpendMore($event, i_r482, j_r499, k_r506, l_r513); })("onChangeLabel", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onChangeLabel_8_listener($event) { ɵɵrestoreView(_r524); var l_r513 = ctx.index; var k_r506 = ɵɵnextContext(3).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r559 = ɵɵnextContext(2); return ctx_r559.onChangeLabel($event, i_r482, j_r499, k_r506, l_r513); })("onCheckedChip", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onCheckedChip_8_listener($event) { ɵɵrestoreView(_r524); var l_r513 = ctx.index; var k_r506 = ɵɵnextContext(3).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r563 = ɵɵnextContext(2); return ctx_r563.onCheckedChip($event, i_r482, j_r499, k_r506, l_r513); })("onDrop", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onDrop_8_listener($event) { ɵɵrestoreView(_r524); var ctx_r567 = ɵɵnextContext(11); return ctx_r567.drop($event); })("onCheckedDefault", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onCheckedDefault_8_listener($event) { ɵɵrestoreView(_r524); var l_r513 = ctx.index; var k_r506 = ɵɵnextContext(3).index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r568 = ɵɵnextContext(2); return ctx_r568.onCheckedDefault($event, i_r482, j_r499, k_r506, l_r513); })("onGetConditionValues", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template_lib_sub_category_onGetConditionValues_8_listener() { ɵɵrestoreView(_r524); var ctx_r572 = ɵɵnextContext(11); return ctx_r572.getConditionValues(); });
-    ɵɵelement(9, "div", 65);
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template(rf, ctx) { if (rf & 1) {
+    var _r539 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 54);
+    ɵɵelementStart(1, "div", 32);
+    ɵɵelementStart(2, "div", 33);
+    ɵɵtemplate(3, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_3_Template, 4, 0, "div", 55);
+    ɵɵelementStart(4, "div", 35);
+    ɵɵelementStart(5, "lib-sub-category", 37);
+    ɵɵlistener("onAddKeywordFromInput", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddKeywordFromInput_5_listener($event) { ɵɵrestoreView(_r539); var l_r526 = ctx.index; var k_r504 = ɵɵnextContext(3).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r538 = ɵɵnextContext(); return ctx_r538.addKeywordFromInput($event.event, $event.prev, i_r478, j_r486, k_r504, l_r526); })("onKeyPress", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onKeyPress_5_listener($event) { ɵɵrestoreView(_r539); var l_r526 = ctx.index; var k_r504 = ɵɵnextContext(3).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r543 = ɵɵnextContext(); return ctx_r543.onKeyPress($event.event, i_r478, j_r486, k_r504, l_r526); })("onAddNewField", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddNewField_5_listener() { ɵɵrestoreView(_r539); var k_r504 = ɵɵnextContext(3).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r547 = ɵɵnextContext(); return ctx_r547.onAddNewField(i_r478, j_r486, k_r504); })("onRemoveField", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onRemoveField_5_listener() { ɵɵrestoreView(_r539); var l_r526 = ctx.index; var k_r504 = ɵɵnextContext(3).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r551 = ɵɵnextContext(); return ctx_r551.onRemoveField(i_r478, j_r486, k_r504, l_r526); })("onChangeType", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onChangeType_5_listener() { ɵɵrestoreView(_r539); var c2_r525 = ctx.$implicit; var l_r526 = ctx.index; var k_r504 = ɵɵnextContext(3).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r555 = ɵɵnextContext(); return ctx_r555.onChangeType(c2_r525.type, i_r478, j_r486, k_r504, l_r526); })("onRemoveKeyword", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onRemoveKeyword_5_listener($event) { ɵɵrestoreView(_r539); var l_r526 = ctx.index; var k_r504 = ɵɵnextContext(3).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r559 = ɵɵnextContext(); return ctx_r559.removeKeyword($event.event, i_r478, j_r486, k_r504, l_r526); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddNewSubLevelField_5_listener() { ɵɵrestoreView(_r539); var l_r526 = ctx.index; var k_r504 = ɵɵnextContext(3).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r563 = ɵɵnextContext(); return ctx_r563.onAddNewSubLevelField(i_r478, j_r486, k_r504, l_r526); })("onExpendMore", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onExpendMore_5_listener($event) { ɵɵrestoreView(_r539); var l_r526 = ctx.index; var k_r504 = ɵɵnextContext(3).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r567 = ɵɵnextContext(); return ctx_r567.onExpendMore($event, i_r478, j_r486, k_r504, l_r526); })("onChangeLabel", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onChangeLabel_5_listener($event) { ɵɵrestoreView(_r539); var l_r526 = ctx.index; var k_r504 = ɵɵnextContext(3).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r571 = ɵɵnextContext(); return ctx_r571.onChangeLabel($event, i_r478, j_r486, k_r504, l_r526); })("onCheckedChip", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckedChip_5_listener($event) { ɵɵrestoreView(_r539); var l_r526 = ctx.index; var k_r504 = ɵɵnextContext(3).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r575 = ɵɵnextContext(); return ctx_r575.onCheckedChip($event, i_r478, j_r486, k_r504, l_r526); })("onDrop", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onDrop_5_listener($event) { ɵɵrestoreView(_r539); var ctx_r579 = ɵɵnextContext(10); return ctx_r579.drop($event); })("onCheckedDefault", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckedDefault_5_listener($event) { ɵɵrestoreView(_r539); var l_r526 = ctx.index; var k_r504 = ɵɵnextContext(3).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r580 = ɵɵnextContext(); return ctx_r580.onCheckedDefault($event, i_r478, j_r486, k_r504, l_r526); })("onEditBlock", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onEditBlock_5_listener() { ɵɵrestoreView(_r539); var c2_r525 = ctx.$implicit; var l_r526 = ctx.index; var k_r504 = ɵɵnextContext(3).index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r584 = ɵɵnextContext(); return ctx_r584.onEditBlock(c2_r525, i_r478, j_r486, k_r504, l_r526); })("onGetConditionValues", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onGetConditionValues_5_listener() { ɵɵrestoreView(_r539); var ctx_r588 = ɵɵnextContext(10); return ctx_r588.getConditionValues(); });
+    ɵɵelement(6, "div", 45);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵtemplate(10, TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_div_10_Template, 6, 3, "div", 64);
+    ɵɵtemplate(7, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_7_Template, 6, 3, "div", 39);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var c2_r512 = ctx.$implicit;
-    var l_r513 = ctx.index;
-    var ctx_r574 = ɵɵnextContext(3);
-    var child_r505 = ctx_r574.$implicit;
-    var k_r506 = ctx_r574.index;
-    var field_r498 = ɵɵnextContext(3).$implicit;
-    var ctx_r511 = ɵɵnextContext(5);
-    ɵɵproperty("id", c2_r512.key);
-    ɵɵadvance(4);
-    ɵɵproperty("disabled", !field_r498.deleteable);
-    ɵɵadvance(4);
-    ɵɵproperty("field", c2_r512)("length", child_r505 == null ? null : child_r505.forms == null ? null : child_r505.forms.length)("i", k_r506)("j", l_r513)("conditionData", ctx_r511.conditionData);
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", (child_r505 == null ? null : child_r505.forms == null ? null : child_r505.forms.length) - 1 === l_r513);
-} }
-function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r576 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 53, 54);
-    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_Template_div_cdkDropListDropped_0_listener($event) { ɵɵrestoreView(_r576); var ctx_r575 = ɵɵnextContext(10); return ctx_r575.drop($event); });
-    ɵɵtemplate(2, TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_div_2_Template, 11, 8, "div", 69);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var child_r505 = ɵɵnextContext(2).$implicit;
-    ɵɵproperty("cdkDropListData", child_r505.forms);
-    ɵɵadvance(2);
-    ɵɵproperty("ngForOf", child_r505.forms);
-} }
-function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 65);
-    ɵɵtemplate(1, TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_div_1_Template, 3, 2, "div", 50);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var child_r505 = ɵɵnextContext().$implicit;
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", child_r505.forms);
-} }
-function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_10_Template(rf, ctx) { if (rf & 1) {
-    var _r581 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 72);
-    ɵɵelementStart(1, "button", 73);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_10_Template_button_click_1_listener() { ɵɵrestoreView(_r581); var j_r499 = ɵɵnextContext(4).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r579 = ɵɵnextContext(2); return ctx_r579.onAddNewField(i_r482, j_r499); });
-    ɵɵelementStart(2, "mat-icon");
-    ɵɵtext(3, "add_box");
-    ɵɵelementEnd();
-    ɵɵelementStart(4, "span");
-    ɵɵtext(5, "Ajouter un champ");
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var k_r506 = ɵɵnextContext().index;
-    var field_r498 = ɵɵnextContext(3).$implicit;
-    ɵɵadvance(1);
-    ɵɵstyleProp("opacity", (field_r498 == null ? null : field_r498.forms == null ? null : field_r498.forms.length) - 1 === k_r506 ? 1 : 0);
-    ɵɵproperty("disabled", (field_r498 == null ? null : field_r498.forms == null ? null : field_r498.forms.length) - 1 !== k_r506);
-} }
-function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template(rf, ctx) { if (rf & 1) {
-    var _r587 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 67);
-    ɵɵelementStart(1, "div", 57);
-    ɵɵelementStart(2, "div", 58);
-    ɵɵelementStart(3, "div", 68);
-    ɵɵelementStart(4, "button", 60);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_button_click_4_listener() { ɵɵrestoreView(_r587); var k_r506 = ctx.index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r585 = ɵɵnextContext(2); return ctx_r585.onRemoveField(i_r482, j_r499, k_r506); });
-    ɵɵelementStart(5, "mat-icon");
-    ɵɵtext(6, " delete");
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(7, "div", 61);
-    ɵɵelementStart(8, "lib-sub-category", 62);
-    ɵɵlistener("onAddKeywordFromInput", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onAddKeywordFromInput_8_listener($event) { ɵɵrestoreView(_r587); var k_r506 = ctx.index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r589 = ɵɵnextContext(2); return ctx_r589.addKeywordFromInput($event.event, $event.prev, i_r482, j_r499, k_r506); })("onKeyPress", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onKeyPress_8_listener($event) { ɵɵrestoreView(_r587); var k_r506 = ctx.index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r592 = ɵɵnextContext(2); return ctx_r592.onKeyPress($event.event, i_r482, j_r499, k_r506); })("onAddNewField", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onAddNewField_8_listener() { ɵɵrestoreView(_r587); var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r595 = ɵɵnextContext(2); return ctx_r595.onAddNewField(i_r482, j_r499); })("onRemoveField", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onRemoveField_8_listener() { ɵɵrestoreView(_r587); var k_r506 = ctx.index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r598 = ɵɵnextContext(2); return ctx_r598.onRemoveField(i_r482, j_r499, k_r506); })("onChangeType", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onChangeType_8_listener() { ɵɵrestoreView(_r587); var child_r505 = ctx.$implicit; var k_r506 = ctx.index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r601 = ɵɵnextContext(2); return ctx_r601.onChangeType(child_r505.type, i_r482, j_r499, k_r506); })("onRemoveKeyword", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onRemoveKeyword_8_listener($event) { ɵɵrestoreView(_r587); var k_r506 = ctx.index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r604 = ɵɵnextContext(2); return ctx_r604.removeKeyword($event.event, i_r482, j_r499, k_r506); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onAddNewSubLevelField_8_listener() { ɵɵrestoreView(_r587); var k_r506 = ctx.index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r607 = ɵɵnextContext(2); return ctx_r607.onAddNewSubLevelField(i_r482, j_r499, k_r506); })("onExpendMore", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onExpendMore_8_listener($event) { ɵɵrestoreView(_r587); var k_r506 = ctx.index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r610 = ɵɵnextContext(2); return ctx_r610.onExpendMore($event, i_r482, j_r499, k_r506); })("onChangeLabel", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onChangeLabel_8_listener($event) { ɵɵrestoreView(_r587); var k_r506 = ctx.index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r613 = ɵɵnextContext(2); return ctx_r613.onChangeLabel($event, i_r482, j_r499, k_r506); })("onCheckedChip", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onCheckedChip_8_listener($event) { ɵɵrestoreView(_r587); var k_r506 = ctx.index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r616 = ɵɵnextContext(2); return ctx_r616.onCheckedChip($event, i_r482, j_r499, k_r506); })("onDrop", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onDrop_8_listener($event) { ɵɵrestoreView(_r587); var ctx_r619 = ɵɵnextContext(8); return ctx_r619.drop($event); })("onCheckedDefault", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onCheckedDefault_8_listener($event) { ɵɵrestoreView(_r587); var k_r506 = ctx.index; var j_r499 = ɵɵnextContext(3).index; var i_r482 = ɵɵnextContext(3).index; var ctx_r620 = ɵɵnextContext(2); return ctx_r620.onCheckedDefault($event, i_r482, j_r499, k_r506); })("onGetConditionValues", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template_lib_sub_category_onGetConditionValues_8_listener() { ɵɵrestoreView(_r587); var ctx_r623 = ɵɵnextContext(8); return ctx_r623.getConditionValues(); });
-    ɵɵtemplate(9, TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_9_Template, 2, 1, "div", 63);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵtemplate(10, TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_div_10_Template, 6, 3, "div", 64);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var child_r505 = ctx.$implicit;
-    var k_r506 = ctx.index;
-    var ctx_r624 = ɵɵnextContext(3);
-    var field_r498 = ctx_r624.$implicit;
-    var j_r499 = ctx_r624.index;
-    var ctx_r504 = ɵɵnextContext(5);
-    ɵɵproperty("id", child_r505.key);
-    ɵɵadvance(4);
-    ɵɵproperty("disabled", !child_r505.deleteable);
-    ɵɵadvance(1);
-    ɵɵstyleProp("opacity", !child_r505.deleteable ? 0 : 1);
+    var c2_r525 = ctx.$implicit;
+    var l_r526 = ctx.index;
+    var ctx_r589 = ɵɵnextContext(3);
+    var child_r503 = ctx_r589.$implicit;
+    var k_r504 = ctx_r589.index;
+    var ctx_r524 = ɵɵnextContext(7);
+    ɵɵproperty("id", c2_r525.key);
     ɵɵadvance(3);
-    ɵɵproperty("field", child_r505)("length", field_r498 == null ? null : field_r498.forms == null ? null : field_r498.forms.length)("i", j_r499)("j", k_r506)("conditionData", ctx_r504.conditionData);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", child_r505.expandMore);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", (field_r498 == null ? null : field_r498.forms == null ? null : field_r498.forms.length) - 1 === k_r506);
-} }
-function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r626 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 53, 54);
-    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_Template_div_cdkDropListDropped_0_listener($event) { ɵɵrestoreView(_r626); var ctx_r625 = ɵɵnextContext(7); return ctx_r625.drop($event); });
-    ɵɵtemplate(2, TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_div_2_Template, 11, 11, "div", 66);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var field_r498 = ɵɵnextContext(2).$implicit;
-    ɵɵproperty("cdkDropListData", field_r498.forms);
+    ɵɵproperty("ngIf", c2_r525.forms);
     ɵɵadvance(2);
-    ɵɵproperty("ngForOf", field_r498.forms);
+    ɵɵproperty("field", c2_r525)("length", child_r503 == null ? null : child_r503.forms == null ? null : child_r503.forms.length)("i", k_r504)("j", l_r526)("conditionData", ctx_r524.conditionData);
+    ɵɵadvance(2);
+    ɵɵproperty("ngIf", (child_r503 == null ? null : child_r503.forms == null ? null : child_r503.forms.length) - 1 === l_r526);
 } }
-function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 65);
-    ɵɵtemplate(1, TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_div_1_Template, 3, 2, "div", 50);
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_Template(rf, ctx) { if (rf & 1) {
+    var _r591 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 47, 29);
+    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_Template_div_cdkDropListDropped_0_listener($event) { ɵɵrestoreView(_r591); var ctx_r590 = ɵɵnextContext(9); return ctx_r590.drop($event); });
+    ɵɵtemplate(2, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template, 8, 8, "div", 53);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var field_r498 = ɵɵnextContext().$implicit;
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", field_r498.forms);
+    var child_r503 = ɵɵnextContext(2).$implicit;
+    ɵɵproperty("cdkDropListData", child_r503.forms);
+    ɵɵadvance(2);
+    ɵɵproperty("ngForOf", child_r503.forms);
 } }
-function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_10_Template(rf, ctx) { if (rf & 1) {
-    var _r631 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 72);
-    ɵɵelementStart(1, "button", 73);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_10_Template_button_click_1_listener() { ɵɵrestoreView(_r631); var i_r482 = ɵɵnextContext(4).index; var ctx_r629 = ɵɵnextContext(2); return ctx_r629.onAddNewField(i_r482); });
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 45);
+    ɵɵtemplate(1, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_Template, 3, 2, "div", 46);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var child_r503 = ɵɵnextContext().$implicit;
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", child_r503.forms);
+} }
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_8_Template(rf, ctx) { if (rf & 1) {
+    var _r596 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 57);
+    ɵɵelementStart(1, "button", 58);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_8_Template_button_click_1_listener() { ɵɵrestoreView(_r596); var j_r486 = ɵɵnextContext(4).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r594 = ɵɵnextContext(); return ctx_r594.onAddNewField(i_r478, j_r486); });
     ɵɵelementStart(2, "mat-icon");
     ɵɵtext(3, "add_box");
     ɵɵelementEnd();
@@ -1399,195 +1227,537 @@ function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var j_r499 = ɵɵnextContext().index;
-    var category_r481 = ɵɵnextContext(3).$implicit;
+    var k_r504 = ɵɵnextContext().index;
+    var field_r485 = ɵɵnextContext(3).$implicit;
     ɵɵadvance(1);
-    ɵɵstyleProp("opacity", (category_r481 == null ? null : category_r481.forms == null ? null : category_r481.forms.length) - 1 === j_r499 ? 1 : 0);
-    ɵɵproperty("disabled", (category_r481 == null ? null : category_r481.forms == null ? null : category_r481.forms.length) - 1 !== j_r499);
+    ɵɵstyleProp("opacity", (field_r485 == null ? null : field_r485.forms == null ? null : field_r485.forms.length) - 1 === k_r504 ? 1 : 0);
+    ɵɵproperty("disabled", (field_r485 == null ? null : field_r485.forms == null ? null : field_r485.forms.length) - 1 !== k_r504);
 } }
-function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r636 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 56);
-    ɵɵelementStart(1, "div", 57);
-    ɵɵelementStart(2, "div", 58);
-    ɵɵelementStart(3, "div", 59);
-    ɵɵelementStart(4, "button", 60);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_button_click_4_listener() { ɵɵrestoreView(_r636); var j_r499 = ctx.index; var i_r482 = ɵɵnextContext(3).index; var ctx_r634 = ɵɵnextContext(2); return ctx_r634.onRemoveField(i_r482, j_r499); });
-    ɵɵelementStart(5, "mat-icon");
-    ɵɵtext(6, "delete ");
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(7, "div", 61);
-    ɵɵelementStart(8, "lib-sub-category", 62);
-    ɵɵlistener("onAddKeywordFromInput", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onAddKeywordFromInput_8_listener($event) { ɵɵrestoreView(_r636); var j_r499 = ctx.index; var i_r482 = ɵɵnextContext(3).index; var ctx_r637 = ɵɵnextContext(2); return ctx_r637.addKeywordFromInput($event.event, $event.prev, i_r482, j_r499); })("onKeyPress", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onKeyPress_8_listener($event) { ɵɵrestoreView(_r636); var j_r499 = ctx.index; var i_r482 = ɵɵnextContext(3).index; var ctx_r639 = ɵɵnextContext(2); return ctx_r639.onKeyPress($event.event, i_r482, j_r499); })("onAddNewField", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onAddNewField_8_listener() { ɵɵrestoreView(_r636); var i_r482 = ɵɵnextContext(3).index; var ctx_r641 = ɵɵnextContext(2); return ctx_r641.onAddNewField(i_r482); })("onRemoveField", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onRemoveField_8_listener() { ɵɵrestoreView(_r636); var j_r499 = ctx.index; var i_r482 = ɵɵnextContext(3).index; var ctx_r643 = ɵɵnextContext(2); return ctx_r643.onRemoveField(i_r482, j_r499); })("onChangeType", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onChangeType_8_listener() { ɵɵrestoreView(_r636); var field_r498 = ctx.$implicit; var j_r499 = ctx.index; var i_r482 = ɵɵnextContext(3).index; var ctx_r645 = ɵɵnextContext(2); return ctx_r645.onChangeType(field_r498.type, i_r482, j_r499); })("onRemoveKeyword", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onRemoveKeyword_8_listener($event) { ɵɵrestoreView(_r636); var j_r499 = ctx.index; var i_r482 = ɵɵnextContext(3).index; var ctx_r647 = ɵɵnextContext(2); return ctx_r647.removeKeyword($event.event, i_r482, j_r499); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onAddNewSubLevelField_8_listener() { ɵɵrestoreView(_r636); var j_r499 = ctx.index; var i_r482 = ɵɵnextContext(3).index; var ctx_r649 = ɵɵnextContext(2); return ctx_r649.onAddNewSubLevelField(i_r482, j_r499); })("onExpendMore", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onExpendMore_8_listener($event) { ɵɵrestoreView(_r636); var j_r499 = ctx.index; var i_r482 = ɵɵnextContext(3).index; var ctx_r651 = ɵɵnextContext(2); return ctx_r651.onExpendMore($event, i_r482, j_r499); })("onChangeLabel", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onChangeLabel_8_listener($event) { ɵɵrestoreView(_r636); var j_r499 = ctx.index; var i_r482 = ɵɵnextContext(3).index; var ctx_r653 = ɵɵnextContext(2); return ctx_r653.onChangeLabel($event, i_r482, j_r499); })("onCheckedChip", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onCheckedChip_8_listener($event) { ɵɵrestoreView(_r636); var j_r499 = ctx.index; var i_r482 = ɵɵnextContext(3).index; var ctx_r655 = ɵɵnextContext(2); return ctx_r655.onCheckedChip($event, i_r482, j_r499); })("onDrop", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onDrop_8_listener($event) { ɵɵrestoreView(_r636); var ctx_r657 = ɵɵnextContext(5); return ctx_r657.drop($event); })("onCheckedDefault", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onCheckedDefault_8_listener($event) { ɵɵrestoreView(_r636); var j_r499 = ctx.index; var i_r482 = ɵɵnextContext(3).index; var ctx_r658 = ɵɵnextContext(2); return ctx_r658.onCheckedDefault($event, i_r482, j_r499); })("onGetConditionValues", function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onGetConditionValues_8_listener() { ɵɵrestoreView(_r636); var ctx_r660 = ɵɵnextContext(5); return ctx_r660.getConditionValues(); });
-    ɵɵtemplate(9, TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_9_Template, 2, 1, "div", 63);
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template(rf, ctx) { if (rf & 1) {
+    var _r601 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 49);
+    ɵɵelementStart(1, "div", 32);
+    ɵɵelementStart(2, "div", 33);
+    ɵɵtemplate(3, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_3_Template, 4, 0, "div", 50);
+    ɵɵelementStart(4, "div", 35);
+    ɵɵtemplate(5, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_5_Template, 9, 11, "div", 36);
+    ɵɵelementStart(6, "lib-sub-category", 37);
+    ɵɵlistener("onAddKeywordFromInput", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onAddKeywordFromInput_6_listener($event) { ɵɵrestoreView(_r601); var k_r504 = ctx.index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r600 = ɵɵnextContext(); return ctx_r600.addKeywordFromInput($event.event, $event.prev, i_r478, j_r486, k_r504); })("onKeyPress", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onKeyPress_6_listener($event) { ɵɵrestoreView(_r601); var k_r504 = ctx.index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r604 = ɵɵnextContext(); return ctx_r604.onKeyPress($event.event, i_r478, j_r486, k_r504); })("onAddNewField", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onAddNewField_6_listener() { ɵɵrestoreView(_r601); var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r607 = ɵɵnextContext(); return ctx_r607.onAddNewField(i_r478, j_r486); })("onRemoveField", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onRemoveField_6_listener() { ɵɵrestoreView(_r601); var k_r504 = ctx.index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r610 = ɵɵnextContext(); return ctx_r610.onRemoveField(i_r478, j_r486, k_r504); })("onChangeType", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onChangeType_6_listener() { ɵɵrestoreView(_r601); var child_r503 = ctx.$implicit; var k_r504 = ctx.index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r613 = ɵɵnextContext(); return ctx_r613.onChangeType(child_r503.type, i_r478, j_r486, k_r504); })("onRemoveKeyword", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onRemoveKeyword_6_listener($event) { ɵɵrestoreView(_r601); var k_r504 = ctx.index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r616 = ɵɵnextContext(); return ctx_r616.removeKeyword($event.event, i_r478, j_r486, k_r504); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onAddNewSubLevelField_6_listener() { ɵɵrestoreView(_r601); var k_r504 = ctx.index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r619 = ɵɵnextContext(); return ctx_r619.onAddNewSubLevelField(i_r478, j_r486, k_r504); })("onExpendMore", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onExpendMore_6_listener($event) { ɵɵrestoreView(_r601); var k_r504 = ctx.index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r622 = ɵɵnextContext(); return ctx_r622.onExpendMore($event, i_r478, j_r486, k_r504); })("onChangeLabel", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onChangeLabel_6_listener($event) { ɵɵrestoreView(_r601); var k_r504 = ctx.index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r625 = ɵɵnextContext(); return ctx_r625.onChangeLabel($event, i_r478, j_r486, k_r504); })("onCheckedChip", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onCheckedChip_6_listener($event) { ɵɵrestoreView(_r601); var k_r504 = ctx.index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r628 = ɵɵnextContext(); return ctx_r628.onCheckedChip($event, i_r478, j_r486, k_r504); })("onDrop", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onDrop_6_listener($event) { ɵɵrestoreView(_r601); var ctx_r631 = ɵɵnextContext(7); return ctx_r631.drop($event); })("onCheckedDefault", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onCheckedDefault_6_listener($event) { ɵɵrestoreView(_r601); var k_r504 = ctx.index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r632 = ɵɵnextContext(); return ctx_r632.onCheckedDefault($event, i_r478, j_r486, k_r504); })("onEditBlock", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onEditBlock_6_listener() { ɵɵrestoreView(_r601); var child_r503 = ctx.$implicit; var k_r504 = ctx.index; var j_r486 = ɵɵnextContext(3).index; var i_r478 = ɵɵnextContext(3).index; var ctx_r635 = ɵɵnextContext(); return ctx_r635.onEditBlock(child_r503, i_r478, j_r486, k_r504); })("onGetConditionValues", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onGetConditionValues_6_listener() { ɵɵrestoreView(_r601); var ctx_r638 = ɵɵnextContext(7); return ctx_r638.getConditionValues(); });
+    ɵɵtemplate(7, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_7_Template, 2, 1, "div", 38);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵtemplate(10, TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_div_10_Template, 6, 3, "div", 64);
+    ɵɵtemplate(8, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_div_8_Template, 6, 3, "div", 39);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var field_r498 = ctx.$implicit;
-    var j_r499 = ctx.index;
-    var ctx_r661 = ɵɵnextContext(3);
-    var category_r481 = ctx_r661.$implicit;
-    var i_r482 = ctx_r661.index;
-    var ctx_r497 = ɵɵnextContext(2);
-    ɵɵproperty("id", field_r498.key);
-    ɵɵadvance(4);
-    ɵɵproperty("disabled", !field_r498.deleteable);
-    ɵɵadvance(1);
-    ɵɵstyleProp("opacity", !field_r498.deleteable ? 0 : 1);
+    var child_r503 = ctx.$implicit;
+    var k_r504 = ctx.index;
+    var ctx_r639 = ɵɵnextContext(3);
+    var field_r485 = ctx_r639.$implicit;
+    var j_r486 = ctx_r639.index;
+    var ctx_r502 = ɵɵnextContext(4);
+    ɵɵproperty("id", child_r503.key);
+    ɵɵadvance(3);
+    ɵɵproperty("ngIf", child_r503.forms);
     ɵɵadvance(2);
-    ɵɵclassMap(!field_r498.deleteable ? "disabled" : "");
+    ɵɵproperty("ngIf", child_r503.forms);
     ɵɵadvance(1);
-    ɵɵproperty("field", field_r498)("length", category_r481 == null ? null : category_r481.forms == null ? null : category_r481.forms.length)("i", i_r482)("j", j_r499)("conditionData", ctx_r497.conditionData);
+    ɵɵproperty("field", child_r503)("length", field_r485 == null ? null : field_r485.forms == null ? null : field_r485.forms.length)("i", j_r486)("j", k_r504)("conditionData", ctx_r502.conditionData);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", field_r498.expandMore);
+    ɵɵproperty("ngIf", child_r503.expandMore);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", (category_r481 == null ? null : category_r481.forms == null ? null : category_r481.forms.length) - 1 === j_r499);
+    ɵɵproperty("ngIf", (field_r485 == null ? null : field_r485.forms == null ? null : field_r485.forms.length) - 1 === k_r504);
 } }
-function TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_Template(rf, ctx) { if (rf & 1) {
+    var _r641 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 47, 29);
+    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_Template_div_cdkDropListDropped_0_listener($event) { ɵɵrestoreView(_r641); var ctx_r640 = ɵɵnextContext(6); return ctx_r640.drop($event); });
+    ɵɵtemplate(2, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_div_2_Template, 9, 10, "div", 48);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var field_r485 = ɵɵnextContext(2).$implicit;
+    ɵɵproperty("cdkDropListData", field_r485.forms);
+    ɵɵadvance(2);
+    ɵɵproperty("ngForOf", field_r485.forms);
+} }
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 45);
+    ɵɵtemplate(1, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_div_1_Template, 3, 2, "div", 46);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var field_r485 = ɵɵnextContext().$implicit;
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", field_r485.forms);
+} }
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_8_Template(rf, ctx) { if (rf & 1) {
+    var _r646 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 57);
+    ɵɵelementStart(1, "button", 58);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_8_Template_button_click_1_listener() { ɵɵrestoreView(_r646); var i_r478 = ɵɵnextContext(4).index; var ctx_r644 = ɵɵnextContext(); return ctx_r644.onAddNewField(i_r478); });
+    ɵɵelementStart(2, "span");
+    ɵɵtext(3, "Ajouter un champ");
+    ɵɵelementEnd();
+    ɵɵelementStart(4, "mat-icon");
+    ɵɵtext(5, "add");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var j_r486 = ɵɵnextContext().index;
+    var category_r477 = ɵɵnextContext(3).$implicit;
+    ɵɵadvance(1);
+    ɵɵstyleProp("opacity", (category_r477 == null ? null : category_r477.forms == null ? null : category_r477.forms.length) - 1 === j_r486 ? 1 : 0);
+    ɵɵproperty("disabled", (category_r477 == null ? null : category_r477.forms == null ? null : category_r477.forms.length) - 1 !== j_r486);
+} }
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template(rf, ctx) { if (rf & 1) {
+    var _r650 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 31);
+    ɵɵelementStart(1, "div", 32);
+    ɵɵelementStart(2, "div", 33);
+    ɵɵtemplate(3, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_3_Template, 4, 0, "div", 34);
+    ɵɵelementStart(4, "div", 35);
+    ɵɵtemplate(5, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_5_Template, 10, 7, "div", 36);
+    ɵɵelementStart(6, "lib-sub-category", 37);
+    ɵɵlistener("onAddKeywordFromInput", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onAddKeywordFromInput_6_listener($event) { ɵɵrestoreView(_r650); var j_r486 = ctx.index; var i_r478 = ɵɵnextContext(3).index; var ctx_r649 = ɵɵnextContext(); return ctx_r649.addKeywordFromInput($event.event, $event.prev, i_r478, j_r486); })("onKeyPress", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onKeyPress_6_listener($event) { ɵɵrestoreView(_r650); var j_r486 = ctx.index; var i_r478 = ɵɵnextContext(3).index; var ctx_r652 = ɵɵnextContext(); return ctx_r652.onKeyPress($event.event, i_r478, j_r486); })("onAddNewField", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onAddNewField_6_listener() { ɵɵrestoreView(_r650); var i_r478 = ɵɵnextContext(3).index; var ctx_r654 = ɵɵnextContext(); return ctx_r654.onAddNewField(i_r478); })("onRemoveField", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onRemoveField_6_listener() { ɵɵrestoreView(_r650); var j_r486 = ctx.index; var i_r478 = ɵɵnextContext(3).index; var ctx_r656 = ɵɵnextContext(); return ctx_r656.onRemoveField(i_r478, j_r486); })("onChangeType", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onChangeType_6_listener() { ɵɵrestoreView(_r650); var field_r485 = ctx.$implicit; var j_r486 = ctx.index; var i_r478 = ɵɵnextContext(3).index; var ctx_r658 = ɵɵnextContext(); return ctx_r658.onChangeType(field_r485.type, i_r478, j_r486); })("onRemoveKeyword", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onRemoveKeyword_6_listener($event) { ɵɵrestoreView(_r650); var j_r486 = ctx.index; var i_r478 = ɵɵnextContext(3).index; var ctx_r660 = ɵɵnextContext(); return ctx_r660.removeKeyword($event.event, i_r478, j_r486); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onAddNewSubLevelField_6_listener() { ɵɵrestoreView(_r650); var j_r486 = ctx.index; var i_r478 = ɵɵnextContext(3).index; var ctx_r662 = ɵɵnextContext(); return ctx_r662.onAddNewSubLevelField(i_r478, j_r486); })("onExpendMore", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onExpendMore_6_listener($event) { ɵɵrestoreView(_r650); var j_r486 = ctx.index; var i_r478 = ɵɵnextContext(3).index; var ctx_r664 = ɵɵnextContext(); return ctx_r664.onExpendMore($event, i_r478, j_r486); })("onChangeLabel", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onChangeLabel_6_listener($event) { ɵɵrestoreView(_r650); var j_r486 = ctx.index; var i_r478 = ɵɵnextContext(3).index; var ctx_r666 = ɵɵnextContext(); return ctx_r666.onChangeLabel($event, i_r478, j_r486); })("onCheckedChip", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onCheckedChip_6_listener($event) { ɵɵrestoreView(_r650); var j_r486 = ctx.index; var i_r478 = ɵɵnextContext(3).index; var ctx_r668 = ɵɵnextContext(); return ctx_r668.onCheckedChip($event, i_r478, j_r486); })("onDrop", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onDrop_6_listener($event) { ɵɵrestoreView(_r650); var ctx_r670 = ɵɵnextContext(4); return ctx_r670.drop($event); })("onCheckedDefault", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onCheckedDefault_6_listener($event) { ɵɵrestoreView(_r650); var j_r486 = ctx.index; var i_r478 = ɵɵnextContext(3).index; var ctx_r671 = ɵɵnextContext(); return ctx_r671.onCheckedDefault($event, i_r478, j_r486); })("onEditBlock", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onEditBlock_6_listener() { ɵɵrestoreView(_r650); var field_r485 = ctx.$implicit; var j_r486 = ctx.index; var i_r478 = ɵɵnextContext(3).index; var ctx_r673 = ɵɵnextContext(); return ctx_r673.onEditBlock(field_r485, i_r478, j_r486); })("onGetConditionValues", function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template_lib_sub_category_onGetConditionValues_6_listener() { ɵɵrestoreView(_r650); var ctx_r675 = ɵɵnextContext(4); return ctx_r675.getConditionValues(); });
+    ɵɵtemplate(7, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_7_Template, 2, 1, "div", 38);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵtemplate(8, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_div_8_Template, 6, 3, "div", 39);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var field_r485 = ctx.$implicit;
+    var j_r486 = ctx.index;
+    var ctx_r676 = ɵɵnextContext(3);
+    var category_r477 = ctx_r676.$implicit;
+    var i_r478 = ctx_r676.index;
+    var ctx_r484 = ɵɵnextContext();
+    ɵɵstyleProp("width", field_r485.forms ? "100%" : "auto");
+    ɵɵproperty("id", field_r485.key);
+    ɵɵadvance(3);
+    ɵɵproperty("ngIf", field_r485.forms);
+    ɵɵadvance(2);
+    ɵɵproperty("ngIf", field_r485.forms);
+    ɵɵadvance(1);
+    ɵɵproperty("field", field_r485)("length", category_r477 == null ? null : category_r477.forms == null ? null : category_r477.forms.length)("i", i_r478)("j", j_r486)("conditionData", ctx_r484.conditionData);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", field_r485.expandMore);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", (category_r477 == null ? null : category_r477.forms == null ? null : category_r477.forms.length) - 1 === j_r486);
+} }
+function TemplateProfileCreateComponent_div_19_div_12_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_div_1_Template, 11, 13, "div", 55);
+    ɵɵtemplate(1, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_div_1_Template, 9, 12, "div", 30);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var category_r481 = ɵɵnextContext(2).$implicit;
+    var category_r477 = ɵɵnextContext(2).$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", category_r481.forms);
+    ɵɵproperty("ngForOf", category_r477.forms);
 } }
-function TemplateProfileCreateComponent_div_3_div_19_div_12_Template(rf, ctx) { if (rf & 1) {
-    var _r664 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 53, 54);
-    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_3_div_19_div_12_Template_div_cdkDropListDropped_0_listener($event) { ɵɵrestoreView(_r664); var ctx_r663 = ɵɵnextContext(3); return ctx_r663.drop($event); });
-    ɵɵtemplate(2, TemplateProfileCreateComponent_div_3_div_19_div_12_ng_container_2_Template, 2, 1, "ng-container", 40);
+function TemplateProfileCreateComponent_div_19_div_12_Template(rf, ctx) { if (rf & 1) {
+    var _r679 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 28, 29);
+    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_19_div_12_Template_div_cdkDropListDropped_0_listener($event) { ɵɵrestoreView(_r679); var ctx_r678 = ɵɵnextContext(2); return ctx_r678.drop($event); });
+    ɵɵtemplate(2, TemplateProfileCreateComponent_div_19_div_12_ng_container_2_Template, 2, 1, "ng-container", 27);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r481 = ɵɵnextContext().$implicit;
-    ɵɵproperty("cdkDropListData", category_r481.forms);
+    var category_r477 = ɵɵnextContext().$implicit;
+    ɵɵproperty("cdkDropListData", category_r477.forms);
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", category_r481.expandMore);
+    ɵɵproperty("ngIf", category_r477.expandMore);
 } }
-function TemplateProfileCreateComponent_div_3_div_19_mat_icon_14_Template(rf, ctx) { if (rf & 1) {
+function TemplateProfileCreateComponent_div_19_mat_icon_14_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-icon");
     ɵɵtext(1, "chevron_right");
     ɵɵelementEnd();
 } }
-function TemplateProfileCreateComponent_div_3_div_19_mat_icon_15_Template(rf, ctx) { if (rf & 1) {
+function TemplateProfileCreateComponent_div_19_mat_icon_15_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-icon");
     ɵɵtext(1, "expand_more");
     ɵɵelementEnd();
 } }
-function TemplateProfileCreateComponent_div_3_div_19_Template(rf, ctx) { if (rf & 1) {
-    var _r667 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 42);
-    ɵɵelementStart(1, "div", 43);
-    ɵɵelementStart(2, "button", 44);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_div_19_Template_button_click_2_listener($event) { ɵɵrestoreView(_r667); var i_r482 = ctx.index; var ctx_r666 = ɵɵnextContext(2); return ctx_r666.onRemoveCategory($event, i_r482); });
-    ɵɵelementStart(3, "mat-icon");
-    ɵɵtext(4, "delete");
+function TemplateProfileCreateComponent_div_19_Template(rf, ctx) { if (rf & 1) {
+    var _r682 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 17);
+    ɵɵelementStart(1, "div", 18);
+    ɵɵelementStart(2, "button", 19);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_19_Template_button_click_2_listener($event) { ɵɵrestoreView(_r682); return $event.preventDefault(); });
+    ɵɵelementStart(3, "mat-icon", 20);
+    ɵɵtext(4, "drag_indicator");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(5, "div", 45);
-    ɵɵelementStart(6, "div", 46);
-    ɵɵelementStart(7, "input", 47);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_3_div_19_Template_input_ngModelChange_7_listener($event) { ɵɵrestoreView(_r667); var category_r481 = ctx.$implicit; return category_r481.name = $event; });
+    ɵɵelementStart(5, "div", 21);
+    ɵɵelementStart(6, "div", 22);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_19_Template_div_click_6_listener($event) { ɵɵrestoreView(_r682); var category_r477 = ctx.$implicit; var i_r478 = ctx.index; var ctx_r683 = ɵɵnextContext(); return ctx_r683.onActiveMenu(category_r477, i_r478, $event); });
+    ɵɵelementStart(7, "div");
+    ɵɵelementStart(8, "p", 23);
+    ɵɵtext(9);
     ɵɵelementEnd();
-    ɵɵelementStart(8, "mat-form-field", 48);
-    ɵɵelementStart(9, "mat-label");
-    ɵɵtext(10, "\u00C9quipe");
-    ɵɵelementEnd();
-    ɵɵtemplate(11, TemplateProfileCreateComponent_div_3_div_19_mat_select_11_Template, 2, 5, "mat-select", 49);
+    ɵɵelementStart(10, "p", 24);
+    ɵɵtext(11);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵtemplate(12, TemplateProfileCreateComponent_div_3_div_19_div_12_Template, 3, 2, "div", 50);
     ɵɵelementEnd();
-    ɵɵelementStart(13, "button", 51);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_div_19_Template_button_click_13_listener($event) { ɵɵrestoreView(_r667); var category_r481 = ctx.$implicit; var i_r482 = ctx.index; var ctx_r669 = ɵɵnextContext(2); return ctx_r669.onExpendMore({ event: $event, field: category_r481 }, i_r482); });
-    ɵɵtemplate(14, TemplateProfileCreateComponent_div_3_div_19_mat_icon_14_Template, 2, 0, "mat-icon", 40);
-    ɵɵtemplate(15, TemplateProfileCreateComponent_div_3_div_19_mat_icon_15_Template, 2, 0, "mat-icon", 40);
+    ɵɵtemplate(12, TemplateProfileCreateComponent_div_19_div_12_Template, 3, 2, "div", 25);
+    ɵɵelementEnd();
+    ɵɵelementStart(13, "button", 26);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_19_Template_button_click_13_listener($event) { ɵɵrestoreView(_r682); var category_r477 = ctx.$implicit; var i_r478 = ctx.index; var ctx_r684 = ɵɵnextContext(); return ctx_r684.onExpendMore({ event: $event, field: category_r477 }, i_r478); });
+    ɵɵtemplate(14, TemplateProfileCreateComponent_div_19_mat_icon_14_Template, 2, 0, "mat-icon", 27);
+    ɵɵtemplate(15, TemplateProfileCreateComponent_div_19_mat_icon_15_Template, 2, 0, "mat-icon", 27);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r481 = ctx.$implicit;
-    var ctx_r453 = ɵɵnextContext(2);
-    ɵɵproperty("id", category_r481.name);
+    var category_r477 = ctx.$implicit;
+    var i_r478 = ctx.index;
+    var ctx_r470 = ɵɵnextContext();
+    ɵɵclassMap(ctx_r470.editIndex === i_r478 ? "active" : "");
+    ɵɵstyleProp("padding-bottom", category_r477.expandMore ? "100px" : "10px");
+    ɵɵproperty("id", category_r477.name);
+    ɵɵadvance(9);
+    ɵɵtextInterpolate1(" ", category_r477.name, " ");
     ɵɵadvance(2);
-    ɵɵproperty("disabled", !category_r481.deleteable);
+    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r470.catNameStart(category_r477.name) ? "l'" + category_r477.name : category_r477.name, " ");
     ɵɵadvance(1);
-    ɵɵstyleProp("opacity", !category_r481.deleteable ? 0 : 1);
-    ɵɵadvance(4);
-    ɵɵproperty("readonly", ctx_r453.categories.length < 4 || !category_r481.editable)("readonly", !category_r481.editable)("ngModel", category_r481.name)("ngModelOptions", ɵɵpureFunction0(12, _c0$1));
-    ɵɵadvance(4);
-    ɵɵproperty("ngIf", category_r481.selector);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", category_r481.forms);
+    ɵɵproperty("ngIf", category_r477.forms);
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", !category_r481.expandMore);
+    ɵɵproperty("ngIf", !category_r477.expandMore);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", category_r481.expandMore);
+    ɵɵproperty("ngIf", category_r477.expandMore);
 } }
-function TemplateProfileCreateComponent_div_3_Template(rf, ctx) { if (rf & 1) {
-    var _r671 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 21);
-    ɵɵelementStart(1, "div", 22);
-    ɵɵelementStart(2, "div", 23);
-    ɵɵelementStart(3, "h3");
-    ɵɵelementStart(4, "span");
-    ɵɵtext(5);
-    ɵɵelementEnd();
-    ɵɵelementStart(6, "mat-icon", 19);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_Template_mat_icon_click_6_listener() { ɵɵrestoreView(_r671); var ctx_r670 = ɵɵnextContext(); return ctx_r670.openDialog(); });
-    ɵɵtext(7, "edit");
+function TemplateProfileCreateComponent_div_26_div_33_Template(rf, ctx) { if (rf & 1) {
+    var _r692 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 89);
+    ɵɵelementStart(1, "mat-checkbox", 90);
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_26_div_33_Template_mat_checkbox_ngModelChange_1_listener($event) { ɵɵrestoreView(_r692); var ctx_r691 = ɵɵnextContext(2); return ctx_r691.currentEditBlock.expandOnboarding = $event; });
+    ɵɵtext(2, " Coch\u00E9 par d\u00E9fault ");
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(8, "ol", 24);
-    ɵɵtemplate(9, TemplateProfileCreateComponent_div_3_li_9_Template, 8, 5, "li", 25);
+} if (rf & 2) {
+    var ctx_r685 = ɵɵnextContext(2);
+    ɵɵadvance(1);
+    ɵɵproperty("ngModel", ctx_r685.currentEditBlock.expandOnboarding)("ngModelOptions", ɵɵpureFunction0(2, _c0$1));
+} }
+function TemplateProfileCreateComponent_div_26_mat_form_field_34_mat_chip_6_Template(rf, ctx) { if (rf & 1) {
+    var _r699 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-chip", 97);
+    ɵɵlistener("dblclick", function TemplateProfileCreateComponent_div_26_mat_form_field_34_mat_chip_6_Template_mat_chip_dblclick_0_listener() { ɵɵrestoreView(_r699); var option_r697 = ctx.$implicit; var ctx_r698 = ɵɵnextContext(3); return ctx_r698.onCheckedChipBlock(option_r697, ctx_r698.currentEditBlock); })("click", function TemplateProfileCreateComponent_div_26_mat_form_field_34_mat_chip_6_Template_mat_chip_click_0_listener() { ɵɵrestoreView(_r699); var option_r697 = ctx.$implicit; var ctx_r700 = ɵɵnextContext(3); return ctx_r700.onEditChip(option_r697); })("removed", function TemplateProfileCreateComponent_div_26_mat_form_field_34_mat_chip_6_Template_mat_chip_removed_0_listener() { ɵɵrestoreView(_r699); var option_r697 = ctx.$implicit; var ctx_r701 = ɵɵnextContext(3); return ctx_r701.removeKeywordBlock(option_r697, ctx_r701.currentEditBlock); });
+    ɵɵtext(1);
+    ɵɵelementStart(2, "mat-icon", 98);
+    ɵɵtext(3, "cancel");
     ɵɵelementEnd();
-    ɵɵelementStart(10, "button", 26);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_Template_button_click_10_listener($event) { ɵɵrestoreView(_r671); var ctx_r672 = ɵɵnextContext(); return ctx_r672.onAddNewCategory($event); });
-    ɵɵelementStart(11, "mat-icon");
-    ɵɵtext(12, "add_box");
     ɵɵelementEnd();
-    ɵɵtext(13, " Ajouter une nouvelle cat\u00E9gorie ");
+} if (rf & 2) {
+    var option_r697 = ctx.$implicit;
+    ɵɵproperty("selected", option_r697.checked)("value", option_r697.value)("removable", true);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate1(" ", option_r697.value, " ");
+} }
+function TemplateProfileCreateComponent_div_26_mat_form_field_34_Template(rf, ctx) { if (rf & 1) {
+    var _r703 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-form-field", 91);
+    ɵɵelementStart(1, "mat-label");
+    ɵɵtext(2, " Valeur par d\u00E9fault ");
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "mat-chip-list", 92, 93);
+    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_26_mat_form_field_34_Template_mat_chip_list_cdkDropListDropped_3_listener($event) { ɵɵrestoreView(_r703); var ctx_r702 = ɵɵnextContext(2); return ctx_r702.drop($event); });
+    ɵɵtemplate(6, TemplateProfileCreateComponent_div_26_mat_form_field_34_mat_chip_6_Template, 4, 4, "mat-chip", 94);
+    ɵɵelementStart(7, "input", 95, 96);
+    ɵɵlistener("matChipInputTokenEnd", function TemplateProfileCreateComponent_div_26_mat_form_field_34_Template_input_matChipInputTokenEnd_7_listener($event) { ɵɵrestoreView(_r703); var ctx_r704 = ɵɵnextContext(2); return ctx_r704.addKeywordFromInputBlock($event, ctx_r704.currentEditBlock, ctx_r704.prevValue); })("keyup", function TemplateProfileCreateComponent_div_26_mat_form_field_34_Template_input_keyup_7_listener($event) { ɵɵrestoreView(_r703); var ctx_r705 = ɵɵnextContext(2); return ctx_r705.onKeyUpChip($event, ctx_r705.currentEditBlock); })("ngModelChange", function TemplateProfileCreateComponent_div_26_mat_form_field_34_Template_input_ngModelChange_7_listener($event) { ɵɵrestoreView(_r703); var ctx_r706 = ɵɵnextContext(2); return ctx_r706.currentChip = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(14, "button", 27);
-    ɵɵtext(15, " Enregistrer le profil ");
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var _r694 = ɵɵreference(5);
+    var ctx_r686 = ɵɵnextContext(2);
+    ɵɵadvance(3);
+    ɵɵproperty("cdkDropListData", ctx_r686.currentEditBlock.defaultValue);
+    ɵɵadvance(3);
+    ɵɵproperty("ngForOf", ctx_r686.currentEditBlock.defaultValue);
+    ɵɵadvance(1);
+    ɵɵproperty("matChipInputFor", _r694)("matChipInputAddOnBlur", true)("matChipInputSeparatorKeyCodes", ctx_r686.separatorKeysCodes)("ngModel", ctx_r686.currentChip)("ngModelOptions", ɵɵpureFunction0(7, _c0$1));
+} }
+function TemplateProfileCreateComponent_div_26_mat_form_field_35_Template(rf, ctx) { if (rf & 1) {
+    var _r708 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-form-field", 72);
+    ɵɵelementStart(1, "mat-label");
+    ɵɵtext(2, "Valeur par d\u00E9fault");
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "input", 99);
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_26_mat_form_field_35_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r708); var ctx_r707 = ɵɵnextContext(2); return ctx_r707.currentEditBlock.defaultValue = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(16, "div", 28);
-    ɵɵelementStart(17, "div", 29, 30);
-    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_3_Template_div_cdkDropListDropped_17_listener($event) { ɵɵrestoreView(_r671); var ctx_r673 = ɵɵnextContext(); return ctx_r673.drop($event); });
-    ɵɵtemplate(19, TemplateProfileCreateComponent_div_3_div_19_Template, 16, 13, "div", 31);
-    ɵɵelementStart(20, "div", 32);
-    ɵɵelementStart(21, "button", 19);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_3_Template_button_click_21_listener($event) { ɵɵrestoreView(_r671); var ctx_r674 = ɵɵnextContext(); return ctx_r674.onAddNewCategory($event); });
-    ɵɵelementStart(22, "mat-icon");
-    ɵɵtext(23, "add");
+} if (rf & 2) {
+    var ctx_r687 = ɵɵnextContext(2);
+    ɵɵadvance(3);
+    ɵɵproperty("ngModelOptions", ɵɵpureFunction0(2, _c0$1))("ngModel", ctx_r687.currentEditBlock.defaultValue);
+} }
+function TemplateProfileCreateComponent_div_26_mat_form_field_36_Template(rf, ctx) { if (rf & 1) {
+    var _r710 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-form-field", 72);
+    ɵɵelementStart(1, "mat-label");
+    ɵɵtext(2, "Valeur par d\u00E9fault");
     ɵɵelementEnd();
-    ɵɵtext(24, " Ajouter une cat\u00E9gorie ");
+    ɵɵelementStart(3, "input", 100);
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_26_mat_form_field_36_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r710); var ctx_r709 = ɵɵnextContext(2); return ctx_r709.currentEditBlock.defaultValue = $event; });
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r688 = ɵɵnextContext(2);
+    ɵɵstyleProp("opacity", ctx_r688.currentEditBlock.type !== "tel" ? 1 : 0);
+    ɵɵadvance(3);
+    ɵɵproperty("type", ctx_r688.currentEditBlock.type)("disabled", ctx_r688.currentEditBlock.type === "tel")("ngModelOptions", ɵɵpureFunction0(6, _c0$1))("ngModel", ctx_r688.currentEditBlock.defaultValue);
+} }
+function TemplateProfileCreateComponent_div_26_mat_form_field_47_mat_option_4_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-option", 104);
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var item_r712 = ctx.$implicit;
+    ɵɵproperty("value", item_r712);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate1("", item_r712.label, " ");
+} }
+function TemplateProfileCreateComponent_div_26_mat_form_field_47_Template(rf, ctx) { if (rf & 1) {
+    var _r714 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-form-field", 101);
+    ɵɵelementStart(1, "mat-label");
+    ɵɵtext(2, "Selectionnez la cat\u00E9gorie");
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "mat-select", 102);
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_26_mat_form_field_47_Template_mat_select_ngModelChange_3_listener() { ɵɵrestoreView(_r714); var ctx_r713 = ɵɵnextContext(2); return ctx_r713.onSelectCondition(ctx_r713.currentEditBlock.conditionLocation); })("ngModelChange", function TemplateProfileCreateComponent_div_26_mat_form_field_47_Template_mat_select_ngModelChange_3_listener($event) { ɵɵrestoreView(_r714); var ctx_r715 = ɵɵnextContext(2); return ctx_r715.currentEditBlock.conditionLocation = $event; });
+    ɵɵtemplate(4, TemplateProfileCreateComponent_div_26_mat_form_field_47_mat_option_4_Template, 2, 2, "mat-option", 103);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r689 = ɵɵnextContext(2);
+    ɵɵadvance(3);
+    ɵɵproperty("ngModel", ctx_r689.currentEditBlock.conditionLocation)("ngModelOptions", ɵɵpureFunction0(3, _c0$1));
+    ɵɵadvance(1);
+    ɵɵproperty("ngForOf", ctx_r689.conditionData);
+} }
+function TemplateProfileCreateComponent_div_26_mat_radio_button_49_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-radio-button", 105);
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var item_r716 = ctx.$implicit;
+    ɵɵproperty("value", item_r716.value);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate1(" ", item_r716.value, " ");
+} }
+var _c1$1 = function () { return ["select", "radio", "checkbox_multiple"]; };
+function TemplateProfileCreateComponent_div_26_Template(rf, ctx) { if (rf & 1) {
+    var _r718 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 59);
+    ɵɵelementStart(1, "h3");
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "div");
+    ɵɵelementStart(4, "mat-form-field", 60);
+    ɵɵelementStart(5, "mat-label");
+    ɵɵtext(6, "Type de bloc");
+    ɵɵelementEnd();
+    ɵɵelementStart(7, "mat-select", 61);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_Template_mat_select_click_7_listener() { ɵɵrestoreView(_r718); var ctx_r717 = ɵɵnextContext(); return ctx_r717.onOpenTypeDialog(ctx_r717.currentEditBlock); })("ngModelChange", function TemplateProfileCreateComponent_div_26_Template_mat_select_ngModelChange_7_listener($event) { ɵɵrestoreView(_r718); var ctx_r719 = ɵɵnextContext(); return ctx_r719.currentEditBlock.type = $event; })("ngModelChange", function TemplateProfileCreateComponent_div_26_Template_mat_select_ngModelChange_7_listener() { ɵɵrestoreView(_r718); var ctx_r720 = ɵɵnextContext(); return ctx_r720.onChangeTypeBlock(ctx_r720.currentEditBlock); });
+    ɵɵelementStart(8, "mat-option", 62);
+    ɵɵtext(9, "Text(80)");
+    ɵɵelementEnd();
+    ɵɵelementStart(10, "mat-option", 63);
+    ɵɵtext(11, "Text(80+)");
+    ɵɵelementEnd();
+    ɵɵelementStart(12, "mat-option", 64);
+    ɵɵtext(13, "Radio");
+    ɵɵelementEnd();
+    ɵɵelementStart(14, "mat-option", 65);
+    ɵɵtext(15, "Selecteur");
+    ɵɵelementEnd();
+    ɵɵelementStart(16, "mat-option", 66);
+    ɵɵtext(17, "Checkbox");
+    ɵɵelementEnd();
+    ɵɵelementStart(18, "mat-option", 67);
+    ɵɵtext(19, "Checkbox multiple");
+    ɵɵelementEnd();
+    ɵɵelementStart(20, "mat-option", 68);
+    ɵɵtext(21, "Email");
+    ɵɵelementEnd();
+    ɵɵelementStart(22, "mat-option", 69);
+    ɵɵtext(23, "Password");
+    ɵɵelementEnd();
+    ɵɵelementStart(24, "mat-option", 70);
+    ɵɵtext(25, "Date");
+    ɵɵelementEnd();
+    ɵɵelementStart(26, "mat-option", 71);
+    ɵɵtext(27, "Phone");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(28, "mat-form-field", 72);
+    ɵɵelementStart(29, "mat-label");
+    ɵɵtext(30, "Nom / Label");
+    ɵɵelementEnd();
+    ɵɵelementStart(31, "input", 73);
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_26_Template_input_ngModelChange_31_listener($event) { ɵɵrestoreView(_r718); var ctx_r721 = ɵɵnextContext(); return ctx_r721.currentEditBlock.label = $event; });
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementContainerStart(32, 74);
+    ɵɵtemplate(33, TemplateProfileCreateComponent_div_26_div_33_Template, 3, 3, "div", 75);
+    ɵɵtemplate(34, TemplateProfileCreateComponent_div_26_mat_form_field_34_Template, 9, 8, "mat-form-field", 76);
+    ɵɵtemplate(35, TemplateProfileCreateComponent_div_26_mat_form_field_35_Template, 4, 3, "mat-form-field", 77);
+    ɵɵtemplate(36, TemplateProfileCreateComponent_div_26_mat_form_field_36_Template, 4, 7, "mat-form-field", 78);
+    ɵɵelementContainerEnd();
+    ɵɵelementStart(37, "div", 79);
+    ɵɵelementStart(38, "div", 80);
+    ɵɵelementStart(39, "span");
+    ɵɵtext(40, "Obligatoire");
+    ɵɵelementEnd();
+    ɵɵelementStart(41, "mat-slide-toggle", 81);
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_26_Template_mat_slide_toggle_ngModelChange_41_listener($event) { ɵɵrestoreView(_r718); var ctx_r722 = ɵɵnextContext(); return ctx_r722.currentEditBlock.isMandatory = $event; });
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(42, "div", 82);
+    ɵɵelementStart(43, "div", 80);
+    ɵɵelementStart(44, "span");
+    ɵɵtext(45, "Visibilit\u00E9 conditionnelle");
+    ɵɵelementEnd();
+    ɵɵelementStart(46, "mat-slide-toggle", 81);
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_26_Template_mat_slide_toggle_ngModelChange_46_listener() { ɵɵrestoreView(_r718); var ctx_r723 = ɵɵnextContext(); return ctx_r723.getConditionValues(); })("ngModelChange", function TemplateProfileCreateComponent_div_26_Template_mat_slide_toggle_ngModelChange_46_listener($event) { ɵɵrestoreView(_r718); var ctx_r724 = ɵɵnextContext(); return ctx_r724.currentEditBlock.isConditional = $event; });
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵtemplate(47, TemplateProfileCreateComponent_div_26_mat_form_field_47_Template, 5, 4, "mat-form-field", 83);
+    ɵɵelementStart(48, "mat-radio-group", 84);
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_26_Template_mat_radio_group_ngModelChange_48_listener($event) { ɵɵrestoreView(_r718); var ctx_r725 = ɵɵnextContext(); return ctx_r725.currentEditBlock.conditionValue = $event; });
+    ɵɵtemplate(49, TemplateProfileCreateComponent_div_26_mat_radio_button_49_Template, 2, 2, "mat-radio-button", 85);
+    ɵɵelementEnd();
+    ɵɵelementStart(50, "div", 86);
+    ɵɵelementStart(51, "button", 87);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_Template_button_click_51_listener($event) { ɵɵrestoreView(_r718); var ctx_r726 = ɵɵnextContext(); return ctx_r726.onAddNewSubLevelFieldBlock($event); });
+    ɵɵtext(52, "Sous-cat\u00E9gorie ");
+    ɵɵelementStart(53, "mat-icon");
+    ɵɵtext(54, "device_hub ");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(55, "button", 87);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_Template_button_click_55_listener($event) { ɵɵrestoreView(_r718); var ctx_r727 = ɵɵnextContext(); return ctx_r727.onDuplicatedBlock($event); });
+    ɵɵtext(56, "Dupliquer le bloc");
+    ɵɵelementStart(57, "mat-icon");
+    ɵɵtext(58, "content_copy");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(59, "button", 88);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_Template_button_click_59_listener($event) { ɵɵrestoreView(_r718); var ctx_r728 = ɵɵnextContext(); return ctx_r728.onRemoveFieldBlock($event); });
+    ɵɵtext(60, "Supprimer le bloc ");
+    ɵɵelementStart(61, "mat-icon");
+    ɵɵtext(62, " delete ");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r440 = ɵɵnextContext();
-    ɵɵadvance(5);
-    ɵɵtextInterpolate(ctx_r440.form.get("Name").value);
-    ɵɵadvance(4);
-    ɵɵproperty("ngForOf", ctx_r440.categories);
-    ɵɵadvance(8);
-    ɵɵproperty("cdkDropListData", ctx_r440.categories);
+    var ctx_r471 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵproperty("ngForOf", ctx_r440.categories);
+    ɵɵtextInterpolate1("Param\u00E8tre du bloc ", ctx_r471.currentEditBlock.label, "");
+    ɵɵadvance(5);
+    ɵɵproperty("ngModel", ctx_r471.currentEditBlock.type)("ngModelOptions", ɵɵpureFunction0(17, _c0$1));
+    ɵɵadvance(24);
+    ɵɵproperty("ngModel", ctx_r471.currentEditBlock.label)("ngModelOptions", ɵɵpureFunction0(18, _c0$1));
+    ɵɵadvance(1);
+    ɵɵproperty("ngSwitch", ctx_r471.currentEditBlock.type);
+    ɵɵadvance(1);
+    ɵɵproperty("ngSwitchCase", "checkbox");
+    ɵɵadvance(1);
+    ɵɵproperty("ngSwitchCase", ɵɵpureFunction0(19, _c1$1).includes(ctx_r471.currentEditBlock.type) ? ctx_r471.currentEditBlock.type : !ctx_r471.currentEditBlock.type);
+    ɵɵadvance(1);
+    ɵɵproperty("ngSwitchCase", "textarea");
+    ɵɵadvance(6);
+    ɵɵproperty("ngModel", ctx_r471.currentEditBlock.isMandatory)("ngModelOptions", ɵɵpureFunction0(20, _c0$1));
+    ɵɵadvance(5);
+    ɵɵproperty("ngModel", ctx_r471.currentEditBlock.isConditional)("ngModelOptions", ɵɵpureFunction0(21, _c0$1));
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", ctx_r471.currentEditBlock == null ? null : ctx_r471.currentEditBlock.isConditional);
+    ɵɵadvance(1);
+    ɵɵproperty("ngModel", ctx_r471.currentEditBlock.conditionValue)("ngModelOptions", ɵɵpureFunction0(22, _c0$1));
+    ɵɵadvance(1);
+    ɵɵproperty("ngForOf", ctx_r471.currentEditBlock == null ? null : ctx_r471.currentEditBlock.conditionLocation == null ? null : ctx_r471.currentEditBlock.conditionLocation.possibleValues);
+} }
+function TemplateProfileCreateComponent_div_27_mat_option_12_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-option", 104);
+    ɵɵtext(1);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var item_r730 = ctx.$implicit;
+    ɵɵproperty("value", item_r730.value);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(item_r730.value);
+} }
+function TemplateProfileCreateComponent_div_27_Template(rf, ctx) { if (rf & 1) {
+    var _r732 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 59);
+    ɵɵelementStart(1, "h3");
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "div", 106);
+    ɵɵelementStart(4, "mat-form-field", 72);
+    ɵɵelementStart(5, "mat-label");
+    ɵɵtext(6, "Nom de la section");
+    ɵɵelementEnd();
+    ɵɵelementStart(7, "input", 73);
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_27_Template_input_ngModelChange_7_listener($event) { ɵɵrestoreView(_r732); var ctx_r731 = ɵɵnextContext(); return ctx_r731.currentEditBlock.name = $event; });
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(8, "mat-form-field", 101);
+    ɵɵelementStart(9, "mat-label");
+    ɵɵtext(10, "Equipe de gestion");
+    ɵɵelementEnd();
+    ɵɵelementStart(11, "mat-select", 102);
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_27_Template_mat_select_ngModelChange_11_listener($event) { ɵɵrestoreView(_r732); var ctx_r733 = ɵɵnextContext(); return ctx_r733.currentEditBlock.selector.value = $event; });
+    ɵɵtemplate(12, TemplateProfileCreateComponent_div_27_mat_option_12_Template, 2, 2, "mat-option", 103);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(13, "div", 86);
+    ɵɵelementStart(14, "button", 87);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_27_Template_button_click_14_listener($event) { ɵɵrestoreView(_r732); var ctx_r734 = ɵɵnextContext(); return ctx_r734.onAddNewSubLevelFieldBlock($event); });
+    ɵɵtext(15, "Sous-cat\u00E9gorie ");
+    ɵɵelementStart(16, "mat-icon");
+    ɵɵtext(17, "device_hub ");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(18, "button", 87);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_27_Template_button_click_18_listener($event) { ɵɵrestoreView(_r732); var ctx_r735 = ɵɵnextContext(); return ctx_r735.onDuplicatedBlock($event); });
+    ɵɵtext(19, "Dupliquer le bloc");
+    ɵɵelementStart(20, "mat-icon");
+    ɵɵtext(21, "content_copy");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(22, "button", 88);
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_27_Template_button_click_22_listener($event) { ɵɵrestoreView(_r732); var ctx_r736 = ɵɵnextContext(); return ctx_r736.onRemoveFieldBlock($event); });
+    ɵɵtext(23, "Supprimer le bloc ");
+    ɵɵelementStart(24, "mat-icon");
+    ɵɵtext(25, " delete");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r472 = ɵɵnextContext();
+    ɵɵadvance(2);
+    ɵɵtextInterpolate1("Param\u00E8tre de la section ", ctx_r472.currentEditBlock.name, "");
+    ɵɵadvance(5);
+    ɵɵproperty("ngModel", ctx_r472.currentEditBlock.name)("ngModelOptions", ɵɵpureFunction0(6, _c0$1));
+    ɵɵadvance(4);
+    ɵɵproperty("ngModel", ctx_r472.currentEditBlock.selector.value)("ngModelOptions", ɵɵpureFunction0(7, _c0$1));
+    ɵɵadvance(1);
+    ɵɵproperty("ngForOf", ctx_r472.currentEditBlock.selector.defaultValue);
 } }
 var TemplateProfileCreateComponent = /** @class */ (function () {
     function TemplateProfileCreateComponent(fb, service, route, router, dialog) {
+        var _this = this;
         this.fb = fb;
         this.service = service;
         this.route = route;
@@ -1601,7 +1771,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
         this.id = "0";
         this.parent = [];
         this.editIndex = null;
-        this.showProfileName = false;
+        this.showProfileName = true;
         this.matIconList = [
             { name: 'developer_board' },
             { name: 'contact_phone' },
@@ -1627,6 +1797,10 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
         ];
         this.picto = "";
         this.categories = [];
+        this.isBlock = false;
+        this.isSection = false;
+        this.currentChip = "";
+        this.prevValue = "";
         this.defaultCategorie = [
             {
                 name: "Utilisateur",
@@ -2712,6 +2886,17 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                 ],
             },
         ];
+        this.service._currentTemplate.subscribe(function (profil) {
+            _this.initForm();
+            if (profil) {
+                _this.form.patchValue(profil);
+                localStorage.setItem('profil', JSON.stringify(profil));
+            }
+            else {
+                var profil_1 = JSON.parse(localStorage.getItem('profil'));
+                _this.form.patchValue(profil_1);
+            }
+        });
     }
     TemplateProfileCreateComponent.prototype.canDeactivate = function () {
         if (!this.canExit) {
@@ -2722,18 +2907,20 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
         }
         return true;
     };
+    TemplateProfileCreateComponent.prototype.initForm = function () {
+        this.form = this.fb.group({
+            Name: ["", Validators.required],
+            Picto: [""],
+            Description: [""],
+            Tags: ["", Validators.required],
+            Status: [false, Validators.required],
+        });
+    };
     TemplateProfileCreateComponent.prototype.ngOnInit = function () {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
                 this.id = this.route.snapshot.paramMap.get("id");
-                this.form = this.fb.group({
-                    Name: ["", Validators.required],
-                    Picto: [""],
-                    Description: [""],
-                    Tags: ["", Validators.required],
-                    Status: [false, Validators.required],
-                });
                 this.form.valueChanges.subscribe(function (c) {
                     _this.canExit = false;
                 });
@@ -2771,6 +2958,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                         }
                     });
                 }); }, 500);
+                this.getConditionValues();
                 return [2 /*return*/];
             });
         });
@@ -2819,7 +3007,6 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                 },
             ],
         });
-        console.log(this.categories);
     };
     TemplateProfileCreateComponent.prototype.onAddNewField = function () {
         var params = [];
@@ -2894,7 +3081,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
     TemplateProfileCreateComponent.prototype.onChangeCategory = function () {
         return this.categories.every(function (cat) { return cat.name !== "" && cat.forms.every(function (field) { return field.label !== "" && field.type !== ""; }); });
     };
-    TemplateProfileCreateComponent.prototype.onSubmit = function () {
+    TemplateProfileCreateComponent.prototype.onSubmit = function (isPublish) {
         return __awaiter(this, void 0, void 0, function () {
             var result, _a;
             return __generator(this, function (_b) {
@@ -2902,17 +3089,18 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                     case 0:
                         if (!(this.form.valid && this.onChangeCategory())) return [3 /*break*/, 7];
                         if (!(this.id !== "0")) return [3 /*break*/, 2];
-                        return [4 /*yield*/, this.service.updateProfil(__assign(__assign(__assign({}, this.currentProfil), this.form.value), { categories: this.categories }))];
+                        return [4 /*yield*/, this.service.updateProfil(__assign(__assign(__assign({}, this.currentProfil), this.form.value), { Status: isPublish, categories: this.categories }))];
                     case 1:
                         _a = _b.sent();
                         return [3 /*break*/, 4];
-                    case 2: return [4 /*yield*/, this.service.createProfil(__assign(__assign({}, this.form.value), { categories: this.categories }))];
+                    case 2: return [4 /*yield*/, this.service.createProfil(__assign(__assign({}, this.form.value), { Status: isPublish, categories: this.categories }))];
                     case 3:
                         _a = _b.sent();
                         _b.label = 4;
                     case 4:
                         result = _a;
                         if (!result) return [3 /*break*/, 6];
+                        localStorage.removeItem('profil');
                         return [4 /*yield*/, this.service.getAllProfil()];
                     case 5:
                         _b.sent();
@@ -2966,7 +3154,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                 event.target.value = "";
             }
         }
-        // this.getConditionValues()
+        this.getConditionValues();
     };
     TemplateProfileCreateComponent.prototype.removeKeyword = function (keyword) {
         var params = [];
@@ -2977,7 +3165,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
         var length = params.length;
         var forms = length === 2 ? this.categories[params[0]].forms[params[length - 1]] : length === 3 ? this.categories[params[0]].forms[params[1]].forms[params[length - 1]] : this.categories[params[0]].forms[params[1]].forms[params[2]].forms[params[length - 1]];
         forms.defaultValue = forms.defaultValue.filter(function (option) { return option.value !== keyword.value; });
-        // this.getConditionValues()
+        this.getConditionValues();
     };
     TemplateProfileCreateComponent.prototype.onExpendMore = function (event) {
         var params = [];
@@ -3056,7 +3244,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
             this.categories[params[0]].forms[params[1]].forms[params[2]].defaultValue = event;
             this.categories[params[0]].forms[params[1]].forms[params[2]].forms[params[3]].defaultValue = event;
         }
-        // this.getConditionValues()
+        this.getConditionValues();
     };
     TemplateProfileCreateComponent.prototype.addKeywordFromInput = function (event, prev) {
         var params = [];
@@ -3085,7 +3273,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                 }
             }
         }
-        // this.getConditionValues()
+        this.getConditionValues();
     };
     TemplateProfileCreateComponent.prototype.drop = function (event) {
         this.canExit = false;
@@ -3143,18 +3331,19 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
             });
             forms.defaultValue[index].checked = !event.checked;
         }
-        // this.getConditionValues()
+        this.getConditionValues();
     };
     TemplateProfileCreateComponent.prototype.openDialog = function () {
-        var dialogRef = this.dialog.open(UpdateProfilComponent, {
+        var _this = this;
+        var dialogRef = this.dialog.open(DialogCreateTemplateComponent, {
             data: {
-                matIconList: this.matIconList,
-                form: this.form,
-                tags: this.tags
+                tags: this.tags,
+                profil: this.form.value
             }
         });
-        dialogRef.afterClosed().subscribe(function (confirmed) {
-            if (confirmed) {
+        dialogRef.afterClosed().subscribe(function (current) {
+            if (current) {
+                _this.service.currentTemplate.next(current);
             }
         });
     };
@@ -3168,7 +3357,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
     TemplateProfileCreateComponent.prototype.onEditCategoryName = function (i, name) {
         this.canExit = false;
         this.categories[i].name = name;
-        // this.getConditionValues()
+        this.getConditionValues();
     };
     TemplateProfileCreateComponent.prototype.onAcrelink = function (e) {
         e.preventDefault();
@@ -3221,27 +3410,249 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                 }
             }
         }
-        console.log('----------------------', conditionsList);
         this.conditionData = conditionsList;
-        console.log(conditionsList);
+    };
+    TemplateProfileCreateComponent.prototype.onActiveMenu = function (cat, i, event) {
+        if (event === void 0) { event = null; }
+        this.editIndex = i;
+        this.paramsIndex = [i];
+        this.onExpendMore({ field: cat }, i);
+        this.onShowSection(event);
+        this.currentEditBlock = cat;
+    };
+    TemplateProfileCreateComponent.prototype.catNameStart = function (str) {
+        var vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+        return vowels.includes(str.substr(0, 1).toLocaleLowerCase());
+    };
+    TemplateProfileCreateComponent.prototype.onShowSection = function (e) {
+        if (e)
+            e.stopPropagation();
+        this.isSection = true;
+        this.isBlock = false;
+    };
+    TemplateProfileCreateComponent.prototype.onEditBlock = function (block) {
+        var params = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            params[_i - 1] = arguments[_i];
+        }
+        this.isBlock = true;
+        this.currentEditBlock = block;
+        this.isSection = false;
+        this.paramsIndex = params;
+    };
+    TemplateProfileCreateComponent.prototype.onRemoveblock = function (event, block) {
+        event.preventDefault();
+    };
+    TemplateProfileCreateComponent.prototype.onRemoveFieldBlock = function (event) {
+        event.preventDefault();
+        var length = this.paramsIndex.length;
+        this.canExit = false;
+        var forms = length === 1 ? this.categories : length === 2 ? this.categories[this.paramsIndex[0]].forms : length === 3 ? this.categories[this.paramsIndex[0]].forms[this.paramsIndex[1]].forms : this.categories[this.paramsIndex[0]].forms[this.paramsIndex[1]].forms[this.paramsIndex[2]].forms;
+        forms.splice(this.paramsIndex[length - 1], 1);
+        this.currentEditBlock = null;
+        this.isBlock = false;
+        this.isSection = false;
+    };
+    TemplateProfileCreateComponent.prototype.onDuplicatedBlock = function (event) {
+        event.preventDefault();
+        var length = this.paramsIndex.length;
+        this.canExit = false;
+        var forms = length === 1 ? this.categories : length === 2 ? this.categories[this.paramsIndex[0]].forms : length === 3 ? this.categories[this.paramsIndex[0]].forms[this.paramsIndex[1]].forms : this.categories[this.paramsIndex[0]].forms[this.paramsIndex[1]].forms[this.paramsIndex[2]].forms;
+        var cloneBlock = JSON.stringify(__assign(__assign({}, this.currentEditBlock), { name: this.currentEditBlock.name + ' - copie' }));
+        forms.push(JSON.parse(cloneBlock));
+        this.currentEditBlock = forms.at(-1);
+        this.editIndex = forms.length - 1;
+    };
+    TemplateProfileCreateComponent.prototype.onKeyUpChip = function (event, field) {
+        this.canExit = false;
+        if (event.key === ";") {
+            var exist = field.defaultValue.find(function (opt) { return opt.value.toLocaleLowerCase() === event.target.value.split(";")[0].toLocaleLowerCase(); });
+            if (!exist) {
+                field.defaultValue.push({
+                    value: event.target.value.split(";")[0],
+                    checked: false
+                });
+                event.target.value = "";
+            }
+            else {
+                event.target.value = "";
+            }
+        }
+        this.getConditionValues();
+    };
+    TemplateProfileCreateComponent.prototype.onEditChip = function (chip) {
+        if (chip.value === this.currentChip) {
+            this.currentChip = "";
+            this.prevValue = "";
+        }
+        else {
+            this.currentChip = chip.value;
+            this.prevValue = chip.value;
+        }
+    };
+    TemplateProfileCreateComponent.prototype.addKeywordFromInputBlock = function (event, field, prev) {
+        var _a;
+        this.canExit = false;
+        var input = event.input;
+        var value = event.value;
+        if (value) {
+            var prevIndex = (_a = field.defaultValue) === null || _a === void 0 ? void 0 : _a.findIndex(function (opt) { return opt.value.toLocaleLowerCase() === prev.toLocaleLowerCase(); });
+            if (prevIndex !== -1) {
+                field.defaultValue[prevIndex].value = value.trim();
+                input.value = "";
+            }
+            else {
+                var exist = field.defaultValue.find(function (opt) { return opt.value.toLocaleLowerCase() === event.value.toLocaleLowerCase(); });
+                if (!exist) {
+                    field.defaultValue.push({ value: value.trim(), checked: false });
+                    input.value = "";
+                }
+                else {
+                    input.value = "";
+                }
+            }
+        }
+        this.getConditionValues();
+    };
+    TemplateProfileCreateComponent.prototype.onCheckedChipBlock = function (event, field) {
+        this.canExit = false;
+        var index = field.defaultValue.findIndex(function (chip) { return chip.value === event.value; });
+        if (index !== -1 && field.type === 'checkbox_multiple') {
+            field.defaultValue[index].checked = !event.checked;
+        }
+        else if (index !== -1) {
+            field.defaultValue.forEach(function (value) {
+                value.checked = false;
+            });
+            field.defaultValue[index].checked = !event.checked;
+        }
+        this.getConditionValues();
+    };
+    TemplateProfileCreateComponent.prototype.removeKeywordBlock = function (keyword, field) {
+        this.canExit = false;
+        field.defaultValue = field.defaultValue.filter(function (option) { return option.value !== keyword.value; });
+        this.getConditionValues();
+    };
+    TemplateProfileCreateComponent.prototype.onChangeTypeBlock = function (field) {
+        this.canExit = false;
+        if (field.type === "select" || field.type === "radio" || field.type === "checkbox_multiple") {
+            field.defaultValue = [];
+        }
+        else if (field.type === "checkbox") {
+            field.defaultValue = true;
+        }
+        else {
+            field.defaultValue = "";
+        }
+    };
+    TemplateProfileCreateComponent.prototype.onAddNewSubLevelFieldBlock = function (event) {
+        event.preventDefault();
+        this.canExit = false;
+        var length = this.paramsIndex.length;
+        var forms = length === 1 ? this.categories[this.paramsIndex[0]] : length === 2 ? this.categories[this.paramsIndex[0]].forms[this.paramsIndex[length - 1]] : length === 3 ? this.categories[this.paramsIndex[0]].forms[this.paramsIndex[1]].forms[this.paramsIndex[length - 1]] : this.categories[this.paramsIndex[0]].forms[this.paramsIndex[1]].forms[this.paramsIndex[2]].forms[this.paramsIndex[length - 1]];
+        forms.expandMore = true;
+        forms.forms = forms.forms || [];
+        forms.forms.push({
+            label: "Nouvelle sous catégorie à renommer",
+            key: "Nouvellesouscatégorieàrenommer",
+            expandOnboarding: true,
+            defaultValue: null,
+            value: true,
+            size: 80,
+            isMandatory: false,
+            otherValue: '',
+            type: "text",
+            editable: true,
+            isConditional: false,
+            conditionValue: "",
+            conditionLocation: {},
+            deleteable: true,
+            subLevel: 1,
+            expandMore: false,
+        });
+    };
+    TemplateProfileCreateComponent.prototype.onOpenTypeDialog = function (field) {
+        var _this = this;
+        var dialogRef = this.dialog.open(TypeComponent, {
+            data: { selectedType: field.type }
+        });
+        dialogRef.afterClosed().subscribe(function (type) {
+            if (type) {
+                field.type = type;
+                _this.onChangeTypeBlock(field);
+            }
+        });
+    };
+    TemplateProfileCreateComponent.prototype.onSelectCondition = function (conditionLocation) {
+        this.currentEditBlock.conditionLocation = conditionLocation;
     };
     TemplateProfileCreateComponent.ɵfac = function TemplateProfileCreateComponent_Factory(t) { return new (t || TemplateProfileCreateComponent)(ɵɵdirectiveInject(FormBuilder), ɵɵdirectiveInject(OnboardingService), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(MatDialog)); };
-    TemplateProfileCreateComponent.ɵcmp = ɵɵdefineComponent({ type: TemplateProfileCreateComponent, selectors: [["onboarding-create-profile-template"]], decls: 4, vars: 3, consts: [[3, "formGroup", "submit"], ["class", "box-title", 4, "ngIf"], ["class", "category", 4, "ngIf"], [1, "box-title"], [1, "box-title-content"], [1, "title"], [1, "profil-name-content"], ["mat-raised-button", "", "color", "primary", 1, "add-picto", 3, "click"], ["appearance", "outline", 1, "example-full-width"], ["type", "text", "matInput", "", "formControlName", "Name", "placeholder", "Ex. Manager"], ["class", "list-picto", 4, "ngIf"], ["type", "text", "matInput", "", "formControlName", "Description", "rows", "4", "placeholder", ""], ["formControlName", "Tags", "required", ""], [3, "value", 4, "ngFor", "ngForOf"], ["formControlName", "Status", 1, "form-field"], [1, "link-create-profil"], ["mat-raised-button", "", "color", "primary", 1, "link-add-profil", 3, "disabled", "click"], [1, "list-picto"], [3, "color", "click", 4, "ngFor", "ngForOf"], [3, "click"], [3, "value"], [1, "category"], [1, "side-bar"], [1, "summary"], ["type", "I"], ["class", "li-title", 4, "ngFor", "ngForOf"], ["mat-button", "", 1, "add-category", "transparent", 3, "click"], ["mat-button", "", "type", "submit", 1, "register-button"], ["cdkDropListGroup", "", 1, "fields"], ["cdkDropList", "", 1, "example-list", "mt-20", 3, "cdkDropListData", "cdkDropListDropped"], ["parentList", "cdkDropList"], ["class", "category-item", "cdkDrag", "", 3, "id", 4, "ngFor", "ngForOf"], [1, "add-button-container"], [1, "li-title"], [3, "ngxScrollTo", "click", 4, "ngIf"], ["type", "text", 3, "ngModel", "ngModelOptions", "blur", "ngModelChange", 4, "ngIf"], [4, "ngFor", "ngForOf"], [3, "ngxScrollTo", "click"], ["type", "text", 3, "ngModel", "ngModelOptions", "blur", "ngModelChange"], ["edit", ""], [4, "ngIf"], [3, "ngxScrollTo"], ["cdkDrag", "", 1, "category-item", 3, "id"], ["cdkDragHandle", "", 1, "left-action", "move-icons"], ["mat-raised-button", "", 1, "transparent-button", 3, "disabled", "click"], [1, "field-content"], [1, "field-item"], ["type", "text", "required", "", "placeholder", "Saisir le nom de la cat\u00E9gorie", 1, "example-full-width", "input-category-name", 3, "readonly", "ngModel", "ngModelOptions", "ngModelChange"], ["appearance", "outline", 1, "form-field", "field-size", 2, "float", "right", "width", "50%"], ["required", "", 3, "value", "ngModel", "ngModelOptions", "valueChange", "ngModelChange", 4, "ngIf"], ["cdkDropList", "", 3, "cdkDropListData", "cdkDropListDropped", 4, "ngIf"], ["mat-mini-fab", "", "color", "primary", 1, "expand-button", 3, "click"], ["required", "", 3, "value", "ngModel", "ngModelOptions", "valueChange", "ngModelChange"], ["cdkDropList", "", 3, "cdkDropListData", "cdkDropListDropped"], ["childList", "cdkDropList"], ["class", "field-box", 3, "id", 4, "ngFor", "ngForOf"], [1, "field-box", 3, "id"], ["cdkDrag", ""], [1, "fields-content"], [1, "button-action"], ["mat-mini-fab", "", "color", "warn", 1, "delete-field", "transparent-button", 3, "disabled", "click"], [1, "fields-container"], [3, "field", "length", "i", "j", "conditionData", "onAddKeywordFromInput", "onKeyPress", "onAddNewField", "onRemoveField", "onChangeType", "onRemoveKeyword", "onAddNewSubLevelField", "onExpendMore", "onChangeLabel", "onCheckedChip", "onDrop", "onCheckedDefault", "onGetConditionValues"], ["class", "child", 4, "ngIf"], ["class", "add-button-container add-button-sub-category", 4, "ngIf"], [1, "child"], ["class", "", "style", "margin-bottom:10px ;", 3, "id", 4, "ngFor", "ngForOf"], [1, "", 2, "margin-bottom", "10px", 3, "id"], [1, "button-action", "child-2-background"], ["class", "", 3, "id", 4, "ngFor", "ngForOf"], [1, "", 3, "id"], [1, "button-action", "child-3-background"], [1, "add-button-container", "add-button-sub-category"], ["mat-raised-button", "", "color", "primary", 2, "margin", "10px auto", 3, "disabled", "click"]], template: function TemplateProfileCreateComponent_Template(rf, ctx) { if (rf & 1) {
+    TemplateProfileCreateComponent.ɵcmp = ɵɵdefineComponent({ type: TemplateProfileCreateComponent, selectors: [["onboarding-create-profile-template"]], decls: 28, vars: 7, consts: [[3, "formGroup"], [1, "category"], [1, "side-bar"], [1, "summary"], [3, "click"], ["class", "li-title", 3, "class", "click", 4, "ngFor", "ngForOf"], ["mat-button", "", "type", "submit", 1, "register-button", 3, "click"], ["mat-button", "", "type", "submit", 1, "register-button", "live-button", 3, "click"], ["cdkDropListGroup", "", 1, "fields"], ["cdkDropList", "", 1, "fields-inner", "example-list", "mt-20", 3, "cdkDropListData", "cdkDropListDropped"], ["parentList", "cdkDropList"], ["class", "category-item section-item", "cdkDrag", "", 3, "id", "paddingBottom", "class", 4, "ngFor", "ngForOf"], [1, "add-button-container", "add-category-button"], [1, "field-property"], ["class", "property-content", 4, "ngIf"], [1, "li-title", 3, "click"], [3, "ngxScrollTo"], ["cdkDrag", "", 1, "category-item", "section-item", 3, "id"], ["cdkDragHandle", "", 1, "left-action", "move-icons"], ["mat-raised-button", "", 1, "transparent-button", 3, "click"], [1, "drag-icon"], [1, "field-content"], [1, "field-item", 3, "click"], [1, "full-width", "input-category-name"], [1, "sub-category-name"], ["class", "child-list", "cdkDropList", "", 3, "cdkDropListData", "cdkDropListDropped", 4, "ngIf"], ["mat-mini-fab", "", "color", "primary", 1, "expand-button", 3, "click"], [4, "ngIf"], ["cdkDropList", "", 1, "child-list", 3, "cdkDropListData", "cdkDropListDropped"], ["childList", "cdkDropList"], ["class", "field-box", 3, "width", "id", 4, "ngFor", "ngForOf"], [1, "field-box", 3, "id"], ["cdkDrag", ""], [1, "fields-content"], ["class", "button-action", 4, "ngIf"], [1, "fields-container"], ["class", "sub-header", 4, "ngIf"], [3, "field", "length", "i", "j", "conditionData", "onAddKeywordFromInput", "onKeyPress", "onAddNewField", "onRemoveField", "onChangeType", "onRemoveKeyword", "onAddNewSubLevelField", "onExpendMore", "onChangeLabel", "onCheckedChip", "onDrop", "onCheckedDefault", "onEditBlock", "onGetConditionValues"], ["class", "child", 4, "ngIf"], ["class", "add-button-container add-button-sub-category", 4, "ngIf"], [1, "button-action"], [1, "sub-header"], [1, "field-item"], [2, "width", "100%"], ["mat-mini-fab", "", "color", "primary", 1, "expand-button", 3, "disabled", "click"], [1, "child"], ["class", "child-content", "cdkDropList", "", 3, "cdkDropListData", "cdkDropListDropped", 4, "ngIf"], ["cdkDropList", "", 1, "child-content", 3, "cdkDropListData", "cdkDropListDropped"], ["class", "", "style", "margin-bottom: 10px", 3, "id", 4, "ngFor", "ngForOf"], [1, "", 2, "margin-bottom", "10px", 3, "id"], ["class", "button-action child-2-background", 4, "ngIf"], [1, "button-action", "child-2-background"], ["type", "text", "required", "", "placeholder", "Saisir le nom de la sous cat\u00E9gorie", 1, "full-width", "input-category-name", 3, "readonly", "ngModel", "ngModelOptions", "ngModelChange"], ["class", "", 3, "id", 4, "ngFor", "ngForOf"], [1, "", 3, "id"], ["class", "button-action child-3-background", 4, "ngIf"], [1, "button-action", "child-3-background"], [1, "add-button-container", "add-button-sub-category"], ["mat-raised-button", "", "color", "primary", 2, "margin", "10px auto", 3, "disabled", "click"], [1, "property-content"], ["appearance", "outline", 1, "form-field", "mat-select", "full-width", 2, "cursor", "pointer"], ["disabled", "true", "required", "", 1, "select-type-class", 3, "ngModel", "ngModelOptions", "click", "ngModelChange"], ["value", "text"], ["value", "textarea"], ["value", "radio"], ["value", "select"], ["value", "checkbox"], ["value", "checkbox_multiple"], ["value", "email"], ["value", "password"], ["value", "date"], ["value", "tel"], ["appearance", "outline", 1, "form-field", "full-width"], ["type", "text", "matInput", "", "required", "", "placeholder", "", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "ngSwitch"], ["class", "flex-auto", 4, "ngSwitchCase"], ["class", "flex-auto full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 3, "opacity", 4, "ngSwitchDefault"], [1, "mandatory", "top-10", "bottom-10"], [1, "toogle-button"], ["color", "#6FE8D7", 3, "ngModel", "ngModelOptions", "ngModelChange"], [1, "mandatory", "top-10"], ["class", "form-field mat-select full-width", "appearance", "outline", 4, "ngIf"], ["aria-labelledby", "example-radio-group-label", 1, "example-radio-group", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["class", "example-radio-button", "style", "margin-right: 10px", 3, "value", 4, "ngFor", "ngForOf"], [1, "bloc-action"], ["mat-button", "", 3, "click"], ["mat-button", "", 1, "delete-bloc", 3, "click"], [1, "flex-auto"], [1, "form-field", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["appearance", "outline", 1, "flex-auto", "full-width"], ["cdkDropList", "", "aria-label", "Video keywords; let index=index", "multiple", "", "selectable", "", 3, "cdkDropListData", "cdkDropListDropped"], ["childList", "cdkDropList", "chipList", ""], ["style", "min-height: 25px", "cdkDrag", "", 3, "selected", "value", "removable", "dblclick", "click", "removed", 4, "ngFor", "ngForOf"], ["placeholder", "add...", 3, "matChipInputFor", "matChipInputAddOnBlur", "matChipInputSeparatorKeyCodes", "ngModel", "ngModelOptions", "matChipInputTokenEnd", "keyup", "ngModelChange"], ["chipsInput", ""], ["cdkDrag", "", 2, "min-height", "25px", 3, "selected", "value", "removable", "dblclick", "click", "removed"], ["matChipRemove", ""], ["type", "text", "matInput", "", "placeholder", "Description...", 3, "ngModelOptions", "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", 3, "type", "disabled", "ngModelOptions", "ngModel", "ngModelChange"], ["appearance", "outline", 1, "form-field", "mat-select", "full-width"], ["required", "", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], [1, "example-radio-button", 2, "margin-right", "10px", 3, "value"], [1, ""]], template: function TemplateProfileCreateComponent_Template(rf, ctx) { if (rf & 1) {
             ɵɵelementStart(0, "main");
             ɵɵelementStart(1, "form", 0);
-            ɵɵlistener("submit", function TemplateProfileCreateComponent_Template_form_submit_1_listener() { return ctx.onSubmit(); });
-            ɵɵtemplate(2, TemplateProfileCreateComponent_div_2_Template, 29, 7, "div", 1);
-            ɵɵtemplate(3, TemplateProfileCreateComponent_div_3_Template, 25, 4, "div", 2);
+            ɵɵelementStart(2, "div", 1);
+            ɵɵelementStart(3, "div", 2);
+            ɵɵelementStart(4, "div", 3);
+            ɵɵelementStart(5, "h3");
+            ɵɵelementStart(6, "span");
+            ɵɵtext(7);
+            ɵɵelementEnd();
+            ɵɵelementStart(8, "mat-icon", 4);
+            ɵɵlistener("click", function TemplateProfileCreateComponent_Template_mat_icon_click_8_listener() { return ctx.openDialog(); });
+            ɵɵtext(9, "edit");
+            ɵɵelementEnd();
+            ɵɵelementEnd();
+            ɵɵelementStart(10, "ol");
+            ɵɵtemplate(11, TemplateProfileCreateComponent_li_11_Template, 4, 4, "li", 5);
+            ɵɵelementEnd();
+            ɵɵelementStart(12, "button", 6);
+            ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_12_listener() { return ctx.onSubmit(false); });
+            ɵɵtext(13, "Enregistrer le brouillon");
+            ɵɵelementEnd();
+            ɵɵelementStart(14, "button", 7);
+            ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_14_listener() { return ctx.onSubmit(true); });
+            ɵɵtext(15, "Publier");
+            ɵɵelementEnd();
+            ɵɵelementEnd();
+            ɵɵelementEnd();
+            ɵɵelementStart(16, "div", 8);
+            ɵɵelementStart(17, "div", 9, 10);
+            ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_Template_div_cdkDropListDropped_17_listener($event) { return ctx.drop($event); });
+            ɵɵtemplate(19, TemplateProfileCreateComponent_div_19_Template, 16, 10, "div", 11);
+            ɵɵelementEnd();
+            ɵɵelementStart(20, "div", 12);
+            ɵɵelementStart(21, "button", 4);
+            ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_21_listener($event) { return ctx.onAddNewCategory($event); });
+            ɵɵelementStart(22, "mat-icon");
+            ɵɵtext(23, "add");
+            ɵɵelementEnd();
+            ɵɵtext(24, " Ajouter une cat\u00E9gorie ");
+            ɵɵelementEnd();
+            ɵɵelementEnd();
+            ɵɵelementEnd();
+            ɵɵelementStart(25, "div", 13);
+            ɵɵtemplate(26, TemplateProfileCreateComponent_div_26_Template, 63, 23, "div", 14);
+            ɵɵtemplate(27, TemplateProfileCreateComponent_div_27_Template, 26, 8, "div", 14);
+            ɵɵelementEnd();
+            ɵɵelementEnd();
             ɵɵelementEnd();
             ɵɵelementEnd();
         } if (rf & 2) {
             ɵɵadvance(1);
             ɵɵproperty("formGroup", ctx.form);
+            ɵɵadvance(6);
+            ɵɵtextInterpolate(ctx.form.get("Name").value);
+            ɵɵadvance(4);
+            ɵɵproperty("ngForOf", ctx.categories);
+            ɵɵadvance(6);
+            ɵɵproperty("cdkDropListData", ctx.categories);
+            ɵɵadvance(2);
+            ɵɵproperty("ngForOf", ctx.categories);
+            ɵɵadvance(7);
+            ɵɵproperty("ngIf", ctx.isBlock && ctx.currentEditBlock);
             ɵɵadvance(1);
-            ɵɵproperty("ngIf", ctx.showProfileName);
-            ɵɵadvance(1);
-            ɵɵproperty("ngIf", !ctx.showProfileName);
-        } }, directives: [ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, NgIf, MatButton, MatIcon, MatFormField, MatLabel, MatInput, DefaultValueAccessor, NgControlStatus, FormControlName, NativeElementInjectorDirective, MatSelect, RequiredValidator, NgForOf, MatCheckbox, MatOption, CdkDropListGroup, CdkDropList, ScrollToDirective, NgModel, CdkDrag, CdkDragHandle, SubTemplateProfileComponent], styles: ["main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;height:100vh;width:100%;display:flex;flex-direction:column;align-items:center}main[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{background-color:transparent!important}main[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]{display:flex;height:100%;width:100%;max-width:1500px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]{width:786px;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;opacity:1;margin:auto;padding:0 25px;-ms-grid-row-align:center;align-self:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:center;font:900 32px/48px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%], main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{font:18px/24px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]{display:flex;align-items:center;position:relative}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]{margin-right:15px;min-width:50px;width:30px;padding:9px 12px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-right:10px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]{position:absolute;height:200px;width:100%;background:no-repeat padding-box #fff;border:1px solid #171f26;border-radius:8px;top:100%;z-index:1}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin:15px;border:none;font-size:40px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]:hover{color:#830b6b!important;cursor:pointer}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .box-title-content[_ngcontent-%COMP%]{width:100%;margin:25px auto}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]{font:900 32px/38px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:15px/26px Nexa Text;letter-spacing:0;color:#171f26;text-align:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .link-create-profil[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6}main[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.input-category-name[_ngcontent-%COMP%]{border:none;outline:0;text-align:left;font:bold 18px/48px Nexa Text;letter-spacing:0;color:#171f26}.example-full-width[_ngcontent-%COMP%]{width:100%}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]{width:90%;margin:auto 2% auto auto}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}  .mat-form-field-appearance-outline .mat-form-field-infix{padding:.5em 0}  .mat-select{padding:.5em 0}  .mat-form-field-appearance-fill .mat-form-field-underline::before{background-color:transparent}  .mat-form-field-wrapper{padding-bottom:0!important}[_nghost-%COMP%]     .cdk-drag-preview .input-category-name div.mat-form-field-outline-start, [_nghost-%COMP%]     .input-category-name div.mat-form-field-outline-start{border-color:0!important;border-width:0!important}[_nghost-%COMP%]     .input-category-name .mat-form-field-outline-gap{border-color:0!important;border-width:0!important}[_nghost-%COMP%]     .mat-checkbox-checked.mat-accent .mat-checkbox-background, [_nghost-%COMP%]     .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{background-color:transparent}[_nghost-%COMP%]     .input-category-name .mat-form-field-outline-end{border-color:0!important;border-width:0!important}[_nghost-%COMP%]     .input-category-name .mat-form-field-label-wrapper{display:none}[_nghost-%COMP%]     .input-category-name .mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}[_nghost-%COMP%]     .input-category-name .mat-form-field-infix{border-top:none}.category-action[_ngcontent-%COMP%]{display:flex;width:100%}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]{display:flex;align-items:baseline;width:100%;border:1px solid #dce4e9;border-radius:8px;background-color:#fff;margin-bottom:10px;margin-top:10px;min-height:60px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]{height:auto;background-color:#49a094;padding-top:7px;width:40px;-ms-grid-row-align:stretch;align-self:stretch;border-top-left-radius:8px;border-bottom-left-radius:8px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]{width:100%;-ms-grid-row-align:center;align-self:center}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;border:transparent!important}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%]{color:transparent!important}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-box[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-box[_ngcontent-%COMP%]{margin-bottom:15px}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%]{color:transparent!important}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;opacity:1}.cdk-drag-preview[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:28px!important}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%], .example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform 250ms cubic-bezier(0,0,.2,1)}.child[_ngcontent-%COMP%]{margin-left:0}.category[_ngcontent-%COMP%]{display:flex;flex-direction:row;width:100vw}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]{width:250px;background-color:#fff;margin:10px 20px;border-radius:5px;border:1px solid #dbcbcb96}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:25px;border-bottom:1px solid #dbcbcb96;margin:10px;padding-bottom:5px;font-family:\"Nexa Text\";display:flex;align-items:center}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:15px;cursor:pointer}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{font-weight:600;margin-left:-27px;font-size:15px;list-style-position:inside}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{padding:5px;margin:5px auto;cursor:pointer;text-align:left;font:12px/19px Nexa Text;letter-spacing:0;color:#535760}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{padding-left:0;margin-left:0}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]{font-size:14px;font-weight:600}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{width:140px;outline:0;border:1px dashed grey}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{display:inline-flex;align-items:center}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:10px;display:none}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]:hover   mat-icon[_ngcontent-%COMP%]{display:initial!important}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]{list-style:none;padding-left:20px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%]::marker, .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]:hover{font-weight:600;background:no-repeat padding-box #e5e8ee;border-radius:5px}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]{width:90%;max-height:85vh;overflow:auto;margin-right:.5%;overflow-x:hidden}.category[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]{background-color:#f4f7f9!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:28px!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:40px}.category[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;margin-left:0!important;min-width:auto;color:#fff}.add-button-sub-category[_ngcontent-%COMP%]{width:95.5%!important;margin-bottom:22px;margin-left:22px}.add-button-container[_ngcontent-%COMP%]{background:no-repeat padding-box #fff;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98.5%;margin-bottom:22px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;font:17px/26px Nexa Text;letter-spacing:0;color:#c2c8d5;box-shadow:none}.add-category[_ngcontent-%COMP%]{border:1px dashed #c2c8d5;border-radius:5px;margin-left:10px;margin-bottom:10px;font:bold 12px/19px Nexa Text;letter-spacing:0;color:#c2c8d5;width:92%}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]{display:flex;height:100%;margin:0;width:100%;min-width:250px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;-ms-grid-row-align:stretch;align-self:stretch;margin-top:0;margin-left:20px;border-bottom-left-radius:8px;border-top-left-radius:8px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-2-background[_ngcontent-%COMP%]{background-color:#cffaf4!important}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-3-background[_ngcontent-%COMP%]{background-color:#e5e8ee!important}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]{border:1px solid #dce4e9;border-radius:0 8px 8px 0;background-color:#fff;width:100%;padding-left:10px;padding-right:10px;padding-top:5px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.side-bar[_ngcontent-%COMP%]{display:flex;flex-direction:column}.register-button[_ngcontent-%COMP%]{background:no-repeat padding-box #171f26!important;border:2px solid #192128!important;border-radius:8px;color:#fff!important;width:85%;margin-left:22px!important;border:none!important}.content-item[_ngcontent-%COMP%]{transition-property:border-image-slice border-image-source border-width;transition-timing-function:ease-in-out;transition-duration:.5s}.active-content[_ngcontent-%COMP%]{border-image-slice:1;border-width:2px;border-image-source:linear-gradient(to left,#9d107d,#4862ab)}"] });
+            ɵɵproperty("ngIf", ctx.isSection && ctx.currentEditBlock);
+        } }, directives: [ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, MatIcon, NgForOf, MatButton, CdkDropListGroup, CdkDropList, NgIf, ScrollToDirective, CdkDrag, CdkDragHandle, SubTemplateProfileComponent, DefaultValueAccessor, RequiredValidator, NgControlStatus, NgModel, NativeElementInjectorDirective, MatFormField, MatLabel, MatSelect, MatOption, MatInput, NgSwitch, NgSwitchCase, NgSwitchDefault, MatSlideToggle, MatRadioGroup, MatCheckbox, MatChipList, MatChipInput, MatChip, MatChipRemove, MatRadioButton], styles: ["main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;height:100vh;width:100%;display:flex;flex-direction:column;align-items:center}main[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{background-color:transparent!important}main[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]{display:flex;height:100%;width:100%;max-width:1500px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]{width:786px;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;opacity:1;margin:auto;padding:0 25px;-ms-grid-row-align:center;align-self:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:center;font:900 32px/48px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%], main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{font:18px/24px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]{display:flex;align-items:center;position:relative}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]{margin-right:15px;min-width:50px;width:30px;padding:9px 12px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-right:10px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]{position:absolute;height:200px;width:100%;background:no-repeat padding-box #fff;border:1px solid #171f26;border-radius:8px;top:100%;z-index:1}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin:15px;border:none;font-size:40px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]:hover{color:#830b6b!important;cursor:pointer}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .box-title-content[_ngcontent-%COMP%]{width:100%;margin:25px auto}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]{font:900 32px/38px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:15px/26px Nexa Text;letter-spacing:0;color:#171f26;text-align:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .link-create-profil[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6}main[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.input-category-name[_ngcontent-%COMP%]{border:none;outline:0;text-align:left;font-family:Nexa;font-weight:700;font-size:20px;line-height:28px;color:#242731}.sub-category-name[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:250;font-size:14px;line-height:16px;display:flex;align-items:center;color:#575f6e}.full-width[_ngcontent-%COMP%]{width:100%}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]{width:90%;margin:auto 2% auto auto}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}  .mat-select.mat-form-field-appearance-outline .mat-form-field-infix{padding:.5em 0}  .mat-select{padding:3px 0 8px}  .mat-form-field-appearance-fill .mat-form-field-underline::before{background-color:transparent}  .mat-form-field-wrapper{padding-bottom:0!important}[_nghost-%COMP%]     .cdk-drag-preview .input-category-name div.mat-form-field-outline-start, [_nghost-%COMP%]     .input-category-name div.mat-form-field-outline-start{border-color:0!important;border-width:0!important}[_nghost-%COMP%]     .input-category-name .mat-form-field-outline-gap{border-color:0!important;border-width:0!important}[_nghost-%COMP%]     .mat-checkbox-checked.mat-accent .mat-checkbox-background, [_nghost-%COMP%]     .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{background-color:transparent}[_nghost-%COMP%]     .input-category-name .mat-form-field-outline-end{border-color:0!important;border-width:0!important}[_nghost-%COMP%]     .input-category-name .mat-form-field-label-wrapper{display:none}[_nghost-%COMP%]     .input-category-name .mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}[_nghost-%COMP%]     .input-category-name .mat-form-field-infix{border-top:none}.category-action[_ngcontent-%COMP%]{display:flex;width:100%}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]{display:flex;align-items:baseline;position:relative;border-radius:8px;background-color:#fff;margin-bottom:15px;margin-right:5px;padding:6px 15px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]{height:auto;width:40px;align-self:baseline;border-top-left-radius:8px;border-bottom-left-radius:8px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]   .drag-icon[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]   .drag-icon[_ngcontent-%COMP%]{color:#171f26;cursor:move;margin-right:15px}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]{width:100%;-ms-grid-row-align:center;align-self:center}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .child-list[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .child-list[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap;background-color:transparent}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;border:transparent!important}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%]{color:transparent!important}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-box[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-box[_ngcontent-%COMP%]{margin-bottom:15px;display:flex;align-items:center;justify-content:center}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%]{color:transparent!important}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;opacity:1}.cdk-drag-preview[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:6px!important}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%], .example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform 250ms cubic-bezier(0,0,.2,1)}.child[_ngcontent-%COMP%]{margin-left:0}.child[_ngcontent-%COMP%]   .child-content[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.category[_ngcontent-%COMP%]{display:flex;flex-direction:row;width:100vw}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]{width:250px;background-color:#fff;margin:10px 20px;border-radius:5px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:25px;margin:10px;padding-bottom:5px;font-family:\"Nexa Text\";display:flex;align-items:center;justify-content:center}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;font-family:Nexa;font-weight:700;font-size:24px;line-height:110%;text-align:center;color:#242731;text-transform:capitalize}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:15px;cursor:pointer}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{font-weight:600;font-size:15px;list-style-position:inside;padding-left:0}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{padding:5px;margin:5px auto;cursor:pointer;text-align:left;font:12px/19px Nexa Text;letter-spacing:0;color:#535760}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{padding-left:0;margin-left:0}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]{text-align:center;list-style:none;font-family:Nexa;font-weight:700;font-size:18px;line-height:24px;text-transform:capitalize;height:48px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{width:140px;outline:0;border:1px dashed grey}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{display:inline-flex;align-items:center}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:10px;display:none}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]:hover{display:flex;flex-direction:row;justify-content:center;align-items:center;position:static;background:rgba(84,60,182,.5);flex:none}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title.active[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]:hover   mat-icon[_ngcontent-%COMP%]{display:initial!important}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]{list-style:none;padding-left:20px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%]::marker, .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]:hover{font-weight:600;background:no-repeat padding-box #e5e8ee;border-radius:5px}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]{width:90%;max-height:90vh;overflow:hidden;overflow-x:hidden;margin-right:10px;margin-top:20px;margin-bottom:25px;position:relative}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]   .fields-inner[_ngcontent-%COMP%]{max-height:86vh;width:100%;overflow:auto;padding-right:5px}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]   .add-category-button[_ngcontent-%COMP%]{position:absolute;bottom:-18px;left:0;width:96%}.category[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]{background-color:#f4f7f9!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:6px!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:40px}.category[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;margin-left:0!important;min-width:auto;color:#fff}.add-button-sub-category[_ngcontent-%COMP%]{width:93.5%!important;margin-bottom:22px;margin-left:22px}.add-button-container[_ngcontent-%COMP%]{background:no-repeat padding-box #fff;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98.5%;margin-bottom:22px;position:absolute;left:0;bottom:5px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;font:17px/26px Nexa Text;letter-spacing:0;color:#000;box-shadow:none}.add-category[_ngcontent-%COMP%]{border:1px dashed #c2c8d5;border-radius:5px;margin-left:10px;margin-bottom:10px;font:bold 12px/19px Nexa Text;letter-spacing:0;color:#c2c8d5;width:92%}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]{display:flex;height:100%;margin:0;width:100%;min-width:250px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{align-self:baseline;margin-top:0;margin-left:20px;border-bottom-left-radius:8px;border-top-left-radius:8px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]   .drag-icon[_ngcontent-%COMP%]{color:#171f26;cursor:move;margin-right:15px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-3-background[_ngcontent-%COMP%]{background-color:#e5e8ee!important}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]{border-radius:0 8px 8px 0;background-color:#fff;width:100%;padding-left:10px;padding-right:10px;padding-top:5px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#039be5;height:100%;margin:auto 15px auto auto;display:flex}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.side-bar[_ngcontent-%COMP%]{display:flex;flex-direction:column}.register-button[_ngcontent-%COMP%]{background:no-repeat padding-box #171f26!important;border:2px solid #171f26!important;border-radius:7px;color:#fff!important;width:85%;margin-left:22px!important;border:none!important;padding:5px;box-shadow:0 0 0 rgba(0,0,0,.2);margin:30px 0}.live-button[_ngcontent-%COMP%]{background-color:#fff!important;color:#171f26!important;border:2px solid #171f26!important}.content-item[_ngcontent-%COMP%]{transition-property:border-image-slice border-image-source border-width;transition-timing-function:ease-in-out;transition-duration:.5s}.active-content[_ngcontent-%COMP%]{border-image-slice:1;border-width:2px;border-image-source:linear-gradient(to left,#9d107d,#4862ab)}.field-property[_ngcontent-%COMP%]{padding:11px;height:87vh;width:400px}.field-property[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-family:Nexa;font-weight:700;font-size:20px;line-height:110%;display:flex;align-items:center;color:#242731}.field-property[_ngcontent-%COMP%]   .property-content[_ngcontent-%COMP%]{display:flex;flex-direction:column;align-items:flex-start;padding:20px;background:#fff;border-radius:8px 8px 0 0;height:100%;width:100%}.field-property[_ngcontent-%COMP%]   .bloc-action[_ngcontent-%COMP%], .field-property[_ngcontent-%COMP%]   .property-content[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{text-align:center}.field-property[_ngcontent-%COMP%]   .bloc-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{width:100%;padding:6px;margin-top:10px}.field-property[_ngcontent-%COMP%]   .bloc-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:5px}.field-property[_ngcontent-%COMP%]   .bloc-action[_ngcontent-%COMP%]   .delete-bloc[_ngcontent-%COMP%]{background:#f44336;box-shadow:0 0 0 rgba(0,0,0,.2);border-radius:7px;color:#fff}[_ngcontent-%COMP%]::-webkit-scrollbar{width:5px}[_ngcontent-%COMP%]::-webkit-scrollbar-track{box-shadow:inset 0 0 2px grey;border-radius:10px}[_ngcontent-%COMP%]::-webkit-scrollbar-thumb{background:rgba(128,128,128,.301);border-radius:10px}[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover{background:#b30000}.toogle-button[_ngcontent-%COMP%]{color:#707273;display:flex;align-items:center;font-family:Nexa;font-style:normal;font-weight:700;font-size:18px;line-height:18px}.toogle-button[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{padding-right:10px}[_nghost-%COMP%]     .mandatory .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .mandatory .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .mandatory .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{background-color:#fff;margin-top:4px}[_nghost-%COMP%]     .mandatory .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-thumb{margin-top:4px;margin-left:4px}[_nghost-%COMP%]     .mandatory .mat-slide-toggle.draft:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273}[_nghost-%COMP%]     .mandatory .mat-slide-toggle.draft.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5}.top-10[_ngcontent-%COMP%]{margin-top:10px}.bottom-10[_ngcontent-%COMP%]{margin-bottom:10px}.section-item.active[_ngcontent-%COMP%], .section-item[_ngcontent-%COMP%]:hover{border:2px solid #242731;box-sizing:border-box;border-radius:8px;cursor:pointer}  .select-type-class.mat-select-disabled .mat-select-value{color:#000!important;cursor:pointer}  .fields-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{border-color:#039be5}  .fields-content .mat-radio-button.mat-accent .mat-radio-inner-circle,   .fields-content .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),   .fields-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,   .fields-content .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{background-color:#039be5}  .fields-content .mat-checkbox-checkmark-path{stroke:#039be5!important}  .fields-content .mat-checkbox-frame{border:2px solid #039be5!important}  .fields-content .mat-checkbox-inner-container{height:20px!important;width:20px!important}"] });
     return TemplateProfileCreateComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(TemplateProfileCreateComponent, [{
@@ -3304,71 +3715,130 @@ var MaterialElevationDirective = /** @class */ (function () {
             args: ['mouseleave']
         }] }); })();
 
-function TemplateProfileListComponent_div_13_div_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 13);
-    ɵɵelementStart(1, "mat-icon", 14);
-    ɵɵtext(2);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var d_r676 = ɵɵnextContext().$implicit;
-    ɵɵadvance(2);
-    ɵɵtextInterpolate(d_r676 == null ? null : d_r676.Picto);
-} }
-function TemplateProfileListComponent_div_13_div_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 13);
-    ɵɵelementStart(1, "h3");
-    ɵɵtext(2);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var d_r676 = ɵɵnextContext().$implicit;
-    ɵɵadvance(2);
-    ɵɵtextInterpolate(d_r676.Name.substr(0, 2));
-} }
 var _c0$2 = function (a0) { return [a0]; };
-function TemplateProfileListComponent_div_13_Template(rf, ctx) { if (rf & 1) {
-    var _r682 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 9);
-    ɵɵelementStart(1, "div", 10);
-    ɵɵtemplate(2, TemplateProfileListComponent_div_13_div_2_Template, 3, 1, "div", 11);
-    ɵɵtemplate(3, TemplateProfileListComponent_div_13_div_3_Template, 3, 1, "div", 11);
-    ɵɵelementStart(4, "p");
-    ɵɵtext(5);
+function TemplateProfileListComponent_div_32_Template(rf, ctx) { if (rf & 1) {
+    var _r741 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 13);
+    ɵɵelementStart(1, "div", 14);
+    ɵɵelementStart(2, "span");
+    ɵɵtext(3, "Live");
+    ɵɵelementEnd();
+    ɵɵelementStart(4, "mat-slide-toggle", 15);
+    ɵɵlistener("ngModelChange", function TemplateProfileListComponent_div_32_Template_mat_slide_toggle_ngModelChange_4_listener($event) { ɵɵrestoreView(_r741); var d_r739 = ctx.$implicit; return d_r739.Status = $event; })("ngModelChange", function TemplateProfileListComponent_div_32_Template_mat_slide_toggle_ngModelChange_4_listener() { ɵɵrestoreView(_r741); var d_r739 = ctx.$implicit; var ctx_r742 = ɵɵnextContext(); return ctx_r742.onChangeStatus(d_r739, false); });
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(6, "button", 12);
-    ɵɵlistener("click", function TemplateProfileListComponent_div_13_Template_button_click_6_listener($event) { ɵɵrestoreView(_r682); var d_r676 = ctx.$implicit; var ctx_r681 = ɵɵnextContext(); return ctx_r681.onDelete($event, d_r676._id); });
-    ɵɵelementStart(7, "mat-icon");
-    ɵɵtext(8, "close");
+    ɵɵelementStart(5, "div", 16);
+    ɵɵelementStart(6, "p", 17);
+    ɵɵtext(7);
+    ɵɵelementEnd();
+    ɵɵelementStart(8, "p", 18);
+    ɵɵtext(9);
+    ɵɵpipe(10, "date");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(11, "div", 19);
+    ɵɵelementStart(12, "button", 20);
+    ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_12_listener() { ɵɵrestoreView(_r741); var d_r739 = ctx.$implicit; var ctx_r743 = ɵɵnextContext(); return ctx_r743.onEditProfil(d_r739._id); });
+    ɵɵelementStart(13, "mat-icon");
+    ɵɵtext(14, "edit");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(15, "button", 20);
+    ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_15_listener() { ɵɵrestoreView(_r741); var d_r739 = ctx.$implicit; var ctx_r744 = ɵɵnextContext(); return ctx_r744.copyTemplate(d_r739); });
+    ɵɵelementStart(16, "mat-icon");
+    ɵɵtext(17, "content_copy");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(18, "button", 20);
+    ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_18_listener() { ɵɵrestoreView(_r741); var d_r739 = ctx.$implicit; var ctx_r745 = ɵɵnextContext(); return ctx_r745.onDelete(d_r739._id); });
+    ɵɵelementStart(19, "mat-icon");
+    ɵɵtext(20, "delete");
+    ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var d_r676 = ctx.$implicit;
-    var ctx_r675 = ɵɵnextContext();
+    var d_r739 = ctx.$implicit;
+    var ctx_r737 = ɵɵnextContext();
     ɵɵproperty("defaultElevation", 0);
+    ɵɵadvance(4);
+    ɵɵproperty("ngModel", d_r739.Status);
     ɵɵadvance(1);
-    ɵɵproperty("routerLink", ɵɵpureFunction1(6, _c0$2, ctx_r675.service.mainPath + "/template/" + d_r676._id));
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", d_r676 == null ? null : d_r676.Picto);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", !(d_r676 == null ? null : d_r676.Picto));
+    ɵɵproperty("routerLink", ɵɵpureFunction1(8, _c0$2, ctx_r737.service.mainPath + "/template/" + d_r739._id));
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", d_r676.Name, "");
+    ɵɵtextInterpolate1(" ", d_r739.Name, "");
+    ɵɵadvance(2);
+    ɵɵtextInterpolate1(" ", ɵɵpipeBind2(10, 5, d_r739.createdAt, "dd/MM/yy"), "");
+} }
+function TemplateProfileListComponent_div_34_Template(rf, ctx) { if (rf & 1) {
+    var _r748 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 13);
+    ɵɵelementStart(1, "div", 21);
+    ɵɵelementStart(2, "span");
+    ɵɵtext(3, "Brouillon");
+    ɵɵelementEnd();
+    ɵɵelementStart(4, "mat-slide-toggle", 22);
+    ɵɵlistener("ngModelChange", function TemplateProfileListComponent_div_34_Template_mat_slide_toggle_ngModelChange_4_listener($event) { ɵɵrestoreView(_r748); var d_r746 = ctx.$implicit; return d_r746.Status = $event; })("ngModelChange", function TemplateProfileListComponent_div_34_Template_mat_slide_toggle_ngModelChange_4_listener() { ɵɵrestoreView(_r748); var d_r746 = ctx.$implicit; var ctx_r749 = ɵɵnextContext(); return ctx_r749.onChangeStatus(d_r746, true); });
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(5, "div", 16);
+    ɵɵelementStart(6, "p", 17);
+    ɵɵtext(7);
+    ɵɵelementEnd();
+    ɵɵelementStart(8, "p", 18);
+    ɵɵtext(9);
+    ɵɵpipe(10, "date");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(11, "div", 19);
+    ɵɵelementStart(12, "button", 20);
+    ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_12_listener() { ɵɵrestoreView(_r748); var d_r746 = ctx.$implicit; var ctx_r750 = ɵɵnextContext(); return ctx_r750.onEditProfil(d_r746._id); });
+    ɵɵelementStart(13, "mat-icon");
+    ɵɵtext(14, "edit");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(15, "button", 20);
+    ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_15_listener() { ɵɵrestoreView(_r748); var d_r746 = ctx.$implicit; var ctx_r751 = ɵɵnextContext(); return ctx_r751.copyTemplate(d_r746); });
+    ɵɵelementStart(16, "mat-icon");
+    ɵɵtext(17, "content_copy");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(18, "button", 20);
+    ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_18_listener() { ɵɵrestoreView(_r748); var d_r746 = ctx.$implicit; var ctx_r752 = ɵɵnextContext(); return ctx_r752.onDelete(d_r746._id); });
+    ɵɵelementStart(19, "mat-icon");
+    ɵɵtext(20, "delete");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var d_r746 = ctx.$implicit;
+    var ctx_r738 = ɵɵnextContext();
+    ɵɵproperty("defaultElevation", 0);
+    ɵɵadvance(4);
+    ɵɵproperty("ngModel", d_r746.Status);
     ɵɵadvance(1);
-    ɵɵproperty("defaultElevation", ctx_r675.defaultElevation);
+    ɵɵproperty("routerLink", ɵɵpureFunction1(8, _c0$2, ctx_r738.service.mainPath + "/template/" + d_r746._id));
+    ɵɵadvance(2);
+    ɵɵtextInterpolate1(" ", d_r746.Name, "");
+    ɵɵadvance(2);
+    ɵɵtextInterpolate1(" ", ɵɵpipeBind2(10, 5, d_r746.createdAt, "dd/MM/yy"), "");
 } }
 var TemplateProfileListComponent = /** @class */ (function () {
-    function TemplateProfileListComponent(service, router) {
+    function TemplateProfileListComponent(service, router, dialog) {
         var _this = this;
         this.service = service;
         this.router = router;
-        this.displayedColumns = ['Name', 'vcontacts', 'createdAt', 'updatedAt', 'action'];
+        this.dialog = dialog;
+        this.displayedColumns = ["Name", "vcontacts", "createdAt", "updatedAt", "action"];
         this.datas = [];
+        this.publishTemplate = [];
+        this.draftTemplate = [];
         this.dataSource = new MatTableDataSource([]);
         this.defaultElevation = 2;
         this.raisedElevation = 8;
+        this.currentFilter = "all";
+        this.tags = [];
         this.service.templates.subscribe(function (templates) {
             if (templates && templates.length > 0) {
                 _this.datas = templates;
@@ -3380,11 +3850,16 @@ var TemplateProfileListComponent = /** @class */ (function () {
             var _this = this;
             return __generator(this, function (_a) {
                 setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
-                            case 0: return [4 /*yield*/, this.getAllProfils(true)];
+                    var _a;
+                    return __generator(this, function (_b) {
+                        switch (_b.label) {
+                            case 0: return [4 /*yield*/, this.getAllProfils()];
                             case 1:
-                                _a.sent();
+                                _b.sent();
+                                _a = this;
+                                return [4 /*yield*/, this.service.getAllTags()];
+                            case 2:
+                                _a.tags = _b.sent();
                                 return [2 /*return*/];
                         }
                     });
@@ -3394,50 +3869,137 @@ var TemplateProfileListComponent = /** @class */ (function () {
         });
     };
     TemplateProfileListComponent.prototype.onAddProfil = function () {
-        this.router.navigate(['onboarding/template/0']);
+        this.router.navigate(["onboarding/template/0"]);
     };
-    TemplateProfileListComponent.prototype.onDelete = function (e, id) {
+    TemplateProfileListComponent.prototype.onEditProfil = function (id) {
+        this.router.navigate(["onboarding/template/", id]);
+    };
+    TemplateProfileListComponent.prototype.onChangeStatus = function (data, Status) {
+        return __awaiter(this, void 0, void 0, function () {
+            var result;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.service.updateProfil(__assign(__assign({}, data), { Status: Status }))];
+                    case 1:
+                        result = _a.sent();
+                        this.publishTemplate = this.datas.filter(function (d) { return d.Status === true; });
+                        this.draftTemplate = this.datas.filter(function (d) { return d.Status === false; });
+                        if (!result) return [3 /*break*/, 3];
+                        return [4 /*yield*/, this.getAllProfils()];
+                    case 2:
+                        _a.sent();
+                        return [3 /*break*/, 4];
+                    case 3:
+                        console.log("errror......");
+                        _a.label = 4;
+                    case 4: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    TemplateProfileListComponent.prototype.onDelete = function (id) {
         return __awaiter(this, void 0, void 0, function () {
             var result;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        e.stopPropagation();
-                        if (!confirm('Voulez vous supprimer cette template ?')) return [3 /*break*/, 2];
+                        if (!confirm("Voulez vous supprimer cette template ?")) return [3 /*break*/, 3];
                         return [4 /*yield*/, this.service.deleteProfil(id)];
                     case 1:
                         result = _a.sent();
-                        if (result) {
-                            this.datas = this.datas.filter(function (data) { return data._id !== id; });
-                        }
-                        _a.label = 2;
-                    case 2: return [2 /*return*/];
+                        if (!result) return [3 /*break*/, 3];
+                        return [4 /*yield*/, this.getAllProfils()];
+                    case 2:
+                        _a.sent();
+                        _a.label = 3;
+                    case 3: return [2 /*return*/];
                 }
             });
         });
     };
-    TemplateProfileListComponent.prototype.getAllProfils = function (recall) {
+    TemplateProfileListComponent.prototype.getAllProfils = function () {
         return __awaiter(this, void 0, void 0, function () {
             var profile;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0:
-                        if (!(this.datas.length === 0)) return [3 /*break*/, 2];
-                        return [4 /*yield*/, this.service.getAllProfil()];
+                    case 0: return [4 /*yield*/, this.service.getAllProfil()];
                     case 1:
                         profile = _a.sent();
                         this.datas = profile;
-                        _a.label = 2;
-                    case 2:
-                        this.dataSource = new MatTableDataSource(this.datas);
-                        this.dataSource.paginator = this.paginator;
-                        this.dataSource.sort = this.sort;
+                        this.publishTemplate = this.datas.filter(function (d) { return d.Status === true; });
+                        this.draftTemplate = this.datas.filter(function (d) { return d.Status === false; });
+                        this.publishTemplateLength = this.publishTemplate.length;
+                        this.draftTemplateLength = this.draftTemplate.length;
                         return [2 /*return*/];
                 }
             });
         });
     };
-    TemplateProfileListComponent.ɵfac = function TemplateProfileListComponent_Factory(t) { return new (t || TemplateProfileListComponent)(ɵɵdirectiveInject(OnboardingService), ɵɵdirectiveInject(Router)); };
+    TemplateProfileListComponent.prototype.filterTemplate = function (value, name) {
+        this.currentFilter = name;
+        if (this.currentFilter === 'all') {
+            this.publishTemplate = this.datas.filter(function (d) { return d.Status === true; });
+            this.draftTemplate = this.datas.filter(function (d) { return d.Status === false; });
+        }
+        else if (this.currentFilter === 'publish') {
+            this.publishTemplate = this.datas.filter(function (d) { return d.Status === true; });
+            this.draftTemplate = [];
+        }
+        else if (this.currentFilter === 'draft') {
+            this.publishTemplate = [];
+            this.draftTemplate = this.datas.filter(function (d) { return d.Status === false; });
+        }
+        else if (this.currentFilter === 'date') {
+            this.publishTemplate = this.datas.filter(function (d) { return d.Status === true; });
+            this.draftTemplate = this.datas.filter(function (d) { return d.Status === false; });
+            this.publishTemplate.sort(function (a, b) { return value === 'desc' ? (new Date(b.createdAt).getTime() > new Date(a.createdAt).getTime() ? 1 : -1) : (new Date(b.createdAt).getTime() > new Date(a.createdAt).getTime() ? -1 : 1); });
+            this.draftTemplate.sort(function (a, b) { return value === 'desc' ? (new Date(b.createdAt).getTime() > new Date(a.createdAt).getTime() ? 1 : -1) : (new Date(b.createdAt).getTime() > new Date(a.createdAt).getTime() ? -1 : 1); });
+        }
+        else {
+            this.publishTemplate = this.datas.filter(function (d) { return d.Status === true; });
+            this.draftTemplate = this.datas.filter(function (d) { return d.Status === false; });
+            this.publishTemplate.sort(function (a, b) { return value === 'desc' ? (b.Name.toLowerCase() > a.Name.toLowerCase() ? 1 : -1) : (b.Name.toLowerCase() > a.Name.toLowerCase() ? -1 : 1); });
+            this.draftTemplate.sort(function (a, b) { return value === 'desc' ? (b.Name.toLowerCase() > a.Name.toLowerCase() ? 1 : -1) : (b.Name.toLowerCase() > a.Name.toLowerCase() ? -1 : 1); });
+        }
+    };
+    TemplateProfileListComponent.prototype.copyTemplate = function (data) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _id, rest, result;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _id = data._id, rest = __rest(data, ["_id"]);
+                        return [4 /*yield*/, this.service.createProfil(__assign(__assign({}, rest), { Name: data.Name + " - copie" }))];
+                    case 1:
+                        result = _a.sent();
+                        if (!result) return [3 /*break*/, 3];
+                        return [4 /*yield*/, this.getAllProfils()];
+                    case 2:
+                        _a.sent();
+                        return [3 /*break*/, 4];
+                    case 3:
+                        console.log("errror......");
+                        _a.label = 4;
+                    case 4: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    TemplateProfileListComponent.prototype.openDialog = function () {
+        var _this = this;
+        var dialogRef = this.dialog.open(DialogCreateTemplateComponent, {
+            data: {
+                tags: this.tags,
+            }
+        });
+        dialogRef.afterClosed().subscribe(function (current) {
+            if (current) {
+                _this.service.currentTemplate.next(current);
+                _this.router.navigate([_this.service.mainPath + '/template/0']);
+            }
+        });
+    };
+    TemplateProfileListComponent.ɵfac = function TemplateProfileListComponent_Factory(t) { return new (t || TemplateProfileListComponent)(ɵɵdirectiveInject(OnboardingService), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(MatDialog)); };
     TemplateProfileListComponent.ɵcmp = ɵɵdefineComponent({ type: TemplateProfileListComponent, selectors: [["onboarding-profile-list"]], viewQuery: function TemplateProfileListComponent_Query(rf, ctx) { if (rf & 1) {
             ɵɵviewQuery(MatPaginator, true);
             ɵɵviewQuery(MatSort, true);
@@ -3445,46 +4007,104 @@ var TemplateProfileListComponent = /** @class */ (function () {
             var _t;
             ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.paginator = _t.first);
             ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.sort = _t.first);
-        } }, decls: 14, vars: 4, consts: [[1, "main"], [1, "header-list"], [1, "title"], [1, "sub-title"], [1, "content-list"], [1, "list"], [1, "box-template", "new-template"], ["role", "button", "mat-raised-button", "", "color", "primary", 1, "add-profil", 3, "routerLink"], ["appMaterialElevation", "", "raisedElevation", "1", "class", "box-template", 3, "defaultElevation", 4, "ngFor", "ngForOf"], ["appMaterialElevation", "", "raisedElevation", "1", 1, "box-template", 3, "defaultElevation"], [1, "box-content", 3, "routerLink"], ["class", "picto-preview", 4, "ngIf"], ["mat-mini-fab", "", "color", "accent", "appMaterialElevation", "", "raisedElevation", "16", 3, "defaultElevation", "click"], [1, "picto-preview"], [2, "font-size", "50px", "width", "43%", "height", "40%"]], template: function TemplateProfileListComponent_Template(rf, ctx) { if (rf & 1) {
+        } }, decls: 35, vars: 15, consts: [[1, "main"], [1, "content-list"], [1, "list"], [1, "list-title"], [3, "click"], [2, "display", "flex", "align-items", "center"], [2, "display", "flex", "flex-direction", "column", "margin-left", "5px"], [2, "margin-bottom", "-3px", 3, "click"], [2, "margin-top", "-3px", 3, "click"], ["role", "button", "mat-raised-button", "", "color", "primary", 1, "add-profil", 3, "click"], [1, "live-template"], ["appMaterialElevation", "", "raisedElevation", "1", "class", "box-template", 3, "defaultElevation", 4, "ngFor", "ngForOf"], [1, "draft-template"], ["appMaterialElevation", "", "raisedElevation", "1", 1, "box-template", 3, "defaultElevation"], [1, "toogle-button"], ["color", "#6FE8D7", 3, "ngModel", "ngModelChange"], [1, "box-content", 3, "routerLink"], [1, "template-title"], [1, "template-date"], [1, "template-footer"], ["mat-mini-fab", "", 2, "background-color", "transparent", 3, "click"], [1, "toogle-button", "draft"], [1, "draft", 3, "ngModel", "ngModelChange"]], template: function TemplateProfileListComponent_Template(rf, ctx) { if (rf & 1) {
             ɵɵelementStart(0, "div", 0);
             ɵɵelementStart(1, "div", 1);
-            ɵɵelementStart(2, "h3", 2);
-            ɵɵtext(3, "Profils");
+            ɵɵelementStart(2, "div", 2);
+            ɵɵelementStart(3, "div", 3);
+            ɵɵelementStart(4, "ul");
+            ɵɵelementStart(5, "li", 4);
+            ɵɵlistener("click", function TemplateProfileListComponent_Template_li_click_5_listener() { return ctx.filterTemplate("", "all"); });
+            ɵɵtext(6);
             ɵɵelementEnd();
-            ɵɵelementStart(4, "p", 3);
-            ɵɵtext(5, "Retrouvez ici, l\u2019ensemble des profils d\u2019onboarding que vous avez cr\u00E9\u00E9s");
+            ɵɵelementStart(7, "li", 4);
+            ɵɵlistener("click", function TemplateProfileListComponent_Template_li_click_7_listener() { return ctx.filterTemplate("", "publish"); });
+            ɵɵtext(8);
+            ɵɵelementEnd();
+            ɵɵelementStart(9, "li", 4);
+            ɵɵlistener("click", function TemplateProfileListComponent_Template_li_click_9_listener() { return ctx.filterTemplate("", "draft"); });
+            ɵɵtext(10);
+            ɵɵelementEnd();
+            ɵɵelementStart(11, "li", 5);
+            ɵɵelementStart(12, "span");
+            ɵɵtext(13, "Date");
+            ɵɵelementEnd();
+            ɵɵelementStart(14, "span", 6);
+            ɵɵelementStart(15, "mat-icon", 7);
+            ɵɵlistener("click", function TemplateProfileListComponent_Template_mat_icon_click_15_listener() { return ctx.filterTemplate("asc", "date"); });
+            ɵɵtext(16, " keyboard_arrow_up");
+            ɵɵelementEnd();
+            ɵɵelementStart(17, "mat-icon", 8);
+            ɵɵlistener("click", function TemplateProfileListComponent_Template_mat_icon_click_17_listener() { return ctx.filterTemplate("desc", "date"); });
+            ɵɵtext(18, " keyboard_arrow_down");
             ɵɵelementEnd();
             ɵɵelementEnd();
-            ɵɵelementStart(6, "div", 4);
-            ɵɵelementStart(7, "div", 5);
-            ɵɵelementStart(8, "div", 6);
-            ɵɵelementStart(9, "p");
-            ɵɵtext(10, "Nouveau profil");
             ɵɵelementEnd();
-            ɵɵelementStart(11, "a", 7);
-            ɵɵtext(12, " Cr\u00E9er un nouveau profil ");
+            ɵɵelementStart(19, "li", 5);
+            ɵɵelementStart(20, "span");
+            ɵɵtext(21, "Nom");
+            ɵɵelementEnd();
+            ɵɵelementStart(22, "span", 6);
+            ɵɵelementStart(23, "mat-icon", 7);
+            ɵɵlistener("click", function TemplateProfileListComponent_Template_mat_icon_click_23_listener() { return ctx.filterTemplate("asc", "name"); });
+            ɵɵtext(24, " keyboard_arrow_up");
+            ɵɵelementEnd();
+            ɵɵelementStart(25, "mat-icon", 8);
+            ɵɵlistener("click", function TemplateProfileListComponent_Template_mat_icon_click_25_listener() { return ctx.filterTemplate("desc", "name"); });
+            ɵɵtext(26, " keyboard_arrow_down");
             ɵɵelementEnd();
             ɵɵelementEnd();
-            ɵɵtemplate(13, TemplateProfileListComponent_div_13_Template, 9, 8, "div", 8);
+            ɵɵelementEnd();
+            ɵɵelementEnd();
+            ɵɵelementStart(27, "a", 9);
+            ɵɵlistener("click", function TemplateProfileListComponent_Template_a_click_27_listener() { return ctx.openDialog(); });
+            ɵɵtext(28, " Cr\u00E9er profil ");
+            ɵɵelementStart(29, "mat-icon");
+            ɵɵtext(30, "add");
+            ɵɵelementEnd();
+            ɵɵelementEnd();
+            ɵɵelementEnd();
+            ɵɵelementStart(31, "div", 10);
+            ɵɵtemplate(32, TemplateProfileListComponent_div_32_Template, 21, 10, "div", 11);
+            ɵɵelementEnd();
+            ɵɵelementStart(33, "div", 12);
+            ɵɵtemplate(34, TemplateProfileListComponent_div_34_Template, 21, 10, "div", 11);
+            ɵɵelementEnd();
             ɵɵelementEnd();
             ɵɵelementEnd();
             ɵɵelementEnd();
         } if (rf & 2) {
-            ɵɵadvance(11);
-            ɵɵproperty("routerLink", ɵɵpureFunction1(2, _c0$2, ctx.service.mainPath + "/template/0"));
+            ɵɵadvance(5);
+            ɵɵclassMap(ctx.currentFilter === "all" ? "active" : "");
+            ɵɵadvance(1);
+            ɵɵtextInterpolate1(" Tous (", ctx.datas.length, ") ");
+            ɵɵadvance(1);
+            ɵɵclassMap(ctx.currentFilter === "publish" ? "active" : "");
+            ɵɵadvance(1);
+            ɵɵtextInterpolate1(" Publi\u00E9s (", ctx.publishTemplateLength, ") ");
+            ɵɵadvance(1);
+            ɵɵclassMap(ctx.currentFilter === "draft" ? "active" : "");
+            ɵɵadvance(1);
+            ɵɵtextInterpolate1(" Brouillons (", ctx.draftTemplateLength, ") ");
+            ɵɵadvance(1);
+            ɵɵclassMap(ctx.currentFilter === "date" ? "active" : "");
+            ɵɵadvance(8);
+            ɵɵclassMap(ctx.currentFilter === "name" ? "active" : "");
+            ɵɵadvance(13);
+            ɵɵproperty("ngForOf", ctx.publishTemplate);
             ɵɵadvance(2);
-            ɵɵproperty("ngForOf", ctx.datas);
-        } }, directives: [MatAnchor, RouterLinkWithHref, NgForOf, MaterialElevationDirective, RouterLink, NgIf, MatButton, MatIcon], styles: [".main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;opacity:1;height:100%}.main[_ngcontent-%COMP%]   .header-list[_ngcontent-%COMP%]{margin-left:50px;padding-top:10px}.main[_ngcontent-%COMP%]   .header-list[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:left;font:bold 32px/30px Nexa Text;letter-spacing:0;color:#171f26;opacity:1}.main[_ngcontent-%COMP%]   .header-list[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{text-align:left;font:20px/26px Nexa Text;letter-spacing:0;color:#171f26;opacity:1;max-width:300px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]{background-color:#fff;border-radius:8px;opacity:1;margin:57px;padding:49px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:left;font:bold 23px/30px Nexa Text;letter-spacing:0;color:#171f26;opacity:1;margin-bottom:0;margin-top:0}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   p.sub-title[_ngcontent-%COMP%]{margin-bottom:57px;font:20px/26px Nexa Text;letter-spacing:0;color:#171f26;width:300px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]{width:328px;position:relative;height:228px;margin-right:50px;margin-bottom:50px;background:no-repeat padding-box #f4f7f9;border:1px solid #dce4e9;border-radius:6px;opacity:1;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{width:81px;height:81px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{text-align:center;font:bold 16px/25px Nexa Text;letter-spacing:.1px;color:#000;opacity:1;margin-top:17px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{background:no-repeat padding-box #171f26;border-radius:7px;font-size:15px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .mat-mini-fab[_ngcontent-%COMP%]{display:none}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]{width:100%;height:90%;text-align:center;margin-top:10%}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]   .picto-preview[_ngcontent-%COMP%]{width:113px;height:113px;background:no-repeat padding-box #fff;margin:auto;border-radius:113px;display:flex;align-items:center;justify-content:center}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]   .picto-preview[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:40px;color:#dce4e9}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .new-template[_ngcontent-%COMP%]{border:1px solid #dce4e9;border-radius:6px;background-color:transparent}  .box-template:hover .mat-mini-fab .mat-button-wrapper{padding:0!important;display:inline-block;line-height:0}  .box-template:hover .mat-mini-fab{display:initial!important;position:absolute;right:6px;top:7px;background-color:red;width:25px;height:25px}  .box-template:hover .mat-mini-fab .mat-icon{background-repeat:no-repeat;display:inline-block;fill:currentColor;height:37px;width:24px}"] });
+            ɵɵproperty("ngForOf", ctx.draftTemplate);
+        } }, directives: [MatIcon, MatAnchor, NgForOf, MaterialElevationDirective, MatSlideToggle, NgControlStatus, NgModel, NativeElementInjectorDirective, RouterLink, MatButton], pipes: [DatePipe], styles: [".main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;opacity:1;height:100%}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]{border-radius:8px;opacity:1;padding:42px 25px 42px 42px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:left;font:bold 23px/30px Nexa Text;letter-spacing:0;color:#171f26;opacity:1;margin-bottom:0;margin-top:0}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   p.sub-title[_ngcontent-%COMP%]{margin-bottom:57px;font:20px/26px Nexa Text;letter-spacing:0;color:#171f26;width:300px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .template-title[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:24px;line-height:110%;text-align:center;color:#242731;overflow-wrap:break-word;padding:10px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .template-date[_ngcontent-%COMP%]{font-family:Nexa;font-weight:250;font-size:14px;line-height:120%}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]{font-family:Nexa;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:space-between;margin-bottom:30px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{display:flex;align-items:center;list-style:none;padding-left:0}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{margin-right:20px;padding-bottom:10px;cursor:pointer}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]{border-bottom:4px solid #3c4252}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   .add-profil[_ngcontent-%COMP%]{margin-right:50px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .draft-template[_ngcontent-%COMP%], .main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .live-template[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap;justify-content:flex-start}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]{width:266px;height:300px;position:relative;margin-right:50px;margin-bottom:50px;background:#fff;border-radius:8px;opacity:1;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{width:81px;height:81px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{background:no-repeat padding-box #171f26;border-radius:7px;font-size:15px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]{width:100%;text-align:center}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]   .picto-preview[_ngcontent-%COMP%]{width:113px;height:113px;background:no-repeat padding-box #fff;margin:auto;border-radius:113px;display:flex;align-items:center;justify-content:center}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]   .picto-preview[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:40px;color:#dce4e9}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .toogle-button[_ngcontent-%COMP%]{position:absolute;right:20px;top:20px;color:#6fe8d7;display:flex;align-items:center;font-family:Nexa;font-style:normal;font-weight:700;font-size:18px;line-height:18px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .toogle-button[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{padding-right:10px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .toogle-button.draft[_ngcontent-%COMP%]{color:#f3a124}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .new-template[_ngcontent-%COMP%]{border:1px solid #dce4e9;border-radius:6px;background-color:transparent}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .add-profil[_ngcontent-%COMP%]{background-color:#171f26}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .template-footer[_ngcontent-%COMP%]{background:#543cb6;border-radius:0 0 8px 8px;width:100%;position:absolute;bottom:0;text-align:center}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .template-footer[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{margin:auto 5%;box-shadow:none}[_nghost-%COMP%]     .box-template .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#6fe8d7;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .box-template .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#f3a124;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .box-template .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{background-color:#fff;margin-top:4px}[_nghost-%COMP%]     .box-template .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-thumb{margin-top:4px;margin-left:4px}[_nghost-%COMP%]     .box-template .mat-slide-toggle.draft:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#f3a124}[_nghost-%COMP%]     .box-template .mat-slide-toggle.draft.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#6fe8d7}"] });
     return TemplateProfileListComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(TemplateProfileListComponent, [{
         type: Component,
         args: [{
-                selector: 'onboarding-profile-list',
-                templateUrl: './template-profile-list.component.html',
-                styleUrls: ['./template-profile-list.component.scss']
+                selector: "onboarding-profile-list",
+                templateUrl: "./template-profile-list.component.html",
+                styleUrls: ["./template-profile-list.component.scss"],
             }]
-    }], function () { return [{ type: OnboardingService }, { type: Router }]; }, { paginator: [{
+    }], function () { return [{ type: OnboardingService }, { type: Router }, { type: MatDialog }]; }, { paginator: [{
             type: ViewChild,
             args: [MatPaginator]
         }], sort: [{
@@ -3496,7 +4116,6 @@ var CanDeactivateGuard = /** @class */ (function () {
     function CanDeactivateGuard() {
     }
     CanDeactivateGuard.prototype.canDeactivate = function (component, route, state) {
-        //let url: string = state.url;
         return component.canDeactivate ? component.canDeactivate() : true;
     };
     CanDeactivateGuard.ɵfac = function CanDeactivateGuard_Factory(t) { return new (t || CanDeactivateGuard)(); };
@@ -3507,200 +4126,192 @@ var CanDeactivateGuard = /** @class */ (function () {
         type: Injectable
     }], null, null); })();
 
-function SubOnboardingCreateComponent_div_2_div_1_mat_select_3_mat_option_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-option", 11);
+function SubOnboardingCreateComponent_div_2_mat_select_3_mat_option_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-option", 12);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var select_r820 = ctx.$implicit;
-    ɵɵproperty("value", select_r820.value);
+    var select_r851 = ctx.$implicit;
+    ɵɵproperty("value", select_r851.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", select_r820.value, "");
+    ɵɵtextInterpolate1(" ", select_r851.value, "");
 } }
 var _c0$3 = function () { return { standalone: true }; };
-function SubOnboardingCreateComponent_div_2_div_1_mat_select_3_Template(rf, ctx) { if (rf & 1) {
-    var _r822 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-select", 9);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_2_div_1_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { ɵɵrestoreView(_r822); var ctx_r821 = ɵɵnextContext(3); return ctx_r821.field.selector.value = $event; });
-    ɵɵtemplate(1, SubOnboardingCreateComponent_div_2_div_1_mat_select_3_mat_option_1_Template, 2, 2, "mat-option", 10);
+function SubOnboardingCreateComponent_div_2_mat_select_3_Template(rf, ctx) { if (rf & 1) {
+    var _r853 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-select", 10);
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_2_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { ɵɵrestoreView(_r853); var ctx_r852 = ɵɵnextContext(2); return ctx_r852.field.selector.value = $event; });
+    ɵɵtemplate(1, SubOnboardingCreateComponent_div_2_mat_select_3_mat_option_1_Template, 2, 2, "mat-option", 11);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r818 = ɵɵnextContext(3);
-    ɵɵproperty("ngModel", ctx_r818.field.selector.value)("ngModelOptions", ɵɵpureFunction0(3, _c0$3));
+    var ctx_r849 = ɵɵnextContext(2);
+    ɵɵproperty("ngModel", ctx_r849.field.selector.value)("ngModelOptions", ɵɵpureFunction0(3, _c0$3));
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r818.field.selector.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r849.field.selector.defaultValue);
 } }
-var _c1$1 = function () { return { "display": "inine-block" }; };
-function SubOnboardingCreateComponent_div_2_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r824 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 6);
-    ɵɵelementStart(1, "mat-checkbox", 7);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_2_div_1_Template_mat_checkbox_ngModelChange_1_listener($event) { ɵɵrestoreView(_r824); var ctx_r823 = ɵɵnextContext(2); return ctx_r823.field.value = $event; });
+var _c1$2 = function () { return { "display": "inine-block" }; };
+function SubOnboardingCreateComponent_div_2_Template(rf, ctx) { if (rf & 1) {
+    var _r855 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 7);
+    ɵɵelementStart(1, "mat-checkbox", 8);
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_2_Template_mat_checkbox_ngModelChange_1_listener($event) { ɵɵrestoreView(_r855); var ctx_r854 = ɵɵnextContext(); return ctx_r854.field.value = $event; });
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵtemplate(3, SubOnboardingCreateComponent_div_2_div_1_mat_select_3_Template, 2, 4, "mat-select", 8);
+    ɵɵtemplate(3, SubOnboardingCreateComponent_div_2_mat_select_3_Template, 2, 4, "mat-select", 9);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r817 = ɵɵnextContext(2);
+    var ctx_r842 = ɵɵnextContext();
     ɵɵadvance(1);
-    ɵɵclassMap(ctx_r817.checkSubForm(ctx_r817.field) ? "checkbox-title-active" : "");
-    ɵɵproperty("ngModel", ctx_r817.field.value)("required", ctx_r817.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(8, _c0$3))("ngStyle", ctx_r817.field.selector && ɵɵpureFunction0(9, _c1$1));
+    ɵɵclassMap(ctx_r842.checkSubForm(ctx_r842.field) ? "checkbox-title-active" : "");
+    ɵɵproperty("ngModel", ctx_r842.field.value)("required", ctx_r842.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(8, _c0$3))("ngStyle", ctx_r842.field.selector && ɵɵpureFunction0(9, _c1$2));
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", ctx_r817.field.label, " ");
+    ɵɵtextInterpolate1(" ", ctx_r842.field.label, " ");
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r817.field.selector);
-} }
-function SubOnboardingCreateComponent_div_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 6);
-    ɵɵtemplate(1, SubOnboardingCreateComponent_div_2_div_1_Template, 4, 10, "div", 2);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", "checkbox");
+    ɵɵproperty("ngIf", ctx_r842.field.selector);
 } }
 function SubOnboardingCreateComponent_div_3_mat_checkbox_4_Template(rf, ctx) { if (rf & 1) {
-    var _r828 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-checkbox", 14);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_3_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { ɵɵrestoreView(_r828); var opt_r826 = ctx.$implicit; return opt_r826.checked = $event; });
+    var _r859 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-checkbox", 15);
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_3_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { ɵɵrestoreView(_r859); var opt_r857 = ctx.$implicit; return opt_r857.checked = $event; });
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r826 = ctx.$implicit;
-    var ctx_r825 = ɵɵnextContext(2);
-    ɵɵproperty("checked", opt_r826.checked)("ngModel", opt_r826.checked)("required", ctx_r825.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(5, _c0$3));
+    var opt_r857 = ctx.$implicit;
+    var ctx_r856 = ɵɵnextContext(2);
+    ɵɵproperty("checked", opt_r857.checked)("ngModel", opt_r857.checked)("required", ctx_r856.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(5, _c0$3));
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", opt_r826.value, " ");
+    ɵɵtextInterpolate1(" ", opt_r857.value, " ");
 } }
 function SubOnboardingCreateComponent_div_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 6);
+    ɵɵelementStart(0, "div", 7);
     ɵɵelementStart(1, "label");
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵelementStart(3, "div", 12);
-    ɵɵtemplate(4, SubOnboardingCreateComponent_div_3_mat_checkbox_4_Template, 2, 6, "mat-checkbox", 13);
+    ɵɵelementStart(3, "div", 13);
+    ɵɵtemplate(4, SubOnboardingCreateComponent_div_3_mat_checkbox_4_Template, 2, 6, "mat-checkbox", 14);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r811 = ɵɵnextContext();
+    var ctx_r843 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r811.field.label);
+    ɵɵtextInterpolate(ctx_r843.field.label);
     ɵɵadvance(2);
-    ɵɵproperty("ngForOf", ctx_r811.field.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r843.field.defaultValue);
 } }
 function SubOnboardingCreateComponent_div_4_mat_radio_button_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-radio-button", 11);
+    ɵɵelementStart(0, "mat-radio-button", 12);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r831 = ctx.$implicit;
-    ɵɵproperty("value", opt_r831.value);
+    var opt_r862 = ctx.$implicit;
+    ɵɵproperty("value", opt_r862.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1("", opt_r831.value, " ");
+    ɵɵtextInterpolate1("", opt_r862.value, " ");
 } }
 function SubOnboardingCreateComponent_div_4_mat_form_field_5_Template(rf, ctx) { if (rf & 1) {
-    var _r833 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-form-field", 18);
+    var _r864 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-form-field", 20);
     ɵɵelementStart(1, "mat-label");
     ɵɵtext(2, "Autre option");
     ɵɵelementEnd();
-    ɵɵelementStart(3, "input", 19);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_4_mat_form_field_5_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r833); var ctx_r832 = ɵɵnextContext(2); return ctx_r832.field.otherValue = $event; });
+    ɵɵelementStart(3, "input", 21);
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_4_mat_form_field_5_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r864); var ctx_r863 = ɵɵnextContext(2); return ctx_r863.field.otherValue = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r830 = ɵɵnextContext(2);
+    var ctx_r861 = ɵɵnextContext(2);
     ɵɵadvance(3);
-    ɵɵproperty("required", ctx_r830.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(3, _c0$3))("ngModel", ctx_r830.field.otherValue);
+    ɵɵproperty("required", ctx_r861.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(3, _c0$3))("ngModel", ctx_r861.field.otherValue);
 } }
 function SubOnboardingCreateComponent_div_4_Template(rf, ctx) { if (rf & 1) {
-    var _r835 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 6);
-    ɵɵelementStart(1, "label", 15);
+    var _r866 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 16);
+    ɵɵelementStart(1, "label", 17);
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵelementStart(3, "mat-radio-group", 16);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_4_Template_mat_radio_group_ngModelChange_3_listener($event) { ɵɵrestoreView(_r835); var ctx_r834 = ɵɵnextContext(); return ctx_r834.field.value = $event; });
-    ɵɵtemplate(4, SubOnboardingCreateComponent_div_4_mat_radio_button_4_Template, 2, 2, "mat-radio-button", 10);
+    ɵɵelementStart(3, "mat-radio-group", 18);
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_4_Template_mat_radio_group_ngModelChange_3_listener($event) { ɵɵrestoreView(_r866); var ctx_r865 = ɵɵnextContext(); return ctx_r865.field.value = $event; });
+    ɵɵtemplate(4, SubOnboardingCreateComponent_div_4_mat_radio_button_4_Template, 2, 2, "mat-radio-button", 11);
     ɵɵelementEnd();
-    ɵɵtemplate(5, SubOnboardingCreateComponent_div_4_mat_form_field_5_Template, 4, 4, "mat-form-field", 17);
+    ɵɵtemplate(5, SubOnboardingCreateComponent_div_4_mat_form_field_5_Template, 4, 4, "mat-form-field", 19);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r812 = ɵɵnextContext();
+    var ctx_r844 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", ctx_r812.field.label, " ");
+    ɵɵtextInterpolate1(" ", ctx_r844.field.label, " ");
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r812.field.value)("required", ctx_r812.field.isMandatory);
+    ɵɵproperty("ngModel", ctx_r844.field.value)("required", ctx_r844.field.isMandatory);
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r812.field.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r844.field.defaultValue);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", "autre" === ctx_r812.formatOther(ctx_r812.field.value));
+    ɵɵproperty("ngIf", "autre" === ctx_r844.formatOther(ctx_r844.field.value));
 } }
 function SubOnboardingCreateComponent_div_5_mat_option_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-option", 11);
+    ɵɵelementStart(0, "mat-option", 12);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r838 = ctx.$implicit;
-    ɵɵproperty("value", opt_r838.value);
+    var opt_r869 = ctx.$implicit;
+    ɵɵproperty("value", opt_r869.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate(opt_r838.value);
+    ɵɵtextInterpolate(opt_r869.value);
 } }
 function SubOnboardingCreateComponent_div_5_mat_form_field_6_Template(rf, ctx) { if (rf & 1) {
-    var _r840 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-form-field", 18);
+    var _r871 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-form-field", 20);
     ɵɵelementStart(1, "mat-label");
     ɵɵtext(2, "Autre option");
     ɵɵelementEnd();
-    ɵɵelementStart(3, "input", 19);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_5_mat_form_field_6_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r840); var ctx_r839 = ɵɵnextContext(2); return ctx_r839.field.otherValue = $event; });
+    ɵɵelementStart(3, "input", 21);
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_5_mat_form_field_6_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r871); var ctx_r870 = ɵɵnextContext(2); return ctx_r870.field.otherValue = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r837 = ɵɵnextContext(2);
+    var ctx_r868 = ɵɵnextContext(2);
     ɵɵadvance(3);
-    ɵɵproperty("required", ctx_r837.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(3, _c0$3))("ngModel", ctx_r837.field.otherValue);
+    ɵɵproperty("required", ctx_r868.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(3, _c0$3))("ngModel", ctx_r868.field.otherValue);
 } }
 function SubOnboardingCreateComponent_div_5_Template(rf, ctx) { if (rf & 1) {
-    var _r842 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 6);
-    ɵɵelementStart(1, "mat-form-field", 20);
+    var _r873 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 16);
+    ɵɵelementStart(1, "mat-form-field", 22);
     ɵɵelementStart(2, "mat-label");
     ɵɵtext(3);
     ɵɵelementEnd();
-    ɵɵelementStart(4, "mat-select", 21);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_5_Template_mat_select_ngModelChange_4_listener($event) { ɵɵrestoreView(_r842); var ctx_r841 = ɵɵnextContext(); return ctx_r841.field.value = $event; });
-    ɵɵtemplate(5, SubOnboardingCreateComponent_div_5_mat_option_5_Template, 2, 2, "mat-option", 10);
+    ɵɵelementStart(4, "mat-select", 23);
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_5_Template_mat_select_ngModelChange_4_listener($event) { ɵɵrestoreView(_r873); var ctx_r872 = ɵɵnextContext(); return ctx_r872.field.value = $event; });
+    ɵɵtemplate(5, SubOnboardingCreateComponent_div_5_mat_option_5_Template, 2, 2, "mat-option", 11);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵtemplate(6, SubOnboardingCreateComponent_div_5_mat_form_field_6_Template, 4, 4, "mat-form-field", 17);
+    ɵɵtemplate(6, SubOnboardingCreateComponent_div_5_mat_form_field_6_Template, 4, 4, "mat-form-field", 19);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r813 = ɵɵnextContext();
+    var ctx_r845 = ɵɵnextContext();
     ɵɵadvance(3);
-    ɵɵtextInterpolate1(" ", ctx_r813.field.label, " ");
+    ɵɵtextInterpolate1(" ", ctx_r845.field.label, " ");
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r813.field.value)("ngModelOptions", ɵɵpureFunction0(6, _c0$3))("required", ctx_r813.field.isMandatory);
+    ɵɵproperty("ngModel", ctx_r845.field.value)("ngModelOptions", ɵɵpureFunction0(6, _c0$3))("required", ctx_r845.field.isMandatory);
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r813.field.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r845.field.defaultValue);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", "autre" === ctx_r813.formatOther(ctx_r813.field.value));
+    ɵɵproperty("ngIf", "autre" === ctx_r845.formatOther(ctx_r845.field.value));
 } }
 function SubOnboardingCreateComponent_mat_form_field_6_Template(rf, ctx) { if (rf & 1) {
-    var _r844 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-form-field", 22);
+    var _r875 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-form-field", 24);
     ɵɵelementStart(1, "mat-label");
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵelementStart(3, "textarea", 23);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_mat_form_field_6_Template_textarea_ngModelChange_3_listener($event) { ɵɵrestoreView(_r844); var ctx_r843 = ɵɵnextContext(); return ctx_r843.field.value = $event; });
+    ɵɵelementStart(3, "textarea", 25);
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_mat_form_field_6_Template_textarea_ngModelChange_3_listener($event) { ɵɵrestoreView(_r875); var ctx_r874 = ɵɵnextContext(); return ctx_r874.field.value = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r814 = ɵɵnextContext();
+    var ctx_r846 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r814.field.label);
+    ɵɵtextInterpolate(ctx_r846.field.label);
     ɵɵadvance(1);
-    ɵɵproperty("required", ctx_r814.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(4, _c0$3))("ngModel", ctx_r814.field.value);
+    ɵɵproperty("required", ctx_r846.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(4, _c0$3))("ngModel", ctx_r846.field.value);
 } }
 function SubOnboardingCreateComponent_div_7_mat_error_4_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-error");
@@ -3708,41 +4319,41 @@ function SubOnboardingCreateComponent_div_7_mat_error_4_Template(rf, ctx) { if (
     ɵɵelementEnd();
 } }
 function SubOnboardingCreateComponent_div_7_Template(rf, ctx) { if (rf & 1) {
-    var _r847 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 24);
-    ɵɵelementStart(1, "mat-label", 25);
+    var _r878 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 26);
+    ɵɵelementStart(1, "mat-label", 27);
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵelementStart(3, "ngx-intl-tel-input", 26);
-    ɵɵlistener("input", function SubOnboardingCreateComponent_div_7_Template_ngx_intl_tel_input_input_3_listener() { ɵɵrestoreView(_r847); var ctx_r846 = ɵɵnextContext(); return ctx_r846.checkPhone(ctx_r846.field.value); })("ngModelChange", function SubOnboardingCreateComponent_div_7_Template_ngx_intl_tel_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r847); var ctx_r848 = ɵɵnextContext(); return ctx_r848.field.value = $event; });
+    ɵɵelementStart(3, "ngx-intl-tel-input", 28);
+    ɵɵlistener("input", function SubOnboardingCreateComponent_div_7_Template_ngx_intl_tel_input_input_3_listener() { ɵɵrestoreView(_r878); var ctx_r877 = ɵɵnextContext(); return ctx_r877.checkPhone(ctx_r877.field.value); })("ngModelChange", function SubOnboardingCreateComponent_div_7_Template_ngx_intl_tel_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r878); var ctx_r879 = ɵɵnextContext(); return ctx_r879.field.value = $event; });
     ɵɵelementEnd();
-    ɵɵtemplate(4, SubOnboardingCreateComponent_div_7_mat_error_4_Template, 2, 0, "mat-error", 27);
+    ɵɵtemplate(4, SubOnboardingCreateComponent_div_7_mat_error_4_Template, 2, 0, "mat-error", 29);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r815 = ɵɵnextContext();
+    var ctx_r847 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r815.field.label);
+    ɵɵtextInterpolate(ctx_r847.field.label);
     ɵɵadvance(1);
-    ɵɵproperty("cssClass", "input-phone")("preferredCountries", ctx_r815.preferredCountries)("enableAutoCountrySelect", false)("enablePlaceholder", true)("customPlaceholder", "Phone")("selectFirstCountry", false)("selectedCountryISO", ctx_r815.flag(ctx_r815.field.value))("maxLength", 15)("inputId", ctx_r815.field.key)("phoneValidation", true)("separateDialCode", ctx_r815.separateDialCode)("numberFormat", ctx_r815.PhoneNumberFormat.National)("ngModelOptions", ɵɵpureFunction0(16, _c0$3))("ngModel", ctx_r815.field.value);
+    ɵɵproperty("cssClass", "input-phone")("preferredCountries", ctx_r847.preferredCountries)("enableAutoCountrySelect", false)("enablePlaceholder", true)("customPlaceholder", "Phone")("selectFirstCountry", false)("selectedCountryISO", ctx_r847.flag(ctx_r847.field.value))("maxLength", 15)("inputId", ctx_r847.field.key)("phoneValidation", true)("separateDialCode", ctx_r847.separateDialCode)("numberFormat", ctx_r847.PhoneNumberFormat.National)("ngModelOptions", ɵɵpureFunction0(16, _c0$3))("ngModel", ctx_r847.field.value);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r815.invalideValue);
+    ɵɵproperty("ngIf", ctx_r847.invalideValue);
 } }
 function SubOnboardingCreateComponent_mat_form_field_8_Template(rf, ctx) { if (rf & 1) {
-    var _r850 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-form-field", 28);
+    var _r881 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-form-field", 30);
     ɵɵelementStart(1, "mat-label");
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵelementStart(3, "input", 29);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_mat_form_field_8_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r850); var ctx_r849 = ɵɵnextContext(); return ctx_r849.field.value = $event; });
+    ɵɵelementStart(3, "input", 31);
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_mat_form_field_8_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r881); var ctx_r880 = ɵɵnextContext(); return ctx_r880.field.value = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r816 = ɵɵnextContext();
+    var ctx_r848 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r816.field.label);
+    ɵɵtextInterpolate(ctx_r848.field.label);
     ɵɵadvance(1);
-    ɵɵproperty("type", ctx_r816.field.type)("required", ctx_r816.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(5, _c0$3))("ngModel", ctx_r816.field.value);
+    ɵɵproperty("type", ctx_r848.field.type)("required", ctx_r848.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(5, _c0$3))("ngModel", ctx_r848.field.value);
 } }
 var _c2$1 = [[["", 8, "child"]]];
 var _c3$1 = [".child"];
@@ -3831,8 +4442,9 @@ var SubOnboardingCreateComponent = /** @class */ (function () {
         configurable: true
     });
     SubOnboardingCreateComponent.prototype.formatOther = function (other) {
-        if (other) {
-            return other.toLocaleLowerCase();
+        var _a;
+        if (other && typeof other !== 'boolean') {
+            return (((_a = other) === null || _a === void 0 ? void 0 : _a.toLocaleLowerCase()) || '');
         }
         return '';
     };
@@ -3864,22 +4476,21 @@ var SubOnboardingCreateComponent = /** @class */ (function () {
                     newp += p.split('')[i];
                 }
             }
-            console.log(newp);
             this.field.value = phone["nationalNumber"];
         }
     };
     SubOnboardingCreateComponent.ɵfac = function SubOnboardingCreateComponent_Factory(t) { return new (t || SubOnboardingCreateComponent)(); };
-    SubOnboardingCreateComponent.ɵcmp = ɵɵdefineComponent({ type: SubOnboardingCreateComponent, selectors: [["lib-sub-create-onboarding"]], inputs: { field: "field", length: "length", i: "i", j: "j" }, outputs: { onAddKeywordFromInput: "onAddKeywordFromInput", onKeyPress: "onKeyPress", onDrop: "onDrop", onAddNewField: "onAddNewField", onRemoveField: "onRemoveField", onChangeType: "onChangeType", onRemoveKeyword: "onRemoveKeyword", onAddNewSubLevelField: "onAddNewSubLevelField", onExpendMore: "onExpendMore", onChangeLabel: "onChangeLabel", onCheckedChip: "onCheckedChip", onCheckValue: "onCheckValue" }, ngContentSelectors: _c3$1, decls: 10, vars: 7, consts: [[1, "field-item"], [3, "ngSwitch"], ["class", "flex-auto w-30 field-size", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width tel-input", 4, "ngSwitchCase"], ["class", "form-field field-size", "appearance", "outline", 4, "ngSwitchDefault"], [1, "flex-auto", "w-30", "field-size"], [1, "form-field", 3, "ngModel", "required", "ngModelOptions", "ngStyle", "ngModelChange"], ["placeholder", "Company", "required", "", "style", "display: inline-block; width: 50%;", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], ["placeholder", "Company", "required", "", 2, "display", "inline-block", "width", "50%", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], [2, "margin-top", "20px"], ["class", "form-field", "style", "display: block; margin-bottom: 5px; margin-top: 10px", 3, "checked", "ngModel", "required", "ngModelOptions", "ngModelChange", 4, "ngFor", "ngForOf"], [1, "form-field", 2, "display", "block", "margin-bottom", "5px", "margin-top", "10px", 3, "checked", "ngModel", "required", "ngModelOptions", "ngModelChange"], [2, "display", "block"], ["aria-label", "Select an option", 1, "form-field", "radio-group", "field-size", 3, "ngModel", "required", "ngModelChange"], ["class", "form-field field-size other-option", "appearance", "outline", 4, "ngIf"], ["appearance", "outline", 1, "form-field", "field-size", "other-option"], ["type", "text", "matInput", "", "placeholder", "", 3, "required", "ngModelOptions", "ngModel", "ngModelChange"], ["appearance", "outline", 1, "flex-auto", "w-30", "field-size"], [3, "ngModel", "ngModelOptions", "required", "ngModelChange"], ["appearance", "outline", 1, "form-field", "full-width"], ["type", "text", "rows", "5", "matInput", "", "placeholder", "Description...", 3, "required", "ngModelOptions", "ngModel", "ngModelChange"], [1, "form-field", "full-width", "tel-input"], [1, "tel-label"], ["id", "onboarding-phone-input", "name", "phone", 1, "phone-input-profile", 3, "cssClass", "preferredCountries", "enableAutoCountrySelect", "enablePlaceholder", "customPlaceholder", "selectFirstCountry", "selectedCountryISO", "maxLength", "inputId", "phoneValidation", "separateDialCode", "numberFormat", "ngModelOptions", "ngModel", "input", "ngModelChange"], [4, "ngIf"], ["appearance", "outline", 1, "form-field", "field-size"], ["matInput", "", "placeholder", "", 3, "type", "required", "ngModelOptions", "ngModel", "ngModelChange"]], template: function SubOnboardingCreateComponent_Template(rf, ctx) { if (rf & 1) {
+    SubOnboardingCreateComponent.ɵcmp = ɵɵdefineComponent({ type: SubOnboardingCreateComponent, selectors: [["lib-sub-create-onboarding"]], inputs: { field: "field", length: "length", i: "i", j: "j" }, outputs: { onAddKeywordFromInput: "onAddKeywordFromInput", onKeyPress: "onKeyPress", onDrop: "onDrop", onAddNewField: "onAddNewField", onRemoveField: "onRemoveField", onChangeType: "onChangeType", onRemoveKeyword: "onRemoveKeyword", onAddNewSubLevelField: "onAddNewSubLevelField", onExpendMore: "onExpendMore", onChangeLabel: "onChangeLabel", onCheckedChip: "onCheckedChip", onCheckValue: "onCheckValue" }, ngContentSelectors: _c3$1, decls: 10, vars: 7, consts: [[1, "field-item"], [3, "ngSwitch"], ["class", "flex-auto w-30", 4, "ngSwitchCase"], ["class", "flex-auto w-30 field-size", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width tel-input", 4, "ngSwitchCase"], ["class", "form-field field-size", "appearance", "outline", 4, "ngSwitchDefault"], [1, "flex-auto", "w-30"], [1, "form-field", 3, "ngModel", "required", "ngModelOptions", "ngStyle", "ngModelChange"], ["placeholder", "Company", "required", "", "style", "display: inline-block; width: 50%;", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], ["placeholder", "Company", "required", "", 2, "display", "inline-block", "width", "50%", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], [2, "margin-top", "20px"], ["class", "form-field", "style", "display: block; margin-bottom: 5px; margin-top: 10px", 3, "checked", "ngModel", "required", "ngModelOptions", "ngModelChange", 4, "ngFor", "ngForOf"], [1, "form-field", 2, "display", "block", "margin-bottom", "5px", "margin-top", "10px", 3, "checked", "ngModel", "required", "ngModelOptions", "ngModelChange"], [1, "flex-auto", "w-30", "field-size"], [2, "display", "block"], ["aria-label", "Select an option", 1, "form-field", "radio-group", "field-size", 3, "ngModel", "required", "ngModelChange"], ["class", "form-field field-size other-option", "appearance", "outline", 4, "ngIf"], ["appearance", "outline", 1, "form-field", "field-size", "other-option"], ["type", "text", "matInput", "", "placeholder", "", 3, "required", "ngModelOptions", "ngModel", "ngModelChange"], ["appearance", "outline", 1, "flex-auto", "w-30", "field-size"], [3, "ngModel", "ngModelOptions", "required", "ngModelChange"], ["appearance", "outline", 1, "form-field", "full-width"], ["type", "text", "rows", "5", "matInput", "", "placeholder", "Description...", 3, "required", "ngModelOptions", "ngModel", "ngModelChange"], [1, "form-field", "full-width", "tel-input"], [1, "tel-label"], ["id", "onboarding-phone-input", "name", "phone", 1, "phone-input-profile", 3, "cssClass", "preferredCountries", "enableAutoCountrySelect", "enablePlaceholder", "customPlaceholder", "selectFirstCountry", "selectedCountryISO", "maxLength", "inputId", "phoneValidation", "separateDialCode", "numberFormat", "ngModelOptions", "ngModel", "input", "ngModelChange"], [4, "ngIf"], ["appearance", "outline", 1, "form-field", "field-size"], ["matInput", "", "placeholder", "", 3, "type", "required", "ngModelOptions", "ngModel", "ngModelChange"]], template: function SubOnboardingCreateComponent_Template(rf, ctx) { if (rf & 1) {
             ɵɵprojectionDef(_c2$1);
             ɵɵelementStart(0, "div", 0);
             ɵɵelementContainerStart(1, 1);
-            ɵɵtemplate(2, SubOnboardingCreateComponent_div_2_Template, 2, 1, "div", 2);
+            ɵɵtemplate(2, SubOnboardingCreateComponent_div_2_Template, 4, 10, "div", 2);
             ɵɵtemplate(3, SubOnboardingCreateComponent_div_3_Template, 5, 2, "div", 2);
-            ɵɵtemplate(4, SubOnboardingCreateComponent_div_4_Template, 6, 5, "div", 2);
-            ɵɵtemplate(5, SubOnboardingCreateComponent_div_5_Template, 7, 7, "div", 2);
-            ɵɵtemplate(6, SubOnboardingCreateComponent_mat_form_field_6_Template, 4, 5, "mat-form-field", 3);
-            ɵɵtemplate(7, SubOnboardingCreateComponent_div_7_Template, 5, 17, "div", 4);
-            ɵɵtemplate(8, SubOnboardingCreateComponent_mat_form_field_8_Template, 4, 6, "mat-form-field", 5);
+            ɵɵtemplate(4, SubOnboardingCreateComponent_div_4_Template, 6, 5, "div", 3);
+            ɵɵtemplate(5, SubOnboardingCreateComponent_div_5_Template, 7, 7, "div", 3);
+            ɵɵtemplate(6, SubOnboardingCreateComponent_mat_form_field_6_Template, 4, 5, "mat-form-field", 4);
+            ɵɵtemplate(7, SubOnboardingCreateComponent_div_7_Template, 5, 17, "div", 5);
+            ɵɵtemplate(8, SubOnboardingCreateComponent_mat_form_field_8_Template, 4, 6, "mat-form-field", 6);
             ɵɵelementContainerEnd();
             ɵɵelementEnd();
             ɵɵprojection(9);
@@ -3898,7 +4509,7 @@ var SubOnboardingCreateComponent = /** @class */ (function () {
             ɵɵproperty("ngSwitchCase", "textarea");
             ɵɵadvance(1);
             ɵɵproperty("ngSwitchCase", "tel");
-        } }, directives: [NgSwitch, NgSwitchCase, NgSwitchDefault, MatCheckbox, MatCheckboxRequiredValidator, NgControlStatus, NgModel, NativeElementInjectorDirective, RequiredValidator, NgStyle, NgIf, MatSelect, NgForOf, MatOption, MatRadioGroup, MatRadioButton, MatFormField, MatLabel, MatInput, DefaultValueAccessor, NgxIntlTelInputComponent, MatError], styles: [".container[_ngcontent-%COMP%]{max-width:98%;margin:50px auto auto;padding-bottom:50px}.container[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.input-category-name[_ngcontent-%COMP%]{font-size:15px;font-weight:500}.full-width[_ngcontent-%COMP%]{width:100%}.field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;min-width:250px;position:relative}.field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]   mat-checkbox[_ngcontent-%COMP%]{margin:20px}hr[_ngcontent-%COMP%]{margin:50px 0}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}.category-action[_ngcontent-%COMP%]{display:flex;width:100%}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%]{display:flex;align-items:baseline;width:100%;border:1px solid #dce4e9;border-radius:8px}  .readonly.mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}.field-content[_ngcontent-%COMP%]{width:100%}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12)}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%], .example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform 250ms cubic-bezier(0,0,.2,1)}.add-button-container[_ngcontent-%COMP%]{background:no-repeat padding-box #fff;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98%;margin-left:0;margin-bottom:22px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;font:17px/26px Nexa Text;letter-spacing:0;color:#c2c8d5;box-shadow:none}.expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:48px;margin-top:-20px;margin-right:15px}.transparent-button[_ngcontent-%COMP%]{background-color:transparent!important;box-shadow:none!important;width:40px!important;padding:0!important;margin:0!important;min-width:auto!important}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.checkbox-title-active[_ngcontent-%COMP%]{font-weight:700}.other-option[_ngcontent-%COMP%]{margin-left:10px}.flex-auto[_ngcontent-%COMP%]{width:100%}.flex-auto[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]{width:80%}  .country-dropdown{min-width:unset!important}  .tel-input{position:relative}  .tel-input .tel-label{font-size:10px;color:rgba(0,0,0,.6);position:absolute;z-index:1;background-color:#fff;padding:0 2px;left:8px;top:-7px}  .phone-input-profile{padding-bottom:.3em;padding-top:0;display:block!important;max-width:100%;font:14px/20px \"Nexa Text\"!important;width:95%}  .phone-input-profile .iti{width:100%!important}  .phone-input-profile input{outline:0;padding:19px;border-radius:5px;border-width:1px;width:85%;border:1px solid rgba(0,0,0,.12)}"] });
+        } }, directives: [NgSwitch, NgSwitchCase, NgSwitchDefault, MatCheckbox, MatCheckboxRequiredValidator, NgControlStatus, NgModel, NativeElementInjectorDirective, RequiredValidator, NgStyle, NgIf, MatSelect, NgForOf, MatOption, MatRadioGroup, MatRadioButton, MatFormField, MatLabel, MatInput, DefaultValueAccessor, NgxIntlTelInputComponent, MatError], styles: [".container[_ngcontent-%COMP%]{max-width:98%;margin:50px auto auto;padding-bottom:50px}.container[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.input-category-name[_ngcontent-%COMP%]{font-size:15px;font-weight:500}.full-width[_ngcontent-%COMP%]{width:100%}.field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;min-width:250px;position:relative}.field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]   mat-checkbox[_ngcontent-%COMP%]{margin:20px}hr[_ngcontent-%COMP%]{margin:50px 0}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}.category-action[_ngcontent-%COMP%]{display:flex;width:100%}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%]{display:flex;align-items:baseline;width:100%;border:1px solid #dce4e9;border-radius:8px}  .readonly.mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}.field-content[_ngcontent-%COMP%]{width:100%}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12)}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%], .example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform 250ms cubic-bezier(0,0,.2,1)}.add-button-container[_ngcontent-%COMP%]{background:no-repeat padding-box #fff;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98%;margin-left:0;margin-bottom:22px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;font:17px/26px Nexa Text;letter-spacing:0;color:#c2c8d5;box-shadow:none}.expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:48px;margin-top:-20px;margin-right:15px}.transparent-button[_ngcontent-%COMP%]{background-color:transparent!important;box-shadow:none!important;width:40px!important;padding:0!important;margin:0!important;min-width:auto!important}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.checkbox-title-active[_ngcontent-%COMP%]{font-weight:700}.other-option[_ngcontent-%COMP%]{margin-left:10px}.flex-auto[_ngcontent-%COMP%]{width:100%}  .country-dropdown{min-width:unset!important}  .tel-input{position:relative}  .tel-input .tel-label{font-size:10px;color:rgba(0,0,0,.6);position:absolute;z-index:1;background-color:#fff;padding:0 2px;left:8px;top:-7px}  .phone-input-profile{padding-bottom:.3em;padding-top:0;display:block!important;max-width:100%;font:14px/20px \"Nexa Text\"!important;width:100%}  .phone-input-profile .iti{width:100%!important}  .phone-input-profile input{outline:0;padding:19px;border-radius:5px;border-width:1px;width:100%;border:1px solid rgba(0,0,0,.12)}"] });
     return SubOnboardingCreateComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(SubOnboardingCreateComponent, [{
@@ -3942,495 +4553,730 @@ var SubOnboardingCreateComponent = /** @class */ (function () {
             type: Output
         }] }); })();
 
-function OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_ng_container_7_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelement(2, "br");
-    ɵɵelement(3, "br");
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var field_r733 = ɵɵnextContext().$implicit;
-    ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", field_r733.value, " ");
-} }
-function OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_ng_container_8_ng_container_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "strong");
+var LoadingComponent = /** @class */ (function () {
+    function LoadingComponent() {
+    }
+    LoadingComponent.prototype.ngOnInit = function () {
+    };
+    LoadingComponent.ɵfac = function LoadingComponent_Factory(t) { return new (t || LoadingComponent)(); };
+    LoadingComponent.ɵcmp = ɵɵdefineComponent({ type: LoadingComponent, selectors: [["lib-loading"]], decls: 13, vars: 0, consts: [[1, "lds-spinner"]], template: function LoadingComponent_Template(rf, ctx) { if (rf & 1) {
+            ɵɵelementStart(0, "div", 0);
+            ɵɵelement(1, "div");
+            ɵɵelement(2, "div");
+            ɵɵelement(3, "div");
+            ɵɵelement(4, "div");
+            ɵɵelement(5, "div");
+            ɵɵelement(6, "div");
+            ɵɵelement(7, "div");
+            ɵɵelement(8, "div");
+            ɵɵelement(9, "div");
+            ɵɵelement(10, "div");
+            ɵɵelement(11, "div");
+            ɵɵelement(12, "div");
+            ɵɵelementEnd();
+        } }, styles: [".lds-spinner[_ngcontent-%COMP%]{color:official;display:inline-block;position:relative;width:20px;height:20px}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{transform-origin:34px 15px;-webkit-animation:1.2s linear infinite lds-spinner;animation:1.2s linear infinite lds-spinner}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:after{content:\" \";display:block;position:absolute;top:4px;left:33px;width:2px;height:6px;border-radius:20%;background:#f3a124}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(1){transform:rotate(0);-webkit-animation-delay:-1.1s;animation-delay:-1.1s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(2){transform:rotate(30deg);-webkit-animation-delay:-1s;animation-delay:-1s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(3){transform:rotate(60deg);-webkit-animation-delay:-.9s;animation-delay:-.9s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(4){transform:rotate(90deg);-webkit-animation-delay:-.8s;animation-delay:-.8s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(5){transform:rotate(120deg);-webkit-animation-delay:-.7s;animation-delay:-.7s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(6){transform:rotate(150deg);-webkit-animation-delay:-.6s;animation-delay:-.6s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(7){transform:rotate(180deg);-webkit-animation-delay:-.5s;animation-delay:-.5s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(8){transform:rotate(210deg);-webkit-animation-delay:-.4s;animation-delay:-.4s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(9){transform:rotate(240deg);-webkit-animation-delay:-.3s;animation-delay:-.3s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(10){transform:rotate(270deg);-webkit-animation-delay:-.2s;animation-delay:-.2s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(11){transform:rotate(300deg);-webkit-animation-delay:-.1s;animation-delay:-.1s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(12){transform:rotate(330deg);-webkit-animation-delay:0s;animation-delay:0s}@-webkit-keyframes lds-spinner{0%{opacity:1}100%{opacity:0}}@keyframes lds-spinner{0%{opacity:1}100%{opacity:0}}"] });
+    return LoadingComponent;
+}());
+/*@__PURE__*/ (function () { ɵsetClassMetadata(LoadingComponent, [{
+        type: Component,
+        args: [{
+                selector: 'lib-loading',
+                templateUrl: './loading.component.html',
+                styleUrls: ['./loading.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+function OnboardingDetailComponent_div_0_li_22_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "li", 21);
+    ɵɵelementStart(1, "a");
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵelement(3, "br");
-    ɵɵtext(4);
-    ɵɵelement(5, "br");
-    ɵɵelement(6, "br");
-    ɵɵelementContainerEnd();
+    ɵɵelementEnd();
 } if (rf & 2) {
-    var subf_r739 = ɵɵnextContext().$implicit;
+    var category_r894 = ctx.$implicit;
+    var i_r895 = ctx.index;
+    ɵɵclassMap(i_r895 === 0 ? "active" : "");
+    ɵɵproperty("ngxScrollTo", "#" + category_r894.name)("id", category_r894.name + "x");
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", subf_r739.key, " ");
-    ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", subf_r739.value, " ");
+    ɵɵtextInterpolate(category_r894.name);
 } }
-function OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_ng_container_8_ng_container_1_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "strong");
+function OnboardingDetailComponent_div_0_section_24_div_9_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 31);
+    ɵɵelementStart(1, "span");
+    ɵɵtext(2, "En cours de traitement");
+    ɵɵelementEnd();
+    ɵɵelement(3, "lib-loading");
+    ɵɵelementEnd();
+} }
+function OnboardingDetailComponent_div_0_section_24_div_10_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 32);
+    ɵɵelementStart(1, "span", 33);
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵelement(3, "br");
+    ɵɵelement(3, "mat-progress-bar", 34);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var category_r896 = ɵɵnextContext().$implicit;
+    var ctx_r899 = ɵɵnextContext(2);
+    ɵɵadvance(2);
+    ɵɵtextInterpolate1("", ctx_r899.progress(category_r896 == null ? null : category_r896.fieldCompleted, category_r896 == null ? null : category_r896.fieldLength), "% Termin\u00E9");
+    ɵɵadvance(1);
+    ɵɵproperty("value", ctx_r899.progress(category_r896 == null ? null : category_r896.fieldCompleted, category_r896 == null ? null : category_r896.fieldLength));
+} }
+function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵelementStart(1, "p", 37);
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "h4");
     ɵɵtext(4);
-    ɵɵelement(5, "br");
-    ɵɵelement(6, "br");
+    ɵɵelementEnd();
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var subfsub_r744 = ctx.$implicit;
+    var forms_r902 = ɵɵnextContext().$implicit;
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", subfsub_r744.key, " ");
+    ɵɵtextInterpolate(forms_r902.label);
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", subfsub_r744.value, " ");
+    ɵɵtextInterpolate(forms_r902.value);
 } }
-function OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_ng_container_8_ng_container_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_ng_container_8_ng_container_1_ng_container_2_ng_container_1_Template, 7, 2, "ng-container", 21);
-    ɵɵpipe(2, "keyvalue");
+    ɵɵelementStart(1, "p", 37);
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "h4");
+    ɵɵtext(4);
+    ɵɵelementEnd();
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var subf_r739 = ɵɵnextContext().$implicit;
-    ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ɵɵpipeBind1(2, 1, subf_r739.value));
+    var sub_r907 = ɵɵnextContext().$implicit;
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(sub_r907.label);
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(sub_r907.value);
 } }
-function OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_ng_container_8_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_ng_container_8_ng_container_1_ng_container_1_Template, 7, 2, "ng-container", 1);
-    ɵɵtemplate(2, OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_ng_container_8_ng_container_1_ng_container_2_Template, 3, 3, "ng-container", 1);
+    ɵɵelementStart(1, "p", 37);
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "h4");
+    ɵɵtext(4);
+    ɵɵelementEnd();
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var subf_r739 = ctx.$implicit;
-    var ctx_r738 = ɵɵnextContext(6);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", !ctx_r738.isObject(subf_r739.value));
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r738.isObject(subf_r739.value));
+    var child_r912 = ɵɵnextContext().$implicit;
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(child_r912.label);
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(child_r912.value);
 } }
-function OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_ng_container_8_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 35);
+    ɵɵelementStart(1, "p", 37);
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "h4");
+    ɵɵtext(4);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var c2_r917 = ctx.$implicit;
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(c2_r917.label);
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(c2_r917.value);
+} }
+function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_ng_container_8_ng_container_1_Template, 3, 2, "ng-container", 21);
-    ɵɵpipe(2, "keyvalue");
+    ɵɵelementStart(1, "h5");
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵtemplate(3, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_Template, 5, 2, "div", 30);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var field_r733 = ɵɵnextContext().$implicit;
+    var child_r912 = ɵɵnextContext().$implicit;
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(child_r912.label);
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ɵɵpipeBind1(2, 1, field_r733.value));
+    ɵɵproperty("ngForOf", child_r912.forms);
 } }
-function OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 17);
-    ɵɵelementStart(1, "div", 18);
-    ɵɵelementStart(2, "div", 19);
-    ɵɵelementStart(3, "div", 20);
-    ɵɵelementStart(4, "strong");
+function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 35);
+    ɵɵtemplate(1, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_Template, 5, 2, "ng-container", 36);
+    ɵɵtemplate(2, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_Template, 4, 2, "ng-container", 36);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var child_r912 = ctx.$implicit;
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !child_r912.forms);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", child_r912.forms);
+} }
+function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵelementStart(1, "h4");
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵtemplate(3, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_Template, 3, 2, "div", 30);
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var sub_r907 = ɵɵnextContext().$implicit;
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(sub_r907.label);
+    ɵɵadvance(1);
+    ɵɵproperty("ngForOf", sub_r907.forms);
+} }
+function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 35);
+    ɵɵtemplate(1, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_1_Template, 5, 2, "ng-container", 36);
+    ɵɵtemplate(2, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_Template, 4, 2, "ng-container", 36);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var sub_r907 = ctx.$implicit;
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !sub_r907.forms);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", sub_r907.forms);
+} }
+function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementContainerStart(0);
+    ɵɵelementStart(1, "h3");
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵtemplate(3, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_Template, 3, 2, "div", 30);
+    ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var forms_r902 = ɵɵnextContext().$implicit;
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(forms_r902.label);
+    ɵɵadvance(1);
+    ɵɵproperty("ngForOf", forms_r902.forms);
+} }
+function OnboardingDetailComponent_div_0_section_24_div_11_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 35);
+    ɵɵtemplate(1, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_1_Template, 5, 2, "ng-container", 36);
+    ɵɵtemplate(2, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_Template, 4, 2, "ng-container", 36);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var forms_r902 = ctx.$implicit;
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", !forms_r902.forms);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", forms_r902.forms);
+} }
+function OnboardingDetailComponent_div_0_section_24_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "section", 22);
+    ɵɵelementStart(1, "div", 23);
+    ɵɵelementStart(2, "div", 24);
+    ɵɵelementStart(3, "div", 25);
+    ɵɵelementStart(4, "h2");
     ɵɵtext(5);
     ɵɵelementEnd();
-    ɵɵelement(6, "br");
-    ɵɵtemplate(7, OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_ng_container_7_Template, 4, 1, "ng-container", 1);
-    ɵɵtemplate(8, OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_ng_container_8_Template, 3, 3, "ng-container", 1);
+    ɵɵelementStart(6, "p", 26);
+    ɵɵtext(7);
     ɵɵelementEnd();
     ɵɵelementEnd();
+    ɵɵelementStart(8, "div", 27);
+    ɵɵtemplate(9, OnboardingDetailComponent_div_0_section_24_div_9_Template, 4, 0, "div", 28);
+    ɵɵtemplate(10, OnboardingDetailComponent_div_0_section_24_div_10_Template, 4, 2, "div", 29);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵtemplate(11, OnboardingDetailComponent_div_0_section_24_div_11_Template, 3, 2, "div", 30);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var field_r733 = ctx.$implicit;
-    var ctx_r732 = ɵɵnextContext(4);
-    ɵɵproperty("id", field_r733.key);
+    var category_r896 = ctx.$implicit;
+    var ctx_r893 = ɵɵnextContext(2);
+    ɵɵproperty("id", category_r896.name);
     ɵɵadvance(5);
-    ɵɵtextInterpolate(field_r733.key);
+    ɵɵtextInterpolate(category_r896.name);
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", !ctx_r732.isObject(field_r733.value));
+    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r893.catNameStart(category_r896.name) ? "l'" + category_r896.name : category_r896.name, " ");
+    ɵɵadvance(2);
+    ɵɵproperty("ngIf", (category_r896 == null ? null : category_r896.fieldCompleted) === (category_r896 == null ? null : category_r896.fieldLength));
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r732.isObject(field_r733.value));
-} }
-function OnboardingCreateComponent_ng_container_2_div_1_div_6_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 11);
-    ɵɵelementStart(1, "div", 12);
-    ɵɵelementStart(2, "div", 13);
-    ɵɵelementStart(3, "h4", 14);
-    ɵɵtext(4);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(5, "div", 15);
-    ɵɵelementContainerStart(6);
-    ɵɵtemplate(7, OnboardingCreateComponent_ng_container_2_div_1_div_6_div_7_Template, 9, 4, "div", 16);
-    ɵɵpipe(8, "keyvalue");
-    ɵɵelementContainerEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var category_r730 = ctx.$implicit;
-    ɵɵproperty("id", category_r730.name);
-    ɵɵadvance(4);
-    ɵɵtextInterpolate(category_r730.key);
-    ɵɵadvance(3);
-    ɵɵproperty("ngForOf", ɵɵpipeBind1(8, 3, category_r730.value));
-} }
-function OnboardingCreateComponent_ng_container_2_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r748 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 5);
-    ɵɵelementStart(1, "div", 6);
-    ɵɵelementStart(2, "button", 7);
-    ɵɵlistener("click", function OnboardingCreateComponent_ng_container_2_div_1_Template_button_click_2_listener() { ɵɵrestoreView(_r748); var ctx_r747 = ɵɵnextContext(2); return ctx_r747.showMode = false; });
-    ɵɵtext(3, " Modifier ");
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 8);
-    ɵɵelementStart(5, "div", 9);
-    ɵɵtemplate(6, OnboardingCreateComponent_ng_container_2_div_1_div_6_Template, 9, 5, "div", 10);
-    ɵɵpipe(7, "keyvalue");
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r728 = ɵɵnextContext(2);
-    ɵɵadvance(6);
-    ɵɵproperty("ngForOf", ɵɵpipeBind1(7, 1, ctx_r728.currentOnboarding.view));
-} }
-function OnboardingCreateComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, OnboardingCreateComponent_ng_container_2_div_1_Template, 8, 3, "div", 4);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r725 = ɵɵnextContext();
+    ɵɵproperty("ngIf", (category_r896 == null ? null : category_r896.fieldCompleted) < (category_r896 == null ? null : category_r896.fieldLength));
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r725.isSelected);
+    ɵɵproperty("ngForOf", category_r896.forms);
 } }
-function OnboardingCreateComponent_div_4_mat_option_10_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-option", 28);
-    ɵɵtext(1);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var template_r750 = ctx.$implicit;
-    ɵɵproperty("value", template_r750._id);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate1("", template_r750.Name, " ");
-} }
-function OnboardingCreateComponent_div_4_Template(rf, ctx) { if (rf & 1) {
-    var _r752 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 22);
-    ɵɵelementStart(1, "h3");
-    ɵɵtext(2, " Onboarding de votre nouveau collaborateur ");
-    ɵɵelementEnd();
-    ɵɵelementStart(3, "p");
-    ɵɵtext(4, "S\u00E9lectionnez le nom de votre profil afin de pouvoir d\u00E9marrer son onboarding.");
-    ɵɵelementEnd();
-    ɵɵelementStart(5, "div", 23);
-    ɵɵelementStart(6, "mat-form-field", 24);
-    ɵɵelementStart(7, "mat-label");
-    ɵɵtext(8, "Profil");
-    ɵɵelementEnd();
-    ɵɵelementStart(9, "mat-select", 25);
-    ɵɵlistener("selectionChange", function OnboardingCreateComponent_div_4_Template_mat_select_selectionChange_9_listener($event) { ɵɵrestoreView(_r752); var ctx_r751 = ɵɵnextContext(); return ctx_r751.onSelect($event.value); });
-    ɵɵtemplate(10, OnboardingCreateComponent_div_4_mat_option_10_Template, 2, 2, "mat-option", 26);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(11, "button", 27);
-    ɵɵlistener("click", function OnboardingCreateComponent_div_4_Template_button_click_11_listener() { ɵɵrestoreView(_r752); var ctx_r753 = ɵɵnextContext(); return ctx_r753.onSelectContactTemplate(); });
-    ɵɵtext(12);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r726 = ɵɵnextContext();
-    var tmp_1_0 = null;
-    var currVal_1 = ((tmp_1_0 = ctx_r726.form.get("TemplateId")) == null ? null : tmp_1_0.value) == "" ? 0.4 : 1;
-    var tmp_2_0 = null;
-    var currVal_2 = ((tmp_2_0 = ctx_r726.form.get("TemplateId")) == null ? null : tmp_2_0.value) == "";
-    ɵɵadvance(10);
-    ɵɵproperty("ngForOf", ctx_r726.templates);
-    ɵɵadvance(1);
-    ɵɵstyleProp("opacity", currVal_1);
-    ɵɵproperty("disabled", currVal_2);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", ctx_r726.id && ctx_r726.id !== "0" ? "Modifier l\u2019onboarding" : "D\u00E9marrer l\u2019onboarding", " ");
-} }
-function OnboardingCreateComponent_div_5_li_7_mat_icon_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-icon");
-    ɵɵtext(1, "keyboard_arrow_right");
-    ɵɵelementEnd();
-} }
-function OnboardingCreateComponent_div_5_li_7_Template(rf, ctx) { if (rf & 1) {
-    var _r762 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "li", 35);
-    ɵɵlistener("click", function OnboardingCreateComponent_div_5_li_7_Template_li_click_0_listener() { ɵɵrestoreView(_r762); var i_r759 = ctx.index; var ctx_r761 = ɵɵnextContext(2); return ctx_r761.onSelectMenu(i_r759); });
-    ɵɵelementStart(1, "span");
-    ɵɵelementStart(2, "span", 36);
+function OnboardingDetailComponent_div_0_Template(rf, ctx) { if (rf & 1) {
+    var _r922 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 1);
+    ɵɵelementStart(1, "h1", 2);
+    ɵɵelementStart(2, "p");
     ɵɵtext(3);
     ɵɵelementEnd();
-    ɵɵtemplate(4, OnboardingCreateComponent_div_5_li_7_mat_icon_4_Template, 2, 0, "mat-icon", 1);
+    ɵɵelementStart(4, "mat-icon", 3);
+    ɵɵlistener("click", function OnboardingDetailComponent_div_0_Template_mat_icon_click_4_listener() { ɵɵrestoreView(_r922); var ctx_r921 = ɵɵnextContext(); return ctx_r921.onEdit(); });
+    ɵɵtext(5, "edit");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(6, "div", 4);
+    ɵɵelementStart(7, "div", 5);
+    ɵɵelementStart(8, "div", 6);
+    ɵɵelementStart(9, "div", 7);
+    ɵɵelementStart(10, "h1");
+    ɵɵtext(11);
+    ɵɵelementEnd();
+    ɵɵelementStart(12, "p");
+    ɵɵtext(13);
+    ɵɵpipe(14, "date");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(15, "div", 8);
+    ɵɵelementStart(16, "p");
+    ɵɵtext(17);
+    ɵɵelementEnd();
+    ɵɵelementStart(18, "p");
+    ɵɵtext(19);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(20, "div", 9);
+    ɵɵelementStart(21, "ul");
+    ɵɵtemplate(22, OnboardingDetailComponent_div_0_li_22_Template, 3, 5, "li", 10);
+    ɵɵelementEnd();
+    ɵɵelementStart(23, "div", 11);
+    ɵɵlistener("scroll", function OnboardingDetailComponent_div_0_Template_div_scroll_23_listener($event) { ɵɵrestoreView(_r922); var ctx_r923 = ɵɵnextContext(); return ctx_r923.onScroll($event); });
+    ɵɵtemplate(24, OnboardingDetailComponent_div_0_section_24_Template, 12, 6, "section", 12);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(25, "div", 13);
+    ɵɵelementStart(26, "h1");
+    ɵɵtext(27, "Tickets li\u00E9s \u00E0 votre demande");
+    ɵɵelementEnd();
+    ɵɵelementStart(28, "p", 14);
+    ɵɵtext(29, "Vous retrouverez ici tous les tickets cr\u00E9\u00E9s lors de la cr\u00E9ation de votre fiche d\u2019int\u00E9gration.");
+    ɵɵelementEnd();
+    ɵɵelementStart(30, "div", 15);
+    ɵɵelementStart(31, "p", 16);
+    ɵɵtext(32, "01/01/22");
+    ɵɵelementEnd();
+    ɵɵelementStart(33, "div", 17);
+    ɵɵelementStart(34, "h2");
+    ɵɵtext(35, "Nom ticket");
+    ɵɵelementEnd();
+    ɵɵelementStart(36, "button", 18);
+    ɵɵtext(37, "En cours");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(38, "p", 19);
+    ɵɵtext(39, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(40, "div", 15);
+    ɵɵelementStart(41, "p", 16);
+    ɵɵtext(42, "01/01/22");
+    ɵɵelementEnd();
+    ɵɵelementStart(43, "div", 17);
+    ɵɵelementStart(44, "h2");
+    ɵɵtext(45, "Nom ticket");
+    ɵɵelementEnd();
+    ɵɵelementStart(46, "button", 18);
+    ɵɵtext(47, "Termin\u00E9e");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(48, "p", 19);
+    ɵɵtext(49, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(50, "div", 15);
+    ɵɵelementStart(51, "p", 16);
+    ɵɵtext(52, "01/01/22");
+    ɵɵelementEnd();
+    ɵɵelementStart(53, "div", 17);
+    ɵɵelementStart(54, "h2");
+    ɵɵtext(55, "Nom ticket");
+    ɵɵelementEnd();
+    ɵɵelementStart(56, "button", 20);
+    ɵɵtext(57, "Termin\u00E9e");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(58, "p", 19);
+    ɵɵtext(59, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(60, "div", 15);
+    ɵɵelementStart(61, "p", 16);
+    ɵɵtext(62, "01/01/22");
+    ɵɵelementEnd();
+    ɵɵelementStart(63, "h2");
+    ɵɵtext(64, "Nom ticket");
+    ɵɵelementEnd();
+    ɵɵelementStart(65, "p", 19);
+    ɵɵtext(66, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var cat_r758 = ctx.$implicit;
-    var i_r759 = ctx.index;
-    var ctx_r754 = ɵɵnextContext(2);
-    ɵɵclassMap(ctx_r754.selectedMenu === i_r759 ? "active" : "");
+    var ctx_r891 = ɵɵnextContext();
+    ɵɵadvance(3);
+    ɵɵtextInterpolate1("Int\u00E9gration profil ", ctx_r891.detailView == null ? null : ctx_r891.detailView.Name, "");
+    ɵɵadvance(8);
+    ɵɵtextInterpolate2("", ctx_r891.detailView.user.FirstName, " ", ctx_r891.detailView.user.LastName, "");
     ɵɵadvance(2);
-    ɵɵproperty("ngxScrollTo", "#" + cat_r758.name);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(cat_r758.name);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r754.checkSubForm(cat_r758.forms));
+    ɵɵtextInterpolate(ɵɵpipeBind2(14, 8, ctx_r891.detailView.createdAt, "dd/MM/yy"));
+    ɵɵadvance(4);
+    ɵɵtextInterpolate(ctx_r891.detailView == null ? null : ctx_r891.detailView.user == null ? null : ctx_r891.detailView.user.Phone == null ? null : ctx_r891.detailView.user.Phone.internationalNumber);
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(ctx_r891.detailView.user.Email);
+    ɵɵadvance(3);
+    ɵɵproperty("ngForOf", ctx_r891.detailView.categories);
+    ɵɵadvance(2);
+    ɵɵproperty("ngForOf", ctx_r891.detailView.categories);
 } }
-function OnboardingCreateComponent_div_5_ng_container_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1, "Soumission en cours...");
-    ɵɵelementContainerEnd();
+var OnboardingDetailComponent = /** @class */ (function () {
+    function OnboardingDetailComponent() {
+        this.onShowMode = new EventEmitter(true);
+    }
+    OnboardingDetailComponent.prototype.ngOnInit = function () { };
+    OnboardingDetailComponent.prototype.onScroll = function (event) {
+        var sections = document.querySelectorAll("section");
+        var navLi = document.querySelectorAll(".fields ul li");
+        var current = "";
+        sections.forEach(function (section) {
+            var sectionTop = section.offsetTop;
+            if (event.target.scrollTop > sectionTop - 300) {
+                current = section.getAttribute("id");
+            }
+        });
+        navLi.forEach(function (li) {
+            var id = li.getAttribute('id');
+            if (id.substring(0, id.length - 1) === current) {
+                li.classList.add("active");
+            }
+            else {
+                li.classList.remove('active');
+            }
+        });
+    };
+    OnboardingDetailComponent.prototype.catNameStart = function (str) {
+        var vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+        return vowels.includes(str.substr(0, 1).toLocaleLowerCase());
+    };
+    OnboardingDetailComponent.prototype.onEdit = function () {
+        this.onShowMode.emit(false);
+    };
+    OnboardingDetailComponent.prototype.progress = function (completed, length) {
+        return 100 * completed / length;
+    };
+    OnboardingDetailComponent.ɵfac = function OnboardingDetailComponent_Factory(t) { return new (t || OnboardingDetailComponent)(); };
+    OnboardingDetailComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingDetailComponent, selectors: [["lib-onboarding-detail"]], hostBindings: function OnboardingDetailComponent_HostBindings(rf, ctx) { if (rf & 1) {
+            ɵɵlistener("scroll", function OnboardingDetailComponent_scroll_HostBindingHandler($event) { return ctx.onScroll($event); });
+        } }, inputs: { detailView: "detailView" }, outputs: { onShowMode: "onShowMode" }, decls: 1, vars: 1, consts: [["class", "onboarding-detail", 4, "ngIf"], [1, "onboarding-detail"], [1, "title"], [2, "margin-left", "20px", "cursor", "pointer", 3, "click"], [1, "view-content"], [1, "left-content"], [1, "user-info"], [1, "user-name"], [1, "user-contact"], ["id", "fields", 1, "fields"], ["class", "menu-item", 3, "ngxScrollTo", "class", "id", 4, "ngFor", "ngForOf"], [1, "category-view-container", 3, "scroll"], ["class", "category-item", 3, "id", 4, "ngFor", "ngForOf"], [1, "right-content"], [1, "subtitle"], [1, "box-ticket-info"], [1, "date"], [1, "box-header"], ["mat-button", "", 1, "progress"], [1, "description"], ["mat-button", "", 1, "finished"], [1, "menu-item", 3, "ngxScrollTo", "id"], [1, "category-item", 3, "id"], [1, "category-item-inner"], [1, "category-header"], [1, "title-content"], [1, "category-description"], [1, "progress-status"], ["class", "status in-progress", 4, "ngIf"], ["class", "status progress-bar", 4, "ngIf"], ["class", "category-item-forms", 4, "ngFor", "ngForOf"], [1, "status", "in-progress"], [1, "status", "progress-bar"], [2, "width", "300px"], ["mode", "determinate", 3, "value"], [1, "category-item-forms"], [4, "ngIf"], [1, "label"]], template: function OnboardingDetailComponent_Template(rf, ctx) { if (rf & 1) {
+            ɵɵtemplate(0, OnboardingDetailComponent_div_0_Template, 67, 11, "div", 0);
+        } if (rf & 2) {
+            ɵɵproperty("ngIf", ctx.detailView);
+        } }, directives: [NgIf, MatIcon, NgForOf, MatButton, ScrollToDirective, LoadingComponent, MatProgressBar], pipes: [DatePipe], styles: [".onboarding-detail[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%]{margin:0;font-family:Nexa;font-style:normal;font-weight:700;line-height:110%;display:flex;align-items:center;color:#242731}.onboarding-detail[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin:0}.onboarding-detail[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{font-size:24px}.onboarding-detail[_ngcontent-%COMP%]   h1.title[_ngcontent-%COMP%]{margin-bottom:33px;margin-top:10px}.onboarding-detail[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{font-size:20px}.onboarding-detail[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%]{font-size:16px}.onboarding-detail[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%]{font-size:14px}.onboarding-detail[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%]{font-size:12px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]{display:flex;flex-direction:row;justify-content:space-between;background-color:#f4f7f9}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]{width:70%;border-radius:6px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   .user-info[_ngcontent-%COMP%]{display:flex;flex-direction:row;justify-content:space-between;height:90px;background:#fff;border-radius:6px;padding:10px;align-items:center}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   .user-info[_ngcontent-%COMP%]   .user-name[_ngcontent-%COMP%]{text-align:left;line-height:30px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   .user-info[_ngcontent-%COMP%]   .user-contact[_ngcontent-%COMP%]{line-height:30px;text-align:right}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   section[_ngcontent-%COMP%]{background:#fff;border-radius:8px;padding:15px;margin-bottom:30px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   section[_ngcontent-%COMP%]   .category-item-inner[_ngcontent-%COMP%]   .category-description[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:250;font-size:14px;line-height:16px;color:#575f6e;margin-top:5px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   section[_ngcontent-%COMP%]   .category-item-inner[_ngcontent-%COMP%]   .category-item-forms[_ngcontent-%COMP%]{margin-top:20px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   section[_ngcontent-%COMP%]   .category-item-inner[_ngcontent-%COMP%]   .category-item-forms[_ngcontent-%COMP%]   .label[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:250;font-size:12px;line-height:16px;display:flex;align-items:center;color:#575f6e}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]{width:25%;background-color:#fff;border-radius:6px;padding:15px;overflow:auto;max-height:85.5vh;margin-right:20px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{color:#575f6e}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]{padding-bottom:20px;padding-top:20px;border-bottom:2px solid #e2e4e5}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]   .box-header[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]   .box-header[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{width:103px;height:36px;border-radius:4px;font-family:Nexa;font-weight:500;font-size:16px;display:flex;align-items:center;text-transform:capitalize;color:#fff}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]   .box-header[_ngcontent-%COMP%]   .finished[_ngcontent-%COMP%]{background:#6fe8d7}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]   .box-header[_ngcontent-%COMP%]   .progress[_ngcontent-%COMP%]{background:#f3a124}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .category-view-container[_ngcontent-%COMP%]{display:flex;flex-direction:column;max-height:70vh;overflow:auto}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .category-view-container[_ngcontent-%COMP%]::-webkit-scrollbar, .onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]::-webkit-scrollbar{display:none}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .category-view-container[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]{-ms-overflow-style:none;scrollbar-width:none}.fields[_ngcontent-%COMP%]{height:84%}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{list-style:none;display:flex;margin:33px 0;padding:0}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{margin-right:20px;padding-bottom:5px;border-bottom:3px solid transparent}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26;opacity:.5}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item.active[_ngcontent-%COMP%], .fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item[_ngcontent-%COMP%]:hover{cursor:pointer;border-bottom:3px solid #3c4252}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%], .fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item[_ngcontent-%COMP%]:hover   a[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;opacity:1}.progress-status[_ngcontent-%COMP%]   .status[_ngcontent-%COMP%]{display:flex;align-items:center}.progress-status[_ngcontent-%COMP%]   .ongoing[_ngcontent-%COMP%]{color:#6fe8d7}.progress-status[_ngcontent-%COMP%]   .in-progress[_ngcontent-%COMP%]{padding-right:25px;color:#f3a124;font-weight:500;font-size:16px}  .progress-status{font-size:16px}  .progress-status .mat-progress-bar{display:block;height:20px;overflow:hidden;border-radius:50px;position:relative;transition:opacity 250ms linear;width:100%}  .progress-status .mat-progress-bar-fill::after{background-color:#6fe8d7}  .progress-status .mat-progress-bar-buffer{background-color:#ecf3f7}.category-header[_ngcontent-%COMP%]{display:flex;align-items:center;justify-content:space-between}"] });
+    return OnboardingDetailComponent;
+}());
+/*@__PURE__*/ (function () { ɵsetClassMetadata(OnboardingDetailComponent, [{
+        type: Component,
+        args: [{
+                selector: 'lib-onboarding-detail',
+                templateUrl: './onboarding-detail.component.html',
+                styleUrls: ['./onboarding-detail.component.scss']
+            }]
+    }], function () { return []; }, { detailView: [{
+            type: Input
+        }], onShowMode: [{
+            type: Output
+        }], onScroll: [{
+            type: HostListener,
+            args: ['scroll', ['$event']]
+        }] }); })();
+
+function OnboardingCreateComponent_form_2_li_11_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "li", 15);
+    ɵɵelementStart(1, "a");
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var category_r787 = ctx.$implicit;
+    ɵɵproperty("ngxScrollTo", "#" + category_r787.name)("id", category_r787.name + "x");
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(category_r787.name);
 } }
-function OnboardingCreateComponent_div_5_ng_container_10_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1, " Soumettre ma fiche de poste");
-    ɵɵelementContainerEnd();
-} }
-function OnboardingCreateComponent_div_5_div_13_mat_select_5_mat_option_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-option", 28);
+function OnboardingCreateComponent_form_2_section_13_mat_select_8_mat_option_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-option", 27);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var select_r769 = ctx.$implicit;
-    ɵɵproperty("value", select_r769.value);
+    var select_r795 = ctx.$implicit;
+    ɵɵproperty("value", select_r795.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", select_r769.value, "");
+    ɵɵtextInterpolate1(" ", select_r795.value, "");
 } }
 var _c0$4 = function () { return { standalone: true }; };
-function OnboardingCreateComponent_div_5_div_13_mat_select_5_Template(rf, ctx) { if (rf & 1) {
-    var _r772 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-select", 41);
-    ɵɵlistener("ngModelChange", function OnboardingCreateComponent_div_5_div_13_mat_select_5_Template_mat_select_ngModelChange_0_listener($event) { ɵɵrestoreView(_r772); var category_r763 = ɵɵnextContext().$implicit; return category_r763.selector.value = $event; });
-    ɵɵtemplate(1, OnboardingCreateComponent_div_5_div_13_mat_select_5_mat_option_1_Template, 2, 2, "mat-option", 26);
+function OnboardingCreateComponent_form_2_section_13_mat_select_8_Template(rf, ctx) { if (rf & 1) {
+    var _r798 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-select", 25);
+    ɵɵlistener("ngModelChange", function OnboardingCreateComponent_form_2_section_13_mat_select_8_Template_mat_select_ngModelChange_0_listener($event) { ɵɵrestoreView(_r798); var category_r789 = ɵɵnextContext().$implicit; return category_r789.selector.value = $event; });
+    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_mat_select_8_mat_option_1_Template, 2, 2, "mat-option", 26);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r763 = ɵɵnextContext().$implicit;
-    ɵɵproperty("ngModel", category_r763.selector.value)("ngModelOptions", ɵɵpureFunction0(3, _c0$4));
+    var category_r789 = ɵɵnextContext().$implicit;
+    ɵɵproperty("ngModel", category_r789.selector.value)("ngModelOptions", ɵɵpureFunction0(3, _c0$4));
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", category_r763.selector.defaultValue);
+    ɵɵproperty("ngForOf", category_r789.selector.defaultValue);
 } }
-function OnboardingCreateComponent_div_5_div_13_mat_select_6_mat_option_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "mat-option", 28);
+function OnboardingCreateComponent_form_2_section_13_mat_select_9_mat_option_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-option", 27);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var select_r775 = ctx.$implicit;
-    ɵɵproperty("value", select_r775.key);
+    var select_r801 = ctx.$implicit;
+    ɵɵproperty("value", select_r801.key);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", select_r775.value, "");
+    ɵɵtextInterpolate1(" ", select_r801.value, "");
 } }
-function OnboardingCreateComponent_div_5_div_13_mat_select_6_Template(rf, ctx) { if (rf & 1) {
-    var _r778 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-select", 42);
-    ɵɵlistener("ngModelChange", function OnboardingCreateComponent_div_5_div_13_mat_select_6_Template_mat_select_ngModelChange_0_listener($event) { ɵɵrestoreView(_r778); var category_r763 = ɵɵnextContext().$implicit; return category_r763.ticketType.value = $event; });
-    ɵɵtemplate(1, OnboardingCreateComponent_div_5_div_13_mat_select_6_mat_option_1_Template, 2, 2, "mat-option", 26);
+function OnboardingCreateComponent_form_2_section_13_mat_select_9_Template(rf, ctx) { if (rf & 1) {
+    var _r804 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-select", 28);
+    ɵɵlistener("ngModelChange", function OnboardingCreateComponent_form_2_section_13_mat_select_9_Template_mat_select_ngModelChange_0_listener($event) { ɵɵrestoreView(_r804); var category_r789 = ɵɵnextContext().$implicit; return category_r789.ticketType.value = $event; });
+    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_mat_select_9_mat_option_1_Template, 2, 2, "mat-option", 26);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r763 = ɵɵnextContext().$implicit;
-    ɵɵproperty("ngModel", category_r763.ticketType.value)("ngModelOptions", ɵɵpureFunction0(3, _c0$4));
+    var category_r789 = ɵɵnextContext().$implicit;
+    ɵɵproperty("ngModel", category_r789.ticketType.value)("ngModelOptions", ɵɵpureFunction0(3, _c0$4));
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", category_r763.ticketType.defaultValue);
+    ɵɵproperty("ngForOf", category_r789.ticketType.defaultValue);
 } }
-function OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r794 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 18);
-    ɵɵelementStart(1, "div", 19);
-    ɵɵelementStart(2, "div", 20);
-    ɵɵelementStart(3, "lib-sub-create-onboarding", 44);
-    ɵɵlistener("onDrop", function OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onDrop_3_listener($event) { ɵɵrestoreView(_r794); var ctx_r793 = ɵɵnextContext(10); return ctx_r793.drop($event); })("onCheckValue", function OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { ɵɵrestoreView(_r794); var ctx_r795 = ɵɵnextContext(10); return ctx_r795.onCheckValue($event); });
-    ɵɵelement(4, "div", 45);
+function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template(rf, ctx) { if (rf & 1) {
+    var _r820 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 31);
+    ɵɵelementStart(1, "div", 32);
+    ɵɵelementStart(2, "div", 33);
+    ɵɵelementStart(3, "lib-sub-create-onboarding", 40);
+    ɵɵlistener("onCheckValue", function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { ɵɵrestoreView(_r820); var ctx_r819 = ɵɵnextContext(10); return ctx_r819.onCheckValue($event); });
+    ɵɵelement(4, "div", 35);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r796 = ɵɵnextContext();
-    var c2_r790 = ctx_r796.$implicit;
-    var l_r791 = ctx_r796.index;
-    var ctx_r797 = ɵɵnextContext(3);
-    var child_r785 = ctx_r797.$implicit;
-    var k_r786 = ctx_r797.index;
+    var ctx_r821 = ɵɵnextContext();
+    var c2_r816 = ctx_r821.$implicit;
+    var l_r817 = ctx_r821.index;
+    var ctx_r822 = ɵɵnextContext(3);
+    var child_r811 = ctx_r822.$implicit;
+    var k_r812 = ctx_r822.index;
     ɵɵadvance(3);
-    ɵɵproperty("field", c2_r790)("length", child_r785 == null ? null : child_r785.forms == null ? null : child_r785.forms.length)("i", k_r786)("j", l_r791);
+    ɵɵproperty("field", c2_r816)("length", child_r811 == null ? null : child_r811.forms == null ? null : child_r811.forms.length)("i", k_r812)("j", l_r817);
 } }
-function OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 49);
-    ɵɵtemplate(1, OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template, 5, 4, "div", 43);
+function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_div_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 39);
+    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template, 5, 4, "div", 30);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var c2_r790 = ctx.$implicit;
-    var ctx_r789 = ɵɵnextContext(9);
-    ɵɵproperty("id", c2_r790.key);
+    var c2_r816 = ctx.$implicit;
+    var child_r811 = ɵɵnextContext(3).$implicit;
+    var ctx_r815 = ɵɵnextContext(6);
+    ɵɵstyleProp("width", c2_r816.forms || c2_r816.type === "textarea" ? "100%" : ctx_r815.fieldWidth(child_r811.forms.length));
+    ɵɵproperty("id", c2_r816.key);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", c2_r790.expandOnboarding && ctx_r789.onCheckConditionLocationValue(c2_r790.isConditional, c2_r790.conditionLocation, c2_r790.conditionValue));
+    ɵɵproperty("ngIf", c2_r816.expandOnboarding && ctx_r815.onCheckConditionLocationValue(c2_r816.isConditional, c2_r816.conditionLocation, c2_r816.conditionValue));
 } }
-function OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_div_1_div_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 47);
-    ɵɵtemplate(1, OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_Template, 2, 2, "div", 48);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var child_r785 = ɵɵnextContext(2).$implicit;
-    ɵɵadvance(1);
-    ɵɵproperty("ngForOf", child_r785.forms);
-} }
-function OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r800 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 18);
-    ɵɵelementStart(1, "div", 19);
-    ɵɵelementStart(2, "div", 20);
-    ɵɵelementStart(3, "lib-sub-create-onboarding", 44);
-    ɵɵlistener("onDrop", function OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onDrop_3_listener($event) { ɵɵrestoreView(_r800); var ctx_r799 = ɵɵnextContext(7); return ctx_r799.drop($event); })("onCheckValue", function OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { ɵɵrestoreView(_r800); var ctx_r801 = ɵɵnextContext(7); return ctx_r801.onCheckValue($event); });
-    ɵɵelementStart(4, "div", 45);
-    ɵɵtemplate(5, OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_div_1_div_5_Template, 2, 1, "div", 46);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r802 = ɵɵnextContext();
-    var child_r785 = ctx_r802.$implicit;
-    var k_r786 = ctx_r802.index;
-    var ctx_r803 = ɵɵnextContext(3);
-    var field_r780 = ctx_r803.$implicit;
-    var j_r781 = ctx_r803.index;
-    ɵɵadvance(3);
-    ɵɵproperty("field", child_r785)("length", field_r780 == null ? null : field_r780.forms == null ? null : field_r780.forms.length)("i", j_r781)("j", k_r786);
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", child_r785.forms && child_r785.value);
-} }
-function OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 49);
-    ɵɵtemplate(1, OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_div_1_Template, 6, 5, "div", 43);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var child_r785 = ctx.$implicit;
-    var ctx_r784 = ɵɵnextContext(6);
-    ɵɵproperty("id", child_r785.key);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", child_r785.expandOnboarding && ctx_r784.onCheckConditionLocationValue(child_r785.isConditional, child_r785.conditionLocation, child_r785.conditionValue));
-} }
-function OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 47);
-    ɵɵtemplate(1, OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_div_1_Template, 2, 2, "div", 48);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var field_r780 = ɵɵnextContext(2).$implicit;
-    ɵɵadvance(1);
-    ɵɵproperty("ngForOf", field_r780.forms);
-} }
-function OnboardingCreateComponent_div_5_div_13_div_9_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r806 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 18);
-    ɵɵelementStart(1, "div", 19);
-    ɵɵelementStart(2, "div", 20);
-    ɵɵelementStart(3, "lib-sub-create-onboarding", 44);
-    ɵɵlistener("onDrop", function OnboardingCreateComponent_div_5_div_13_div_9_div_1_Template_lib_sub_create_onboarding_onDrop_3_listener($event) { ɵɵrestoreView(_r806); var ctx_r805 = ɵɵnextContext(4); return ctx_r805.drop($event); })("onCheckValue", function OnboardingCreateComponent_div_5_div_13_div_9_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { ɵɵrestoreView(_r806); var ctx_r807 = ɵɵnextContext(4); return ctx_r807.onCheckValue($event); });
-    ɵɵelementStart(4, "div", 45);
-    ɵɵtemplate(5, OnboardingCreateComponent_div_5_div_13_div_9_div_1_div_5_Template, 2, 1, "div", 46);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r808 = ɵɵnextContext();
-    var field_r780 = ctx_r808.$implicit;
-    var j_r781 = ctx_r808.index;
-    var ctx_r809 = ɵɵnextContext();
-    var category_r763 = ctx_r809.$implicit;
-    var i_r764 = ctx_r809.index;
-    ɵɵadvance(3);
-    ɵɵproperty("field", field_r780)("length", category_r763 == null ? null : category_r763.forms == null ? null : category_r763.forms.length)("i", i_r764)("j", j_r781);
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", field_r780.forms && field_r780.value);
-} }
-function OnboardingCreateComponent_div_5_div_13_div_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 17);
-    ɵɵtemplate(1, OnboardingCreateComponent_div_5_div_13_div_9_div_1_Template, 6, 5, "div", 43);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var field_r780 = ctx.$implicit;
-    var ctx_r767 = ɵɵnextContext(3);
-    ɵɵproperty("id", field_r780.key);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", field_r780.expandOnboarding && ctx_r767.onCheckConditionLocationValue(field_r780.isConditional, field_r780.conditionLocation, field_r780.conditionValue));
-} }
-function OnboardingCreateComponent_div_5_div_13_Template(rf, ctx) { if (rf & 1) {
+function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 37);
-    ɵɵelementStart(1, "div", 12);
-    ɵɵelementStart(2, "div", 13);
-    ɵɵelementStart(3, "h4", 14);
-    ɵɵtext(4);
+    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_div_1_Template, 2, 4, "div", 38);
     ɵɵelementEnd();
-    ɵɵtemplate(5, OnboardingCreateComponent_div_5_div_13_mat_select_5_Template, 2, 4, "mat-select", 38);
-    ɵɵtemplate(6, OnboardingCreateComponent_div_5_div_13_mat_select_6_Template, 2, 4, "mat-select", 39);
+} if (rf & 2) {
+    var child_r811 = ɵɵnextContext(2).$implicit;
+    ɵɵadvance(1);
+    ɵɵproperty("ngForOf", child_r811.forms);
+} }
+function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_Template(rf, ctx) { if (rf & 1) {
+    var _r826 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 31);
+    ɵɵelementStart(1, "div", 32);
+    ɵɵelementStart(2, "div", 33);
+    ɵɵelementStart(3, "lib-sub-create-onboarding", 40);
+    ɵɵlistener("onCheckValue", function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { ɵɵrestoreView(_r826); var ctx_r825 = ɵɵnextContext(7); return ctx_r825.onCheckValue($event); });
+    ɵɵelementStart(4, "div", 35);
+    ɵɵtemplate(5, OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_Template, 2, 1, "div", 36);
     ɵɵelementEnd();
-    ɵɵelementStart(7, "div", 40);
-    ɵɵelementContainerStart(8);
-    ɵɵtemplate(9, OnboardingCreateComponent_div_5_div_13_div_9_Template, 2, 2, "div", 16);
-    ɵɵelementContainerEnd();
+    ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r763 = ctx.$implicit;
-    var i_r764 = ctx.index;
-    var ctx_r757 = ɵɵnextContext(2);
-    ɵɵclassMap(i_r764 === ctx_r757.selectedCategoryIndex ? "active-content" : "");
-    ɵɵproperty("id", category_r763.name);
-    ɵɵadvance(4);
-    ɵɵtextInterpolate(category_r763.name);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", category_r763.selector);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", category_r763.selector.value === "Nowteam");
+    var ctx_r827 = ɵɵnextContext();
+    var child_r811 = ctx_r827.$implicit;
+    var k_r812 = ctx_r827.index;
+    var ctx_r828 = ɵɵnextContext(3);
+    var field_r806 = ctx_r828.$implicit;
+    var j_r807 = ctx_r828.index;
     ɵɵadvance(3);
-    ɵɵproperty("ngForOf", category_r763.forms);
+    ɵɵproperty("field", child_r811)("length", field_r806 == null ? null : field_r806.forms == null ? null : field_r806.forms.length)("i", j_r807)("j", k_r812);
+    ɵɵadvance(2);
+    ɵɵproperty("ngIf", child_r811.forms && child_r811.value);
 } }
-function OnboardingCreateComponent_div_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 5);
-    ɵɵelementStart(1, "div", 6);
-    ɵɵelementStart(2, "div", 29);
-    ɵɵelementStart(3, "h3", 30);
-    ɵɵelementStart(4, "span");
+function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 39);
+    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_Template, 6, 5, "div", 30);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var child_r811 = ctx.$implicit;
+    var field_r806 = ɵɵnextContext(3).$implicit;
+    var ctx_r810 = ɵɵnextContext(3);
+    ɵɵstyleProp("width", child_r811.forms || child_r811.type === "textarea" ? "100%" : ctx_r810.fieldWidth(field_r806.forms.length));
+    ɵɵproperty("id", child_r811.key);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", child_r811.expandOnboarding && ctx_r810.onCheckConditionLocationValue(child_r811.isConditional, child_r811.conditionLocation, child_r811.conditionValue));
+} }
+function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 37);
+    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_Template, 2, 4, "div", 38);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var field_r806 = ɵɵnextContext(2).$implicit;
+    ɵɵadvance(1);
+    ɵɵproperty("ngForOf", field_r806.forms);
+} }
+function OnboardingCreateComponent_form_2_section_13_div_11_div_1_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 31);
+    ɵɵelementStart(1, "div", 32);
+    ɵɵelementStart(2, "div", 33);
+    ɵɵelementStart(3, "lib-sub-create-onboarding", 34);
+    ɵɵelementStart(4, "div", 35);
+    ɵɵtemplate(5, OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_Template, 2, 1, "div", 36);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r831 = ɵɵnextContext();
+    var field_r806 = ctx_r831.$implicit;
+    var j_r807 = ctx_r831.index;
+    var ctx_r832 = ɵɵnextContext();
+    var category_r789 = ctx_r832.$implicit;
+    var i_r790 = ctx_r832.index;
+    ɵɵadvance(3);
+    ɵɵproperty("field", field_r806)("length", category_r789 == null ? null : category_r789.forms == null ? null : category_r789.forms.length)("i", i_r790)("j", j_r807);
+    ɵɵadvance(2);
+    ɵɵproperty("ngIf", field_r806.forms && field_r806.value);
+} }
+function OnboardingCreateComponent_form_2_section_13_div_11_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "div", 29);
+    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_11_div_1_Template, 6, 5, "div", 30);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var field_r806 = ctx.$implicit;
+    var category_r789 = ɵɵnextContext().$implicit;
+    var ctx_r793 = ɵɵnextContext(2);
+    ɵɵstyleProp("width", field_r806.forms || field_r806.type === "textarea" ? "100%" : ctx_r793.fieldWidth(category_r789.forms.length));
+    ɵɵproperty("id", field_r806.key);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", field_r806.expandOnboarding && ctx_r793.onCheckConditionLocationValue(field_r806.isConditional, field_r806.conditionLocation, field_r806.conditionValue));
+} }
+function OnboardingCreateComponent_form_2_section_13_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "section", 16);
+    ɵɵelementStart(1, "div", 17);
+    ɵɵelementStart(2, "div", 18);
+    ɵɵelementStart(3, "div", 19);
+    ɵɵelementStart(4, "h4", 20);
     ɵɵtext(5);
     ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(6, "ol");
-    ɵɵtemplate(7, OnboardingCreateComponent_div_5_li_7_Template, 5, 5, "li", 31);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(8, "button", 32);
-    ɵɵtemplate(9, OnboardingCreateComponent_div_5_ng_container_9_Template, 2, 0, "ng-container", 1);
-    ɵɵtemplate(10, OnboardingCreateComponent_div_5_ng_container_10_Template, 2, 0, "ng-container", 1);
+    ɵɵelementStart(6, "p");
+    ɵɵtext(7);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(11, "div", 33);
-    ɵɵelementStart(12, "div", 9);
-    ɵɵtemplate(13, OnboardingCreateComponent_div_5_div_13_Template, 10, 7, "div", 34);
+    ɵɵtemplate(8, OnboardingCreateComponent_form_2_section_13_mat_select_8_Template, 2, 4, "mat-select", 21);
+    ɵɵtemplate(9, OnboardingCreateComponent_form_2_section_13_mat_select_9_Template, 2, 4, "mat-select", 22);
+    ɵɵelementEnd();
+    ɵɵelementStart(10, "div", 23);
+    ɵɵtemplate(11, OnboardingCreateComponent_form_2_section_13_div_11_Template, 2, 4, "div", 24);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r727 = ɵɵnextContext();
+    var category_r789 = ctx.$implicit;
+    var ctx_r786 = ɵɵnextContext(2);
+    ɵɵproperty("id", category_r789.name);
     ɵɵadvance(5);
-    ɵɵtextInterpolate1(" ", ctx_r727.currentTemplate == null ? null : ctx_r727.currentTemplate.Name, "");
+    ɵɵtextInterpolate(category_r789.name);
     ɵɵadvance(2);
-    ɵɵproperty("ngForOf", ctx_r727.categories);
+    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r786.catNameStart(category_r789.name) ? "l'" + category_r789.name : category_r789.name, " ");
     ɵɵadvance(1);
-    ɵɵproperty("disabled", ctx_r727.loading || ctx_r727.invalideValue);
+    ɵɵproperty("ngIf", category_r789.selector);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r727.loading);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", !ctx_r727.loading);
-    ɵɵadvance(3);
-    ɵɵproperty("ngForOf", ctx_r727.categories);
+    ɵɵproperty("ngIf", (category_r789.ticketType == null ? null : category_r789.ticketType.value) && category_r789.selector.value === "Nowteam");
+    ɵɵadvance(2);
+    ɵɵproperty("ngForOf", category_r789.forms);
 } }
-var _c1$2 = function () { return { "display": "none" }; };
+function OnboardingCreateComponent_form_2_Template(rf, ctx) { if (rf & 1) {
+    var _r835 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "form", 3);
+    ɵɵlistener("submit", function OnboardingCreateComponent_form_2_Template_form_submit_0_listener() { ɵɵrestoreView(_r835); var ctx_r834 = ɵɵnextContext(); return ctx_r834.onSubmit(); });
+    ɵɵelementStart(1, "div", 4);
+    ɵɵelementStart(2, "div", 5);
+    ɵɵelementStart(3, "h2");
+    ɵɵtext(4);
+    ɵɵelementStart(5, "mat-icon", 6);
+    ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_mat_icon_click_5_listener() { ɵɵrestoreView(_r835); var ctx_r836 = ɵɵnextContext(); return ctx_r836.onShowMode(); });
+    ɵɵtext(6, "visibility");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(7, "button", 7);
+    ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_button_click_7_listener() { ɵɵrestoreView(_r835); var ctx_r837 = ɵɵnextContext(); return ctx_r837.onResumeLater(); });
+    ɵɵtext(8, "Reprendre plus tard");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementStart(9, "div", 8);
+    ɵɵelementStart(10, "ul");
+    ɵɵtemplate(11, OnboardingCreateComponent_form_2_li_11_Template, 3, 3, "li", 9);
+    ɵɵelementEnd();
+    ɵɵelementStart(12, "div", 10);
+    ɵɵlistener("scroll", function OnboardingCreateComponent_form_2_Template_div_scroll_12_listener($event) { ɵɵrestoreView(_r835); var ctx_r838 = ɵɵnextContext(); return ctx_r838.onScroll($event); });
+    ɵɵtemplate(13, OnboardingCreateComponent_form_2_section_13_Template, 12, 6, "section", 11);
+    ɵɵelementStart(14, "div", 12);
+    ɵɵelementStart(15, "button", 13);
+    ɵɵtext(16, "Envoyer ma fiche");
+    ɵɵelementEnd();
+    ɵɵelementStart(17, "button", 14);
+    ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_button_click_17_listener() { ɵɵrestoreView(_r835); var ctx_r839 = ɵɵnextContext(); return ctx_r839.onResumeLater(); });
+    ɵɵtext(18, "Reprendre plus tard");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r783 = ɵɵnextContext();
+    ɵɵproperty("formGroup", ctx_r783.form);
+    ɵɵadvance(4);
+    ɵɵtextInterpolate1("Int\u00E9gration profil ", ctx_r783.currentTemplate == null ? null : ctx_r783.currentTemplate.Name, " ");
+    ɵɵadvance(3);
+    ɵɵproperty("disabled", ctx_r783.loading);
+    ɵɵadvance(4);
+    ɵɵproperty("ngForOf", ctx_r783.categories);
+    ɵɵadvance(2);
+    ɵɵproperty("ngForOf", ctx_r783.categories);
+    ɵɵadvance(2);
+    ɵɵproperty("disabled", ctx_r783.loading || !ctx_r783.form.valid);
+    ɵɵadvance(2);
+    ɵɵproperty("disabled", ctx_r783.loading);
+} }
+function OnboardingCreateComponent_lib_onboarding_detail_3_Template(rf, ctx) { if (rf & 1) {
+    var _r841 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "lib-onboarding-detail", 41);
+    ɵɵlistener("onShowMode", function OnboardingCreateComponent_lib_onboarding_detail_3_Template_lib_onboarding_detail_onShowMode_0_listener() { ɵɵrestoreView(_r841); var ctx_r840 = ɵɵnextContext(); return ctx_r840.onShowMode(); });
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r784 = ɵɵnextContext();
+    ɵɵproperty("detailView", ctx_r784.detailView);
+} }
 var OnboardingCreateComponent = /** @class */ (function () {
     function OnboardingCreateComponent(fb, service, route, router, dialog) {
+        var _this = this;
         this.fb = fb;
         this.service = service;
         this.route = route;
@@ -4439,38 +5285,40 @@ var OnboardingCreateComponent = /** @class */ (function () {
         this.currentProfil = {};
         this.canExit = true;
         this.tags = [];
-        this.id = "0";
+        this.onboardingId = "0";
+        this.templateId = "0";
         this.parent = [];
-        this.editIndex = null;
-        this.showProfileName = false;
         this.selectedMenu = 0;
-        this.matIconList = [
-            { name: 'developer_board' },
-            { name: 'contact_phone' },
-            { name: 'contact_mail' },
-            { name: 'play_circle_filled' },
-            { name: 'control_camera' },
-            { name: 'explicit' },
-            { name: 'person' },
-            { name: 'visibility' },
-            { name: 'video_label' },
-            { name: 'add_circle' },
-            { name: 'watch_later' },
-            { name: 'where_to_vote' },
-            { name: 'work' },
-            { name: 'web' },
-            { name: 'whatshot' },
-            { name: 'wifi' },
-            { name: 'workspaces' },
-            { name: 'wb_cloudy' },
-            { name: 'waves' },
-            { name: 'warning' },
-            { name: 'space_das' }
-        ];
-        this.picto = "";
         this.showMode = false;
         this.selectedCategoryIndex = null;
         this.loading = false;
+        this.service._currentOnboarding.subscribe(function (onboarding) { return __awaiter(_this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        this.onCreateDynamicForm();
+                        this.isSelected = true;
+                        if (!onboarding) return [3 /*break*/, 2];
+                        this.form.patchValue({
+                            TemplateId: onboarding.TemplateId
+                        });
+                        return [4 /*yield*/, this.onSelect(onboarding.TemplateId, onboarding)];
+                    case 1:
+                        _a.sent();
+                        return [3 /*break*/, 4];
+                    case 2:
+                        this.templateId = this.route.snapshot.paramMap.get("templateId");
+                        this.form.patchValue({
+                            TemplateId: this.templateId
+                        });
+                        return [4 /*yield*/, this.onSelect(this.templateId, null)];
+                    case 3:
+                        _a.sent();
+                        _a.label = 4;
+                    case 4: return [2 /*return*/];
+                }
+            });
+        }); });
     }
     OnboardingCreateComponent.prototype.isObject = function (obj) {
         return obj !== undefined && obj !== null && obj.constructor == Object;
@@ -4484,93 +5332,186 @@ var OnboardingCreateComponent = /** @class */ (function () {
         }
         return true;
     };
+    OnboardingCreateComponent.prototype.onScroll = function (event) {
+        var sections = document.querySelectorAll("section");
+        var navLi = document.querySelectorAll(".fields ul li");
+        var current = "";
+        sections.forEach(function (section) {
+            var sectionTop = section.offsetTop;
+            if (event.target.scrollTop > sectionTop - 200) {
+                current = section.getAttribute("id");
+            }
+        });
+        navLi.forEach(function (li) {
+            var id = li.getAttribute('id');
+            if (id.substring(0, id.length - 1) === current) {
+                li.classList.add("active");
+            }
+            else {
+                li.classList.remove('active');
+            }
+        });
+    };
     OnboardingCreateComponent.prototype.ngOnInit = function () {
+        var _a;
         return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                this.onCreateDynamicForm();
-                this.id = this.route.snapshot.paramMap.get("id");
-                setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
-                            case 0: return [4 /*yield*/, this.service.getAllProfil()];
-                            case 1:
-                                _a.sent();
-                                return [2 /*return*/];
+            var _b;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
+                    case 0:
+                        this.templateId = this.route.snapshot.paramMap.get("templateId");
+                        this.onboardingId = this.route.snapshot.paramMap.get("onboardingId");
+                        if (!(this.onboardingId && this.onboardingId !== "0")) return [3 /*break*/, 2];
+                        this.showMode = true;
+                        _b = this;
+                        return [4 /*yield*/, this.service.getOnboarding(this.onboardingId)];
+                    case 1:
+                        _b.currentOnboarding = _c.sent();
+                        this.form.patchValue(this.currentOnboarding);
+                        this.categories = this.currentOnboarding.categories;
+                        this.onLoadViewDetail(this.categories);
+                        this.currentTemplate = (_a = this.currentOnboarding) === null || _a === void 0 ? void 0 : _a.vtemplates[0];
+                        if (this.currentOnboarding.TemplateId) {
+                            this.isSelected = true;
                         }
-                    });
-                }); }, 500);
-                this.service._templates.subscribe(function (data) {
-                    _this.templates = data;
-                });
-                this.id = this.route.snapshot.paramMap.get("id");
-                if (this.id && this.id !== "0") {
-                    this.showMode = true;
-                    setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
-                        var _a;
-                        var _b;
-                        return __generator(this, function (_c) {
-                            switch (_c.label) {
-                                case 0:
-                                    _a = this;
-                                    return [4 /*yield*/, this.service.getOnboarding(this.id)];
-                                case 1:
-                                    _a.currentOnboarding = _c.sent();
-                                    //console.log(this.currentOnboarding);
-                                    this.form.patchValue(this.currentOnboarding);
-                                    this.categories = this.currentOnboarding.categories;
-                                    this.currentTemplate = (_b = this.currentOnboarding) === null || _b === void 0 ? void 0 : _b.vtemplates[0];
-                                    if (this.currentOnboarding.TemplateId) {
-                                        this.onSelectContactTemplate();
-                                    }
-                                    return [2 /*return*/];
-                            }
-                        });
-                    }); }, 500);
+                        _c.label = 2;
+                    case 2: return [2 /*return*/];
                 }
-                else {
-                    setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
-                        return __generator(this, function (_a) {
-                            return [2 /*return*/];
-                        });
-                    }); }, 500);
-                }
-                return [2 /*return*/];
             });
         });
+    };
+    OnboardingCreateComponent.prototype.onLoadViewDetail = function (categories) {
+        var _a, _b, _c, _d;
+        var user = {};
+        var categoriesView = categories.map(function (category) {
+            var name = category.name, expandOnboarding = category.expandOnboarding;
+            var categoryForm = [];
+            var fieldCompleted = 0;
+            var fieldLength = 0;
+            if (category.forms) {
+                categoryForm = category.forms.map(function (form) {
+                    var _a, _b;
+                    if (form.isMandatory) {
+                        fieldLength += 1;
+                    }
+                    if (form.isMandatory && !!form.value) {
+                        fieldCompleted += 1;
+                    }
+                    var newsubforms = {
+                        label: form.label,
+                        value: form.type !== "tel" ? form.value : ((_b = (_a = form) === null || _a === void 0 ? void 0 : _a.value) === null || _b === void 0 ? void 0 : _b.internationalNumber) || '',
+                        key: form.key
+                    };
+                    if (categories.name = "Utilisateur") {
+                        user[form.key] = form.value;
+                    }
+                    var subForm = [];
+                    if (form.forms) {
+                        subForm = form.forms.map(function (subForm) {
+                            var _a, _b;
+                            if (subForm.isMandatory) {
+                                fieldLength += 1;
+                            }
+                            if (subForm.isMandatory && !!subForm.value) {
+                                fieldCompleted += 1;
+                            }
+                            var childforms = {
+                                label: subForm.label,
+                                value: subForm.type !== "tel" ? subForm.value : ((_b = (_a = subForm) === null || _a === void 0 ? void 0 : _a.value) === null || _b === void 0 ? void 0 : _b.internationalNumber) || '',
+                                key: subForm.key
+                            };
+                            var child2 = [];
+                            if (subForm.forms) {
+                                child2 = subForm.forms.map(function (c2) {
+                                    var _a, _b;
+                                    if (c2.isMandatory) {
+                                        fieldLength += 1;
+                                    }
+                                    if (c2.isMandatory && !!c2.value) {
+                                        fieldCompleted += 1;
+                                    }
+                                    return {
+                                        label: c2.label,
+                                        value: c2.type !== "tel" ? c2.value : ((_b = (_a = c2) === null || _a === void 0 ? void 0 : _a.value) === null || _b === void 0 ? void 0 : _b.internationalNumber) || '',
+                                        key: c2.key
+                                    };
+                                });
+                                return __assign(__assign({}, childforms), { expandOnboarding: subForm.expandOnboarding, forms: child2, key: form.key });
+                            }
+                            else {
+                                return childforms;
+                            }
+                        });
+                        return __assign(__assign({}, newsubforms), { expandOnboarding: form.expandOnboarding, forms: subForm, key: form.key });
+                    }
+                    else {
+                        return newsubforms;
+                    }
+                });
+            }
+            return {
+                name: name, expandOnboarding: expandOnboarding,
+                forms: categoryForm,
+                key: category.key,
+                fieldCompleted: fieldCompleted,
+                fieldLength: fieldLength
+            };
+        });
+        this.detailView = {
+            categories: categoriesView,
+            // view: this.currentOnboarding.view,
+            createdAt: ((_a = this.currentOnboarding) === null || _a === void 0 ? void 0 : _a.createdAt) || new Date().toISOString(),
+            user: user,
+            Name: ((_c = (_b = this.currentOnboarding) === null || _b === void 0 ? void 0 : _b.vtemplates[0]) === null || _c === void 0 ? void 0 : _c.Name) || ((_d = this.currentTemplate) === null || _d === void 0 ? void 0 : _d.Name)
+        };
     };
     OnboardingCreateComponent.prototype.onCreateDynamicForm = function () {
         this.form = this.fb.group({
             TemplateId: [0, Validators.required]
         });
     };
-    OnboardingCreateComponent.prototype.onSelectContactTemplate = function () {
-        this.isSelected = true;
+    OnboardingCreateComponent.prototype.catNameStart = function (str) {
+        var vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+        return vowels.includes(str.substr(0, 1).toLocaleLowerCase());
     };
-    OnboardingCreateComponent.prototype.onSelect = function (id) {
-        this.currentTemplate = this.templates.find(function (t) { return t._id === id; });
-        this.categories = this.currentTemplate.categories
-            .filter(function (cat) { return cat.expandOnboarding; })
-            .map(function (cat) {
-            if (cat.forms) {
-                var f = cat.forms
-                    .filter(function (form) { return form.expandOnboarding; })
-                    .map(function (sub) {
-                    if (sub.forms) {
-                        var s = sub.forms.filter(function (child) {
-                            if (child.forms) {
-                                var c = child.forms.filter(function (ch) { return ch.expandOnboarding; });
-                                return __assign(__assign({}, child), { forms: c });
+    OnboardingCreateComponent.prototype.onSelect = function (id, onboarding) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _a;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        if (!id) return [3 /*break*/, 2];
+                        _a = this;
+                        return [4 /*yield*/, this.service.getProfil(id)];
+                    case 1:
+                        _a.currentTemplate = _b.sent();
+                        this.categories = onboarding ? onboarding.categories : this.currentTemplate.categories
+                            .filter(function (cat) { return cat.expandOnboarding; })
+                            .map(function (cat) {
+                            if (cat.forms) {
+                                var f = cat.forms
+                                    .filter(function (form) { return form.expandOnboarding; })
+                                    .map(function (sub) {
+                                    if (sub.forms) {
+                                        var s = sub.forms.filter(function (child) {
+                                            if (child.forms) {
+                                                var c = child.forms.filter(function (ch) { return ch.expandOnboarding; });
+                                                return __assign(__assign({}, child), { forms: c });
+                                            }
+                                            return child;
+                                        });
+                                        return __assign(__assign({}, sub), { forms: s });
+                                    }
+                                    return sub;
+                                });
+                                return __assign(__assign({}, cat), { forms: f });
                             }
-                            return child;
+                            return cat;
                         });
-                        return __assign(__assign({}, sub), { forms: s });
-                    }
-                    return sub;
-                });
-                return __assign(__assign({}, cat), { forms: f });
-            }
-            return cat;
+                        _b.label = 2;
+                    case 2: return [2 /*return*/];
+                }
+            });
         });
     };
     OnboardingCreateComponent.prototype.existSubForm = function (forms) {
@@ -4619,19 +5560,19 @@ var OnboardingCreateComponent = /** @class */ (function () {
                     case 0:
                         if (!(this.form.valid && this.onChangeCategory())) return [3 /*break*/, 7];
                         this.loading = true;
-                        if (!(this.id && this.id !== "0")) return [3 /*break*/, 2];
-                        return [4 /*yield*/, this.service.updateOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, _id: this.id }))];
+                        if (!(this.onboardingId && this.onboardingId !== "0")) return [3 /*break*/, 2];
+                        return [4 /*yield*/, this.service.updateOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, Finished: true, _id: this.onboardingId }))];
                     case 1:
                         _a = _b.sent();
                         return [3 /*break*/, 4];
-                    case 2: return [4 /*yield*/, this.service.createOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories }))];
+                    case 2: return [4 /*yield*/, this.service.createOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, Finished: true }))];
                     case 3:
                         _a = _b.sent();
                         _b.label = 4;
                     case 4:
                         result = _a;
                         if (!result) return [3 /*break*/, 6];
-                        if (this.id && this.id !== "0") {
+                        if (this.onboardingId && this.onboardingId !== "0") {
                             this.categories = result.categories;
                             this.currentOnboarding = result;
                         }
@@ -4652,117 +5593,48 @@ var OnboardingCreateComponent = /** @class */ (function () {
             });
         });
     };
-    OnboardingCreateComponent.prototype.onExpendMore = function (event) {
-        var params = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            params[_i - 1] = arguments[_i];
-        }
-        if (event) {
-            if (event.event) {
-                event.event.preventDefault();
-            }
-            // if (event.field && !event.field.expandMore) {
-            //   for (let i = 0; i < this.categories.length; i++) {
-            //     this.categories[i].expandMore = false;
-            //     if (this.categories[i].forms) {
-            //       for (let j = 0; j < this.categories[i].forms.length; j++) {
-            //         this.categories[i].forms[j].expandMore = false;
-            //       }
-            //     }
-            //   }
-            // }
-        }
-        if (params.length === 1) {
-            this.categories[params[0]].defaultValue = !this.categories[params[0]].defaultValue;
-        }
-        else if (params.length === 2) {
-            this.currentActive = String(params[0]) + String(params[1]);
-            if (this.categories[params[0]].forms[params[1]].defaultValue) {
-                this.categories[params[0]].forms[params[1]].defaultValue = false;
-            }
-            else {
-                this.categories[params[0]].defaultValue = true;
-                this.categories[params[0]].forms[params[1]].defaultValue = true;
-            }
-        }
-        else if (params.length === 3) {
-            if (this.categories[params[0]].forms[params[1]].forms[params[2]].defaultValue) {
-                this.categories[params[0]].forms[params[1]].forms[params[2]].defaultValue = false;
-            }
-            else {
-                this.categories[params[0]].defaultValue = true;
-                this.categories[params[0]].forms[params[1]].defaultValue = true;
-                this.categories[params[0]].forms[params[1]].forms[params[2]].defaultValue = true;
-            }
-        }
-        else {
-            if (this.categories[params[0]].forms[params[1]].forms[params[2]].forms[params[3]].defaultValue) {
-                this.categories[params[0]].forms[params[1]].forms[params[2]].forms[params[3]].defaultValue = false;
-            }
-            else {
-                this.categories[params[0]].defaultValue = true;
-                this.categories[params[0]].forms[params[1]].defaultValue = true;
-                this.categories[params[0]].forms[params[1]].forms[params[2]].defaultValue = true;
-                this.categories[params[0]].forms[params[1]].forms[params[2]].forms[params[3]].defaultValue = true;
-            }
-        }
-    };
-    OnboardingCreateComponent.prototype.drop = function (event) {
-        this.canExit = false;
-        if (event.previousContainer === event.container) {
-            moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-        }
-        else {
-            transferArrayItem(event.previousContainer.data, event.container.data, event.previousIndex, event.currentIndex);
-        }
+    OnboardingCreateComponent.prototype.onResumeLater = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var result, _a;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        this.loading = true;
+                        if (!(this.onboardingId && this.onboardingId !== "0")) return [3 /*break*/, 2];
+                        return [4 /*yield*/, this.service.updateOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, Finished: false, _id: this.onboardingId }))];
+                    case 1:
+                        _a = _b.sent();
+                        return [3 /*break*/, 4];
+                    case 2: return [4 /*yield*/, this.service.createOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, Finished: false }))];
+                    case 3:
+                        _a = _b.sent();
+                        _b.label = 4;
+                    case 4:
+                        result = _a;
+                        if (!result) return [3 /*break*/, 6];
+                        if (this.onboardingId && this.onboardingId !== "0") {
+                            this.categories = result.categories;
+                            this.currentOnboarding = result;
+                        }
+                        return [4 /*yield*/, this.service.getAllProfil()];
+                    case 5:
+                        _b.sent();
+                        this.loading = false;
+                        this.canExit = true;
+                        this.showMode = true;
+                        this.router.navigate([this.service.mainPath + '/requests']);
+                        return [3 /*break*/, 7];
+                    case 6:
+                        console.log("errror......");
+                        this.loading = false;
+                        _b.label = 7;
+                    case 7: return [2 /*return*/];
+                }
+            });
+        });
     };
     OnboardingCreateComponent.prototype.ingoreDefaultAction = function (e) {
         e.preventDefault();
-    };
-    OnboardingCreateComponent.prototype.onShowCategory = function () {
-        this.showProfileName = !this.showProfileName;
-    };
-    OnboardingCreateComponent.prototype.onSelectPicto = function (e, picto) {
-        e.preventDefault();
-        this.canExit = false;
-        this.form.patchValue({ Picto: picto });
-        this.isPictoListShow = !this.isPictoListShow;
-    };
-    OnboardingCreateComponent.prototype.onShowPictoList = function (e) {
-        e.preventDefault();
-        this.isPictoListShow = !this.isPictoListShow;
-    };
-    OnboardingCreateComponent.prototype.openDialog = function () {
-        var dialogRef = this.dialog.open(UpdateProfilComponent, {
-            data: {
-                matIconList: this.matIconList,
-                form: this.form,
-                tags: this.tags
-            }
-        });
-        dialogRef.afterClosed().subscribe(function (confirmed) {
-            if (confirmed) {
-            }
-        });
-    };
-    OnboardingCreateComponent.prototype.isExpanded = function (forms) {
-        var e_2, _a;
-        var isExpend = false;
-        try {
-            for (var forms_2 = __values(forms), forms_2_1 = forms_2.next(); !forms_2_1.done; forms_2_1 = forms_2.next()) {
-                var form = forms_2_1.value;
-                if (form.defaultValue) {
-                    isExpend = true;
-                }
-            }
-        }
-        catch (e_2_1) { e_2 = { error: e_2_1 }; }
-        finally {
-            try {
-                if (forms_2_1 && !forms_2_1.done && (_a = forms_2.return)) _a.call(forms_2);
-            }
-            finally { if (e_2) throw e_2.error; }
-        }
     };
     OnboardingCreateComponent.prototype.onCheckConditionLocationValue = function (iscondition, location, conditionValue) {
         if (!iscondition) {
@@ -4821,23 +5693,23 @@ var OnboardingCreateComponent = /** @class */ (function () {
         }
     };
     OnboardingCreateComponent.prototype.checkSubForm = function (forms) {
-        var e_3, _a;
+        var e_2, _a;
         var hasSubForm = false;
         try {
-            for (var forms_3 = __values(forms), forms_3_1 = forms_3.next(); !forms_3_1.done; forms_3_1 = forms_3.next()) {
-                var form = forms_3_1.value;
+            for (var forms_2 = __values(forms), forms_2_1 = forms_2.next(); !forms_2_1.done; forms_2_1 = forms_2.next()) {
+                var form = forms_2_1.value;
                 if (form.forms && form.forms.length > 0) {
                     hasSubForm = true;
                     break;
                 }
             }
         }
-        catch (e_3_1) { e_3 = { error: e_3_1 }; }
+        catch (e_2_1) { e_2 = { error: e_2_1 }; }
         finally {
             try {
-                if (forms_3_1 && !forms_3_1.done && (_a = forms_3.return)) _a.call(forms_3);
+                if (forms_2_1 && !forms_2_1.done && (_a = forms_2.return)) _a.call(forms_2);
             }
-            finally { if (e_3) throw e_3.error; }
+            finally { if (e_2) throw e_2.error; }
         }
         return hasSubForm;
     };
@@ -4852,28 +5724,49 @@ var OnboardingCreateComponent = /** @class */ (function () {
     OnboardingCreateComponent.prototype.onCheckValue = function (event) {
         this.invalideValue = event;
     };
+    OnboardingCreateComponent.prototype.onLink = function (e) {
+        e.preventDefault();
+    };
+    OnboardingCreateComponent.prototype.fieldWidth = function (length) {
+        if (length === 1) {
+            return '50%';
+        }
+        else if (length === 2) {
+            return '50%';
+        }
+        else if (length === 3) {
+            return '33%';
+        }
+        else if (length === 4) {
+            return '25%';
+        }
+        else if (length === 5) {
+            return '33%';
+        }
+        else if (length >= 6) {
+            return '33%';
+        }
+    };
+    OnboardingCreateComponent.prototype.onShowMode = function () {
+        this.showMode = !this.showMode;
+        this.onLoadViewDetail(this.categories);
+    };
     OnboardingCreateComponent.ɵfac = function OnboardingCreateComponent_Factory(t) { return new (t || OnboardingCreateComponent)(ɵɵdirectiveInject(FormBuilder), ɵɵdirectiveInject(OnboardingService), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(MatDialog)); };
-    OnboardingCreateComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingCreateComponent, selectors: [["create-onboarding"]], decls: 6, vars: 6, consts: [[1, "content"], [4, "ngIf"], [3, "ngStyle", "formGroup", "submit"], ["class", "select-contact", 4, "ngIf"], ["class", "category", 4, "ngIf"], [1, "category"], [1, "side-bar"], ["mat-button", "", 1, "register-button", 3, "click"], [1, "fields", 2, "height", "85vh", "margin-left", "20px", "width", "85%"], [1, "example-list", "mt-20"], ["class", "category-item", 3, "id", 4, "ngFor", "ngForOf"], [1, "category-item", 3, "id"], [1, "field-content"], [1, "field-item"], [1, "category-name"], [1, ""], ["class", "field-category", 3, "id", 4, "ngFor", "ngForOf"], [1, "field-category", 3, "id"], [1, "inner-loop"], [1, "fields-content"], [1, "fields-container"], [4, "ngFor", "ngForOf"], [1, "select-contact"], [1, "select-template"], ["appearance", "outline", 1, "full-width"], ["formControlName", "TemplateId", "required", "", 3, "selectionChange"], [3, "value", 4, "ngFor", "ngForOf"], ["mat-raised-button", "", "color", "primary", 3, "disabled", "click"], [3, "value"], [1, "summary"], [1, "template-title"], ["class", "li-title", 3, "class", "click", 4, "ngFor", "ngForOf"], ["mat-button", "", "type", "submit", 1, "register-button", 3, "disabled"], [1, "fields", 2, "height", "85vh"], ["class", "category-item content-item", 3, "class", "id", 4, "ngFor", "ngForOf"], [1, "li-title", 3, "click"], [3, "ngxScrollTo"], [1, "category-item", "content-item", 3, "id"], ["placeholder", "Company", "required", "", "style", "width: 150px;", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], ["placeholder", "Type de ticket", "required", "", "style", "width: 150px;", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], [1, "category-container"], ["placeholder", "Company", "required", "", 2, "width", "150px", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["placeholder", "Type de ticket", "required", "", 2, "width", "150px", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["class", "inner-loop", 4, "ngIf"], [3, "field", "length", "i", "j", "onDrop", "onCheckValue"], [1, "child"], ["class", "inner-child", 4, "ngIf"], [1, "inner-child"], ["class", "inner-child-content", 3, "id", 4, "ngFor", "ngForOf"], [1, "inner-child-content", 3, "id"]], template: function OnboardingCreateComponent_Template(rf, ctx) { if (rf & 1) {
+    OnboardingCreateComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingCreateComponent, selectors: [["create-onboarding"]], hostBindings: function OnboardingCreateComponent_HostBindings(rf, ctx) { if (rf & 1) {
+            ɵɵlistener("scroll", function OnboardingCreateComponent_scroll_HostBindingHandler($event) { return ctx.onScroll($event); });
+        } }, decls: 4, vars: 2, consts: [[1, "content"], [3, "formGroup", "submit", 4, "ngIf"], [3, "detailView", "onShowMode", 4, "ngIf"], [3, "formGroup", "submit"], [1, "category"], [1, "title-group"], [2, "margin-left", "20px", "cursor", "pointer", 3, "click"], ["mat-button", "", "type", "button", 1, "register-button", 3, "disabled", "click"], ["id", "fields", 1, "fields"], ["class", "menu-item", 3, "ngxScrollTo", "id", 4, "ngFor", "ngForOf"], [1, "category-container", 3, "scroll"], ["class", "category-item content-item", 3, "id", 4, "ngFor", "ngForOf"], [1, "actions-button", 2, "margin-bottom", "50px"], ["mat-button", "", "type", "submit", 1, "register-button", "send-form", 3, "disabled"], ["mat-button", "", "type", "button", 1, "register-button", "resume", 3, "disabled", "click"], [1, "menu-item", 3, "ngxScrollTo", "id"], [1, "category-item", "content-item", 3, "id"], [1, "field-content"], [1, "field-item"], [1, "category-title-group"], [1, "category-name"], ["placeholder", "Company", "required", "", "style", "width: 150px;", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], ["placeholder", "Type de ticket", "required", "", "style", "width: 150px;", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], [1, "category-container"], ["class", "field-category", 3, "id", "width", 4, "ngFor", "ngForOf"], ["placeholder", "Company", "required", "", 2, "width", "150px", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], ["placeholder", "Type de ticket", "required", "", 2, "width", "150px", 3, "ngModel", "ngModelOptions", "ngModelChange"], [1, "field-category", 3, "id"], ["class", "inner-loop", 4, "ngIf"], [1, "inner-loop"], [1, "fields-content"], [1, "fields-container"], [3, "field", "length", "i", "j"], [1, "child"], ["class", "inner-child", 4, "ngIf"], [1, "inner-child"], ["class", "inner-child-content", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "inner-child-content", 3, "id"], [3, "field", "length", "i", "j", "onCheckValue"], [3, "detailView", "onShowMode"]], template: function OnboardingCreateComponent_Template(rf, ctx) { if (rf & 1) {
             ɵɵelementStart(0, "main");
             ɵɵelementStart(1, "div", 0);
-            ɵɵtemplate(2, OnboardingCreateComponent_ng_container_2_Template, 2, 1, "ng-container", 1);
-            ɵɵelementStart(3, "form", 2);
-            ɵɵlistener("submit", function OnboardingCreateComponent_Template_form_submit_3_listener() { return ctx.onSubmit(); });
-            ɵɵtemplate(4, OnboardingCreateComponent_div_4_Template, 13, 5, "div", 3);
-            ɵɵtemplate(5, OnboardingCreateComponent_div_5_Template, 14, 6, "div", 4);
-            ɵɵelementEnd();
+            ɵɵtemplate(2, OnboardingCreateComponent_form_2_Template, 19, 7, "form", 1);
+            ɵɵtemplate(3, OnboardingCreateComponent_lib_onboarding_detail_3_Template, 1, 1, "lib-onboarding-detail", 2);
             ɵɵelementEnd();
             ɵɵelementEnd();
         } if (rf & 2) {
             ɵɵadvance(2);
+            ɵɵproperty("ngIf", !ctx.showMode);
+            ɵɵadvance(1);
             ɵɵproperty("ngIf", ctx.showMode);
-            ɵɵadvance(1);
-            ɵɵproperty("ngStyle", ctx.showMode && ɵɵpureFunction0(5, _c1$2))("formGroup", ctx.form);
-            ɵɵadvance(1);
-            ɵɵproperty("ngIf", !ctx.isSelected);
-            ɵɵadvance(1);
-            ɵɵproperty("ngIf", ctx.isSelected);
-        } }, directives: [NgIf, ɵangular_packages_forms_forms_y, NgControlStatusGroup, NgStyle, FormGroupDirective, MatButton, NgForOf, MatFormField, MatLabel, MatSelect, NgControlStatus, FormControlName, NativeElementInjectorDirective, RequiredValidator, MatOption, ScrollToDirective, MatIcon, NgModel, SubOnboardingCreateComponent], pipes: [KeyValuePipe], styles: ["main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;height:100vh;width:100%;display:flex;flex-direction:column;align-items:center}main[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{background-color:transparent!important}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]{width:99%;height:100%;padding-left:1%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font:bold 32px/30px Nexa Text;letter-spacing:0;color:#171f26;padding-top:20px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:20px/26px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   p.sub-title[_ngcontent-%COMP%]{max-width:400px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]{max-width:70%;margin:5% auto auto;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;padding:5%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   .select-template[_ngcontent-%COMP%]{display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-top:50px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   .select-template[_ngcontent-%COMP%]   .full-width[_ngcontent-%COMP%]{width:40%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   .select-template[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{float:right;text-align:center;border:1px solid #543cb6;border-radius:7px;padding:1em 2em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6;-ms-grid-row-align:center;align-self:center;width:220px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .category[_ngcontent-%COMP%]   .onboarding-mat-stepper[_ngcontent-%COMP%]   mat-horizontal-stepper[_ngcontent-%COMP%]   .next-step[_ngcontent-%COMP%]{float:right}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]{display:flex;height:100%;width:100%;max-width:1500px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]{max-width:70%;margin:5% auto auto;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;padding:5%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{float:right;text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6;align-self:flex-end}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]{width:786px;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;opacity:1;margin:auto;padding:0 25px;-ms-grid-row-align:center;align-self:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:center;font:900 32px/48px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%], main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{font:18px/24px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]{display:flex;align-items:center;position:relative}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]{margin-right:15px;min-width:50px;width:30px;padding:9px 12px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-right:10px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]{position:absolute;height:200px;width:100%;background:no-repeat padding-box #fff;border:1px solid #171f26;border-radius:8px;top:100%;z-index:1}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin:15px;border:none;font-size:40px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]:hover{color:#830b6b!important;cursor:pointer}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .box-title-content[_ngcontent-%COMP%]{width:100%;margin:25px auto}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]{font:900 32px/38px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:15px/26px Nexa Text;letter-spacing:0;color:#171f26;text-align:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .link-create-profil[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6}main[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.category-name[_ngcontent-%COMP%]{text-align:left;font:bold 22px/48px Nexa Text;letter-spacing:0;color:#171f26;padding-left:15px}.full-width[_ngcontent-%COMP%]{width:100%}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]{width:90%;margin:auto 2% auto auto}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}  .mat-form-field-appearance-fill .mat-form-field-underline::before{background-color:transparent}[_nghost-%COMP%]     .mat-checkbox-checked.mat-accent .mat-checkbox-background, [_nghost-%COMP%]     .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{background-color:transparent}.category-action[_ngcontent-%COMP%]{display:flex;width:100%}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]{display:flex;align-items:baseline;width:98%;border:1px solid #dce4e9;border-radius:8px;background-color:#fff;padding-bottom:10px;margin-top:10px;min-height:60px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]{height:auto;background-color:#49a094;padding-top:7px;width:40px;-ms-grid-row-align:stretch;align-self:stretch;border-top-left-radius:8px;border-bottom-left-radius:8px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]{width:100%;-ms-grid-row-align:center;align-self:center}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr 1fr;grid-template-columns:1fr 1fr 1fr;align-items:center;border:transparent!important}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%]{color:transparent!important}.category-item[_ngcontent-%COMP%]   .category-container[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .category-container[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:flex-start}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;opacity:1}.cdk-drag-preview[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:28px!important}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%], .example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform 250ms cubic-bezier(0,0,.2,1)}.child[_ngcontent-%COMP%]{margin-left:0}.child[_ngcontent-%COMP%]   .inner-child[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.category[_ngcontent-%COMP%]{display:flex;flex-direction:row;width:100vw}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]{width:250px;background-color:#fff;margin:10px 20px;border-radius:5px;border:1px solid #dbcbcb96}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:15px;border-bottom:1px solid #dbcbcb96;margin:10px;padding-bottom:5px;padding-top:0;font-family:\"Nexa Text\";display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{font-weight:600;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;margin-top:-5px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:15px;cursor:pointer}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3.template-title[_ngcontent-%COMP%]{font:900 24px/36px Nexa Text;letter-spacing:0;color:#171f26}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{font-weight:600;margin-left:-27px;font-size:15px;list-style:none}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{padding:5px;margin:5px auto;cursor:pointer;text-align:left;font:12px/19px Nexa Text;letter-spacing:0;color:#535760}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{padding-left:0;margin-left:0}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]{font-size:14px;font-weight:600;margin-right:10px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{width:140px;outline:0;border:1px dashed grey}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{display:inline-flex;align-items:center;width:100%}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:10px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]:hover{background:no-repeat padding-box #e5e8ee;border-radius:5px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]{list-style:none;padding-left:20px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%]::marker, .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]:hover{font-weight:600;background:no-repeat padding-box #e5e8ee;border-radius:5px}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]{width:90%;max-height:100vh;overflow:auto;margin-right:.5%;overflow-x:hidden}.category[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]{background-color:#f4f7f9!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:28px!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:40px}.category[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;margin-left:0!important;min-width:auto;color:#fff}.add-button-sub-category[_ngcontent-%COMP%]{width:95.5%!important;margin-bottom:22px;margin-left:22px}.add-button-container[_ngcontent-%COMP%]{background:no-repeat padding-box #fff;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98.5%;margin-bottom:22px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;font:17px/26px Nexa Text;letter-spacing:0;color:#c2c8d5;box-shadow:none}.add-category[_ngcontent-%COMP%]{border:1px dashed #c2c8d5;border-radius:5px;margin-left:10px;margin-bottom:10px;font:bold 12px/19px Nexa Text;letter-spacing:0;color:#c2c8d5;width:92%}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]{display:flex;height:100%;margin:0;width:100%;margin-top:10px;margin-bottom:10px}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;-ms-grid-row-align:stretch;align-self:stretch;margin-top:0;margin-left:20px;border-bottom-left-radius:8px;border-top-left-radius:8px}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-2-background[_ngcontent-%COMP%]{background-color:#cffaf4!important}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-3-background[_ngcontent-%COMP%]{background-color:#e5e8ee!important}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]{width:100%;padding-left:10px;padding-right:10px;padding-top:5px}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.side-bar[_ngcontent-%COMP%]{display:flex;flex-direction:column}.register-button[_ngcontent-%COMP%]{background:no-repeat padding-box #171f26!important;border:2px solid #192128!important;border-radius:8px;color:#fff!important;width:85%;margin-left:22px!important;border:none!important;margin-top:10px}.register-button[disabled][disabled][_ngcontent-%COMP%]{opacity:.5!important;background:no-repeat padding-box #dadee2!important}.content-item[_ngcontent-%COMP%]{transition-property:border-image-slice border-image-source border-width;transition-timing-function:ease-in-out;transition-duration:.5s}.active-content[_ngcontent-%COMP%]{border-image-slice:1;border-width:2px;border-image-source:linear-gradient(to left,#9d107d,#4862ab)}  .phone-input-view-collab{border-bottom:1px solid #949494!important;padding-bottom:.3em;padding-top:1em;display:block!important;max-width:100%;font:14px/20px \"Nexa Text\"!important;width:95%}  .country-dropdown{min-width:unset!important}  .iti{width:100%!important}  #phone{width:90%!important}  #mobile-phone{width:100%}"] });
+        } }, directives: [NgIf, ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, MatIcon, MatButton, NgForOf, ScrollToDirective, MatSelect, RequiredValidator, NgControlStatus, NgModel, NativeElementInjectorDirective, MatOption, SubOnboardingCreateComponent, OnboardingDetailComponent], styles: ["main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;height:100vh;width:100%;display:flex;flex-direction:column;align-items:center}main[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{background-color:transparent!important}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]{width:99%;height:100%;padding-left:1%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font:bold 32px/30px Nexa Text;letter-spacing:0;color:#171f26;padding-top:20px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:20px/26px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   p.sub-title[_ngcontent-%COMP%]{max-width:400px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]{max-width:70%;margin:5% auto auto;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;padding:5%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   .select-template[_ngcontent-%COMP%]{display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-top:50px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   .select-template[_ngcontent-%COMP%]   .full-width[_ngcontent-%COMP%]{width:40%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   .select-template[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{float:right;text-align:center;border:1px solid #543cb6;border-radius:7px;padding:1em 2em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6;-ms-grid-row-align:center;align-self:center;width:220px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .category[_ngcontent-%COMP%]   .onboarding-mat-stepper[_ngcontent-%COMP%]   mat-horizontal-stepper[_ngcontent-%COMP%]   .next-step[_ngcontent-%COMP%]{float:right}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]{display:flex;height:100%;width:100%;max-width:1500px;margin:auto;overflow:hidden}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]{max-width:70%;margin:5% auto auto;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;padding:5%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{float:right;text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6;align-self:flex-end}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]{width:786px;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;opacity:1;margin:auto;padding:0 25px;-ms-grid-row-align:center;align-self:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:center;font:900 32px/48px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%], main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{font:18px/24px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]{display:flex;align-items:center;position:relative}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]{margin-right:15px;min-width:50px;width:30px;padding:9px 12px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-right:10px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]{position:absolute;height:200px;width:100%;background:no-repeat padding-box #fff;border:1px solid #171f26;border-radius:8px;top:100%;z-index:1}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin:15px;border:none;font-size:40px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]:hover{color:#830b6b!important;cursor:pointer}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .box-title-content[_ngcontent-%COMP%]{width:100%;margin:25px auto}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]{font:900 32px/38px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:15px/26px Nexa Text;letter-spacing:0;color:#171f26;text-align:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .link-create-profil[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6}main[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.full-width[_ngcontent-%COMP%]{width:100%}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]{width:90%;margin:auto 2% auto auto}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}  .mat-form-field-appearance-fill .mat-form-field-underline::before{background-color:transparent}[_nghost-%COMP%]     .mat-checkbox-checked.mat-accent .mat-checkbox-background, [_nghost-%COMP%]     .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{background-color:transparent}.category-action[_ngcontent-%COMP%]{display:flex;width:100%;overflow:hidden}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]{display:flex;align-items:baseline;width:100%;border:1px solid #dce4e9;border-radius:8px;background-color:#fff;margin-top:10px;padding:15px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]{height:auto;background-color:#49a094;padding-top:7px;width:40px;-ms-grid-row-align:stretch;align-self:stretch;border-top-left-radius:8px;border-bottom-left-radius:8px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]{width:100%}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr 1fr;grid-template-columns:1fr 1fr 1fr;align-items:center;border:transparent!important}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .category-title-group[_ngcontent-%COMP%]   p[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .category-title-group[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:250;font-size:14px;line-height:16px;color:#575f6e}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .category-title-group[_ngcontent-%COMP%]   .category-name[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .category-title-group[_ngcontent-%COMP%]   .category-name[_ngcontent-%COMP%]{text-align:left;font:bold 22px/48px Nexa Text;letter-spacing:0;color:#171f26;margin:0}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%]{color:transparent!important}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;opacity:1}.cdk-drag-preview[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:28px!important}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%], .example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform 250ms cubic-bezier(0,0,.2,1)}.child[_ngcontent-%COMP%]{margin-left:0}.child[_ngcontent-%COMP%]   .inner-child[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.category[_ngcontent-%COMP%]{width:100%}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]{width:250px;background-color:#fff;margin:10px 20px;border-radius:5px;border:1px solid #dbcbcb96}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:15px;border-bottom:1px solid #dbcbcb96;margin:10px;padding-bottom:5px;padding-top:0;font-family:\"Nexa Text\";display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{font-weight:600;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;margin-top:-5px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:15px;cursor:pointer}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3.template-title[_ngcontent-%COMP%]{font:900 24px/36px Nexa Text;letter-spacing:0;color:#171f26}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{font-weight:600;margin-left:-27px;font-size:15px;list-style:none}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{padding:5px;margin:5px auto;cursor:pointer;text-align:left;font:12px/19px Nexa Text;letter-spacing:0;color:#535760}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{padding-left:0;margin-left:0}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]{font-size:14px;font-weight:600;margin-right:10px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{width:140px;outline:0;border:1px dashed grey}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{display:inline-flex;align-items:center;width:100%}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:10px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]:hover{background:no-repeat padding-box #e5e8ee;border-radius:5px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]{list-style:none;padding-left:20px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%]::marker, .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]:hover{font-weight:600;background:no-repeat padding-box #e5e8ee;border-radius:5px}.category[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]{background-color:#f4f7f9!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:28px!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:40px}.category[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;margin-left:0!important;min-width:auto;color:#fff}.category[_ngcontent-%COMP%]   .title-group[_ngcontent-%COMP%]{display:flex;justify-content:space-between;margin-top:10px}.category[_ngcontent-%COMP%]   .title-group[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{margin:0 0 8px;display:flex;align-items:center}.add-button-sub-category[_ngcontent-%COMP%]{width:95.5%!important;margin-bottom:22px;margin-left:22px}.add-button-container[_ngcontent-%COMP%]{background:no-repeat padding-box #fff;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98.5%;margin-bottom:22px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;font:17px/26px Nexa Text;letter-spacing:0;color:#c2c8d5;box-shadow:none}.add-category[_ngcontent-%COMP%]{border:1px dashed #c2c8d5;border-radius:5px;margin-left:10px;margin-bottom:10px;font:bold 12px/19px Nexa Text;letter-spacing:0;color:#c2c8d5;width:92%}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]{display:flex;height:100%;margin:0;width:100%;margin-top:10px;margin-bottom:10px}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;-ms-grid-row-align:stretch;align-self:stretch;margin-top:0;margin-left:20px;border-bottom-left-radius:8px;border-top-left-radius:8px}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-2-background[_ngcontent-%COMP%]{background-color:#cffaf4!important}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-3-background[_ngcontent-%COMP%]{background-color:#e5e8ee!important}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]{width:100%;padding-right:10px;padding-top:5px}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.side-bar[_ngcontent-%COMP%]{display:flex;flex-direction:column}.register-button[_ngcontent-%COMP%]{background:0 0;border:2px solid #192128!important;border-radius:8px;margin-left:22px!important;color:#000}.register-button[disabled][disabled][_ngcontent-%COMP%]{opacity:.5!important;background:no-repeat padding-box #dadee2!important}.content-item[_ngcontent-%COMP%]{transition-property:border-image-slice border-image-source border-width;transition-timing-function:ease-in-out;transition-duration:.5s}.active-content[_ngcontent-%COMP%]{border-image-slice:1;border-width:2px;border-image-source:linear-gradient(to left,#9d107d,#4862ab)}  .phone-input-view-collab{border-bottom:1px solid #949494!important;padding-bottom:.3em;padding-top:1em;display:block!important;max-width:100%;font:14px/20px \"Nexa Text\"!important;width:95%}  .country-dropdown{min-width:unset!important}  .iti{width:100%!important}  #phone{width:90%!important}  #mobile-phone{width:100%}  .fields{max-height:100vh;margin-right:.5%;overflow:hidden;width:100%}  .fields mat-tab-group{height:100%;width:100%;overflow:hidden}  .fields mat-tab-group .mat-tab-body-wrapper{height:100%;max-height:90vh;overflow:auto}  .fields mat-tab-group .mat-tab-body-wrapper .mat-tab-body{height:100%}  .fields mat-tab-group .mat-tab-body-wrapper .mat-tab-body .mat-tab-body-content{width:100%;overflow:hidden}.fields[_ngcontent-%COMP%]{height:95%}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{list-style:none;display:flex;margin:0;padding:0}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{margin-right:20px;padding-bottom:5px;border-bottom:3px solid transparent}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26;opacity:.5}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item.active[_ngcontent-%COMP%], .fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item[_ngcontent-%COMP%]:hover{cursor:pointer;border-bottom:3px solid #3c4252}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%], .fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item[_ngcontent-%COMP%]:hover   a[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;opacity:1}  .category-container{overflow:auto;max-height:100%;display:flex;flex-wrap:wrap;-ms-overflow-style:none;scrollbar-width:none}  .category-container mat-form-field{width:100%}  .category-container .actions-button{margin-top:20px;margin-bottom:50px}  .category-container .actions-button .send-form{margin-left:0!important;background-color:#000;color:#fff}  .category-container .actions-button .resume{margin-left:25px!important}  .category-container::-webkit-scrollbar{display:none}  .category-item .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{border-color:#039be5}  .category-item .mat-radio-button.mat-accent .mat-radio-inner-circle,   .category-item .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),   .category-item .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,   .category-item .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{background-color:#039be5}  .category-item .mat-checkbox-checkmark-path{stroke:#fff!important}  .category-item .mat-checkbox-frame{border:2px solid #039be5!important}  .category-item .mat-checkbox-checked.mat-accent .mat-checkbox-background,   .category-item .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{background-color:#039be5!important}  .category-item .mat-checkbox-inner-container{height:20px!important;width:20px!important}"] });
     return OnboardingCreateComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(OnboardingCreateComponent, [{
@@ -4883,145 +5776,270 @@ var OnboardingCreateComponent = /** @class */ (function () {
                 templateUrl: "./onboarding-create.component.html",
                 styleUrls: ["./onboarding-create.component.scss"],
             }]
-    }], function () { return [{ type: FormBuilder }, { type: OnboardingService }, { type: ActivatedRoute }, { type: Router }, { type: MatDialog }]; }, null); })();
+    }], function () { return [{ type: FormBuilder }, { type: OnboardingService }, { type: ActivatedRoute }, { type: Router }, { type: MatDialog }]; }, { onScroll: [{
+            type: HostListener,
+            args: ['scroll', ['$event']]
+        }] }); })();
 
-function OnboardingListComponent_div_1_img_8_Template(rf, ctx) { if (rf & 1) {
-    var _r857 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "img", 15);
-    ɵɵlistener("click", function OnboardingListComponent_div_1_img_8_Template_img_click_0_listener() { ɵɵrestoreView(_r857); var ctx_r856 = ɵɵnextContext(2); return ctx_r856.cancelSearch(); });
-    ɵɵelementEnd();
-} if (rf & 2) {
-    ɵɵproperty("src", "/assets/icons/search_off-24px.svg", ɵɵsanitizeUrl);
-} }
-function OnboardingListComponent_div_1_span_12_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "span", 16);
+function DialogCreateOnboardingComponent_mat_option_7_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelementStart(0, "mat-option", 7);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r853 = ɵɵnextContext(2);
+    var template_r883 = ctx.$implicit;
+    ɵɵproperty("value", template_r883._id);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", ctx_r853.onboardingList == null ? null : ctx_r853.onboardingList.totalElements, " ticket(s) ");
+    ɵɵtextInterpolate(template_r883.Name);
 } }
-function OnboardingListComponent_div_1_ng_template_15_Template(rf, ctx) { if (rf & 1) {
-    ɵɵtext(0);
+var DialogCreateOnboardingComponent = /** @class */ (function () {
+    function DialogCreateOnboardingComponent(data, dialogRef, service) {
+        var _this = this;
+        this.data = data;
+        this.dialogRef = dialogRef;
+        this.service = service;
+        this.templates = [];
+        this.onboarding = {
+            TemplateId: 0,
+        };
+        this.service._templates.subscribe(function (data) {
+            _this.templates = data;
+        });
+    }
+    DialogCreateOnboardingComponent.prototype.ngOnInit = function () {
+        this.templates = this.data.templates;
+    };
+    DialogCreateOnboardingComponent.prototype.createOnboarding = function () {
+        var _this = this;
+        if (!this.disabled()) {
+            var template = this.templates.find(function (temp) { return temp._id === _this.onboarding.TemplateId; });
+            this.dialogRef.close(__assign(__assign({}, this.onboarding), { categories: template.categories }));
+        }
+    };
+    DialogCreateOnboardingComponent.prototype.close = function () {
+        this.dialogRef.close(false);
+    };
+    DialogCreateOnboardingComponent.prototype.disabled = function () {
+        return !(this.onboarding.TemplateId);
+    };
+    DialogCreateOnboardingComponent.ɵfac = function DialogCreateOnboardingComponent_Factory(t) { return new (t || DialogCreateOnboardingComponent)(ɵɵdirectiveInject(MAT_DIALOG_DATA), ɵɵdirectiveInject(MatDialogRef), ɵɵdirectiveInject(OnboardingService)); };
+    DialogCreateOnboardingComponent.ɵcmp = ɵɵdefineComponent({ type: DialogCreateOnboardingComponent, selectors: [["lib-dialog-create-onboarding"]], decls: 13, vars: 3, consts: [[1, "title"], ["appearance", "outline", 1, "full-width"], ["required", "", 3, "ngModel", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [1, "action-content"], ["mat-raised-button", "", 1, "create-profil", 3, "disabled", "click"], ["mat-raised-button", "", 1, "abandon-profil", 3, "click"], [3, "value"]], template: function DialogCreateOnboardingComponent_Template(rf, ctx) { if (rf & 1) {
+            ɵɵelementStart(0, "mat-dialog-content");
+            ɵɵelementStart(1, "h3", 0);
+            ɵɵtext(2, "Cr\u00E9ation d\u2019une demande d'int\u00E9gration");
+            ɵɵelementEnd();
+            ɵɵelementStart(3, "mat-form-field", 1);
+            ɵɵelementStart(4, "mat-label");
+            ɵɵtext(5, "Type de profil");
+            ɵɵelementEnd();
+            ɵɵelementStart(6, "mat-select", 2);
+            ɵɵlistener("ngModelChange", function DialogCreateOnboardingComponent_Template_mat_select_ngModelChange_6_listener($event) { return ctx.onboarding.TemplateId = $event; });
+            ɵɵtemplate(7, DialogCreateOnboardingComponent_mat_option_7_Template, 2, 2, "mat-option", 3);
+            ɵɵelementEnd();
+            ɵɵelementEnd();
+            ɵɵelementStart(8, "div", 4);
+            ɵɵelementStart(9, "button", 5);
+            ɵɵlistener("click", function DialogCreateOnboardingComponent_Template_button_click_9_listener() { return ctx.createOnboarding(); });
+            ɵɵtext(10, " Lancer la demande ");
+            ɵɵelementEnd();
+            ɵɵelementStart(11, "button", 6);
+            ɵɵlistener("click", function DialogCreateOnboardingComponent_Template_button_click_11_listener() { return ctx.close(); });
+            ɵɵtext(12, " Abandonner ");
+            ɵɵelementEnd();
+            ɵɵelementEnd();
+            ɵɵelementEnd();
+        } if (rf & 2) {
+            ɵɵadvance(6);
+            ɵɵproperty("ngModel", ctx.onboarding.TemplateId);
+            ɵɵadvance(1);
+            ɵɵproperty("ngForOf", ctx.templates);
+            ɵɵadvance(2);
+            ɵɵproperty("disabled", ctx.disabled());
+        } }, directives: [MatDialogContent, MatFormField, MatLabel, MatSelect, RequiredValidator, NgControlStatus, NgModel, NativeElementInjectorDirective, NgForOf, MatButton, MatOption], styles: ["mat-dialog-content[_ngcontent-%COMP%]{display:flex!important;flex-direction:column;justify-content:flex-start;max-width:400px;min-width:400px}mat-dialog-content[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]{margin-bottom:10px}mat-dialog-content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:20px;line-height:110%;display:flex;align-items:center;color:#242731}mat-dialog-content[_ngcontent-%COMP%]   .abandon-profil[_ngcontent-%COMP%]{background-color:transparent;border:1px solid #171f26;color:#171f26;margin-left:20px}mat-dialog-content[_ngcontent-%COMP%]   .create-profil[_ngcontent-%COMP%]{background-color:#171f26;border:1px solid #171f26;color:#fff}mat-dialog-content[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:disabled, mat-dialog-content[_ngcontent-%COMP%]   button[disabled][_ngcontent-%COMP%]{opacity:.5}"] });
+    return DialogCreateOnboardingComponent;
+}());
+/*@__PURE__*/ (function () { ɵsetClassMetadata(DialogCreateOnboardingComponent, [{
+        type: Component,
+        args: [{
+                selector: 'lib-dialog-create-onboarding',
+                templateUrl: './dialog-create-onboarding.component.html',
+                styleUrls: ['./dialog-create-onboarding.component.scss']
+            }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [MAT_DIALOG_DATA]
+            }] }, { type: MatDialogRef }, { type: OnboardingService }]; }, null); })();
+
+function OnboardingTableComponent_ngx_design_table_0_Template(rf, ctx) { if (rf & 1) {
+    ɵɵelement(0, "ngx-design-table", 1);
 } if (rf & 2) {
-    var ctx_r854 = ɵɵnextContext(2);
-    ɵɵtextInterpolate1(" Onboarding (", (ctx_r854.onboardingList == null ? null : ctx_r854.onboardingList.totalElements) || (ctx_r854.onboardingList == null ? null : ctx_r854.onboardingList.data == null ? null : ctx_r854.onboardingList.data.length), ") ");
+    var ctx_r890 = ɵɵnextContext();
+    ɵɵproperty("columnDefinitions", ctx_r890.columnDefinitions)("displayDetail", false)("data", ctx_r890.onboardingList)("lang", ctx_r890.lang)("btnOverride", true)("inputSearch", ctx_r890.inputSearch)("EmptyRow", true)("displayDetail", true)("blockDetails", true);
 } }
-function OnboardingListComponent_div_1_ng_template_16_div_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "div", 20);
-} }
-function OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "ngx-design-table", 21);
-} if (rf & 2) {
-    var ctx_r859 = ɵɵnextContext(3);
-    ɵɵproperty("columnDefinitions", ctx_r859.columnDefinitions)("displayDetail", false)("data", ctx_r859.onboardingList)("lang", ctx_r859.lang)("btnOverride", true)("inputSearch", ctx_r859.inputSearch)("EmptyRow", true)("displayDetail", true)("blockDetails", true);
-} }
-var _c0$5 = function () { return { "margin-bottom": "100vh" }; };
-function OnboardingListComponent_div_1_ng_template_16_Template(rf, ctx) { if (rf & 1) {
-    ɵɵtemplate(0, OnboardingListComponent_div_1_ng_template_16_div_0_Template, 1, 0, "div", 17);
-    ɵɵelement(1, "div", 18);
-    ɵɵelementStart(2, "div");
-    ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_16_ngx_design_table_3_Template, 1, 9, "ngx-design-table", 19);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r855 = ɵɵnextContext(2);
-    ɵɵproperty("ngIf", ctx_r855._loading_table || !ctx_r855.onboardingList);
-    ɵɵadvance(1);
-    ɵɵproperty("ngStyle", ctx_r855._loading_table && ɵɵpureFunction0(5, _c0$5));
-    ɵɵadvance(1);
-    ɵɵclassProp("ticket-list", !ctx_r855._loading_table);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r855.onboardingList);
-} }
+var OnboardingTableComponent = /** @class */ (function () {
+    function OnboardingTableComponent() {
+    }
+    OnboardingTableComponent.prototype.ngOnInit = function () {
+    };
+    OnboardingTableComponent.ɵfac = function OnboardingTableComponent_Factory(t) { return new (t || OnboardingTableComponent)(); };
+    OnboardingTableComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingTableComponent, selectors: [["lib-onboarding-table"]], inputs: { _loading_table: "_loading_table", onboardingList: "onboardingList", columnDefinitions: "columnDefinitions", lang: "lang", inputSearch: "inputSearch" }, decls: 1, vars: 1, consts: [[3, "columnDefinitions", "displayDetail", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", "blockDetails", 4, "ngIf"], [3, "columnDefinitions", "displayDetail", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", "blockDetails"]], template: function OnboardingTableComponent_Template(rf, ctx) { if (rf & 1) {
+            ɵɵtemplate(0, OnboardingTableComponent_ngx_design_table_0_Template, 1, 9, "ngx-design-table", 0);
+        } if (rf & 2) {
+            ɵɵproperty("ngIf", ctx.onboardingList);
+        } }, directives: [NgIf, TableComponent], styles: ["ngx-design-table th span{margin:auto;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26}  ngx-design-table .mat-header-row{background:#e5e8ee}  ngx-design-table .empty-row{height:5px!important;background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table{background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table tbody tr.element-row{height:83px!important;border-radius:6px;margin:10px 0}  ngx-design-table .mat-table tbody td.mat-cell{background-color:#fff}  ngx-design-table .mat-table tbody td.mat-cell a{text-decoration:none!important}  ngx-design-table .mat-table tbody td.mat-cell:first-of-type{border-bottom-left-radius:8px;border-top-left-radius:8px}  ngx-design-table .mat-table tbody td.mat-cell:last-of-type{border-bottom-right-radius:8px;border-top-right-radius:8px}"] });
+    return OnboardingTableComponent;
+}());
+/*@__PURE__*/ (function () { ɵsetClassMetadata(OnboardingTableComponent, [{
+        type: Component,
+        args: [{
+                selector: 'lib-onboarding-table',
+                templateUrl: './onboarding-table.component.html',
+                styleUrls: ['./onboarding-table.component.scss']
+            }]
+    }], function () { return []; }, { _loading_table: [{
+            type: Input
+        }], onboardingList: [{
+            type: Input
+        }], columnDefinitions: [{
+            type: Input
+        }], lang: [{
+            type: Input
+        }], inputSearch: [{
+            type: Input
+        }] }); })();
+
 function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r861 = ɵɵgetCurrentView();
+    var _r886 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 2);
     ɵɵelementStart(1, "div", 3);
     ɵɵelementStart(2, "div", 4);
-    ɵɵtext(3, " Suivi des demandes ");
+    ɵɵelementStart(3, "ul");
+    ɵɵelementStart(4, "li", 5);
+    ɵɵtext(5);
     ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 5);
-    ɵɵelementStart(5, "mat-icon");
-    ɵɵtext(6, "search");
+    ɵɵelementStart(6, "li", 6);
+    ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_6_listener() { ɵɵrestoreView(_r886); var ctx_r885 = ɵɵnextContext(); return ctx_r885.filterOnboarding("all"); });
+    ɵɵtext(7);
     ɵɵelementEnd();
-    ɵɵelementStart(7, "input", 6);
-    ɵɵlistener("ngModelChange", function OnboardingListComponent_div_1_Template_input_ngModelChange_7_listener($event) { ɵɵrestoreView(_r861); var ctx_r860 = ɵɵnextContext(); return ctx_r860.inputSearch = $event; });
+    ɵɵelementStart(8, "li", 6);
+    ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_8_listener() { ɵɵrestoreView(_r886); var ctx_r887 = ɵɵnextContext(); return ctx_r887.filterOnboarding("publish"); });
+    ɵɵtext(9);
     ɵɵelementEnd();
-    ɵɵtemplate(8, OnboardingListComponent_div_1_img_8_Template, 1, 1, "img", 7);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(9, "div", 8);
-    ɵɵelementStart(10, "span", 9);
-    ɵɵtext(11, " Vous avez actuellement ");
-    ɵɵtemplate(12, OnboardingListComponent_div_1_span_12_Template, 2, 1, "span", 10);
-    ɵɵelementEnd();
-    ɵɵelementStart(13, "mat-tab-group", 11);
-    ɵɵlistener("selectedIndexChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedIndexChange_13_listener($event) { ɵɵrestoreView(_r861); var ctx_r862 = ɵɵnextContext(); return ctx_r862.index = $event; })("selectedTabChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedTabChange_13_listener($event) { ɵɵrestoreView(_r861); var ctx_r863 = ɵɵnextContext(); return ctx_r863.triggerChange($event); });
-    ɵɵelementStart(14, "mat-tab", 12);
-    ɵɵtemplate(15, OnboardingListComponent_div_1_ng_template_15_Template, 1, 1, "ng-template", 13);
-    ɵɵtemplate(16, OnboardingListComponent_div_1_ng_template_16_Template, 4, 6, "ng-template", 14);
+    ɵɵelementStart(10, "li", 6);
+    ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_10_listener() { ɵɵrestoreView(_r886); var ctx_r888 = ɵɵnextContext(); return ctx_r888.filterOnboarding("draft"); });
+    ɵɵtext(11);
     ɵɵelementEnd();
     ɵɵelementEnd();
+    ɵɵelementStart(12, "a", 7);
+    ɵɵlistener("click", function OnboardingListComponent_div_1_Template_a_click_12_listener() { ɵɵrestoreView(_r886); var ctx_r889 = ɵɵnextContext(); return ctx_r889.openDialog(); });
+    ɵɵtext(13, " Nouvelle demande d\u2019int\u00E9gration ");
+    ɵɵelementStart(14, "mat-icon");
+    ɵɵtext(15, "add");
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelement(16, "lib-onboarding-table", 8);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r851 = ɵɵnextContext();
-    ɵɵadvance(7);
-    ɵɵproperty("ngModel", ctx_r851.inputSearch);
+    var ctx_r884 = ɵɵnextContext();
+    ɵɵadvance(5);
+    ɵɵtextInterpolate1("Vous avez actuellement ", ctx_r884.onboardingFormatList.length, " Demandes");
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r851.inputSearch && ctx_r851.inputSearch != "");
-    ɵɵadvance(4);
-    ɵɵproperty("ngIf", ctx_r851.index == 0);
+    ɵɵclassMap(ctx_r884.currentFilter === "all" ? "active" : "");
     ɵɵadvance(1);
-    ɵɵproperty("@.disabled", true)("selectedIndex", ctx_r851.index);
+    ɵɵtextInterpolate1(" Tous (", ctx_r884.onboardingFormatList.length, ") ");
+    ɵɵadvance(1);
+    ɵɵclassMap(ctx_r884.currentFilter === "publish" ? "active" : "");
+    ɵɵadvance(1);
+    ɵɵtextInterpolate1(" Termin\u00E9es (", ctx_r884.onboardingFormatList.length, ") ");
+    ɵɵadvance(1);
+    ɵɵclassMap(ctx_r884.currentFilter === "draft" ? "active" : "");
+    ɵɵadvance(1);
+    ɵɵtextInterpolate1(" A finaliser (", 0, ") ");
+    ɵɵadvance(5);
+    ɵɵproperty("_loading_table", ctx_r884.onboardingList)("onboardingList", ctx_r884.onboardingList)("columnDefinitions", ctx_r884.columnDefinitions)("lang", ctx_r884.lang)("inputSearch", ctx_r884.inputSearch);
 } }
-var _c1$3 = function () { return { "overflow-y": "hidden", "height": "100%", "display": "flex", "position": "absolute" }; };
+var _c0$5 = function () { return { "overflow-y": "hidden", "height": "100%", "display": "flex", "position": "absolute" }; };
 var OnboardingListComponent = /** @class */ (function () {
-    function OnboardingListComponent(service, router, route) {
+    function OnboardingListComponent(service, router, route, dialog) {
+        var _this = this;
         this.service = service;
         this.router = router;
         this.route = route;
+        this.dialog = dialog;
         this.inputSearch = '';
+        this.currentFilter = 'all';
         this.search = '';
+        this.onboardingFormatList = [];
+        this.templates = [];
         this.columnDefinitions = [
+            {
+                key: 'Name',
+                value: 'Name',
+                order: 1,
+                class: 'u-1',
+                sort: true,
+            },
             {
                 key: 'Id',
                 value: 'Id',
-                order: 1,
-                class: 'u-1',
-                module: CellsComponentList.ButtonLink,
+                order: 2,
+                class: 'u-2',
                 sort: true,
-                override: [this.service.mainPath + "/request", '_id']
+            }, {
+                key: 'requestor',
+                value: 'Demandeur',
+                order: 3,
+                class: 'u-3',
+                sort: true,
+            }, {
+                key: 'TemplateName',
+                value: 'Service',
+                order: 4,
+                class: 'u-4',
+                sort: true,
             },
             {
                 key: 'createdAt',
                 value: 'Date de création',
-                order: 2,
-                class: 'u-2',
+                order: 5,
+                class: 'u-5',
                 module: CellsComponentList.DateFormat,
                 sort: true
             },
+            // {
+            //   key: 'ContactName',
+            //   value: 'Contact',
+            //   order: 6,
+            //   class: 'u-6',
+            //   sort: true,
+            //   module: CellsComponentList.NameAvatar,
+            //   override: ['ContactName', 'Email'],
+            // },
             {
-                key: 'ContactName',
-                value: 'Contact',
-                order: 3,
-                class: 'u-2',
-                sort: true,
-                module: CellsComponentList.NameAvatar,
-                override: ['ContactName', 'Email'],
+                key: 'Status',
+                value: "Status",
+                order: 6,
+                class: 'u-6',
+                sort: true
             },
             {
-                key: 'TemplateName',
-                value: 'Template',
-                order: 4,
-                class: 'u-2'
+                key: 'Action',
+                value: 'Action',
+                order: 7,
+                class: 'u-7',
+                module: CellsComponentList.ButtonLinkText,
+                override: ["/" + this.service.mainPath + "/request", 'TemplateId', '_id'],
+                align: 'center'
             }
         ];
         this._loading_table = true;
         this.HiddenIndex = 0;
         this.index = 0;
         this.lang = 'fr';
+        this.service._templates.subscribe(function (data) {
+            _this.templates = data;
+        });
     }
     OnboardingListComponent.prototype.cancelSearch = function () {
         this.inputSearch = '';
@@ -5036,25 +6054,35 @@ var OnboardingListComponent = /** @class */ (function () {
                             case 0: return [4 /*yield*/, this.service.getAllOnboarding()];
                             case 1:
                                 _a.sent();
+                                return [4 /*yield*/, this.service.getAllProfil()];
+                            case 2:
+                                _a.sent();
                                 return [2 /*return*/];
                         }
                     });
                 }); }, 500);
                 this.service.onboarding.subscribe(function (onboarding) {
-                    console.log(onboarding);
                     setTimeout(function () {
                         _this._loading_table = false;
                     }, 2000);
                     if (onboarding) {
-                        //this.onboardingList=onboarding;
                         var x = onboarding.map(function (row, index) {
-                            var _a, _b, _c, _d;
-                            row.ContactName = ((_b = (_a = row) === null || _a === void 0 ? void 0 : _a.vcontacts[0]) === null || _b === void 0 ? void 0 : _b.Name) || '';
-                            row.Email = ((_d = (_c = row) === null || _c === void 0 ? void 0 : _c.vcontacts[0]) === null || _d === void 0 ? void 0 : _d.Email) || '';
+                            var _a, _b, _c, _d, _e, _f;
+                            var user = row.categories.find(function (cat) { return cat.name === "Utilisateur"; });
+                            var formUser = user.forms.map(function (form) { return ({ key: form.key, value: form.value }); }).reduce(function (a, v) {
+                                var _a;
+                                return (__assign(__assign({}, a), (_a = {}, _a[v.key] = v.value, _a)));
+                            }, {});
+                            row.Status = row.Finished ? "Terminer" : "A finaliser";
+                            row.requestor = ((_b = (_a = row) === null || _a === void 0 ? void 0 : _a.vcontacts[0]) === null || _b === void 0 ? void 0 : _b.Name) || '';
+                            row.Name = row.ContactName = ((_c = formUser) === null || _c === void 0 ? void 0 : _c.LastName) + " " + ((_d = formUser) === null || _d === void 0 ? void 0 : _d.FirstName) || "";
+                            row.Profil = ((_e = formUser) === null || _e === void 0 ? void 0 : _e.Type_de_profil_Nowboard__c) || "";
+                            row.Email = ((_f = formUser) === null || _f === void 0 ? void 0 : _f.Email) || '';
                             row.TemplateName = row.vtemplates.length > 0 ? row.vtemplates[0].Name : '';
                             row.Id = index + 1;
                             return row;
                         });
+                        _this.onboardingFormatList = x;
                         _this.onboardingList = new CoreMatTable(x, {
                             active: 'Id', direction: 'desc'
                         }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
@@ -5080,16 +6108,37 @@ var OnboardingListComponent = /** @class */ (function () {
             }, 2000);
         }
     };
-    OnboardingListComponent.ɵfac = function OnboardingListComponent_Factory(t) { return new (t || OnboardingListComponent)(ɵɵdirectiveInject(OnboardingService), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(ActivatedRoute)); };
-    OnboardingListComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingListComponent, selectors: [["lib-onboarding-list"]], decls: 2, vars: 3, consts: [[1, "full-height", 2, "background", "#F4F7F9 0% 0% no-repeat padding-box", 3, "ngStyle"], ["class", "main-all-ticket-list", 4, "ngIf"], [1, "main-all-ticket-list"], [1, "page-title-container"], [1, "page-title"], [1, "page-search"], ["placeholder", "Recherche", "type", "text", 1, "search-box", 3, "ngModel", "ngModelChange"], [3, "src", "click", 4, "ngIf"], [1, "content-view-list-ticket"], [1, "mat-tab-left"], ["class", "mat-tab-left-count", 4, "ngIf"], [1, "list-ticket-tab", 3, "selectedIndex", "selectedIndexChange", "selectedTabChange"], [2, "background-image", "none"], ["mat-tab-label", ""], ["matTabContent", ""], [3, "src", "click"], [1, "mat-tab-left-count"], ["class", "bt-spinner", 4, "ngIf"], [3, "ngStyle"], [3, "columnDefinitions", "displayDetail", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", "blockDetails", 4, "ngIf"], [1, "bt-spinner"], [3, "columnDefinitions", "displayDetail", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", "blockDetails"]], template: function OnboardingListComponent_Template(rf, ctx) { if (rf & 1) {
+    OnboardingListComponent.prototype.filterOnboarding = function (name) {
+        this.currentFilter = name;
+        var newFiltered = name === 'draft' ? [] : this.onboardingFormatList;
+        this.onboardingList = new CoreMatTable(newFiltered, {
+            active: 'Id', direction: 'desc'
+        }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
+    };
+    OnboardingListComponent.prototype.openDialog = function () {
+        var _this = this;
+        var dialogRef = this.dialog.open(DialogCreateOnboardingComponent, {
+            data: {
+                templates: this.templates
+            }
+        });
+        dialogRef.afterClosed().subscribe(function (current) {
+            if (current) {
+                _this.service.currentOnboarding.next(current);
+                _this.router.navigate([_this.service.mainPath + ("/request/" + current.TemplateId + "/0")]);
+            }
+        });
+    };
+    OnboardingListComponent.ɵfac = function OnboardingListComponent_Factory(t) { return new (t || OnboardingListComponent)(ɵɵdirectiveInject(OnboardingService), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(MatDialog)); };
+    OnboardingListComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingListComponent, selectors: [["lib-onboarding-list"]], decls: 2, vars: 3, consts: [[1, "full-height", 2, "background", "#F4F7F9 0% 0% no-repeat padding-box", 3, "ngStyle"], ["class", "main-all-ticket-list onboarding-list-container", 4, "ngIf"], [1, "main-all-ticket-list", "onboarding-list-container"], [1, "content-view-list-ticket"], [1, "list-title"], [2, "cursor", "default"], [3, "click"], ["role", "button", "mat-raised-button", "", "color", "primary", 1, "add-onboarding", 3, "click"], [3, "_loading_table", "onboardingList", "columnDefinitions", "lang", "inputSearch"]], template: function OnboardingListComponent_Template(rf, ctx) { if (rf & 1) {
             ɵɵelementStart(0, "mat-card", 0);
-            ɵɵtemplate(1, OnboardingListComponent_div_1_Template, 17, 5, "div", 1);
+            ɵɵtemplate(1, OnboardingListComponent_div_1_Template, 17, 15, "div", 1);
             ɵɵelementEnd();
         } if (rf & 2) {
-            ɵɵproperty("ngStyle", ctx._loading_table && ɵɵpureFunction0(2, _c1$3));
+            ɵɵproperty("ngStyle", ctx._loading_table && ɵɵpureFunction0(2, _c0$5));
             ɵɵadvance(1);
             ɵɵproperty("ngIf", ctx.onboardingList);
-        } }, directives: [MatCard, NgStyle, NgIf, MatIcon, DefaultValueAccessor, NgControlStatus, NgModel, NativeElementInjectorDirective, MatTabGroup, MatTab, MatTabLabel, MatTabContent, TableComponent], styles: ["mat-card[_ngcontent-%COMP%]{display:block;width:100%}md-tooltip[_ngcontent-%COMP%]   ._md-content[_ngcontent-%COMP%], md-tooltip.tt-multiline[_ngcontent-%COMP%]   ._md-content[_ngcontent-%COMP%]{height:auto}table[_ngcontent-%COMP%]{width:100%}.element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]{display:table;width:90%}.element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]   .block1[_ngcontent-%COMP%]{display:inline-table;float:left;width:50%;text-align:left}.element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]   .block1[_ngcontent-%COMP%]   strong[_ngcontent-%COMP%]{font:bold 13px/20px nexa;letter-spacing:0;color:#171f26}.element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]   .block1[_ngcontent-%COMP%]   p[_ngcontent-%COMP%], .element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]   .block1[_ngcontent-%COMP%]   small[_ngcontent-%COMP%]{font-size:13px!important;letter-spacing:0;color:#171f26}.main-all-ticket-list[_ngcontent-%COMP%]{display:block;grid-column-gap:0;grid-row-gap:0;max-width:1500px;margin-left:auto;margin-right:auto;width:100%;animation:.7s fadein!important;-moz-animation:.7s fadein!important;-webkit-animation:.7s fadein!important;-o-animation:.7s fadein!important}.main-all-ticket-list[_ngcontent-%COMP%]   .component-title[_ngcontent-%COMP%]{-ms-grid-row:1;-ms-grid-column:1;-ms-grid-column-span:2;grid-area:1/1/1/3;padding-left:5px;padding-top:40px;padding-bottom:40px;vertical-align:middle;width:100%}.main-all-ticket-list[_ngcontent-%COMP%]   .content-view-list-ticket[_ngcontent-%COMP%]{-ms-grid-row:2;-ms-grid-row-span:2;-ms-grid-column:1;-ms-grid-column-span:2;grid-area:2/1/4/3;margin-left:18px;padding-left:0;padding-right:0;padding-top:20px}.main-all-ticket-list[_ngcontent-%COMP%]   .content-view-list-ticket[_ngcontent-%COMP%]   table[_ngcontent-%COMP%], app-list-preview[_ngcontent-%COMP%]{width:100%}  .mat-tab-label-active{background:#b6d1cd;opacity:1!important}.col-lg-6[_ngcontent-%COMP%]{width:50%;vertical-align:top;display:inline-table}@-webkit-keyframes three-quarters-loader{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes three-quarters-loader{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.three-quarters-loader[_ngcontent-%COMP%]:not(:required){-webkit-animation:1.25s linear infinite three-quarters-loader;animation:1.25s linear infinite three-quarters-loader;border:4px solid #4285f4;border-right-color:transparent;border-radius:16px;box-sizing:border-box;display:inline-block;margin-left:10px;position:relative;overflow:hidden;text-indent:-9999px;width:20px;height:20px}@keyframes fadein{from{opacity:0;margin-top:20px}to{opacity:1;margin-top:0}}@-webkit-keyframes fadein{from{opacity:0;margin-top:20px}to{opacity:1;margin-top:0}}.mat-tab-left[_ngcontent-%COMP%]{color:#171f26;font:18px/20px \"Nexa Text\";letter-spacing:0;margin-left:48px;margin-top:15px;position:absolute;text-align:left}.mat-tab-left-count[_ngcontent-%COMP%]{color:#171f26;font:17px/20px \"Nexa Text Bold\";letter-spacing:0;text-align:left}.page-title-container[_ngcontent-%COMP%]{display:flex;margin-right:48px}.page-title[_ngcontent-%COMP%]{text-align:left;font:bold 32px/30px \"Nexa Text Bold\";letter-spacing:0;color:#171f26;margin-left:2em;margin-top:-8px}.page-search[_ngcontent-%COMP%]{margin-left:auto;position:relative;width:400px}.page-search[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{left:18%;margin-top:10px;position:absolute}.page-search[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{cursor:pointer;margin-top:10px;position:absolute;right:10px}.list-ticket-tab[_ngcontent-%COMP%]{padding-left:48px;padding-right:48px}.detail-view-ticket[_ngcontent-%COMP%]{float:right;margin-right:20px;margin-top:-30px}@media (min-width:1800px){.page-search[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{left:16%}}.ticket-list[_ngcontent-%COMP%]{animation:.7s fadein!important;-moz-animation:.7s fadein!important;-webkit-animation:.7s fadein!important;-o-animation:.7s fadein!important}.bt-spinner[_ngcontent-%COMP%]{width:75px;height:75px;border-radius:50%;background-color:transparent;border:none;border-top:2px solid #03a9f4;-webkit-animation:1s linear infinite spin;animation:1s linear infinite spin;position:relative;left:50%;top:25vh}@-webkit-keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}.list-ticket-tab[_ngcontent-%COMP%] > .mat-tab-header[_ngcontent-%COMP%] > .mat-tab-label-container[_ngcontent-%COMP%] > .mat-tab-list[_ngcontent-%COMP%] > .mat-tab-labels[_ngcontent-%COMP%] > .mat-tab-label-active[_ngcontent-%COMP%], .site-view-tab[_ngcontent-%COMP%] > .mat-tab-header[_ngcontent-%COMP%] > .mat-tab-label-container[_ngcontent-%COMP%] > .mat-tab-list[_ngcontent-%COMP%] > .mat-tab-labels[_ngcontent-%COMP%] > .mat-tab-label-active[_ngcontent-%COMP%]{background-image:none!important;color:#171f26!important}"] });
+        } }, directives: [MatCard, NgStyle, NgIf, MatAnchor, MatIcon, OnboardingTableComponent], styles: ["mat-card[_ngcontent-%COMP%]{display:block;width:98%}md-tooltip[_ngcontent-%COMP%]   ._md-content[_ngcontent-%COMP%], md-tooltip.tt-multiline[_ngcontent-%COMP%]   ._md-content[_ngcontent-%COMP%]{height:auto}table[_ngcontent-%COMP%]{width:100%}.element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]{display:table;width:90%}.element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]   .block1[_ngcontent-%COMP%]{display:inline-table;float:left;width:50%;text-align:left}.element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]   .block1[_ngcontent-%COMP%]   strong[_ngcontent-%COMP%]{font:bold 13px/20px nexa;letter-spacing:0;color:#171f26}.element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]   .block1[_ngcontent-%COMP%]   p[_ngcontent-%COMP%], .element-detail[_ngcontent-%COMP%]   .inline[_ngcontent-%COMP%]   .block1[_ngcontent-%COMP%]   small[_ngcontent-%COMP%]{font-size:13px!important;letter-spacing:0;color:#171f26}.main-all-ticket-list[_ngcontent-%COMP%]{display:block;grid-column-gap:0;grid-row-gap:0;max-width:1500px;margin-left:auto;margin-right:auto;width:100%;animation:.7s fadein!important;-moz-animation:.7s fadein!important;-webkit-animation:.7s fadein!important;-o-animation:.7s fadein!important}.main-all-ticket-list[_ngcontent-%COMP%]   .component-title[_ngcontent-%COMP%]{-ms-grid-row:1;-ms-grid-column:1;-ms-grid-column-span:2;grid-area:1/1/1/3;padding-left:5px;padding-top:40px;padding-bottom:40px;vertical-align:middle;width:100%}.main-all-ticket-list[_ngcontent-%COMP%]   .content-view-list-ticket[_ngcontent-%COMP%]{-ms-grid-row:2;-ms-grid-row-span:2;-ms-grid-column:1;-ms-grid-column-span:2;grid-area:2/1/4/3;margin-left:18px;padding-left:0;padding-right:0;padding-top:20px}.main-all-ticket-list[_ngcontent-%COMP%]   .content-view-list-ticket[_ngcontent-%COMP%]   table[_ngcontent-%COMP%], app-list-preview[_ngcontent-%COMP%]{width:100%}  .mat-tab-label-active{background:#b6d1cd;opacity:1!important}.col-lg-6[_ngcontent-%COMP%]{width:50%;vertical-align:top;display:inline-table}@-webkit-keyframes three-quarters-loader{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes three-quarters-loader{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.three-quarters-loader[_ngcontent-%COMP%]:not(:required){-webkit-animation:1.25s linear infinite three-quarters-loader;animation:1.25s linear infinite three-quarters-loader;border:4px solid #4285f4;border-right-color:transparent;border-radius:16px;box-sizing:border-box;display:inline-block;margin-left:10px;position:relative;overflow:hidden;text-indent:-9999px;width:20px;height:20px}@keyframes fadein{from{opacity:0;margin-top:20px}to{opacity:1;margin-top:0}}@-webkit-keyframes fadein{from{opacity:0;margin-top:20px}to{opacity:1;margin-top:0}}.mat-tab-left[_ngcontent-%COMP%]{color:#171f26;font:18px/20px \"Nexa Text\";letter-spacing:0;margin-left:48px;margin-top:15px;position:absolute;text-align:left}.mat-tab-left-count[_ngcontent-%COMP%]{color:#171f26;font:17px/20px \"Nexa Text Bold\";letter-spacing:0;text-align:left}.page-title-container[_ngcontent-%COMP%]{display:flex;margin-right:48px}.page-title[_ngcontent-%COMP%]{text-align:left;font:bold 32px/30px \"Nexa Text Bold\";letter-spacing:0;color:#171f26;margin-left:2em;margin-top:-8px}.page-search[_ngcontent-%COMP%]{margin-left:auto;position:relative;width:400px}.page-search[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{left:18%;margin-top:10px;position:absolute}.page-search[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{cursor:pointer;margin-top:10px;position:absolute;right:10px}.list-ticket-tab[_ngcontent-%COMP%]{padding-left:48px;padding-right:48px}.detail-view-ticket[_ngcontent-%COMP%]{float:right;margin-right:20px;margin-top:-30px}@media (min-width:1800px){.page-search[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{left:16%}}.ticket-list[_ngcontent-%COMP%]{animation:.7s fadein!important;-moz-animation:.7s fadein!important;-webkit-animation:.7s fadein!important;-o-animation:.7s fadein!important}.bt-spinner[_ngcontent-%COMP%]{width:75px;height:75px;border-radius:50%;background-color:transparent;border:none;border-top:2px solid #03a9f4;-webkit-animation:1s linear infinite spin;animation:1s linear infinite spin;position:relative;left:50%;top:25vh}@-webkit-keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}.list-ticket-tab[_ngcontent-%COMP%] > .mat-tab-header[_ngcontent-%COMP%] > .mat-tab-label-container[_ngcontent-%COMP%] > .mat-tab-list[_ngcontent-%COMP%] > .mat-tab-labels[_ngcontent-%COMP%] > .mat-tab-label-active[_ngcontent-%COMP%], .site-view-tab[_ngcontent-%COMP%] > .mat-tab-header[_ngcontent-%COMP%] > .mat-tab-label-container[_ngcontent-%COMP%] > .mat-tab-list[_ngcontent-%COMP%] > .mat-tab-labels[_ngcontent-%COMP%] > .mat-tab-label-active[_ngcontent-%COMP%]{background-image:none!important;color:#171f26!important}.onboarding-list-container[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]{font-family:Nexa;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:space-between;margin-bottom:30px}.onboarding-list-container[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{display:flex;align-items:center;list-style:none;padding-left:0}.onboarding-list-container[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{margin-right:20px;padding-bottom:10px;cursor:pointer}.onboarding-list-container[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]{border-bottom:4px solid #3c4252}.onboarding-list-container[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   .add-onboarding[_ngcontent-%COMP%]{background:#171f26;box-shadow:0 0 0 rgba(0,0,0,.2);border-radius:7px}"] });
     return OnboardingListComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(OnboardingListComponent, [{
@@ -5099,7 +6148,7 @@ var OnboardingListComponent = /** @class */ (function () {
                 templateUrl: './onboarding-list.component.html',
                 styleUrls: ['./onboarding-list.component.scss']
             }]
-    }], function () { return [{ type: OnboardingService }, { type: Router }, { type: ActivatedRoute }]; }, null); })();
+    }], function () { return [{ type: OnboardingService }, { type: Router }, { type: ActivatedRoute }, { type: MatDialog }]; }, null); })();
 
 ;
 var onBoardingRoutes = [
@@ -5121,7 +6170,7 @@ var onBoardingRoutes = [
                 component: OnboardingListComponent
             },
             {
-                path: 'request/:id',
+                path: 'request/:templateId/:onboardingId',
                 component: OnboardingCreateComponent
             }
         ]
@@ -5173,7 +6222,8 @@ var OnboardingModule = /** @class */ (function () {
                 MatTooltipModule,
                 TableModule,
                 MatTabsModule,
-                NgxIntlTelInputModule
+                NgxIntlTelInputModule,
+                MatSlideToggleModule
             ],
             HttpClientModule,
             RouterModule,
@@ -5187,9 +6237,14 @@ var OnboardingModule = /** @class */ (function () {
         SubOnboardingCreateComponent,
         TemplateProfileListComponent,
         SubTemplateProfileComponent,
-        UpdateProfilComponent,
         ExitConfirmComponent,
-        OnboardingListComponent], imports: [FormsModule,
+        OnboardingListComponent,
+        TypeComponent,
+        OnboardingTableComponent,
+        DialogCreateTemplateComponent,
+        DialogCreateOnboardingComponent,
+        OnboardingDetailComponent,
+        LoadingComponent], imports: [FormsModule,
         MatFormFieldModule,
         MatButtonModule,
         CommonModule,
@@ -5215,7 +6270,8 @@ var OnboardingModule = /** @class */ (function () {
         MatTooltipModule,
         TableModule,
         MatTabsModule,
-        NgxIntlTelInputModule], exports: [OnboardingComponent,
+        NgxIntlTelInputModule,
+        MatSlideToggleModule], exports: [OnboardingComponent,
         HttpClientModule,
         TemplateProfileCreateComponent,
         TemplateProfileListComponent,
@@ -5234,9 +6290,14 @@ var OnboardingModule = /** @class */ (function () {
                     SubOnboardingCreateComponent,
                     TemplateProfileListComponent,
                     SubTemplateProfileComponent,
-                    UpdateProfilComponent,
                     ExitConfirmComponent,
-                    OnboardingListComponent
+                    OnboardingListComponent,
+                    TypeComponent,
+                    OnboardingTableComponent,
+                    DialogCreateTemplateComponent,
+                    DialogCreateOnboardingComponent,
+                    OnboardingDetailComponent,
+                    LoadingComponent
                 ],
                 imports: [
                     FormsModule,
@@ -5268,10 +6329,11 @@ var OnboardingModule = /** @class */ (function () {
                     MatTooltipModule,
                     TableModule,
                     MatTabsModule,
-                    NgxIntlTelInputModule
+                    NgxIntlTelInputModule,
+                    MatSlideToggleModule
                 ],
                 providers: [OnboardingService, CanDeactivateGuard],
-                entryComponents: [UpdateProfilComponent, ExitConfirmComponent],
+                entryComponents: [ExitConfirmComponent, TypeComponent, DialogCreateTemplateComponent, DialogCreateOnboardingComponent],
                 exports: [
                     OnboardingComponent,
                     HttpClientModule,
