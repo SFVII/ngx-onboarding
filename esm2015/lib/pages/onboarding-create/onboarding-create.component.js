@@ -23,107 +23,107 @@ function OnboardingCreateComponent_form_2_li_11_Template(rf, ctx) { if (rf & 1) 
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const category_r325 = ctx.$implicit;
-    i0.ɵɵproperty("ngxScrollTo", "#" + category_r325.name)("id", category_r325.name + "x");
+    const category_r324 = ctx.$implicit;
+    i0.ɵɵproperty("ngxScrollTo", "#" + category_r324.name)("id", category_r324.name + "x");
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(category_r325.name);
+    i0.ɵɵtextInterpolate(category_r324.name);
 } }
 function OnboardingCreateComponent_form_2_section_13_mat_select_8_mat_option_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "mat-option", 27);
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const select_r333 = ctx.$implicit;
-    i0.ɵɵproperty("value", select_r333.value);
+    const select_r332 = ctx.$implicit;
+    i0.ɵɵproperty("value", select_r332.value);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" ", select_r333.value, "");
+    i0.ɵɵtextInterpolate1(" ", select_r332.value, "");
 } }
 const _c0 = function () { return { standalone: true }; };
 function OnboardingCreateComponent_form_2_section_13_mat_select_8_Template(rf, ctx) { if (rf & 1) {
-    const _r336 = i0.ɵɵgetCurrentView();
+    const _r335 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "mat-select", 25);
-    i0.ɵɵlistener("ngModelChange", function OnboardingCreateComponent_form_2_section_13_mat_select_8_Template_mat_select_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r336); const category_r327 = i0.ɵɵnextContext().$implicit; return category_r327.selector.value = $event; });
+    i0.ɵɵlistener("ngModelChange", function OnboardingCreateComponent_form_2_section_13_mat_select_8_Template_mat_select_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r335); const category_r326 = i0.ɵɵnextContext().$implicit; return category_r326.selector.value = $event; });
     i0.ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_mat_select_8_mat_option_1_Template, 2, 2, "mat-option", 26);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const category_r327 = i0.ɵɵnextContext().$implicit;
-    i0.ɵɵproperty("ngModel", category_r327.selector.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0));
+    const category_r326 = i0.ɵɵnextContext().$implicit;
+    i0.ɵɵproperty("ngModel", category_r326.selector.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0));
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", category_r327.selector.defaultValue);
+    i0.ɵɵproperty("ngForOf", category_r326.selector.defaultValue);
 } }
 function OnboardingCreateComponent_form_2_section_13_mat_select_9_mat_option_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "mat-option", 27);
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const select_r339 = ctx.$implicit;
-    i0.ɵɵproperty("value", select_r339.key);
+    const select_r338 = ctx.$implicit;
+    i0.ɵɵproperty("value", select_r338.key);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" ", select_r339.value, "");
+    i0.ɵɵtextInterpolate1(" ", select_r338.value, "");
 } }
 function OnboardingCreateComponent_form_2_section_13_mat_select_9_Template(rf, ctx) { if (rf & 1) {
-    const _r342 = i0.ɵɵgetCurrentView();
+    const _r341 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "mat-select", 28);
-    i0.ɵɵlistener("ngModelChange", function OnboardingCreateComponent_form_2_section_13_mat_select_9_Template_mat_select_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r342); const category_r327 = i0.ɵɵnextContext().$implicit; return category_r327.ticketType.value = $event; });
+    i0.ɵɵlistener("ngModelChange", function OnboardingCreateComponent_form_2_section_13_mat_select_9_Template_mat_select_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r341); const category_r326 = i0.ɵɵnextContext().$implicit; return category_r326.ticketType.value = $event; });
     i0.ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_mat_select_9_mat_option_1_Template, 2, 2, "mat-option", 26);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const category_r327 = i0.ɵɵnextContext().$implicit;
-    i0.ɵɵproperty("ngModel", category_r327.ticketType.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0));
+    const category_r326 = i0.ɵɵnextContext().$implicit;
+    i0.ɵɵproperty("ngModel", category_r326.ticketType.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0));
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", category_r327.ticketType.defaultValue);
+    i0.ɵɵproperty("ngForOf", category_r326.ticketType.defaultValue);
 } }
 function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template(rf, ctx) { if (rf & 1) {
-    const _r358 = i0.ɵɵgetCurrentView();
+    const _r357 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 31);
     i0.ɵɵelementStart(1, "div", 32);
     i0.ɵɵelementStart(2, "div", 33);
     i0.ɵɵelementStart(3, "lib-sub-create-onboarding", 40);
-    i0.ɵɵlistener("onCheckValue", function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { i0.ɵɵrestoreView(_r358); const ctx_r357 = i0.ɵɵnextContext(10); return ctx_r357.onCheckValue($event); });
+    i0.ɵɵlistener("onCheckValue", function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { i0.ɵɵrestoreView(_r357); const ctx_r356 = i0.ɵɵnextContext(10); return ctx_r356.onCheckValue($event); });
     i0.ɵɵelement(4, "div", 35);
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r359 = i0.ɵɵnextContext();
-    const c2_r354 = ctx_r359.$implicit;
-    const l_r355 = ctx_r359.index;
-    const ctx_r360 = i0.ɵɵnextContext(3);
-    const child_r349 = ctx_r360.$implicit;
-    const k_r350 = ctx_r360.index;
+    const ctx_r358 = i0.ɵɵnextContext();
+    const c2_r353 = ctx_r358.$implicit;
+    const l_r354 = ctx_r358.index;
+    const ctx_r359 = i0.ɵɵnextContext(3);
+    const child_r348 = ctx_r359.$implicit;
+    const k_r349 = ctx_r359.index;
     i0.ɵɵadvance(3);
-    i0.ɵɵproperty("field", c2_r354)("length", child_r349 == null ? null : child_r349.forms == null ? null : child_r349.forms.length)("i", k_r350)("j", l_r355);
+    i0.ɵɵproperty("field", c2_r353)("length", child_r348 == null ? null : child_r348.forms == null ? null : child_r348.forms.length)("i", k_r349)("j", l_r354);
 } }
 function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_div_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 39);
     i0.ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template, 5, 4, "div", 30);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const c2_r354 = ctx.$implicit;
-    const child_r349 = i0.ɵɵnextContext(3).$implicit;
-    const ctx_r353 = i0.ɵɵnextContext(6);
-    i0.ɵɵstyleProp("width", c2_r354.forms || c2_r354.type === "textarea" ? "100%" : ctx_r353.fieldWidth(child_r349.forms.length));
-    i0.ɵɵproperty("id", c2_r354.key);
+    const c2_r353 = ctx.$implicit;
+    const child_r348 = i0.ɵɵnextContext(3).$implicit;
+    const ctx_r352 = i0.ɵɵnextContext(6);
+    i0.ɵɵstyleProp("width", c2_r353.forms || c2_r353.type === "textarea" ? "100%" : ctx_r352.fieldWidth(child_r348.forms.length));
+    i0.ɵɵproperty("id", c2_r353.key);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", c2_r354.expandOnboarding && ctx_r353.onCheckConditionLocationValue(c2_r354.isConditional, c2_r354.conditionLocation, c2_r354.conditionValue));
+    i0.ɵɵproperty("ngIf", c2_r353.expandOnboarding && ctx_r352.onCheckConditionLocationValue(c2_r353.isConditional, c2_r353.conditionLocation, c2_r353.conditionValue));
 } }
 function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 37);
     i0.ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_div_1_Template, 2, 4, "div", 38);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const child_r349 = i0.ɵɵnextContext(2).$implicit;
+    const child_r348 = i0.ɵɵnextContext(2).$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", child_r349.forms);
+    i0.ɵɵproperty("ngForOf", child_r348.forms);
 } }
 function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_Template(rf, ctx) { if (rf & 1) {
-    const _r364 = i0.ɵɵgetCurrentView();
+    const _r363 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 31);
     i0.ɵɵelementStart(1, "div", 32);
     i0.ɵɵelementStart(2, "div", 33);
     i0.ɵɵelementStart(3, "lib-sub-create-onboarding", 40);
-    i0.ɵɵlistener("onCheckValue", function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { i0.ɵɵrestoreView(_r364); const ctx_r363 = i0.ɵɵnextContext(7); return ctx_r363.onCheckValue($event); });
+    i0.ɵɵlistener("onCheckValue", function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { i0.ɵɵrestoreView(_r363); const ctx_r362 = i0.ɵɵnextContext(7); return ctx_r362.onCheckValue($event); });
     i0.ɵɵelementStart(4, "div", 35);
     i0.ɵɵtemplate(5, OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_div_5_Template, 2, 1, "div", 36);
     i0.ɵɵelementEnd();
@@ -132,38 +132,38 @@ function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_di
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r365 = i0.ɵɵnextContext();
-    const child_r349 = ctx_r365.$implicit;
-    const k_r350 = ctx_r365.index;
-    const ctx_r366 = i0.ɵɵnextContext(3);
-    const field_r344 = ctx_r366.$implicit;
-    const j_r345 = ctx_r366.index;
+    const ctx_r364 = i0.ɵɵnextContext();
+    const child_r348 = ctx_r364.$implicit;
+    const k_r349 = ctx_r364.index;
+    const ctx_r365 = i0.ɵɵnextContext(3);
+    const field_r343 = ctx_r365.$implicit;
+    const j_r344 = ctx_r365.index;
     i0.ɵɵadvance(3);
-    i0.ɵɵproperty("field", child_r349)("length", field_r344 == null ? null : field_r344.forms == null ? null : field_r344.forms.length)("i", j_r345)("j", k_r350);
+    i0.ɵɵproperty("field", child_r348)("length", field_r343 == null ? null : field_r343.forms == null ? null : field_r343.forms.length)("i", j_r344)("j", k_r349);
     i0.ɵɵadvance(2);
-    i0.ɵɵproperty("ngIf", child_r349.forms && child_r349.value);
+    i0.ɵɵproperty("ngIf", child_r348.forms && child_r348.value);
 } }
 function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 39);
     i0.ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_div_1_Template, 6, 5, "div", 30);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const child_r349 = ctx.$implicit;
-    const field_r344 = i0.ɵɵnextContext(3).$implicit;
-    const ctx_r348 = i0.ɵɵnextContext(3);
-    i0.ɵɵstyleProp("width", child_r349.forms || child_r349.type === "textarea" ? "100%" : ctx_r348.fieldWidth(field_r344.forms.length));
-    i0.ɵɵproperty("id", child_r349.key);
+    const child_r348 = ctx.$implicit;
+    const field_r343 = i0.ɵɵnextContext(3).$implicit;
+    const ctx_r347 = i0.ɵɵnextContext(3);
+    i0.ɵɵstyleProp("width", child_r348.forms || child_r348.type === "textarea" ? "100%" : ctx_r347.fieldWidth(field_r343.forms.length));
+    i0.ɵɵproperty("id", child_r348.key);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", child_r349.expandOnboarding && ctx_r348.onCheckConditionLocationValue(child_r349.isConditional, child_r349.conditionLocation, child_r349.conditionValue));
+    i0.ɵɵproperty("ngIf", child_r348.expandOnboarding && ctx_r347.onCheckConditionLocationValue(child_r348.isConditional, child_r348.conditionLocation, child_r348.conditionValue));
 } }
 function OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 37);
     i0.ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_11_div_1_div_5_div_1_Template, 2, 4, "div", 38);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const field_r344 = i0.ɵɵnextContext(2).$implicit;
+    const field_r343 = i0.ɵɵnextContext(2).$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", field_r344.forms);
+    i0.ɵɵproperty("ngForOf", field_r343.forms);
 } }
 function OnboardingCreateComponent_form_2_section_13_div_11_div_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 31);
@@ -178,29 +178,29 @@ function OnboardingCreateComponent_form_2_section_13_div_11_div_1_Template(rf, c
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
+    const ctx_r368 = i0.ɵɵnextContext();
+    const field_r343 = ctx_r368.$implicit;
+    const j_r344 = ctx_r368.index;
     const ctx_r369 = i0.ɵɵnextContext();
-    const field_r344 = ctx_r369.$implicit;
-    const j_r345 = ctx_r369.index;
-    const ctx_r370 = i0.ɵɵnextContext();
-    const category_r327 = ctx_r370.$implicit;
-    const i_r328 = ctx_r370.index;
+    const category_r326 = ctx_r369.$implicit;
+    const i_r327 = ctx_r369.index;
     i0.ɵɵadvance(3);
-    i0.ɵɵproperty("field", field_r344)("length", category_r327 == null ? null : category_r327.forms == null ? null : category_r327.forms.length)("i", i_r328)("j", j_r345);
+    i0.ɵɵproperty("field", field_r343)("length", category_r326 == null ? null : category_r326.forms == null ? null : category_r326.forms.length)("i", i_r327)("j", j_r344);
     i0.ɵɵadvance(2);
-    i0.ɵɵproperty("ngIf", field_r344.forms && field_r344.value);
+    i0.ɵɵproperty("ngIf", field_r343.forms && field_r343.value);
 } }
 function OnboardingCreateComponent_form_2_section_13_div_11_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 29);
     i0.ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_11_div_1_Template, 6, 5, "div", 30);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const field_r344 = ctx.$implicit;
-    const category_r327 = i0.ɵɵnextContext().$implicit;
-    const ctx_r331 = i0.ɵɵnextContext(2);
-    i0.ɵɵstyleProp("width", field_r344.forms || field_r344.type === "textarea" ? "100%" : ctx_r331.fieldWidth(category_r327.forms.length));
-    i0.ɵɵproperty("id", field_r344.key);
+    const field_r343 = ctx.$implicit;
+    const category_r326 = i0.ɵɵnextContext().$implicit;
+    const ctx_r330 = i0.ɵɵnextContext(2);
+    i0.ɵɵstyleProp("width", field_r343.forms || field_r343.type === "textarea" ? "100%" : ctx_r330.fieldWidth(category_r326.forms.length));
+    i0.ɵɵproperty("id", field_r343.key);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", field_r344.expandOnboarding && ctx_r331.onCheckConditionLocationValue(field_r344.isConditional, field_r344.conditionLocation, field_r344.conditionValue));
+    i0.ɵɵproperty("ngIf", field_r343.expandOnboarding && ctx_r330.onCheckConditionLocationValue(field_r343.isConditional, field_r343.conditionLocation, field_r343.conditionValue));
 } }
 function OnboardingCreateComponent_form_2_section_13_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "section", 16);
@@ -223,35 +223,35 @@ function OnboardingCreateComponent_form_2_section_13_Template(rf, ctx) { if (rf 
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const category_r327 = ctx.$implicit;
-    const ctx_r324 = i0.ɵɵnextContext(2);
-    i0.ɵɵproperty("id", category_r327.name);
+    const category_r326 = ctx.$implicit;
+    const ctx_r323 = i0.ɵɵnextContext(2);
+    i0.ɵɵproperty("id", category_r326.name);
     i0.ɵɵadvance(5);
-    i0.ɵɵtextInterpolate(category_r327.name);
+    i0.ɵɵtextInterpolate(category_r326.name);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r324.catNameStart(category_r327.name) ? "l'" + category_r327.name : category_r327.name, " ");
+    i0.ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r323.catNameStart(category_r326.name) ? "l'" + category_r326.name : category_r326.name, " ");
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", category_r327.selector);
+    i0.ɵɵproperty("ngIf", category_r326.selector);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", (category_r327.ticketType == null ? null : category_r327.ticketType.value) && category_r327.selector.value === "Nowteam");
+    i0.ɵɵproperty("ngIf", (category_r326.ticketType == null ? null : category_r326.ticketType.value) && category_r326.selector.value === "Nowteam");
     i0.ɵɵadvance(2);
-    i0.ɵɵproperty("ngForOf", category_r327.forms);
+    i0.ɵɵproperty("ngForOf", category_r326.forms);
 } }
 function OnboardingCreateComponent_form_2_Template(rf, ctx) { if (rf & 1) {
-    const _r373 = i0.ɵɵgetCurrentView();
+    const _r372 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "form", 3);
-    i0.ɵɵlistener("submit", function OnboardingCreateComponent_form_2_Template_form_submit_0_listener() { i0.ɵɵrestoreView(_r373); const ctx_r372 = i0.ɵɵnextContext(); return ctx_r372.onSubmit(); });
+    i0.ɵɵlistener("submit", function OnboardingCreateComponent_form_2_Template_form_submit_0_listener() { i0.ɵɵrestoreView(_r372); const ctx_r371 = i0.ɵɵnextContext(); return ctx_r371.onSubmit(); });
     i0.ɵɵelementStart(1, "div", 4);
     i0.ɵɵelementStart(2, "div", 5);
     i0.ɵɵelementStart(3, "h2");
     i0.ɵɵtext(4);
     i0.ɵɵelementStart(5, "mat-icon", 6);
-    i0.ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_mat_icon_click_5_listener() { i0.ɵɵrestoreView(_r373); const ctx_r374 = i0.ɵɵnextContext(); return ctx_r374.onShowMode(); });
+    i0.ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_mat_icon_click_5_listener() { i0.ɵɵrestoreView(_r372); const ctx_r373 = i0.ɵɵnextContext(); return ctx_r373.onShowMode(); });
     i0.ɵɵtext(6, "visibility");
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(7, "button", 7);
-    i0.ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_button_click_7_listener() { i0.ɵɵrestoreView(_r373); const ctx_r375 = i0.ɵɵnextContext(); return ctx_r375.onResumeLater(); });
+    i0.ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_button_click_7_listener() { i0.ɵɵrestoreView(_r372); const ctx_r374 = i0.ɵɵnextContext(); return ctx_r374.onResumeLater(); });
     i0.ɵɵtext(8, "Reprendre plus tard");
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
@@ -260,14 +260,14 @@ function OnboardingCreateComponent_form_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵtemplate(11, OnboardingCreateComponent_form_2_li_11_Template, 3, 3, "li", 9);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(12, "div", 10);
-    i0.ɵɵlistener("scroll", function OnboardingCreateComponent_form_2_Template_div_scroll_12_listener($event) { i0.ɵɵrestoreView(_r373); const ctx_r376 = i0.ɵɵnextContext(); return ctx_r376.onScroll($event); });
+    i0.ɵɵlistener("scroll", function OnboardingCreateComponent_form_2_Template_div_scroll_12_listener($event) { i0.ɵɵrestoreView(_r372); const ctx_r375 = i0.ɵɵnextContext(); return ctx_r375.onScroll($event); });
     i0.ɵɵtemplate(13, OnboardingCreateComponent_form_2_section_13_Template, 12, 6, "section", 11);
     i0.ɵɵelementStart(14, "div", 12);
     i0.ɵɵelementStart(15, "button", 13);
     i0.ɵɵtext(16, "Envoyer ma fiche");
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(17, "button", 14);
-    i0.ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_button_click_17_listener() { i0.ɵɵrestoreView(_r373); const ctx_r377 = i0.ɵɵnextContext(); return ctx_r377.onResumeLater(); });
+    i0.ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_button_click_17_listener() { i0.ɵɵrestoreView(_r372); const ctx_r376 = i0.ɵɵnextContext(); return ctx_r376.onResumeLater(); });
     i0.ɵɵtext(18, "Reprendre plus tard");
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
@@ -276,29 +276,29 @@ function OnboardingCreateComponent_form_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r321 = i0.ɵɵnextContext();
-    i0.ɵɵproperty("formGroup", ctx_r321.form);
+    const ctx_r320 = i0.ɵɵnextContext();
+    i0.ɵɵproperty("formGroup", ctx_r320.form);
     i0.ɵɵadvance(4);
-    i0.ɵɵtextInterpolate1("Int\u00E9gration profil ", ctx_r321.currentTemplate == null ? null : ctx_r321.currentTemplate.Name, " ");
+    i0.ɵɵtextInterpolate1("Int\u00E9gration profil ", ctx_r320.currentTemplate == null ? null : ctx_r320.currentTemplate.Name, " ");
     i0.ɵɵadvance(3);
-    i0.ɵɵproperty("disabled", ctx_r321.loading);
+    i0.ɵɵproperty("disabled", ctx_r320.loading);
     i0.ɵɵadvance(4);
-    i0.ɵɵproperty("ngForOf", ctx_r321.categories);
+    i0.ɵɵproperty("ngForOf", ctx_r320.categories);
     i0.ɵɵadvance(2);
-    i0.ɵɵproperty("ngForOf", ctx_r321.categories);
+    i0.ɵɵproperty("ngForOf", ctx_r320.categories);
     i0.ɵɵadvance(2);
-    i0.ɵɵproperty("disabled", ctx_r321.loading || !ctx_r321.form.valid);
+    i0.ɵɵproperty("disabled", ctx_r320.loading || !ctx_r320.form.valid);
     i0.ɵɵadvance(2);
-    i0.ɵɵproperty("disabled", ctx_r321.loading);
+    i0.ɵɵproperty("disabled", ctx_r320.loading);
 } }
 function OnboardingCreateComponent_lib_onboarding_detail_3_Template(rf, ctx) { if (rf & 1) {
-    const _r379 = i0.ɵɵgetCurrentView();
+    const _r378 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "lib-onboarding-detail", 41);
-    i0.ɵɵlistener("onShowMode", function OnboardingCreateComponent_lib_onboarding_detail_3_Template_lib_onboarding_detail_onShowMode_0_listener() { i0.ɵɵrestoreView(_r379); const ctx_r378 = i0.ɵɵnextContext(); return ctx_r378.onShowMode(); });
+    i0.ɵɵlistener("onShowMode", function OnboardingCreateComponent_lib_onboarding_detail_3_Template_lib_onboarding_detail_onShowMode_0_listener() { i0.ɵɵrestoreView(_r378); const ctx_r377 = i0.ɵɵnextContext(); return ctx_r377.onShowMode(); });
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r322 = i0.ɵɵnextContext();
-    i0.ɵɵproperty("detailView", ctx_r322.detailView);
+    const ctx_r321 = i0.ɵɵnextContext();
+    i0.ɵɵproperty("detailView", ctx_r321.detailView);
 } }
 export class OnboardingCreateComponent {
     constructor(fb, service, route, router, dialog) {

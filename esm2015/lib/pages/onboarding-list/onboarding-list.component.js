@@ -12,7 +12,7 @@ import * as i6 from "@angular/material/button";
 import * as i7 from "@angular/material/icon";
 import * as i8 from "../../components/onboarding/onboarding-table/onboarding-table.component";
 function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    const _r424 = i0.ɵɵgetCurrentView();
+    const _r423 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 2);
     i0.ɵɵelementStart(1, "div", 3);
     i0.ɵɵelementStart(2, "div", 4);
@@ -21,20 +21,20 @@ function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵtext(5);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(6, "li", 6);
-    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_6_listener() { i0.ɵɵrestoreView(_r424); const ctx_r423 = i0.ɵɵnextContext(); return ctx_r423.filterOnboarding("all"); });
+    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_6_listener() { i0.ɵɵrestoreView(_r423); const ctx_r422 = i0.ɵɵnextContext(); return ctx_r422.filterOnboarding("all"); });
     i0.ɵɵtext(7);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(8, "li", 6);
-    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_8_listener() { i0.ɵɵrestoreView(_r424); const ctx_r425 = i0.ɵɵnextContext(); return ctx_r425.filterOnboarding("publish"); });
+    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_8_listener() { i0.ɵɵrestoreView(_r423); const ctx_r424 = i0.ɵɵnextContext(); return ctx_r424.filterOnboarding("publish"); });
     i0.ɵɵtext(9);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(10, "li", 6);
-    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_10_listener() { i0.ɵɵrestoreView(_r424); const ctx_r426 = i0.ɵɵnextContext(); return ctx_r426.filterOnboarding("draft"); });
+    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_10_listener() { i0.ɵɵrestoreView(_r423); const ctx_r425 = i0.ɵɵnextContext(); return ctx_r425.filterOnboarding("draft"); });
     i0.ɵɵtext(11);
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(12, "a", 7);
-    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_a_click_12_listener() { i0.ɵɵrestoreView(_r424); const ctx_r427 = i0.ɵɵnextContext(); return ctx_r427.openDialog(); });
+    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_a_click_12_listener() { i0.ɵɵrestoreView(_r423); const ctx_r426 = i0.ɵɵnextContext(); return ctx_r426.openDialog(); });
     i0.ɵɵtext(13, " Nouvelle demande d\u2019int\u00E9gration ");
     i0.ɵɵelementStart(14, "mat-icon");
     i0.ɵɵtext(15, "add");
@@ -45,23 +45,23 @@ function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r422 = i0.ɵɵnextContext();
+    const ctx_r421 = i0.ɵɵnextContext();
     i0.ɵɵadvance(5);
-    i0.ɵɵtextInterpolate1("Vous avez actuellement ", ctx_r422.onboardingFormatList.length, " Demandes");
+    i0.ɵɵtextInterpolate1("Vous avez actuellement ", ctx_r421.onboardingFormatList.length, " Demandes");
     i0.ɵɵadvance(1);
-    i0.ɵɵclassMap(ctx_r422.currentFilter === "all" ? "active" : "");
+    i0.ɵɵclassMap(ctx_r421.currentFilter === "all" ? "active" : "");
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" Tous (", ctx_r422.onboardingFormatList.length, ") ");
+    i0.ɵɵtextInterpolate1(" Tous (", ctx_r421.onboardingFormatList.length, ") ");
     i0.ɵɵadvance(1);
-    i0.ɵɵclassMap(ctx_r422.currentFilter === "publish" ? "active" : "");
+    i0.ɵɵclassMap(ctx_r421.currentFilter === "publish" ? "active" : "");
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" Termin\u00E9es (", ctx_r422.onboardingFormatList.length, ") ");
+    i0.ɵɵtextInterpolate1(" Termin\u00E9es (", ctx_r421.onboardingFormatList.length, ") ");
     i0.ɵɵadvance(1);
-    i0.ɵɵclassMap(ctx_r422.currentFilter === "draft" ? "active" : "");
+    i0.ɵɵclassMap(ctx_r421.currentFilter === "draft" ? "active" : "");
     i0.ɵɵadvance(1);
     i0.ɵɵtextInterpolate1(" A finaliser (", 0, ") ");
     i0.ɵɵadvance(5);
-    i0.ɵɵproperty("_loading_table", ctx_r422.onboardingList)("onboardingList", ctx_r422.onboardingList)("columnDefinitions", ctx_r422.columnDefinitions)("lang", ctx_r422.lang)("inputSearch", ctx_r422.inputSearch);
+    i0.ɵɵproperty("_loading_table", ctx_r421.onboardingList)("onboardingList", ctx_r421.onboardingList)("columnDefinitions", ctx_r421.columnDefinitions)("lang", ctx_r421.lang)("inputSearch", ctx_r421.inputSearch);
 } }
 const _c0 = function () { return { "overflow-y": "hidden", "height": "100%", "display": "flex", "position": "absolute" }; };
 export class OnboardingListComponent {

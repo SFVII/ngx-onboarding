@@ -12,7 +12,7 @@ import * as i6 from "@angular/material/button";
 import * as i7 from "@angular/material/icon";
 import * as i8 from "../../components/onboarding/onboarding-table/onboarding-table.component";
 function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r886 = i0.ɵɵgetCurrentView();
+    var _r884 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 2);
     i0.ɵɵelementStart(1, "div", 3);
     i0.ɵɵelementStart(2, "div", 4);
@@ -21,20 +21,20 @@ function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵtext(5);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(6, "li", 6);
-    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_6_listener() { i0.ɵɵrestoreView(_r886); var ctx_r885 = i0.ɵɵnextContext(); return ctx_r885.filterOnboarding("all"); });
+    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_6_listener() { i0.ɵɵrestoreView(_r884); var ctx_r883 = i0.ɵɵnextContext(); return ctx_r883.filterOnboarding("all"); });
     i0.ɵɵtext(7);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(8, "li", 6);
-    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_8_listener() { i0.ɵɵrestoreView(_r886); var ctx_r887 = i0.ɵɵnextContext(); return ctx_r887.filterOnboarding("publish"); });
+    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_8_listener() { i0.ɵɵrestoreView(_r884); var ctx_r885 = i0.ɵɵnextContext(); return ctx_r885.filterOnboarding("publish"); });
     i0.ɵɵtext(9);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(10, "li", 6);
-    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_10_listener() { i0.ɵɵrestoreView(_r886); var ctx_r888 = i0.ɵɵnextContext(); return ctx_r888.filterOnboarding("draft"); });
+    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_li_click_10_listener() { i0.ɵɵrestoreView(_r884); var ctx_r886 = i0.ɵɵnextContext(); return ctx_r886.filterOnboarding("draft"); });
     i0.ɵɵtext(11);
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(12, "a", 7);
-    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_a_click_12_listener() { i0.ɵɵrestoreView(_r886); var ctx_r889 = i0.ɵɵnextContext(); return ctx_r889.openDialog(); });
+    i0.ɵɵlistener("click", function OnboardingListComponent_div_1_Template_a_click_12_listener() { i0.ɵɵrestoreView(_r884); var ctx_r887 = i0.ɵɵnextContext(); return ctx_r887.openDialog(); });
     i0.ɵɵtext(13, " Nouvelle demande d\u2019int\u00E9gration ");
     i0.ɵɵelementStart(14, "mat-icon");
     i0.ɵɵtext(15, "add");
@@ -45,23 +45,23 @@ function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r884 = i0.ɵɵnextContext();
+    var ctx_r882 = i0.ɵɵnextContext();
     i0.ɵɵadvance(5);
-    i0.ɵɵtextInterpolate1("Vous avez actuellement ", ctx_r884.onboardingFormatList.length, " Demandes");
+    i0.ɵɵtextInterpolate1("Vous avez actuellement ", ctx_r882.onboardingFormatList.length, " Demandes");
     i0.ɵɵadvance(1);
-    i0.ɵɵclassMap(ctx_r884.currentFilter === "all" ? "active" : "");
+    i0.ɵɵclassMap(ctx_r882.currentFilter === "all" ? "active" : "");
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" Tous (", ctx_r884.onboardingFormatList.length, ") ");
+    i0.ɵɵtextInterpolate1(" Tous (", ctx_r882.onboardingFormatList.length, ") ");
     i0.ɵɵadvance(1);
-    i0.ɵɵclassMap(ctx_r884.currentFilter === "publish" ? "active" : "");
+    i0.ɵɵclassMap(ctx_r882.currentFilter === "publish" ? "active" : "");
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" Termin\u00E9es (", ctx_r884.onboardingFormatList.length, ") ");
+    i0.ɵɵtextInterpolate1(" Termin\u00E9es (", ctx_r882.onboardingFormatList.length, ") ");
     i0.ɵɵadvance(1);
-    i0.ɵɵclassMap(ctx_r884.currentFilter === "draft" ? "active" : "");
+    i0.ɵɵclassMap(ctx_r882.currentFilter === "draft" ? "active" : "");
     i0.ɵɵadvance(1);
     i0.ɵɵtextInterpolate1(" A finaliser (", 0, ") ");
     i0.ɵɵadvance(5);
-    i0.ɵɵproperty("_loading_table", ctx_r884.onboardingList)("onboardingList", ctx_r884.onboardingList)("columnDefinitions", ctx_r884.columnDefinitions)("lang", ctx_r884.lang)("inputSearch", ctx_r884.inputSearch);
+    i0.ɵɵproperty("_loading_table", ctx_r882.onboardingList)("onboardingList", ctx_r882.onboardingList)("columnDefinitions", ctx_r882.columnDefinitions)("lang", ctx_r882.lang)("inputSearch", ctx_r882.inputSearch);
 } }
 var _c0 = function () { return { "overflow-y": "hidden", "height": "100%", "display": "flex", "position": "absolute" }; };
 var OnboardingListComponent = /** @class */ (function () {
