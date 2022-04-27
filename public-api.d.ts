@@ -7,3 +7,4 @@ export * from './lib/onboarding.module';
 export * from './lib/pages/onboarding-list/onboarding-list.component';
 export * from './lib/pages/onboarding-create/onboarding-create.component';
 export * from './lib/components/onboarding/dialog-create-onboarding/dialog-create-onboarding.component';
+export * from './lib/components/dialog-confirmation/dialog-confirmation.component';

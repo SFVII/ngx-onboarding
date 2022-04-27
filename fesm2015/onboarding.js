@@ -6088,6 +6088,52 @@ OnboardingListComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingListCompon
             }]
     }], function () { return [{ type: OnboardingService }, { type: Router }, { type: ActivatedRoute }, { type: MatDialog }]; }, null); })();
 
+class DialogConfirmation {
+    constructor(data, dialogRef) {
+        this.data = data;
+        this.dialogRef = dialogRef;
+        this.message = '';
+    }
+    ngOnInit() {
+        this.message = this.data.message || '';
+    }
+    close(status) {
+        this.dialogRef.close(status);
+    }
+}
+DialogConfirmation.ɵfac = function DialogConfirmation_Factory(t) { return new (t || DialogConfirmation)(ɵɵdirectiveInject(MAT_DIALOG_DATA), ɵɵdirectiveInject(MatDialogRef)); };
+DialogConfirmation.ɵcmp = ɵɵdefineComponent({ type: DialogConfirmation, selectors: [["lib-dialog-confirmation"]], decls: 8, vars: 1, consts: [[1, "title"], [1, "action-content"], ["mat-raised-button", "", 1, "cancel", 3, "click"], ["mat-raised-button", "", 1, "confirm", 3, "click"]], template: function DialogConfirmation_Template(rf, ctx) { if (rf & 1) {
+        ɵɵelementStart(0, "mat-dialog-content");
+        ɵɵelementStart(1, "h3", 0);
+        ɵɵtext(2);
+        ɵɵelementEnd();
+        ɵɵelementStart(3, "div", 1);
+        ɵɵelementStart(4, "button", 2);
+        ɵɵlistener("click", function DialogConfirmation_Template_button_click_4_listener() { return ctx.close(false); });
+        ɵɵtext(5, " Non ");
+        ɵɵelementEnd();
+        ɵɵelementStart(6, "button", 3);
+        ɵɵlistener("click", function DialogConfirmation_Template_button_click_6_listener() { return ctx.close(true); });
+        ɵɵtext(7, " Oui ");
+        ɵɵelementEnd();
+        ɵɵelementEnd();
+        ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵɵadvance(2);
+        ɵɵtextInterpolate(ctx.message);
+    } }, directives: [MatDialogContent, MatButton], styles: ["mat-dialog-content[_ngcontent-%COMP%]{display:flex!important;flex-direction:column;justify-content:space-between;width:348px;height:204px;text-align:center;padding:12px 25px}mat-dialog-content[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]{margin-bottom:10px}mat-dialog-content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:20px;line-height:110%;display:flex;align-items:center;color:#242731}mat-dialog-content[_ngcontent-%COMP%]   .action-content[_ngcontent-%COMP%]{display:flex;justify-content:space-around}mat-dialog-content[_ngcontent-%COMP%]   .confirm[_ngcontent-%COMP%]{background-color:#242731;color:#fff}mat-dialog-content[_ngcontent-%COMP%]   .cancel[_ngcontent-%COMP%]{box-shadow:none}"] });
+/*@__PURE__*/ (function () { ɵsetClassMetadata(DialogConfirmation, [{
+        type: Component,
+        args: [{
+                selector: 'lib-dialog-confirmation',
+                templateUrl: './dialog-confirmation.component.html',
+                styleUrls: ['./dialog-confirmation.component.scss']
+            }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [MAT_DIALOG_DATA]
+            }] }, { type: MatDialogRef }]; }, null); })();
+
 ;
 const onBoardingRoutes = [
     {
@@ -6181,7 +6227,8 @@ OnboardingModule.ɵinj = ɵɵdefineInjector({ factory: function OnboardingModule
         DialogCreateTemplateComponent,
         DialogCreateOnboardingComponent,
         OnboardingDetailComponent,
-        LoadingComponent], imports: [FormsModule,
+        LoadingComponent,
+        DialogConfirmation], imports: [FormsModule,
         MatFormFieldModule,
         MatButtonModule,
         CommonModule,
@@ -6215,6 +6262,7 @@ OnboardingModule.ɵinj = ɵɵdefineInjector({ factory: function OnboardingModule
         OnboardingListComponent,
         OnboardingCreateComponent,
         DialogCreateOnboardingComponent,
+        DialogConfirmation,
         RouterModule,
         MatTabsModule] }); })();
 /*@__PURE__*/ (function () { ɵsetClassMetadata(OnboardingModule, [{
@@ -6235,7 +6283,8 @@ OnboardingModule.ɵinj = ɵɵdefineInjector({ factory: function OnboardingModule
                     DialogCreateTemplateComponent,
                     DialogCreateOnboardingComponent,
                     OnboardingDetailComponent,
-                    LoadingComponent
+                    LoadingComponent,
+                    DialogConfirmation
                 ],
                 imports: [
                     FormsModule,
@@ -6271,7 +6320,7 @@ OnboardingModule.ɵinj = ɵɵdefineInjector({ factory: function OnboardingModule
                     MatSlideToggleModule
                 ],
                 providers: [OnboardingService, CanDeactivateGuard],
-                entryComponents: [ExitConfirmComponent, TypeComponent, DialogCreateTemplateComponent, DialogCreateOnboardingComponent],
+                entryComponents: [ExitConfirmComponent, TypeComponent, DialogCreateTemplateComponent, DialogCreateOnboardingComponent, DialogConfirmation],
                 exports: [
                     OnboardingComponent,
                     HttpClientModule,
@@ -6280,6 +6329,7 @@ OnboardingModule.ɵinj = ɵɵdefineInjector({ factory: function OnboardingModule
                     OnboardingListComponent,
                     OnboardingCreateComponent,
                     DialogCreateOnboardingComponent,
+                    DialogConfirmation,
                     RouterModule,
                     MatTabsModule
                 ]
@@ -6294,5 +6344,5 @@ OnboardingModule.ɵinj = ɵɵdefineInjector({ factory: function OnboardingModule
  * Generated bundle index. Do not edit.
  */
 
-export { DialogCreateOnboardingComponent, OnboardingComponent, OnboardingCreateComponent, OnboardingListComponent, OnboardingModule, OnboardingService, TemplateProfileCreateComponent, TemplateProfileListComponent, onBoardingRoutes };
+export { DialogConfirmation, DialogCreateOnboardingComponent, OnboardingComponent, OnboardingCreateComponent, OnboardingListComponent, OnboardingModule, OnboardingService, TemplateProfileCreateComponent, TemplateProfileListComponent, onBoardingRoutes };
 //# sourceMappingURL=onboarding.js.map

@@ -6615,6 +6615,53 @@
                 }]
         }], function () { return [{ type: OnboardingService }, { type: router.Router }, { type: router.ActivatedRoute }, { type: dialog.MatDialog }]; }, null); })();
 
+    var DialogConfirmation = /** @class */ (function () {
+        function DialogConfirmation(data, dialogRef) {
+            this.data = data;
+            this.dialogRef = dialogRef;
+            this.message = '';
+        }
+        DialogConfirmation.prototype.ngOnInit = function () {
+            this.message = this.data.message || '';
+        };
+        DialogConfirmation.prototype.close = function (status) {
+            this.dialogRef.close(status);
+        };
+        DialogConfirmation.ɵfac = function DialogConfirmation_Factory(t) { return new (t || DialogConfirmation)(core.ɵɵdirectiveInject(dialog.MAT_DIALOG_DATA), core.ɵɵdirectiveInject(dialog.MatDialogRef)); };
+        DialogConfirmation.ɵcmp = core.ɵɵdefineComponent({ type: DialogConfirmation, selectors: [["lib-dialog-confirmation"]], decls: 8, vars: 1, consts: [[1, "title"], [1, "action-content"], ["mat-raised-button", "", 1, "cancel", 3, "click"], ["mat-raised-button", "", 1, "confirm", 3, "click"]], template: function DialogConfirmation_Template(rf, ctx) { if (rf & 1) {
+                core.ɵɵelementStart(0, "mat-dialog-content");
+                core.ɵɵelementStart(1, "h3", 0);
+                core.ɵɵtext(2);
+                core.ɵɵelementEnd();
+                core.ɵɵelementStart(3, "div", 1);
+                core.ɵɵelementStart(4, "button", 2);
+                core.ɵɵlistener("click", function DialogConfirmation_Template_button_click_4_listener() { return ctx.close(false); });
+                core.ɵɵtext(5, " Non ");
+                core.ɵɵelementEnd();
+                core.ɵɵelementStart(6, "button", 3);
+                core.ɵɵlistener("click", function DialogConfirmation_Template_button_click_6_listener() { return ctx.close(true); });
+                core.ɵɵtext(7, " Oui ");
+                core.ɵɵelementEnd();
+                core.ɵɵelementEnd();
+                core.ɵɵelementEnd();
+            } if (rf & 2) {
+                core.ɵɵadvance(2);
+                core.ɵɵtextInterpolate(ctx.message);
+            } }, directives: [dialog.MatDialogContent, button.MatButton], styles: ["mat-dialog-content[_ngcontent-%COMP%]{display:flex!important;flex-direction:column;justify-content:space-between;width:348px;height:204px;text-align:center;padding:12px 25px}mat-dialog-content[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]{margin-bottom:10px}mat-dialog-content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:20px;line-height:110%;display:flex;align-items:center;color:#242731}mat-dialog-content[_ngcontent-%COMP%]   .action-content[_ngcontent-%COMP%]{display:flex;justify-content:space-around}mat-dialog-content[_ngcontent-%COMP%]   .confirm[_ngcontent-%COMP%]{background-color:#242731;color:#fff}mat-dialog-content[_ngcontent-%COMP%]   .cancel[_ngcontent-%COMP%]{box-shadow:none}"] });
+        return DialogConfirmation;
+    }());
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(DialogConfirmation, [{
+            type: core.Component,
+            args: [{
+                    selector: 'lib-dialog-confirmation',
+                    templateUrl: './dialog-confirmation.component.html',
+                    styleUrls: ['./dialog-confirmation.component.scss']
+                }]
+        }], function () { return [{ type: undefined, decorators: [{
+                    type: core.Inject,
+                    args: [dialog.MAT_DIALOG_DATA]
+                }] }, { type: dialog.MatDialogRef }]; }, null); })();
+
     ;
     var onBoardingRoutes = [
         {
@@ -6709,7 +6756,8 @@
             DialogCreateTemplateComponent,
             DialogCreateOnboardingComponent,
             OnboardingDetailComponent,
-            LoadingComponent], imports: [forms.FormsModule,
+            LoadingComponent,
+            DialogConfirmation], imports: [forms.FormsModule,
             formField.MatFormFieldModule,
             button.MatButtonModule,
             common.CommonModule,
@@ -6743,6 +6791,7 @@
             OnboardingListComponent,
             OnboardingCreateComponent,
             DialogCreateOnboardingComponent,
+            DialogConfirmation,
             router.RouterModule,
             tabs.MatTabsModule] }); })();
     /*@__PURE__*/ (function () { core.ɵsetClassMetadata(OnboardingModule, [{
@@ -6763,7 +6812,8 @@
                         DialogCreateTemplateComponent,
                         DialogCreateOnboardingComponent,
                         OnboardingDetailComponent,
-                        LoadingComponent
+                        LoadingComponent,
+                        DialogConfirmation
                     ],
                     imports: [
                         forms.FormsModule,
@@ -6799,7 +6849,7 @@
                         slideToggle.MatSlideToggleModule
                     ],
                     providers: [OnboardingService, CanDeactivateGuard],
-                    entryComponents: [ExitConfirmComponent, TypeComponent, DialogCreateTemplateComponent, DialogCreateOnboardingComponent],
+                    entryComponents: [ExitConfirmComponent, TypeComponent, DialogCreateTemplateComponent, DialogCreateOnboardingComponent, DialogConfirmation],
                     exports: [
                         OnboardingComponent,
                         http.HttpClientModule,
@@ -6808,6 +6858,7 @@
                         OnboardingListComponent,
                         OnboardingCreateComponent,
                         DialogCreateOnboardingComponent,
+                        DialogConfirmation,
                         router.RouterModule,
                         tabs.MatTabsModule
                     ]
@@ -6818,6 +6869,7 @@
                     type: core.SkipSelf
                 }] }]; }, null); })();
 
+    exports.DialogConfirmation = DialogConfirmation;
     exports.DialogCreateOnboardingComponent = DialogCreateOnboardingComponent;
     exports.OnboardingComponent = OnboardingComponent;
     exports.OnboardingCreateComponent = OnboardingCreateComponent;
