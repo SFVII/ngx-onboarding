@@ -7,6 +7,25 @@ export declare class DialogCreateOnboardingComponent implements OnInit {
     private dialogRef;
     private service;
     templates: any[];
+    defaultUserForm: {
+        label: string;
+        key: string;
+        expandOnboarding: boolean;
+        defaultValue: {
+            value: string;
+            checked: boolean;
+        }[];
+        value: any;
+        size: number;
+        isMandatory: boolean;
+        otherValue: string;
+        type: string;
+        editable: boolean;
+        deleteable: boolean;
+        subLevel: number;
+        expandMore: boolean;
+    }[];
+    userForm: any[];
     onboarding: {
         TemplateId: number;
     };
