@@ -6744,6 +6744,7 @@
             TemplateProfileListComponent,
             OnboardingListComponent,
             OnboardingCreateComponent,
+            DialogCreateOnboardingComponent,
             router.RouterModule,
             tabs.MatTabsModule] }); })();
     /*@__PURE__*/ (function () { core.ɵsetClassMetadata(OnboardingModule, [{
@@ -6808,6 +6809,7 @@
                         TemplateProfileListComponent,
                         OnboardingListComponent,
                         OnboardingCreateComponent,
+                        DialogCreateOnboardingComponent,
                         router.RouterModule,
                         tabs.MatTabsModule
                     ]
@@ -6818,6 +6820,7 @@
                     type: core.SkipSelf
                 }] }]; }, null); })();
 
+    exports.DialogCreateOnboardingComponent = DialogCreateOnboardingComponent;
     exports.OnboardingComponent = OnboardingComponent;
     exports.OnboardingCreateComponent = OnboardingCreateComponent;
     exports.OnboardingListComponent = OnboardingListComponent;

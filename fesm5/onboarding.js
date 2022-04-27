@@ -6556,6 +6556,7 @@ var OnboardingModule = /** @class */ (function () {
         TemplateProfileListComponent,
         OnboardingListComponent,
         OnboardingCreateComponent,
+        DialogCreateOnboardingComponent,
         RouterModule,
         MatTabsModule] }); })();
 /*@__PURE__*/ (function () { ɵsetClassMetadata(OnboardingModule, [{
@@ -6620,6 +6621,7 @@ var OnboardingModule = /** @class */ (function () {
                     TemplateProfileListComponent,
                     OnboardingListComponent,
                     OnboardingCreateComponent,
+                    DialogCreateOnboardingComponent,
                     RouterModule,
                     MatTabsModule
                 ]
@@ -6634,5 +6636,5 @@ var OnboardingModule = /** @class */ (function () {
  * Generated bundle index. Do not edit.
  */
 
-export { OnboardingComponent, OnboardingCreateComponent, OnboardingListComponent, OnboardingModule, OnboardingService, TemplateProfileCreateComponent, TemplateProfileListComponent, onBoardingRoutes };
+export { DialogCreateOnboardingComponent, OnboardingComponent, OnboardingCreateComponent, OnboardingListComponent, OnboardingModule, OnboardingService, TemplateProfileCreateComponent, TemplateProfileListComponent, onBoardingRoutes };
 //# sourceMappingURL=onboarding.js.map
