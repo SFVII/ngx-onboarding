@@ -11,7 +11,7 @@ export declare class DialogCreateOnboardingComponent implements OnInit {
         TemplateId: number;
     };
     constructor(data: any, dialogRef: MatDialogRef<DialogCreateOnboardingComponent>, service: OnboardingService);
-    ngOnInit(): void;
+    ngOnInit(): Promise<void>;
     createOnboarding(): void;
     close(): void;
     disabled(): boolean;
