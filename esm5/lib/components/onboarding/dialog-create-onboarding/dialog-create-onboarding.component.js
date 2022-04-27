@@ -16,10 +16,10 @@ function DialogCreateOnboardingComponent_mat_option_7_Template(rf, ctx) { if (rf
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var template_r881 = ctx.$implicit;
-    i0.ɵɵproperty("value", template_r881._id);
+    var template_r892 = ctx.$implicit;
+    i0.ɵɵproperty("value", template_r892._id);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate(template_r881.Name);
+    i0.ɵɵtextInterpolate(template_r892.Name);
 } }
 var DialogCreateOnboardingComponent = /** @class */ (function () {
     function DialogCreateOnboardingComponent(data, dialogRef, service) {

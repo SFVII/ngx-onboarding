@@ -11,9 +11,12 @@ export declare class OnboardingListComponent implements OnInit {
     private dialog;
     onboardingList: any;
     inputSearch: string;
+    currentLength: number;
     currentFilter: string;
     search: string;
     onboardingFormatList: any[];
+    onboardingFinished: any;
+    onboardingToFinish: any;
     templates: any[];
     columnDefinitions: displayedColumnsInterface[];
     localService: any;
@@ -25,7 +28,6 @@ export declare class OnboardingListComponent implements OnInit {
     constructor(service: OnboardingService, router: Router, route: ActivatedRoute, dialog: MatDialog);
     ngOnInit(): Promise<void>;
     triggerChange($event: any): void;
-    filterOnboarding(name: any): void;
     openDialog(): void;
     static ɵfac: i0.ɵɵFactoryDef<OnboardingListComponent>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<OnboardingListComponent, "lib-onboarding-list", never, {}, {}, never>;

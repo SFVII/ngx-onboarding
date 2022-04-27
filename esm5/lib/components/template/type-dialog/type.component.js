@@ -7,22 +7,22 @@ import * as i3 from "@angular/common";
 import * as i4 from "@angular/material/button";
 import * as i5 from "@angular/material/icon";
 function TypeComponent_button_1_Template(rf, ctx) { if (rf & 1) {
-    var _r466 = i0.ɵɵgetCurrentView();
+    var _r477 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "button", 1);
-    i0.ɵɵlistener("click", function TypeComponent_button_1_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r466); var item_r464 = ctx.$implicit; var ctx_r465 = i0.ɵɵnextContext(); return ctx_r465.onSelect(item_r464.value); });
+    i0.ɵɵlistener("click", function TypeComponent_button_1_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r477); var item_r475 = ctx.$implicit; var ctx_r476 = i0.ɵɵnextContext(); return ctx_r476.onSelect(item_r475.value); });
     i0.ɵɵtext(1);
     i0.ɵɵelementStart(2, "mat-icon");
     i0.ɵɵtext(3);
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var item_r464 = ctx.$implicit;
-    var ctx_r463 = i0.ɵɵnextContext();
-    i0.ɵɵclassMap(ctx_r463.selectedType === item_r464.value ? "active" : "");
+    var item_r475 = ctx.$implicit;
+    var ctx_r474 = i0.ɵɵnextContext();
+    i0.ɵɵclassMap(ctx_r474.selectedType === item_r475.value ? "active" : "");
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" ", item_r464.label, " ");
+    i0.ɵɵtextInterpolate1(" ", item_r475.label, " ");
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(item_r464.icon);
+    i0.ɵɵtextInterpolate(item_r475.icon);
 } }
 var TypeComponent = /** @class */ (function () {
     function TypeComponent(data, dialogRef, service) {

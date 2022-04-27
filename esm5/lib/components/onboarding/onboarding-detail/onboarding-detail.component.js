@@ -13,12 +13,12 @@ function OnboardingDetailComponent_div_0_li_22_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r892 = ctx.$implicit;
-    var i_r893 = ctx.index;
-    i0.ɵɵclassMap(i_r893 === 0 ? "active" : "");
-    i0.ɵɵproperty("ngxScrollTo", "#" + category_r892.name)("id", category_r892.name + "x");
+    var category_r914 = ctx.$implicit;
+    var i_r915 = ctx.index;
+    i0.ɵɵclassMap(i_r915 === 0 ? "active" : "");
+    i0.ɵɵproperty("ngxScrollTo", "#" + category_r914.name)("id", category_r914.name + "x");
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(category_r892.name);
+    i0.ɵɵtextInterpolate(category_r914.name);
 } }
 function OnboardingDetailComponent_div_0_section_24_div_9_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 31);
@@ -36,12 +36,12 @@ function OnboardingDetailComponent_div_0_section_24_div_10_Template(rf, ctx) { i
     i0.ɵɵelement(3, "mat-progress-bar", 34);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r894 = i0.ɵɵnextContext().$implicit;
-    var ctx_r897 = i0.ɵɵnextContext(2);
+    var category_r916 = i0.ɵɵnextContext().$implicit;
+    var ctx_r919 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1("", ctx_r897.progress(category_r894 == null ? null : category_r894.fieldCompleted, category_r894 == null ? null : category_r894.fieldLength), "% Termin\u00E9");
+    i0.ɵɵtextInterpolate1("", ctx_r919.progress(category_r916 == null ? null : category_r916.fieldCompleted, category_r916 == null ? null : category_r916.fieldLength), "% Termin\u00E9");
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("value", ctx_r897.progress(category_r894 == null ? null : category_r894.fieldCompleted, category_r894 == null ? null : category_r894.fieldLength));
+    i0.ɵɵproperty("value", ctx_r919.progress(category_r916 == null ? null : category_r916.fieldCompleted, category_r916 == null ? null : category_r916.fieldLength));
 } }
 function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
@@ -53,11 +53,11 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_1_Templa
     i0.ɵɵelementEnd();
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var forms_r900 = i0.ɵɵnextContext().$implicit;
+    var forms_r922 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(forms_r900.label);
+    i0.ɵɵtextInterpolate(forms_r922.label);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(forms_r900.value);
+    i0.ɵɵtextInterpolate(forms_r922.value);
 } }
 function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
@@ -69,11 +69,11 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_
     i0.ɵɵelementEnd();
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var sub_r905 = i0.ɵɵnextContext().$implicit;
+    var sub_r927 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(sub_r905.label);
+    i0.ɵɵtextInterpolate(sub_r927.label);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(sub_r905.value);
+    i0.ɵɵtextInterpolate(sub_r927.value);
 } }
 function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
@@ -85,11 +85,11 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_
     i0.ɵɵelementEnd();
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var child_r910 = i0.ɵɵnextContext().$implicit;
+    var child_r932 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(child_r910.label);
+    i0.ɵɵtextInterpolate(child_r932.label);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(child_r910.value);
+    i0.ɵɵtextInterpolate(child_r932.value);
 } }
 function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 35);
@@ -101,11 +101,11 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var c2_r915 = ctx.$implicit;
+    var c2_r937 = ctx.$implicit;
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(c2_r915.label);
+    i0.ɵɵtextInterpolate(c2_r937.label);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(c2_r915.value);
+    i0.ɵɵtextInterpolate(c2_r937.value);
 } }
 function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
@@ -115,11 +115,11 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_
     i0.ɵɵtemplate(3, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_Template, 5, 2, "div", 30);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var child_r910 = i0.ɵɵnextContext().$implicit;
+    var child_r932 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(child_r910.label);
+    i0.ɵɵtextInterpolate(child_r932.label);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", child_r910.forms);
+    i0.ɵɵproperty("ngForOf", child_r932.forms);
 } }
 function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 35);
@@ -127,11 +127,11 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_
     i0.ɵɵtemplate(2, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_Template, 4, 2, "ng-container", 36);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var child_r910 = ctx.$implicit;
+    var child_r932 = ctx.$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", !child_r910.forms);
+    i0.ɵɵproperty("ngIf", !child_r932.forms);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", child_r910.forms);
+    i0.ɵɵproperty("ngIf", child_r932.forms);
 } }
 function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
@@ -141,11 +141,11 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_
     i0.ɵɵtemplate(3, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_Template, 3, 2, "div", 30);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var sub_r905 = i0.ɵɵnextContext().$implicit;
+    var sub_r927 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(sub_r905.label);
+    i0.ɵɵtextInterpolate(sub_r927.label);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", sub_r905.forms);
+    i0.ɵɵproperty("ngForOf", sub_r927.forms);
 } }
 function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 35);
@@ -153,11 +153,11 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_
     i0.ɵɵtemplate(2, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_Template, 4, 2, "ng-container", 36);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var sub_r905 = ctx.$implicit;
+    var sub_r927 = ctx.$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", !sub_r905.forms);
+    i0.ɵɵproperty("ngIf", !sub_r927.forms);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", sub_r905.forms);
+    i0.ɵɵproperty("ngIf", sub_r927.forms);
 } }
 function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
@@ -167,11 +167,11 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_Templa
     i0.ɵɵtemplate(3, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_Template, 3, 2, "div", 30);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var forms_r900 = i0.ɵɵnextContext().$implicit;
+    var forms_r922 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(forms_r900.label);
+    i0.ɵɵtextInterpolate(forms_r922.label);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", forms_r900.forms);
+    i0.ɵɵproperty("ngForOf", forms_r922.forms);
 } }
 function OnboardingDetailComponent_div_0_section_24_div_11_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 35);
@@ -179,11 +179,11 @@ function OnboardingDetailComponent_div_0_section_24_div_11_Template(rf, ctx) { i
     i0.ɵɵtemplate(2, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_Template, 4, 2, "ng-container", 36);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var forms_r900 = ctx.$implicit;
+    var forms_r922 = ctx.$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", !forms_r900.forms);
+    i0.ɵɵproperty("ngIf", !forms_r922.forms);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", forms_r900.forms);
+    i0.ɵɵproperty("ngIf", forms_r922.forms);
 } }
 function OnboardingDetailComponent_div_0_section_24_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "section", 22);
@@ -206,29 +206,29 @@ function OnboardingDetailComponent_div_0_section_24_Template(rf, ctx) { if (rf &
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r894 = ctx.$implicit;
-    var ctx_r891 = i0.ɵɵnextContext(2);
-    i0.ɵɵproperty("id", category_r894.name);
+    var category_r916 = ctx.$implicit;
+    var ctx_r913 = i0.ɵɵnextContext(2);
+    i0.ɵɵproperty("id", category_r916.name);
     i0.ɵɵadvance(5);
-    i0.ɵɵtextInterpolate(category_r894.name);
+    i0.ɵɵtextInterpolate(category_r916.name);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r891.catNameStart(category_r894.name) ? "l'" + category_r894.name : category_r894.name, " ");
+    i0.ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r913.catNameStart(category_r916.name) ? "l'" + category_r916.name : category_r916.name, " ");
     i0.ɵɵadvance(2);
-    i0.ɵɵproperty("ngIf", (category_r894 == null ? null : category_r894.fieldCompleted) === (category_r894 == null ? null : category_r894.fieldLength));
+    i0.ɵɵproperty("ngIf", (category_r916 == null ? null : category_r916.fieldCompleted) === (category_r916 == null ? null : category_r916.fieldLength));
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", (category_r894 == null ? null : category_r894.fieldCompleted) < (category_r894 == null ? null : category_r894.fieldLength));
+    i0.ɵɵproperty("ngIf", (category_r916 == null ? null : category_r916.fieldCompleted) < (category_r916 == null ? null : category_r916.fieldLength));
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", category_r894.forms);
+    i0.ɵɵproperty("ngForOf", category_r916.forms);
 } }
 function OnboardingDetailComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    var _r920 = i0.ɵɵgetCurrentView();
+    var _r942 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 1);
     i0.ɵɵelementStart(1, "h1", 2);
     i0.ɵɵelementStart(2, "p");
     i0.ɵɵtext(3);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(4, "mat-icon", 3);
-    i0.ɵɵlistener("click", function OnboardingDetailComponent_div_0_Template_mat_icon_click_4_listener() { i0.ɵɵrestoreView(_r920); var ctx_r919 = i0.ɵɵnextContext(); return ctx_r919.onEdit(); });
+    i0.ɵɵlistener("click", function OnboardingDetailComponent_div_0_Template_mat_icon_click_4_listener() { i0.ɵɵrestoreView(_r942); var ctx_r941 = i0.ɵɵnextContext(); return ctx_r941.onEdit(); });
     i0.ɵɵtext(5, "edit");
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
@@ -258,7 +258,7 @@ function OnboardingDetailComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵtemplate(22, OnboardingDetailComponent_div_0_li_22_Template, 3, 5, "li", 10);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(23, "div", 11);
-    i0.ɵɵlistener("scroll", function OnboardingDetailComponent_div_0_Template_div_scroll_23_listener($event) { i0.ɵɵrestoreView(_r920); var ctx_r921 = i0.ɵɵnextContext(); return ctx_r921.onScroll($event); });
+    i0.ɵɵlistener("scroll", function OnboardingDetailComponent_div_0_Template_div_scroll_23_listener($event) { i0.ɵɵrestoreView(_r942); var ctx_r943 = i0.ɵɵnextContext(); return ctx_r943.onScroll($event); });
     i0.ɵɵtemplate(24, OnboardingDetailComponent_div_0_section_24_Template, 12, 6, "section", 12);
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
@@ -333,21 +333,21 @@ function OnboardingDetailComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r889 = i0.ɵɵnextContext();
+    var ctx_r911 = i0.ɵɵnextContext();
     i0.ɵɵadvance(3);
-    i0.ɵɵtextInterpolate1("Int\u00E9gration profil ", ctx_r889.detailView == null ? null : ctx_r889.detailView.Name, "");
+    i0.ɵɵtextInterpolate1("Int\u00E9gration profil ", ctx_r911.detailView == null ? null : ctx_r911.detailView.Name, "");
     i0.ɵɵadvance(8);
-    i0.ɵɵtextInterpolate2("", ctx_r889.detailView.user.FirstName, " ", ctx_r889.detailView.user.LastName, "");
+    i0.ɵɵtextInterpolate2("", ctx_r911.detailView.user.FirstName, " ", ctx_r911.detailView.user.LastName, "");
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(i0.ɵɵpipeBind2(14, 8, ctx_r889.detailView.createdAt, "dd/MM/yy"));
+    i0.ɵɵtextInterpolate(i0.ɵɵpipeBind2(14, 8, ctx_r911.detailView.createdAt, "dd/MM/yy"));
     i0.ɵɵadvance(4);
-    i0.ɵɵtextInterpolate(ctx_r889.detailView == null ? null : ctx_r889.detailView.user == null ? null : ctx_r889.detailView.user.Phone == null ? null : ctx_r889.detailView.user.Phone.internationalNumber);
+    i0.ɵɵtextInterpolate(ctx_r911.detailView == null ? null : ctx_r911.detailView.user == null ? null : ctx_r911.detailView.user.Phone == null ? null : ctx_r911.detailView.user.Phone.internationalNumber);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(ctx_r889.detailView.user.Email);
+    i0.ɵɵtextInterpolate(ctx_r911.detailView.user.Email);
     i0.ɵɵadvance(3);
-    i0.ɵɵproperty("ngForOf", ctx_r889.detailView.categories);
+    i0.ɵɵproperty("ngForOf", ctx_r911.detailView.categories);
     i0.ɵɵadvance(2);
-    i0.ɵɵproperty("ngForOf", ctx_r889.detailView.categories);
+    i0.ɵɵproperty("ngForOf", ctx_r911.detailView.categories);
 } }
 var OnboardingDetailComponent = /** @class */ (function () {
     function OnboardingDetailComponent() {

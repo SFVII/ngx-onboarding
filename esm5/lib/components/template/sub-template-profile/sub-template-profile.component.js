@@ -18,54 +18,54 @@ function SubTemplateProfileComponent_div_0_div_5_mat_select_3_mat_option_1_Templ
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var select_r760 = ctx.$implicit;
-    i0.ɵɵproperty("value", select_r760.value);
+    var select_r771 = ctx.$implicit;
+    i0.ɵɵproperty("value", select_r771.value);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" ", select_r760.value, " ");
+    i0.ɵɵtextInterpolate1(" ", select_r771.value, " ");
 } }
 var _c0 = function () { return { standalone: true }; };
 function SubTemplateProfileComponent_div_0_div_5_mat_select_3_Template(rf, ctx) { if (rf & 1) {
-    var _r762 = i0.ɵɵgetCurrentView();
+    var _r773 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "mat-select", 11);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_5_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r762); var ctx_r761 = i0.ɵɵnextContext(3); return ctx_r761.field.selector.value = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_5_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r773); var ctx_r772 = i0.ɵɵnextContext(3); return ctx_r772.field.selector.value = $event; });
     i0.ɵɵtemplate(1, SubTemplateProfileComponent_div_0_div_5_mat_select_3_mat_option_1_Template, 2, 2, "mat-option", 12);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r758 = i0.ɵɵnextContext(3);
-    i0.ɵɵproperty("ngModel", ctx_r758.field.selector.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0));
+    var ctx_r769 = i0.ɵɵnextContext(3);
+    i0.ɵɵproperty("ngModel", ctx_r769.field.selector.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0));
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", ctx_r758.field.selector.defaultValue);
+    i0.ɵɵproperty("ngForOf", ctx_r769.field.selector.defaultValue);
 } }
 var _c1 = function () { return { display: "inine-block" }; };
 function SubTemplateProfileComponent_div_0_div_5_Template(rf, ctx) { if (rf & 1) {
-    var _r764 = i0.ɵɵgetCurrentView();
+    var _r775 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 8);
     i0.ɵɵelementStart(1, "mat-checkbox", 9);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_5_Template_mat_checkbox_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r764); var ctx_r763 = i0.ɵɵnextContext(2); return ctx_r763.field.value = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_5_Template_mat_checkbox_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r775); var ctx_r774 = i0.ɵɵnextContext(2); return ctx_r774.field.value = $event; });
     i0.ɵɵtext(2);
     i0.ɵɵelementEnd();
     i0.ɵɵtemplate(3, SubTemplateProfileComponent_div_0_div_5_mat_select_3_Template, 2, 4, "mat-select", 10);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r753 = i0.ɵɵnextContext(2);
+    var ctx_r764 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngModel", ctx_r753.field.value)("ngModelOptions", i0.ɵɵpureFunction0(5, _c0))("ngStyle", ctx_r753.field.selector && i0.ɵɵpureFunction0(6, _c1));
+    i0.ɵɵproperty("ngModel", ctx_r764.field.value)("ngModelOptions", i0.ɵɵpureFunction0(5, _c0))("ngStyle", ctx_r764.field.selector && i0.ɵɵpureFunction0(6, _c1));
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" ", ctx_r753.field.label, " ");
+    i0.ɵɵtextInterpolate1(" ", ctx_r764.field.label, " ");
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", ctx_r753.field.selector);
+    i0.ɵɵproperty("ngIf", ctx_r764.field.selector);
 } }
 function SubTemplateProfileComponent_div_0_div_6_mat_checkbox_4_Template(rf, ctx) { if (rf & 1) {
-    var _r768 = i0.ɵɵgetCurrentView();
+    var _r779 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "mat-checkbox", 16);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_6_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r768); var opt_r766 = ctx.$implicit; return opt_r766.checked = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_6_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r779); var opt_r777 = ctx.$implicit; return opt_r777.checked = $event; });
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r766 = ctx.$implicit;
-    i0.ɵɵproperty("checked", opt_r766.checked)("ngModel", opt_r766.checked)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0));
+    var opt_r777 = ctx.$implicit;
+    i0.ɵɵproperty("checked", opt_r777.checked)("ngModel", opt_r777.checked)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0));
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" ", opt_r766.value, " ");
+    i0.ɵɵtextInterpolate1(" ", opt_r777.value, " ");
 } }
 function SubTemplateProfileComponent_div_0_div_6_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 8);
@@ -77,96 +77,96 @@ function SubTemplateProfileComponent_div_0_div_6_Template(rf, ctx) { if (rf & 1)
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r754 = i0.ɵɵnextContext(2);
+    var ctx_r765 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(ctx_r754.field.label);
+    i0.ɵɵtextInterpolate(ctx_r765.field.label);
     i0.ɵɵadvance(2);
-    i0.ɵɵproperty("ngForOf", ctx_r754.field.defaultValue);
+    i0.ɵɵproperty("ngForOf", ctx_r765.field.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_div_7_mat_radio_button_4_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "mat-radio-button", 13);
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r770 = ctx.$implicit;
-    i0.ɵɵproperty("value", opt_r770.value);
+    var opt_r781 = ctx.$implicit;
+    i0.ɵɵproperty("value", opt_r781.value);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1("", opt_r770.value, " ");
+    i0.ɵɵtextInterpolate1("", opt_r781.value, " ");
 } }
 function SubTemplateProfileComponent_div_0_div_7_Template(rf, ctx) { if (rf & 1) {
-    var _r772 = i0.ɵɵgetCurrentView();
+    var _r783 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 8);
     i0.ɵɵelementStart(1, "label", 17);
     i0.ɵɵtext(2);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(3, "mat-radio-group", 18);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_7_Template_mat_radio_group_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r772); var ctx_r771 = i0.ɵɵnextContext(2); return ctx_r771.field.value = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_7_Template_mat_radio_group_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r783); var ctx_r782 = i0.ɵɵnextContext(2); return ctx_r782.field.value = $event; });
     i0.ɵɵtemplate(4, SubTemplateProfileComponent_div_0_div_7_mat_radio_button_4_Template, 2, 2, "mat-radio-button", 12);
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r755 = i0.ɵɵnextContext(2);
+    var ctx_r766 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1(" ", ctx_r755.field.label, " ");
+    i0.ɵɵtextInterpolate1(" ", ctx_r766.field.label, " ");
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngModel", ctx_r755.field.value)("required", ctx_r755.field.isMandatory);
+    i0.ɵɵproperty("ngModel", ctx_r766.field.value)("required", ctx_r766.field.isMandatory);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", ctx_r755.field.defaultValue);
+    i0.ɵɵproperty("ngForOf", ctx_r766.field.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_div_8_mat_option_5_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "mat-option", 13);
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r774 = ctx.$implicit;
-    i0.ɵɵproperty("value", opt_r774.value);
+    var opt_r785 = ctx.$implicit;
+    i0.ɵɵproperty("value", opt_r785.value);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate(opt_r774.value);
+    i0.ɵɵtextInterpolate(opt_r785.value);
 } }
 function SubTemplateProfileComponent_div_0_div_8_Template(rf, ctx) { if (rf & 1) {
-    var _r776 = i0.ɵɵgetCurrentView();
+    var _r787 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 19);
     i0.ɵɵelementStart(1, "mat-form-field", 20);
     i0.ɵɵelementStart(2, "mat-label");
     i0.ɵɵtext(3);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(4, "mat-select", 21);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_8_Template_mat_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r776); var ctx_r775 = i0.ɵɵnextContext(2); return ctx_r775.field.value = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_8_Template_mat_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r787); var ctx_r786 = i0.ɵɵnextContext(2); return ctx_r786.field.value = $event; });
     i0.ɵɵtemplate(5, SubTemplateProfileComponent_div_0_div_8_mat_option_5_Template, 2, 2, "mat-option", 12);
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r756 = i0.ɵɵnextContext(2);
+    var ctx_r767 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(3);
-    i0.ɵɵtextInterpolate1(" ", ctx_r756.field.label, " ");
+    i0.ɵɵtextInterpolate1(" ", ctx_r767.field.label, " ");
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngModel", ctx_r756.field.value)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0));
+    i0.ɵɵproperty("ngModel", ctx_r767.field.value)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0));
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", ctx_r756.field.defaultValue);
+    i0.ɵɵproperty("ngForOf", ctx_r767.field.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_mat_form_field_9_Template(rf, ctx) { if (rf & 1) {
-    var _r778 = i0.ɵɵgetCurrentView();
+    var _r789 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "mat-form-field", 22);
     i0.ɵɵelementStart(1, "mat-label");
     i0.ɵɵtext(2);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(3, "input", 23);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_mat_form_field_9_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r778); var ctx_r777 = i0.ɵɵnextContext(2); return ctx_r777.field.value = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_mat_form_field_9_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r789); var ctx_r788 = i0.ɵɵnextContext(2); return ctx_r788.field.value = $event; });
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r757 = i0.ɵɵnextContext(2);
+    var ctx_r768 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(ctx_r757.field.label);
+    i0.ɵɵtextInterpolate(ctx_r768.field.label);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("type", ctx_r757.field.type)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0))("ngModel", ctx_r757.field.value);
+    i0.ɵɵproperty("type", ctx_r768.field.type)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0))("ngModel", ctx_r768.field.value);
 } }
 function SubTemplateProfileComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    var _r780 = i0.ɵɵgetCurrentView();
+    var _r791 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 1);
     i0.ɵɵelementStart(1, "button", 2);
-    i0.ɵɵlistener("click", function SubTemplateProfileComponent_div_0_Template_button_click_1_listener($event) { i0.ɵɵrestoreView(_r780); var ctx_r779 = i0.ɵɵnextContext(); return ctx_r779.editBLock($event); });
+    i0.ɵɵlistener("click", function SubTemplateProfileComponent_div_0_Template_button_click_1_listener($event) { i0.ɵɵrestoreView(_r791); var ctx_r790 = i0.ɵɵnextContext(); return ctx_r790.editBLock($event); });
     i0.ɵɵelementStart(2, "mat-icon", 3);
     i0.ɵɵtext(3, "settings");
     i0.ɵɵelementEnd();
@@ -180,9 +180,9 @@ function SubTemplateProfileComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r752 = i0.ɵɵnextContext();
+    var ctx_r763 = i0.ɵɵnextContext();
     i0.ɵɵadvance(4);
-    i0.ɵɵproperty("ngSwitch", ctx_r752.field.type);
+    i0.ɵɵproperty("ngSwitch", ctx_r763.field.type);
     i0.ɵɵadvance(1);
     i0.ɵɵproperty("ngSwitchCase", "checkbox");
     i0.ɵɵadvance(1);
