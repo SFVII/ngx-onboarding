@@ -5997,11 +5997,9 @@ var DialogCreateOnboardingComponent = /** @class */ (function () {
         if (!this.disabled()) {
             var template = this.templates.find(function (temp) { return temp._id === _this.onboarding.TemplateId; });
             if (this.data.user) {
-                this.userForm = this.defaultUserForm.map(function (data) {
-                    return __assign(__assign({}, data), { value: _this.data.user[data.key] });
-                });
+                this.userForm = this.defaultUserForm.map(function (data) { return (__assign(__assign({}, data), { value: _this.data.user[data.key] })); });
                 var index = template.categories.findIndex(function (cat) { return cat.name === "Utilisateur"; });
-                if (index) {
+                if (index !== -1) {
                     template.categories[index].forms = this.userForm;
                 }
             }

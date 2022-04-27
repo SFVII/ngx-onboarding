@@ -5677,11 +5677,9 @@ class DialogCreateOnboardingComponent {
         if (!this.disabled()) {
             const template = this.templates.find((temp) => temp._id === this.onboarding.TemplateId);
             if (this.data.user) {
-                this.userForm = this.defaultUserForm.map((data) => {
-                    return Object.assign(Object.assign({}, data), { value: this.data.user[data.key] });
-                });
+                this.userForm = this.defaultUserForm.map((data) => (Object.assign(Object.assign({}, data), { value: this.data.user[data.key] })));
                 const index = template.categories.findIndex((cat) => cat.name === "Utilisateur");
-                if (index) {
+                if (index !== -1) {
                     template.categories[index].forms = this.userForm;
                 }
             }
