@@ -3,6 +3,7 @@ import { OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from "@angular/forms";
 import { MatDialog } from "@angular/material/dialog";
 import { OnboardingService } from "../../onboarding.service";
+import { fieldWidth } from "../../utils/utils";
 import * as i0 from "@angular/core";
 export declare class OnboardingCreateComponent implements OnInit {
     private fb;
@@ -30,6 +31,7 @@ export declare class OnboardingCreateComponent implements OnInit {
     loading: boolean;
     invalideValue: boolean;
     detailView: any;
+    fieldWidth: typeof fieldWidth;
     categories: any;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog);
     isObject(obj: any): boolean;
@@ -50,7 +52,6 @@ export declare class OnboardingCreateComponent implements OnInit {
     onSelectMenu(i: any): void;
     onCheckValue(event: boolean): void;
     onLink(e: any): void;
-    fieldWidth(length: number): "50%" | "33%" | "25%";
     onShowMode(): void;
     static ɵfac: i0.ɵɵFactoryDef<OnboardingCreateComponent>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<OnboardingCreateComponent, "create-onboarding", never, {}, {}, never>;

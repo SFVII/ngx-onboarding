@@ -5,6 +5,7 @@ import { FormBuilder, FormGroup } from "@angular/forms";
 import { MatChipInputEvent } from "@angular/material/chips";
 import { MatDialog } from "@angular/material/dialog";
 import { OnboardingService } from "../../onboarding.service";
+import { ScrollToService } from "@nicky-lenaers/ngx-scroll-to";
 import * as i0 from "@angular/core";
 export declare class TemplateProfileCreateComponent implements OnInit {
     private fb;
@@ -12,6 +13,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     private route;
     private router;
     private dialog;
+    private scrollToService;
     form: FormGroup;
     validCategory: boolean;
     separatorKeysCodes: number[];
@@ -22,6 +24,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     parent: any[];
     editIndex: any;
     showProfileName: boolean;
+    invalideValue: boolean;
     matIconList: {
         name: string;
     }[];
@@ -35,7 +38,9 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     currentChip: string;
     prevValue: string;
     paramsIndex: any[];
-    constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog);
+    historics: any[];
+    currentCanceledIndex: any;
+    constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog, scrollToService: ScrollToService);
     defaultCategorie: any;
     canDeactivate(): true | import("rxjs").Subject<boolean>;
     initForm(): void;
@@ -82,6 +87,10 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onAddNewSubLevelFieldBlock(event: any): void;
     onOpenTypeDialog(field: any): void;
     onSelectCondition(conditionLocation: any): void;
+    fieldWidth(type: string, length: number, index: number): "100%" | "50%" | "33%" | "25%";
+    onCancel(left: boolean): void;
+    onCheckValue(event: boolean): void;
+    onHistorics(data: any): void;
     static ɵfac: i0.ɵɵFactoryDef<TemplateProfileCreateComponent>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<TemplateProfileCreateComponent, "onboarding-create-profile-template", never, {}, {}, never>;
 }
