@@ -33,6 +33,8 @@ export declare class OnboardingCreateComponent implements OnInit {
     detailView: any;
     fieldWidth: typeof fieldWidth;
     categories: any;
+    submitLabel: string;
+    resumeLabel: string;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog);
     isObject(obj: any): boolean;
     canDeactivate(): true | import("rxjs").Subject<boolean>;
@@ -43,6 +45,7 @@ export declare class OnboardingCreateComponent implements OnInit {
     catNameStart(str: string): boolean;
     onSelect(id: any, onboarding: any): Promise<void>;
     existSubForm(forms: any): boolean;
+    private scrollToFirstInvalidControl;
     onChangeCategory(): any;
     onSubmit(): Promise<void>;
     onResumeLater(): Promise<void>;

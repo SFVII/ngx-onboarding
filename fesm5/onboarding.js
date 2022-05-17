@@ -5572,7 +5572,7 @@ function OnboardingCreateComponent_form_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementStart(7, "button", 7);
     ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_button_click_7_listener() { ɵɵrestoreView(_r889); var ctx_r891 = ɵɵnextContext(); return ctx_r891.onResumeLater(); });
-    ɵɵtext(8, "Reprendre plus tard");
+    ɵɵtext(8);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(9, "div", 8);
@@ -5584,11 +5584,11 @@ function OnboardingCreateComponent_form_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵtemplate(13, OnboardingCreateComponent_form_2_section_13_Template, 12, 6, "section", 11);
     ɵɵelementStart(14, "div", 12);
     ɵɵelementStart(15, "button", 13);
-    ɵɵtext(16, "Envoyer ma fiche");
+    ɵɵtext(16);
     ɵɵelementEnd();
     ɵɵelementStart(17, "button", 14);
     ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_button_click_17_listener() { ɵɵrestoreView(_r889); var ctx_r893 = ɵɵnextContext(); return ctx_r893.onResumeLater(); });
-    ɵɵtext(18, "Reprendre plus tard");
+    ɵɵtext(18);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -5602,14 +5602,20 @@ function OnboardingCreateComponent_form_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵtextInterpolate1("Int\u00E9gration profil ", ctx_r837.currentTemplate == null ? null : ctx_r837.currentTemplate.Name, " ");
     ɵɵadvance(3);
     ɵɵproperty("disabled", ctx_r837.loading);
-    ɵɵadvance(4);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r837.resumeLabel);
+    ɵɵadvance(3);
     ɵɵproperty("ngForOf", ctx_r837.categories);
     ɵɵadvance(2);
     ɵɵproperty("ngForOf", ctx_r837.categories);
     ɵɵadvance(2);
     ɵɵproperty("disabled", ctx_r837.loading || !ctx_r837.form.valid);
-    ɵɵadvance(2);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r837.submitLabel);
+    ɵɵadvance(1);
     ɵɵproperty("disabled", ctx_r837.loading);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r837.resumeLabel);
 } }
 function OnboardingCreateComponent_lib_onboarding_detail_3_Template(rf, ctx) { if (rf & 1) {
     var _r895 = ɵɵgetCurrentView();
@@ -5639,6 +5645,8 @@ var OnboardingCreateComponent = /** @class */ (function () {
         this.selectedCategoryIndex = null;
         this.loading = false;
         this.fieldWidth = fieldWidth;
+        this.submitLabel = 'Envoyer ma fiche';
+        this.resumeLabel = 'Reprendre plus tard';
         this.service._currentOnboarding.subscribe(function (onboarding) { return __awaiter(_this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -5884,8 +5892,14 @@ var OnboardingCreateComponent = /** @class */ (function () {
         }
         return exist;
     };
+    OnboardingCreateComponent.prototype.scrollToFirstInvalidControl = function () {
+        var form = document.getElementById('form');
+        var firstInvalidControl = form.getElementsByClassName('ng-invalid')[0];
+        firstInvalidControl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        firstInvalidControl.focus();
+    };
     OnboardingCreateComponent.prototype.onChangeCategory = function () {
-        var checkMandatory = function (field) { return !!field.value && field.isMandatory && field.type !== "checkbox_multiple" || field.isConditional || !field.isMandatory || field.type === "checkbox_multiple"; };
+        var checkMandatory = function (field) { return !!field.value && field.isMandatory && (field.type !== "checkbox_multiple" || field.type !== 'checkbox') || !field.isMandatory || field.type === "checkbox_multiple" || field.type === 'checkbox' || field.type === 'toggle'; };
         return this.categories.every(function (cat) { return cat.forms.every(function (field) {
             if (field.forms) {
                 return field.forms.every(function (form) {
@@ -5901,24 +5915,26 @@ var OnboardingCreateComponent = /** @class */ (function () {
         }); });
     };
     OnboardingCreateComponent.prototype.onSubmit = function () {
+        var _a, _b;
         return __awaiter(this, void 0, void 0, function () {
-            var result, _a;
-            return __generator(this, function (_b) {
-                switch (_b.label) {
+            var result, _c;
+            return __generator(this, function (_d) {
+                switch (_d.label) {
                     case 0:
-                        if (!(this.form.valid && this.onChangeCategory())) return [3 /*break*/, 7];
+                        if (!(this.form.valid && this.onChangeCategory())) return [3 /*break*/, 8];
                         this.loading = true;
+                        this.submitLabel = "Chargement...";
                         if (!(this.onboardingId && this.onboardingId !== "0")) return [3 /*break*/, 2];
-                        return [4 /*yield*/, this.service.updateOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, Finished: true, _id: this.onboardingId, tickets: this.currentOnboarding.vtickets.map(function (ticket) { return ticket.Id; }) }))];
+                        return [4 /*yield*/, this.service.updateOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, Finished: true, _id: this.onboardingId, tickets: (_b = (_a = this.currentOnboarding) === null || _a === void 0 ? void 0 : _a.vtickets) === null || _b === void 0 ? void 0 : _b.map(function (ticket) { return ticket.Id; }) }))];
                     case 1:
-                        _a = _b.sent();
+                        _c = _d.sent();
                         return [3 /*break*/, 4];
                     case 2: return [4 /*yield*/, this.service.createOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, Finished: true }))];
                     case 3:
-                        _a = _b.sent();
-                        _b.label = 4;
+                        _c = _d.sent();
+                        _d.label = 4;
                     case 4:
-                        result = _a;
+                        result = _c;
                         if (!result) return [3 /*break*/, 6];
                         if (this.onboardingId && this.onboardingId !== "0") {
                             this.categories = result.categories;
@@ -5926,8 +5942,9 @@ var OnboardingCreateComponent = /** @class */ (function () {
                         }
                         return [4 /*yield*/, this.service.getAllProfil()];
                     case 5:
-                        _b.sent();
+                        _d.sent();
                         this.loading = false;
+                        this.submitLabel = "Envoyer ma fiche";
                         this.canExit = true;
                         this.showMode = true;
                         this.router.navigate([this.service.mainPath + '/requests']);
@@ -5935,30 +5952,37 @@ var OnboardingCreateComponent = /** @class */ (function () {
                     case 6:
                         console.log("errror......");
                         this.loading = false;
-                        _b.label = 7;
-                    case 7: return [2 /*return*/];
+                        this.submitLabel = "Envoyer ma fiche";
+                        _d.label = 7;
+                    case 7: return [3 /*break*/, 9];
+                    case 8:
+                        this.scrollToFirstInvalidControl();
+                        _d.label = 9;
+                    case 9: return [2 /*return*/];
                 }
             });
         });
     };
     OnboardingCreateComponent.prototype.onResumeLater = function () {
+        var _a, _b;
         return __awaiter(this, void 0, void 0, function () {
-            var result, _a;
-            return __generator(this, function (_b) {
-                switch (_b.label) {
+            var result, _c;
+            return __generator(this, function (_d) {
+                switch (_d.label) {
                     case 0:
                         this.loading = true;
+                        this.resumeLabel = "Chargement...";
                         if (!(this.onboardingId && this.onboardingId !== "0")) return [3 /*break*/, 2];
-                        return [4 /*yield*/, this.service.updateOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, Finished: true, _id: this.onboardingId, tickets: this.currentOnboarding.vtickets.map(function (ticket) { return ticket.Id; }) }))];
+                        return [4 /*yield*/, this.service.updateOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, Finished: true, _id: this.onboardingId, tickets: (_b = (_a = this.currentOnboarding) === null || _a === void 0 ? void 0 : _a.vtickets) === null || _b === void 0 ? void 0 : _b.map(function (ticket) { return ticket.Id; }) }))];
                     case 1:
-                        _a = _b.sent();
+                        _c = _d.sent();
                         return [3 /*break*/, 4];
                     case 2: return [4 /*yield*/, this.service.createOnboarding(__assign(__assign({}, this.form.value), { categories: this.categories, Finished: false }))];
                     case 3:
-                        _a = _b.sent();
-                        _b.label = 4;
+                        _c = _d.sent();
+                        _d.label = 4;
                     case 4:
-                        result = _a;
+                        result = _c;
                         if (!result) return [3 /*break*/, 6];
                         if (this.onboardingId && this.onboardingId !== "0") {
                             this.categories = result.categories;
@@ -5966,16 +5990,18 @@ var OnboardingCreateComponent = /** @class */ (function () {
                         }
                         return [4 /*yield*/, this.service.getAllProfil()];
                     case 5:
-                        _b.sent();
+                        _d.sent();
                         this.loading = false;
                         this.canExit = true;
                         this.showMode = true;
+                        this.resumeLabel = "Reprendre plus tard";
                         this.router.navigate([this.service.mainPath + '/requests']);
                         return [3 /*break*/, 7];
                     case 6:
                         console.log("errror......");
                         this.loading = false;
-                        _b.label = 7;
+                        this.resumeLabel = "Reprendre plus tard";
+                        _d.label = 7;
                     case 7: return [2 /*return*/];
                 }
             });
@@ -6082,10 +6108,10 @@ var OnboardingCreateComponent = /** @class */ (function () {
     OnboardingCreateComponent.ɵfac = function OnboardingCreateComponent_Factory(t) { return new (t || OnboardingCreateComponent)(ɵɵdirectiveInject(FormBuilder), ɵɵdirectiveInject(OnboardingService), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(MatDialog)); };
     OnboardingCreateComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingCreateComponent, selectors: [["create-onboarding"]], hostBindings: function OnboardingCreateComponent_HostBindings(rf, ctx) { if (rf & 1) {
             ɵɵlistener("scroll", function OnboardingCreateComponent_scroll_HostBindingHandler($event) { return ctx.onScroll($event); });
-        } }, decls: 4, vars: 2, consts: [[1, "content"], [3, "formGroup", "submit", 4, "ngIf"], [3, "detailView", "onShowMode", 4, "ngIf"], [3, "formGroup", "submit"], [1, "category"], [1, "title-group"], [2, "margin-left", "20px", "cursor", "pointer", 3, "click"], ["mat-button", "", "type", "button", 1, "register-button", 3, "disabled", "click"], ["id", "fields", 1, "fields"], ["class", "menu-item", 3, "ngxScrollTo", "id", 4, "ngFor", "ngForOf"], [1, "category-container", 3, "scroll"], ["class", "category-item content-item", 3, "id", 4, "ngFor", "ngForOf"], [1, "actions-button", 2, "margin-bottom", "50px"], ["mat-button", "", "type", "submit", 1, "register-button", "send-form", 3, "disabled"], ["mat-button", "", "type", "button", 1, "register-button", "resume", 3, "disabled", "click"], [1, "menu-item", 3, "ngxScrollTo", "id"], [1, "category-item", "content-item", 3, "id"], [1, "field-content"], [1, "field-item"], [1, "category-title-group"], [1, "category-name"], ["placeholder", "Company", "required", "", "style", "width: 150px;", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], ["placeholder", "Type de ticket", "required", "", "style", "width: 150px;", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], [1, "category-container"], ["class", "field-category", 3, "id", "width", 4, "ngFor", "ngForOf"], ["placeholder", "Company", "required", "", 2, "width", "150px", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], ["placeholder", "Type de ticket", "required", "", 2, "width", "150px", 3, "ngModel", "ngModelOptions", "ngModelChange"], [1, "field-category", 3, "id"], ["class", "inner-loop", 4, "ngIf"], [1, "inner-loop"], [1, "fields-content"], [1, "fields-container"], [3, "field", "length", "i", "j"], [1, "child"], ["class", "inner-child", 4, "ngIf"], [1, "inner-child"], ["class", "inner-child-content", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "inner-child-content", 3, "id"], [3, "field", "length", "i", "j", "onCheckValue"], [3, "detailView", "onShowMode"]], template: function OnboardingCreateComponent_Template(rf, ctx) { if (rf & 1) {
+        } }, decls: 4, vars: 2, consts: [[1, "content"], ["id", "form", 3, "formGroup", "submit", 4, "ngIf"], [3, "detailView", "onShowMode", 4, "ngIf"], ["id", "form", 3, "formGroup", "submit"], [1, "category"], [1, "title-group"], [2, "margin-left", "20px", "cursor", "pointer", 3, "click"], ["mat-button", "", "type", "button", 1, "register-button", 3, "disabled", "click"], ["id", "fields", 1, "fields"], ["class", "menu-item", 3, "ngxScrollTo", "id", 4, "ngFor", "ngForOf"], [1, "category-container", 3, "scroll"], ["class", "category-item content-item", 3, "id", 4, "ngFor", "ngForOf"], [1, "actions-button", 2, "margin-bottom", "50px"], ["mat-button", "", "type", "submit", 1, "register-button", "send-form", 3, "disabled"], ["mat-button", "", "type", "button", 1, "register-button", "resume", 3, "disabled", "click"], [1, "menu-item", 3, "ngxScrollTo", "id"], [1, "category-item", "content-item", 3, "id"], [1, "field-content"], [1, "field-item"], [1, "category-title-group"], [1, "category-name"], ["placeholder", "Company", "required", "", "style", "width: 150px;", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], ["placeholder", "Type de ticket", "required", "", "style", "width: 150px;", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], [1, "category-container"], ["class", "field-category", 3, "id", "width", 4, "ngFor", "ngForOf"], ["placeholder", "Company", "required", "", 2, "width", "150px", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], ["placeholder", "Type de ticket", "required", "", 2, "width", "150px", 3, "ngModel", "ngModelOptions", "ngModelChange"], [1, "field-category", 3, "id"], ["class", "inner-loop", 4, "ngIf"], [1, "inner-loop"], [1, "fields-content"], [1, "fields-container"], [3, "field", "length", "i", "j"], [1, "child"], ["class", "inner-child", 4, "ngIf"], [1, "inner-child"], ["class", "inner-child-content", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "inner-child-content", 3, "id"], [3, "field", "length", "i", "j", "onCheckValue"], [3, "detailView", "onShowMode"]], template: function OnboardingCreateComponent_Template(rf, ctx) { if (rf & 1) {
             ɵɵelementStart(0, "main");
             ɵɵelementStart(1, "div", 0);
-            ɵɵtemplate(2, OnboardingCreateComponent_form_2_Template, 19, 7, "form", 1);
+            ɵɵtemplate(2, OnboardingCreateComponent_form_2_Template, 19, 10, "form", 1);
             ɵɵtemplate(3, OnboardingCreateComponent_lib_onboarding_detail_3_Template, 1, 1, "lib-onboarding-detail", 2);
             ɵɵelementEnd();
             ɵɵelementEnd();
