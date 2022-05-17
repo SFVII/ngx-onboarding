@@ -24,6 +24,8 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     parent: any[];
     editIndex: any;
     showProfileName: boolean;
+    liveLabel: string;
+    draftLabel: string;
     invalideValue: boolean;
     matIconList: {
         name: string;
