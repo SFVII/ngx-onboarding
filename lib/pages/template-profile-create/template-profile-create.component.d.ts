@@ -89,7 +89,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onAddNewSubLevelFieldBlock(event: any): void;
     onOpenTypeDialog(field: any): void;
     onSelectCondition(conditionLocation: any): void;
-    fieldWidth(type: string, length: number, index: number): "100%" | "50%" | "33%" | "25%";
+    fieldWidth(type: string, length: number, index: number): "100%" | "50%" | "33%";
     onCancel(left: boolean): void;
     onCheckValue(event: boolean): void;
     onHistorics(data: any): void;
