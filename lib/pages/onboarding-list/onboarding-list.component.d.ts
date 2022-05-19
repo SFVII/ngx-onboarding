@@ -26,6 +26,7 @@ export declare class OnboardingListComponent implements OnInit {
     lang: string;
     cancelSearch(): void;
     constructor(service: OnboardingService, router: Router, route: ActivatedRoute, dialog: MatDialog);
+    checkOnboardingPath(mainUrl: string): string;
     ngOnInit(): Promise<void>;
     triggerChange($event: any): void;
     openDialog(): void;
