@@ -6763,7 +6763,7 @@ var OnboardingListComponent = /** @class */ (function () {
                             row.Name = row.ContactName = ((_c = formUser) === null || _c === void 0 ? void 0 : _c.LastName) + " " + ((_d = formUser) === null || _d === void 0 ? void 0 : _d.FirstName) || "";
                             row.Title = ((_e = formUser) === null || _e === void 0 ? void 0 : _e.Title) || "";
                             row.Email = ((_f = formUser) === null || _f === void 0 ? void 0 : _f.Email) || '';
-                            row.date = moment(row.createdAt).format('DD/MM/yy');
+                            row.date = moment(row.createdAt).format('DD/MM/YY');
                             row.TemplateName = row.vtemplates.length > 0 ? row.vtemplates[0].Name : '';
                             row.Id = index + 1;
                             return row;
