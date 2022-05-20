@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/common/http'), require('@angular/core'), require('rxjs'), require('@angular/router'), require('@angular/cdk/keycodes'), require('@angular/cdk/drag-drop'), require('@angular/forms'), require('@angular/material/dialog'), require('@angular/material/form-field'), require('@angular/material/input'), require('ngx-intl-tel-input'), require('@angular/material/select'), require('@angular/common'), require('@angular/material/button'), require('@angular/material/core'), require('@angular/material/icon'), require('@nicky-lenaers/ngx-scroll-to'), require('libphonenumber-js'), require('@angular/material/slide-toggle'), require('@angular/material/checkbox'), require('@angular/material/radio'), require('@angular/material/chips'), require('@angular/material/paginator'), require('@angular/material/sort'), require('@angular/material/table'), require('@angular/platform-browser'), require('@angular/platform-browser/animations'), require('@angular/material/stepper'), require('@angular/material/grid-list'), require('@angular/cdk/table'), require('@angular/material/progress-bar'), require('@angular/material/card'), require('@angular/material/tooltip'), require('table'), require('@angular/material/tabs')) :
-    typeof define === 'function' && define.amd ? define('onboarding', ['exports', '@angular/common/http', '@angular/core', 'rxjs', '@angular/router', '@angular/cdk/keycodes', '@angular/cdk/drag-drop', '@angular/forms', '@angular/material/dialog', '@angular/material/form-field', '@angular/material/input', 'ngx-intl-tel-input', '@angular/material/select', '@angular/common', '@angular/material/button', '@angular/material/core', '@angular/material/icon', '@nicky-lenaers/ngx-scroll-to', 'libphonenumber-js', '@angular/material/slide-toggle', '@angular/material/checkbox', '@angular/material/radio', '@angular/material/chips', '@angular/material/paginator', '@angular/material/sort', '@angular/material/table', '@angular/platform-browser', '@angular/platform-browser/animations', '@angular/material/stepper', '@angular/material/grid-list', '@angular/cdk/table', '@angular/material/progress-bar', '@angular/material/card', '@angular/material/tooltip', 'table', '@angular/material/tabs'], factory) :
-    (global = global || self, factory(global.onboarding = {}, global.ng.common.http, global.ng.core, global.rxjs, global.ng.router, global.ng.cdk.keycodes, global.ng.cdk.dragDrop, global.ng.forms, global.ng.material.dialog, global.ng.material.formField, global.ng.material.input, global.ngxIntlTelInput, global.ng.material.select, global.ng.common, global.ng.material.button, global.ng.material.core, global.ng.material.icon, global.ngxScrollTo, global.libphonenumberJs, global.ng.material.slideToggle, global.ng.material.checkbox, global.ng.material.radio, global.ng.material.chips, global.ng.material.paginator, global.ng.material.sort, global.ng.material.table, global.ng.platformBrowser, global.ng.platformBrowser.animations, global.ng.material.stepper, global.ng.material.gridList, global.ng.cdk.table, global.ng.material.progressBar, global.ng.material.card, global.ng.material.tooltip, global.table$2, global.ng.material.tabs));
-}(this, (function (exports, http, core, rxjs, router, keycodes, dragDrop, forms, dialog, formField, input, ngxIntlTelInput, select, common, button, core$1, icon, ngxScrollTo, libphonenumberJs, slideToggle, checkbox, radio, chips, paginator, sort, table, platformBrowser, animations, stepper, gridList, table$1, progressBar, card, tooltip, table$2, tabs) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/common/http'), require('@angular/core'), require('rxjs'), require('@angular/router'), require('@angular/cdk/keycodes'), require('@angular/cdk/drag-drop'), require('@angular/forms'), require('@angular/material/dialog'), require('@angular/material/form-field'), require('@angular/material/input'), require('ngx-intl-tel-input'), require('@angular/material/select'), require('@angular/common'), require('@angular/material/button'), require('@angular/material/core'), require('@angular/material/icon'), require('@nicky-lenaers/ngx-scroll-to'), require('libphonenumber-js'), require('@angular/material/slide-toggle'), require('@angular/material/checkbox'), require('@angular/material/radio'), require('@angular/material/chips'), require('@angular/material/paginator'), require('@angular/material/sort'), require('@angular/material/table'), require('@angular/platform-browser'), require('@angular/platform-browser/animations'), require('@angular/material/stepper'), require('@angular/material/grid-list'), require('@angular/cdk/table'), require('@angular/material/progress-bar'), require('@angular/material/card'), require('@angular/material/tooltip'), require('moment'), require('table'), require('@angular/material/tabs')) :
+    typeof define === 'function' && define.amd ? define('onboarding', ['exports', '@angular/common/http', '@angular/core', 'rxjs', '@angular/router', '@angular/cdk/keycodes', '@angular/cdk/drag-drop', '@angular/forms', '@angular/material/dialog', '@angular/material/form-field', '@angular/material/input', 'ngx-intl-tel-input', '@angular/material/select', '@angular/common', '@angular/material/button', '@angular/material/core', '@angular/material/icon', '@nicky-lenaers/ngx-scroll-to', 'libphonenumber-js', '@angular/material/slide-toggle', '@angular/material/checkbox', '@angular/material/radio', '@angular/material/chips', '@angular/material/paginator', '@angular/material/sort', '@angular/material/table', '@angular/platform-browser', '@angular/platform-browser/animations', '@angular/material/stepper', '@angular/material/grid-list', '@angular/cdk/table', '@angular/material/progress-bar', '@angular/material/card', '@angular/material/tooltip', 'moment', 'table', '@angular/material/tabs'], factory) :
+    (global = global || self, factory(global.onboarding = {}, global.ng.common.http, global.ng.core, global.rxjs, global.ng.router, global.ng.cdk.keycodes, global.ng.cdk.dragDrop, global.ng.forms, global.ng.material.dialog, global.ng.material.formField, global.ng.material.input, global.ngxIntlTelInput, global.ng.material.select, global.ng.common, global.ng.material.button, global.ng.material.core, global.ng.material.icon, global.ngxScrollTo, global.libphonenumberJs, global.ng.material.slideToggle, global.ng.material.checkbox, global.ng.material.radio, global.ng.material.chips, global.ng.material.paginator, global.ng.material.sort, global.ng.material.table, global.ng.platformBrowser, global.ng.platformBrowser.animations, global.ng.material.stepper, global.ng.material.gridList, global.ng.cdk.table, global.ng.material.progressBar, global.ng.material.card, global.ng.material.tooltip, global.moment, global.table$2, global.ng.material.tabs));
+}(this, (function (exports, http, core, rxjs, router, keycodes, dragDrop, forms, dialog, formField, input, ngxIntlTelInput, select, common, button, core$1, icon, ngxScrollTo, libphonenumberJs, slideToggle, checkbox, radio, chips, paginator, sort, table, platformBrowser, animations, stepper, gridList, table$1, progressBar, card, tooltip, moment, table$2, tabs) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation.
@@ -6672,7 +6672,7 @@
                 core.ɵɵtemplate(0, OnboardingTableComponent_ngx_design_table_0_Template, 1, 7, "ngx-design-table", 0);
             } if (rf & 2) {
                 core.ɵɵproperty("ngIf", ctx.data);
-            } }, directives: [common.NgIf, table$2.TableComponent], styles: ["ngx-design-table th span{margin:auto;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26}  ngx-design-table .mat-header-row{background:#e5e8ee}  ngx-design-table .empty-row{height:5px!important;background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table{background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table tbody tr.element-row{height:83px!important;border-radius:6px;margin:10px 0}  ngx-design-table .mat-table tbody td.mat-cell{background-color:#fff}  ngx-design-table .mat-table tbody td.mat-cell a{text-decoration:none!important}  ngx-design-table .mat-table tbody td.mat-cell span{font-family:Nexa;font-style:normal;font-weight:400}  ngx-design-table .mat-table tbody td.mat-cell app-is-mat-icon{width:100px}  ngx-design-table .mat-table tbody td.mat-cell:first-of-type{border-bottom-left-radius:8px;border-top-left-radius:8px}  ngx-design-table .mat-table tbody td.mat-cell:last-of-type{border-bottom-right-radius:8px;border-top-right-radius:8px}  ngx-design-table lib-status .custom-status{width:109px;height:36px;border-radius:4px;text-transform:capitalize;color:#fff;font-weight:500!important;font-size:16px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}  ngx-design-table lib-status .custom-status.finished{background:#6fe8d7}  ngx-design-table lib-status .custom-status.to-finish{background:#f3a124}"] });
+            } }, directives: [common.NgIf, table$2.TableComponent], styles: ["ngx-design-table th span{margin:auto;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26}  ngx-design-table .mat-header-row{background:#e5e8ee}  ngx-design-table .empty-row{height:5px!important;background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table{background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table tbody tr.element-row{height:83px!important;border-radius:6px;margin:10px 0}  ngx-design-table .mat-table tbody td.mat-cell{background-color:#fff}  ngx-design-table .mat-table tbody td.mat-cell a{text-decoration:none!important}  ngx-design-table .mat-table tbody td.mat-cell span{font-family:Nexa;font-style:normal;font-weight:400}  ngx-design-table .mat-table tbody td.mat-cell app-is-mat-icon{width:100px}  ngx-design-table .mat-table tbody td.mat-cell:first-of-type{border-bottom-left-radius:8px;border-top-left-radius:8px}  ngx-design-table .mat-table tbody td.mat-cell:last-of-type{border-bottom-right-radius:8px;border-top-right-radius:8px}  ngx-design-table lib-custom-cell .custom-status{width:109px;height:36px;border-radius:4px;text-transform:capitalize;color:#fff;font-weight:500!important;font-size:16px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}  ngx-design-table lib-custom-cell .custom-cell.finished{background:#6fe8d7}  ngx-design-table lib-custom-cell .custom-cell.to-finish{background:#f3a124}  ngx-design-table lib-custom-cell .custom-cell.last-name{display:flex;flex-direction:column}  ngx-design-table lib-custom-cell .custom-cell.last-name span:first-child{font-family:Nexa;font-style:normal;font-weight:700;font-size:20px;line-height:120%;display:flex;align-items:center;color:#242731}"] });
         return OnboardingTableComponent;
     }());
     /*@__PURE__*/ (function () { core.ɵsetClassMetadata(OnboardingTableComponent, [{
@@ -6843,9 +6843,11 @@
             this.columnDefinitions = [
                 {
                     key: 'Name',
+                    subTitle: "date",
                     value: 'Nom de famille',
                     order: 1,
-                    class: 'u-7',
+                    class: 'lastNameClass',
+                    module: table$2.CellsComponentList.CustomCell,
                     sort: true,
                 },
                 {
@@ -6853,6 +6855,12 @@
                     value: 'Position',
                     order: 2,
                     class: 'u-2',
+                    sort: true,
+                }, {
+                    key: 'Title',
+                    value: 'Profil',
+                    order: 2,
+                    class: 'u-4',
                     sort: true,
                 }, {
                     key: 'requestor',
@@ -6879,13 +6887,13 @@
                     key: 'Status',
                     value: "Statut",
                     order: 7,
-                    class: 'StatusClass',
+                    class: 'CustomClass',
                     sort: true,
-                    module: table$2.CellsComponentList.Status,
+                    module: table$2.CellsComponentList.CustomCell,
                 },
                 {
                     key: 'Action',
-                    value: 'Action',
+                    value: '',
                     order: 8,
                     class: 'u-8',
                     module: table$2.CellsComponentList.ButtonLinkText,
@@ -6934,11 +6942,13 @@
                                     return (__assign(__assign({}, a), (_a = {}, _a[v.key] = v.value, _a)));
                                 }, {});
                                 row.Status = row.Finished ? "Terminer" : "A finaliser";
-                                row.StatusClass = row.Finished ? "finished" : "to-finish";
+                                row.CustomClass = row.Finished ? "custom-status finished" : "custom-status to-finish";
+                                row.lastNameClass = "last-name";
                                 row.requestor = ((_b = (_a = row) === null || _a === void 0 ? void 0 : _a.vcontacts[0]) === null || _b === void 0 ? void 0 : _b.Name) || '';
                                 row.Name = row.ContactName = ((_c = formUser) === null || _c === void 0 ? void 0 : _c.LastName) + " " + ((_d = formUser) === null || _d === void 0 ? void 0 : _d.FirstName) || "";
-                                row.Profil = ((_e = formUser) === null || _e === void 0 ? void 0 : _e.Type_de_profil_Nowboard__c) || "";
+                                row.Title = ((_e = formUser) === null || _e === void 0 ? void 0 : _e.Title) || "";
                                 row.Email = ((_f = formUser) === null || _f === void 0 ? void 0 : _f.Email) || '';
+                                row.date = moment(row.createdAt).format('DD/MM/yy');
                                 row.TemplateName = row.vtemplates.length > 0 ? row.vtemplates[0].Name : '';
                                 row.Id = index + 1;
                                 return row;

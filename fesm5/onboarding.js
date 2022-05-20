@@ -32,6 +32,7 @@ import { CdkTableModule } from '@angular/cdk/table';
 import { MatProgressBar, MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatCard, MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import * as moment from 'moment';
 import { TableComponent, CellsComponentList, CoreMatTable, TableModule } from 'table';
 import { MatTabGroup, MatTab, MatTabLabel, MatTabContent, MatTabsModule } from '@angular/material/tabs';
 
@@ -6484,7 +6485,7 @@ var OnboardingTableComponent = /** @class */ (function () {
             ɵɵtemplate(0, OnboardingTableComponent_ngx_design_table_0_Template, 1, 7, "ngx-design-table", 0);
         } if (rf & 2) {
             ɵɵproperty("ngIf", ctx.data);
-        } }, directives: [NgIf, TableComponent], styles: ["ngx-design-table th span{margin:auto;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26}  ngx-design-table .mat-header-row{background:#e5e8ee}  ngx-design-table .empty-row{height:5px!important;background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table{background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table tbody tr.element-row{height:83px!important;border-radius:6px;margin:10px 0}  ngx-design-table .mat-table tbody td.mat-cell{background-color:#fff}  ngx-design-table .mat-table tbody td.mat-cell a{text-decoration:none!important}  ngx-design-table .mat-table tbody td.mat-cell span{font-family:Nexa;font-style:normal;font-weight:400}  ngx-design-table .mat-table tbody td.mat-cell app-is-mat-icon{width:100px}  ngx-design-table .mat-table tbody td.mat-cell:first-of-type{border-bottom-left-radius:8px;border-top-left-radius:8px}  ngx-design-table .mat-table tbody td.mat-cell:last-of-type{border-bottom-right-radius:8px;border-top-right-radius:8px}  ngx-design-table lib-status .custom-status{width:109px;height:36px;border-radius:4px;text-transform:capitalize;color:#fff;font-weight:500!important;font-size:16px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}  ngx-design-table lib-status .custom-status.finished{background:#6fe8d7}  ngx-design-table lib-status .custom-status.to-finish{background:#f3a124}"] });
+        } }, directives: [NgIf, TableComponent], styles: ["ngx-design-table th span{margin:auto;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26}  ngx-design-table .mat-header-row{background:#e5e8ee}  ngx-design-table .empty-row{height:5px!important;background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table{background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table tbody tr.element-row{height:83px!important;border-radius:6px;margin:10px 0}  ngx-design-table .mat-table tbody td.mat-cell{background-color:#fff}  ngx-design-table .mat-table tbody td.mat-cell a{text-decoration:none!important}  ngx-design-table .mat-table tbody td.mat-cell span{font-family:Nexa;font-style:normal;font-weight:400}  ngx-design-table .mat-table tbody td.mat-cell app-is-mat-icon{width:100px}  ngx-design-table .mat-table tbody td.mat-cell:first-of-type{border-bottom-left-radius:8px;border-top-left-radius:8px}  ngx-design-table .mat-table tbody td.mat-cell:last-of-type{border-bottom-right-radius:8px;border-top-right-radius:8px}  ngx-design-table lib-custom-cell .custom-status{width:109px;height:36px;border-radius:4px;text-transform:capitalize;color:#fff;font-weight:500!important;font-size:16px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}  ngx-design-table lib-custom-cell .custom-cell.finished{background:#6fe8d7}  ngx-design-table lib-custom-cell .custom-cell.to-finish{background:#f3a124}  ngx-design-table lib-custom-cell .custom-cell.last-name{display:flex;flex-direction:column}  ngx-design-table lib-custom-cell .custom-cell.last-name span:first-child{font-family:Nexa;font-style:normal;font-weight:700;font-size:20px;line-height:120%;display:flex;align-items:center;color:#242731}"] });
     return OnboardingTableComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(OnboardingTableComponent, [{
@@ -6655,9 +6656,11 @@ var OnboardingListComponent = /** @class */ (function () {
         this.columnDefinitions = [
             {
                 key: 'Name',
+                subTitle: "date",
                 value: 'Nom de famille',
                 order: 1,
-                class: 'u-7',
+                class: 'lastNameClass',
+                module: CellsComponentList.CustomCell,
                 sort: true,
             },
             {
@@ -6665,6 +6668,12 @@ var OnboardingListComponent = /** @class */ (function () {
                 value: 'Position',
                 order: 2,
                 class: 'u-2',
+                sort: true,
+            }, {
+                key: 'Title',
+                value: 'Profil',
+                order: 2,
+                class: 'u-4',
                 sort: true,
             }, {
                 key: 'requestor',
@@ -6691,13 +6700,13 @@ var OnboardingListComponent = /** @class */ (function () {
                 key: 'Status',
                 value: "Statut",
                 order: 7,
-                class: 'StatusClass',
+                class: 'CustomClass',
                 sort: true,
-                module: CellsComponentList.Status,
+                module: CellsComponentList.CustomCell,
             },
             {
                 key: 'Action',
-                value: 'Action',
+                value: '',
                 order: 8,
                 class: 'u-8',
                 module: CellsComponentList.ButtonLinkText,
@@ -6746,11 +6755,13 @@ var OnboardingListComponent = /** @class */ (function () {
                                 return (__assign(__assign({}, a), (_a = {}, _a[v.key] = v.value, _a)));
                             }, {});
                             row.Status = row.Finished ? "Terminer" : "A finaliser";
-                            row.StatusClass = row.Finished ? "finished" : "to-finish";
+                            row.CustomClass = row.Finished ? "custom-status finished" : "custom-status to-finish";
+                            row.lastNameClass = "last-name";
                             row.requestor = ((_b = (_a = row) === null || _a === void 0 ? void 0 : _a.vcontacts[0]) === null || _b === void 0 ? void 0 : _b.Name) || '';
                             row.Name = row.ContactName = ((_c = formUser) === null || _c === void 0 ? void 0 : _c.LastName) + " " + ((_d = formUser) === null || _d === void 0 ? void 0 : _d.FirstName) || "";
-                            row.Profil = ((_e = formUser) === null || _e === void 0 ? void 0 : _e.Type_de_profil_Nowboard__c) || "";
+                            row.Title = ((_e = formUser) === null || _e === void 0 ? void 0 : _e.Title) || "";
                             row.Email = ((_f = formUser) === null || _f === void 0 ? void 0 : _f.Email) || '';
+                            row.date = moment(row.createdAt).format('DD/MM/yy');
                             row.TemplateName = row.vtemplates.length > 0 ? row.vtemplates[0].Name : '';
                             row.Id = index + 1;
                             return row;
