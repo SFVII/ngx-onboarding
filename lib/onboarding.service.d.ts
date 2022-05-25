@@ -61,7 +61,7 @@ export declare class OnboardingService {
     updateOnboarding(data: any): Promise<string | any>;
     deleteOnboarding(id: any): Promise<string | any>;
     getOnboarding(id: any): Promise<string | any>;
-    getAllOnboarding(recall?: boolean): Promise<string | any>;
+    getAllOnboarding(): Promise<string | any>;
     static ɵfac: i0.ɵɵFactoryDef<OnboardingService>;
     static ɵprov: i0.ɵɵInjectableDef<OnboardingService>;
 }

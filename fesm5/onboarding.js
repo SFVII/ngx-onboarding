@@ -338,28 +338,18 @@ var OnboardingService = /** @class */ (function () {
             });
         });
     };
-    OnboardingService.prototype.getAllOnboarding = function (recall) {
-        if (recall === void 0) { recall = false; }
+    OnboardingService.prototype.getAllOnboarding = function () {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
-                return [2 /*return*/, new Promise(function (resolve, reject) {
-                        _this._onboarding.subscribe(function (onboarding) {
-                            if (!onboarding || recall) {
-                                var options = {
-                                    headers: _this.header
-                                };
-                                _this.http.get(_this.endpoint + "/onboarding", options)
-                                    .subscribe(function (data) {
-                                    _this.onboarding.next(data);
-                                    resolve(data);
-                                });
-                            }
-                            else {
-                                resolve(onboarding);
-                            }
-                        });
-                    })];
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.http.get(this.endpoint + "/onboarding", {
+                            headers: this.header
+                        }).subscribe(function (data) {
+                            _this.onboarding.next(data);
+                        })];
+                    case 1: return [2 /*return*/, _a.sent()];
+                }
             });
         });
     };
@@ -6734,54 +6724,49 @@ var OnboardingListComponent = /** @class */ (function () {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
-                setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
-                            case 0: return [4 /*yield*/, this.service.getAllOnboarding()];
-                            case 1:
-                                _a.sent();
-                                return [2 /*return*/];
-                        }
-                    });
-                }); }, 500);
-                this.service.onboarding.subscribe(function (onboarding) {
-                    setTimeout(function () {
-                        _this._loading_table = false;
-                    }, 2000);
-                    if (onboarding) {
-                        var x = onboarding.map(function (row, index) {
-                            var _a, _b, _c, _d, _e, _f;
-                            var user = row.categories.find(function (cat) { return cat.name === "Utilisateur"; });
-                            var formUser = user.forms.map(function (form) { return ({ key: form.key, value: form.value }); }).reduce(function (a, v) {
-                                var _a;
-                                return (__assign(__assign({}, a), (_a = {}, _a[v.key] = v.value, _a)));
-                            }, {});
-                            row.Status = row.Finished ? "Terminer" : "A finaliser";
-                            row.CustomClass = row.Finished ? "custom-status finished" : "custom-status to-finish";
-                            row.lastNameClass = "last-name";
-                            row.requestor = ((_b = (_a = row) === null || _a === void 0 ? void 0 : _a.vcontacts[0]) === null || _b === void 0 ? void 0 : _b.Name) || '';
-                            row.Name = row.ContactName = ((_c = formUser) === null || _c === void 0 ? void 0 : _c.LastName) + " " + ((_d = formUser) === null || _d === void 0 ? void 0 : _d.FirstName) || "";
-                            row.Title = ((_e = formUser) === null || _e === void 0 ? void 0 : _e.Title) || "";
-                            row.Email = ((_f = formUser) === null || _f === void 0 ? void 0 : _f.Email) || '';
-                            row.date = moment(row.createdAt).format('DD/MM/YY');
-                            row.TemplateName = row.vtemplates.length > 0 ? row.vtemplates[0].Name : '';
-                            row.Id = index + 1;
-                            return row;
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.service.getAllOnboarding()];
+                    case 1:
+                        _a.sent();
+                        this.service.onboarding.subscribe(function (onboarding) {
+                            setTimeout(function () {
+                                _this._loading_table = false;
+                            }, 2000);
+                            if (onboarding) {
+                                var x = onboarding.map(function (row, index) {
+                                    var _a, _b, _c, _d, _e, _f;
+                                    var user = row.categories.find(function (cat) { return cat.name === "Utilisateur"; });
+                                    var formUser = user.forms.map(function (form) { return ({ key: form.key, value: form.value }); }).reduce(function (a, v) {
+                                        var _a;
+                                        return (__assign(__assign({}, a), (_a = {}, _a[v.key] = v.value, _a)));
+                                    }, {});
+                                    row.Status = row.Finished ? "Terminer" : "A finaliser";
+                                    row.CustomClass = row.Finished ? "custom-status finished" : "custom-status to-finish";
+                                    row.lastNameClass = "last-name";
+                                    row.requestor = ((_b = (_a = row) === null || _a === void 0 ? void 0 : _a.vcontacts[0]) === null || _b === void 0 ? void 0 : _b.Name) || '';
+                                    row.Name = row.ContactName = ((_c = formUser) === null || _c === void 0 ? void 0 : _c.LastName) + " " + ((_d = formUser) === null || _d === void 0 ? void 0 : _d.FirstName) || "";
+                                    row.Title = ((_e = formUser) === null || _e === void 0 ? void 0 : _e.Title) || "";
+                                    row.Email = ((_f = formUser) === null || _f === void 0 ? void 0 : _f.Email) || '';
+                                    row.date = moment(row.createdAt).format('DD/MM/YY');
+                                    row.TemplateName = row.vtemplates.length > 0 ? row.vtemplates[0].Name : '';
+                                    row.Id = index + 1;
+                                    return row;
+                                });
+                                _this.onboardingFormatList = x;
+                                _this.onboardingList = new CoreMatTable(x, {
+                                    active: 'Id', direction: 'desc'
+                                }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
+                                _this.currentLength = _this.onboardingList.data.length;
+                                _this.onboardingFinished = new CoreMatTable(x.filter(function (data) { return data.Finished; }), {
+                                    active: 'Id', direction: 'desc'
+                                }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
+                                _this.onboardingToFinish = new CoreMatTable(x.filter(function (data) { return !data.Finished; }), {
+                                    active: 'Id', direction: 'desc'
+                                }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
+                            }
                         });
-                        _this.onboardingFormatList = x;
-                        _this.onboardingList = new CoreMatTable(x, {
-                            active: 'Id', direction: 'desc'
-                        }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
-                        _this.currentLength = _this.onboardingList.data.length;
-                        _this.onboardingFinished = new CoreMatTable(x.filter(function (data) { return data.Finished; }), {
-                            active: 'Id', direction: 'desc'
-                        }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
-                        _this.onboardingToFinish = new CoreMatTable(x.filter(function (data) { return !data.Finished; }), {
-                            active: 'Id', direction: 'desc'
-                        }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
-                    }
-                });
-                return [2 /*return*/];
+                        return [2 /*return*/];
+                }
             });
         });
     };

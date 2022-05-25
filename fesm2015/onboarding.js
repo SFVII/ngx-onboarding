@@ -294,24 +294,12 @@ class OnboardingService {
             });
         });
     }
-    getAllOnboarding(recall = false) {
+    getAllOnboarding() {
         return __awaiter(this, void 0, void 0, function* () {
-            return new Promise((resolve, reject) => {
-                this._onboarding.subscribe((onboarding) => {
-                    if (!onboarding || recall) {
-                        const options = {
-                            headers: this.header
-                        };
-                        this.http.get(`${this.endpoint}/onboarding`, options)
-                            .subscribe((data) => {
-                            this.onboarding.next(data);
-                            resolve(data);
-                        });
-                    }
-                    else {
-                        resolve(onboarding);
-                    }
-                });
+            return yield this.http.get(`${this.endpoint}/onboarding`, {
+                headers: this.header
+            }).subscribe((data) => {
+                this.onboarding.next(data);
             });
         });
     }
@@ -6405,10 +6393,7 @@ class OnboardingListComponent {
     }
     ngOnInit() {
         return __awaiter(this, void 0, void 0, function* () {
-            setTimeout(() => __awaiter(this, void 0, void 0, function* () {
-                yield this.service.getAllOnboarding();
-                // await this.service.getAllProfil();
-            }), 500);
+            yield this.service.getAllOnboarding();
             this.service.onboarding.subscribe((onboarding) => {
                 setTimeout(() => {
                     this._loading_table = false;
