@@ -6373,7 +6373,7 @@ class OnboardingListComponent {
                 order: 8,
                 class: 'u-4',
                 module: CellsComponentList.ButtonLinkText,
-                override: [`${this.checkOnboardingPath(this.service.mainPath)}/request`, 'TemplateId', '_id'],
+                override: [`${this.checkOnboardingPath()}`, 'TemplateId', '_id'],
                 align: 'center'
             }
         ];
@@ -6388,8 +6388,8 @@ class OnboardingListComponent {
     cancelSearch() {
         this.inputSearch = '';
     }
-    checkOnboardingPath(mainUrl) {
-        return mainUrl.includes('onboarding') ? mainUrl : `/onboarding/`;
+    checkOnboardingPath() {
+        return this.service.mainPath.includes('onboarding') ? `${this.service.mainPath}/requests/` : `/onboarding/requests/`;
     }
     ngOnInit() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -6552,7 +6552,7 @@ const onBoardingRoutes = [
                 component: OnboardingListComponent
             },
             {
-                path: 'request/:templateId/:onboardingId',
+                path: 'requests/:templateId/:onboardingId',
                 component: OnboardingCreateComponent
             }
         ]

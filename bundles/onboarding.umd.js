@@ -6889,7 +6889,7 @@
                     order: 8,
                     class: 'u-4',
                     module: table$2.CellsComponentList.ButtonLinkText,
-                    override: [this.checkOnboardingPath(this.service.mainPath) + "/request", 'TemplateId', '_id'],
+                    override: ["" + this.checkOnboardingPath(), 'TemplateId', '_id'],
                     align: 'center'
                 }
             ];
@@ -6904,8 +6904,8 @@
         OnboardingListComponent.prototype.cancelSearch = function () {
             this.inputSearch = '';
         };
-        OnboardingListComponent.prototype.checkOnboardingPath = function (mainUrl) {
-            return mainUrl.includes('onboarding') ? mainUrl : "/onboarding/";
+        OnboardingListComponent.prototype.checkOnboardingPath = function () {
+            return this.service.mainPath.includes('onboarding') ? this.service.mainPath + "/requests/" : "/onboarding/requests/";
         };
         OnboardingListComponent.prototype.ngOnInit = function () {
             return __awaiter(this, void 0, void 0, function () {
@@ -7083,7 +7083,7 @@
                     component: OnboardingListComponent
                 },
                 {
-                    path: 'request/:templateId/:onboardingId',
+                    path: 'requests/:templateId/:onboardingId',
                     component: OnboardingCreateComponent
                 }
             ]
