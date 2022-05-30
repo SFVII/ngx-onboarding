@@ -80,6 +80,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onRemoveblock(event: any, block: any): void;
     onRemoveFieldBlock(event: any): void;
     onDuplicatedBlock(event: any): void;
+    onEditableBlock(notEditableBlock: any): any;
     onKeyUpChip(event: any, field: any): void;
     onEditChip(chip: any): void;
     addKeywordFromInputBlock(event: MatChipInputEvent, field: any, prev: any): void;

@@ -17,14 +17,14 @@ import * as i9 from "@angular/forms";
 import * as i10 from "ngx-intl-tel-input";
 var _c0 = function (a0) { return [a0]; };
 function TemplateProfileListComponent_div_32_Template(rf, ctx) { if (rf & 1) {
-    var _r788 = i0.ɵɵgetCurrentView();
+    var _r774 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 13);
     i0.ɵɵelementStart(1, "div", 14);
     i0.ɵɵelementStart(2, "span");
     i0.ɵɵtext(3, "Live");
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(4, "mat-slide-toggle", 15);
-    i0.ɵɵlistener("ngModelChange", function TemplateProfileListComponent_div_32_Template_mat_slide_toggle_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r788); var d_r786 = ctx.$implicit; return d_r786.Status = $event; })("ngModelChange", function TemplateProfileListComponent_div_32_Template_mat_slide_toggle_ngModelChange_4_listener() { i0.ɵɵrestoreView(_r788); var d_r786 = ctx.$implicit; var ctx_r789 = i0.ɵɵnextContext(); return ctx_r789.onChangeStatus(d_r786, false); });
+    i0.ɵɵlistener("ngModelChange", function TemplateProfileListComponent_div_32_Template_mat_slide_toggle_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r774); var d_r772 = ctx.$implicit; return d_r772.Status = $event; })("ngModelChange", function TemplateProfileListComponent_div_32_Template_mat_slide_toggle_ngModelChange_4_listener() { i0.ɵɵrestoreView(_r774); var d_r772 = ctx.$implicit; var ctx_r775 = i0.ɵɵnextContext(); return ctx_r775.onChangeStatus(d_r772, false); });
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(5, "div", 16);
@@ -38,19 +38,19 @@ function TemplateProfileListComponent_div_32_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(11, "div", 19);
     i0.ɵɵelementStart(12, "button", 20);
-    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_12_listener() { i0.ɵɵrestoreView(_r788); var d_r786 = ctx.$implicit; var ctx_r790 = i0.ɵɵnextContext(); return ctx_r790.onEditProfil(d_r786._id); });
+    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_12_listener() { i0.ɵɵrestoreView(_r774); var d_r772 = ctx.$implicit; var ctx_r776 = i0.ɵɵnextContext(); return ctx_r776.onEditProfil(d_r772._id); });
     i0.ɵɵelementStart(13, "mat-icon");
     i0.ɵɵtext(14, "edit");
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(15, "button", 20);
-    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_15_listener() { i0.ɵɵrestoreView(_r788); var d_r786 = ctx.$implicit; var ctx_r791 = i0.ɵɵnextContext(); return ctx_r791.copyTemplate(d_r786); });
+    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_15_listener() { i0.ɵɵrestoreView(_r774); var d_r772 = ctx.$implicit; var ctx_r777 = i0.ɵɵnextContext(); return ctx_r777.copyTemplate(d_r772); });
     i0.ɵɵelementStart(16, "mat-icon");
     i0.ɵɵtext(17, "filter_none");
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(18, "button", 20);
-    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_18_listener() { i0.ɵɵrestoreView(_r788); var d_r786 = ctx.$implicit; var ctx_r792 = i0.ɵɵnextContext(); return ctx_r792.onDelete(d_r786._id); });
+    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_18_listener() { i0.ɵɵrestoreView(_r774); var d_r772 = ctx.$implicit; var ctx_r778 = i0.ɵɵnextContext(); return ctx_r778.onDelete(d_r772._id); });
     i0.ɵɵelementStart(19, "mat-icon");
     i0.ɵɵtext(20, "delete");
     i0.ɵɵelementEnd();
@@ -58,27 +58,27 @@ function TemplateProfileListComponent_div_32_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var d_r786 = ctx.$implicit;
-    var ctx_r784 = i0.ɵɵnextContext();
+    var d_r772 = ctx.$implicit;
+    var ctx_r770 = i0.ɵɵnextContext();
     i0.ɵɵproperty("defaultElevation", 0);
     i0.ɵɵadvance(4);
-    i0.ɵɵproperty("ngModel", d_r786.Status);
+    i0.ɵɵproperty("ngModel", d_r772.Status);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("routerLink", i0.ɵɵpureFunction1(8, _c0, ctx_r784.service.mainPath + "/template/" + d_r786._id));
+    i0.ɵɵproperty("routerLink", i0.ɵɵpureFunction1(8, _c0, ctx_r770.service.mainPath + "/template/" + d_r772._id));
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1(" ", d_r786.Name, "");
+    i0.ɵɵtextInterpolate1(" ", d_r772.Name, "");
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1(" ", i0.ɵɵpipeBind2(10, 5, d_r786.createdAt, "dd/MM/yy"), "");
+    i0.ɵɵtextInterpolate1(" ", i0.ɵɵpipeBind2(10, 5, d_r772.createdAt, "dd/MM/yy"), "");
 } }
 function TemplateProfileListComponent_div_34_Template(rf, ctx) { if (rf & 1) {
-    var _r795 = i0.ɵɵgetCurrentView();
+    var _r781 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 13);
     i0.ɵɵelementStart(1, "div", 21);
     i0.ɵɵelementStart(2, "span");
     i0.ɵɵtext(3, "Brouillon");
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(4, "mat-slide-toggle", 22);
-    i0.ɵɵlistener("ngModelChange", function TemplateProfileListComponent_div_34_Template_mat_slide_toggle_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r795); var d_r793 = ctx.$implicit; return d_r793.Status = $event; })("ngModelChange", function TemplateProfileListComponent_div_34_Template_mat_slide_toggle_ngModelChange_4_listener() { i0.ɵɵrestoreView(_r795); var d_r793 = ctx.$implicit; var ctx_r796 = i0.ɵɵnextContext(); return ctx_r796.onChangeStatus(d_r793, true); });
+    i0.ɵɵlistener("ngModelChange", function TemplateProfileListComponent_div_34_Template_mat_slide_toggle_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r781); var d_r779 = ctx.$implicit; return d_r779.Status = $event; })("ngModelChange", function TemplateProfileListComponent_div_34_Template_mat_slide_toggle_ngModelChange_4_listener() { i0.ɵɵrestoreView(_r781); var d_r779 = ctx.$implicit; var ctx_r782 = i0.ɵɵnextContext(); return ctx_r782.onChangeStatus(d_r779, true); });
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(5, "div", 16);
@@ -92,19 +92,19 @@ function TemplateProfileListComponent_div_34_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(11, "div", 19);
     i0.ɵɵelementStart(12, "button", 20);
-    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_12_listener() { i0.ɵɵrestoreView(_r795); var d_r793 = ctx.$implicit; var ctx_r797 = i0.ɵɵnextContext(); return ctx_r797.onEditProfil(d_r793._id); });
+    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_12_listener() { i0.ɵɵrestoreView(_r781); var d_r779 = ctx.$implicit; var ctx_r783 = i0.ɵɵnextContext(); return ctx_r783.onEditProfil(d_r779._id); });
     i0.ɵɵelementStart(13, "mat-icon");
     i0.ɵɵtext(14, "edit");
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(15, "button", 20);
-    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_15_listener() { i0.ɵɵrestoreView(_r795); var d_r793 = ctx.$implicit; var ctx_r798 = i0.ɵɵnextContext(); return ctx_r798.copyTemplate(d_r793); });
+    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_15_listener() { i0.ɵɵrestoreView(_r781); var d_r779 = ctx.$implicit; var ctx_r784 = i0.ɵɵnextContext(); return ctx_r784.copyTemplate(d_r779); });
     i0.ɵɵelementStart(16, "mat-icon");
     i0.ɵɵtext(17, "filter_none");
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(18, "button", 20);
-    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_18_listener() { i0.ɵɵrestoreView(_r795); var d_r793 = ctx.$implicit; var ctx_r799 = i0.ɵɵnextContext(); return ctx_r799.onDelete(d_r793._id); });
+    i0.ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_18_listener() { i0.ɵɵrestoreView(_r781); var d_r779 = ctx.$implicit; var ctx_r785 = i0.ɵɵnextContext(); return ctx_r785.onDelete(d_r779._id); });
     i0.ɵɵelementStart(19, "mat-icon");
     i0.ɵɵtext(20, "delete");
     i0.ɵɵelementEnd();
@@ -112,17 +112,17 @@ function TemplateProfileListComponent_div_34_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var d_r793 = ctx.$implicit;
-    var ctx_r785 = i0.ɵɵnextContext();
+    var d_r779 = ctx.$implicit;
+    var ctx_r771 = i0.ɵɵnextContext();
     i0.ɵɵproperty("defaultElevation", 0);
     i0.ɵɵadvance(4);
-    i0.ɵɵproperty("ngModel", d_r793.Status);
+    i0.ɵɵproperty("ngModel", d_r779.Status);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("routerLink", i0.ɵɵpureFunction1(8, _c0, ctx_r785.service.mainPath + "/template/" + d_r793._id));
+    i0.ɵɵproperty("routerLink", i0.ɵɵpureFunction1(8, _c0, ctx_r771.service.mainPath + "/template/" + d_r779._id));
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1(" ", d_r793.Name, "");
+    i0.ɵɵtextInterpolate1(" ", d_r779.Name, "");
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1(" ", i0.ɵɵpipeBind2(10, 5, d_r793.createdAt, "dd/MM/yy"), "");
+    i0.ɵɵtextInterpolate1(" ", i0.ɵɵpipeBind2(10, 5, d_r779.createdAt, "dd/MM/yy"), "");
 } }
 var TemplateProfileListComponent = /** @class */ (function () {
     function TemplateProfileListComponent(service, router, dialog) {
