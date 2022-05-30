@@ -6173,7 +6173,7 @@ function OnboardingListComponent_div_1_ng_template_6_Template(rf, ctx) { if (rf 
     ɵɵtext(0);
 } if (rf & 2) {
     const ctx_r444 = ɵɵnextContext(2);
-    ɵɵtextInterpolate1(" Tous (", ctx_r444.onboardingList.data == null ? null : ctx_r444.onboardingList.data.length, ") ");
+    ɵɵtextInterpolate1(" Toutes (", ctx_r444.onboardingList.data == null ? null : ctx_r444.onboardingList.data.length, ") ");
 } }
 function OnboardingListComponent_div_1_ng_template_7_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "div", 12);
