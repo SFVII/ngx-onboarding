@@ -6386,7 +6386,7 @@ class OnboardingListComponent {
                         var _a, _b, _c, _d, _e, _f;
                         const user = row.categories.find((cat) => cat.name === "Utilisateur");
                         const formUser = user.forms.map((form) => ({ key: form.key, value: form.value })).reduce((a, v) => (Object.assign(Object.assign({}, a), { [v.key]: v.value })), {});
-                        row.Status = row.Finished ? "Terminer" : "A finaliser";
+                        row.Status = row.Finished ? "Terminée" : "A finaliser";
                         row.CustomClass = row.Finished ? "custom-status finished" : "custom-status to-finish";
                         row.lastNameClass = "last-name";
                         row.requestor = ((_b = (_a = row) === null || _a === void 0 ? void 0 : _a.vcontacts[0]) === null || _b === void 0 ? void 0 : _b.Name) || '';
