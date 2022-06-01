@@ -6788,7 +6788,7 @@ var OnboardingListComponent = /** @class */ (function () {
         dialogRef.afterClosed().subscribe(function (current) {
             if (current) {
                 _this.service.currentOnboarding.next(current);
-                _this.router.navigate([_this.service.mainPath + ("/request/" + current.TemplateId + "/0")]);
+                _this.router.navigate([_this.service.mainPath + ("/requests/" + current.TemplateId + "/0")]);
             }
         });
     };

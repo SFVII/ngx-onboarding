@@ -6446,7 +6446,7 @@ class OnboardingListComponent {
         dialogRef.afterClosed().subscribe((current) => {
             if (current) {
                 this.service.currentOnboarding.next(current);
-                this.router.navigate([this.service.mainPath + `/request/${current.TemplateId}/0`]);
+                this.router.navigate([this.service.mainPath + `/requests/${current.TemplateId}/0`]);
             }
         });
     }
