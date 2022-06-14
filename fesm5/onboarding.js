@@ -2879,8 +2879,8 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
                         },*/
                         forms: [
                             {
-                                label: "RealocatedEquipment",
-                                key: "",
+                                label: "Réallocation d'équipement",
+                                key: "RealocatedEquipment",
                                 expandOnboarding: true,
                                 defaultValue: null,
                                 value: null,
@@ -5922,14 +5922,17 @@ var OnboardingCreateComponent = /** @class */ (function () {
         var checkMandatory = function (field) { return !!field.value && field.isMandatory && (field.type !== "checkbox_multiple" || field.type !== 'checkbox') || !field.isMandatory || field.type === "checkbox_multiple" || field.type === 'checkbox' || field.type === 'toggle'; };
         return this.categories.every(function (cat) { return cat.forms.every(function (field) {
             if (field.forms) {
-                return field.forms.every(function (form) {
-                    if (form.forms) {
-                        return form.forms.every(function (child) {
-                            return checkMandatory(child);
-                        });
-                    }
-                    return checkMandatory(form);
-                });
+                if (field.value) {
+                    return field.forms.every(function (form) {
+                        if (form.forms) {
+                            return form.forms.every(function (child) {
+                                return checkMandatory(child);
+                            });
+                        }
+                        return checkMandatory(form);
+                    });
+                }
+                return true;
             }
             return checkMandatory(field);
         }); });

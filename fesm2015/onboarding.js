@@ -2816,8 +2816,8 @@ class TemplateProfileCreateComponent {
                         },*/
                         forms: [
                             {
-                                label: "RealocatedEquipment",
-                                key: "",
+                                label: "Réallocation d'équipement",
+                                key: "RealocatedEquipment",
                                 expandOnboarding: true,
                                 defaultValue: null,
                                 value: null,
@@ -5652,14 +5652,17 @@ class OnboardingCreateComponent {
         const checkMandatory = (field) => !!field.value && field.isMandatory && (field.type !== "checkbox_multiple" || field.type !== 'checkbox') || !field.isMandatory || field.type === "checkbox_multiple" || field.type === 'checkbox' || field.type === 'toggle';
         return this.categories.every((cat) => cat.forms.every((field) => {
             if (field.forms) {
-                return field.forms.every((form) => {
-                    if (form.forms) {
-                        return form.forms.every((child) => {
-                            return checkMandatory(child);
-                        });
-                    }
-                    return checkMandatory(form);
-                });
+                if (field.value) {
+                    return field.forms.every((form) => {
+                        if (form.forms) {
+                            return form.forms.every((child) => {
+                                return checkMandatory(child);
+                            });
+                        }
+                        return checkMandatory(form);
+                    });
+                }
+                return true;
             }
             return checkMandatory(field);
         }));
