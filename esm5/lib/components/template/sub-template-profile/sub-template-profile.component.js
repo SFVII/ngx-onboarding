@@ -19,21 +19,21 @@ import * as i12 from "@angular/material/input";
 var _c0 = function () { return { standalone: true }; };
 var _c1 = function () { return { display: "inine-block" }; };
 function SubTemplateProfileComponent_div_0_div_5_Template(rf, ctx) { if (rf & 1) {
-    var _r795 = i0.ɵɵgetCurrentView();
+    var _r797 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 11);
     i0.ɵɵelementStart(1, "span");
     i0.ɵɵtext(2);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(3, "mat-slide-toggle", 12);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_5_Template_mat_slide_toggle_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r795); var ctx_r794 = i0.ɵɵnextContext(2); return ctx_r794.field.defaultValue = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_5_Template_mat_slide_toggle_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r797); var ctx_r796 = i0.ɵɵnextContext(2); return ctx_r796.field.defaultValue = $event; });
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r787 = i0.ɵɵnextContext(2);
+    var ctx_r789 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(ctx_r787.field.label);
+    i0.ɵɵtextInterpolate(ctx_r789.field.label);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngModel", ctx_r787.field.defaultValue)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0))("ngStyle", ctx_r787.field.selector && i0.ɵɵpureFunction0(5, _c1));
+    i0.ɵɵproperty("ngModel", ctx_r789.field.defaultValue)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0))("ngStyle", ctx_r789.field.selector && i0.ɵɵpureFunction0(5, _c1));
 } }
 function SubTemplateProfileComponent_div_0_div_6_mat_error_4_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "mat-error");
@@ -41,76 +41,76 @@ function SubTemplateProfileComponent_div_0_div_6_mat_error_4_Template(rf, ctx) {
     i0.ɵɵelementEnd();
 } }
 function SubTemplateProfileComponent_div_0_div_6_Template(rf, ctx) { if (rf & 1) {
-    var _r798 = i0.ɵɵgetCurrentView();
+    var _r800 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 13);
     i0.ɵɵelementStart(1, "mat-label", 14);
     i0.ɵɵtext(2);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(3, "ngx-intl-tel-input", 15);
-    i0.ɵɵlistener("input", function SubTemplateProfileComponent_div_0_div_6_Template_ngx_intl_tel_input_input_3_listener() { i0.ɵɵrestoreView(_r798); var ctx_r797 = i0.ɵɵnextContext(2); return ctx_r797.checkPhone(ctx_r797.field.value); })("ngModelChange", function SubTemplateProfileComponent_div_0_div_6_Template_ngx_intl_tel_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r798); var ctx_r799 = i0.ɵɵnextContext(2); return ctx_r799.field.value = $event; });
+    i0.ɵɵlistener("input", function SubTemplateProfileComponent_div_0_div_6_Template_ngx_intl_tel_input_input_3_listener() { i0.ɵɵrestoreView(_r800); var ctx_r799 = i0.ɵɵnextContext(2); return ctx_r799.checkPhone(ctx_r799.field.value); })("ngModelChange", function SubTemplateProfileComponent_div_0_div_6_Template_ngx_intl_tel_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r800); var ctx_r801 = i0.ɵɵnextContext(2); return ctx_r801.field.value = $event; });
     i0.ɵɵelementEnd();
     i0.ɵɵtemplate(4, SubTemplateProfileComponent_div_0_div_6_mat_error_4_Template, 2, 0, "mat-error", 16);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r788 = i0.ɵɵnextContext(2);
+    var ctx_r790 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(ctx_r788.field.label);
+    i0.ɵɵtextInterpolate(ctx_r790.field.label);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("cssClass", "input-phone")("preferredCountries", ctx_r788.preferredCountries)("enableAutoCountrySelect", false)("enablePlaceholder", true)("customPlaceholder", "Phone")("selectFirstCountry", false)("selectedCountryISO", ctx_r788.flag(ctx_r788.field.value))("maxLength", 15)("inputId", ctx_r788.field.key)("phoneValidation", true)("separateDialCode", ctx_r788.separateDialCode)("numberFormat", ctx_r788.PhoneNumberFormat.National)("ngModelOptions", i0.ɵɵpureFunction0(16, _c0))("ngModel", ctx_r788.field.value);
+    i0.ɵɵproperty("cssClass", "input-phone")("preferredCountries", ctx_r790.preferredCountries)("enableAutoCountrySelect", false)("enablePlaceholder", true)("customPlaceholder", "Phone")("selectFirstCountry", false)("selectedCountryISO", ctx_r790.flag(ctx_r790.field.value))("maxLength", 15)("inputId", ctx_r790.field.key)("phoneValidation", true)("separateDialCode", ctx_r790.separateDialCode)("numberFormat", ctx_r790.PhoneNumberFormat.National)("ngModelOptions", i0.ɵɵpureFunction0(16, _c0))("ngModel", ctx_r790.field.value);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", ctx_r788.invalideValue);
+    i0.ɵɵproperty("ngIf", ctx_r790.invalideValue);
 } }
 function SubTemplateProfileComponent_div_0_div_7_mat_select_3_mat_option_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "mat-option", 21);
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var select_r802 = ctx.$implicit;
-    i0.ɵɵproperty("value", select_r802.value);
+    var select_r804 = ctx.$implicit;
+    i0.ɵɵproperty("value", select_r804.value);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" ", select_r802.value, " ");
+    i0.ɵɵtextInterpolate1(" ", select_r804.value, " ");
 } }
 function SubTemplateProfileComponent_div_0_div_7_mat_select_3_Template(rf, ctx) { if (rf & 1) {
-    var _r804 = i0.ɵɵgetCurrentView();
+    var _r806 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "mat-select", 19);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_7_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r804); var ctx_r803 = i0.ɵɵnextContext(3); return ctx_r803.field.selector.value = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_7_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r806); var ctx_r805 = i0.ɵɵnextContext(3); return ctx_r805.field.selector.value = $event; });
     i0.ɵɵtemplate(1, SubTemplateProfileComponent_div_0_div_7_mat_select_3_mat_option_1_Template, 2, 2, "mat-option", 20);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r800 = i0.ɵɵnextContext(3);
-    i0.ɵɵproperty("ngModel", ctx_r800.field.selector.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0));
+    var ctx_r802 = i0.ɵɵnextContext(3);
+    i0.ɵɵproperty("ngModel", ctx_r802.field.selector.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0));
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", ctx_r800.field.selector.defaultValue);
+    i0.ɵɵproperty("ngForOf", ctx_r802.field.selector.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_div_7_Template(rf, ctx) { if (rf & 1) {
-    var _r806 = i0.ɵɵgetCurrentView();
+    var _r808 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 17);
     i0.ɵɵelementStart(1, "mat-checkbox", 12);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_7_Template_mat_checkbox_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r806); var ctx_r805 = i0.ɵɵnextContext(2); return ctx_r805.field.value = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_7_Template_mat_checkbox_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r808); var ctx_r807 = i0.ɵɵnextContext(2); return ctx_r807.field.value = $event; });
     i0.ɵɵtext(2);
     i0.ɵɵelementEnd();
     i0.ɵɵtemplate(3, SubTemplateProfileComponent_div_0_div_7_mat_select_3_Template, 2, 4, "mat-select", 18);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r789 = i0.ɵɵnextContext(2);
+    var ctx_r791 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngModel", ctx_r789.field.value)("ngModelOptions", i0.ɵɵpureFunction0(5, _c0))("ngStyle", ctx_r789.field.selector && i0.ɵɵpureFunction0(6, _c1));
+    i0.ɵɵproperty("ngModel", ctx_r791.field.value)("ngModelOptions", i0.ɵɵpureFunction0(5, _c0))("ngStyle", ctx_r791.field.selector && i0.ɵɵpureFunction0(6, _c1));
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" ", ctx_r789.field.label, " ");
+    i0.ɵɵtextInterpolate1(" ", ctx_r791.field.label, " ");
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", ctx_r789.field.selector);
+    i0.ɵɵproperty("ngIf", ctx_r791.field.selector);
 } }
 function SubTemplateProfileComponent_div_0_div_8_mat_checkbox_4_Template(rf, ctx) { if (rf & 1) {
-    var _r810 = i0.ɵɵgetCurrentView();
+    var _r812 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "mat-checkbox", 25);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_8_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r810); var opt_r808 = ctx.$implicit; return opt_r808.checked = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_8_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r812); var opt_r810 = ctx.$implicit; return opt_r810.checked = $event; });
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r808 = ctx.$implicit;
-    i0.ɵɵproperty("checked", opt_r808.checked)("ngModel", opt_r808.checked)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0));
+    var opt_r810 = ctx.$implicit;
+    i0.ɵɵproperty("checked", opt_r810.checked)("ngModel", opt_r810.checked)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0));
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" ", opt_r808.value, " ");
+    i0.ɵɵtextInterpolate1(" ", opt_r810.value, " ");
 } }
 function SubTemplateProfileComponent_div_0_div_8_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "div", 22);
@@ -122,96 +122,96 @@ function SubTemplateProfileComponent_div_0_div_8_Template(rf, ctx) { if (rf & 1)
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r790 = i0.ɵɵnextContext(2);
+    var ctx_r792 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(ctx_r790.field.label);
+    i0.ɵɵtextInterpolate(ctx_r792.field.label);
     i0.ɵɵadvance(2);
-    i0.ɵɵproperty("ngForOf", ctx_r790.field.defaultValue);
+    i0.ɵɵproperty("ngForOf", ctx_r792.field.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_div_9_mat_radio_button_4_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "mat-radio-button", 29);
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r812 = ctx.$implicit;
-    i0.ɵɵproperty("value", opt_r812.value);
+    var opt_r814 = ctx.$implicit;
+    i0.ɵɵproperty("value", opt_r814.value);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1("", opt_r812.value, " ");
+    i0.ɵɵtextInterpolate1("", opt_r814.value, " ");
 } }
 function SubTemplateProfileComponent_div_0_div_9_Template(rf, ctx) { if (rf & 1) {
-    var _r814 = i0.ɵɵgetCurrentView();
+    var _r816 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 17);
     i0.ɵɵelementStart(1, "label", 26);
     i0.ɵɵtext(2);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(3, "mat-radio-group", 27);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_9_Template_mat_radio_group_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r814); var ctx_r813 = i0.ɵɵnextContext(2); return ctx_r813.field.value = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_9_Template_mat_radio_group_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r816); var ctx_r815 = i0.ɵɵnextContext(2); return ctx_r815.field.value = $event; });
     i0.ɵɵtemplate(4, SubTemplateProfileComponent_div_0_div_9_mat_radio_button_4_Template, 2, 2, "mat-radio-button", 28);
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r791 = i0.ɵɵnextContext(2);
+    var ctx_r793 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1(" ", ctx_r791.field.label, " ");
+    i0.ɵɵtextInterpolate1(" ", ctx_r793.field.label, " ");
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngModel", ctx_r791.field.value)("required", ctx_r791.field.isMandatory);
+    i0.ɵɵproperty("ngModel", ctx_r793.field.value)("required", ctx_r793.field.isMandatory);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", ctx_r791.field.defaultValue);
+    i0.ɵɵproperty("ngForOf", ctx_r793.field.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_div_10_mat_option_5_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementStart(0, "mat-option", 21);
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r816 = ctx.$implicit;
-    i0.ɵɵproperty("value", opt_r816.value);
+    var opt_r818 = ctx.$implicit;
+    i0.ɵɵproperty("value", opt_r818.value);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate(opt_r816.value);
+    i0.ɵɵtextInterpolate(opt_r818.value);
 } }
 function SubTemplateProfileComponent_div_0_div_10_Template(rf, ctx) { if (rf & 1) {
-    var _r818 = i0.ɵɵgetCurrentView();
+    var _r820 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 30);
     i0.ɵɵelementStart(1, "mat-form-field", 31);
     i0.ɵɵelementStart(2, "mat-label");
     i0.ɵɵtext(3);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(4, "mat-select", 32);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_10_Template_mat_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r818); var ctx_r817 = i0.ɵɵnextContext(2); return ctx_r817.field.value = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_10_Template_mat_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r820); var ctx_r819 = i0.ɵɵnextContext(2); return ctx_r819.field.value = $event; });
     i0.ɵɵtemplate(5, SubTemplateProfileComponent_div_0_div_10_mat_option_5_Template, 2, 2, "mat-option", 20);
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r792 = i0.ɵɵnextContext(2);
+    var ctx_r794 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(3);
-    i0.ɵɵtextInterpolate1(" ", ctx_r792.field.label, " ");
+    i0.ɵɵtextInterpolate1(" ", ctx_r794.field.label, " ");
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngModel", ctx_r792.field.value)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0));
+    i0.ɵɵproperty("ngModel", ctx_r794.field.value)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0));
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngForOf", ctx_r792.field.defaultValue);
+    i0.ɵɵproperty("ngForOf", ctx_r794.field.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_mat_form_field_11_Template(rf, ctx) { if (rf & 1) {
-    var _r820 = i0.ɵɵgetCurrentView();
+    var _r822 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "mat-form-field", 33);
     i0.ɵɵelementStart(1, "mat-label");
     i0.ɵɵtext(2);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(3, "input", 34);
-    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_mat_form_field_11_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r820); var ctx_r819 = i0.ɵɵnextContext(2); return ctx_r819.field.defaultValue = $event; });
+    i0.ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_mat_form_field_11_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r822); var ctx_r821 = i0.ɵɵnextContext(2); return ctx_r821.field.defaultValue = $event; });
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r793 = i0.ɵɵnextContext(2);
+    var ctx_r795 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate(ctx_r793.field.label);
+    i0.ɵɵtextInterpolate(ctx_r795.field.label);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("type", ctx_r793.field.type)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0))("ngModel", ctx_r793.field.defaultValue);
+    i0.ɵɵproperty("type", ctx_r795.field.type)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0))("ngModel", ctx_r795.field.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    var _r822 = i0.ɵɵgetCurrentView();
+    var _r824 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "div", 1);
     i0.ɵɵelementStart(1, "button", 2);
-    i0.ɵɵlistener("click", function SubTemplateProfileComponent_div_0_Template_button_click_1_listener($event) { i0.ɵɵrestoreView(_r822); var ctx_r821 = i0.ɵɵnextContext(); return ctx_r821.editBLock($event); });
+    i0.ɵɵlistener("click", function SubTemplateProfileComponent_div_0_Template_button_click_1_listener($event) { i0.ɵɵrestoreView(_r824); var ctx_r823 = i0.ɵɵnextContext(); return ctx_r823.editBLock($event); });
     i0.ɵɵelementStart(2, "mat-icon", 3);
     i0.ɵɵtext(3, "settings");
     i0.ɵɵelementEnd();
@@ -227,9 +227,9 @@ function SubTemplateProfileComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r786 = i0.ɵɵnextContext();
+    var ctx_r788 = i0.ɵɵnextContext();
     i0.ɵɵadvance(4);
-    i0.ɵɵproperty("ngSwitch", ctx_r786.field.type);
+    i0.ɵɵproperty("ngSwitch", ctx_r788.field.type);
     i0.ɵɵadvance(1);
     i0.ɵɵproperty("ngSwitchCase", "toggle");
     i0.ɵɵadvance(1);

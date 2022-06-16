@@ -4996,6 +4996,7 @@ function OnboardingDetailComponent_div_0_section_24_Template(rf, ctx) { if (rf &
     ɵɵproperty("ngForOf", category_r454.forms);
 } }
 function OnboardingDetailComponent_div_0_ng_container_30_div_1_Template(rf, ctx) { if (rf & 1) {
+    const _r482 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 34);
     ɵɵelementStart(1, "p", 35);
     ɵɵtext(2);
@@ -5006,6 +5007,7 @@ function OnboardingDetailComponent_div_0_ng_container_30_div_1_Template(rf, ctx)
     ɵɵtext(6);
     ɵɵelementEnd();
     ɵɵelementStart(7, "button", 37);
+    ɵɵlistener("click", function OnboardingDetailComponent_div_0_ng_container_30_div_1_Template_button_click_7_listener() { ɵɵrestoreView(_r482); const ticket_r480 = ctx.$implicit; const ctx_r481 = ɵɵnextContext(3); return ctx_r481.onViewTicket(ticket_r480.CaseNumber); });
     ɵɵtext(8);
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -5041,14 +5043,14 @@ function OnboardingDetailComponent_div_0_div_31_Template(rf, ctx) { if (rf & 1) 
     ɵɵelementEnd();
 } }
 function OnboardingDetailComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    const _r482 = ɵɵgetCurrentView();
+    const _r484 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 1);
     ɵɵelementStart(1, "h1", 2);
     ɵɵelementStart(2, "p");
     ɵɵtext(3);
     ɵɵelementEnd();
     ɵɵelementStart(4, "mat-icon", 3);
-    ɵɵlistener("click", function OnboardingDetailComponent_div_0_Template_mat_icon_click_4_listener() { ɵɵrestoreView(_r482); const ctx_r481 = ɵɵnextContext(); return ctx_r481.onEdit(); });
+    ɵɵlistener("click", function OnboardingDetailComponent_div_0_Template_mat_icon_click_4_listener() { ɵɵrestoreView(_r484); const ctx_r483 = ɵɵnextContext(); return ctx_r483.onEdit(); });
     ɵɵtext(5, "edit");
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -5078,7 +5080,7 @@ function OnboardingDetailComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵtemplate(22, OnboardingDetailComponent_div_0_li_22_Template, 3, 5, "li", 10);
     ɵɵelementEnd();
     ɵɵelementStart(23, "div", 11);
-    ɵɵlistener("scroll", function OnboardingDetailComponent_div_0_Template_div_scroll_23_listener($event) { ɵɵrestoreView(_r482); const ctx_r483 = ɵɵnextContext(); return ctx_r483.onScroll($event); });
+    ɵɵlistener("scroll", function OnboardingDetailComponent_div_0_Template_div_scroll_23_listener($event) { ɵɵrestoreView(_r484); const ctx_r485 = ɵɵnextContext(); return ctx_r485.onScroll($event); });
     ɵɵtemplate(24, OnboardingDetailComponent_div_0_section_24_Template, 12, 6, "section", 12);
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -5117,7 +5119,9 @@ function OnboardingDetailComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵproperty("ngIf", !ctx_r447.detailView.tickets);
 } }
 class OnboardingDetailComponent {
-    constructor() {
+    constructor(router, service) {
+        this.router = router;
+        this.service = service;
         this.onShowMode = new EventEmitter(true);
     }
     ngOnInit() { }
@@ -5151,11 +5155,14 @@ class OnboardingDetailComponent {
     progress(completed, length) {
         return 100 * completed / length;
     }
+    onViewTicket(CaseNumber) {
+        this.router.navigate([this.service.mainPath.includes('onboarding') ? this.service.mainPath.split('onboarding')[0] : this.service.mainPath, CaseNumber]);
+    }
 }
-OnboardingDetailComponent.ɵfac = function OnboardingDetailComponent_Factory(t) { return new (t || OnboardingDetailComponent)(); };
+OnboardingDetailComponent.ɵfac = function OnboardingDetailComponent_Factory(t) { return new (t || OnboardingDetailComponent)(ɵɵdirectiveInject(Router), ɵɵdirectiveInject(OnboardingService)); };
 OnboardingDetailComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingDetailComponent, selectors: [["lib-onboarding-detail"]], hostBindings: function OnboardingDetailComponent_HostBindings(rf, ctx) { if (rf & 1) {
         ɵɵlistener("scroll", function OnboardingDetailComponent_scroll_HostBindingHandler($event) { return ctx.onScroll($event); });
-    } }, inputs: { detailView: "detailView" }, outputs: { onShowMode: "onShowMode" }, decls: 1, vars: 1, consts: [["class", "onboarding-detail", 4, "ngIf"], [1, "onboarding-detail"], [1, "title"], [2, "margin-left", "20px", "cursor", "pointer", 3, "click"], [1, "view-content"], [1, "left-content"], [1, "user-info"], [1, "user-name"], [1, "user-contact"], ["id", "fields", 1, "fields"], ["class", "menu-item", 3, "ngxScrollTo", "class", "id", 4, "ngFor", "ngForOf"], [1, "category-view-container", 3, "scroll"], ["class", "category-item", 3, "id", 4, "ngFor", "ngForOf"], [1, "right-content"], [1, "subtitle"], [4, "ngIf"], ["class", "box-ticket-info", 4, "ngIf"], [1, "menu-item", 3, "ngxScrollTo", "id"], [1, "category-item", 3, "id"], [1, "category-item-inner"], [1, "category-header"], [1, "title-content"], [1, "category-description"], [1, "progress-status"], ["class", "status in-progress", 4, "ngIf"], ["class", "status progress-bar", 4, "ngIf"], ["class", "category-item-forms", 4, "ngFor", "ngForOf"], [1, "status", "in-progress"], [1, "status", "progress-bar"], [2, "width", "300px"], ["mode", "determinate", 3, "value"], [1, "category-item-forms"], [1, "label"], ["class", "box-ticket-info", 4, "ngFor", "ngForOf"], [1, "box-ticket-info"], [1, "date"], [1, "box-header"], ["mat-button", "", 1, "progress"], [1, "description"]], template: function OnboardingDetailComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { detailView: "detailView" }, outputs: { onShowMode: "onShowMode" }, decls: 1, vars: 1, consts: [["class", "onboarding-detail", 4, "ngIf"], [1, "onboarding-detail"], [1, "title"], [2, "margin-left", "20px", "cursor", "pointer", 3, "click"], [1, "view-content"], [1, "left-content"], [1, "user-info"], [1, "user-name"], [1, "user-contact"], ["id", "fields", 1, "fields"], ["class", "menu-item", 3, "ngxScrollTo", "class", "id", 4, "ngFor", "ngForOf"], [1, "category-view-container", 3, "scroll"], ["class", "category-item", 3, "id", 4, "ngFor", "ngForOf"], [1, "right-content"], [1, "subtitle"], [4, "ngIf"], ["class", "box-ticket-info", 4, "ngIf"], [1, "menu-item", 3, "ngxScrollTo", "id"], [1, "category-item", 3, "id"], [1, "category-item-inner"], [1, "category-header"], [1, "title-content"], [1, "category-description"], [1, "progress-status"], ["class", "status in-progress", 4, "ngIf"], ["class", "status progress-bar", 4, "ngIf"], ["class", "category-item-forms", 4, "ngFor", "ngForOf"], [1, "status", "in-progress"], [1, "status", "progress-bar"], [2, "width", "300px"], ["mode", "determinate", 3, "value"], [1, "category-item-forms"], [1, "label"], ["class", "box-ticket-info", 4, "ngFor", "ngForOf"], [1, "box-ticket-info"], [1, "date"], [1, "box-header"], ["mat-button", "", 1, "progress", 3, "click"], [1, "description"]], template: function OnboardingDetailComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵtemplate(0, OnboardingDetailComponent_div_0_Template, 32, 13, "div", 0);
     } if (rf & 2) {
         ɵɵproperty("ngIf", ctx.detailView);
@@ -5167,7 +5174,7 @@ OnboardingDetailComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingDetailCo
                 templateUrl: './onboarding-detail.component.html',
                 styleUrls: ['./onboarding-detail.component.scss']
             }]
-    }], function () { return []; }, { detailView: [{
+    }], function () { return [{ type: Router }, { type: OnboardingService }]; }, { detailView: [{
             type: Input
         }], onShowMode: [{
             type: Output
