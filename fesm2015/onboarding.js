@@ -5156,7 +5156,9 @@ class OnboardingDetailComponent {
         return 100 * completed / length;
     }
     onViewTicket(CaseNumber) {
-        this.router.navigate([this.service.mainPath.includes('onboarding') ? this.service.mainPath.split('onboarding')[0] : this.service.mainPath, CaseNumber]);
+        const route = [this.service.mainPath.includes('onboarding') ? this.service.mainPath.split('onboarding')[0] : this.service.mainPath, `tickets/${CaseNumber}`];
+        console.log("route-----------", route);
+        this.router.navigate(route);
     }
 }
 OnboardingDetailComponent.ɵfac = function OnboardingDetailComponent_Factory(t) { return new (t || OnboardingDetailComponent)(ɵɵdirectiveInject(Router), ɵɵdirectiveInject(OnboardingService)); };

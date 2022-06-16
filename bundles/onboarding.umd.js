@@ -5570,7 +5570,9 @@
             return 100 * completed / length;
         };
         OnboardingDetailComponent.prototype.onViewTicket = function (CaseNumber) {
-            this.router.navigate([this.service.mainPath.includes('onboarding') ? this.service.mainPath.split('onboarding')[0] : this.service.mainPath, CaseNumber]);
+            var route = [this.service.mainPath.includes('onboarding') ? this.service.mainPath.split('onboarding')[0] : this.service.mainPath, "tickets/" + CaseNumber];
+            console.log("route-----------", route);
+            this.router.navigate(route);
         };
         OnboardingDetailComponent.ɵfac = function OnboardingDetailComponent_Factory(t) { return new (t || OnboardingDetailComponent)(core.ɵɵdirectiveInject(router.Router), core.ɵɵdirectiveInject(OnboardingService)); };
         OnboardingDetailComponent.ɵcmp = core.ɵɵdefineComponent({ type: OnboardingDetailComponent, selectors: [["lib-onboarding-detail"]], hostBindings: function OnboardingDetailComponent_HostBindings(rf, ctx) { if (rf & 1) {
