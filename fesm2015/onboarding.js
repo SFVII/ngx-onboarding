@@ -5156,9 +5156,7 @@ class OnboardingDetailComponent {
         return 100 * completed / length;
     }
     onViewTicket(CaseNumber) {
-        const route = [this.service.mainPath.includes('onboarding') ? this.service.mainPath.split('onboarding')[0] : this.service.mainPath, `ticket/${CaseNumber}`];
-        console.log("route-----------", route);
-        this.router.navigate(route);
+        this.router.navigate([`ticket/${CaseNumber}`]);
     }
 }
 OnboardingDetailComponent.ɵfac = function OnboardingDetailComponent_Factory(t) { return new (t || OnboardingDetailComponent)(ɵɵdirectiveInject(Router), ɵɵdirectiveInject(OnboardingService)); };
