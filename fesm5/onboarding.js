@@ -5383,7 +5383,7 @@ var OnboardingDetailComponent = /** @class */ (function () {
         return 100 * completed / length;
     };
     OnboardingDetailComponent.prototype.onViewTicket = function (CaseNumber) {
-        var route = [this.service.mainPath.includes('onboarding') ? this.service.mainPath.split('onboarding')[0] : this.service.mainPath, "tickets/" + CaseNumber];
+        var route = [this.service.mainPath.includes('onboarding') ? this.service.mainPath.split('onboarding')[0] : this.service.mainPath, "ticket/" + CaseNumber];
         console.log("route-----------", route);
         this.router.navigate(route);
     };
