@@ -396,10 +396,10 @@ function DialogCreateTemplateComponent_mat_option_11_Template(rf, ctx) { if (rf 
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var tag_r487 = ctx.$implicit;
-    ɵɵproperty("value", tag_r487);
+    var tag_r486 = ctx.$implicit;
+    ɵɵproperty("value", tag_r486);
     ɵɵadvance(1);
-    ɵɵtextInterpolate(tag_r487);
+    ɵɵtextInterpolate(tag_r486);
 } }
 var DialogCreateTemplateComponent = /** @class */ (function () {
     function DialogCreateTemplateComponent(data, dialogRef, service) {
@@ -539,22 +539,22 @@ var ExitConfirmComponent = /** @class */ (function () {
             }] }, { type: MatDialogRef }, { type: OnboardingService }]; }, null); })();
 
 function TypeComponent_button_1_Template(rf, ctx) { if (rf & 1) {
-    var _r491 = ɵɵgetCurrentView();
+    var _r490 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "button", 1);
-    ɵɵlistener("click", function TypeComponent_button_1_Template_button_click_0_listener() { ɵɵrestoreView(_r491); var item_r489 = ctx.$implicit; var ctx_r490 = ɵɵnextContext(); return ctx_r490.onSelect(item_r489.value); });
+    ɵɵlistener("click", function TypeComponent_button_1_Template_button_click_0_listener() { ɵɵrestoreView(_r490); var item_r488 = ctx.$implicit; var ctx_r489 = ɵɵnextContext(); return ctx_r489.onSelect(item_r488.value); });
     ɵɵtext(1);
     ɵɵelementStart(2, "mat-icon");
     ɵɵtext(3);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var item_r489 = ctx.$implicit;
-    var ctx_r488 = ɵɵnextContext();
-    ɵɵclassMap(ctx_r488.selectedType === item_r489.value ? "active" : "");
+    var item_r488 = ctx.$implicit;
+    var ctx_r487 = ɵɵnextContext();
+    ɵɵclassMap(ctx_r487.selectedType === item_r488.value ? "active" : "");
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", item_r489.label, " ");
+    ɵɵtextInterpolate1(" ", item_r488.label, " ");
     ɵɵadvance(2);
-    ɵɵtextInterpolate(item_r489.icon);
+    ɵɵtextInterpolate(item_r488.icon);
 } }
 var TypeComponent = /** @class */ (function () {
     function TypeComponent(data, dialogRef, service) {
@@ -650,21 +650,21 @@ var TypeComponent = /** @class */ (function () {
 var _c0 = function () { return { standalone: true }; };
 var _c1 = function () { return { display: "inine-block" }; };
 function SubTemplateProfileComponent_div_0_div_5_Template(rf, ctx) { if (rf & 1) {
-    var _r797 = ɵɵgetCurrentView();
+    var _r796 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 11);
     ɵɵelementStart(1, "span");
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementStart(3, "mat-slide-toggle", 12);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_5_Template_mat_slide_toggle_ngModelChange_3_listener($event) { ɵɵrestoreView(_r797); var ctx_r796 = ɵɵnextContext(2); return ctx_r796.field.defaultValue = $event; });
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_5_Template_mat_slide_toggle_ngModelChange_3_listener($event) { ɵɵrestoreView(_r796); var ctx_r795 = ɵɵnextContext(2); return ctx_r795.field.defaultValue = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r789 = ɵɵnextContext(2);
+    var ctx_r788 = ɵɵnextContext(2);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r789.field.label);
+    ɵɵtextInterpolate(ctx_r788.field.label);
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r789.field.defaultValue)("ngModelOptions", ɵɵpureFunction0(4, _c0))("ngStyle", ctx_r789.field.selector && ɵɵpureFunction0(5, _c1));
+    ɵɵproperty("ngModel", ctx_r788.field.defaultValue)("ngModelOptions", ɵɵpureFunction0(4, _c0))("ngStyle", ctx_r788.field.selector && ɵɵpureFunction0(5, _c1));
 } }
 function SubTemplateProfileComponent_div_0_div_6_mat_error_4_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-error");
@@ -672,76 +672,76 @@ function SubTemplateProfileComponent_div_0_div_6_mat_error_4_Template(rf, ctx) {
     ɵɵelementEnd();
 } }
 function SubTemplateProfileComponent_div_0_div_6_Template(rf, ctx) { if (rf & 1) {
-    var _r800 = ɵɵgetCurrentView();
+    var _r799 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 13);
     ɵɵelementStart(1, "mat-label", 14);
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementStart(3, "ngx-intl-tel-input", 15);
-    ɵɵlistener("input", function SubTemplateProfileComponent_div_0_div_6_Template_ngx_intl_tel_input_input_3_listener() { ɵɵrestoreView(_r800); var ctx_r799 = ɵɵnextContext(2); return ctx_r799.checkPhone(ctx_r799.field.value); })("ngModelChange", function SubTemplateProfileComponent_div_0_div_6_Template_ngx_intl_tel_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r800); var ctx_r801 = ɵɵnextContext(2); return ctx_r801.field.value = $event; });
+    ɵɵlistener("input", function SubTemplateProfileComponent_div_0_div_6_Template_ngx_intl_tel_input_input_3_listener() { ɵɵrestoreView(_r799); var ctx_r798 = ɵɵnextContext(2); return ctx_r798.checkPhone(ctx_r798.field.value); })("ngModelChange", function SubTemplateProfileComponent_div_0_div_6_Template_ngx_intl_tel_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r799); var ctx_r800 = ɵɵnextContext(2); return ctx_r800.field.value = $event; });
     ɵɵelementEnd();
     ɵɵtemplate(4, SubTemplateProfileComponent_div_0_div_6_mat_error_4_Template, 2, 0, "mat-error", 16);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r790 = ɵɵnextContext(2);
+    var ctx_r789 = ɵɵnextContext(2);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r790.field.label);
+    ɵɵtextInterpolate(ctx_r789.field.label);
     ɵɵadvance(1);
-    ɵɵproperty("cssClass", "input-phone")("preferredCountries", ctx_r790.preferredCountries)("enableAutoCountrySelect", false)("enablePlaceholder", true)("customPlaceholder", "Phone")("selectFirstCountry", false)("selectedCountryISO", ctx_r790.flag(ctx_r790.field.value))("maxLength", 15)("inputId", ctx_r790.field.key)("phoneValidation", true)("separateDialCode", ctx_r790.separateDialCode)("numberFormat", ctx_r790.PhoneNumberFormat.National)("ngModelOptions", ɵɵpureFunction0(16, _c0))("ngModel", ctx_r790.field.value);
+    ɵɵproperty("cssClass", "input-phone")("preferredCountries", ctx_r789.preferredCountries)("enableAutoCountrySelect", false)("enablePlaceholder", true)("customPlaceholder", "Phone")("selectFirstCountry", false)("selectedCountryISO", ctx_r789.flag(ctx_r789.field.value))("maxLength", 15)("inputId", ctx_r789.field.key)("phoneValidation", true)("separateDialCode", ctx_r789.separateDialCode)("numberFormat", ctx_r789.PhoneNumberFormat.National)("ngModelOptions", ɵɵpureFunction0(16, _c0))("ngModel", ctx_r789.field.value);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r790.invalideValue);
+    ɵɵproperty("ngIf", ctx_r789.invalideValue);
 } }
 function SubTemplateProfileComponent_div_0_div_7_mat_select_3_mat_option_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-option", 21);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var select_r804 = ctx.$implicit;
-    ɵɵproperty("value", select_r804.value);
+    var select_r803 = ctx.$implicit;
+    ɵɵproperty("value", select_r803.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", select_r804.value, " ");
+    ɵɵtextInterpolate1(" ", select_r803.value, " ");
 } }
 function SubTemplateProfileComponent_div_0_div_7_mat_select_3_Template(rf, ctx) { if (rf & 1) {
-    var _r806 = ɵɵgetCurrentView();
+    var _r805 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-select", 19);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_7_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { ɵɵrestoreView(_r806); var ctx_r805 = ɵɵnextContext(3); return ctx_r805.field.selector.value = $event; });
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_7_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { ɵɵrestoreView(_r805); var ctx_r804 = ɵɵnextContext(3); return ctx_r804.field.selector.value = $event; });
     ɵɵtemplate(1, SubTemplateProfileComponent_div_0_div_7_mat_select_3_mat_option_1_Template, 2, 2, "mat-option", 20);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r802 = ɵɵnextContext(3);
-    ɵɵproperty("ngModel", ctx_r802.field.selector.value)("ngModelOptions", ɵɵpureFunction0(3, _c0));
+    var ctx_r801 = ɵɵnextContext(3);
+    ɵɵproperty("ngModel", ctx_r801.field.selector.value)("ngModelOptions", ɵɵpureFunction0(3, _c0));
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r802.field.selector.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r801.field.selector.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_div_7_Template(rf, ctx) { if (rf & 1) {
-    var _r808 = ɵɵgetCurrentView();
+    var _r807 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 17);
     ɵɵelementStart(1, "mat-checkbox", 12);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_7_Template_mat_checkbox_ngModelChange_1_listener($event) { ɵɵrestoreView(_r808); var ctx_r807 = ɵɵnextContext(2); return ctx_r807.field.value = $event; });
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_7_Template_mat_checkbox_ngModelChange_1_listener($event) { ɵɵrestoreView(_r807); var ctx_r806 = ɵɵnextContext(2); return ctx_r806.field.value = $event; });
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵtemplate(3, SubTemplateProfileComponent_div_0_div_7_mat_select_3_Template, 2, 4, "mat-select", 18);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r791 = ɵɵnextContext(2);
+    var ctx_r790 = ɵɵnextContext(2);
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r791.field.value)("ngModelOptions", ɵɵpureFunction0(5, _c0))("ngStyle", ctx_r791.field.selector && ɵɵpureFunction0(6, _c1));
+    ɵɵproperty("ngModel", ctx_r790.field.value)("ngModelOptions", ɵɵpureFunction0(5, _c0))("ngStyle", ctx_r790.field.selector && ɵɵpureFunction0(6, _c1));
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", ctx_r791.field.label, " ");
+    ɵɵtextInterpolate1(" ", ctx_r790.field.label, " ");
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r791.field.selector);
+    ɵɵproperty("ngIf", ctx_r790.field.selector);
 } }
 function SubTemplateProfileComponent_div_0_div_8_mat_checkbox_4_Template(rf, ctx) { if (rf & 1) {
-    var _r812 = ɵɵgetCurrentView();
+    var _r811 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-checkbox", 25);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_8_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { ɵɵrestoreView(_r812); var opt_r810 = ctx.$implicit; return opt_r810.checked = $event; });
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_8_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { ɵɵrestoreView(_r811); var opt_r809 = ctx.$implicit; return opt_r809.checked = $event; });
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r810 = ctx.$implicit;
-    ɵɵproperty("checked", opt_r810.checked)("ngModel", opt_r810.checked)("ngModelOptions", ɵɵpureFunction0(4, _c0));
+    var opt_r809 = ctx.$implicit;
+    ɵɵproperty("checked", opt_r809.checked)("ngModel", opt_r809.checked)("ngModelOptions", ɵɵpureFunction0(4, _c0));
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", opt_r810.value, " ");
+    ɵɵtextInterpolate1(" ", opt_r809.value, " ");
 } }
 function SubTemplateProfileComponent_div_0_div_8_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 22);
@@ -753,96 +753,96 @@ function SubTemplateProfileComponent_div_0_div_8_Template(rf, ctx) { if (rf & 1)
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r792 = ɵɵnextContext(2);
+    var ctx_r791 = ɵɵnextContext(2);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r792.field.label);
+    ɵɵtextInterpolate(ctx_r791.field.label);
     ɵɵadvance(2);
-    ɵɵproperty("ngForOf", ctx_r792.field.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r791.field.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_div_9_mat_radio_button_4_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-radio-button", 29);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r814 = ctx.$implicit;
-    ɵɵproperty("value", opt_r814.value);
+    var opt_r813 = ctx.$implicit;
+    ɵɵproperty("value", opt_r813.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1("", opt_r814.value, " ");
+    ɵɵtextInterpolate1("", opt_r813.value, " ");
 } }
 function SubTemplateProfileComponent_div_0_div_9_Template(rf, ctx) { if (rf & 1) {
-    var _r816 = ɵɵgetCurrentView();
+    var _r815 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 17);
     ɵɵelementStart(1, "label", 26);
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementStart(3, "mat-radio-group", 27);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_9_Template_mat_radio_group_ngModelChange_3_listener($event) { ɵɵrestoreView(_r816); var ctx_r815 = ɵɵnextContext(2); return ctx_r815.field.value = $event; });
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_9_Template_mat_radio_group_ngModelChange_3_listener($event) { ɵɵrestoreView(_r815); var ctx_r814 = ɵɵnextContext(2); return ctx_r814.field.value = $event; });
     ɵɵtemplate(4, SubTemplateProfileComponent_div_0_div_9_mat_radio_button_4_Template, 2, 2, "mat-radio-button", 28);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r793 = ɵɵnextContext(2);
+    var ctx_r792 = ɵɵnextContext(2);
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", ctx_r793.field.label, " ");
+    ɵɵtextInterpolate1(" ", ctx_r792.field.label, " ");
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r793.field.value)("required", ctx_r793.field.isMandatory);
+    ɵɵproperty("ngModel", ctx_r792.field.value)("required", ctx_r792.field.isMandatory);
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r793.field.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r792.field.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_div_10_mat_option_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-option", 21);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r818 = ctx.$implicit;
-    ɵɵproperty("value", opt_r818.value);
+    var opt_r817 = ctx.$implicit;
+    ɵɵproperty("value", opt_r817.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate(opt_r818.value);
+    ɵɵtextInterpolate(opt_r817.value);
 } }
 function SubTemplateProfileComponent_div_0_div_10_Template(rf, ctx) { if (rf & 1) {
-    var _r820 = ɵɵgetCurrentView();
+    var _r819 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 30);
     ɵɵelementStart(1, "mat-form-field", 31);
     ɵɵelementStart(2, "mat-label");
     ɵɵtext(3);
     ɵɵelementEnd();
     ɵɵelementStart(4, "mat-select", 32);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_10_Template_mat_select_ngModelChange_4_listener($event) { ɵɵrestoreView(_r820); var ctx_r819 = ɵɵnextContext(2); return ctx_r819.field.value = $event; });
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_div_10_Template_mat_select_ngModelChange_4_listener($event) { ɵɵrestoreView(_r819); var ctx_r818 = ɵɵnextContext(2); return ctx_r818.field.value = $event; });
     ɵɵtemplate(5, SubTemplateProfileComponent_div_0_div_10_mat_option_5_Template, 2, 2, "mat-option", 20);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r794 = ɵɵnextContext(2);
+    var ctx_r793 = ɵɵnextContext(2);
     ɵɵadvance(3);
-    ɵɵtextInterpolate1(" ", ctx_r794.field.label, " ");
+    ɵɵtextInterpolate1(" ", ctx_r793.field.label, " ");
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r794.field.value)("ngModelOptions", ɵɵpureFunction0(4, _c0));
+    ɵɵproperty("ngModel", ctx_r793.field.value)("ngModelOptions", ɵɵpureFunction0(4, _c0));
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r794.field.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r793.field.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_mat_form_field_11_Template(rf, ctx) { if (rf & 1) {
-    var _r822 = ɵɵgetCurrentView();
+    var _r821 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-form-field", 33);
     ɵɵelementStart(1, "mat-label");
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementStart(3, "input", 34);
-    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_mat_form_field_11_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r822); var ctx_r821 = ɵɵnextContext(2); return ctx_r821.field.defaultValue = $event; });
+    ɵɵlistener("ngModelChange", function SubTemplateProfileComponent_div_0_mat_form_field_11_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r821); var ctx_r820 = ɵɵnextContext(2); return ctx_r820.field.defaultValue = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r795 = ɵɵnextContext(2);
+    var ctx_r794 = ɵɵnextContext(2);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r795.field.label);
+    ɵɵtextInterpolate(ctx_r794.field.label);
     ɵɵadvance(1);
-    ɵɵproperty("type", ctx_r795.field.type)("ngModelOptions", ɵɵpureFunction0(4, _c0))("ngModel", ctx_r795.field.defaultValue);
+    ɵɵproperty("type", ctx_r794.field.type)("ngModelOptions", ɵɵpureFunction0(4, _c0))("ngModel", ctx_r794.field.defaultValue);
 } }
 function SubTemplateProfileComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    var _r824 = ɵɵgetCurrentView();
+    var _r823 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 1);
     ɵɵelementStart(1, "button", 2);
-    ɵɵlistener("click", function SubTemplateProfileComponent_div_0_Template_button_click_1_listener($event) { ɵɵrestoreView(_r824); var ctx_r823 = ɵɵnextContext(); return ctx_r823.editBLock($event); });
+    ɵɵlistener("click", function SubTemplateProfileComponent_div_0_Template_button_click_1_listener($event) { ɵɵrestoreView(_r823); var ctx_r822 = ɵɵnextContext(); return ctx_r822.editBLock($event); });
     ɵɵelementStart(2, "mat-icon", 3);
     ɵɵtext(3, "settings");
     ɵɵelementEnd();
@@ -858,9 +858,9 @@ function SubTemplateProfileComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r788 = ɵɵnextContext();
+    var ctx_r787 = ɵɵnextContext();
     ɵɵadvance(4);
-    ɵɵproperty("ngSwitch", ctx_r788.field.type);
+    ɵɵproperty("ngSwitch", ctx_r787.field.type);
     ɵɵadvance(1);
     ɵɵproperty("ngSwitchCase", "toggle");
     ɵɵadvance(1);
@@ -1066,9 +1066,9 @@ var SubTemplateProfileComponent = /** @class */ (function () {
         }] }); })();
 
 function TemplateProfileCreateComponent_li_11_Template(rf, ctx) { if (rf & 1) {
-    var _r500 = ɵɵgetCurrentView();
+    var _r499 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "li", 17);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_li_11_Template_li_click_0_listener() { ɵɵrestoreView(_r500); var cat_r497 = ctx.$implicit; var i_r498 = ctx.index; var ctx_r499 = ɵɵnextContext(); return ctx_r499.onActiveMenu(cat_r497, i_r498); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_li_11_Template_li_click_0_listener() { ɵɵrestoreView(_r499); var cat_r496 = ctx.$implicit; var i_r497 = ctx.index; var ctx_r498 = ɵɵnextContext(); return ctx_r498.onActiveMenu(cat_r496, i_r497); });
     ɵɵelementStart(1, "span");
     ɵɵelementStart(2, "span", 18);
     ɵɵtext(3);
@@ -1076,14 +1076,14 @@ function TemplateProfileCreateComponent_li_11_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var cat_r497 = ctx.$implicit;
-    var i_r498 = ctx.index;
-    var ctx_r492 = ɵɵnextContext();
-    ɵɵclassMap(ctx_r492.editIndex === i_r498 ? "active" : "");
+    var cat_r496 = ctx.$implicit;
+    var i_r497 = ctx.index;
+    var ctx_r491 = ɵɵnextContext();
+    ɵɵclassMap(ctx_r491.editIndex === i_r497 ? "active" : "");
     ɵɵadvance(2);
-    ɵɵproperty("ngxScrollTo", "#" + cat_r497.name);
+    ɵɵproperty("ngxScrollTo", "#" + cat_r496.name);
     ɵɵadvance(1);
-    ɵɵtextInterpolate(cat_r497.name);
+    ɵɵtextInterpolate(cat_r496.name);
 } }
 function TemplateProfileCreateComponent_div_26_mat_icon_13_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-icon");
@@ -1096,10 +1096,10 @@ function TemplateProfileCreateComponent_div_26_mat_icon_14_Template(rf, ctx) { i
     ɵɵelementEnd();
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_3_Template(rf, ctx) { if (rf & 1) {
-    var _r516 = ɵɵgetCurrentView();
+    var _r515 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 42);
     ɵɵelementStart(1, "button", 21);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_3_Template_button_click_1_listener($event) { ɵɵrestoreView(_r516); return $event.preventDefault(); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_3_Template_button_click_1_listener($event) { ɵɵrestoreView(_r515); return $event.preventDefault(); });
     ɵɵelementStart(2, "mat-icon", 22);
     ɵɵtext(3, "drag_indicator");
     ɵɵelementEnd();
@@ -1117,7 +1117,7 @@ function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_5
     ɵɵelementEnd();
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_5_Template(rf, ctx) { if (rf & 1) {
-    var _r520 = ɵɵgetCurrentView();
+    var _r519 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 43);
     ɵɵelementStart(1, "div", 44);
     ɵɵelementStart(2, "div");
@@ -1129,38 +1129,38 @@ function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_5
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(7, "button", 45);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_5_Template_button_click_7_listener($event) { ɵɵrestoreView(_r520); var ctx_r521 = ɵɵnextContext(); var field_r509 = ctx_r521.$implicit; var j_r510 = ctx_r521.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r519 = ɵɵnextContext(); $event.preventDefault(); return ctx_r519.onEditBlock(field_r509, i_r502, j_r510); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_5_Template_button_click_7_listener($event) { ɵɵrestoreView(_r519); var ctx_r520 = ɵɵnextContext(); var field_r508 = ctx_r520.$implicit; var j_r509 = ctx_r520.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r518 = ɵɵnextContext(); $event.preventDefault(); return ctx_r518.onEditBlock(field_r508, i_r501, j_r509); });
     ɵɵelementStart(8, "mat-icon", 46);
     ɵɵtext(9, "settings");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(10, "button", 47);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_5_Template_button_click_10_listener($event) { ɵɵrestoreView(_r520); var ctx_r524 = ɵɵnextContext(); var field_r509 = ctx_r524.$implicit; var j_r510 = ctx_r524.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r523 = ɵɵnextContext(); return ctx_r523.onExpendMore({ event: $event, field: field_r509 }, i_r502, j_r510); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_5_Template_button_click_10_listener($event) { ɵɵrestoreView(_r519); var ctx_r523 = ɵɵnextContext(); var field_r508 = ctx_r523.$implicit; var j_r509 = ctx_r523.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r522 = ɵɵnextContext(); return ctx_r522.onExpendMore({ event: $event, field: field_r508 }, i_r501, j_r509); });
     ɵɵtemplate(11, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_5_mat_icon_11_Template, 2, 0, "mat-icon", 28);
     ɵɵtemplate(12, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_5_mat_icon_12_Template, 2, 0, "mat-icon", 28);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var field_r509 = ɵɵnextContext().$implicit;
-    var ctx_r512 = ɵɵnextContext(4);
+    var field_r508 = ɵɵnextContext().$implicit;
+    var ctx_r511 = ɵɵnextContext(4);
     ɵɵadvance(4);
-    ɵɵtextInterpolate1(" ", field_r509.label, " ");
+    ɵɵtextInterpolate1(" ", field_r508.label, " ");
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r512.catNameStart(field_r509.label) ? "l'" + field_r509.label : field_r509.label, " ");
+    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r511.catNameStart(field_r508.label) ? "l'" + field_r508.label : field_r508.label, " ");
     ɵɵadvance(4);
-    ɵɵstyleProp("opacity", field_r509.forms && field_r509.forms.length > 0 ? 1 : 0);
-    ɵɵproperty("disabled", !(field_r509.forms && field_r509.forms.length > 0));
+    ɵɵstyleProp("opacity", field_r508.forms && field_r508.forms.length > 0 ? 1 : 0);
+    ɵɵproperty("disabled", !(field_r508.forms && field_r508.forms.length > 0));
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", !field_r509.expandMore);
+    ɵɵproperty("ngIf", !field_r508.expandMore);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", field_r509.expandMore);
+    ɵɵproperty("ngIf", field_r508.expandMore);
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_3_Template(rf, ctx) { if (rf & 1) {
-    var _r537 = ɵɵgetCurrentView();
+    var _r536 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 55);
     ɵɵelementStart(1, "button", 21);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_3_Template_button_click_1_listener($event) { ɵɵrestoreView(_r537); return $event.preventDefault(); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_3_Template_button_click_1_listener($event) { ɵɵrestoreView(_r536); return $event.preventDefault(); });
     ɵɵelementStart(2, "mat-icon", 22);
     ɵɵtext(3, " drag_indicator");
     ɵɵelementEnd();
@@ -1179,51 +1179,51 @@ function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7
 } }
 var _c0$1 = function () { return { standalone: true }; };
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_5_Template(rf, ctx) { if (rf & 1) {
-    var _r542 = ɵɵgetCurrentView();
+    var _r541 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 43);
     ɵɵelementStart(1, "div", 44);
     ɵɵelementStart(2, "div");
     ɵɵelementStart(3, "input", 56);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_5_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r542); var child_r530 = ɵɵnextContext().$implicit; return child_r530.label = $event; });
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_5_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r541); var child_r529 = ɵɵnextContext().$implicit; return child_r529.label = $event; });
     ɵɵelementEnd();
     ɵɵelementStart(4, "p", 26);
     ɵɵtext(5);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(6, "button", 45);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_5_Template_button_click_6_listener($event) { ɵɵrestoreView(_r542); var ctx_r544 = ɵɵnextContext(); var child_r530 = ctx_r544.$implicit; var k_r531 = ctx_r544.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r543 = ɵɵnextContext(); $event.preventDefault(); return ctx_r543.onEditBlock(child_r530, i_r502, j_r510, k_r531); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_5_Template_button_click_6_listener($event) { ɵɵrestoreView(_r541); var ctx_r543 = ɵɵnextContext(); var child_r529 = ctx_r543.$implicit; var k_r530 = ctx_r543.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r542 = ɵɵnextContext(); $event.preventDefault(); return ctx_r542.onEditBlock(child_r529, i_r501, j_r509, k_r530); });
     ɵɵelementStart(7, "mat-icon", 46);
     ɵɵtext(8, "settings");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(9, "button", 47);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_5_Template_button_click_9_listener($event) { ɵɵrestoreView(_r542); var ctx_r548 = ɵɵnextContext(); var child_r530 = ctx_r548.$implicit; var k_r531 = ctx_r548.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r547 = ɵɵnextContext(); return ctx_r547.onExpendMore({ event: $event, field: child_r530 }, i_r502, j_r510, k_r531); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_5_Template_button_click_9_listener($event) { ɵɵrestoreView(_r541); var ctx_r547 = ɵɵnextContext(); var child_r529 = ctx_r547.$implicit; var k_r530 = ctx_r547.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r546 = ɵɵnextContext(); return ctx_r546.onExpendMore({ event: $event, field: child_r529 }, i_r501, j_r509, k_r530); });
     ɵɵtemplate(10, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_5_mat_icon_10_Template, 2, 0, "mat-icon", 28);
     ɵɵtemplate(11, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_5_mat_icon_11_Template, 2, 0, "mat-icon", 28);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var child_r530 = ɵɵnextContext().$implicit;
-    var category_r501 = ɵɵnextContext(6).$implicit;
-    var ctx_r533 = ɵɵnextContext();
+    var child_r529 = ɵɵnextContext().$implicit;
+    var category_r500 = ɵɵnextContext(6).$implicit;
+    var ctx_r532 = ɵɵnextContext();
     ɵɵadvance(3);
-    ɵɵproperty("readonly", ctx_r533.categories.length < 4 || !category_r501.editable)("readonly", !category_r501.editable)("ngModel", child_r530.label)("ngModelOptions", ɵɵpureFunction0(10, _c0$1));
+    ɵɵproperty("readonly", ctx_r532.categories.length < 4 || !category_r500.editable)("readonly", !category_r500.editable)("ngModel", child_r529.label)("ngModelOptions", ɵɵpureFunction0(10, _c0$1));
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r533.catNameStart(child_r530.label) ? "l'" + child_r530.label : child_r530.label, " ");
+    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r532.catNameStart(child_r529.label) ? "l'" + child_r529.label : child_r529.label, " ");
     ɵɵadvance(4);
-    ɵɵstyleProp("opacity", child_r530.forms && child_r530.forms.length > 0 ? 1 : 0);
-    ɵɵproperty("disabled", !(child_r530.forms && child_r530.forms.length > 0));
+    ɵɵstyleProp("opacity", child_r529.forms && child_r529.forms.length > 0 ? 1 : 0);
+    ɵɵproperty("disabled", !(child_r529.forms && child_r529.forms.length > 0));
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", !child_r530.expandMore);
+    ɵɵproperty("ngIf", !child_r529.expandMore);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", child_r530.expandMore);
+    ɵɵproperty("ngIf", child_r529.expandMore);
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_3_Template(rf, ctx) { if (rf & 1) {
-    var _r561 = ɵɵgetCurrentView();
+    var _r560 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 60);
     ɵɵelementStart(1, "button", 21);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_3_Template_button_click_1_listener($event) { ɵɵrestoreView(_r561); return $event.preventDefault(); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_3_Template_button_click_1_listener($event) { ɵɵrestoreView(_r560); return $event.preventDefault(); });
     ɵɵelementStart(2, "mat-icon", 22);
     ɵɵtext(3, " drag_indicator ");
     ɵɵelementEnd();
@@ -1231,10 +1231,10 @@ function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7
     ɵɵelementEnd();
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_7_Template(rf, ctx) { if (rf & 1) {
-    var _r564 = ɵɵgetCurrentView();
+    var _r563 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 61);
     ɵɵelementStart(1, "button", 62);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_7_Template_button_click_1_listener() { ɵɵrestoreView(_r564); var k_r531 = ɵɵnextContext(4).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r562 = ɵɵnextContext(); return ctx_r562.onAddNewField(i_r502, j_r510, k_r531); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_7_Template_button_click_1_listener() { ɵɵrestoreView(_r563); var k_r530 = ɵɵnextContext(4).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r561 = ɵɵnextContext(); return ctx_r561.onAddNewField(i_r501, j_r509, k_r530); });
     ɵɵelementStart(2, "span");
     ɵɵtext(3, "Ajouter un champ");
     ɵɵelementEnd();
@@ -1245,14 +1245,14 @@ function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7
     ɵɵelementEnd();
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template(rf, ctx) { if (rf & 1) {
-    var _r568 = ɵɵgetCurrentView();
+    var _r567 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 58);
     ɵɵelementStart(1, "div", 34);
     ɵɵelementStart(2, "div", 35);
     ɵɵtemplate(3, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_3_Template, 4, 0, "div", 59);
     ɵɵelementStart(4, "div", 37);
     ɵɵelementStart(5, "lib-sub-category", 39);
-    ɵɵlistener("onCheckValue", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckValue_5_listener($event) { ɵɵrestoreView(_r568); var ctx_r567 = ɵɵnextContext(10); return ctx_r567.onCheckValue($event); })("onAddKeywordFromInput", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddKeywordFromInput_5_listener($event) { ɵɵrestoreView(_r568); var l_r557 = ctx.index; var k_r531 = ɵɵnextContext(3).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r569 = ɵɵnextContext(); return ctx_r569.addKeywordFromInput($event.event, $event.prev, i_r502, j_r510, k_r531, l_r557); })("onKeyPress", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onKeyPress_5_listener($event) { ɵɵrestoreView(_r568); var l_r557 = ctx.index; var k_r531 = ɵɵnextContext(3).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r573 = ɵɵnextContext(); return ctx_r573.onKeyPress($event.event, i_r502, j_r510, k_r531, l_r557); })("onAddNewField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddNewField_5_listener() { ɵɵrestoreView(_r568); var k_r531 = ɵɵnextContext(3).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r577 = ɵɵnextContext(); return ctx_r577.onAddNewField(i_r502, j_r510, k_r531); })("onRemoveField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onRemoveField_5_listener() { ɵɵrestoreView(_r568); var l_r557 = ctx.index; var k_r531 = ɵɵnextContext(3).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r581 = ɵɵnextContext(); return ctx_r581.onRemoveField(i_r502, j_r510, k_r531, l_r557); })("onChangeType", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onChangeType_5_listener() { ɵɵrestoreView(_r568); var c2_r556 = ctx.$implicit; var l_r557 = ctx.index; var k_r531 = ɵɵnextContext(3).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r585 = ɵɵnextContext(); return ctx_r585.onChangeType(c2_r556.type, i_r502, j_r510, k_r531, l_r557); })("onRemoveKeyword", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onRemoveKeyword_5_listener($event) { ɵɵrestoreView(_r568); var l_r557 = ctx.index; var k_r531 = ɵɵnextContext(3).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r589 = ɵɵnextContext(); return ctx_r589.removeKeyword($event.event, i_r502, j_r510, k_r531, l_r557); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddNewSubLevelField_5_listener() { ɵɵrestoreView(_r568); var l_r557 = ctx.index; var k_r531 = ɵɵnextContext(3).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r593 = ɵɵnextContext(); return ctx_r593.onAddNewSubLevelField(i_r502, j_r510, k_r531, l_r557); })("onExpendMore", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onExpendMore_5_listener($event) { ɵɵrestoreView(_r568); var l_r557 = ctx.index; var k_r531 = ɵɵnextContext(3).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r597 = ɵɵnextContext(); return ctx_r597.onExpendMore($event, i_r502, j_r510, k_r531, l_r557); })("onChangeLabel", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onChangeLabel_5_listener($event) { ɵɵrestoreView(_r568); var l_r557 = ctx.index; var k_r531 = ɵɵnextContext(3).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r601 = ɵɵnextContext(); return ctx_r601.onChangeLabel($event, i_r502, j_r510, k_r531, l_r557); })("onCheckedChip", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckedChip_5_listener($event) { ɵɵrestoreView(_r568); var l_r557 = ctx.index; var k_r531 = ɵɵnextContext(3).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r605 = ɵɵnextContext(); return ctx_r605.onCheckedChip($event, i_r502, j_r510, k_r531, l_r557); })("onDrop", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onDrop_5_listener($event) { ɵɵrestoreView(_r568); var ctx_r609 = ɵɵnextContext(10); return ctx_r609.drop($event); })("onCheckedDefault", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckedDefault_5_listener($event) { ɵɵrestoreView(_r568); var l_r557 = ctx.index; var k_r531 = ɵɵnextContext(3).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r610 = ɵɵnextContext(); return ctx_r610.onCheckedDefault($event, i_r502, j_r510, k_r531, l_r557); })("onEditBlock", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onEditBlock_5_listener() { ɵɵrestoreView(_r568); var c2_r556 = ctx.$implicit; var l_r557 = ctx.index; var k_r531 = ɵɵnextContext(3).index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r614 = ɵɵnextContext(); return ctx_r614.onEditBlock(c2_r556, i_r502, j_r510, k_r531, l_r557); })("onGetConditionValues", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onGetConditionValues_5_listener() { ɵɵrestoreView(_r568); var ctx_r618 = ɵɵnextContext(10); return ctx_r618.getConditionValues(); });
+    ɵɵlistener("onCheckValue", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckValue_5_listener($event) { ɵɵrestoreView(_r567); var ctx_r566 = ɵɵnextContext(10); return ctx_r566.onCheckValue($event); })("onAddKeywordFromInput", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddKeywordFromInput_5_listener($event) { ɵɵrestoreView(_r567); var l_r556 = ctx.index; var k_r530 = ɵɵnextContext(3).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r568 = ɵɵnextContext(); return ctx_r568.addKeywordFromInput($event.event, $event.prev, i_r501, j_r509, k_r530, l_r556); })("onKeyPress", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onKeyPress_5_listener($event) { ɵɵrestoreView(_r567); var l_r556 = ctx.index; var k_r530 = ɵɵnextContext(3).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r572 = ɵɵnextContext(); return ctx_r572.onKeyPress($event.event, i_r501, j_r509, k_r530, l_r556); })("onAddNewField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddNewField_5_listener() { ɵɵrestoreView(_r567); var k_r530 = ɵɵnextContext(3).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r576 = ɵɵnextContext(); return ctx_r576.onAddNewField(i_r501, j_r509, k_r530); })("onRemoveField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onRemoveField_5_listener() { ɵɵrestoreView(_r567); var l_r556 = ctx.index; var k_r530 = ɵɵnextContext(3).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r580 = ɵɵnextContext(); return ctx_r580.onRemoveField(i_r501, j_r509, k_r530, l_r556); })("onChangeType", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onChangeType_5_listener() { ɵɵrestoreView(_r567); var c2_r555 = ctx.$implicit; var l_r556 = ctx.index; var k_r530 = ɵɵnextContext(3).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r584 = ɵɵnextContext(); return ctx_r584.onChangeType(c2_r555.type, i_r501, j_r509, k_r530, l_r556); })("onRemoveKeyword", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onRemoveKeyword_5_listener($event) { ɵɵrestoreView(_r567); var l_r556 = ctx.index; var k_r530 = ɵɵnextContext(3).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r588 = ɵɵnextContext(); return ctx_r588.removeKeyword($event.event, i_r501, j_r509, k_r530, l_r556); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddNewSubLevelField_5_listener() { ɵɵrestoreView(_r567); var l_r556 = ctx.index; var k_r530 = ɵɵnextContext(3).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r592 = ɵɵnextContext(); return ctx_r592.onAddNewSubLevelField(i_r501, j_r509, k_r530, l_r556); })("onExpendMore", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onExpendMore_5_listener($event) { ɵɵrestoreView(_r567); var l_r556 = ctx.index; var k_r530 = ɵɵnextContext(3).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r596 = ɵɵnextContext(); return ctx_r596.onExpendMore($event, i_r501, j_r509, k_r530, l_r556); })("onChangeLabel", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onChangeLabel_5_listener($event) { ɵɵrestoreView(_r567); var l_r556 = ctx.index; var k_r530 = ɵɵnextContext(3).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r600 = ɵɵnextContext(); return ctx_r600.onChangeLabel($event, i_r501, j_r509, k_r530, l_r556); })("onCheckedChip", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckedChip_5_listener($event) { ɵɵrestoreView(_r567); var l_r556 = ctx.index; var k_r530 = ɵɵnextContext(3).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r604 = ɵɵnextContext(); return ctx_r604.onCheckedChip($event, i_r501, j_r509, k_r530, l_r556); })("onDrop", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onDrop_5_listener($event) { ɵɵrestoreView(_r567); var ctx_r608 = ɵɵnextContext(10); return ctx_r608.drop($event); })("onCheckedDefault", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckedDefault_5_listener($event) { ɵɵrestoreView(_r567); var l_r556 = ctx.index; var k_r530 = ɵɵnextContext(3).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r609 = ɵɵnextContext(); return ctx_r609.onCheckedDefault($event, i_r501, j_r509, k_r530, l_r556); })("onEditBlock", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onEditBlock_5_listener() { ɵɵrestoreView(_r567); var c2_r555 = ctx.$implicit; var l_r556 = ctx.index; var k_r530 = ɵɵnextContext(3).index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r613 = ɵɵnextContext(); return ctx_r613.onEditBlock(c2_r555, i_r501, j_r509, k_r530, l_r556); })("onGetConditionValues", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onGetConditionValues_5_listener() { ɵɵrestoreView(_r567); var ctx_r617 = ɵɵnextContext(10); return ctx_r617.getConditionValues(); });
     ɵɵelement(6, "div", 48);
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -1261,49 +1261,49 @@ function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7
     ɵɵtemplate(7, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_div_7_Template, 6, 0, "div", 54);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var c2_r556 = ctx.$implicit;
-    var l_r557 = ctx.index;
-    var ctx_r619 = ɵɵnextContext(3);
-    var child_r530 = ctx_r619.$implicit;
-    var k_r531 = ctx_r619.index;
-    var ctx_r555 = ɵɵnextContext(7);
-    ɵɵstyleProp("width", c2_r556.forms && c2_r556.forms.length > 0 ? "100%" : ctx_r555.fieldWidth(c2_r556.type, child_r530.forms.length, l_r557));
-    ɵɵproperty("id", c2_r556.key);
+    var c2_r555 = ctx.$implicit;
+    var l_r556 = ctx.index;
+    var ctx_r618 = ɵɵnextContext(3);
+    var child_r529 = ctx_r618.$implicit;
+    var k_r530 = ctx_r618.index;
+    var ctx_r554 = ɵɵnextContext(7);
+    ɵɵstyleProp("width", c2_r555.forms && c2_r555.forms.length > 0 ? "100%" : ctx_r554.fieldWidth(c2_r555.type, child_r529.forms.length, l_r556));
+    ɵɵproperty("id", c2_r555.key);
     ɵɵadvance(2);
-    ɵɵclassMap(c2_r556.forms && c2_r556.forms.length > 0 ? "sub-category-forms" : "");
+    ɵɵclassMap(c2_r555.forms && c2_r555.forms.length > 0 ? "sub-category-forms" : "");
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", c2_r556.forms && c2_r556.forms.length > 0);
+    ɵɵproperty("ngIf", c2_r555.forms && c2_r555.forms.length > 0);
     ɵɵadvance(2);
-    ɵɵproperty("field", c2_r556)("length", child_r530 == null ? null : child_r530.forms == null ? null : child_r530.forms.length)("i", k_r531)("j", l_r557)("conditionData", ctx_r555.conditionData);
+    ɵɵproperty("field", c2_r555)("length", child_r529 == null ? null : child_r529.forms == null ? null : child_r529.forms.length)("i", k_r530)("j", l_r556)("conditionData", ctx_r554.conditionData);
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", (child_r530 == null ? null : child_r530.forms == null ? null : child_r530.forms.length) - 1 === l_r557);
+    ɵɵproperty("ngIf", (child_r529 == null ? null : child_r529.forms == null ? null : child_r529.forms.length) - 1 === l_r556);
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r621 = ɵɵgetCurrentView();
+    var _r620 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 50, 31);
-    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_Template_div_cdkDropListDropped_0_listener($event) { ɵɵrestoreView(_r621); var ctx_r620 = ɵɵnextContext(9); return ctx_r620.drop($event); });
+    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_Template_div_cdkDropListDropped_0_listener($event) { ɵɵrestoreView(_r620); var ctx_r619 = ɵɵnextContext(9); return ctx_r619.drop($event); });
     ɵɵtemplate(2, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_div_2_Template, 8, 12, "div", 57);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var child_r530 = ɵɵnextContext(2).$implicit;
-    ɵɵproperty("cdkDropListData", child_r530.forms);
+    var child_r529 = ɵɵnextContext(2).$implicit;
+    ɵɵproperty("cdkDropListData", child_r529.forms);
     ɵɵadvance(2);
-    ɵɵproperty("ngForOf", child_r530.forms);
+    ɵɵproperty("ngForOf", child_r529.forms);
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 48);
     ɵɵtemplate(1, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_div_1_Template, 3, 2, "div", 49);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var child_r530 = ɵɵnextContext().$implicit;
+    var child_r529 = ɵɵnextContext().$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", child_r530.forms && child_r530.forms.length > 0);
+    ɵɵproperty("ngIf", child_r529.forms && child_r529.forms.length > 0);
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_8_Template(rf, ctx) { if (rf & 1) {
-    var _r626 = ɵɵgetCurrentView();
+    var _r625 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 61);
     ɵɵelementStart(1, "button", 62);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_8_Template_button_click_1_listener() { ɵɵrestoreView(_r626); var j_r510 = ɵɵnextContext(4).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r624 = ɵɵnextContext(); return ctx_r624.onAddNewField(i_r502, j_r510); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_8_Template_button_click_1_listener() { ɵɵrestoreView(_r625); var j_r509 = ɵɵnextContext(4).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r623 = ɵɵnextContext(); return ctx_r623.onAddNewField(i_r501, j_r509); });
     ɵɵelementStart(2, "span");
     ɵɵtext(3, "Ajouter un champ");
     ɵɵelementEnd();
@@ -1314,7 +1314,7 @@ function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7
     ɵɵelementEnd();
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template(rf, ctx) { if (rf & 1) {
-    var _r629 = ɵɵgetCurrentView();
+    var _r628 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 52);
     ɵɵelementStart(1, "div", 34);
     ɵɵelementStart(2, "div", 35);
@@ -1322,7 +1322,7 @@ function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7
     ɵɵelementStart(4, "div", 37);
     ɵɵtemplate(5, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_5_Template, 12, 11, "div", 38);
     ɵɵelementStart(6, "lib-sub-category", 39);
-    ɵɵlistener("onCheckValue", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onCheckValue_6_listener($event) { ɵɵrestoreView(_r629); var ctx_r628 = ɵɵnextContext(7); return ctx_r628.onCheckValue($event); })("onAddKeywordFromInput", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onAddKeywordFromInput_6_listener($event) { ɵɵrestoreView(_r629); var k_r531 = ctx.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r630 = ɵɵnextContext(); return ctx_r630.addKeywordFromInput($event.event, $event.prev, i_r502, j_r510, k_r531); })("onKeyPress", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onKeyPress_6_listener($event) { ɵɵrestoreView(_r629); var k_r531 = ctx.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r633 = ɵɵnextContext(); return ctx_r633.onKeyPress($event.event, i_r502, j_r510, k_r531); })("onAddNewField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onAddNewField_6_listener() { ɵɵrestoreView(_r629); var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r636 = ɵɵnextContext(); return ctx_r636.onAddNewField(i_r502, j_r510); })("onRemoveField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onRemoveField_6_listener() { ɵɵrestoreView(_r629); var k_r531 = ctx.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r639 = ɵɵnextContext(); return ctx_r639.onRemoveField(i_r502, j_r510, k_r531); })("onChangeType", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onChangeType_6_listener() { ɵɵrestoreView(_r629); var child_r530 = ctx.$implicit; var k_r531 = ctx.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r642 = ɵɵnextContext(); return ctx_r642.onChangeType(child_r530.type, i_r502, j_r510, k_r531); })("onRemoveKeyword", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onRemoveKeyword_6_listener($event) { ɵɵrestoreView(_r629); var k_r531 = ctx.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r645 = ɵɵnextContext(); return ctx_r645.removeKeyword($event.event, i_r502, j_r510, k_r531); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onAddNewSubLevelField_6_listener() { ɵɵrestoreView(_r629); var k_r531 = ctx.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r648 = ɵɵnextContext(); return ctx_r648.onAddNewSubLevelField(i_r502, j_r510, k_r531); })("onExpendMore", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onExpendMore_6_listener($event) { ɵɵrestoreView(_r629); var k_r531 = ctx.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r651 = ɵɵnextContext(); return ctx_r651.onExpendMore($event, i_r502, j_r510, k_r531); })("onChangeLabel", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onChangeLabel_6_listener($event) { ɵɵrestoreView(_r629); var k_r531 = ctx.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r654 = ɵɵnextContext(); return ctx_r654.onChangeLabel($event, i_r502, j_r510, k_r531); })("onCheckedChip", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onCheckedChip_6_listener($event) { ɵɵrestoreView(_r629); var k_r531 = ctx.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r657 = ɵɵnextContext(); return ctx_r657.onCheckedChip($event, i_r502, j_r510, k_r531); })("onDrop", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onDrop_6_listener($event) { ɵɵrestoreView(_r629); var ctx_r660 = ɵɵnextContext(7); return ctx_r660.drop($event); })("onCheckedDefault", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onCheckedDefault_6_listener($event) { ɵɵrestoreView(_r629); var k_r531 = ctx.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r661 = ɵɵnextContext(); return ctx_r661.onCheckedDefault($event, i_r502, j_r510, k_r531); })("onEditBlock", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onEditBlock_6_listener() { ɵɵrestoreView(_r629); var child_r530 = ctx.$implicit; var k_r531 = ctx.index; var j_r510 = ɵɵnextContext(3).index; var i_r502 = ɵɵnextContext(3).index; var ctx_r664 = ɵɵnextContext(); return ctx_r664.onEditBlock(child_r530, i_r502, j_r510, k_r531); })("onGetConditionValues", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onGetConditionValues_6_listener() { ɵɵrestoreView(_r629); var ctx_r667 = ɵɵnextContext(7); return ctx_r667.getConditionValues(); });
+    ɵɵlistener("onCheckValue", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onCheckValue_6_listener($event) { ɵɵrestoreView(_r628); var ctx_r627 = ɵɵnextContext(7); return ctx_r627.onCheckValue($event); })("onAddKeywordFromInput", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onAddKeywordFromInput_6_listener($event) { ɵɵrestoreView(_r628); var k_r530 = ctx.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r629 = ɵɵnextContext(); return ctx_r629.addKeywordFromInput($event.event, $event.prev, i_r501, j_r509, k_r530); })("onKeyPress", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onKeyPress_6_listener($event) { ɵɵrestoreView(_r628); var k_r530 = ctx.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r632 = ɵɵnextContext(); return ctx_r632.onKeyPress($event.event, i_r501, j_r509, k_r530); })("onAddNewField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onAddNewField_6_listener() { ɵɵrestoreView(_r628); var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r635 = ɵɵnextContext(); return ctx_r635.onAddNewField(i_r501, j_r509); })("onRemoveField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onRemoveField_6_listener() { ɵɵrestoreView(_r628); var k_r530 = ctx.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r638 = ɵɵnextContext(); return ctx_r638.onRemoveField(i_r501, j_r509, k_r530); })("onChangeType", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onChangeType_6_listener() { ɵɵrestoreView(_r628); var child_r529 = ctx.$implicit; var k_r530 = ctx.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r641 = ɵɵnextContext(); return ctx_r641.onChangeType(child_r529.type, i_r501, j_r509, k_r530); })("onRemoveKeyword", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onRemoveKeyword_6_listener($event) { ɵɵrestoreView(_r628); var k_r530 = ctx.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r644 = ɵɵnextContext(); return ctx_r644.removeKeyword($event.event, i_r501, j_r509, k_r530); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onAddNewSubLevelField_6_listener() { ɵɵrestoreView(_r628); var k_r530 = ctx.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r647 = ɵɵnextContext(); return ctx_r647.onAddNewSubLevelField(i_r501, j_r509, k_r530); })("onExpendMore", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onExpendMore_6_listener($event) { ɵɵrestoreView(_r628); var k_r530 = ctx.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r650 = ɵɵnextContext(); return ctx_r650.onExpendMore($event, i_r501, j_r509, k_r530); })("onChangeLabel", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onChangeLabel_6_listener($event) { ɵɵrestoreView(_r628); var k_r530 = ctx.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r653 = ɵɵnextContext(); return ctx_r653.onChangeLabel($event, i_r501, j_r509, k_r530); })("onCheckedChip", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onCheckedChip_6_listener($event) { ɵɵrestoreView(_r628); var k_r530 = ctx.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r656 = ɵɵnextContext(); return ctx_r656.onCheckedChip($event, i_r501, j_r509, k_r530); })("onDrop", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onDrop_6_listener($event) { ɵɵrestoreView(_r628); var ctx_r659 = ɵɵnextContext(7); return ctx_r659.drop($event); })("onCheckedDefault", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onCheckedDefault_6_listener($event) { ɵɵrestoreView(_r628); var k_r530 = ctx.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r660 = ɵɵnextContext(); return ctx_r660.onCheckedDefault($event, i_r501, j_r509, k_r530); })("onEditBlock", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onEditBlock_6_listener() { ɵɵrestoreView(_r628); var child_r529 = ctx.$implicit; var k_r530 = ctx.index; var j_r509 = ɵɵnextContext(3).index; var i_r501 = ɵɵnextContext(3).index; var ctx_r663 = ɵɵnextContext(); return ctx_r663.onEditBlock(child_r529, i_r501, j_r509, k_r530); })("onGetConditionValues", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template_lib_sub_category_onGetConditionValues_6_listener() { ɵɵrestoreView(_r628); var ctx_r666 = ɵɵnextContext(7); return ctx_r666.getConditionValues(); });
     ɵɵtemplate(7, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_7_Template, 2, 1, "div", 40);
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -1331,53 +1331,53 @@ function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7
     ɵɵtemplate(8, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_div_8_Template, 6, 0, "div", 54);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var child_r530 = ctx.$implicit;
-    var k_r531 = ctx.index;
-    var ctx_r668 = ɵɵnextContext(3);
-    var field_r509 = ctx_r668.$implicit;
-    var j_r510 = ctx_r668.index;
-    var ctx_r529 = ɵɵnextContext(4);
-    ɵɵstyleProp("width", child_r530.forms && child_r530.forms.length > 0 ? "100%" : ctx_r529.fieldWidth(child_r530.type, field_r509.forms.length, k_r531));
-    ɵɵproperty("id", child_r530.key);
+    var child_r529 = ctx.$implicit;
+    var k_r530 = ctx.index;
+    var ctx_r667 = ɵɵnextContext(3);
+    var field_r508 = ctx_r667.$implicit;
+    var j_r509 = ctx_r667.index;
+    var ctx_r528 = ɵɵnextContext(4);
+    ɵɵstyleProp("width", child_r529.forms && child_r529.forms.length > 0 ? "100%" : ctx_r528.fieldWidth(child_r529.type, field_r508.forms.length, k_r530));
+    ɵɵproperty("id", child_r529.key);
     ɵɵadvance(2);
-    ɵɵclassMap(child_r530.forms && child_r530.forms.length > 0 ? "sub-category-forms" : "");
+    ɵɵclassMap(child_r529.forms && child_r529.forms.length > 0 ? "sub-category-forms" : "");
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", child_r530.forms && child_r530.forms.length > 0);
+    ɵɵproperty("ngIf", child_r529.forms && child_r529.forms.length > 0);
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", child_r530.forms && child_r530.forms.length > 0);
+    ɵɵproperty("ngIf", child_r529.forms && child_r529.forms.length > 0);
     ɵɵadvance(1);
-    ɵɵproperty("field", child_r530)("length", field_r509 == null ? null : field_r509.forms == null ? null : field_r509.forms.length)("i", j_r510)("j", k_r531)("conditionData", ctx_r529.conditionData);
+    ɵɵproperty("field", child_r529)("length", field_r508 == null ? null : field_r508.forms == null ? null : field_r508.forms.length)("i", j_r509)("j", k_r530)("conditionData", ctx_r528.conditionData);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", child_r530.expandMore);
+    ɵɵproperty("ngIf", child_r529.expandMore);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", (field_r509 == null ? null : field_r509.forms == null ? null : field_r509.forms.length) - 1 === k_r531);
+    ɵɵproperty("ngIf", (field_r508 == null ? null : field_r508.forms == null ? null : field_r508.forms.length) - 1 === k_r530);
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r670 = ɵɵgetCurrentView();
+    var _r669 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 50, 31);
-    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_Template_div_cdkDropListDropped_0_listener($event) { ɵɵrestoreView(_r670); var ctx_r669 = ɵɵnextContext(6); return ctx_r669.drop($event); });
+    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_Template_div_cdkDropListDropped_0_listener($event) { ɵɵrestoreView(_r669); var ctx_r668 = ɵɵnextContext(6); return ctx_r668.drop($event); });
     ɵɵtemplate(2, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_div_2_Template, 9, 14, "div", 51);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var field_r509 = ɵɵnextContext(2).$implicit;
-    ɵɵproperty("cdkDropListData", field_r509.forms);
+    var field_r508 = ɵɵnextContext(2).$implicit;
+    ɵɵproperty("cdkDropListData", field_r508.forms);
     ɵɵadvance(2);
-    ɵɵproperty("ngForOf", field_r509.forms);
+    ɵɵproperty("ngForOf", field_r508.forms);
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 48);
     ɵɵtemplate(1, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_div_1_Template, 3, 2, "div", 49);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var field_r509 = ɵɵnextContext().$implicit;
+    var field_r508 = ɵɵnextContext().$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", field_r509.forms);
+    ɵɵproperty("ngIf", field_r508.forms);
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_8_Template(rf, ctx) { if (rf & 1) {
-    var _r675 = ɵɵgetCurrentView();
+    var _r674 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 63);
     ɵɵelementStart(1, "button", 64);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_8_Template_button_click_1_listener() { ɵɵrestoreView(_r675); var i_r502 = ɵɵnextContext(4).index; var ctx_r673 = ɵɵnextContext(); return ctx_r673.onAddNewField(i_r502); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_8_Template_button_click_1_listener() { ɵɵrestoreView(_r674); var i_r501 = ɵɵnextContext(4).index; var ctx_r672 = ɵɵnextContext(); return ctx_r672.onAddNewField(i_r501); });
     ɵɵelementStart(2, "span");
     ɵɵtext(3, "Ajouter un champ");
     ɵɵelementEnd();
@@ -1387,14 +1387,14 @@ function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_8
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var j_r510 = ɵɵnextContext().index;
-    var category_r501 = ɵɵnextContext(3).$implicit;
+    var j_r509 = ɵɵnextContext().index;
+    var category_r500 = ɵɵnextContext(3).$implicit;
     ɵɵadvance(1);
-    ɵɵstyleProp("opacity", (category_r501 == null ? null : category_r501.forms == null ? null : category_r501.forms.length) - 1 === j_r510 ? 1 : 0);
-    ɵɵproperty("disabled", (category_r501 == null ? null : category_r501.forms == null ? null : category_r501.forms.length) - 1 !== j_r510);
+    ɵɵstyleProp("opacity", (category_r500 == null ? null : category_r500.forms == null ? null : category_r500.forms.length) - 1 === j_r509 ? 1 : 0);
+    ɵɵproperty("disabled", (category_r500 == null ? null : category_r500.forms == null ? null : category_r500.forms.length) - 1 !== j_r509);
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r679 = ɵɵgetCurrentView();
+    var _r678 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 33);
     ɵɵelementStart(1, "div", 34);
     ɵɵelementStart(2, "div", 35);
@@ -1402,7 +1402,7 @@ function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Templ
     ɵɵelementStart(4, "div", 37);
     ɵɵtemplate(5, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_5_Template, 13, 7, "div", 38);
     ɵɵelementStart(6, "lib-sub-category", 39);
-    ɵɵlistener("onCheckValue", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onCheckValue_6_listener($event) { ɵɵrestoreView(_r679); var ctx_r678 = ɵɵnextContext(4); return ctx_r678.onCheckValue($event); })("onAddKeywordFromInput", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onAddKeywordFromInput_6_listener($event) { ɵɵrestoreView(_r679); var j_r510 = ctx.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r680 = ɵɵnextContext(); return ctx_r680.addKeywordFromInput($event.event, $event.prev, i_r502, j_r510); })("onKeyPress", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onKeyPress_6_listener($event) { ɵɵrestoreView(_r679); var j_r510 = ctx.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r682 = ɵɵnextContext(); return ctx_r682.onKeyPress($event.event, i_r502, j_r510); })("onAddNewField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onAddNewField_6_listener() { ɵɵrestoreView(_r679); var i_r502 = ɵɵnextContext(3).index; var ctx_r684 = ɵɵnextContext(); return ctx_r684.onAddNewField(i_r502); })("onRemoveField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onRemoveField_6_listener() { ɵɵrestoreView(_r679); var j_r510 = ctx.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r686 = ɵɵnextContext(); return ctx_r686.onRemoveField(i_r502, j_r510); })("onChangeType", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onChangeType_6_listener() { ɵɵrestoreView(_r679); var field_r509 = ctx.$implicit; var j_r510 = ctx.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r688 = ɵɵnextContext(); return ctx_r688.onChangeType(field_r509.type, i_r502, j_r510); })("onRemoveKeyword", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onRemoveKeyword_6_listener($event) { ɵɵrestoreView(_r679); var j_r510 = ctx.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r690 = ɵɵnextContext(); return ctx_r690.removeKeyword($event.event, i_r502, j_r510); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onAddNewSubLevelField_6_listener() { ɵɵrestoreView(_r679); var j_r510 = ctx.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r692 = ɵɵnextContext(); return ctx_r692.onAddNewSubLevelField(i_r502, j_r510); })("onExpendMore", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onExpendMore_6_listener($event) { ɵɵrestoreView(_r679); var j_r510 = ctx.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r694 = ɵɵnextContext(); return ctx_r694.onExpendMore($event, i_r502, j_r510); })("onChangeLabel", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onChangeLabel_6_listener($event) { ɵɵrestoreView(_r679); var j_r510 = ctx.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r696 = ɵɵnextContext(); return ctx_r696.onChangeLabel($event, i_r502, j_r510); })("onCheckedChip", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onCheckedChip_6_listener($event) { ɵɵrestoreView(_r679); var j_r510 = ctx.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r698 = ɵɵnextContext(); return ctx_r698.onCheckedChip($event, i_r502, j_r510); })("onDrop", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onDrop_6_listener($event) { ɵɵrestoreView(_r679); var ctx_r700 = ɵɵnextContext(4); return ctx_r700.drop($event); })("onCheckedDefault", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onCheckedDefault_6_listener($event) { ɵɵrestoreView(_r679); var j_r510 = ctx.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r701 = ɵɵnextContext(); return ctx_r701.onCheckedDefault($event, i_r502, j_r510); })("onEditBlock", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onEditBlock_6_listener() { ɵɵrestoreView(_r679); var field_r509 = ctx.$implicit; var j_r510 = ctx.index; var i_r502 = ɵɵnextContext(3).index; var ctx_r703 = ɵɵnextContext(); return ctx_r703.onEditBlock(field_r509, i_r502, j_r510); })("onGetConditionValues", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onGetConditionValues_6_listener() { ɵɵrestoreView(_r679); var ctx_r705 = ɵɵnextContext(4); return ctx_r705.getConditionValues(); });
+    ɵɵlistener("onCheckValue", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onCheckValue_6_listener($event) { ɵɵrestoreView(_r678); var ctx_r677 = ɵɵnextContext(4); return ctx_r677.onCheckValue($event); })("onAddKeywordFromInput", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onAddKeywordFromInput_6_listener($event) { ɵɵrestoreView(_r678); var j_r509 = ctx.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r679 = ɵɵnextContext(); return ctx_r679.addKeywordFromInput($event.event, $event.prev, i_r501, j_r509); })("onKeyPress", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onKeyPress_6_listener($event) { ɵɵrestoreView(_r678); var j_r509 = ctx.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r681 = ɵɵnextContext(); return ctx_r681.onKeyPress($event.event, i_r501, j_r509); })("onAddNewField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onAddNewField_6_listener() { ɵɵrestoreView(_r678); var i_r501 = ɵɵnextContext(3).index; var ctx_r683 = ɵɵnextContext(); return ctx_r683.onAddNewField(i_r501); })("onRemoveField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onRemoveField_6_listener() { ɵɵrestoreView(_r678); var j_r509 = ctx.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r685 = ɵɵnextContext(); return ctx_r685.onRemoveField(i_r501, j_r509); })("onChangeType", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onChangeType_6_listener() { ɵɵrestoreView(_r678); var field_r508 = ctx.$implicit; var j_r509 = ctx.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r687 = ɵɵnextContext(); return ctx_r687.onChangeType(field_r508.type, i_r501, j_r509); })("onRemoveKeyword", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onRemoveKeyword_6_listener($event) { ɵɵrestoreView(_r678); var j_r509 = ctx.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r689 = ɵɵnextContext(); return ctx_r689.removeKeyword($event.event, i_r501, j_r509); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onAddNewSubLevelField_6_listener() { ɵɵrestoreView(_r678); var j_r509 = ctx.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r691 = ɵɵnextContext(); return ctx_r691.onAddNewSubLevelField(i_r501, j_r509); })("onExpendMore", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onExpendMore_6_listener($event) { ɵɵrestoreView(_r678); var j_r509 = ctx.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r693 = ɵɵnextContext(); return ctx_r693.onExpendMore($event, i_r501, j_r509); })("onChangeLabel", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onChangeLabel_6_listener($event) { ɵɵrestoreView(_r678); var j_r509 = ctx.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r695 = ɵɵnextContext(); return ctx_r695.onChangeLabel($event, i_r501, j_r509); })("onCheckedChip", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onCheckedChip_6_listener($event) { ɵɵrestoreView(_r678); var j_r509 = ctx.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r697 = ɵɵnextContext(); return ctx_r697.onCheckedChip($event, i_r501, j_r509); })("onDrop", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onDrop_6_listener($event) { ɵɵrestoreView(_r678); var ctx_r699 = ɵɵnextContext(4); return ctx_r699.drop($event); })("onCheckedDefault", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onCheckedDefault_6_listener($event) { ɵɵrestoreView(_r678); var j_r509 = ctx.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r700 = ɵɵnextContext(); return ctx_r700.onCheckedDefault($event, i_r501, j_r509); })("onEditBlock", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onEditBlock_6_listener() { ɵɵrestoreView(_r678); var field_r508 = ctx.$implicit; var j_r509 = ctx.index; var i_r501 = ɵɵnextContext(3).index; var ctx_r702 = ɵɵnextContext(); return ctx_r702.onEditBlock(field_r508, i_r501, j_r509); })("onGetConditionValues", function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template_lib_sub_category_onGetConditionValues_6_listener() { ɵɵrestoreView(_r678); var ctx_r704 = ɵɵnextContext(4); return ctx_r704.getConditionValues(); });
     ɵɵtemplate(7, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_7_Template, 2, 1, "div", 40);
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -1411,54 +1411,54 @@ function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Templ
     ɵɵtemplate(8, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_div_8_Template, 6, 3, "div", 41);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var field_r509 = ctx.$implicit;
-    var j_r510 = ctx.index;
-    var ctx_r706 = ɵɵnextContext(3);
-    var category_r501 = ctx_r706.$implicit;
-    var i_r502 = ctx_r706.index;
-    var ctx_r508 = ɵɵnextContext();
-    ɵɵstyleProp("width", field_r509.forms && field_r509.forms.length > 0 ? "100%" : ctx_r508.fieldWidth(field_r509.type, category_r501.forms.length, j_r510));
-    ɵɵproperty("id", field_r509.key);
+    var field_r508 = ctx.$implicit;
+    var j_r509 = ctx.index;
+    var ctx_r705 = ɵɵnextContext(3);
+    var category_r500 = ctx_r705.$implicit;
+    var i_r501 = ctx_r705.index;
+    var ctx_r507 = ɵɵnextContext();
+    ɵɵstyleProp("width", field_r508.forms && field_r508.forms.length > 0 ? "100%" : ctx_r507.fieldWidth(field_r508.type, category_r500.forms.length, j_r509));
+    ɵɵproperty("id", field_r508.key);
     ɵɵadvance(2);
-    ɵɵclassMap(field_r509.forms && field_r509.forms.length > 0 ? "sub-category-forms" : "");
+    ɵɵclassMap(field_r508.forms && field_r508.forms.length > 0 ? "sub-category-forms" : "");
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", field_r509.forms);
+    ɵɵproperty("ngIf", field_r508.forms);
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", field_r509.forms);
+    ɵɵproperty("ngIf", field_r508.forms);
     ɵɵadvance(1);
-    ɵɵproperty("field", field_r509)("length", category_r501 == null ? null : category_r501.forms == null ? null : category_r501.forms.length)("i", i_r502)("j", j_r510)("conditionData", ctx_r508.conditionData);
+    ɵɵproperty("field", field_r508)("length", category_r500 == null ? null : category_r500.forms == null ? null : category_r500.forms.length)("i", i_r501)("j", j_r509)("conditionData", ctx_r507.conditionData);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", field_r509.expandMore);
+    ɵɵproperty("ngIf", field_r508.expandMore);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", (category_r501 == null ? null : category_r501.forms == null ? null : category_r501.forms.length) - 1 === j_r510);
+    ɵɵproperty("ngIf", (category_r500 == null ? null : category_r500.forms == null ? null : category_r500.forms.length) - 1 === j_r509);
 } }
 function TemplateProfileCreateComponent_div_26_div_15_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵtemplate(1, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_div_1_Template, 9, 14, "div", 32);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var category_r501 = ɵɵnextContext(2).$implicit;
+    var category_r500 = ɵɵnextContext(2).$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", category_r501.forms);
+    ɵɵproperty("ngForOf", category_r500.forms);
 } }
 function TemplateProfileCreateComponent_div_26_div_15_Template(rf, ctx) { if (rf & 1) {
-    var _r709 = ɵɵgetCurrentView();
+    var _r708 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 30, 31);
-    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_26_div_15_Template_div_cdkDropListDropped_0_listener($event) { ɵɵrestoreView(_r709); var ctx_r708 = ɵɵnextContext(2); return ctx_r708.drop($event); });
+    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_26_div_15_Template_div_cdkDropListDropped_0_listener($event) { ɵɵrestoreView(_r708); var ctx_r707 = ɵɵnextContext(2); return ctx_r707.drop($event); });
     ɵɵtemplate(2, TemplateProfileCreateComponent_div_26_div_15_ng_container_2_Template, 2, 1, "ng-container", 28);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r501 = ɵɵnextContext().$implicit;
-    ɵɵproperty("cdkDropListData", category_r501.forms);
+    var category_r500 = ɵɵnextContext().$implicit;
+    ɵɵproperty("cdkDropListData", category_r500.forms);
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", category_r501.expandMore);
+    ɵɵproperty("ngIf", category_r500.expandMore);
 } }
 function TemplateProfileCreateComponent_div_26_Template(rf, ctx) { if (rf & 1) {
-    var _r712 = ɵɵgetCurrentView();
+    var _r711 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 19);
     ɵɵelementStart(1, "div", 20);
     ɵɵelementStart(2, "button", 21);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_Template_button_click_2_listener($event) { ɵɵrestoreView(_r712); return $event.preventDefault(); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_Template_button_click_2_listener($event) { ɵɵrestoreView(_r711); return $event.preventDefault(); });
     ɵɵelementStart(3, "mat-icon", 22);
     ɵɵtext(4, "drag_indicator");
     ɵɵelementEnd();
@@ -1466,7 +1466,7 @@ function TemplateProfileCreateComponent_div_26_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementStart(5, "div", 23);
     ɵɵelementStart(6, "div", 24);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_Template_div_click_6_listener($event) { ɵɵrestoreView(_r712); var category_r501 = ctx.$implicit; var i_r502 = ctx.index; var ctx_r713 = ɵɵnextContext(); ctx_r713.onActiveMenu(category_r501, i_r502, $event); return ctx_r713.onExpendMore({ event: $event, field: category_r501 }, i_r502); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_Template_div_click_6_listener($event) { ɵɵrestoreView(_r711); var category_r500 = ctx.$implicit; var i_r501 = ctx.index; var ctx_r712 = ɵɵnextContext(); ctx_r712.onActiveMenu(category_r500, i_r501, $event); return ctx_r712.onExpendMore({ event: $event, field: category_r500 }, i_r501); });
     ɵɵelementStart(7, "div");
     ɵɵelementStart(8, "p", 25);
     ɵɵtext(9);
@@ -1476,7 +1476,7 @@ function TemplateProfileCreateComponent_div_26_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(12, "button", 27);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_Template_button_click_12_listener($event) { ɵɵrestoreView(_r712); var category_r501 = ctx.$implicit; var i_r502 = ctx.index; var ctx_r714 = ɵɵnextContext(); return ctx_r714.onExpendMore({ event: $event, field: category_r501 }, i_r502); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_26_Template_button_click_12_listener($event) { ɵɵrestoreView(_r711); var category_r500 = ctx.$implicit; var i_r501 = ctx.index; var ctx_r713 = ɵɵnextContext(); return ctx_r713.onExpendMore({ event: $event, field: category_r500 }, i_r501); });
     ɵɵtemplate(13, TemplateProfileCreateComponent_div_26_mat_icon_13_Template, 2, 0, "mat-icon", 28);
     ɵɵtemplate(14, TemplateProfileCreateComponent_div_26_mat_icon_14_Template, 2, 0, "mat-icon", 28);
     ɵɵelementEnd();
@@ -1485,175 +1485,175 @@ function TemplateProfileCreateComponent_div_26_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r501 = ctx.$implicit;
-    var i_r502 = ctx.index;
-    var ctx_r494 = ɵɵnextContext();
-    ɵɵclassMap(ctx_r494.editIndex === i_r502 ? "active" : "");
-    ɵɵstyleProp("padding-bottom", category_r501.expandMore ? "100px" : "10px");
-    ɵɵproperty("id", category_r501.name);
+    var category_r500 = ctx.$implicit;
+    var i_r501 = ctx.index;
+    var ctx_r493 = ɵɵnextContext();
+    ɵɵclassMap(ctx_r493.editIndex === i_r501 ? "active" : "");
+    ɵɵstyleProp("padding-bottom", category_r500.expandMore ? "100px" : "10px");
+    ɵɵproperty("id", category_r500.name);
     ɵɵadvance(9);
-    ɵɵtextInterpolate1(" ", category_r501.name, " ");
+    ɵɵtextInterpolate1(" ", category_r500.name, " ");
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r494.catNameStart(category_r501.name) ? "l'" + category_r501.name : category_r501.name, " ");
+    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r493.catNameStart(category_r500.name) ? "l'" + category_r500.name : category_r500.name, " ");
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", !category_r501.expandMore);
+    ɵɵproperty("ngIf", !category_r500.expandMore);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", category_r501.expandMore);
+    ɵɵproperty("ngIf", category_r500.expandMore);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", category_r501.forms);
+    ɵɵproperty("ngIf", category_r500.forms);
 } }
 function TemplateProfileCreateComponent_div_33_div_35_Template(rf, ctx) { if (rf & 1) {
-    var _r724 = ɵɵgetCurrentView();
+    var _r723 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 98);
     ɵɵelementStart(1, "mat-slide-toggle", 99);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_div_35_Template_mat_slide_toggle_ngModelChange_1_listener($event) { ɵɵrestoreView(_r724); var ctx_r723 = ɵɵnextContext(2); return ctx_r723.currentEditBlock.defaultValue = $event; });
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_div_35_Template_mat_slide_toggle_ngModelChange_1_listener($event) { ɵɵrestoreView(_r723); var ctx_r722 = ɵɵnextContext(2); return ctx_r722.currentEditBlock.defaultValue = $event; });
     ɵɵelementEnd();
     ɵɵelementStart(2, "span", 100);
     ɵɵtext(3, "Valeur par d\u00E9faut");
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r715 = ɵɵnextContext(2);
+    var ctx_r714 = ɵɵnextContext(2);
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r715.currentEditBlock.defaultValue)("ngModelOptions", ɵɵpureFunction0(2, _c0$1));
+    ɵɵproperty("ngModel", ctx_r714.currentEditBlock.defaultValue)("ngModelOptions", ɵɵpureFunction0(2, _c0$1));
 } }
 function TemplateProfileCreateComponent_div_33_div_36_Template(rf, ctx) { if (rf & 1) {
-    var _r726 = ɵɵgetCurrentView();
+    var _r725 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 101);
     ɵɵelementStart(1, "mat-checkbox", 102);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_div_36_Template_mat_checkbox_ngModelChange_1_listener($event) { ɵɵrestoreView(_r726); var ctx_r725 = ɵɵnextContext(2); return ctx_r725.currentEditBlock.value = $event; });
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_div_36_Template_mat_checkbox_ngModelChange_1_listener($event) { ɵɵrestoreView(_r725); var ctx_r724 = ɵɵnextContext(2); return ctx_r724.currentEditBlock.value = $event; });
     ɵɵtext(2, " Coch\u00E9 par d\u00E9fault ");
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r716 = ɵɵnextContext(2);
+    var ctx_r715 = ɵɵnextContext(2);
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r716.currentEditBlock.value)("ngModelOptions", ɵɵpureFunction0(2, _c0$1));
+    ɵɵproperty("ngModel", ctx_r715.currentEditBlock.value)("ngModelOptions", ɵɵpureFunction0(2, _c0$1));
 } }
 function TemplateProfileCreateComponent_div_33_mat_form_field_37_mat_chip_6_Template(rf, ctx) { if (rf & 1) {
-    var _r733 = ɵɵgetCurrentView();
+    var _r732 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-chip", 109);
-    ɵɵlistener("dblclick", function TemplateProfileCreateComponent_div_33_mat_form_field_37_mat_chip_6_Template_mat_chip_dblclick_0_listener() { ɵɵrestoreView(_r733); var option_r731 = ctx.$implicit; var ctx_r732 = ɵɵnextContext(3); return ctx_r732.onCheckedChipBlock(option_r731, ctx_r732.currentEditBlock); })("click", function TemplateProfileCreateComponent_div_33_mat_form_field_37_mat_chip_6_Template_mat_chip_click_0_listener() { ɵɵrestoreView(_r733); var option_r731 = ctx.$implicit; var ctx_r734 = ɵɵnextContext(3); return ctx_r734.onEditChip(option_r731); })("removed", function TemplateProfileCreateComponent_div_33_mat_form_field_37_mat_chip_6_Template_mat_chip_removed_0_listener() { ɵɵrestoreView(_r733); var option_r731 = ctx.$implicit; var ctx_r735 = ɵɵnextContext(3); return ctx_r735.removeKeywordBlock(option_r731, ctx_r735.currentEditBlock); });
+    ɵɵlistener("dblclick", function TemplateProfileCreateComponent_div_33_mat_form_field_37_mat_chip_6_Template_mat_chip_dblclick_0_listener() { ɵɵrestoreView(_r732); var option_r730 = ctx.$implicit; var ctx_r731 = ɵɵnextContext(3); return ctx_r731.onCheckedChipBlock(option_r730, ctx_r731.currentEditBlock); })("click", function TemplateProfileCreateComponent_div_33_mat_form_field_37_mat_chip_6_Template_mat_chip_click_0_listener() { ɵɵrestoreView(_r732); var option_r730 = ctx.$implicit; var ctx_r733 = ɵɵnextContext(3); return ctx_r733.onEditChip(option_r730); })("removed", function TemplateProfileCreateComponent_div_33_mat_form_field_37_mat_chip_6_Template_mat_chip_removed_0_listener() { ɵɵrestoreView(_r732); var option_r730 = ctx.$implicit; var ctx_r734 = ɵɵnextContext(3); return ctx_r734.removeKeywordBlock(option_r730, ctx_r734.currentEditBlock); });
     ɵɵtext(1);
     ɵɵelementStart(2, "mat-icon", 110);
     ɵɵtext(3, "cancel");
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var option_r731 = ctx.$implicit;
-    ɵɵproperty("selected", option_r731.checked)("value", option_r731.value)("removable", true);
+    var option_r730 = ctx.$implicit;
+    ɵɵproperty("selected", option_r730.checked)("value", option_r730.value)("removable", true);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", option_r731.value, " ");
+    ɵɵtextInterpolate1(" ", option_r730.value, " ");
 } }
 function TemplateProfileCreateComponent_div_33_mat_form_field_37_Template(rf, ctx) { if (rf & 1) {
-    var _r737 = ɵɵgetCurrentView();
+    var _r736 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-form-field", 103);
     ɵɵelementStart(1, "mat-label");
     ɵɵtext(2, " Valeur par d\u00E9fault ");
     ɵɵelementEnd();
     ɵɵelementStart(3, "mat-chip-list", 104, 105);
-    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_33_mat_form_field_37_Template_mat_chip_list_cdkDropListDropped_3_listener($event) { ɵɵrestoreView(_r737); var ctx_r736 = ɵɵnextContext(2); return ctx_r736.drop($event); });
+    ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_33_mat_form_field_37_Template_mat_chip_list_cdkDropListDropped_3_listener($event) { ɵɵrestoreView(_r736); var ctx_r735 = ɵɵnextContext(2); return ctx_r735.drop($event); });
     ɵɵtemplate(6, TemplateProfileCreateComponent_div_33_mat_form_field_37_mat_chip_6_Template, 4, 4, "mat-chip", 106);
     ɵɵelementStart(7, "input", 107, 108);
-    ɵɵlistener("matChipInputTokenEnd", function TemplateProfileCreateComponent_div_33_mat_form_field_37_Template_input_matChipInputTokenEnd_7_listener($event) { ɵɵrestoreView(_r737); var ctx_r738 = ɵɵnextContext(2); return ctx_r738.addKeywordFromInputBlock($event, ctx_r738.currentEditBlock, ctx_r738.prevValue); })("keyup", function TemplateProfileCreateComponent_div_33_mat_form_field_37_Template_input_keyup_7_listener($event) { ɵɵrestoreView(_r737); var ctx_r739 = ɵɵnextContext(2); return ctx_r739.onKeyUpChip($event, ctx_r739.currentEditBlock); })("ngModelChange", function TemplateProfileCreateComponent_div_33_mat_form_field_37_Template_input_ngModelChange_7_listener($event) { ɵɵrestoreView(_r737); var ctx_r740 = ɵɵnextContext(2); return ctx_r740.currentChip = $event; });
+    ɵɵlistener("matChipInputTokenEnd", function TemplateProfileCreateComponent_div_33_mat_form_field_37_Template_input_matChipInputTokenEnd_7_listener($event) { ɵɵrestoreView(_r736); var ctx_r737 = ɵɵnextContext(2); return ctx_r737.addKeywordFromInputBlock($event, ctx_r737.currentEditBlock, ctx_r737.prevValue); })("keyup", function TemplateProfileCreateComponent_div_33_mat_form_field_37_Template_input_keyup_7_listener($event) { ɵɵrestoreView(_r736); var ctx_r738 = ɵɵnextContext(2); return ctx_r738.onKeyUpChip($event, ctx_r738.currentEditBlock); })("ngModelChange", function TemplateProfileCreateComponent_div_33_mat_form_field_37_Template_input_ngModelChange_7_listener($event) { ɵɵrestoreView(_r736); var ctx_r739 = ɵɵnextContext(2); return ctx_r739.currentChip = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var _r728 = ɵɵreference(5);
-    var ctx_r717 = ɵɵnextContext(2);
+    var _r727 = ɵɵreference(5);
+    var ctx_r716 = ɵɵnextContext(2);
     ɵɵadvance(3);
-    ɵɵproperty("cdkDropListData", ctx_r717.currentEditBlock.defaultValue);
+    ɵɵproperty("cdkDropListData", ctx_r716.currentEditBlock.defaultValue);
     ɵɵadvance(3);
-    ɵɵproperty("ngForOf", ctx_r717.currentEditBlock.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r716.currentEditBlock.defaultValue);
     ɵɵadvance(1);
-    ɵɵproperty("matChipInputFor", _r728)("matChipInputAddOnBlur", true)("matChipInputSeparatorKeyCodes", ctx_r717.separatorKeysCodes)("ngModel", ctx_r717.currentChip)("ngModelOptions", ɵɵpureFunction0(7, _c0$1));
+    ɵɵproperty("matChipInputFor", _r727)("matChipInputAddOnBlur", true)("matChipInputSeparatorKeyCodes", ctx_r716.separatorKeysCodes)("ngModel", ctx_r716.currentChip)("ngModelOptions", ɵɵpureFunction0(7, _c0$1));
 } }
 function TemplateProfileCreateComponent_div_33_mat_form_field_38_Template(rf, ctx) { if (rf & 1) {
-    var _r742 = ɵɵgetCurrentView();
+    var _r741 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-form-field", 79);
     ɵɵelementStart(1, "mat-label");
     ɵɵtext(2, "Valeur par d\u00E9fault");
     ɵɵelementEnd();
     ɵɵelementStart(3, "input", 111);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_mat_form_field_38_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r742); var ctx_r741 = ɵɵnextContext(2); return ctx_r741.currentEditBlock.defaultValue = $event; });
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_mat_form_field_38_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r741); var ctx_r740 = ɵɵnextContext(2); return ctx_r740.currentEditBlock.defaultValue = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r718 = ɵɵnextContext(2);
+    var ctx_r717 = ɵɵnextContext(2);
     ɵɵadvance(3);
-    ɵɵproperty("ngModelOptions", ɵɵpureFunction0(2, _c0$1))("ngModel", ctx_r718.currentEditBlock.defaultValue);
+    ɵɵproperty("ngModelOptions", ɵɵpureFunction0(2, _c0$1))("ngModel", ctx_r717.currentEditBlock.defaultValue);
 } }
 function TemplateProfileCreateComponent_div_33_mat_form_field_39_Template(rf, ctx) { if (rf & 1) {
-    var _r744 = ɵɵgetCurrentView();
+    var _r743 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-form-field", 79);
     ɵɵelementStart(1, "mat-label");
     ɵɵtext(2, "Valeur par d\u00E9fault");
     ɵɵelementEnd();
     ɵɵelementStart(3, "input", 112);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_mat_form_field_39_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r744); var ctx_r743 = ɵɵnextContext(2); return ctx_r743.currentEditBlock.defaultValue = $event; });
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_mat_form_field_39_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r743); var ctx_r742 = ɵɵnextContext(2); return ctx_r742.currentEditBlock.defaultValue = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r719 = ɵɵnextContext(2);
-    ɵɵstyleProp("opacity", ctx_r719.currentEditBlock.type !== "tel" ? 1 : 0);
+    var ctx_r718 = ɵɵnextContext(2);
+    ɵɵstyleProp("opacity", ctx_r718.currentEditBlock.type !== "tel" ? 1 : 0);
     ɵɵadvance(3);
-    ɵɵproperty("type", ctx_r719.currentEditBlock.type)("disabled", ctx_r719.currentEditBlock.type === "tel")("ngModelOptions", ɵɵpureFunction0(6, _c0$1))("ngModel", ctx_r719.currentEditBlock.defaultValue);
+    ɵɵproperty("type", ctx_r718.currentEditBlock.type)("disabled", ctx_r718.currentEditBlock.type === "tel")("ngModelOptions", ɵɵpureFunction0(6, _c0$1))("ngModel", ctx_r718.currentEditBlock.defaultValue);
 } }
 function TemplateProfileCreateComponent_div_33_mat_form_field_50_mat_option_4_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-option", 116);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var item_r746 = ctx.$implicit;
-    ɵɵproperty("value", item_r746);
+    var item_r745 = ctx.$implicit;
+    ɵɵproperty("value", item_r745);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1("", item_r746.label, " ");
+    ɵɵtextInterpolate1("", item_r745.label, " ");
 } }
 function TemplateProfileCreateComponent_div_33_mat_form_field_50_Template(rf, ctx) { if (rf & 1) {
-    var _r748 = ɵɵgetCurrentView();
+    var _r747 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-form-field", 113);
     ɵɵelementStart(1, "mat-label");
     ɵɵtext(2, "Selectionnez la cat\u00E9gorie");
     ɵɵelementEnd();
     ɵɵelementStart(3, "mat-select", 114);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_mat_form_field_50_Template_mat_select_ngModelChange_3_listener() { ɵɵrestoreView(_r748); var ctx_r747 = ɵɵnextContext(2); return ctx_r747.onSelectCondition(ctx_r747.currentEditBlock.conditionLocation); })("ngModelChange", function TemplateProfileCreateComponent_div_33_mat_form_field_50_Template_mat_select_ngModelChange_3_listener($event) { ɵɵrestoreView(_r748); var ctx_r749 = ɵɵnextContext(2); return ctx_r749.currentEditBlock.conditionLocation = $event; });
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_mat_form_field_50_Template_mat_select_ngModelChange_3_listener() { ɵɵrestoreView(_r747); var ctx_r746 = ɵɵnextContext(2); return ctx_r746.onSelectCondition(ctx_r746.currentEditBlock.conditionLocation); })("ngModelChange", function TemplateProfileCreateComponent_div_33_mat_form_field_50_Template_mat_select_ngModelChange_3_listener($event) { ɵɵrestoreView(_r747); var ctx_r748 = ɵɵnextContext(2); return ctx_r748.currentEditBlock.conditionLocation = $event; });
     ɵɵtemplate(4, TemplateProfileCreateComponent_div_33_mat_form_field_50_mat_option_4_Template, 2, 2, "mat-option", 115);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r720 = ɵɵnextContext(2);
+    var ctx_r719 = ɵɵnextContext(2);
     ɵɵadvance(3);
-    ɵɵproperty("ngModel", ctx_r720.currentEditBlock.conditionLocation)("ngModelOptions", ɵɵpureFunction0(3, _c0$1));
+    ɵɵproperty("ngModel", ctx_r719.currentEditBlock.conditionLocation)("ngModelOptions", ɵɵpureFunction0(3, _c0$1));
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r720.conditionData);
+    ɵɵproperty("ngForOf", ctx_r719.conditionData);
 } }
 function TemplateProfileCreateComponent_div_33_mat_radio_button_52_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-radio-button", 117);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var item_r750 = ctx.$implicit;
-    ɵɵproperty("value", item_r750.value);
+    var item_r749 = ctx.$implicit;
+    ɵɵproperty("value", item_r749.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", item_r750.value, " ");
+    ɵɵtextInterpolate1(" ", item_r749.value, " ");
 } }
 function TemplateProfileCreateComponent_div_33_button_54_Template(rf, ctx) { if (rf & 1) {
-    var _r752 = ɵɵgetCurrentView();
+    var _r751 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "button", 96);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_33_button_54_Template_button_click_0_listener($event) { ɵɵrestoreView(_r752); var ctx_r751 = ɵɵnextContext(2); return ctx_r751.onAddNewSubLevelFieldBlock($event); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_33_button_54_Template_button_click_0_listener($event) { ɵɵrestoreView(_r751); var ctx_r750 = ɵɵnextContext(2); return ctx_r750.onAddNewSubLevelFieldBlock($event); });
     ɵɵtext(1, "Sous-cat\u00E9gorie ");
     ɵɵelementStart(2, "mat-icon");
     ɵɵtext(3, "device_hub ");
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r722 = ɵɵnextContext(2);
-    ɵɵproperty("disabled", !ctx_r722.currentEditBlock.editable);
+    var ctx_r721 = ɵɵnextContext(2);
+    ɵɵproperty("disabled", !ctx_r721.currentEditBlock.editable);
 } }
 var _c1$1 = function () { return ["select", "radio", "checkbox_multiple"]; };
 function TemplateProfileCreateComponent_div_33_Template(rf, ctx) { if (rf & 1) {
-    var _r754 = ɵɵgetCurrentView();
+    var _r753 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 65);
     ɵɵelementStart(1, "h3");
     ɵɵtext(2);
@@ -1664,7 +1664,7 @@ function TemplateProfileCreateComponent_div_33_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(6, "Type de bloc");
     ɵɵelementEnd();
     ɵɵelementStart(7, "mat-select", 67);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_33_Template_mat_select_click_7_listener() { ɵɵrestoreView(_r754); var ctx_r753 = ɵɵnextContext(); return ctx_r753.onOpenTypeDialog(ctx_r753.currentEditBlock); })("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_mat_select_ngModelChange_7_listener($event) { ɵɵrestoreView(_r754); var ctx_r755 = ɵɵnextContext(); return ctx_r755.currentEditBlock.type = $event; })("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_mat_select_ngModelChange_7_listener() { ɵɵrestoreView(_r754); var ctx_r756 = ɵɵnextContext(); return ctx_r756.onChangeTypeBlock(ctx_r756.currentEditBlock); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_33_Template_mat_select_click_7_listener() { ɵɵrestoreView(_r753); var ctx_r752 = ɵɵnextContext(); return ctx_r752.onOpenTypeDialog(ctx_r752.currentEditBlock); })("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_mat_select_ngModelChange_7_listener($event) { ɵɵrestoreView(_r753); var ctx_r754 = ɵɵnextContext(); return ctx_r754.currentEditBlock.type = $event; })("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_mat_select_ngModelChange_7_listener() { ɵɵrestoreView(_r753); var ctx_r755 = ɵɵnextContext(); return ctx_r755.onChangeTypeBlock(ctx_r755.currentEditBlock); });
     ɵɵelementStart(8, "mat-option", 68);
     ɵɵtext(9, "Text(80)");
     ɵɵelementEnd();
@@ -1705,7 +1705,7 @@ function TemplateProfileCreateComponent_div_33_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(32, "Nom / Label");
     ɵɵelementEnd();
     ɵɵelementStart(33, "input", 80);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_input_ngModelChange_33_listener($event) { ɵɵrestoreView(_r754); var ctx_r757 = ɵɵnextContext(); return ctx_r757.currentEditBlock.label = $event; });
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_input_ngModelChange_33_listener($event) { ɵɵrestoreView(_r753); var ctx_r756 = ɵɵnextContext(); return ctx_r756.currentEditBlock.label = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementContainerStart(34, 81);
@@ -1721,7 +1721,7 @@ function TemplateProfileCreateComponent_div_33_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(43, "Obligatoire");
     ɵɵelementEnd();
     ɵɵelementStart(44, "mat-slide-toggle", 89);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_mat_slide_toggle_ngModelChange_44_listener($event) { ɵɵrestoreView(_r754); var ctx_r758 = ɵɵnextContext(); return ctx_r758.currentEditBlock.isMandatory = $event; });
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_mat_slide_toggle_ngModelChange_44_listener($event) { ɵɵrestoreView(_r753); var ctx_r757 = ɵɵnextContext(); return ctx_r757.currentEditBlock.isMandatory = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -1731,26 +1731,26 @@ function TemplateProfileCreateComponent_div_33_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(48, "Visibilit\u00E9 conditionnelle");
     ɵɵelementEnd();
     ɵɵelementStart(49, "mat-slide-toggle", 89);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_mat_slide_toggle_ngModelChange_49_listener() { ɵɵrestoreView(_r754); var ctx_r759 = ɵɵnextContext(); return ctx_r759.getConditionValues(); })("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_mat_slide_toggle_ngModelChange_49_listener($event) { ɵɵrestoreView(_r754); var ctx_r760 = ɵɵnextContext(); return ctx_r760.currentEditBlock.isConditional = $event; });
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_mat_slide_toggle_ngModelChange_49_listener() { ɵɵrestoreView(_r753); var ctx_r758 = ɵɵnextContext(); return ctx_r758.getConditionValues(); })("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_mat_slide_toggle_ngModelChange_49_listener($event) { ɵɵrestoreView(_r753); var ctx_r759 = ɵɵnextContext(); return ctx_r759.currentEditBlock.isConditional = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵtemplate(50, TemplateProfileCreateComponent_div_33_mat_form_field_50_Template, 5, 4, "mat-form-field", 91);
     ɵɵelementStart(51, "mat-radio-group", 92);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_mat_radio_group_ngModelChange_51_listener($event) { ɵɵrestoreView(_r754); var ctx_r761 = ɵɵnextContext(); return ctx_r761.currentEditBlock.conditionValue = $event; });
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_33_Template_mat_radio_group_ngModelChange_51_listener($event) { ɵɵrestoreView(_r753); var ctx_r760 = ɵɵnextContext(); return ctx_r760.currentEditBlock.conditionValue = $event; });
     ɵɵtemplate(52, TemplateProfileCreateComponent_div_33_mat_radio_button_52_Template, 2, 2, "mat-radio-button", 93);
     ɵɵelementEnd();
     ɵɵelementStart(53, "div", 94);
     ɵɵtemplate(54, TemplateProfileCreateComponent_div_33_button_54_Template, 4, 1, "button", 95);
     ɵɵelementStart(55, "button", 96);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_33_Template_button_click_55_listener($event) { ɵɵrestoreView(_r754); var ctx_r762 = ɵɵnextContext(); return ctx_r762.onDuplicatedBlock($event); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_33_Template_button_click_55_listener($event) { ɵɵrestoreView(_r753); var ctx_r761 = ɵɵnextContext(); return ctx_r761.onDuplicatedBlock($event); });
     ɵɵtext(56, "Dupliquer le bloc");
     ɵɵelementStart(57, "mat-icon");
     ɵɵtext(58, "filter_none");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(59, "button", 97);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_33_Template_button_click_59_listener($event) { ɵɵrestoreView(_r754); var ctx_r763 = ɵɵnextContext(); return ctx_r763.onRemoveFieldBlock($event); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_33_Template_button_click_59_listener($event) { ɵɵrestoreView(_r753); var ctx_r762 = ɵɵnextContext(); return ctx_r762.onRemoveFieldBlock($event); });
     ɵɵtext(60, "Supprimer le bloc ");
     ɵɵelementStart(61, "mat-icon");
     ɵɵtext(62, " delete ");
@@ -1760,52 +1760,52 @@ function TemplateProfileCreateComponent_div_33_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r495 = ɵɵnextContext();
+    var ctx_r494 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵtextInterpolate1("Param\u00E8tre du bloc ", ctx_r495.currentEditBlock.label, "");
+    ɵɵtextInterpolate1("Param\u00E8tre du bloc ", ctx_r494.currentEditBlock.label, "");
     ɵɵadvance(5);
-    ɵɵproperty("ngModel", ctx_r495.currentEditBlock.type)("ngModelOptions", ɵɵpureFunction0(21, _c0$1));
+    ɵɵproperty("ngModel", ctx_r494.currentEditBlock.type)("ngModelOptions", ɵɵpureFunction0(21, _c0$1));
     ɵɵadvance(26);
-    ɵɵproperty("ngModel", ctx_r495.currentEditBlock.label)("ngModelOptions", ɵɵpureFunction0(22, _c0$1));
+    ɵɵproperty("ngModel", ctx_r494.currentEditBlock.label)("ngModelOptions", ɵɵpureFunction0(22, _c0$1));
     ɵɵadvance(1);
-    ɵɵproperty("ngSwitch", ctx_r495.currentEditBlock.type);
+    ɵɵproperty("ngSwitch", ctx_r494.currentEditBlock.type);
     ɵɵadvance(1);
     ɵɵproperty("ngSwitchCase", "toggle");
     ɵɵadvance(1);
     ɵɵproperty("ngSwitchCase", "checkbox");
     ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ɵɵpureFunction0(23, _c1$1).includes(ctx_r495.currentEditBlock.type) ? ctx_r495.currentEditBlock.type : !ctx_r495.currentEditBlock.type);
+    ɵɵproperty("ngSwitchCase", ɵɵpureFunction0(23, _c1$1).includes(ctx_r494.currentEditBlock.type) ? ctx_r494.currentEditBlock.type : !ctx_r494.currentEditBlock.type);
     ɵɵadvance(1);
     ɵɵproperty("ngSwitchCase", "textarea");
     ɵɵadvance(6);
-    ɵɵproperty("ngModel", ctx_r495.currentEditBlock.isMandatory)("ngModelOptions", ɵɵpureFunction0(24, _c0$1));
+    ɵɵproperty("ngModel", ctx_r494.currentEditBlock.isMandatory)("ngModelOptions", ɵɵpureFunction0(24, _c0$1));
     ɵɵadvance(5);
-    ɵɵproperty("ngModel", ctx_r495.currentEditBlock.isConditional)("ngModelOptions", ɵɵpureFunction0(25, _c0$1));
+    ɵɵproperty("ngModel", ctx_r494.currentEditBlock.isConditional)("ngModelOptions", ɵɵpureFunction0(25, _c0$1));
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r495.currentEditBlock == null ? null : ctx_r495.currentEditBlock.isConditional);
+    ɵɵproperty("ngIf", ctx_r494.currentEditBlock == null ? null : ctx_r494.currentEditBlock.isConditional);
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r495.currentEditBlock.conditionValue)("ngModelOptions", ɵɵpureFunction0(26, _c0$1));
+    ɵɵproperty("ngModel", ctx_r494.currentEditBlock.conditionValue)("ngModelOptions", ɵɵpureFunction0(26, _c0$1));
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r495.currentEditBlock == null ? null : ctx_r495.currentEditBlock.conditionLocation == null ? null : ctx_r495.currentEditBlock.conditionLocation.possibleValues);
+    ɵɵproperty("ngForOf", ctx_r494.currentEditBlock == null ? null : ctx_r494.currentEditBlock.conditionLocation == null ? null : ctx_r494.currentEditBlock.conditionLocation.possibleValues);
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", ctx_r495.paramsIndex.length < 4);
+    ɵɵproperty("ngIf", ctx_r494.paramsIndex.length < 4);
     ɵɵadvance(1);
-    ɵɵproperty("disabled", !ctx_r495.currentEditBlock.editable);
+    ɵɵproperty("disabled", !ctx_r494.currentEditBlock.editable);
     ɵɵadvance(4);
-    ɵɵproperty("disabled", !ctx_r495.currentEditBlock.editable);
+    ɵɵproperty("disabled", !ctx_r494.currentEditBlock.editable);
 } }
 function TemplateProfileCreateComponent_div_34_mat_option_12_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-option", 116);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var item_r765 = ctx.$implicit;
-    ɵɵproperty("value", item_r765.value);
+    var item_r764 = ctx.$implicit;
+    ɵɵproperty("value", item_r764.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate(item_r765.value);
+    ɵɵtextInterpolate(item_r764.value);
 } }
 function TemplateProfileCreateComponent_div_34_Template(rf, ctx) { if (rf & 1) {
-    var _r767 = ɵɵgetCurrentView();
+    var _r766 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 65);
     ɵɵelementStart(1, "h3");
     ɵɵtext(2);
@@ -1816,7 +1816,7 @@ function TemplateProfileCreateComponent_div_34_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(6, "Nom de la section");
     ɵɵelementEnd();
     ɵɵelementStart(7, "input", 80);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_34_Template_input_ngModelChange_7_listener($event) { ɵɵrestoreView(_r767); var ctx_r766 = ɵɵnextContext(); return ctx_r766.currentEditBlock.name = $event; });
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_34_Template_input_ngModelChange_7_listener($event) { ɵɵrestoreView(_r766); var ctx_r765 = ɵɵnextContext(); return ctx_r765.currentEditBlock.name = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(8, "mat-form-field", 113);
@@ -1824,27 +1824,27 @@ function TemplateProfileCreateComponent_div_34_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(10, "Equipe de gestion");
     ɵɵelementEnd();
     ɵɵelementStart(11, "mat-select", 114);
-    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_34_Template_mat_select_ngModelChange_11_listener($event) { ɵɵrestoreView(_r767); var ctx_r768 = ɵɵnextContext(); return ctx_r768.currentEditBlock.selector.value = $event; });
+    ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_34_Template_mat_select_ngModelChange_11_listener($event) { ɵɵrestoreView(_r766); var ctx_r767 = ɵɵnextContext(); return ctx_r767.currentEditBlock.selector.value = $event; });
     ɵɵtemplate(12, TemplateProfileCreateComponent_div_34_mat_option_12_Template, 2, 2, "mat-option", 115);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(13, "div", 94);
     ɵɵelementStart(14, "button", 119);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_34_Template_button_click_14_listener($event) { ɵɵrestoreView(_r767); var ctx_r769 = ɵɵnextContext(); return ctx_r769.onAddNewSubLevelFieldBlock($event); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_34_Template_button_click_14_listener($event) { ɵɵrestoreView(_r766); var ctx_r768 = ɵɵnextContext(); return ctx_r768.onAddNewSubLevelFieldBlock($event); });
     ɵɵtext(15, "Sous-cat\u00E9gorie ");
     ɵɵelementStart(16, "mat-icon");
     ɵɵtext(17, "device_hub ");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(18, "button", 119);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_34_Template_button_click_18_listener($event) { ɵɵrestoreView(_r767); var ctx_r770 = ɵɵnextContext(); return ctx_r770.onDuplicatedBlock($event); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_34_Template_button_click_18_listener($event) { ɵɵrestoreView(_r766); var ctx_r769 = ɵɵnextContext(); return ctx_r769.onDuplicatedBlock($event); });
     ɵɵtext(19, "Dupliquer le bloc");
     ɵɵelementStart(20, "mat-icon");
     ɵɵtext(21, "filter_none");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(22, "button", 97);
-    ɵɵlistener("click", function TemplateProfileCreateComponent_div_34_Template_button_click_22_listener($event) { ɵɵrestoreView(_r767); var ctx_r771 = ɵɵnextContext(); return ctx_r771.onRemoveFieldBlock($event); });
+    ɵɵlistener("click", function TemplateProfileCreateComponent_div_34_Template_button_click_22_listener($event) { ɵɵrestoreView(_r766); var ctx_r770 = ɵɵnextContext(); return ctx_r770.onRemoveFieldBlock($event); });
     ɵɵtext(23, "Supprimer le bloc ");
     ɵɵelementStart(24, "mat-icon");
     ɵɵtext(25, " delete");
@@ -1854,17 +1854,17 @@ function TemplateProfileCreateComponent_div_34_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r496 = ɵɵnextContext();
+    var ctx_r495 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵtextInterpolate1("Param\u00E8tre de la section ", ctx_r496.currentEditBlock.name, "");
+    ɵɵtextInterpolate1("Param\u00E8tre de la section ", ctx_r495.currentEditBlock.name, "");
     ɵɵadvance(5);
-    ɵɵproperty("ngModel", ctx_r496.currentEditBlock.name)("ngModelOptions", ɵɵpureFunction0(7, _c0$1));
+    ɵɵproperty("ngModel", ctx_r495.currentEditBlock.name)("ngModelOptions", ɵɵpureFunction0(7, _c0$1));
     ɵɵadvance(4);
-    ɵɵproperty("ngModel", ctx_r496.currentEditBlock.selector.value)("ngModelOptions", ɵɵpureFunction0(8, _c0$1));
+    ɵɵproperty("ngModel", ctx_r495.currentEditBlock.selector.value)("ngModelOptions", ɵɵpureFunction0(8, _c0$1));
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r496.currentEditBlock.selector.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r495.currentEditBlock.selector.defaultValue);
     ɵɵadvance(10);
-    ɵɵproperty("disabled", !ctx_r496.currentEditBlock.editable);
+    ɵɵproperty("disabled", !ctx_r495.currentEditBlock.editable);
 } }
 var TemplateProfileCreateComponent = /** @class */ (function () {
     function TemplateProfileCreateComponent(fb, service, route, router, dialog, scrollToService) {
@@ -3936,7 +3936,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
         this.historics.push(data);
     };
     TemplateProfileCreateComponent.ɵfac = function TemplateProfileCreateComponent_Factory(t) { return new (t || TemplateProfileCreateComponent)(ɵɵdirectiveInject(FormBuilder), ɵɵdirectiveInject(OnboardingService), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(MatDialog), ɵɵdirectiveInject(ScrollToService)); };
-    TemplateProfileCreateComponent.ɵcmp = ɵɵdefineComponent({ type: TemplateProfileCreateComponent, selectors: [["onboarding-create-profile-template"]], decls: 35, vars: 11, consts: [[3, "formGroup"], [1, "category"], [1, "side-bar"], [1, "summary"], [3, "click"], ["class", "li-title", 3, "class", "click", 4, "ngFor", "ngForOf"], ["mat-button", "", "type", "submit", 1, "register-button", 3, "click"], ["mat-button", "", "type", "submit", 1, "register-button", "live-button", 3, "click"], [2, "display", "flex", "margin-right", "14px"], ["mat-button", "", "type", "submit", 1, "register-button", "live-button", 2, "margin-top", "10px", 3, "disabled", "click"], ["cdkDropListGroup", "", 1, "fields"], ["id", "categories-id", "cdkDropList", "", 1, "fields-inner", "example-list", "mt-10", 3, "cdkDropListData", "cdkDropListDropped"], ["parentList", "cdkDropList"], ["class", "category-item section-item", "cdkDrag", "", 3, "id", "paddingBottom", "class", 4, "ngFor", "ngForOf"], [1, "add-button-container", "add-category-button"], [1, "field-property"], ["class", "property-content", 4, "ngIf"], [1, "li-title", 3, "click"], [3, "ngxScrollTo"], ["cdkDrag", "", 1, "category-item", "section-item", 3, "id"], ["cdkDragHandle", "", 1, "left-action", "move-icons"], ["mat-raised-button", "", 1, "transparent-button", 3, "click"], [1, "drag-icon"], [1, "field-content"], [1, "field-item", 3, "click"], [1, "full-width", "input-category-name"], [1, "sub-category-name"], ["mat-mini-fab", "", "color", "primary", 1, "expand-button", 3, "click"], [4, "ngIf"], ["class", "child-list", "cdkDropList", "", 3, "cdkDropListData", "cdkDropListDropped", 4, "ngIf"], ["cdkDropList", "", 1, "child-list", 3, "cdkDropListData", "cdkDropListDropped"], ["childList", "cdkDropList"], ["class", "field-box", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "field-box", 3, "id"], ["cdkDrag", ""], [1, "fields-content"], ["class", "button-action", 4, "ngIf"], [1, "fields-container"], ["class", "sub-header", 4, "ngIf"], [3, "field", "length", "i", "j", "conditionData", "onCheckValue", "onAddKeywordFromInput", "onKeyPress", "onAddNewField", "onRemoveField", "onChangeType", "onRemoveKeyword", "onAddNewSubLevelField", "onExpendMore", "onChangeLabel", "onCheckedChip", "onDrop", "onCheckedDefault", "onEditBlock", "onGetConditionValues"], ["class", "child", 4, "ngIf"], ["class", "add-button-container add-button-sub-category", 4, "ngIf"], [1, "button-action"], [1, "sub-header"], [1, "field-item"], ["mat-raised-button", "", 1, "transparent-button", "setting", 3, "click"], [1, "setting-icon"], ["mat-mini-fab", "", "color", "primary", 1, "expand-button", 3, "disabled", "click"], [1, "child"], ["class", "child-content", "cdkDropList", "", 3, "cdkDropListData", "cdkDropListDropped", 4, "ngIf"], ["cdkDropList", "", 1, "child-content", 3, "cdkDropListData", "cdkDropListDropped"], ["class", "", "style", "margin-bottom: 10px", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "", 2, "margin-bottom", "10px", 3, "id"], ["class", "button-action child-2-background", 4, "ngIf"], ["class", "add-button-sub-category", 4, "ngIf"], [1, "button-action", "child-2-background"], ["type", "text", "required", "", "placeholder", "Saisir le nom de la sous cat\u00E9gorie", 1, "full-width", "input-category-name", 3, "readonly", "ngModel", "ngModelOptions", "ngModelChange"], ["class", "", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "", 3, "id"], ["class", "button-action child-3-background", 4, "ngIf"], [1, "button-action", "child-3-background"], [1, "add-button-sub-category"], ["mat-raised-button", "", "color", "primary", 2, "margin", "10px auto", 3, "click"], [1, "add-button-container", "add-button-sub-category"], ["mat-raised-button", "", "color", "primary", 1, "add-button", 2, "margin", "10px auto", 3, "disabled", "click"], [1, "property-content"], ["appearance", "outline", 1, "form-field", "mat-select", "full-width", 2, "cursor", "pointer"], ["disabled", "true", "required", "", 1, "select-type-class", 3, "ngModel", "ngModelOptions", "click", "ngModelChange"], ["value", "text"], ["value", "textarea"], ["value", "radio"], ["value", "select"], ["value", "toggle"], ["value", "checkbox"], ["value", "checkbox_multiple"], ["value", "email"], ["value", "password"], ["value", "date"], ["value", "tel"], ["appearance", "outline", 1, "form-field", "full-width"], ["type", "text", "matInput", "", "required", "", "placeholder", "", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "ngSwitch"], ["class", "flex-auto", "style", "display: flex;align-items: flex-end;margin: 10px 0;", 4, "ngSwitchCase"], ["class", "flex-auto", 4, "ngSwitchCase"], ["class", "flex-auto full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 3, "opacity", 4, "ngSwitchDefault"], [1, "mandatory", "top-10", "bottom-10"], [1, "toogle-button"], ["color", "#6FE8D7", 3, "ngModel", "ngModelOptions", "ngModelChange"], [1, "mandatory", "top-10"], ["class", "form-field mat-select full-width", "appearance", "outline", 4, "ngIf"], ["aria-labelledby", "example-radio-group-label", 1, "example-radio-group", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["class", "example-radio-button", "style", "margin-right: 10px", 3, "value", 4, "ngFor", "ngForOf"], [1, "bloc-action"], ["mat-button", "", 3, "disabled", "click", 4, "ngIf"], ["mat-button", "", 3, "disabled", "click"], ["mat-button", "", 1, "delete-bloc", 3, "disabled", "click"], [1, "flex-auto", 2, "display", "flex", "align-items", "flex-end", "margin", "10px 0"], ["color", "#6FE8D7", 1, "form-field", 3, "ngModel", "ngModelOptions", "ngModelChange"], [2, "margin-left", "10px"], [1, "flex-auto"], [1, "form-field", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["appearance", "outline", 1, "flex-auto", "full-width"], ["cdkDropList", "", "aria-label", "Video keywords; let index=index", "multiple", "", "selectable", "", 3, "cdkDropListData", "cdkDropListDropped"], ["childList", "cdkDropList", "chipList", ""], ["style", "min-height: 25px;width: auto;", "cdkDrag", "", 3, "selected", "value", "removable", "dblclick", "click", "removed", 4, "ngFor", "ngForOf"], ["placeholder", "add...", 3, "matChipInputFor", "matChipInputAddOnBlur", "matChipInputSeparatorKeyCodes", "ngModel", "ngModelOptions", "matChipInputTokenEnd", "keyup", "ngModelChange"], ["chipsInput", ""], ["cdkDrag", "", 2, "min-height", "25px", "width", "auto", 3, "selected", "value", "removable", "dblclick", "click", "removed"], ["matChipRemove", ""], ["type", "text", "matInput", "", "placeholder", "Description...", 3, "ngModelOptions", "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", 3, "type", "disabled", "ngModelOptions", "ngModel", "ngModelChange"], ["appearance", "outline", 1, "form-field", "mat-select", "full-width"], ["required", "", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], [1, "example-radio-button", 2, "margin-right", "10px", 3, "value"], [1, ""], ["mat-button", "", 3, "click"]], template: function TemplateProfileCreateComponent_Template(rf, ctx) { if (rf & 1) {
+    TemplateProfileCreateComponent.ɵcmp = ɵɵdefineComponent({ type: TemplateProfileCreateComponent, selectors: [["onboarding-create-profile-template"]], decls: 35, vars: 11, consts: [[3, "formGroup"], [1, "category"], [1, "side-bar"], [1, "summary"], [3, "click"], ["class", "li-title", 3, "class", "click", 4, "ngFor", "ngForOf"], ["mat-button", "", "type", "submit", 1, "register-button", 3, "click"], ["mat-button", "", "type", "submit", 1, "register-button", "live-button", 3, "click"], [2, "display", "flex", "margin-right", "14px"], ["mat-button", "", "type", "submit", 1, "register-button", "live-button", 2, "margin-top", "10px", 3, "disabled", "click"], ["cdkDropListGroup", "", 1, "fields"], ["id", "categories-id", "cdkDropList", "", 1, "fields-inner", "example-list", "mt-10", 3, "cdkDropListData", "cdkDropListDropped"], ["parentList", "cdkDropList"], ["class", "category-item section-item", "cdkDrag", "", 3, "id", "paddingBottom", "class", 4, "ngFor", "ngForOf"], [1, "add-button-container", "add-category-button", "add-step"], [1, "field-property"], ["class", "property-content", 4, "ngIf"], [1, "li-title", 3, "click"], [3, "ngxScrollTo"], ["cdkDrag", "", 1, "category-item", "section-item", 3, "id"], ["cdkDragHandle", "", 1, "left-action", "move-icons"], ["mat-raised-button", "", 1, "transparent-button", 3, "click"], [1, "drag-icon"], [1, "field-content"], [1, "field-item", 3, "click"], [1, "full-width", "input-category-name"], [1, "sub-category-name"], ["mat-mini-fab", "", "color", "primary", 1, "expand-button", 3, "click"], [4, "ngIf"], ["class", "child-list", "cdkDropList", "", 3, "cdkDropListData", "cdkDropListDropped", 4, "ngIf"], ["cdkDropList", "", 1, "child-list", 3, "cdkDropListData", "cdkDropListDropped"], ["childList", "cdkDropList"], ["class", "field-box", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "field-box", 3, "id"], ["cdkDrag", ""], [1, "fields-content"], ["class", "button-action", 4, "ngIf"], [1, "fields-container"], ["class", "sub-header", 4, "ngIf"], [3, "field", "length", "i", "j", "conditionData", "onCheckValue", "onAddKeywordFromInput", "onKeyPress", "onAddNewField", "onRemoveField", "onChangeType", "onRemoveKeyword", "onAddNewSubLevelField", "onExpendMore", "onChangeLabel", "onCheckedChip", "onDrop", "onCheckedDefault", "onEditBlock", "onGetConditionValues"], ["class", "child", 4, "ngIf"], ["class", "add-button-container add-button-sub-category", 4, "ngIf"], [1, "button-action"], [1, "sub-header"], [1, "field-item"], ["mat-raised-button", "", 1, "transparent-button", "setting", 3, "click"], [1, "setting-icon"], ["mat-mini-fab", "", "color", "primary", 1, "expand-button", 3, "disabled", "click"], [1, "child"], ["class", "child-content", "cdkDropList", "", 3, "cdkDropListData", "cdkDropListDropped", 4, "ngIf"], ["cdkDropList", "", 1, "child-content", 3, "cdkDropListData", "cdkDropListDropped"], ["class", "", "style", "margin-bottom: 10px", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "", 2, "margin-bottom", "10px", 3, "id"], ["class", "button-action child-2-background", 4, "ngIf"], ["class", "add-button-sub-category", 4, "ngIf"], [1, "button-action", "child-2-background"], ["type", "text", "required", "", "placeholder", "Saisir le nom de la sous cat\u00E9gorie", 1, "full-width", "input-category-name", 3, "readonly", "ngModel", "ngModelOptions", "ngModelChange"], ["class", "", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "", 3, "id"], ["class", "button-action child-3-background", 4, "ngIf"], [1, "button-action", "child-3-background"], [1, "add-button-sub-category"], ["mat-raised-button", "", "color", "primary", 2, "margin", "10px auto", 3, "click"], [1, "add-button-container", "add-button-sub-category"], ["mat-raised-button", "", "color", "primary", 1, "add-button", 2, "margin", "10px auto", 3, "disabled", "click"], [1, "property-content"], ["appearance", "outline", 1, "form-field", "mat-select", "full-width", 2, "cursor", "pointer"], ["disabled", "true", "required", "", 1, "select-type-class", 3, "ngModel", "ngModelOptions", "click", "ngModelChange"], ["value", "text"], ["value", "textarea"], ["value", "radio"], ["value", "select"], ["value", "toggle"], ["value", "checkbox"], ["value", "checkbox_multiple"], ["value", "email"], ["value", "password"], ["value", "date"], ["value", "tel"], ["appearance", "outline", 1, "form-field", "full-width"], ["type", "text", "matInput", "", "required", "", "placeholder", "", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "ngSwitch"], ["class", "flex-auto", "style", "display: flex;align-items: flex-end;margin: 10px 0;", 4, "ngSwitchCase"], ["class", "flex-auto", 4, "ngSwitchCase"], ["class", "flex-auto full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 3, "opacity", 4, "ngSwitchDefault"], [1, "mandatory", "top-10", "bottom-10"], [1, "toogle-button"], ["color", "#6FE8D7", 3, "ngModel", "ngModelOptions", "ngModelChange"], [1, "mandatory", "top-10"], ["class", "form-field mat-select full-width", "appearance", "outline", 4, "ngIf"], ["aria-labelledby", "example-radio-group-label", 1, "example-radio-group", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["class", "example-radio-button", "style", "margin-right: 10px", 3, "value", 4, "ngFor", "ngForOf"], [1, "bloc-action"], ["mat-button", "", 3, "disabled", "click", 4, "ngIf"], ["mat-button", "", 3, "disabled", "click"], ["mat-button", "", 1, "delete-bloc", 3, "disabled", "click"], [1, "flex-auto", 2, "display", "flex", "align-items", "flex-end", "margin", "10px 0"], ["color", "#6FE8D7", 1, "form-field", 3, "ngModel", "ngModelOptions", "ngModelChange"], [2, "margin-left", "10px"], [1, "flex-auto"], [1, "form-field", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["appearance", "outline", 1, "flex-auto", "full-width"], ["cdkDropList", "", "aria-label", "Video keywords; let index=index", "multiple", "", "selectable", "", 3, "cdkDropListData", "cdkDropListDropped"], ["childList", "cdkDropList", "chipList", ""], ["style", "min-height: 25px;width: auto;", "cdkDrag", "", 3, "selected", "value", "removable", "dblclick", "click", "removed", 4, "ngFor", "ngForOf"], ["placeholder", "add...", 3, "matChipInputFor", "matChipInputAddOnBlur", "matChipInputSeparatorKeyCodes", "ngModel", "ngModelOptions", "matChipInputTokenEnd", "keyup", "ngModelChange"], ["chipsInput", ""], ["cdkDrag", "", 2, "min-height", "25px", "width", "auto", 3, "selected", "value", "removable", "dblclick", "click", "removed"], ["matChipRemove", ""], ["type", "text", "matInput", "", "placeholder", "Description...", 3, "ngModelOptions", "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", 3, "type", "disabled", "ngModelOptions", "ngModel", "ngModelChange"], ["appearance", "outline", 1, "form-field", "mat-select", "full-width"], ["required", "", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], [1, "example-radio-button", 2, "margin-right", "10px", 3, "value"], [1, ""], ["mat-button", "", 3, "click"]], template: function TemplateProfileCreateComponent_Template(rf, ctx) { if (rf & 1) {
             ɵɵelementStart(0, "main");
             ɵɵelementStart(1, "form", 0);
             ɵɵelementStart(2, "div", 1);
@@ -4023,7 +4023,7 @@ var TemplateProfileCreateComponent = /** @class */ (function () {
             ɵɵproperty("ngIf", ctx.isBlock && ctx.currentEditBlock);
             ɵɵadvance(1);
             ɵɵproperty("ngIf", ctx.isSection && ctx.currentEditBlock);
-        } }, directives: [ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, MatIcon, NgForOf, MatButton, CdkDropListGroup, CdkDropList, NgIf, ScrollToDirective, CdkDrag, CdkDragHandle, SubTemplateProfileComponent, DefaultValueAccessor, RequiredValidator, NgControlStatus, NgModel, NativeElementInjectorDirective, MatFormField, MatLabel, MatSelect, MatOption, MatInput, NgSwitch, NgSwitchCase, NgSwitchDefault, MatSlideToggle, MatRadioGroup, MatCheckbox, MatChipList, MatChipInput, MatChip, MatChipRemove, MatRadioButton], styles: ["main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;height:100vh;width:100%;display:flex;flex-direction:column;align-items:center}main[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{background-color:transparent!important}main[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]{display:flex;height:100%;width:100%;max-width:1500px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]{width:786px;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;opacity:1;margin:auto;padding:0 25px;-ms-grid-row-align:center;align-self:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:center;font:900 32px/48px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%], main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{font:18px/24px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]{display:flex;align-items:center;position:relative}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]{margin-right:15px;min-width:50px;width:30px;padding:9px 12px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-right:10px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]{position:absolute;height:200px;width:100%;background:no-repeat padding-box #fff;border:1px solid #171f26;border-radius:8px;top:100%;z-index:1}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin:15px;border:none;font-size:40px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]:hover{color:#830b6b!important;cursor:pointer}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .box-title-content[_ngcontent-%COMP%]{width:100%;margin:25px auto}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]{font:900 32px/38px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:15px/26px Nexa Text;letter-spacing:0;color:#171f26;text-align:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .link-create-profil[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6}main[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.input-category-name[_ngcontent-%COMP%]{border:none;outline:0;text-align:left;font-family:Nexa;font-weight:700;font-size:20px;line-height:28px;color:#242731}.sub-category-name[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:250;font-size:14px;line-height:16px;display:flex;align-items:center;color:#575f6e;word-break:break-word}.full-width[_ngcontent-%COMP%]{width:100%}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]{width:90%;margin:auto 2% auto auto}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}  .mat-select.mat-form-field-appearance-outline .mat-form-field-infix{padding:.5em 0}  .mat-select{padding:8px 0}  .mat-form-field-appearance-fill .mat-form-field-underline::before{background-color:transparent}  .mat-form-field-wrapper{padding-bottom:0!important}[_nghost-%COMP%]     .cdk-drag-preview .input-category-name div.mat-form-field-outline-start, [_nghost-%COMP%]     .input-category-name div.mat-form-field-outline-start{border-color:0!important;border-width:0!important}[_nghost-%COMP%]     .input-category-name .mat-form-field-outline-gap{border-color:0!important;border-width:0!important}[_nghost-%COMP%]     .mat-checkbox-checked.mat-accent .mat-checkbox-background, [_nghost-%COMP%]     .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{background-color:transparent}[_nghost-%COMP%]     .input-category-name .mat-form-field-outline-end{border-color:0!important;border-width:0!important}[_nghost-%COMP%]     .input-category-name .mat-form-field-label-wrapper{display:none}[_nghost-%COMP%]     .input-category-name .mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}[_nghost-%COMP%]     .input-category-name .mat-form-field-infix{border-top:none}.category-action[_ngcontent-%COMP%]{display:flex;width:100%}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]{display:flex;align-items:baseline;position:relative;width:calc(100% - 40px)!important;border-radius:8px;background-color:#fff;margin-bottom:15px;margin-right:5px;padding:6px 15px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]{height:auto;width:40px;align-self:baseline;border-top-left-radius:8px;border-bottom-left-radius:8px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]   .drag-icon[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]   .drag-icon[_ngcontent-%COMP%]{color:#171f26;cursor:move;margin-right:15px}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]{width:calc(100% - 40px);-ms-grid-row-align:center;align-self:center}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .child-list[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .child-list[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap;background-color:transparent;width:103%;position:relative;margin-left:-1.5%}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:baseline;border:transparent!important}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%]{color:transparent!important}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-box[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-box[_ngcontent-%COMP%]{margin-bottom:15px;display:flex;align-items:center}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%]{color:transparent!important}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;opacity:1}.cdk-drag-preview[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:6px!important}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%], .example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform 250ms cubic-bezier(0,0,.2,1)}.child[_ngcontent-%COMP%]{margin-left:0}.child[_ngcontent-%COMP%]   .child-content[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.category[_ngcontent-%COMP%]{display:flex;flex-direction:row;width:100vw}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]{width:250px;background-color:#fff;margin:10px 20px;border-radius:5px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:25px;margin:10px;padding-bottom:5px;font-family:\"Nexa Text\";display:flex;align-items:center;justify-content:center}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;font-family:Nexa;font-weight:700;font-size:24px;line-height:110%;text-align:center;color:#242731;text-transform:capitalize}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:15px;cursor:pointer}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{font-weight:600;font-size:15px;list-style-position:inside;padding-left:0}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{padding:5px;margin:5px auto;cursor:pointer;text-align:left;font:12px/19px Nexa Text;letter-spacing:0;color:#535760}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{padding-left:0;margin-left:0}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]{text-align:center;list-style:none;font-family:Nexa;font-weight:700;font-size:18px;line-height:24px;text-transform:capitalize;height:48px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{width:140px;outline:0;border:1px dashed grey}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{display:inline-flex;align-items:center}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:10px;display:none}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]:hover{display:flex;flex-direction:row;justify-content:center;align-items:center;position:static;background:rgba(84,60,182,.5);flex:none;color:#fff}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title.active[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]:hover   mat-icon[_ngcontent-%COMP%]{display:initial!important}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]{list-style:none;padding-left:20px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%]::marker, .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]:hover{font-weight:600;background:no-repeat padding-box #e5e8ee;border-radius:5px}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]{width:100%;max-height:100vh;overflow:hidden;overflow-x:hidden;position:relative;margin-top:10px;height:94%}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]   .fields-inner[_ngcontent-%COMP%]{max-height:97%;width:100%;overflow:auto}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]   .add-category-button[_ngcontent-%COMP%]{position:relative!important;width:calc(100% - 40px)!important;padding:20px 0}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]   .add-category-button[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:10px}.category[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]{background-color:#f4f7f9!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:6px!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:40px}.category[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;margin-left:0!important;min-width:auto;color:#fff}.add-button-sub-category[_ngcontent-%COMP%]{width:93%;position:absolute;left:3%;bottom:-24px}.add-button-container[_ngcontent-%COMP%]{background:no-repeat padding-box #fff;border-radius:8px;margin-top:10px;padding:10px 0;display:flex;justify-content:center;align-items:center;width:100%;margin-bottom:22px;position:absolute;left:0;bottom:-100px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;font:17px/26px Nexa Text;letter-spacing:0;color:#000;box-shadow:none}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{width:100%}.add-category[_ngcontent-%COMP%]{background-color:#fcfcfe;border-radius:5px;margin-left:10px;margin-bottom:10px;font:bold 12px/19px Nexa Text;letter-spacing:0;color:#c2c8d5;width:92%}.cdk-drag[_ngcontent-%COMP%]{width:100%;position:relative}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]{display:flex;height:100%;margin:0;width:100%}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{align-self:baseline;margin-top:0;margin-left:3px;border-bottom-left-radius:8px;border-top-left-radius:8px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]   .drag-icon[_ngcontent-%COMP%]{color:#171f26;cursor:move;margin-right:15px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-3-background[_ngcontent-%COMP%]{background-color:#e5e8ee!important}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]{border-radius:0 8px 8px 0;background-color:#fff;width:100%;padding-left:10px;padding-right:10px;padding-top:5px;position:relative;margin-bottom:25px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#039be5!important;height:100%;margin:auto 15px auto auto;display:flex}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.side-bar[_ngcontent-%COMP%]{display:flex;flex-direction:column}.register-button[_ngcontent-%COMP%]{background:no-repeat padding-box #171f26!important;border:2px solid #171f26!important;border-radius:7px;color:#fff!important;width:85%;margin-left:22px!important;border:none!important;padding:5px;box-shadow:0 0 0 rgba(0,0,0,.2);margin:30px 0}.live-button[_ngcontent-%COMP%]{background-color:#fff!important;color:#171f26!important;border:2px solid #171f26!important}.content-item[_ngcontent-%COMP%]{transition-property:border-image-slice border-image-source border-width;transition-timing-function:ease-in-out;transition-duration:.5s}.active-content[_ngcontent-%COMP%]{border-image-slice:1;border-width:2px;border-image-source:linear-gradient(to left,#9d107d,#4862ab)}.field-property[_ngcontent-%COMP%]{padding:11px;height:87vh;min-width:350px}.field-property[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-family:Nexa;font-size:20px;line-height:110%;display:flex;align-items:center;color:#242731}.field-property[_ngcontent-%COMP%]   .property-content[_ngcontent-%COMP%]{display:flex;flex-direction:column;align-items:flex-start;padding:20px;background:#fff;border-radius:8px 8px 0 0;height:100%}.field-property[_ngcontent-%COMP%]   .bloc-action[_ngcontent-%COMP%], .field-property[_ngcontent-%COMP%]   .property-content[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{text-align:center}.field-property[_ngcontent-%COMP%]   .bloc-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{width:100%;padding:6px;margin-top:10px}.field-property[_ngcontent-%COMP%]   .bloc-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:5px}.field-property[_ngcontent-%COMP%]   .bloc-action[_ngcontent-%COMP%]   .delete-bloc[_ngcontent-%COMP%]{background:#f44336;box-shadow:0 0 0 rgba(0,0,0,.2);border-radius:7px;color:#fff}[_ngcontent-%COMP%]::-webkit-scrollbar{width:5px}[_ngcontent-%COMP%]::-webkit-scrollbar-track{box-shadow:inset 0 0 2px transparent;border-radius:10px}[_ngcontent-%COMP%]::-webkit-scrollbar-thumb{background:0 0;border-radius:10px}[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover{background:0 0}.toogle-button[_ngcontent-%COMP%]{color:#707273!important;display:flex;align-items:center;font-family:Nexa;font-style:normal;font-weight:400;font-size:18px;line-height:18px}.toogle-button[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{padding-right:10px}[_nghost-%COMP%]     .category .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5!important;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273!important;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .category .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{background-color:#fff;margin-top:4px}[_nghost-%COMP%]     .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-thumb{margin-top:4px;margin-left:4px}[_nghost-%COMP%]     .category .mat-slide-toggle.draft:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273!important}[_nghost-%COMP%]     .category .mat-slide-toggle.draft.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5!important}.top-10[_ngcontent-%COMP%]{margin-top:10px}.bottom-10[_ngcontent-%COMP%]{margin-bottom:10px}.section-item.active[_ngcontent-%COMP%], .section-item[_ngcontent-%COMP%]:hover{border:2px solid #242731;border-radius:8px;cursor:pointer}  .select-type-class.mat-select-disabled .mat-select-value{color:#000!important;cursor:pointer}  .fields-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle,   .property-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{border-color:#039be5!important}  .fields-content .mat-radio-button.mat-accent .mat-radio-inner-circle,   .fields-content .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),   .fields-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,   .fields-content .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple,   .property-content .mat-radio-button.mat-accent .mat-radio-inner-circle,   .property-content .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),   .property-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,   .property-content .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{background-color:#039be5!important}  .fields-content .mat-checkbox-checkmark-path,   .property-content .mat-checkbox-checkmark-path{stroke:#039be5 !important!important}  .fields-content .mat-checkbox-frame,   .property-content .mat-checkbox-frame{border:2px solid #039be5!important}  .fields-content .mat-checkbox-inner-container,   .property-content .mat-checkbox-inner-container{height:20px!important;width:20px!important}  .field-content .mat-form-field,   .field-content .select-content{width:100%}  .field-content .mat-form-field-infix{display:block;position:relative;flex:auto;min-width:0;width:100%!important}.setting[_ngcontent-%COMP%]{z-index:1;background-color:#d5d6d7!important;border-radius:100%;width:42px!important;height:40px!important;display:none}.setting[_ngcontent-%COMP%]   .setting-icon[_ngcontent-%COMP%], .setting[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{color:#171f26}.sub-header[_ngcontent-%COMP%]:hover   .setting[_ngcontent-%COMP%]{display:block}.add-button-sub-category[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{margin:10px auto;width:100%;color:#000;box-shadow:none;background-color:#fcfcfe}.add-button-sub-category[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{width:100%!important}  .add-button{padding:10px 0}  .add-button span{width:100%}  .mat-button[disabled]{opacity:.5!important}"] });
+        } }, directives: [ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, MatIcon, NgForOf, MatButton, CdkDropListGroup, CdkDropList, NgIf, ScrollToDirective, CdkDrag, CdkDragHandle, SubTemplateProfileComponent, DefaultValueAccessor, RequiredValidator, NgControlStatus, NgModel, NativeElementInjectorDirective, MatFormField, MatLabel, MatSelect, MatOption, MatInput, NgSwitch, NgSwitchCase, NgSwitchDefault, MatSlideToggle, MatRadioGroup, MatCheckbox, MatChipList, MatChipInput, MatChip, MatChipRemove, MatRadioButton], styles: ["main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;height:100vh;width:100%;display:flex;flex-direction:column;align-items:center}main[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{background-color:transparent!important}main[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]{display:flex;height:100%;width:100%;max-width:1500px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]{width:786px;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;opacity:1;margin:auto;padding:0 25px;-ms-grid-row-align:center;align-self:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:center;font:900 32px/48px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%], main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{font:18px/24px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]{display:flex;align-items:center;position:relative}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]{margin-right:15px;min-width:50px;width:30px;padding:9px 12px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-right:10px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]{position:absolute;height:200px;width:100%;background:no-repeat padding-box #fff;border:1px solid #171f26;border-radius:8px;top:100%;z-index:1}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin:15px;border:none;font-size:40px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]:hover{color:#830b6b!important;cursor:pointer}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .box-title-content[_ngcontent-%COMP%]{width:100%;margin:25px auto}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]{font:900 32px/38px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:15px/26px Nexa Text;letter-spacing:0;color:#171f26;text-align:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .link-create-profil[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6}main[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.input-category-name[_ngcontent-%COMP%]{border:none;outline:0;text-align:left;font-family:Nexa;font-weight:700;font-size:20px;line-height:28px;color:#242731}.sub-category-name[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:250;font-size:14px;line-height:16px;display:flex;align-items:center;color:#575f6e;word-break:break-word}.full-width[_ngcontent-%COMP%]{width:100%}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]{width:90%;margin:auto 2% auto auto}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}  .mat-select.mat-form-field-appearance-outline .mat-form-field-infix{padding:.5em 0}  .mat-select{padding:8px 0}  .mat-form-field-appearance-fill .mat-form-field-underline::before{background-color:transparent}  .mat-form-field-wrapper{padding-bottom:0!important}[_nghost-%COMP%]     .cdk-drag-preview .input-category-name div.mat-form-field-outline-start, [_nghost-%COMP%]     .input-category-name div.mat-form-field-outline-start{border-color:0!important;border-width:0!important}[_nghost-%COMP%]     .input-category-name .mat-form-field-outline-gap{border-color:0!important;border-width:0!important}[_nghost-%COMP%]     .mat-checkbox-checked.mat-accent .mat-checkbox-background, [_nghost-%COMP%]     .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{background-color:transparent}[_nghost-%COMP%]     .input-category-name .mat-form-field-outline-end{border-color:0!important;border-width:0!important}[_nghost-%COMP%]     .input-category-name .mat-form-field-label-wrapper{display:none}[_nghost-%COMP%]     .input-category-name .mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}[_nghost-%COMP%]     .input-category-name .mat-form-field-infix{border-top:none}.category-action[_ngcontent-%COMP%]{display:flex;width:100%}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]{display:flex;align-items:baseline;position:relative;width:calc(100% - 40px)!important;border-radius:8px;background-color:#fff;margin-bottom:15px;margin-right:5px;padding:6px 15px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]{height:auto;width:40px;align-self:baseline;border-top-left-radius:8px;border-bottom-left-radius:8px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]   .drag-icon[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]   .drag-icon[_ngcontent-%COMP%]{color:#171f26;cursor:move;margin-right:15px}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]{width:calc(100% - 40px);-ms-grid-row-align:center;align-self:center}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .child-list[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .child-list[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap;background-color:transparent;width:103%;position:relative;margin-left:-1.5%}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:baseline;border:transparent!important}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%]{color:transparent!important}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-box[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-box[_ngcontent-%COMP%]{margin-bottom:15px;display:flex;align-items:center}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%]{color:transparent!important}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;opacity:1}.cdk-drag-preview[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:6px!important}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%], .example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform 250ms cubic-bezier(0,0,.2,1)}.child[_ngcontent-%COMP%]{margin-left:0}.child[_ngcontent-%COMP%]   .child-content[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.category[_ngcontent-%COMP%]{display:flex;flex-direction:row;width:100vw;height:100%}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]{width:250px;background-color:#fff;margin:10px 20px;border-radius:5px;height:100%}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:25px;margin:10px;padding-bottom:5px;font-family:\"Nexa Text\";display:flex;align-items:center;justify-content:center}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;font-family:Nexa;font-weight:700;font-size:24px;line-height:110%;text-align:center;color:#242731;text-transform:capitalize}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:15px;cursor:pointer}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{font-weight:600;font-size:15px;list-style-position:inside;padding-left:0}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{padding:5px;margin:5px auto;cursor:pointer;text-align:left;font:12px/19px Nexa Text;letter-spacing:0;color:#535760}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{padding-left:0;margin-left:0}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]{text-align:center;list-style:none;font-family:Nexa;font-weight:700;font-size:18px;line-height:24px;text-transform:capitalize;height:48px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{width:140px;outline:0;border:1px dashed grey}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{display:inline-flex;align-items:center}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:10px;display:none}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]:hover{display:flex;flex-direction:row;justify-content:center;align-items:center;position:static;background:rgba(84,60,182,.5);flex:none;color:#fff}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title.active[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]:hover   mat-icon[_ngcontent-%COMP%]{display:initial!important}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]{list-style:none;padding-left:20px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%]::marker, .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]:hover{font-weight:600;background:no-repeat padding-box #e5e8ee;border-radius:5px}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]{width:100%;overflow:hidden;overflow-x:hidden;position:relative;padding-top:10px;height:calc(100% - 10px)}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]   .fields-inner[_ngcontent-%COMP%]{max-height:100%;height:100%;width:100%;overflow:auto}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]   .add-category-button[_ngcontent-%COMP%]{position:relative!important;width:calc(100% - 40px)!important;padding:20px 0}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]   .add-category-button[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:10px}.category[_ngcontent-%COMP%]   .fields[_ngcontent-%COMP%]   .add-step[_ngcontent-%COMP%]{width:99%!important}.category[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]{background-color:#f4f7f9!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:6px!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:40px}.category[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;margin-left:0!important;min-width:auto;color:#fff}.add-button-sub-category[_ngcontent-%COMP%]{width:93%;position:absolute;left:3%;bottom:-24px}.add-button-container[_ngcontent-%COMP%]{background:no-repeat padding-box #fff;border-radius:8px;margin-top:10px;padding:10px 0;display:flex;justify-content:center;align-items:center;width:100%;margin-bottom:22px;position:absolute;left:0}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;font:17px/26px Nexa Text;letter-spacing:0;color:#000;box-shadow:none}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{width:100%}.add-category[_ngcontent-%COMP%]{background-color:#fcfcfe;border-radius:5px;margin-left:10px;margin-bottom:10px;font:bold 12px/19px Nexa Text;letter-spacing:0;color:#c2c8d5;width:92%}.cdk-drag[_ngcontent-%COMP%]{width:100%;position:relative}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]{display:flex;height:100%;margin:0;width:100%}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{align-self:baseline;margin-top:0;margin-left:3px;border-bottom-left-radius:8px;border-top-left-radius:8px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]   .drag-icon[_ngcontent-%COMP%]{color:#171f26;cursor:move;margin-right:15px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-3-background[_ngcontent-%COMP%]{background-color:#e5e8ee!important}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]{border-radius:0 8px 8px 0;background-color:#fff;width:100%;padding-left:10px;padding-right:10px;padding-top:5px;position:relative;margin-bottom:25px}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#039be5!important;height:100%;margin:auto 15px auto auto;display:flex}.cdk-drag[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.side-bar[_ngcontent-%COMP%]{display:flex;flex-direction:column}.register-button[_ngcontent-%COMP%]{background:no-repeat padding-box #171f26!important;border:2px solid #171f26!important;border-radius:7px;color:#fff!important;width:85%;margin-left:22px!important;border:none!important;padding:5px;box-shadow:0 0 0 rgba(0,0,0,.2);margin:30px 0}.live-button[_ngcontent-%COMP%]{background-color:#fff!important;color:#171f26!important;border:2px solid #171f26!important}.content-item[_ngcontent-%COMP%]{transition-property:border-image-slice border-image-source border-width;transition-timing-function:ease-in-out;transition-duration:.5s}.active-content[_ngcontent-%COMP%]{border-image-slice:1;border-width:2px;border-image-source:linear-gradient(to left,#9d107d,#4862ab)}.field-property[_ngcontent-%COMP%]{padding:11px;height:calc(100% - 22px);min-width:350px}.field-property[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-family:Nexa;font-size:20px;line-height:110%;padding-top:10px;display:flex;align-items:center;color:#242731}.field-property[_ngcontent-%COMP%]   .property-content[_ngcontent-%COMP%]{display:flex;flex-direction:column;align-items:flex-start;padding:0 20px;background:#fff;border-radius:8px 8px 0 0;height:100%}.field-property[_ngcontent-%COMP%]   .bloc-action[_ngcontent-%COMP%], .field-property[_ngcontent-%COMP%]   .property-content[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{text-align:center}.field-property[_ngcontent-%COMP%]   .bloc-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{width:100%;padding:6px;margin-top:10px}.field-property[_ngcontent-%COMP%]   .bloc-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:5px}.field-property[_ngcontent-%COMP%]   .bloc-action[_ngcontent-%COMP%]   .delete-bloc[_ngcontent-%COMP%]{background:#f44336;box-shadow:0 0 0 rgba(0,0,0,.2);border-radius:7px;color:#fff}[_ngcontent-%COMP%]::-webkit-scrollbar{width:5px}[_ngcontent-%COMP%]::-webkit-scrollbar-track{box-shadow:inset 0 0 2px transparent;border-radius:10px}[_ngcontent-%COMP%]::-webkit-scrollbar-thumb{background:0 0;border-radius:10px}[_ngcontent-%COMP%]::-webkit-scrollbar-thumb:hover{background:0 0}.toogle-button[_ngcontent-%COMP%]{color:#707273!important;display:flex;align-items:center;font-family:Nexa;font-style:normal;font-weight:400;font-size:18px;line-height:18px}.toogle-button[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{padding-right:10px}[_nghost-%COMP%]     .category .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5!important;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273!important;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .category .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{background-color:#fff;margin-top:4px}[_nghost-%COMP%]     .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-thumb{margin-top:4px;margin-left:4px}[_nghost-%COMP%]     .category .mat-slide-toggle.draft:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273!important}[_nghost-%COMP%]     .category .mat-slide-toggle.draft.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5!important}.top-10[_ngcontent-%COMP%]{margin-top:10px}.bottom-10[_ngcontent-%COMP%]{margin-bottom:10px}.section-item.active[_ngcontent-%COMP%], .section-item[_ngcontent-%COMP%]:hover{border:2px solid #242731;border-radius:8px;cursor:pointer}  .select-type-class.mat-select-disabled .mat-select-value{color:#000!important;cursor:pointer}  .fields-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle,   .property-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{border-color:#039be5!important}  .fields-content .mat-radio-button.mat-accent .mat-radio-inner-circle,   .fields-content .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),   .fields-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,   .fields-content .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple,   .property-content .mat-radio-button.mat-accent .mat-radio-inner-circle,   .property-content .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),   .property-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,   .property-content .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{background-color:#039be5!important}  .fields-content .mat-checkbox-checkmark-path,   .property-content .mat-checkbox-checkmark-path{stroke:#039be5 !important!important}  .fields-content .mat-checkbox-frame,   .property-content .mat-checkbox-frame{border:2px solid #039be5!important}  .fields-content .mat-checkbox-inner-container,   .property-content .mat-checkbox-inner-container{height:20px!important;width:20px!important}  .field-content .mat-form-field,   .field-content .select-content{width:100%}  .field-content .mat-form-field-infix{display:block;position:relative;flex:auto;min-width:0;width:100%!important}.setting[_ngcontent-%COMP%]{z-index:1;background-color:#d5d6d7!important;border-radius:100%;width:42px!important;height:40px!important;display:none}.setting[_ngcontent-%COMP%]   .setting-icon[_ngcontent-%COMP%], .setting[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{color:#171f26}.sub-header[_ngcontent-%COMP%]:hover   .setting[_ngcontent-%COMP%]{display:block}.add-button-sub-category[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{margin:10px auto;width:100%;color:#000;box-shadow:none;background-color:#fcfcfe}.add-button-sub-category[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{width:100%!important}  .add-button{padding:10px 0}  .add-button span{width:100%}  .mat-button[disabled]{opacity:.5!important}"] });
     return TemplateProfileCreateComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(TemplateProfileCreateComponent, [{
@@ -4088,14 +4088,14 @@ var MaterialElevationDirective = /** @class */ (function () {
 
 var _c0$2 = function (a0) { return [a0]; };
 function TemplateProfileListComponent_div_32_Template(rf, ctx) { if (rf & 1) {
-    var _r776 = ɵɵgetCurrentView();
+    var _r775 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 13);
     ɵɵelementStart(1, "div", 14);
     ɵɵelementStart(2, "span");
     ɵɵtext(3, "Live");
     ɵɵelementEnd();
     ɵɵelementStart(4, "mat-slide-toggle", 15);
-    ɵɵlistener("ngModelChange", function TemplateProfileListComponent_div_32_Template_mat_slide_toggle_ngModelChange_4_listener($event) { ɵɵrestoreView(_r776); var d_r774 = ctx.$implicit; return d_r774.Status = $event; })("ngModelChange", function TemplateProfileListComponent_div_32_Template_mat_slide_toggle_ngModelChange_4_listener() { ɵɵrestoreView(_r776); var d_r774 = ctx.$implicit; var ctx_r777 = ɵɵnextContext(); return ctx_r777.onChangeStatus(d_r774, false); });
+    ɵɵlistener("ngModelChange", function TemplateProfileListComponent_div_32_Template_mat_slide_toggle_ngModelChange_4_listener($event) { ɵɵrestoreView(_r775); var d_r773 = ctx.$implicit; return d_r773.Status = $event; })("ngModelChange", function TemplateProfileListComponent_div_32_Template_mat_slide_toggle_ngModelChange_4_listener() { ɵɵrestoreView(_r775); var d_r773 = ctx.$implicit; var ctx_r776 = ɵɵnextContext(); return ctx_r776.onChangeStatus(d_r773, false); });
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(5, "div", 16);
@@ -4109,19 +4109,19 @@ function TemplateProfileListComponent_div_32_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementStart(11, "div", 19);
     ɵɵelementStart(12, "button", 20);
-    ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_12_listener() { ɵɵrestoreView(_r776); var d_r774 = ctx.$implicit; var ctx_r778 = ɵɵnextContext(); return ctx_r778.onEditProfil(d_r774._id); });
+    ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_12_listener() { ɵɵrestoreView(_r775); var d_r773 = ctx.$implicit; var ctx_r777 = ɵɵnextContext(); return ctx_r777.onEditProfil(d_r773._id); });
     ɵɵelementStart(13, "mat-icon");
     ɵɵtext(14, "edit");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(15, "button", 20);
-    ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_15_listener() { ɵɵrestoreView(_r776); var d_r774 = ctx.$implicit; var ctx_r779 = ɵɵnextContext(); return ctx_r779.copyTemplate(d_r774); });
+    ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_15_listener() { ɵɵrestoreView(_r775); var d_r773 = ctx.$implicit; var ctx_r778 = ɵɵnextContext(); return ctx_r778.copyTemplate(d_r773); });
     ɵɵelementStart(16, "mat-icon");
     ɵɵtext(17, "filter_none");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(18, "button", 20);
-    ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_18_listener() { ɵɵrestoreView(_r776); var d_r774 = ctx.$implicit; var ctx_r780 = ɵɵnextContext(); return ctx_r780.onDelete(d_r774._id); });
+    ɵɵlistener("click", function TemplateProfileListComponent_div_32_Template_button_click_18_listener() { ɵɵrestoreView(_r775); var d_r773 = ctx.$implicit; var ctx_r779 = ɵɵnextContext(); return ctx_r779.onDelete(d_r773._id); });
     ɵɵelementStart(19, "mat-icon");
     ɵɵtext(20, "delete");
     ɵɵelementEnd();
@@ -4129,27 +4129,27 @@ function TemplateProfileListComponent_div_32_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var d_r774 = ctx.$implicit;
-    var ctx_r772 = ɵɵnextContext();
+    var d_r773 = ctx.$implicit;
+    var ctx_r771 = ɵɵnextContext();
     ɵɵproperty("defaultElevation", 0);
     ɵɵadvance(4);
-    ɵɵproperty("ngModel", d_r774.Status);
+    ɵɵproperty("ngModel", d_r773.Status);
     ɵɵadvance(1);
-    ɵɵproperty("routerLink", ɵɵpureFunction1(8, _c0$2, ctx_r772.service.mainPath + "/template/" + d_r774._id));
+    ɵɵproperty("routerLink", ɵɵpureFunction1(8, _c0$2, ctx_r771.service.mainPath + "/template/" + d_r773._id));
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", d_r774.Name, "");
+    ɵɵtextInterpolate1(" ", d_r773.Name, "");
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", ɵɵpipeBind2(10, 5, d_r774.createdAt, "dd/MM/yy"), "");
+    ɵɵtextInterpolate1(" ", ɵɵpipeBind2(10, 5, d_r773.createdAt, "dd/MM/yy"), "");
 } }
 function TemplateProfileListComponent_div_34_Template(rf, ctx) { if (rf & 1) {
-    var _r783 = ɵɵgetCurrentView();
+    var _r782 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 13);
     ɵɵelementStart(1, "div", 21);
     ɵɵelementStart(2, "span");
     ɵɵtext(3, "Brouillon");
     ɵɵelementEnd();
     ɵɵelementStart(4, "mat-slide-toggle", 22);
-    ɵɵlistener("ngModelChange", function TemplateProfileListComponent_div_34_Template_mat_slide_toggle_ngModelChange_4_listener($event) { ɵɵrestoreView(_r783); var d_r781 = ctx.$implicit; return d_r781.Status = $event; })("ngModelChange", function TemplateProfileListComponent_div_34_Template_mat_slide_toggle_ngModelChange_4_listener() { ɵɵrestoreView(_r783); var d_r781 = ctx.$implicit; var ctx_r784 = ɵɵnextContext(); return ctx_r784.onChangeStatus(d_r781, true); });
+    ɵɵlistener("ngModelChange", function TemplateProfileListComponent_div_34_Template_mat_slide_toggle_ngModelChange_4_listener($event) { ɵɵrestoreView(_r782); var d_r780 = ctx.$implicit; return d_r780.Status = $event; })("ngModelChange", function TemplateProfileListComponent_div_34_Template_mat_slide_toggle_ngModelChange_4_listener() { ɵɵrestoreView(_r782); var d_r780 = ctx.$implicit; var ctx_r783 = ɵɵnextContext(); return ctx_r783.onChangeStatus(d_r780, true); });
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(5, "div", 16);
@@ -4163,19 +4163,19 @@ function TemplateProfileListComponent_div_34_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementStart(11, "div", 19);
     ɵɵelementStart(12, "button", 20);
-    ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_12_listener() { ɵɵrestoreView(_r783); var d_r781 = ctx.$implicit; var ctx_r785 = ɵɵnextContext(); return ctx_r785.onEditProfil(d_r781._id); });
+    ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_12_listener() { ɵɵrestoreView(_r782); var d_r780 = ctx.$implicit; var ctx_r784 = ɵɵnextContext(); return ctx_r784.onEditProfil(d_r780._id); });
     ɵɵelementStart(13, "mat-icon");
     ɵɵtext(14, "edit");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(15, "button", 20);
-    ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_15_listener() { ɵɵrestoreView(_r783); var d_r781 = ctx.$implicit; var ctx_r786 = ɵɵnextContext(); return ctx_r786.copyTemplate(d_r781); });
+    ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_15_listener() { ɵɵrestoreView(_r782); var d_r780 = ctx.$implicit; var ctx_r785 = ɵɵnextContext(); return ctx_r785.copyTemplate(d_r780); });
     ɵɵelementStart(16, "mat-icon");
     ɵɵtext(17, "filter_none");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(18, "button", 20);
-    ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_18_listener() { ɵɵrestoreView(_r783); var d_r781 = ctx.$implicit; var ctx_r787 = ɵɵnextContext(); return ctx_r787.onDelete(d_r781._id); });
+    ɵɵlistener("click", function TemplateProfileListComponent_div_34_Template_button_click_18_listener() { ɵɵrestoreView(_r782); var d_r780 = ctx.$implicit; var ctx_r786 = ɵɵnextContext(); return ctx_r786.onDelete(d_r780._id); });
     ɵɵelementStart(19, "mat-icon");
     ɵɵtext(20, "delete");
     ɵɵelementEnd();
@@ -4183,17 +4183,17 @@ function TemplateProfileListComponent_div_34_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var d_r781 = ctx.$implicit;
-    var ctx_r773 = ɵɵnextContext();
+    var d_r780 = ctx.$implicit;
+    var ctx_r772 = ɵɵnextContext();
     ɵɵproperty("defaultElevation", 0);
     ɵɵadvance(4);
-    ɵɵproperty("ngModel", d_r781.Status);
+    ɵɵproperty("ngModel", d_r780.Status);
     ɵɵadvance(1);
-    ɵɵproperty("routerLink", ɵɵpureFunction1(8, _c0$2, ctx_r773.service.mainPath + "/template/" + d_r781._id));
+    ɵɵproperty("routerLink", ɵɵpureFunction1(8, _c0$2, ctx_r772.service.mainPath + "/template/" + d_r780._id));
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", d_r781.Name, "");
+    ɵɵtextInterpolate1(" ", d_r780.Name, "");
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", ɵɵpipeBind2(10, 5, d_r781.createdAt, "dd/MM/yy"), "");
+    ɵɵtextInterpolate1(" ", ɵɵpipeBind2(10, 5, d_r780.createdAt, "dd/MM/yy"), "");
 } }
 var TemplateProfileListComponent = /** @class */ (function () {
     function TemplateProfileListComponent(service, router, dialog) {
@@ -4465,7 +4465,7 @@ var TemplateProfileListComponent = /** @class */ (function () {
             ɵɵproperty("ngForOf", ctx.publishTemplate);
             ɵɵadvance(2);
             ɵɵproperty("ngForOf", ctx.draftTemplate);
-        } }, directives: [MatIcon, MatAnchor, NgForOf, MaterialElevationDirective, MatSlideToggle, NgControlStatus, NgModel, NativeElementInjectorDirective, RouterLink], pipes: [DatePipe], styles: [".main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;opacity:1;height:100%}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]{border-radius:8px;opacity:1;padding:42px 25px 42px 42px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:left;font:bold 23px/30px Nexa Text;letter-spacing:0;color:#171f26;opacity:1;margin-bottom:0;margin-top:0}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   p.sub-title[_ngcontent-%COMP%]{margin-bottom:57px;font:20px/26px Nexa Text;letter-spacing:0;color:#171f26;width:300px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .template-title[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:24px;line-height:110%;text-align:center;color:#242731;overflow-wrap:break-word;padding:10px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .template-date[_ngcontent-%COMP%]{font-family:Nexa;font-weight:250;font-size:14px;line-height:120%}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]{font-family:Nexa;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:space-between;margin-bottom:30px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{display:flex;align-items:center;list-style:none;padding-left:0}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{margin-right:20px;padding-bottom:10px;cursor:pointer}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]{border-bottom:4px solid #3c4252}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   .add-profil[_ngcontent-%COMP%]{margin-right:50px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .draft-template[_ngcontent-%COMP%], .main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .live-template[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap;justify-content:flex-start}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]{width:266px;height:300px;position:relative;margin-right:50px;margin-bottom:50px;background:#fff;border-radius:8px;opacity:1;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{width:81px;height:81px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{background:no-repeat padding-box #171f26;border-radius:7px;font-size:15px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]{width:100%;text-align:center}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]   .picto-preview[_ngcontent-%COMP%]{width:113px;height:113px;background:no-repeat padding-box #fff;margin:auto;border-radius:113px;display:flex;align-items:center;justify-content:center}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]   .picto-preview[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:40px;color:#dce4e9}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .toogle-button[_ngcontent-%COMP%]{position:absolute;right:20px;top:20px;color:#6fe8d7;display:flex;align-items:center;font-family:Nexa;font-style:normal;font-size:18px;line-height:18px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .toogle-button[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{padding-right:10px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .toogle-button.draft[_ngcontent-%COMP%]{color:#f3a124}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .new-template[_ngcontent-%COMP%]{border:1px solid #dce4e9;border-radius:6px;background-color:transparent}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .add-profil[_ngcontent-%COMP%]{background-color:#171f26}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .template-footer[_ngcontent-%COMP%]{background:#543cb6;border-radius:0 0 8px 8px;width:100%;position:absolute;bottom:0;text-align:center;padding:5px;display:flex;justify-content:center;align-items:center}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .template-footer[_ngcontent-%COMP%]   button.action-button[_ngcontent-%COMP%]{margin:auto 5%;box-shadow:none;color:#fff;border:none;cursor:pointer}[_nghost-%COMP%]     .box-template .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#6fe8d7;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .box-template .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#f3a124;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .box-template .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{background-color:#fff;margin-top:4px}[_nghost-%COMP%]     .box-template .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-thumb{margin-top:4px;margin-left:4px}[_nghost-%COMP%]     .box-template .mat-slide-toggle.draft:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#f3a124}[_nghost-%COMP%]     .box-template .mat-slide-toggle.draft.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#6fe8d7}"] });
+        } }, directives: [MatIcon, MatAnchor, NgForOf, MaterialElevationDirective, MatSlideToggle, NgControlStatus, NgModel, NativeElementInjectorDirective, RouterLink], pipes: [DatePipe], styles: [".main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;opacity:1;height:100%}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]{border-radius:8px;opacity:1;padding:42px 25px 42px 42px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:left;font:bold 23px/30px Nexa Text;letter-spacing:0;color:#171f26;opacity:1;margin-bottom:0;margin-top:0}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   p.sub-title[_ngcontent-%COMP%]{margin-bottom:57px;font:20px/26px Nexa Text;letter-spacing:0;color:#171f26;width:300px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .template-title[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:24px;line-height:110%;text-align:center;color:#242731;overflow-wrap:break-word;padding:10px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .template-date[_ngcontent-%COMP%]{font-family:Nexa;font-weight:250;font-size:14px;line-height:120%}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]{font-family:Nexa;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:space-between;margin-bottom:30px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{display:flex;align-items:center;list-style:none;padding-left:0}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{margin-right:20px;padding-bottom:10px;cursor:pointer}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.active[_ngcontent-%COMP%]{border-bottom:4px solid #3c4252}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .list-title[_ngcontent-%COMP%]   .add-profil[_ngcontent-%COMP%]{margin-right:50px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .draft-template[_ngcontent-%COMP%], .main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .live-template[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap;justify-content:flex-start}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]{width:266px;height:300px;position:relative;margin-right:50px;margin-bottom:50px;background:#fff;border-radius:8px;opacity:1;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{width:81px;height:81px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{background:no-repeat padding-box #171f26;border-radius:7px;font-size:15px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]{width:100%;text-align:center}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]   .picto-preview[_ngcontent-%COMP%]{width:113px;height:113px;background:no-repeat padding-box #fff;margin:auto;border-radius:113px;display:flex;align-items:center;justify-content:center}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .box-content[_ngcontent-%COMP%]   .picto-preview[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:40px;color:#dce4e9}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .toogle-button[_ngcontent-%COMP%]{position:absolute;right:20px;top:20px;color:#6fe8d7;display:flex;align-items:center;font-family:Nexa;font-style:normal;font-size:18px;line-height:18px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .toogle-button[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{padding-right:10px}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .box-template[_ngcontent-%COMP%]   .toogle-button.draft[_ngcontent-%COMP%]{color:#f3a124}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .new-template[_ngcontent-%COMP%]{border:1px solid #dce4e9;border-radius:6px;background-color:transparent}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .list[_ngcontent-%COMP%]   .add-profil[_ngcontent-%COMP%]{background-color:#171f26}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .template-footer[_ngcontent-%COMP%]{background:#543cb6;border-radius:0 0 8px 8px;width:100%;position:absolute;bottom:0;text-align:center;padding:5px 0;display:flex;justify-content:center;align-items:center}.main[_ngcontent-%COMP%]   .content-list[_ngcontent-%COMP%]   .template-footer[_ngcontent-%COMP%]   button.action-button[_ngcontent-%COMP%]{margin:auto 5%;box-shadow:none;color:#fff;border:none;cursor:pointer}[_nghost-%COMP%]     .box-template .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#6fe8d7;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .box-template .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#f3a124;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .box-template .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{background-color:#fff;margin-top:4px}[_nghost-%COMP%]     .box-template .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-thumb{margin-top:4px;margin-left:4px}[_nghost-%COMP%]     .box-template .mat-slide-toggle.draft:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#f3a124}[_nghost-%COMP%]     .box-template .mat-slide-toggle.draft.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#6fe8d7}"] });
     return TemplateProfileListComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(TemplateProfileListComponent, [{
@@ -4530,76 +4530,76 @@ function fieldWidth(type, length, index) {
 var _c0$3 = function () { return { standalone: true }; };
 var _c1$2 = function () { return { display: "inine-block" }; };
 function SubOnboardingCreateComponent_div_2_Template(rf, ctx) { if (rf & 1) {
-    var _r879 = ɵɵgetCurrentView();
+    var _r878 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 8);
     ɵɵelementStart(1, "span");
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementStart(3, "mat-slide-toggle", 9);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_2_Template_mat_slide_toggle_ngModelChange_3_listener($event) { ɵɵrestoreView(_r879); var ctx_r878 = ɵɵnextContext(); return ctx_r878.field.defaultValue = $event; });
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_2_Template_mat_slide_toggle_ngModelChange_3_listener($event) { ɵɵrestoreView(_r878); var ctx_r877 = ɵɵnextContext(); return ctx_r877.field.defaultValue = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r870 = ɵɵnextContext();
+    var ctx_r869 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r870.field.label);
+    ɵɵtextInterpolate(ctx_r869.field.label);
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r870.field.defaultValue)("ngModelOptions", ɵɵpureFunction0(4, _c0$3))("ngStyle", ctx_r870.field.selector && ɵɵpureFunction0(5, _c1$2));
+    ɵɵproperty("ngModel", ctx_r869.field.defaultValue)("ngModelOptions", ɵɵpureFunction0(4, _c0$3))("ngStyle", ctx_r869.field.selector && ɵɵpureFunction0(5, _c1$2));
 } }
 function SubOnboardingCreateComponent_div_3_mat_select_3_mat_option_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-option", 15);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var select_r882 = ctx.$implicit;
-    ɵɵproperty("value", select_r882.value);
+    var select_r881 = ctx.$implicit;
+    ɵɵproperty("value", select_r881.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", select_r882.value, "");
+    ɵɵtextInterpolate1(" ", select_r881.value, "");
 } }
 function SubOnboardingCreateComponent_div_3_mat_select_3_Template(rf, ctx) { if (rf & 1) {
-    var _r884 = ɵɵgetCurrentView();
+    var _r883 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-select", 13);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_3_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { ɵɵrestoreView(_r884); var ctx_r883 = ɵɵnextContext(2); return ctx_r883.field.selector.value = $event; });
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_3_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { ɵɵrestoreView(_r883); var ctx_r882 = ɵɵnextContext(2); return ctx_r882.field.selector.value = $event; });
     ɵɵtemplate(1, SubOnboardingCreateComponent_div_3_mat_select_3_mat_option_1_Template, 2, 2, "mat-option", 14);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r880 = ɵɵnextContext(2);
-    ɵɵproperty("ngModel", ctx_r880.field.selector.value)("ngModelOptions", ɵɵpureFunction0(3, _c0$3));
+    var ctx_r879 = ɵɵnextContext(2);
+    ɵɵproperty("ngModel", ctx_r879.field.selector.value)("ngModelOptions", ɵɵpureFunction0(3, _c0$3));
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r880.field.selector.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r879.field.selector.defaultValue);
 } }
 var _c2$1 = function () { return { "display": "inine-block" }; };
 function SubOnboardingCreateComponent_div_3_Template(rf, ctx) { if (rf & 1) {
-    var _r886 = ɵɵgetCurrentView();
+    var _r885 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 10);
     ɵɵelementStart(1, "mat-checkbox", 11);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_3_Template_mat_checkbox_ngModelChange_1_listener($event) { ɵɵrestoreView(_r886); var ctx_r885 = ɵɵnextContext(); return ctx_r885.field.value = $event; });
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_3_Template_mat_checkbox_ngModelChange_1_listener($event) { ɵɵrestoreView(_r885); var ctx_r884 = ɵɵnextContext(); return ctx_r884.field.value = $event; });
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵtemplate(3, SubOnboardingCreateComponent_div_3_mat_select_3_Template, 2, 4, "mat-select", 12);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r871 = ɵɵnextContext();
+    var ctx_r870 = ɵɵnextContext();
     ɵɵadvance(1);
-    ɵɵclassMap(ctx_r871.checkSubForm(ctx_r871.field) ? "checkbox-title-active" : "");
-    ɵɵproperty("ngModel", ctx_r871.field.value)("required", ctx_r871.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(8, _c0$3))("ngStyle", ctx_r871.field.selector && ɵɵpureFunction0(9, _c2$1));
+    ɵɵclassMap(ctx_r870.checkSubForm(ctx_r870.field) ? "checkbox-title-active" : "");
+    ɵɵproperty("ngModel", ctx_r870.field.value)("required", ctx_r870.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(8, _c0$3))("ngStyle", ctx_r870.field.selector && ɵɵpureFunction0(9, _c2$1));
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", ctx_r871.field.label, " ");
+    ɵɵtextInterpolate1(" ", ctx_r870.field.label, " ");
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r871.field.selector);
+    ɵɵproperty("ngIf", ctx_r870.field.selector);
 } }
 function SubOnboardingCreateComponent_div_4_mat_checkbox_4_Template(rf, ctx) { if (rf & 1) {
-    var _r890 = ɵɵgetCurrentView();
+    var _r889 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-checkbox", 18);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_4_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { ɵɵrestoreView(_r890); var opt_r888 = ctx.$implicit; return opt_r888.checked = $event; });
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_4_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { ɵɵrestoreView(_r889); var opt_r887 = ctx.$implicit; return opt_r887.checked = $event; });
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r888 = ctx.$implicit;
-    var ctx_r887 = ɵɵnextContext(2);
-    ɵɵproperty("checked", opt_r888.checked)("ngModel", opt_r888.checked)("required", ctx_r887.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(5, _c0$3));
+    var opt_r887 = ctx.$implicit;
+    var ctx_r886 = ɵɵnextContext(2);
+    ɵɵproperty("checked", opt_r887.checked)("ngModel", opt_r887.checked)("required", ctx_r886.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(5, _c0$3));
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", opt_r888.value, " ");
+    ɵɵtextInterpolate1(" ", opt_r887.value, " ");
 } }
 function SubOnboardingCreateComponent_div_4_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 10);
@@ -4611,126 +4611,126 @@ function SubOnboardingCreateComponent_div_4_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r872 = ɵɵnextContext();
+    var ctx_r871 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r872.field.label);
+    ɵɵtextInterpolate(ctx_r871.field.label);
     ɵɵadvance(2);
-    ɵɵproperty("ngForOf", ctx_r872.field.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r871.field.defaultValue);
 } }
 function SubOnboardingCreateComponent_div_5_mat_radio_button_4_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-radio-button", 15);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r893 = ctx.$implicit;
-    ɵɵproperty("value", opt_r893.value);
+    var opt_r892 = ctx.$implicit;
+    ɵɵproperty("value", opt_r892.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1("", opt_r893.value, " ");
+    ɵɵtextInterpolate1("", opt_r892.value, " ");
 } }
 function SubOnboardingCreateComponent_div_5_mat_form_field_5_Template(rf, ctx) { if (rf & 1) {
-    var _r895 = ɵɵgetCurrentView();
+    var _r894 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-form-field", 23);
     ɵɵelementStart(1, "mat-label");
     ɵɵtext(2, "Autre option");
     ɵɵelementEnd();
     ɵɵelementStart(3, "input", 24);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_5_mat_form_field_5_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r895); var ctx_r894 = ɵɵnextContext(2); return ctx_r894.field.otherValue = $event; });
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_5_mat_form_field_5_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r894); var ctx_r893 = ɵɵnextContext(2); return ctx_r893.field.otherValue = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r892 = ɵɵnextContext(2);
+    var ctx_r891 = ɵɵnextContext(2);
     ɵɵadvance(3);
-    ɵɵproperty("required", ctx_r892.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(3, _c0$3))("ngModel", ctx_r892.field.otherValue);
+    ɵɵproperty("required", ctx_r891.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(3, _c0$3))("ngModel", ctx_r891.field.otherValue);
 } }
 function SubOnboardingCreateComponent_div_5_Template(rf, ctx) { if (rf & 1) {
-    var _r897 = ɵɵgetCurrentView();
+    var _r896 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 19);
     ɵɵelementStart(1, "label", 20);
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementStart(3, "mat-radio-group", 21);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_5_Template_mat_radio_group_ngModelChange_3_listener($event) { ɵɵrestoreView(_r897); var ctx_r896 = ɵɵnextContext(); return ctx_r896.field.value = $event; });
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_5_Template_mat_radio_group_ngModelChange_3_listener($event) { ɵɵrestoreView(_r896); var ctx_r895 = ɵɵnextContext(); return ctx_r895.field.value = $event; });
     ɵɵtemplate(4, SubOnboardingCreateComponent_div_5_mat_radio_button_4_Template, 2, 2, "mat-radio-button", 14);
     ɵɵelementEnd();
     ɵɵtemplate(5, SubOnboardingCreateComponent_div_5_mat_form_field_5_Template, 4, 4, "mat-form-field", 22);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r873 = ɵɵnextContext();
+    var ctx_r872 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", ctx_r873.field.label, " ");
+    ɵɵtextInterpolate1(" ", ctx_r872.field.label, " ");
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r873.field.value)("required", ctx_r873.field.isMandatory);
+    ɵɵproperty("ngModel", ctx_r872.field.value)("required", ctx_r872.field.isMandatory);
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r873.field.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r872.field.defaultValue);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", "autre" === ctx_r873.formatOther(ctx_r873.field.value));
+    ɵɵproperty("ngIf", "autre" === ctx_r872.formatOther(ctx_r872.field.value));
 } }
 function SubOnboardingCreateComponent_div_6_mat_option_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-option", 15);
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var opt_r900 = ctx.$implicit;
-    ɵɵproperty("value", opt_r900.value);
+    var opt_r899 = ctx.$implicit;
+    ɵɵproperty("value", opt_r899.value);
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", opt_r900.value, "");
+    ɵɵtextInterpolate1(" ", opt_r899.value, "");
 } }
 function SubOnboardingCreateComponent_div_6_mat_form_field_6_Template(rf, ctx) { if (rf & 1) {
-    var _r902 = ɵɵgetCurrentView();
+    var _r901 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-form-field", 23);
     ɵɵelementStart(1, "mat-label");
     ɵɵtext(2, "Autre option");
     ɵɵelementEnd();
     ɵɵelementStart(3, "input", 24);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_6_mat_form_field_6_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r902); var ctx_r901 = ɵɵnextContext(2); return ctx_r901.field.otherValue = $event; });
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_6_mat_form_field_6_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r901); var ctx_r900 = ɵɵnextContext(2); return ctx_r900.field.otherValue = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r899 = ɵɵnextContext(2);
+    var ctx_r898 = ɵɵnextContext(2);
     ɵɵadvance(3);
-    ɵɵproperty("required", ctx_r899.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(3, _c0$3))("ngModel", ctx_r899.field.otherValue);
+    ɵɵproperty("required", ctx_r898.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(3, _c0$3))("ngModel", ctx_r898.field.otherValue);
 } }
 function SubOnboardingCreateComponent_div_6_Template(rf, ctx) { if (rf & 1) {
-    var _r904 = ɵɵgetCurrentView();
+    var _r903 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 19);
     ɵɵelementStart(1, "mat-form-field", 25);
     ɵɵelementStart(2, "mat-label");
     ɵɵtext(3);
     ɵɵelementEnd();
     ɵɵelementStart(4, "mat-select", 26);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_6_Template_mat_select_ngModelChange_4_listener($event) { ɵɵrestoreView(_r904); var ctx_r903 = ɵɵnextContext(); return ctx_r903.field.value = $event; });
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_6_Template_mat_select_ngModelChange_4_listener($event) { ɵɵrestoreView(_r903); var ctx_r902 = ɵɵnextContext(); return ctx_r902.field.value = $event; });
     ɵɵtemplate(5, SubOnboardingCreateComponent_div_6_mat_option_5_Template, 2, 2, "mat-option", 14);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵtemplate(6, SubOnboardingCreateComponent_div_6_mat_form_field_6_Template, 4, 4, "mat-form-field", 22);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r874 = ɵɵnextContext();
+    var ctx_r873 = ɵɵnextContext();
     ɵɵadvance(3);
-    ɵɵtextInterpolate1(" ", ctx_r874.field.label, " ");
+    ɵɵtextInterpolate1(" ", ctx_r873.field.label, " ");
     ɵɵadvance(1);
-    ɵɵproperty("ngModel", ctx_r874.field.value)("ngModelOptions", ɵɵpureFunction0(6, _c0$3))("required", ctx_r874.field.isMandatory);
+    ɵɵproperty("ngModel", ctx_r873.field.value)("ngModelOptions", ɵɵpureFunction0(6, _c0$3))("required", ctx_r873.field.isMandatory);
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r874.field.defaultValue);
+    ɵɵproperty("ngForOf", ctx_r873.field.defaultValue);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", "autre" === ctx_r874.formatOther(ctx_r874.field.value));
+    ɵɵproperty("ngIf", "autre" === ctx_r873.formatOther(ctx_r873.field.value));
 } }
 function SubOnboardingCreateComponent_mat_form_field_7_Template(rf, ctx) { if (rf & 1) {
-    var _r906 = ɵɵgetCurrentView();
+    var _r905 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-form-field", 27);
     ɵɵelementStart(1, "mat-label");
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementStart(3, "textarea", 28);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_mat_form_field_7_Template_textarea_ngModelChange_3_listener($event) { ɵɵrestoreView(_r906); var ctx_r905 = ɵɵnextContext(); return ctx_r905.field.value = $event; });
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_mat_form_field_7_Template_textarea_ngModelChange_3_listener($event) { ɵɵrestoreView(_r905); var ctx_r904 = ɵɵnextContext(); return ctx_r904.field.value = $event; });
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r875 = ɵɵnextContext();
+    var ctx_r874 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r875.field.label);
+    ɵɵtextInterpolate(ctx_r874.field.label);
     ɵɵadvance(1);
-    ɵɵproperty("required", ctx_r875.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(4, _c0$3))("ngModel", ctx_r875.field.value);
+    ɵɵproperty("required", ctx_r874.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(4, _c0$3))("ngModel", ctx_r874.field.value);
 } }
 function SubOnboardingCreateComponent_div_8_mat_error_4_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-error");
@@ -4738,41 +4738,41 @@ function SubOnboardingCreateComponent_div_8_mat_error_4_Template(rf, ctx) { if (
     ɵɵelementEnd();
 } }
 function SubOnboardingCreateComponent_div_8_Template(rf, ctx) { if (rf & 1) {
-    var _r909 = ɵɵgetCurrentView();
+    var _r908 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 29);
     ɵɵelementStart(1, "mat-label", 30);
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementStart(3, "ngx-intl-tel-input", 31);
-    ɵɵlistener("input", function SubOnboardingCreateComponent_div_8_Template_ngx_intl_tel_input_input_3_listener() { ɵɵrestoreView(_r909); var ctx_r908 = ɵɵnextContext(); return ctx_r908.checkPhone(ctx_r908.field.value); })("ngModelChange", function SubOnboardingCreateComponent_div_8_Template_ngx_intl_tel_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r909); var ctx_r910 = ɵɵnextContext(); return ctx_r910.field.value = $event; });
+    ɵɵlistener("input", function SubOnboardingCreateComponent_div_8_Template_ngx_intl_tel_input_input_3_listener() { ɵɵrestoreView(_r908); var ctx_r907 = ɵɵnextContext(); return ctx_r907.checkPhone(ctx_r907.field.value); })("ngModelChange", function SubOnboardingCreateComponent_div_8_Template_ngx_intl_tel_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r908); var ctx_r909 = ɵɵnextContext(); return ctx_r909.field.value = $event; });
     ɵɵelementEnd();
     ɵɵtemplate(4, SubOnboardingCreateComponent_div_8_mat_error_4_Template, 2, 0, "mat-error", 32);
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r875 = ɵɵnextContext();
+    ɵɵadvance(2);
+    ɵɵtextInterpolate(ctx_r875.field.label);
+    ɵɵadvance(1);
+    ɵɵproperty("cssClass", "input-phone")("preferredCountries", ctx_r875.preferredCountries)("enableAutoCountrySelect", false)("enablePlaceholder", true)("customPlaceholder", "Phone")("selectFirstCountry", false)("selectedCountryISO", ctx_r875.flag(ctx_r875.field.value))("maxLength", 15)("inputId", ctx_r875.field.key)("phoneValidation", true)("separateDialCode", ctx_r875.separateDialCode)("numberFormat", ctx_r875.PhoneNumberFormat.National)("ngModelOptions", ɵɵpureFunction0(16, _c0$3))("ngModel", ctx_r875.field.value);
+    ɵɵadvance(1);
+    ɵɵproperty("ngIf", ctx_r875.invalideValue);
+} }
+function SubOnboardingCreateComponent_mat_form_field_9_Template(rf, ctx) { if (rf & 1) {
+    var _r911 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "mat-form-field", 33);
+    ɵɵelementStart(1, "mat-label");
+    ɵɵtext(2);
+    ɵɵelementEnd();
+    ɵɵelementStart(3, "input", 34);
+    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_mat_form_field_9_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r911); var ctx_r910 = ɵɵnextContext(); return ctx_r910.field.value = $event; });
+    ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
     var ctx_r876 = ɵɵnextContext();
     ɵɵadvance(2);
     ɵɵtextInterpolate(ctx_r876.field.label);
     ɵɵadvance(1);
-    ɵɵproperty("cssClass", "input-phone")("preferredCountries", ctx_r876.preferredCountries)("enableAutoCountrySelect", false)("enablePlaceholder", true)("customPlaceholder", "Phone")("selectFirstCountry", false)("selectedCountryISO", ctx_r876.flag(ctx_r876.field.value))("maxLength", 15)("inputId", ctx_r876.field.key)("phoneValidation", true)("separateDialCode", ctx_r876.separateDialCode)("numberFormat", ctx_r876.PhoneNumberFormat.National)("ngModelOptions", ɵɵpureFunction0(16, _c0$3))("ngModel", ctx_r876.field.value);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r876.invalideValue);
-} }
-function SubOnboardingCreateComponent_mat_form_field_9_Template(rf, ctx) { if (rf & 1) {
-    var _r912 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-form-field", 33);
-    ɵɵelementStart(1, "mat-label");
-    ɵɵtext(2);
-    ɵɵelementEnd();
-    ɵɵelementStart(3, "input", 34);
-    ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_mat_form_field_9_Template_input_ngModelChange_3_listener($event) { ɵɵrestoreView(_r912); var ctx_r911 = ɵɵnextContext(); return ctx_r911.field.value = $event; });
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r877 = ɵɵnextContext();
-    ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r877.field.label);
-    ɵɵadvance(1);
-    ɵɵproperty("type", ctx_r877.field.type)("required", ctx_r877.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(5, _c0$3))("ngModel", ctx_r877.field.value);
+    ɵɵproperty("type", ctx_r876.field.type)("required", ctx_r876.field.isMandatory)("ngModelOptions", ɵɵpureFunction0(5, _c0$3))("ngModel", ctx_r876.field.value);
 } }
 var _c3$1 = [[["", 8, "child"]]];
 var _c4 = [".child"];
@@ -4975,62 +4975,21 @@ var SubOnboardingCreateComponent = /** @class */ (function () {
             type: Output
         }] }); })();
 
-var LoadingComponent = /** @class */ (function () {
-    function LoadingComponent() {
-    }
-    LoadingComponent.prototype.ngOnInit = function () {
-    };
-    LoadingComponent.ɵfac = function LoadingComponent_Factory(t) { return new (t || LoadingComponent)(); };
-    LoadingComponent.ɵcmp = ɵɵdefineComponent({ type: LoadingComponent, selectors: [["lib-loading"]], decls: 13, vars: 0, consts: [[1, "lds-spinner"]], template: function LoadingComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵelementStart(0, "div", 0);
-            ɵɵelement(1, "div");
-            ɵɵelement(2, "div");
-            ɵɵelement(3, "div");
-            ɵɵelement(4, "div");
-            ɵɵelement(5, "div");
-            ɵɵelement(6, "div");
-            ɵɵelement(7, "div");
-            ɵɵelement(8, "div");
-            ɵɵelement(9, "div");
-            ɵɵelement(10, "div");
-            ɵɵelement(11, "div");
-            ɵɵelement(12, "div");
-            ɵɵelementEnd();
-        } }, styles: [".lds-spinner[_ngcontent-%COMP%]{color:official;display:inline-block;position:relative;width:20px;height:20px}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{transform-origin:34px 15px;-webkit-animation:1.2s linear infinite lds-spinner;animation:1.2s linear infinite lds-spinner}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:after{content:\" \";display:block;position:absolute;top:4px;left:33px;width:2px;height:6px;border-radius:20%;background:#f3a124}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(1){transform:rotate(0);-webkit-animation-delay:-1.1s;animation-delay:-1.1s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(2){transform:rotate(30deg);-webkit-animation-delay:-1s;animation-delay:-1s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(3){transform:rotate(60deg);-webkit-animation-delay:-.9s;animation-delay:-.9s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(4){transform:rotate(90deg);-webkit-animation-delay:-.8s;animation-delay:-.8s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(5){transform:rotate(120deg);-webkit-animation-delay:-.7s;animation-delay:-.7s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(6){transform:rotate(150deg);-webkit-animation-delay:-.6s;animation-delay:-.6s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(7){transform:rotate(180deg);-webkit-animation-delay:-.5s;animation-delay:-.5s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(8){transform:rotate(210deg);-webkit-animation-delay:-.4s;animation-delay:-.4s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(9){transform:rotate(240deg);-webkit-animation-delay:-.3s;animation-delay:-.3s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(10){transform:rotate(270deg);-webkit-animation-delay:-.2s;animation-delay:-.2s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(11){transform:rotate(300deg);-webkit-animation-delay:-.1s;animation-delay:-.1s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(12){transform:rotate(330deg);-webkit-animation-delay:0s;animation-delay:0s}@-webkit-keyframes lds-spinner{0%{opacity:1}100%{opacity:0}}@keyframes lds-spinner{0%{opacity:1}100%{opacity:0}}"] });
-    return LoadingComponent;
-}());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(LoadingComponent, [{
-        type: Component,
-        args: [{
-                selector: 'lib-loading',
-                templateUrl: './loading.component.html',
-                styleUrls: ['./loading.component.scss']
-            }]
-    }], function () { return []; }, null); })();
-
 function OnboardingDetailComponent_div_0_li_22_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "li", 17);
+    ɵɵelementStart(0, "li", 19);
     ɵɵelementStart(1, "a");
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r938 = ctx.$implicit;
-    var i_r939 = ctx.index;
-    ɵɵclassMap(i_r939 === 0 ? "active" : "");
-    ɵɵproperty("ngxScrollTo", "#" + category_r938.name)("id", category_r938.name + "x");
+    var category_r937 = ctx.$implicit;
+    var i_r938 = ctx.index;
+    ɵɵclassMap(i_r938 === 0 ? "active" : "");
+    ɵɵproperty("ngxScrollTo", "#" + category_r937.name)("id", category_r937.name + "x");
     ɵɵadvance(2);
-    ɵɵtextInterpolate(category_r938.name);
+    ɵɵtextInterpolate(category_r937.name);
 } }
 function OnboardingDetailComponent_div_0_section_24_div_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 27);
-    ɵɵelementStart(1, "span");
-    ɵɵtext(2, "En cours de traitement");
-    ɵɵelementEnd();
-    ɵɵelement(3, "lib-loading");
-    ɵɵelementEnd();
-} }
-function OnboardingDetailComponent_div_0_section_24_div_10_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 28);
     ɵɵelementStart(1, "span", 29);
     ɵɵtext(2);
@@ -5038,14 +4997,14 @@ function OnboardingDetailComponent_div_0_section_24_div_10_Template(rf, ctx) { i
     ɵɵelement(3, "mat-progress-bar", 30);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r940 = ɵɵnextContext().$implicit;
-    var ctx_r943 = ɵɵnextContext(2);
+    var category_r939 = ɵɵnextContext().$implicit;
+    var ctx_r941 = ɵɵnextContext(2);
     ɵɵadvance(2);
-    ɵɵtextInterpolate1("", ctx_r943.progress(category_r940 == null ? null : category_r940.fieldCompleted, category_r940 == null ? null : category_r940.fieldLength), "% Termin\u00E9");
+    ɵɵtextInterpolate1("", ctx_r941.progress(category_r939 == null ? null : category_r939.fieldCompleted, category_r939 == null ? null : category_r939.fieldLength), "% Termin\u00E9");
     ɵɵadvance(1);
-    ɵɵproperty("value", ctx_r943.progress(category_r940 == null ? null : category_r940.fieldCompleted, category_r940 == null ? null : category_r940.fieldLength));
+    ɵɵproperty("value", ctx_r941.progress(category_r939 == null ? null : category_r939.fieldCompleted, category_r939 == null ? null : category_r939.fieldLength));
 } }
-function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_10_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵelementStart(1, "p", 32);
     ɵɵtext(2);
@@ -5055,13 +5014,13 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_1_Templa
     ɵɵelementEnd();
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var forms_r946 = ɵɵnextContext().$implicit;
+    var forms_r944 = ɵɵnextContext().$implicit;
     ɵɵadvance(2);
-    ɵɵtextInterpolate(forms_r946.label);
+    ɵɵtextInterpolate(forms_r944.label);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(forms_r946.value);
+    ɵɵtextInterpolate(forms_r944.value);
 } }
-function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵelementStart(1, "p", 32);
     ɵɵtext(2);
@@ -5071,13 +5030,13 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_
     ɵɵelementEnd();
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var sub_r951 = ɵɵnextContext().$implicit;
+    var sub_r949 = ɵɵnextContext().$implicit;
     ɵɵadvance(2);
-    ɵɵtextInterpolate(sub_r951.label);
+    ɵɵtextInterpolate(sub_r949.label);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(sub_r951.value);
+    ɵɵtextInterpolate(sub_r949.value);
 } }
-function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵelementStart(1, "p", 32);
     ɵɵtext(2);
@@ -5087,13 +5046,13 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_
     ɵɵelementEnd();
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var child_r956 = ɵɵnextContext().$implicit;
+    var child_r954 = ɵɵnextContext().$implicit;
     ɵɵadvance(2);
-    ɵɵtextInterpolate(child_r956.label);
+    ɵɵtextInterpolate(child_r954.label);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(child_r956.value);
+    ɵɵtextInterpolate(child_r954.value);
 } }
-function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 31);
     ɵɵelementStart(1, "p", 32);
     ɵɵtext(2);
@@ -5103,138 +5062,135 @@ function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var c2_r961 = ctx.$implicit;
+    var c2_r959 = ctx.$implicit;
     ɵɵadvance(2);
-    ɵɵtextInterpolate(c2_r961.label);
+    ɵɵtextInterpolate(c2_r959.label);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(c2_r961.value);
+    ɵɵtextInterpolate(c2_r959.value);
 } }
-function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵelementStart(1, "h3");
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵtemplate(3, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_Template, 5, 2, "div", 26);
+    ɵɵtemplate(3, OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_Template, 5, 2, "div", 27);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var child_r956 = ɵɵnextContext().$implicit;
+    var child_r954 = ɵɵnextContext().$implicit;
     ɵɵadvance(2);
-    ɵɵtextInterpolate(child_r956.label);
+    ɵɵtextInterpolate(child_r954.label);
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", child_r956.forms);
+    ɵɵproperty("ngForOf", child_r954.forms);
 } }
-function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 31);
-    ɵɵtemplate(1, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_Template, 5, 2, "ng-container", 15);
-    ɵɵtemplate(2, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_Template, 4, 2, "ng-container", 15);
+    ɵɵtemplate(1, OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_Template, 5, 2, "ng-container", 17);
+    ɵɵtemplate(2, OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_Template, 4, 2, "ng-container", 17);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var child_r956 = ctx.$implicit;
+    var child_r954 = ctx.$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", !child_r956.forms);
+    ɵɵproperty("ngIf", !child_r954.forms);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", child_r956.forms);
+    ɵɵproperty("ngIf", child_r954.forms);
 } }
-function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵelementStart(1, "h3");
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵtemplate(3, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_div_3_Template, 3, 2, "div", 26);
+    ɵɵtemplate(3, OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_ng_container_2_div_3_Template, 3, 2, "div", 27);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var sub_r951 = ɵɵnextContext().$implicit;
+    var sub_r949 = ɵɵnextContext().$implicit;
     ɵɵadvance(2);
-    ɵɵtextInterpolate(sub_r951.label);
+    ɵɵtextInterpolate(sub_r949.label);
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", sub_r951.forms);
+    ɵɵproperty("ngForOf", sub_r949.forms);
 } }
-function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 31);
-    ɵɵtemplate(1, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_1_Template, 5, 2, "ng-container", 15);
-    ɵɵtemplate(2, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_ng_container_2_Template, 4, 2, "ng-container", 15);
+    ɵɵtemplate(1, OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_ng_container_1_Template, 5, 2, "ng-container", 17);
+    ɵɵtemplate(2, OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_ng_container_2_Template, 4, 2, "ng-container", 17);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var sub_r951 = ctx.$implicit;
+    var sub_r949 = ctx.$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", !sub_r951.forms);
+    ɵɵproperty("ngIf", !sub_r949.forms);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", sub_r951.forms);
+    ɵɵproperty("ngIf", sub_r949.forms);
 } }
-function OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
     ɵɵelementStart(1, "h3");
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵtemplate(3, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_div_3_Template, 3, 2, "div", 26);
+    ɵɵtemplate(3, OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_div_3_Template, 3, 2, "div", 27);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var forms_r946 = ɵɵnextContext().$implicit;
+    var forms_r944 = ɵɵnextContext().$implicit;
     ɵɵadvance(2);
-    ɵɵtextInterpolate(forms_r946.label);
+    ɵɵtextInterpolate(forms_r944.label);
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", forms_r946.forms);
+    ɵɵproperty("ngForOf", forms_r944.forms);
 } }
-function OnboardingDetailComponent_div_0_section_24_div_11_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_section_24_div_10_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 31);
-    ɵɵtemplate(1, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_1_Template, 5, 2, "ng-container", 15);
-    ɵɵtemplate(2, OnboardingDetailComponent_div_0_section_24_div_11_ng_container_2_Template, 4, 2, "ng-container", 15);
+    ɵɵtemplate(1, OnboardingDetailComponent_div_0_section_24_div_10_ng_container_1_Template, 5, 2, "ng-container", 17);
+    ɵɵtemplate(2, OnboardingDetailComponent_div_0_section_24_div_10_ng_container_2_Template, 4, 2, "ng-container", 17);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var forms_r946 = ctx.$implicit;
+    var forms_r944 = ctx.$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", !forms_r946.forms);
+    ɵɵproperty("ngIf", !forms_r944.forms);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", forms_r946.forms);
+    ɵɵproperty("ngIf", forms_r944.forms);
 } }
 function OnboardingDetailComponent_div_0_section_24_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "section", 18);
-    ɵɵelementStart(1, "div", 19);
-    ɵɵelementStart(2, "div", 20);
-    ɵɵelementStart(3, "div", 21);
+    ɵɵelementStart(0, "section", 20);
+    ɵɵelementStart(1, "div", 21);
+    ɵɵelementStart(2, "div", 22);
+    ɵɵelementStart(3, "div", 23);
     ɵɵelementStart(4, "h2");
     ɵɵtext(5);
     ɵɵelementEnd();
-    ɵɵelementStart(6, "p", 22);
+    ɵɵelementStart(6, "p", 24);
     ɵɵtext(7);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(8, "div", 23);
-    ɵɵtemplate(9, OnboardingDetailComponent_div_0_section_24_div_9_Template, 4, 0, "div", 24);
-    ɵɵtemplate(10, OnboardingDetailComponent_div_0_section_24_div_10_Template, 4, 2, "div", 25);
+    ɵɵelementStart(8, "div", 25);
+    ɵɵtemplate(9, OnboardingDetailComponent_div_0_section_24_div_9_Template, 4, 2, "div", 26);
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵtemplate(11, OnboardingDetailComponent_div_0_section_24_div_11_Template, 3, 2, "div", 26);
+    ɵɵtemplate(10, OnboardingDetailComponent_div_0_section_24_div_10_Template, 3, 2, "div", 27);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r940 = ctx.$implicit;
-    var ctx_r935 = ɵɵnextContext(2);
-    ɵɵproperty("id", category_r940.name);
+    var category_r939 = ctx.$implicit;
+    var ctx_r934 = ɵɵnextContext(2);
+    ɵɵproperty("id", category_r939.name);
     ɵɵadvance(5);
-    ɵɵtextInterpolate(category_r940.name);
+    ɵɵtextInterpolate(category_r939.name);
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r935.catNameStart(category_r940.name) ? "l'" + category_r940.name : category_r940.name, " ");
+    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r934.catNameStart(category_r939.name) ? "l'" + category_r939.name : category_r939.name, " ");
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", (category_r940 == null ? null : category_r940.fieldCompleted) === (category_r940 == null ? null : category_r940.fieldLength));
+    ɵɵproperty("ngIf", (category_r939 == null ? null : category_r939.fieldCompleted) < (category_r939 == null ? null : category_r939.fieldLength));
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", (category_r940 == null ? null : category_r940.fieldCompleted) < (category_r940 == null ? null : category_r940.fieldLength));
-    ɵɵadvance(1);
-    ɵɵproperty("ngForOf", category_r940.forms);
+    ɵɵproperty("ngForOf", category_r939.forms);
 } }
-function OnboardingDetailComponent_div_0_ng_container_30_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r968 = ɵɵgetCurrentView();
+function OnboardingDetailComponent_div_0_ng_container_32_div_1_Template(rf, ctx) { if (rf & 1) {
+    var _r966 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 34);
     ɵɵelementStart(1, "p", 35);
     ɵɵtext(2);
     ɵɵpipe(3, "date");
     ɵɵelementEnd();
     ɵɵelementStart(4, "div", 36);
-    ɵɵelementStart(5, "h2");
+    ɵɵelementStart(5, "h3");
     ɵɵtext(6);
     ɵɵelementEnd();
     ɵɵelementStart(7, "button", 37);
-    ɵɵlistener("click", function OnboardingDetailComponent_div_0_ng_container_30_div_1_Template_button_click_7_listener() { ɵɵrestoreView(_r968); var ticket_r966 = ctx.$implicit; var ctx_r967 = ɵɵnextContext(3); return ctx_r967.onViewTicket(ticket_r966.CaseNumber); });
+    ɵɵlistener("click", function OnboardingDetailComponent_div_0_ng_container_32_div_1_Template_button_click_7_listener() { ɵɵrestoreView(_r966); var ticket_r964 = ctx.$implicit; var ctx_r965 = ɵɵnextContext(3); return ctx_r965.onViewTicket(ticket_r964.CaseNumber); });
     ɵɵtext(8);
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -5243,26 +5199,26 @@ function OnboardingDetailComponent_div_0_ng_container_30_div_1_Template(rf, ctx)
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ticket_r966 = ctx.$implicit;
+    var ticket_r964 = ctx.$implicit;
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ɵɵpipeBind2(3, 4, ticket_r966.CreatedDate, "dd/MM/yy"));
+    ɵɵtextInterpolate(ɵɵpipeBind2(3, 4, ticket_r964.CreatedDate, "dd/MM/yy"));
     ɵɵadvance(4);
-    ɵɵtextInterpolate(ticket_r966.Subject);
+    ɵɵtextInterpolate(ticket_r964.Subject);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ticket_r966.Status);
+    ɵɵtextInterpolate(ticket_r964.Status);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ticket_r966.Description);
+    ɵɵtextInterpolate(ticket_r964.Description);
 } }
-function OnboardingDetailComponent_div_0_ng_container_30_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_ng_container_32_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, OnboardingDetailComponent_div_0_ng_container_30_div_1_Template, 11, 7, "div", 33);
+    ɵɵtemplate(1, OnboardingDetailComponent_div_0_ng_container_32_div_1_Template, 11, 7, "div", 33);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
-    var ctx_r936 = ɵɵnextContext(2);
+    var ctx_r935 = ɵɵnextContext(2);
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r936.detailView.tickets);
+    ɵɵproperty("ngForOf", ctx_r935.detailView.tickets);
 } }
-function OnboardingDetailComponent_div_0_div_31_Template(rf, ctx) { if (rf & 1) {
+function OnboardingDetailComponent_div_0_div_33_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 34);
     ɵɵelementStart(1, "p", 38);
     ɵɵtext(2, "\"Aucun tickets\"");
@@ -5270,14 +5226,14 @@ function OnboardingDetailComponent_div_0_div_31_Template(rf, ctx) { if (rf & 1) 
     ɵɵelementEnd();
 } }
 function OnboardingDetailComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    var _r970 = ɵɵgetCurrentView();
+    var _r968 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 1);
     ɵɵelementStart(1, "h1", 2);
     ɵɵelementStart(2, "p");
     ɵɵtext(3);
     ɵɵelementEnd();
     ɵɵelementStart(4, "mat-icon", 3);
-    ɵɵlistener("click", function OnboardingDetailComponent_div_0_Template_mat_icon_click_4_listener() { ɵɵrestoreView(_r970); var ctx_r969 = ɵɵnextContext(); return ctx_r969.onEdit(); });
+    ɵɵlistener("click", function OnboardingDetailComponent_div_0_Template_mat_icon_click_4_listener() { ɵɵrestoreView(_r968); var ctx_r967 = ɵɵnextContext(); return ctx_r967.onEdit(); });
     ɵɵtext(5, "edit");
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -5307,43 +5263,46 @@ function OnboardingDetailComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵtemplate(22, OnboardingDetailComponent_div_0_li_22_Template, 3, 5, "li", 10);
     ɵɵelementEnd();
     ɵɵelementStart(23, "div", 11);
-    ɵɵlistener("scroll", function OnboardingDetailComponent_div_0_Template_div_scroll_23_listener($event) { ɵɵrestoreView(_r970); var ctx_r971 = ɵɵnextContext(); return ctx_r971.onScroll($event); });
-    ɵɵtemplate(24, OnboardingDetailComponent_div_0_section_24_Template, 12, 6, "section", 12);
+    ɵɵlistener("scroll", function OnboardingDetailComponent_div_0_Template_div_scroll_23_listener($event) { ɵɵrestoreView(_r968); var ctx_r969 = ɵɵnextContext(); return ctx_r969.onScroll($event); });
+    ɵɵtemplate(24, OnboardingDetailComponent_div_0_section_24_Template, 11, 5, "section", 12);
+    ɵɵelementStart(25, "section", 13);
+    ɵɵelement(26, "div", 14);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(25, "div", 13);
-    ɵɵelementStart(26, "h2");
-    ɵɵtext(27, "Tickets li\u00E9s \u00E0 votre demande");
     ɵɵelementEnd();
-    ɵɵelementStart(28, "p", 14);
-    ɵɵtext(29, "Vous retrouverez ici tous les tickets cr\u00E9\u00E9s lors de la cr\u00E9ation de votre fiche d\u2019int\u00E9gration.");
+    ɵɵelementStart(27, "div", 15);
+    ɵɵelementStart(28, "h2");
+    ɵɵtext(29, "Tickets li\u00E9s \u00E0 votre demande");
     ɵɵelementEnd();
-    ɵɵtemplate(30, OnboardingDetailComponent_div_0_ng_container_30_Template, 2, 1, "ng-container", 15);
-    ɵɵtemplate(31, OnboardingDetailComponent_div_0_div_31_Template, 3, 0, "div", 16);
+    ɵɵelementStart(30, "p", 16);
+    ɵɵtext(31, "Vous retrouverez ici tous les tickets cr\u00E9\u00E9s lors de la cr\u00E9ation de votre fiche d\u2019int\u00E9gration.");
+    ɵɵelementEnd();
+    ɵɵtemplate(32, OnboardingDetailComponent_div_0_ng_container_32_Template, 2, 1, "ng-container", 17);
+    ɵɵtemplate(33, OnboardingDetailComponent_div_0_div_33_Template, 3, 0, "div", 18);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r933 = ɵɵnextContext();
+    var ctx_r932 = ɵɵnextContext();
     ɵɵadvance(3);
-    ɵɵtextInterpolate1("Int\u00E9gration profil ", ctx_r933.detailView == null ? null : ctx_r933.detailView.Name, "");
+    ɵɵtextInterpolate1("Int\u00E9gration profil ", ctx_r932.detailView == null ? null : ctx_r932.detailView.Name, "");
     ɵɵadvance(8);
-    ɵɵtextInterpolate2("", ctx_r933.detailView.user.FirstName, " ", ctx_r933.detailView.user.LastName, "");
+    ɵɵtextInterpolate2("", ctx_r932.detailView.user.FirstName, " ", ctx_r932.detailView.user.LastName, "");
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ɵɵpipeBind2(14, 10, ctx_r933.detailView.createdAt, "dd/MM/yy"));
+    ɵɵtextInterpolate(ɵɵpipeBind2(14, 10, ctx_r932.detailView.createdAt, "dd/MM/yy"));
     ɵɵadvance(4);
-    ɵɵtextInterpolate(ctx_r933.detailView == null ? null : ctx_r933.detailView.user == null ? null : ctx_r933.detailView.user.Phone == null ? null : ctx_r933.detailView.user.Phone.internationalNumber);
+    ɵɵtextInterpolate(ctx_r932.detailView == null ? null : ctx_r932.detailView.user == null ? null : ctx_r932.detailView.user.Phone == null ? null : ctx_r932.detailView.user.Phone.internationalNumber);
     ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r933.detailView.user.Email);
+    ɵɵtextInterpolate(ctx_r932.detailView.user.Email);
     ɵɵadvance(3);
-    ɵɵproperty("ngForOf", ctx_r933.detailView.categories);
+    ɵɵproperty("ngForOf", ctx_r932.detailView.categories);
     ɵɵadvance(2);
-    ɵɵproperty("ngForOf", ctx_r933.detailView.categories);
-    ɵɵadvance(6);
-    ɵɵproperty("ngIf", ctx_r933.detailView.tickets && ctx_r933.detailView.tickets.length > 0);
+    ɵɵproperty("ngForOf", ctx_r932.detailView.categories);
+    ɵɵadvance(8);
+    ɵɵproperty("ngIf", ctx_r932.detailView.tickets && ctx_r932.detailView.tickets.length > 0);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", !ctx_r933.detailView.tickets);
+    ɵɵproperty("ngIf", !ctx_r932.detailView.tickets);
 } }
 var OnboardingDetailComponent = /** @class */ (function () {
     function OnboardingDetailComponent(router, service) {
@@ -5388,11 +5347,11 @@ var OnboardingDetailComponent = /** @class */ (function () {
     OnboardingDetailComponent.ɵfac = function OnboardingDetailComponent_Factory(t) { return new (t || OnboardingDetailComponent)(ɵɵdirectiveInject(Router), ɵɵdirectiveInject(OnboardingService)); };
     OnboardingDetailComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingDetailComponent, selectors: [["lib-onboarding-detail"]], hostBindings: function OnboardingDetailComponent_HostBindings(rf, ctx) { if (rf & 1) {
             ɵɵlistener("scroll", function OnboardingDetailComponent_scroll_HostBindingHandler($event) { return ctx.onScroll($event); });
-        } }, inputs: { detailView: "detailView" }, outputs: { onShowMode: "onShowMode" }, decls: 1, vars: 1, consts: [["class", "onboarding-detail", 4, "ngIf"], [1, "onboarding-detail"], [1, "title"], [2, "margin-left", "20px", "cursor", "pointer", 3, "click"], [1, "view-content"], [1, "left-content"], [1, "user-info"], [1, "user-name"], [1, "user-contact"], ["id", "fields", 1, "fields"], ["class", "menu-item", 3, "ngxScrollTo", "class", "id", 4, "ngFor", "ngForOf"], [1, "category-view-container", 3, "scroll"], ["class", "category-item", 3, "id", 4, "ngFor", "ngForOf"], [1, "right-content"], [1, "subtitle"], [4, "ngIf"], ["class", "box-ticket-info", 4, "ngIf"], [1, "menu-item", 3, "ngxScrollTo", "id"], [1, "category-item", 3, "id"], [1, "category-item-inner"], [1, "category-header"], [1, "title-content"], [1, "category-description"], [1, "progress-status"], ["class", "status in-progress", 4, "ngIf"], ["class", "status progress-bar", 4, "ngIf"], ["class", "category-item-forms", 4, "ngFor", "ngForOf"], [1, "status", "in-progress"], [1, "status", "progress-bar"], [2, "width", "300px"], ["mode", "determinate", 3, "value"], [1, "category-item-forms"], [1, "label"], ["class", "box-ticket-info", 4, "ngFor", "ngForOf"], [1, "box-ticket-info"], [1, "date"], [1, "box-header"], ["mat-button", "", 1, "progress", 3, "click"], [1, "description"]], template: function OnboardingDetailComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵtemplate(0, OnboardingDetailComponent_div_0_Template, 32, 13, "div", 0);
+        } }, inputs: { detailView: "detailView" }, outputs: { onShowMode: "onShowMode" }, decls: 1, vars: 1, consts: [["class", "onboarding-detail", 4, "ngIf"], [1, "onboarding-detail"], [1, "title"], [2, "margin-left", "20px", "cursor", "pointer", 3, "click"], [1, "view-content"], [1, "left-content"], [1, "user-info"], [1, "user-name"], [1, "user-contact"], ["id", "fields", 1, "fields"], ["class", "menu-item", 3, "ngxScrollTo", "class", "id", 4, "ngFor", "ngForOf"], [1, "category-view-container", 3, "scroll"], ["class", "category-item", 3, "id", 4, "ngFor", "ngForOf"], [2, "background-color", "transparent"], [2, "height", "450px"], [1, "right-content"], [1, "subtitle"], [4, "ngIf"], ["class", "box-ticket-info", 4, "ngIf"], [1, "menu-item", 3, "ngxScrollTo", "id"], [1, "category-item", 3, "id"], [1, "category-item-inner"], [1, "category-header"], [1, "title-content"], [1, "category-description"], [1, "progress-status"], ["class", "status progress-bar", 4, "ngIf"], ["class", "category-item-forms", 4, "ngFor", "ngForOf"], [1, "status", "progress-bar"], [2, "width", "300px"], ["mode", "determinate", 3, "value"], [1, "category-item-forms"], [1, "label"], ["class", "box-ticket-info", 4, "ngFor", "ngForOf"], [1, "box-ticket-info"], [1, "date"], [1, "box-header"], ["mat-button", "", 1, "progress", 3, "click"], [1, "description"]], template: function OnboardingDetailComponent_Template(rf, ctx) { if (rf & 1) {
+            ɵɵtemplate(0, OnboardingDetailComponent_div_0_Template, 34, 13, "div", 0);
         } if (rf & 2) {
             ɵɵproperty("ngIf", ctx.detailView);
-        } }, directives: [NgIf, MatIcon, NgForOf, ScrollToDirective, LoadingComponent, MatProgressBar, MatButton], pipes: [DatePipe], styles: [".onboarding-detail[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%]{margin:0;font-family:Nexa;font-style:normal;font-weight:700;line-height:110%;display:flex;align-items:center;color:#242731}.onboarding-detail[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin:0}.onboarding-detail[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{font-size:24px}.onboarding-detail[_ngcontent-%COMP%]   h1.title[_ngcontent-%COMP%]{margin-bottom:33px;margin-top:10px}.onboarding-detail[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{font-size:20px}.onboarding-detail[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:18px}.onboarding-detail[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%]{font-size:16px}.onboarding-detail[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%]{font-size:14px}.onboarding-detail[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%]{font-size:12px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]{display:flex;flex-direction:row;justify-content:space-between;background-color:#f4f7f9}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]{width:70%;border-radius:6px;margin-right:2%}@media (max-width:1200px){.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]{width:50%}}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   .user-info[_ngcontent-%COMP%]{display:flex;flex-direction:row;justify-content:space-between;height:90px;background:#fff;border-radius:6px;padding:10px;align-items:center}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   .user-info[_ngcontent-%COMP%]   .user-name[_ngcontent-%COMP%]{text-align:left;line-height:30px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   .user-info[_ngcontent-%COMP%]   .user-contact[_ngcontent-%COMP%]{line-height:30px;text-align:right}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   section[_ngcontent-%COMP%]{background:#fff;border-radius:8px;padding:15px;margin-bottom:30px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   section[_ngcontent-%COMP%]   .category-item-inner[_ngcontent-%COMP%]   .category-description[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:250;font-size:14px;line-height:16px;color:#575f6e;margin-top:5px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   section[_ngcontent-%COMP%]   .category-item-inner[_ngcontent-%COMP%]   .category-item-forms[_ngcontent-%COMP%]{margin-top:20px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   section[_ngcontent-%COMP%]   .category-item-inner[_ngcontent-%COMP%]   .category-item-forms[_ngcontent-%COMP%]   .label[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:250;font-size:12px;line-height:16px;display:flex;align-items:center;color:#575f6e}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]{background-color:#fff;border-radius:6px;padding:15px;overflow:auto;max-height:85.5vh;margin-right:20px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{color:#575f6e}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]{padding-bottom:20px;padding-top:20px;border-bottom:2px solid #e2e4e5}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]   .box-header[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]   .box-header[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{min-width:auto;height:36px;border-radius:4px;font-family:Nexa;font-weight:500;font-size:16px;display:flex;align-items:center;text-transform:capitalize;color:#fff}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]   .box-header[_ngcontent-%COMP%]   .finished[_ngcontent-%COMP%]{background:#6fe8d7}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]   .box-header[_ngcontent-%COMP%]   .progress[_ngcontent-%COMP%]{background:#f3a124}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .category-view-container[_ngcontent-%COMP%]{display:flex;flex-direction:column;max-height:70vh;overflow:auto}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .category-view-container[_ngcontent-%COMP%]::-webkit-scrollbar, .onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]::-webkit-scrollbar{display:none}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .category-view-container[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]{-ms-overflow-style:none;scrollbar-width:none}.fields[_ngcontent-%COMP%]{height:84%}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{list-style:none;display:flex;margin:33px 0;padding:0}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{margin-right:20px;padding-bottom:5px;border-bottom:3px solid transparent}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26;opacity:.5}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item.active[_ngcontent-%COMP%], .fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item[_ngcontent-%COMP%]:hover{cursor:pointer;border-bottom:3px solid #3c4252}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%], .fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item[_ngcontent-%COMP%]:hover   a[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;opacity:1;text-decoration:none!important}.progress-status[_ngcontent-%COMP%]   .status[_ngcontent-%COMP%]{display:flex;align-items:center}.progress-status[_ngcontent-%COMP%]   .ongoing[_ngcontent-%COMP%]{color:#6fe8d7}.progress-status[_ngcontent-%COMP%]   .in-progress[_ngcontent-%COMP%]{padding-right:25px;color:#f3a124;font-weight:500;font-size:16px}  .progress-status{font-size:16px}  .progress-status .mat-progress-bar{display:block;height:20px;overflow:hidden;border-radius:50px;position:relative;transition:opacity 250ms linear;width:100%}  .progress-status .mat-progress-bar-fill::after{background-color:#6fe8d7}  .progress-status .mat-progress-bar-buffer{background-color:#ecf3f7}.category-header[_ngcontent-%COMP%]{display:flex;align-items:center;justify-content:space-between}"] });
+        } }, directives: [NgIf, MatIcon, NgForOf, ScrollToDirective, MatProgressBar, MatButton], pipes: [DatePipe], styles: [".onboarding-detail[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%]{margin:0;font-family:Nexa;font-style:normal;font-weight:700;line-height:110%;display:flex;align-items:center;color:#242731}.onboarding-detail[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin:0}.onboarding-detail[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{font-size:24px}.onboarding-detail[_ngcontent-%COMP%]   h1.title[_ngcontent-%COMP%]{margin-bottom:33px;margin-top:10px}.onboarding-detail[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{font-size:20px}.onboarding-detail[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:18px}.onboarding-detail[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%]{font-size:16px}.onboarding-detail[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%]{font-size:14px}.onboarding-detail[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%]{font-size:12px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]{display:flex;flex-direction:row;justify-content:space-between;background-color:#f4f7f9}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]{width:70%;border-radius:6px;margin-right:2%}@media (max-width:1200px){.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]{width:50%}}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   .user-info[_ngcontent-%COMP%]{display:flex;flex-direction:row;justify-content:space-between;height:90px;background:#fff;border-radius:6px;padding:10px;align-items:center}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   .user-info[_ngcontent-%COMP%]   .user-name[_ngcontent-%COMP%]{text-align:left;line-height:30px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   .user-info[_ngcontent-%COMP%]   .user-contact[_ngcontent-%COMP%]{line-height:30px;text-align:right}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   section[_ngcontent-%COMP%]{background:#fff;border-radius:8px;padding:15px;margin-bottom:30px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   section[_ngcontent-%COMP%]   .category-item-inner[_ngcontent-%COMP%]   .category-description[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:250;font-size:14px;line-height:16px;color:#575f6e;margin-top:5px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   section[_ngcontent-%COMP%]   .category-item-inner[_ngcontent-%COMP%]   .category-item-forms[_ngcontent-%COMP%]{margin-top:20px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .left-content[_ngcontent-%COMP%]   section[_ngcontent-%COMP%]   .category-item-inner[_ngcontent-%COMP%]   .category-item-forms[_ngcontent-%COMP%]   .label[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:250;font-size:12px;line-height:16px;display:flex;align-items:center;color:#575f6e}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]{background-color:#fff;border-radius:6px;padding:15px;overflow:auto;max-height:85.5vh;margin-right:20px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{color:#575f6e}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]{padding-bottom:20px;padding-top:20px;border-bottom:2px solid #e2e4e5}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]   .box-header[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]   .box-header[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{min-width:auto;height:36px;border-radius:4px;font-family:Nexa;font-weight:500;font-size:16px;display:flex;align-items:center;text-transform:capitalize;color:#fff}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]   .box-header[_ngcontent-%COMP%]   .finished[_ngcontent-%COMP%]{background:#6fe8d7}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]   .box-ticket-info[_ngcontent-%COMP%]   .box-header[_ngcontent-%COMP%]   .progress[_ngcontent-%COMP%]{background:#f3a124}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .category-view-container[_ngcontent-%COMP%]{display:flex;flex-direction:column;max-height:70vh;overflow:auto}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .category-view-container[_ngcontent-%COMP%]::-webkit-scrollbar, .onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]::-webkit-scrollbar{display:none}.onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .category-view-container[_ngcontent-%COMP%], .onboarding-detail[_ngcontent-%COMP%]   .view-content[_ngcontent-%COMP%]   .right-content[_ngcontent-%COMP%]{-ms-overflow-style:none;scrollbar-width:none}.fields[_ngcontent-%COMP%]{height:84%}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{list-style:none;display:flex;margin:33px 0;padding:0}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{margin-right:20px;padding-bottom:5px;border-bottom:3px solid transparent}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26;opacity:.5;overflow:hidden;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item.active[_ngcontent-%COMP%], .fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item[_ngcontent-%COMP%]:hover{cursor:pointer;border-bottom:3px solid #3c4252}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%], .fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item[_ngcontent-%COMP%]:hover   a[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;opacity:1;text-decoration:none!important}.progress-status[_ngcontent-%COMP%]   .status[_ngcontent-%COMP%]{display:flex;align-items:center}.progress-status[_ngcontent-%COMP%]   .ongoing[_ngcontent-%COMP%]{color:#6fe8d7}.progress-status[_ngcontent-%COMP%]   .in-progress[_ngcontent-%COMP%]{padding-right:25px;color:#f3a124;font-weight:500;font-size:16px}  .progress-status{font-size:16px}  .progress-status .mat-progress-bar{display:block;height:20px;overflow:hidden;border-radius:50px;position:relative;transition:opacity 250ms linear;width:100%}  .progress-status .mat-progress-bar-fill::after{background-color:#6fe8d7}  .progress-status .mat-progress-bar-buffer{background-color:#ecf3f7}.category-header[_ngcontent-%COMP%]{display:flex;align-items:center;justify-content:space-between}"] });
     return OnboardingDetailComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(OnboardingDetailComponent, [{
@@ -5412,155 +5371,155 @@ var OnboardingDetailComponent = /** @class */ (function () {
         }] }); })();
 
 function OnboardingCreateComponent_form_2_li_11_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "li", 15);
+    ɵɵelementStart(0, "li", 18);
     ɵɵelementStart(1, "a");
     ɵɵtext(2);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r829 = ctx.$implicit;
-    ɵɵproperty("ngxScrollTo", "#" + category_r829.name)("id", category_r829.name + "x");
+    var category_r828 = ctx.$implicit;
+    ɵɵproperty("ngxScrollTo", "#" + category_r828.name)("id", category_r828.name + "x");
     ɵɵadvance(2);
-    ɵɵtextInterpolate(category_r829.name);
+    ɵɵtextInterpolate(category_r828.name);
 } }
 function OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r848 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 25);
-    ɵɵelementStart(1, "div", 26);
-    ɵɵelementStart(2, "div", 27);
-    ɵɵelementStart(3, "lib-sub-create-onboarding", 34);
-    ɵɵlistener("onCheckValue", function OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { ɵɵrestoreView(_r848); var ctx_r847 = ɵɵnextContext(10); return ctx_r847.onCheckValue($event); });
-    ɵɵelement(4, "div", 29);
+    var _r847 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 28);
+    ɵɵelementStart(1, "div", 29);
+    ɵɵelementStart(2, "div", 30);
+    ɵɵelementStart(3, "lib-sub-create-onboarding", 37);
+    ɵɵlistener("onCheckValue", function OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { ɵɵrestoreView(_r847); var ctx_r846 = ɵɵnextContext(10); return ctx_r846.onCheckValue($event); });
+    ɵɵelement(4, "div", 32);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r849 = ɵɵnextContext();
-    var c2_r844 = ctx_r849.$implicit;
-    var l_r845 = ctx_r849.index;
-    var ctx_r850 = ɵɵnextContext(3);
-    var child_r839 = ctx_r850.$implicit;
-    var k_r840 = ctx_r850.index;
+    var ctx_r848 = ɵɵnextContext();
+    var c2_r843 = ctx_r848.$implicit;
+    var l_r844 = ctx_r848.index;
+    var ctx_r849 = ɵɵnextContext(3);
+    var child_r838 = ctx_r849.$implicit;
+    var k_r839 = ctx_r849.index;
     ɵɵadvance(3);
-    ɵɵproperty("field", c2_r844)("length", child_r839 == null ? null : child_r839.forms == null ? null : child_r839.forms.length)("i", k_r840)("j", l_r845);
+    ɵɵproperty("field", c2_r843)("length", child_r838 == null ? null : child_r838.forms == null ? null : child_r838.forms.length)("i", k_r839)("j", l_r844);
 } }
 function OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 33);
-    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template, 5, 4, "div", 24);
+    ɵɵelementStart(0, "div", 36);
+    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_div_1_Template, 5, 4, "div", 27);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var c2_r844 = ctx.$implicit;
-    var l_r845 = ctx.index;
-    var child_r839 = ɵɵnextContext(3).$implicit;
-    var ctx_r843 = ɵɵnextContext(6);
-    ɵɵstyleProp("width", c2_r844.forms ? "100%" : ctx_r843.fieldWidth(c2_r844.type, child_r839.forms.length, l_r845));
-    ɵɵproperty("id", c2_r844.key);
+    var c2_r843 = ctx.$implicit;
+    var l_r844 = ctx.index;
+    var child_r838 = ɵɵnextContext(3).$implicit;
+    var ctx_r842 = ɵɵnextContext(6);
+    ɵɵstyleProp("width", c2_r843.forms ? "100%" : ctx_r842.fieldWidth(c2_r843.type, child_r838.forms.length, l_r844));
+    ɵɵproperty("id", c2_r843.key);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", c2_r844.expandOnboarding && ctx_r843.onCheckConditionLocationValue(c2_r844.isConditional, c2_r844.conditionLocation, c2_r844.conditionValue));
+    ɵɵproperty("ngIf", c2_r843.expandOnboarding && ctx_r842.onCheckConditionLocationValue(c2_r843.isConditional, c2_r843.conditionLocation, c2_r843.conditionValue));
 } }
 function OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_div_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 31);
-    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_Template, 2, 4, "div", 32);
+    ɵɵelementStart(0, "div", 34);
+    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_div_5_div_1_Template, 2, 4, "div", 35);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var child_r839 = ɵɵnextContext(2).$implicit;
+    var child_r838 = ɵɵnextContext(2).$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", child_r839.forms);
+    ɵɵproperty("ngForOf", child_r838.forms);
 } }
 function OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r854 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 25);
-    ɵɵelementStart(1, "div", 26);
-    ɵɵelementStart(2, "div", 27);
-    ɵɵelementStart(3, "lib-sub-create-onboarding", 34);
-    ɵɵlistener("onCheckValue", function OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { ɵɵrestoreView(_r854); var ctx_r853 = ɵɵnextContext(7); return ctx_r853.onCheckValue($event); });
-    ɵɵelementStart(4, "div", 29);
-    ɵɵtemplate(5, OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_div_5_Template, 2, 1, "div", 30);
+    var _r853 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "div", 28);
+    ɵɵelementStart(1, "div", 29);
+    ɵɵelementStart(2, "div", 30);
+    ɵɵelementStart(3, "lib-sub-create-onboarding", 37);
+    ɵɵlistener("onCheckValue", function OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_Template_lib_sub_create_onboarding_onCheckValue_3_listener($event) { ɵɵrestoreView(_r853); var ctx_r852 = ɵɵnextContext(7); return ctx_r852.onCheckValue($event); });
+    ɵɵelementStart(4, "div", 32);
+    ɵɵtemplate(5, OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_div_5_Template, 2, 1, "div", 33);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r855 = ɵɵnextContext();
-    var child_r839 = ctx_r855.$implicit;
-    var k_r840 = ctx_r855.index;
-    var ctx_r856 = ɵɵnextContext(3);
-    var field_r834 = ctx_r856.$implicit;
-    var j_r835 = ctx_r856.index;
+    var ctx_r854 = ɵɵnextContext();
+    var child_r838 = ctx_r854.$implicit;
+    var k_r839 = ctx_r854.index;
+    var ctx_r855 = ɵɵnextContext(3);
+    var field_r833 = ctx_r855.$implicit;
+    var j_r834 = ctx_r855.index;
     ɵɵadvance(3);
-    ɵɵproperty("field", child_r839)("length", field_r834 == null ? null : field_r834.forms == null ? null : field_r834.forms.length)("i", j_r835)("j", k_r840);
+    ɵɵproperty("field", child_r838)("length", field_r833 == null ? null : field_r833.forms == null ? null : field_r833.forms.length)("i", j_r834)("j", k_r839);
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", child_r839.forms && child_r839.value);
+    ɵɵproperty("ngIf", child_r838.forms && child_r838.value);
 } }
 function OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 33);
-    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_Template, 6, 5, "div", 24);
+    ɵɵelementStart(0, "div", 36);
+    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_div_1_Template, 6, 5, "div", 27);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var child_r839 = ctx.$implicit;
-    var k_r840 = ctx.index;
-    var field_r834 = ɵɵnextContext(3).$implicit;
-    var ctx_r838 = ɵɵnextContext(3);
-    ɵɵstyleProp("width", child_r839.forms ? "100%" : ctx_r838.fieldWidth(child_r839.type, field_r834.forms.length, k_r840));
-    ɵɵproperty("id", child_r839.key);
+    var child_r838 = ctx.$implicit;
+    var k_r839 = ctx.index;
+    var field_r833 = ɵɵnextContext(3).$implicit;
+    var ctx_r837 = ɵɵnextContext(3);
+    ɵɵstyleProp("width", child_r838.forms ? "100%" : ctx_r837.fieldWidth(child_r838.type, field_r833.forms.length, k_r839));
+    ɵɵproperty("id", child_r838.key);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", child_r839.expandOnboarding && ctx_r838.onCheckConditionLocationValue(child_r839.isConditional, child_r839.conditionLocation, child_r839.conditionValue));
+    ɵɵproperty("ngIf", child_r838.expandOnboarding && ctx_r837.onCheckConditionLocationValue(child_r838.isConditional, child_r838.conditionLocation, child_r838.conditionValue));
 } }
 function OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 31);
-    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_Template, 2, 4, "div", 32);
+    ɵɵelementStart(0, "div", 34);
+    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_div_1_Template, 2, 4, "div", 35);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var field_r834 = ɵɵnextContext(2).$implicit;
+    var field_r833 = ɵɵnextContext(2).$implicit;
     ɵɵadvance(1);
-    ɵɵproperty("ngForOf", field_r834.forms);
+    ɵɵproperty("ngForOf", field_r833.forms);
 } }
 function OnboardingCreateComponent_form_2_section_13_div_9_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 25);
-    ɵɵelementStart(1, "div", 26);
-    ɵɵelementStart(2, "div", 27);
-    ɵɵelementStart(3, "lib-sub-create-onboarding", 28);
-    ɵɵelementStart(4, "div", 29);
-    ɵɵtemplate(5, OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_Template, 2, 1, "div", 30);
+    ɵɵelementStart(0, "div", 28);
+    ɵɵelementStart(1, "div", 29);
+    ɵɵelementStart(2, "div", 30);
+    ɵɵelementStart(3, "lib-sub-create-onboarding", 31);
+    ɵɵelementStart(4, "div", 32);
+    ɵɵtemplate(5, OnboardingCreateComponent_form_2_section_13_div_9_div_1_div_5_Template, 2, 1, "div", 33);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
+    var ctx_r858 = ɵɵnextContext();
+    var field_r833 = ctx_r858.$implicit;
+    var j_r834 = ctx_r858.index;
     var ctx_r859 = ɵɵnextContext();
-    var field_r834 = ctx_r859.$implicit;
-    var j_r835 = ctx_r859.index;
-    var ctx_r860 = ɵɵnextContext();
-    var category_r831 = ctx_r860.$implicit;
-    var i_r832 = ctx_r860.index;
+    var category_r830 = ctx_r859.$implicit;
+    var i_r831 = ctx_r859.index;
     ɵɵadvance(3);
-    ɵɵproperty("field", field_r834)("length", category_r831 == null ? null : category_r831.forms == null ? null : category_r831.forms.length)("i", i_r832)("j", j_r835);
+    ɵɵproperty("field", field_r833)("length", category_r830 == null ? null : category_r830.forms == null ? null : category_r830.forms.length)("i", i_r831)("j", j_r834);
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", field_r834.forms && field_r834.value);
+    ɵɵproperty("ngIf", field_r833.forms && field_r833.value);
 } }
 function OnboardingCreateComponent_form_2_section_13_div_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 23);
-    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_9_div_1_Template, 6, 5, "div", 24);
+    ɵɵelementStart(0, "div", 26);
+    ɵɵtemplate(1, OnboardingCreateComponent_form_2_section_13_div_9_div_1_Template, 6, 5, "div", 27);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var field_r834 = ctx.$implicit;
-    var j_r835 = ctx.index;
-    var category_r831 = ɵɵnextContext().$implicit;
-    var ctx_r833 = ɵɵnextContext(2);
-    ɵɵstyleProp("width", field_r834.forms ? "100%" : ctx_r833.fieldWidth(field_r834.type, category_r831.forms.length, j_r835));
-    ɵɵproperty("id", field_r834.key);
+    var field_r833 = ctx.$implicit;
+    var j_r834 = ctx.index;
+    var category_r830 = ɵɵnextContext().$implicit;
+    var ctx_r832 = ɵɵnextContext(2);
+    ɵɵstyleProp("width", field_r833.forms ? "100%" : ctx_r832.fieldWidth(field_r833.type, category_r830.forms.length, j_r834));
+    ɵɵproperty("id", field_r833.key);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", field_r834.expandOnboarding && ctx_r833.onCheckConditionLocationValue(field_r834.isConditional, field_r834.conditionLocation, field_r834.conditionValue));
+    ɵɵproperty("ngIf", field_r833.expandOnboarding && ctx_r832.onCheckConditionLocationValue(field_r833.isConditional, field_r833.conditionLocation, field_r833.conditionValue));
 } }
 function OnboardingCreateComponent_form_2_section_13_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "section", 16);
-    ɵɵelementStart(1, "div", 17);
-    ɵɵelementStart(2, "div", 18);
-    ɵɵelementStart(3, "div", 19);
-    ɵɵelementStart(4, "h4", 20);
+    ɵɵelementStart(0, "section", 19);
+    ɵɵelementStart(1, "div", 20);
+    ɵɵelementStart(2, "div", 21);
+    ɵɵelementStart(3, "div", 22);
+    ɵɵelementStart(4, "h4", 23);
     ɵɵtext(5);
     ɵɵelementEnd();
     ɵɵelementStart(6, "p");
@@ -5568,37 +5527,37 @@ function OnboardingCreateComponent_form_2_section_13_Template(rf, ctx) { if (rf 
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
-    ɵɵelementStart(8, "div", 21);
-    ɵɵtemplate(9, OnboardingCreateComponent_form_2_section_13_div_9_Template, 2, 4, "div", 22);
+    ɵɵelementStart(8, "div", 24);
+    ɵɵtemplate(9, OnboardingCreateComponent_form_2_section_13_div_9_Template, 2, 4, "div", 25);
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var category_r831 = ctx.$implicit;
-    var ctx_r828 = ɵɵnextContext(2);
-    ɵɵproperty("id", category_r831.name);
+    var category_r830 = ctx.$implicit;
+    var ctx_r827 = ɵɵnextContext(2);
+    ɵɵproperty("id", category_r830.name);
     ɵɵadvance(5);
-    ɵɵtextInterpolate(category_r831.name);
+    ɵɵtextInterpolate(category_r830.name);
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r828.catNameStart(category_r831.name) ? "l'" + category_r831.name : category_r831.name, " ");
+    ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r827.catNameStart(category_r830.name) ? "l'" + category_r830.name : category_r830.name, " ");
     ɵɵadvance(2);
-    ɵɵproperty("ngForOf", category_r831.forms);
+    ɵɵproperty("ngForOf", category_r830.forms);
 } }
 function OnboardingCreateComponent_form_2_Template(rf, ctx) { if (rf & 1) {
-    var _r863 = ɵɵgetCurrentView();
+    var _r862 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "form", 3);
-    ɵɵlistener("submit", function OnboardingCreateComponent_form_2_Template_form_submit_0_listener() { ɵɵrestoreView(_r863); var ctx_r862 = ɵɵnextContext(); return ctx_r862.onSubmit(); });
+    ɵɵlistener("submit", function OnboardingCreateComponent_form_2_Template_form_submit_0_listener() { ɵɵrestoreView(_r862); var ctx_r861 = ɵɵnextContext(); return ctx_r861.onSubmit(); });
     ɵɵelementStart(1, "div", 4);
     ɵɵelementStart(2, "div", 5);
     ɵɵelementStart(3, "h2");
     ɵɵtext(4);
     ɵɵelementStart(5, "mat-icon", 6);
-    ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_mat_icon_click_5_listener() { ɵɵrestoreView(_r863); var ctx_r864 = ɵɵnextContext(); return ctx_r864.onShowMode(); });
+    ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_mat_icon_click_5_listener() { ɵɵrestoreView(_r862); var ctx_r863 = ɵɵnextContext(); return ctx_r863.onShowMode(); });
     ɵɵtext(6, "visibility");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(7, "button", 7);
-    ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_button_click_7_listener() { ɵɵrestoreView(_r863); var ctx_r865 = ɵɵnextContext(); return ctx_r865.onResumeLater(); });
+    ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_button_click_7_listener() { ɵɵrestoreView(_r862); var ctx_r864 = ɵɵnextContext(); return ctx_r864.onResumeLater(); });
     ɵɵtext(8);
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -5607,51 +5566,56 @@ function OnboardingCreateComponent_form_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵtemplate(11, OnboardingCreateComponent_form_2_li_11_Template, 3, 3, "li", 9);
     ɵɵelementEnd();
     ɵɵelementStart(12, "div", 10);
-    ɵɵlistener("scroll", function OnboardingCreateComponent_form_2_Template_div_scroll_12_listener($event) { ɵɵrestoreView(_r863); var ctx_r866 = ɵɵnextContext(); return ctx_r866.onScroll($event); });
+    ɵɵlistener("scroll", function OnboardingCreateComponent_form_2_Template_div_scroll_12_listener($event) { ɵɵrestoreView(_r862); var ctx_r865 = ɵɵnextContext(); return ctx_r865.onScroll($event); });
     ɵɵtemplate(13, OnboardingCreateComponent_form_2_section_13_Template, 10, 4, "section", 11);
     ɵɵelementStart(14, "div", 12);
-    ɵɵelementStart(15, "button", 13);
-    ɵɵtext(16);
+    ɵɵelementStart(15, "div", 13);
+    ɵɵelementStart(16, "button", 14);
+    ɵɵtext(17);
     ɵɵelementEnd();
-    ɵɵelementStart(17, "button", 14);
-    ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_button_click_17_listener() { ɵɵrestoreView(_r863); var ctx_r867 = ɵɵnextContext(); return ctx_r867.onResumeLater(); });
-    ɵɵtext(18);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
+    ɵɵelementStart(18, "button", 15);
+    ɵɵlistener("click", function OnboardingCreateComponent_form_2_Template_button_click_18_listener() { ɵɵrestoreView(_r862); var ctx_r866 = ɵɵnextContext(); return ctx_r866.onResumeLater(); });
+    ɵɵtext(19);
     ɵɵelementEnd();
     ɵɵelementEnd();
+    ɵɵelementStart(20, "section", 16);
+    ɵɵelement(21, "div", 17);
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+    ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r824 = ɵɵnextContext();
+    ɵɵproperty("formGroup", ctx_r824.form);
+    ɵɵadvance(4);
+    ɵɵtextInterpolate1("Int\u00E9gration profil ", ctx_r824.currentTemplate == null ? null : ctx_r824.currentTemplate.Name, " ");
+    ɵɵadvance(3);
+    ɵɵproperty("disabled", ctx_r824.loading);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r824.resumeLabel);
+    ɵɵadvance(3);
+    ɵɵproperty("ngForOf", ctx_r824.categories);
+    ɵɵadvance(2);
+    ɵɵproperty("ngForOf", ctx_r824.categories);
+    ɵɵadvance(3);
+    ɵɵproperty("disabled", ctx_r824.loading || !ctx_r824.form.valid);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r824.submitLabel);
+    ɵɵadvance(1);
+    ɵɵproperty("disabled", ctx_r824.loading);
+    ɵɵadvance(1);
+    ɵɵtextInterpolate(ctx_r824.resumeLabel);
+} }
+function OnboardingCreateComponent_lib_onboarding_detail_3_Template(rf, ctx) { if (rf & 1) {
+    var _r868 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "lib-onboarding-detail", 38);
+    ɵɵlistener("onShowMode", function OnboardingCreateComponent_lib_onboarding_detail_3_Template_lib_onboarding_detail_onShowMode_0_listener() { ɵɵrestoreView(_r868); var ctx_r867 = ɵɵnextContext(); return ctx_r867.onShowMode(); });
     ɵɵelementEnd();
 } if (rf & 2) {
     var ctx_r825 = ɵɵnextContext();
-    ɵɵproperty("formGroup", ctx_r825.form);
-    ɵɵadvance(4);
-    ɵɵtextInterpolate1("Int\u00E9gration profil ", ctx_r825.currentTemplate == null ? null : ctx_r825.currentTemplate.Name, " ");
-    ɵɵadvance(3);
-    ɵɵproperty("disabled", ctx_r825.loading);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r825.resumeLabel);
-    ɵɵadvance(3);
-    ɵɵproperty("ngForOf", ctx_r825.categories);
-    ɵɵadvance(2);
-    ɵɵproperty("ngForOf", ctx_r825.categories);
-    ɵɵadvance(2);
-    ɵɵproperty("disabled", ctx_r825.loading || !ctx_r825.form.valid);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r825.submitLabel);
-    ɵɵadvance(1);
-    ɵɵproperty("disabled", ctx_r825.loading);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r825.resumeLabel);
-} }
-function OnboardingCreateComponent_lib_onboarding_detail_3_Template(rf, ctx) { if (rf & 1) {
-    var _r869 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "lib-onboarding-detail", 35);
-    ɵɵlistener("onShowMode", function OnboardingCreateComponent_lib_onboarding_detail_3_Template_lib_onboarding_detail_onShowMode_0_listener() { ɵɵrestoreView(_r869); var ctx_r868 = ɵɵnextContext(); return ctx_r868.onShowMode(); });
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r826 = ɵɵnextContext();
-    ɵɵproperty("detailView", ctx_r826.detailView);
+    ɵɵproperty("detailView", ctx_r825.detailView);
 } }
 var OnboardingCreateComponent = /** @class */ (function () {
     function OnboardingCreateComponent(fb, service, route, router, dialog) {
@@ -6138,10 +6102,10 @@ var OnboardingCreateComponent = /** @class */ (function () {
     OnboardingCreateComponent.ɵfac = function OnboardingCreateComponent_Factory(t) { return new (t || OnboardingCreateComponent)(ɵɵdirectiveInject(FormBuilder), ɵɵdirectiveInject(OnboardingService), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(MatDialog)); };
     OnboardingCreateComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingCreateComponent, selectors: [["create-onboarding"]], hostBindings: function OnboardingCreateComponent_HostBindings(rf, ctx) { if (rf & 1) {
             ɵɵlistener("scroll", function OnboardingCreateComponent_scroll_HostBindingHandler($event) { return ctx.onScroll($event); });
-        } }, decls: 4, vars: 2, consts: [[1, "content"], ["id", "form", 3, "formGroup", "submit", 4, "ngIf"], [3, "detailView", "onShowMode", 4, "ngIf"], ["id", "form", 3, "formGroup", "submit"], [1, "category"], [1, "title-group"], [2, "margin-left", "20px", "cursor", "pointer", 3, "click"], ["mat-button", "", "type", "button", 1, "register-button", 3, "disabled", "click"], ["id", "fields", 1, "fields"], ["class", "menu-item", 3, "ngxScrollTo", "id", 4, "ngFor", "ngForOf"], [1, "category-container", 3, "scroll"], ["class", "category-item content-item", 3, "id", 4, "ngFor", "ngForOf"], [1, "actions-button", 2, "margin-bottom", "50px"], ["mat-button", "", "type", "submit", 1, "register-button", "send-form", 3, "disabled"], ["mat-button", "", "type", "button", 1, "register-button", "resume", 3, "disabled", "click"], [1, "menu-item", 3, "ngxScrollTo", "id"], [1, "category-item", "content-item", 3, "id"], [1, "field-content"], [1, "field-item"], [1, "category-title-group"], [1, "category-name"], [1, "category-container"], ["class", "field-category", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "field-category", 3, "id"], ["class", "inner-loop", 4, "ngIf"], [1, "inner-loop"], [1, "fields-content"], [1, "fields-container"], [3, "field", "length", "i", "j"], [1, "child"], ["class", "inner-child", 4, "ngIf"], [1, "inner-child"], ["class", "inner-child-content", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "inner-child-content", 3, "id"], [3, "field", "length", "i", "j", "onCheckValue"], [3, "detailView", "onShowMode"]], template: function OnboardingCreateComponent_Template(rf, ctx) { if (rf & 1) {
+        } }, decls: 4, vars: 2, consts: [[1, "content"], ["id", "form", 3, "formGroup", "submit", 4, "ngIf"], [3, "detailView", "onShowMode", 4, "ngIf"], ["id", "form", 3, "formGroup", "submit"], [1, "category"], [1, "title-group"], [2, "margin-left", "20px", "cursor", "pointer", 3, "click"], ["mat-button", "", "type", "button", 1, "register-button", 3, "disabled", "click"], ["id", "fields", 1, "fields"], ["class", "menu-item", 3, "ngxScrollTo", "id", 4, "ngFor", "ngForOf"], [1, "category-container", 3, "scroll"], ["class", "category-item content-item", 3, "id", 4, "ngFor", "ngForOf"], [1, "onboarding-create-footer"], [1, "actions-button", 2, "margin-bottom", "50px"], ["mat-button", "", "type", "submit", 1, "register-button", "send-form", 3, "disabled"], ["mat-button", "", "type", "button", 1, "register-button", "resume", 3, "disabled", "click"], [2, "background-color", "transparent"], [2, "height", "450px"], [1, "menu-item", 3, "ngxScrollTo", "id"], [1, "category-item", "content-item", 3, "id"], [1, "field-content"], [1, "field-item"], [1, "category-title-group"], [1, "category-name"], [1, "category-container"], ["class", "field-category", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "field-category", 3, "id"], ["class", "inner-loop", 4, "ngIf"], [1, "inner-loop"], [1, "fields-content"], [1, "fields-container"], [3, "field", "length", "i", "j"], [1, "child"], ["class", "inner-child", 4, "ngIf"], [1, "inner-child"], ["class", "inner-child-content", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "inner-child-content", 3, "id"], [3, "field", "length", "i", "j", "onCheckValue"], [3, "detailView", "onShowMode"]], template: function OnboardingCreateComponent_Template(rf, ctx) { if (rf & 1) {
             ɵɵelementStart(0, "main");
             ɵɵelementStart(1, "div", 0);
-            ɵɵtemplate(2, OnboardingCreateComponent_form_2_Template, 19, 10, "form", 1);
+            ɵɵtemplate(2, OnboardingCreateComponent_form_2_Template, 22, 10, "form", 1);
             ɵɵtemplate(3, OnboardingCreateComponent_lib_onboarding_detail_3_Template, 1, 1, "lib-onboarding-detail", 2);
             ɵɵelementEnd();
             ɵɵelementEnd();
@@ -6150,7 +6114,7 @@ var OnboardingCreateComponent = /** @class */ (function () {
             ɵɵproperty("ngIf", !ctx.showMode);
             ɵɵadvance(1);
             ɵɵproperty("ngIf", ctx.showMode);
-        } }, directives: [NgIf, ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, MatIcon, MatButton, NgForOf, ScrollToDirective, SubOnboardingCreateComponent, OnboardingDetailComponent], styles: ["main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;height:100vh;width:100%;display:flex;flex-direction:column;align-items:center}main[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{background-color:transparent!important}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]{width:99%;height:100%;padding-left:1%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font:bold 32px/30px Nexa Text;letter-spacing:0;color:#171f26;padding-top:20px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:20px/26px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   p.sub-title[_ngcontent-%COMP%]{max-width:400px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]{max-width:70%;margin:5% auto auto;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;padding:5%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   .select-template[_ngcontent-%COMP%]{display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-top:50px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   .select-template[_ngcontent-%COMP%]   .full-width[_ngcontent-%COMP%]{width:40%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   .select-template[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{float:right;text-align:center;border:1px solid #543cb6;border-radius:7px;padding:1em 2em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6;-ms-grid-row-align:center;align-self:center;width:220px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .category[_ngcontent-%COMP%]   .onboarding-mat-stepper[_ngcontent-%COMP%]   mat-horizontal-stepper[_ngcontent-%COMP%]   .next-step[_ngcontent-%COMP%]{float:right}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]{display:flex;height:100%;width:100%;max-width:1500px;margin:auto;overflow:hidden}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]{max-width:70%;margin:5% auto auto;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;padding:5%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{float:right;text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6;align-self:flex-end}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]{width:786px;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;opacity:1;margin:auto;padding:0 25px;-ms-grid-row-align:center;align-self:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:center;font:900 32px/48px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%], main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{font:18px/24px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]{display:flex;align-items:center;position:relative}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]{margin-right:15px;min-width:50px;width:30px;padding:9px 12px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-right:10px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]{position:absolute;height:200px;width:100%;background:no-repeat padding-box #fff;border:1px solid #171f26;border-radius:8px;top:100%;z-index:1}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin:15px;border:none;font-size:40px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]:hover{color:#830b6b!important;cursor:pointer}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .box-title-content[_ngcontent-%COMP%]{width:100%;margin:25px auto}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]{font:900 32px/38px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:15px/26px Nexa Text;letter-spacing:0;color:#171f26;text-align:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .link-create-profil[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6}main[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.full-width[_ngcontent-%COMP%]{width:100%}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]{width:90%;margin:auto 2% auto auto}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}  .mat-select{padding:0}  .mat-form-field-appearance-fill .mat-form-field-underline::before{background-color:transparent}[_nghost-%COMP%]     .mat-checkbox-checked.mat-accent .mat-checkbox-background, [_nghost-%COMP%]     .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{background-color:transparent}.category-action[_ngcontent-%COMP%]{display:flex;width:100%;overflow:hidden}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]{display:flex;align-items:baseline;width:100%;border:1px solid #dce4e9;border-radius:8px;background-color:#fff;margin-top:10px;padding:15px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]{height:auto;background-color:#49a094;padding-top:7px;width:40px;-ms-grid-row-align:stretch;align-self:stretch;border-top-left-radius:8px;border-bottom-left-radius:8px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]{width:100%}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr 1fr;grid-template-columns:1fr 1fr 1fr;align-items:center;border:transparent!important}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .category-title-group[_ngcontent-%COMP%]   p[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .category-title-group[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:250;font-size:14px;line-height:16px;color:#575f6e}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .category-title-group[_ngcontent-%COMP%]   .category-name[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .category-title-group[_ngcontent-%COMP%]   .category-name[_ngcontent-%COMP%]{text-align:left;font:bold 22px/48px Nexa Text;letter-spacing:0;color:#171f26;margin:0}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%]{color:transparent!important}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;opacity:1}.cdk-drag-preview[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:28px!important}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%], .example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform 250ms cubic-bezier(0,0,.2,1)}.child[_ngcontent-%COMP%]{margin-left:0}.child[_ngcontent-%COMP%]   .inner-child[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.category[_ngcontent-%COMP%]{width:100%}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]{width:250px;background-color:#fff;margin:10px 20px;border-radius:5px;border:1px solid #dbcbcb96}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:15px;border-bottom:1px solid #dbcbcb96;margin:10px;padding-bottom:5px;padding-top:0;font-family:\"Nexa Text\";display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{font-weight:600;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;margin-top:-5px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:15px;cursor:pointer}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3.template-title[_ngcontent-%COMP%]{font:900 24px/36px Nexa Text;letter-spacing:0;color:#171f26}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{font-weight:600;margin-left:-27px;font-size:15px;list-style:none}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{padding:5px;margin:5px auto;cursor:pointer;text-align:left;font:12px/19px Nexa Text;letter-spacing:0;color:#535760}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{padding-left:0;margin-left:0}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]{font-size:14px;font-weight:600;margin-right:10px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{width:140px;outline:0;border:1px dashed grey}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{display:inline-flex;align-items:center;width:100%}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:10px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]:hover{background:no-repeat padding-box #e5e8ee;border-radius:5px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]{list-style:none;padding-left:20px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%]::marker, .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]:hover{font-weight:600;background:no-repeat padding-box #e5e8ee;border-radius:5px}.category[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]{background-color:#f4f7f9!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:28px!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:40px}.category[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;margin-left:0!important;min-width:auto;color:#fff}.category[_ngcontent-%COMP%]   .title-group[_ngcontent-%COMP%]{display:flex;justify-content:space-between;margin-top:10px}.category[_ngcontent-%COMP%]   .title-group[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{margin:0 0 8px;display:flex;align-items:center}.add-button-sub-category[_ngcontent-%COMP%]{width:95.5%!important;margin-bottom:22px;margin-left:22px}.add-button-container[_ngcontent-%COMP%]{background:no-repeat padding-box #fff;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98.5%;margin-bottom:22px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;font:17px/26px Nexa Text;letter-spacing:0;color:#c2c8d5;box-shadow:none}.add-category[_ngcontent-%COMP%]{border:1px dashed #c2c8d5;border-radius:5px;margin-left:10px;margin-bottom:10px;font:bold 12px/19px Nexa Text;letter-spacing:0;color:#c2c8d5;width:92%}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]{display:flex;height:100%;margin:0;width:100%;margin-top:10px;margin-bottom:10px}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;-ms-grid-row-align:stretch;align-self:stretch;margin-top:0;margin-left:20px;border-bottom-left-radius:8px;border-top-left-radius:8px}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-2-background[_ngcontent-%COMP%]{background-color:#cffaf4!important}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-3-background[_ngcontent-%COMP%]{background-color:#e5e8ee!important}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]{width:100%;padding-right:10px;padding-top:5px}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.side-bar[_ngcontent-%COMP%]{display:flex;flex-direction:column}.register-button[_ngcontent-%COMP%]{background:0 0;border:2px solid #192128!important;border-radius:8px;margin-left:22px!important;color:#000}.register-button[disabled][disabled][_ngcontent-%COMP%]{opacity:.5!important;background:no-repeat padding-box #dadee2!important}.content-item[_ngcontent-%COMP%]{transition-property:border-image-slice border-image-source border-width;transition-timing-function:ease-in-out;transition-duration:.5s}.active-content[_ngcontent-%COMP%]{border-image-slice:1;border-width:2px;border-image-source:linear-gradient(to left,#9d107d,#4862ab)}  .phone-input-view-collab{border-bottom:1px solid #949494!important;padding-bottom:.3em;padding-top:1em;display:block!important;max-width:100%;font:14px/20px \"Nexa Text\"!important;width:95%}  .country-dropdown{min-width:unset!important}  .iti{width:100%!important}  #phone{width:90%!important}  #mobile-phone{width:100%}  .fields{max-height:100vh;margin-right:.5%;overflow:hidden;width:100%}  .fields mat-tab-group{height:100%;width:100%;overflow:hidden}  .fields mat-tab-group .mat-tab-body-wrapper{height:100%;max-height:90vh;overflow:auto}  .fields mat-tab-group .mat-tab-body-wrapper .mat-tab-body{height:100%}  .fields mat-tab-group .mat-tab-body-wrapper .mat-tab-body .mat-tab-body-content{width:100%;overflow:hidden}.fields[_ngcontent-%COMP%]{height:95%}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{list-style:none;display:flex;margin:0;padding:0}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{margin-right:20px;padding-bottom:5px;border-bottom:3px solid transparent}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26;opacity:.5}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item.active[_ngcontent-%COMP%], .fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item[_ngcontent-%COMP%]:hover{cursor:pointer;border-bottom:3px solid #3c4252}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%], .fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item[_ngcontent-%COMP%]:hover   a[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;opacity:1;text-decoration:none!important}  .category-container{overflow:auto;max-height:100%;display:flex;flex-wrap:wrap;-ms-overflow-style:none;scrollbar-width:none}  .category-container mat-form-field{width:100%}  .category-container .actions-button{margin-top:20px;margin-bottom:50px}  .category-container .actions-button .send-form{margin-left:0!important;background-color:#000;color:#fff}  .category-container .actions-button .resume{margin-left:25px!important}  .category-container::-webkit-scrollbar{display:none}  .category-item .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{border-color:#039be5}  .category-item .mat-radio-button.mat-accent .mat-radio-inner-circle,   .category-item .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),   .category-item .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,   .category-item .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{background-color:#039be5}  .category-item .mat-checkbox-checkmark-path{stroke:#fff!important}  .category-item .mat-checkbox-frame{border:2px solid #039be5!important}  .category-item .mat-checkbox-checked.mat-accent .mat-checkbox-background,   .category-item .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{background-color:#039be5!important}  .category-item .mat-checkbox-inner-container{height:20px!important;width:20px!important}[_nghost-%COMP%]     .category .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .category .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{background-color:#fff;margin-top:4px}[_nghost-%COMP%]     .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-thumb{margin-top:4px;margin-left:4px}[_nghost-%COMP%]     .category .mat-slide-toggle.draft:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273}[_nghost-%COMP%]     .category .mat-slide-toggle.draft.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5}"] });
+        } }, directives: [NgIf, ɵangular_packages_forms_forms_y, NgControlStatusGroup, FormGroupDirective, MatIcon, MatButton, NgForOf, ScrollToDirective, SubOnboardingCreateComponent, OnboardingDetailComponent], styles: ["main[_ngcontent-%COMP%]{background:no-repeat padding-box #f4f7f9;height:100vh;width:100%;display:flex;flex-direction:column;align-items:center}main[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{background-color:transparent!important}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]{width:99%;height:100%;padding-left:1%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font:bold 32px/30px Nexa Text;letter-spacing:0;color:#171f26;padding-top:20px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:20px/26px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   p.sub-title[_ngcontent-%COMP%]{max-width:400px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]{max-width:70%;margin:5% auto auto;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;padding:5%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   .select-template[_ngcontent-%COMP%]{display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-top:50px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   .select-template[_ngcontent-%COMP%]   .full-width[_ngcontent-%COMP%]{width:40%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   .select-template[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{float:right;text-align:center;border:1px solid #543cb6;border-radius:7px;padding:1em 2em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6;-ms-grid-row-align:center;align-self:center;width:220px}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   .category[_ngcontent-%COMP%]   .onboarding-mat-stepper[_ngcontent-%COMP%]   mat-horizontal-stepper[_ngcontent-%COMP%]   .next-step[_ngcontent-%COMP%]{float:right}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]{display:flex;height:100%;width:100%;max-width:1500px;margin:auto;overflow:hidden}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]{max-width:70%;margin:5% auto auto;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;padding:5%}main[_ngcontent-%COMP%]   .content[_ngcontent-%COMP%]   form[_ngcontent-%COMP%]   .select-contact[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{float:right;text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6;align-self:flex-end}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]{width:786px;background:no-repeat padding-box #fff;border:1px solid #dce4e9;border-radius:6px;opacity:1;margin:auto;padding:0 25px;-ms-grid-row-align:center;align-self:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{text-align:center;font:900 32px/48px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%], main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{font:18px/24px Nexa Text;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]{display:flex;align-items:center;position:relative}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]{margin-right:15px;min-width:50px;width:30px;padding:9px 12px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .add-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-right:10px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]{position:absolute;height:200px;width:100%;background:no-repeat padding-box #fff;border:1px solid #171f26;border-radius:8px;top:100%;z-index:1}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin:15px;border:none;font-size:40px}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .profil-name-content[_ngcontent-%COMP%]   .list-picto[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]:hover{color:#830b6b!important;cursor:pointer}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .box-title-content[_ngcontent-%COMP%]{width:100%;margin:25px auto}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]{font:900 32px/38px Nexa;letter-spacing:0;color:#171f26}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font:15px/26px Nexa Text;letter-spacing:0;color:#171f26;text-align:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   .link-create-profil[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:center}main[_ngcontent-%COMP%]   .box-title[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{text-align:center;border:1px solid #543cb6;border-radius:7px;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;font:bold 15px/17px Nexa;letter-spacing:0;color:#543cb6}main[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.full-width[_ngcontent-%COMP%]{width:100%}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]{width:90%;margin:auto 2% auto auto}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}  .mat-select{padding:0}  .mat-form-field-appearance-fill .mat-form-field-underline::before{background-color:transparent}[_nghost-%COMP%]     .mat-checkbox-checked.mat-accent .mat-checkbox-background, [_nghost-%COMP%]     .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{background-color:transparent}.category-action[_ngcontent-%COMP%]{display:flex;width:100%;overflow:hidden}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]{display:flex;align-items:baseline;width:100%;border:1px solid #dce4e9;border-radius:8px;background-color:#fff;margin-top:10px;padding:15px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]{height:auto;background-color:#49a094;padding-top:7px;width:40px;-ms-grid-row-align:stretch;align-self:stretch;border-top-left-radius:8px;border-bottom-left-radius:8px}.category-item[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .left-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]{width:100%}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr 1fr;grid-template-columns:1fr 1fr 1fr;align-items:center;border:transparent!important}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .category-title-group[_ngcontent-%COMP%]   p[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .category-title-group[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:250;font-size:14px;line-height:16px;color:#575f6e}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .category-title-group[_ngcontent-%COMP%]   .category-name[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .category-title-group[_ngcontent-%COMP%]   .category-name[_ngcontent-%COMP%]{text-align:left;font:bold 22px/48px Nexa Text;letter-spacing:0;color:#171f26;margin:0}.category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .category-item[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   mat-form-field[_ngcontent-%COMP%]   .mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%], .cdk-drag-placeholder[_ngcontent-%COMP%]   .field-content[_ngcontent-%COMP%]   .mat-form-field-outline[_ngcontent-%COMP%]{color:transparent!important}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;opacity:1}.cdk-drag-preview[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:28px!important}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%], .example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform 250ms cubic-bezier(0,0,.2,1)}.child[_ngcontent-%COMP%]{margin-left:0}.child[_ngcontent-%COMP%]   .inner-child[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.category[_ngcontent-%COMP%]{width:100%}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]{width:250px;background-color:#fff;margin:10px 20px;border-radius:5px;border:1px solid #dbcbcb96}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{font-size:15px;border-bottom:1px solid #dbcbcb96;margin:10px;padding-bottom:5px;padding-top:0;font-family:\"Nexa Text\";display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{font-weight:600;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;margin-top:-5px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:15px;cursor:pointer}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   h3.template-title[_ngcontent-%COMP%]{font:900 24px/36px Nexa Text;letter-spacing:0;color:#171f26}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{font-weight:600;margin-left:-27px;font-size:15px;list-style:none}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{padding:5px;margin:5px auto;cursor:pointer;text-align:left;font:12px/19px Nexa Text;letter-spacing:0;color:#535760}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]{padding-left:0;margin-left:0}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]{font-size:14px;font-weight:600;margin-right:10px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{width:140px;outline:0;border:1px dashed grey}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{display:inline-flex;align-items:center;width:100%}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%]{margin-left:10px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.li-title[_ngcontent-%COMP%]:hover{background:no-repeat padding-box #e5e8ee;border-radius:5px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]{list-style:none;padding-left:20px}.category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%], .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title.active[_ngcontent-%COMP%]::marker, .category[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li.sub-title[_ngcontent-%COMP%]:hover{font-weight:600;background:no-repeat padding-box #e5e8ee;border-radius:5px}.category[_ngcontent-%COMP%]   .disabled[_ngcontent-%COMP%]{background-color:#f4f7f9!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:28px!important}.category[_ngcontent-%COMP%]   .expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:40px}.category[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;margin-left:0!important;min-width:auto;color:#fff}.category[_ngcontent-%COMP%]   .title-group[_ngcontent-%COMP%]{display:flex;justify-content:space-between;margin-top:10px}.category[_ngcontent-%COMP%]   .title-group[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{margin:0 0 8px;display:flex;align-items:center}.add-button-sub-category[_ngcontent-%COMP%]{width:95.5%!important;margin-bottom:22px;margin-left:22px}.add-button-container[_ngcontent-%COMP%]{background:no-repeat padding-box #fff;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98.5%;margin-bottom:22px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;font:17px/26px Nexa Text;letter-spacing:0;color:#c2c8d5;box-shadow:none}.add-category[_ngcontent-%COMP%]{border:1px dashed #c2c8d5;border-radius:5px;margin-left:10px;margin-bottom:10px;font:bold 12px/19px Nexa Text;letter-spacing:0;color:#c2c8d5;width:92%}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]{display:flex;height:100%;margin:0;width:100%;margin-top:10px;margin-bottom:10px}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;-ms-grid-row-align:stretch;align-self:stretch;margin-top:0;margin-left:20px;border-bottom-left-radius:8px;border-top-left-radius:8px}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   .transparent-button[_ngcontent-%COMP%]{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-2-background[_ngcontent-%COMP%]{background-color:#cffaf4!important}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .child-3-background[_ngcontent-%COMP%]{background-color:#e5e8ee!important}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]{width:100%;padding-right:10px;padding-top:5px}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.inner-loop[_ngcontent-%COMP%]   .fields-content[_ngcontent-%COMP%]   .fields-container[_ngcontent-%COMP%]   lib-sub-category[_ngcontent-%COMP%]   .field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.side-bar[_ngcontent-%COMP%]{display:flex;flex-direction:column}.register-button[_ngcontent-%COMP%]{background:0 0;border:2px solid #192128!important;border-radius:8px;margin-left:22px!important;color:#000}.register-button[disabled][disabled][_ngcontent-%COMP%]{opacity:.5!important;background:no-repeat padding-box #dadee2!important}.content-item[_ngcontent-%COMP%]{transition-property:border-image-slice border-image-source border-width;transition-timing-function:ease-in-out;transition-duration:.5s}.active-content[_ngcontent-%COMP%]{border-image-slice:1;border-width:2px;border-image-source:linear-gradient(to left,#9d107d,#4862ab)}  .phone-input-view-collab{border-bottom:1px solid #949494!important;padding-bottom:.3em;padding-top:1em;display:block!important;max-width:100%;font:14px/20px \"Nexa Text\"!important;width:95%}  .country-dropdown{min-width:unset!important}  .iti{width:100%!important}  #phone{width:90%!important}  #mobile-phone{width:100%}  .fields{max-height:100vh;margin-right:.5%;overflow:hidden;width:100%}  .fields mat-tab-group{height:100%;width:100%;overflow:hidden}  .fields mat-tab-group .mat-tab-body-wrapper{height:100%;max-height:90vh;overflow:auto}  .fields mat-tab-group .mat-tab-body-wrapper .mat-tab-body{height:100%}  .fields mat-tab-group .mat-tab-body-wrapper .mat-tab-body .mat-tab-body-content{width:100%;overflow:hidden}.fields[_ngcontent-%COMP%]{height:95%}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{list-style:none;display:flex;margin:0;padding:0}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{margin-right:20px;padding-bottom:5px;border-bottom:3px solid transparent}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26;opacity:.5;overflow:hidden;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item.active[_ngcontent-%COMP%], .fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item[_ngcontent-%COMP%]:hover{cursor:pointer;border-bottom:3px solid #3c4252}.fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item.active[_ngcontent-%COMP%]   a[_ngcontent-%COMP%], .fields[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li.menu-item[_ngcontent-%COMP%]:hover   a[_ngcontent-%COMP%]{font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;opacity:1;text-decoration:none!important}  .category-container{overflow:auto;max-height:100%;display:flex;flex-wrap:wrap;-ms-overflow-style:none;scrollbar-width:none}  .category-container mat-form-field{width:100%}  .category-container .actions-button{margin-top:20px;margin-bottom:50px}  .category-container .actions-button .send-form{margin-left:0!important;background-color:#000;color:#fff}  .category-container .actions-button .resume{margin-left:25px!important}  .category-container::-webkit-scrollbar{display:none}  .category-item .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{border-color:#039be5}  .category-item .mat-radio-button.mat-accent .mat-radio-inner-circle,   .category-item .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),   .category-item .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,   .category-item .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{background-color:#039be5}  .category-item .mat-checkbox-checkmark-path{stroke:#fff!important}  .category-item .mat-checkbox-frame{border:2px solid #039be5!important}  .category-item .mat-checkbox-checked.mat-accent .mat-checkbox-background,   .category-item .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{background-color:#039be5!important}  .category-item .mat-checkbox-inner-container{height:20px!important;width:20px!important}[_nghost-%COMP%]     .category .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}[_nghost-%COMP%]     .category .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{background-color:#fff;margin-top:4px}[_nghost-%COMP%]     .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-thumb{margin-top:4px;margin-left:4px}[_nghost-%COMP%]     .category .mat-slide-toggle.draft:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273}[_nghost-%COMP%]     .category .mat-slide-toggle.draft.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5}.onboarding-create-footer[_ngcontent-%COMP%]{display:flex;flex-direction:column}"] });
     return OnboardingCreateComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(OnboardingCreateComponent, [{
@@ -6170,10 +6134,10 @@ function DialogCreateOnboardingComponent_mat_option_7_Template(rf, ctx) { if (rf
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var template_r914 = ctx.$implicit;
-    ɵɵproperty("value", template_r914._id);
+    var template_r913 = ctx.$implicit;
+    ɵɵproperty("value", template_r913._id);
     ɵɵadvance(1);
-    ɵɵtextInterpolate(template_r914.Name);
+    ɵɵtextInterpolate(template_r913.Name);
 } }
 var DialogCreateOnboardingComponent = /** @class */ (function () {
     function DialogCreateOnboardingComponent(data, dialogRef, service) {
@@ -6455,8 +6419,8 @@ var DialogCreateOnboardingComponent = /** @class */ (function () {
 function OnboardingTableComponent_ngx_design_table_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "ngx-design-table", 1);
 } if (rf & 2) {
-    var ctx_r932 = ɵɵnextContext();
-    ɵɵproperty("columnDefinitions", ctx_r932.columnDefinitions)("displayDetail", true)("data", ctx_r932.data)("lang", ctx_r932.lang)("btnOverride", true)("inputSearch", ctx_r932.inputSearch)("EmptyRow", true);
+    var ctx_r931 = ɵɵnextContext();
+    ɵɵproperty("columnDefinitions", ctx_r931.columnDefinitions)("data", ctx_r931.data)("lang", ctx_r931.lang)("btnOverride", true)("displayDetail", true);
 } }
 var OnboardingTableComponent = /** @class */ (function () {
     function OnboardingTableComponent() {
@@ -6464,11 +6428,11 @@ var OnboardingTableComponent = /** @class */ (function () {
     OnboardingTableComponent.prototype.ngOnInit = function () {
     };
     OnboardingTableComponent.ɵfac = function OnboardingTableComponent_Factory(t) { return new (t || OnboardingTableComponent)(); };
-    OnboardingTableComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingTableComponent, selectors: [["lib-onboarding-table"]], inputs: { _loading_table: "_loading_table", data: "data", columnDefinitions: "columnDefinitions", lang: "lang", inputSearch: "inputSearch" }, decls: 1, vars: 1, consts: [[3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow", 4, "ngIf"], [3, "columnDefinitions", "displayDetail", "displayComponent", "data", "lang", "btnOverride", "inputSearch", "EmptyRow"]], template: function OnboardingTableComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵtemplate(0, OnboardingTableComponent_ngx_design_table_0_Template, 1, 7, "ngx-design-table", 0);
+    OnboardingTableComponent.ɵcmp = ɵɵdefineComponent({ type: OnboardingTableComponent, selectors: [["lib-onboarding-table"]], inputs: { _loading_table: "_loading_table", data: "data", columnDefinitions: "columnDefinitions", lang: "lang", inputSearch: "inputSearch" }, decls: 1, vars: 1, consts: [[3, "columnDefinitions", "data", "lang", "btnOverride", "displayDetail", 4, "ngIf"], [3, "columnDefinitions", "data", "lang", "btnOverride", "displayDetail"]], template: function OnboardingTableComponent_Template(rf, ctx) { if (rf & 1) {
+            ɵɵtemplate(0, OnboardingTableComponent_ngx_design_table_0_Template, 1, 5, "ngx-design-table", 0);
         } if (rf & 2) {
             ɵɵproperty("ngIf", ctx.data);
-        } }, directives: [NgIf, TableComponent], styles: ["ngx-design-table th span{margin:auto;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26}  ngx-design-table .mat-header-row{background:#e5e8ee}  ngx-design-table .empty-row{height:5px!important;background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table{background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table tbody tr.element-row{height:83px!important;border-radius:6px;margin:10px 0}  ngx-design-table .mat-table tbody td.mat-cell{background-color:#fff}  ngx-design-table .mat-table tbody td.mat-cell a{text-decoration:none!important}  ngx-design-table .mat-table tbody td.mat-cell span{font-family:Nexa;font-style:normal;font-weight:400}  ngx-design-table .mat-table tbody td.mat-cell app-is-mat-icon{width:100px}  ngx-design-table .mat-table tbody td.mat-cell:first-of-type{border-bottom-left-radius:8px;border-top-left-radius:8px}  ngx-design-table .mat-table tbody td.mat-cell:last-of-type{border-bottom-right-radius:8px;border-top-right-radius:8px}  ngx-design-table lib-custom-cell .custom-status{width:109px;height:36px;border-radius:4px;text-transform:capitalize;color:#fff;font-weight:500!important;font-size:16px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}  ngx-design-table lib-custom-cell .custom-cell.finished{background:#6fe8d7}  ngx-design-table lib-custom-cell .custom-cell.to-finish{background:#f3a124}  ngx-design-table lib-custom-cell .custom-cell.last-name{display:flex;flex-direction:column}  ngx-design-table lib-custom-cell .custom-cell.last-name span:first-child{font-family:Nexa;font-style:normal;font-weight:700;font-size:20px;line-height:120%;display:flex;align-items:center;color:#242731}"] });
+        } }, directives: [NgIf, TableComponent], styles: ["ngx-design-table th span{margin:auto;font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26}  ngx-design-table .mat-header-row{background:#e5e8ee}  ngx-design-table .empty-row{height:5px!important;background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table{background:no-repeat padding-box #f4f7f9}  ngx-design-table .mat-table tbody tr.element-row{height:83px!important;border-radius:6px;margin:10px 0}  ngx-design-table .mat-table tbody td.mat-cell{background-color:#fff}  ngx-design-table .mat-table tbody td.mat-cell a{text-decoration:none!important}  ngx-design-table .mat-table tbody td.mat-cell span{font-family:Nexa;font-style:normal;font-weight:400}  ngx-design-table .mat-table tbody td.mat-cell app-is-mat-icon{width:100px}  ngx-design-table .mat-table tbody td.mat-cell:first-of-type{border-bottom-left-radius:8px;border-top-left-radius:8px}  ngx-design-table .mat-table tbody td.mat-cell:last-of-type{border-bottom-right-radius:8px;border-top-right-radius:8px}  ngx-design-table lib-custom-cell .custom-status{width:109px;height:36px;border-radius:4px;text-transform:capitalize;color:#fff;font-weight:500!important;font-size:16px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}  ngx-design-table lib-custom-cell .custom-cell.finished{background:#6fe8d7}  ngx-design-table lib-custom-cell .custom-cell.to-finish{background:#f3a124}  ngx-design-table lib-custom-cell .custom-cell.last-name{display:flex;flex-direction:column}  ngx-design-table lib-custom-cell .custom-cell.last-name span:first-child{font-family:Nexa;font-style:normal;font-weight:700;font-size:14px;line-height:120%;display:flex;align-items:center;color:#242731}"] });
     return OnboardingTableComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(OnboardingTableComponent, [{
@@ -6493,8 +6457,8 @@ var OnboardingTableComponent = /** @class */ (function () {
 function OnboardingListComponent_div_1_ng_template_6_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(0);
 } if (rf & 2) {
-    var ctx_r916 = ɵɵnextContext(2);
-    ɵɵtextInterpolate1(" Toutes (", ctx_r916.onboardingList.data == null ? null : ctx_r916.onboardingList.data.length, ") ");
+    var ctx_r915 = ɵɵnextContext(2);
+    ɵɵtextInterpolate1(" Toutes (", ctx_r915.onboardingList.data == null ? null : ctx_r915.onboardingList.data.length, ") ");
 } }
 function OnboardingListComponent_div_1_ng_template_7_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "div", 12);
@@ -6502,8 +6466,8 @@ function OnboardingListComponent_div_1_ng_template_7_div_0_Template(rf, ctx) { i
 function OnboardingListComponent_div_1_ng_template_7_lib_onboarding_table_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "lib-onboarding-table", 13);
 } if (rf & 2) {
-    var ctx_r923 = ɵɵnextContext(3);
-    ɵɵproperty("columnDefinitions", ctx_r923.columnDefinitions)("data", ctx_r923.onboardingList)("lang", ctx_r923.lang)("inputSearch", ctx_r923.inputSearch);
+    var ctx_r922 = ɵɵnextContext(3);
+    ɵɵproperty("columnDefinitions", ctx_r922.columnDefinitions)("data", ctx_r922.onboardingList)("lang", ctx_r922.lang)("inputSearch", ctx_r922.inputSearch);
 } }
 var _c0$4 = function () { return { "margin-bottom": "100vh" }; };
 function OnboardingListComponent_div_1_ng_template_7_Template(rf, ctx) { if (rf & 1) {
@@ -6513,20 +6477,20 @@ function OnboardingListComponent_div_1_ng_template_7_Template(rf, ctx) { if (rf 
     ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_7_lib_onboarding_table_3_Template, 1, 4, "lib-onboarding-table", 11);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r917 = ɵɵnextContext(2);
-    ɵɵproperty("ngIf", ctx_r917._loading_table || !ctx_r917.onboardingList);
+    var ctx_r916 = ɵɵnextContext(2);
+    ɵɵproperty("ngIf", ctx_r916._loading_table || !ctx_r916.onboardingList);
     ɵɵadvance(1);
-    ɵɵproperty("ngStyle", ctx_r917._loading_table && ɵɵpureFunction0(5, _c0$4));
+    ɵɵproperty("ngStyle", ctx_r916._loading_table && ɵɵpureFunction0(5, _c0$4));
     ɵɵadvance(1);
-    ɵɵclassProp("ticket-list", !ctx_r917._loading_table);
+    ɵɵclassProp("ticket-list", !ctx_r916._loading_table);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r917.onboardingList);
+    ɵɵproperty("ngIf", ctx_r916.onboardingList);
 } }
 function OnboardingListComponent_div_1_ng_template_9_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(0);
 } if (rf & 2) {
-    var ctx_r918 = ɵɵnextContext(2);
-    ɵɵtextInterpolate1(" Termin\u00E9es (", ctx_r918.onboardingFinished.data.length, ") ");
+    var ctx_r917 = ɵɵnextContext(2);
+    ɵɵtextInterpolate1(" Termin\u00E9es (", ctx_r917.onboardingFinished.data.length, ") ");
 } }
 function OnboardingListComponent_div_1_ng_template_10_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "div", 12);
@@ -6534,8 +6498,8 @@ function OnboardingListComponent_div_1_ng_template_10_div_0_Template(rf, ctx) { 
 function OnboardingListComponent_div_1_ng_template_10_lib_onboarding_table_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "lib-onboarding-table", 13);
 } if (rf & 2) {
-    var ctx_r925 = ɵɵnextContext(3);
-    ɵɵproperty("columnDefinitions", ctx_r925.columnDefinitions)("data", ctx_r925.onboardingFinished)("lang", ctx_r925.lang)("inputSearch", ctx_r925.inputSearch);
+    var ctx_r924 = ɵɵnextContext(3);
+    ɵɵproperty("columnDefinitions", ctx_r924.columnDefinitions)("data", ctx_r924.onboardingFinished)("lang", ctx_r924.lang)("inputSearch", ctx_r924.inputSearch);
 } }
 function OnboardingListComponent_div_1_ng_template_10_Template(rf, ctx) { if (rf & 1) {
     ɵɵtemplate(0, OnboardingListComponent_div_1_ng_template_10_div_0_Template, 1, 0, "div", 9);
@@ -6544,20 +6508,20 @@ function OnboardingListComponent_div_1_ng_template_10_Template(rf, ctx) { if (rf
     ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_10_lib_onboarding_table_3_Template, 1, 4, "lib-onboarding-table", 11);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r919 = ɵɵnextContext(2);
-    ɵɵproperty("ngIf", ctx_r919._loading_table || !ctx_r919.onboardingFinished);
+    var ctx_r918 = ɵɵnextContext(2);
+    ɵɵproperty("ngIf", ctx_r918._loading_table || !ctx_r918.onboardingFinished);
     ɵɵadvance(1);
-    ɵɵproperty("ngStyle", ctx_r919._loading_table && ɵɵpureFunction0(5, _c0$4));
+    ɵɵproperty("ngStyle", ctx_r918._loading_table && ɵɵpureFunction0(5, _c0$4));
     ɵɵadvance(1);
-    ɵɵclassProp("ticket-list", !ctx_r919._loading_table);
+    ɵɵclassProp("ticket-list", !ctx_r918._loading_table);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r919.onboardingFinished);
+    ɵɵproperty("ngIf", ctx_r918.onboardingFinished);
 } }
 function OnboardingListComponent_div_1_ng_template_12_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(0);
 } if (rf & 2) {
-    var ctx_r920 = ɵɵnextContext(2);
-    ɵɵtextInterpolate1(" A finaliser (", ctx_r920.onboardingToFinish.data.length, ") ");
+    var ctx_r919 = ɵɵnextContext(2);
+    ɵɵtextInterpolate1(" A finaliser (", ctx_r919.onboardingToFinish.data.length, ") ");
 } }
 function OnboardingListComponent_div_1_ng_template_13_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "div", 12);
@@ -6565,8 +6529,8 @@ function OnboardingListComponent_div_1_ng_template_13_div_0_Template(rf, ctx) { 
 function OnboardingListComponent_div_1_ng_template_13_lib_onboarding_table_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "lib-onboarding-table", 13);
 } if (rf & 2) {
-    var ctx_r927 = ɵɵnextContext(3);
-    ɵɵproperty("columnDefinitions", ctx_r927.columnDefinitions)("data", ctx_r927.onboardingToFinish)("lang", ctx_r927.lang)("inputSearch", ctx_r927.inputSearch);
+    var ctx_r926 = ɵɵnextContext(3);
+    ɵɵproperty("columnDefinitions", ctx_r926.columnDefinitions)("data", ctx_r926.onboardingToFinish)("lang", ctx_r926.lang)("inputSearch", ctx_r926.inputSearch);
 } }
 function OnboardingListComponent_div_1_ng_template_13_Template(rf, ctx) { if (rf & 1) {
     ɵɵtemplate(0, OnboardingListComponent_div_1_ng_template_13_div_0_Template, 1, 0, "div", 9);
@@ -6575,24 +6539,24 @@ function OnboardingListComponent_div_1_ng_template_13_Template(rf, ctx) { if (rf
     ɵɵtemplate(3, OnboardingListComponent_div_1_ng_template_13_lib_onboarding_table_3_Template, 1, 4, "lib-onboarding-table", 11);
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r921 = ɵɵnextContext(2);
-    ɵɵproperty("ngIf", ctx_r921._loading_table || !ctx_r921.onboardingToFinish);
+    var ctx_r920 = ɵɵnextContext(2);
+    ɵɵproperty("ngIf", ctx_r920._loading_table || !ctx_r920.onboardingToFinish);
     ɵɵadvance(1);
-    ɵɵproperty("ngStyle", ctx_r921._loading_table && ɵɵpureFunction0(5, _c0$4));
+    ɵɵproperty("ngStyle", ctx_r920._loading_table && ɵɵpureFunction0(5, _c0$4));
     ɵɵadvance(1);
-    ɵɵclassProp("ticket-list", !ctx_r921._loading_table);
+    ɵɵclassProp("ticket-list", !ctx_r920._loading_table);
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r921.onboardingToFinish);
+    ɵɵproperty("ngIf", ctx_r920.onboardingToFinish);
 } }
 function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    var _r929 = ɵɵgetCurrentView();
+    var _r928 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 2);
     ɵɵelementStart(1, "div", 3);
     ɵɵelementStart(2, "span", 4);
     ɵɵtext(3);
     ɵɵelementEnd();
     ɵɵelementStart(4, "mat-tab-group", 5);
-    ɵɵlistener("selectedIndexChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedIndexChange_4_listener($event) { ɵɵrestoreView(_r929); var ctx_r928 = ɵɵnextContext(); return ctx_r928.index = $event; })("selectedTabChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedTabChange_4_listener($event) { ɵɵrestoreView(_r929); var ctx_r930 = ɵɵnextContext(); return ctx_r930.triggerChange($event); });
+    ɵɵlistener("selectedIndexChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedIndexChange_4_listener($event) { ɵɵrestoreView(_r928); var ctx_r927 = ɵɵnextContext(); return ctx_r927.index = $event; })("selectedTabChange", function OnboardingListComponent_div_1_Template_mat_tab_group_selectedTabChange_4_listener($event) { ɵɵrestoreView(_r928); var ctx_r929 = ɵɵnextContext(); return ctx_r929.triggerChange($event); });
     ɵɵelementStart(5, "mat-tab");
     ɵɵtemplate(6, OnboardingListComponent_div_1_ng_template_6_Template, 1, 1, "ng-template", 6);
     ɵɵtemplate(7, OnboardingListComponent_div_1_ng_template_7_Template, 4, 6, "ng-template", 7);
@@ -6607,7 +6571,7 @@ function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(14, "a", 8);
-    ɵɵlistener("click", function OnboardingListComponent_div_1_Template_a_click_14_listener() { ɵɵrestoreView(_r929); var ctx_r931 = ɵɵnextContext(); return ctx_r931.openDialog(); });
+    ɵɵlistener("click", function OnboardingListComponent_div_1_Template_a_click_14_listener() { ɵɵrestoreView(_r928); var ctx_r930 = ɵɵnextContext(); return ctx_r930.openDialog(); });
     ɵɵtext(15, " Nouvelle demande d\u2019int\u00E9gration ");
     ɵɵelementStart(16, "mat-icon");
     ɵɵtext(17, "add");
@@ -6616,11 +6580,11 @@ function OnboardingListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    var ctx_r915 = ɵɵnextContext();
+    var ctx_r914 = ɵɵnextContext();
     ɵɵadvance(3);
-    ɵɵtextInterpolate1("Vous avez actuellement ", ctx_r915.currentLength, " Demandes");
+    ɵɵtextInterpolate1("Vous avez actuellement ", ctx_r914.currentLength, " Demandes");
     ɵɵadvance(1);
-    ɵɵproperty("@.disabled", true)("selectedIndex", ctx_r915.index);
+    ɵɵproperty("@.disabled", true)("selectedIndex", ctx_r914.index);
 } }
 var _c1$3 = function () { return { "overflow-y": "hidden", "height": "100%", "display": "flex", "position": "absolute" }; };
 var OnboardingListComponent = /** @class */ (function () {
@@ -6823,6 +6787,39 @@ var OnboardingListComponent = /** @class */ (function () {
                 styleUrls: ['./onboarding-list.component.scss']
             }]
     }], function () { return [{ type: OnboardingService }, { type: Router }, { type: ActivatedRoute }, { type: MatDialog }]; }, null); })();
+
+var LoadingComponent = /** @class */ (function () {
+    function LoadingComponent() {
+    }
+    LoadingComponent.prototype.ngOnInit = function () {
+    };
+    LoadingComponent.ɵfac = function LoadingComponent_Factory(t) { return new (t || LoadingComponent)(); };
+    LoadingComponent.ɵcmp = ɵɵdefineComponent({ type: LoadingComponent, selectors: [["lib-loading"]], decls: 13, vars: 0, consts: [[1, "lds-spinner"]], template: function LoadingComponent_Template(rf, ctx) { if (rf & 1) {
+            ɵɵelementStart(0, "div", 0);
+            ɵɵelement(1, "div");
+            ɵɵelement(2, "div");
+            ɵɵelement(3, "div");
+            ɵɵelement(4, "div");
+            ɵɵelement(5, "div");
+            ɵɵelement(6, "div");
+            ɵɵelement(7, "div");
+            ɵɵelement(8, "div");
+            ɵɵelement(9, "div");
+            ɵɵelement(10, "div");
+            ɵɵelement(11, "div");
+            ɵɵelement(12, "div");
+            ɵɵelementEnd();
+        } }, styles: [".lds-spinner[_ngcontent-%COMP%]{color:official;display:inline-block;position:relative;width:20px;height:20px}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]{transform-origin:34px 15px;-webkit-animation:1.2s linear infinite lds-spinner;animation:1.2s linear infinite lds-spinner}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:after{content:\" \";display:block;position:absolute;top:4px;left:33px;width:2px;height:6px;border-radius:20%;background:#f3a124}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(1){transform:rotate(0);-webkit-animation-delay:-1.1s;animation-delay:-1.1s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(2){transform:rotate(30deg);-webkit-animation-delay:-1s;animation-delay:-1s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(3){transform:rotate(60deg);-webkit-animation-delay:-.9s;animation-delay:-.9s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(4){transform:rotate(90deg);-webkit-animation-delay:-.8s;animation-delay:-.8s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(5){transform:rotate(120deg);-webkit-animation-delay:-.7s;animation-delay:-.7s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(6){transform:rotate(150deg);-webkit-animation-delay:-.6s;animation-delay:-.6s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(7){transform:rotate(180deg);-webkit-animation-delay:-.5s;animation-delay:-.5s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(8){transform:rotate(210deg);-webkit-animation-delay:-.4s;animation-delay:-.4s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(9){transform:rotate(240deg);-webkit-animation-delay:-.3s;animation-delay:-.3s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(10){transform:rotate(270deg);-webkit-animation-delay:-.2s;animation-delay:-.2s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(11){transform:rotate(300deg);-webkit-animation-delay:-.1s;animation-delay:-.1s}.lds-spinner[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]:nth-child(12){transform:rotate(330deg);-webkit-animation-delay:0s;animation-delay:0s}@-webkit-keyframes lds-spinner{0%{opacity:1}100%{opacity:0}}@keyframes lds-spinner{0%{opacity:1}100%{opacity:0}}"] });
+    return LoadingComponent;
+}());
+/*@__PURE__*/ (function () { ɵsetClassMetadata(LoadingComponent, [{
+        type: Component,
+        args: [{
+                selector: 'lib-loading',
+                templateUrl: './loading.component.html',
+                styleUrls: ['./loading.component.scss']
+            }]
+    }], function () { return []; }, null); })();
 
 var DialogConfirmation = /** @class */ (function () {
     function DialogConfirmation(data, dialogRef) {
