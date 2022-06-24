@@ -6427,7 +6427,7 @@ function OnboardingTableComponent_ngx_design_table_0_Template(rf, ctx) { if (rf 
     ɵɵelement(0, "ngx-design-table", 1);
 } if (rf & 2) {
     var ctx_r931 = ɵɵnextContext();
-    ɵɵproperty("columnDefinitions", ctx_r931.columnDefinitions)("data", ctx_r931.data)("lang", ctx_r931.lang)("btnOverride", true)("displayDetail", true);
+    ɵɵproperty("columnDefinitions", ctx_r931.columnDefinitions)("data", ctx_r931.data)("lang", ctx_r931.lang)("btnOverride", true)("displayDetail", false);
 } }
 var OnboardingTableComponent = /** @class */ (function () {
     function OnboardingTableComponent() {

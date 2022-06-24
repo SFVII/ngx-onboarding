@@ -6101,7 +6101,7 @@ function OnboardingTableComponent_ngx_design_table_0_Template(rf, ctx) { if (rf 
     ɵɵelement(0, "ngx-design-table", 1);
 } if (rf & 2) {
     const ctx_r446 = ɵɵnextContext();
-    ɵɵproperty("columnDefinitions", ctx_r446.columnDefinitions)("data", ctx_r446.data)("lang", ctx_r446.lang)("btnOverride", true)("displayDetail", true);
+    ɵɵproperty("columnDefinitions", ctx_r446.columnDefinitions)("data", ctx_r446.data)("lang", ctx_r446.lang)("btnOverride", true)("displayDetail", false);
 } }
 class OnboardingTableComponent {
     constructor() {
