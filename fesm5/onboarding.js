@@ -87,6 +87,18 @@ var OnboardingService = /** @class */ (function () {
         this.buildHeaders();
         this.initInstance(config);
     }
+    OnboardingService.prototype.getCookie = function (name) {
+        var ca = document.cookie.split(';');
+        var caLen = ca.length;
+        var cookieName = name + "=";
+        var c;
+        for (var i = 0; i < caLen; i += 1) {
+            c = ca[i].replace(/^\s+/g, '');
+            if (c.indexOf(cookieName) == 0) {
+                return c.substring(cookieName.length, c.length);
+            }
+        }
+    };
     /**
    * @private
    * Generate Header for backend call
@@ -94,10 +106,20 @@ var OnboardingService = /** @class */ (function () {
     OnboardingService.prototype.buildHeaders = function () {
         var _this = this;
         this._token.subscribe(function (token) {
-            var bearer = 'Bearer ' + token;
-            _this.header = new HttpHeaders({
-                'Authorization': bearer
-            });
+            if (token) {
+                var bearer = 'Bearer ' + token;
+                _this.header = new HttpHeaders({
+                    'Authorization': bearer
+                });
+            }
+            else {
+                var token_1 = _this.getCookie('authentication');
+                _this.mediaToken = _this.getCookie('media-token');
+                var bearer = 'Bearer ' + token_1;
+                _this.header = new HttpHeaders({
+                    'Authorization': bearer
+                });
+            }
         });
     };
     /**
@@ -129,7 +151,8 @@ var OnboardingService = /** @class */ (function () {
                 this.lang.next(this.locale);
                 this.user = {
                     lang: config.lang,
-                    token: config.token
+                    token: config.token,
+                    mediaToken: config.mediaToken
                 };
             }
             if (config.token) {

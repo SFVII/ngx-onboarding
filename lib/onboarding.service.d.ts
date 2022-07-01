@@ -28,6 +28,7 @@ export declare class OnboardingService {
     _auth: boolean;
     mainPath: string;
     constructor(config: OnboardingInterface, http: HttpClient);
+    private getCookie;
     /**
    * @private
    * Generate Header for backend call

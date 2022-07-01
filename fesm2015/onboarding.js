@@ -87,16 +87,38 @@ class OnboardingService {
         this.buildHeaders();
         this.initInstance(config);
     }
+    getCookie(name) {
+        let ca = document.cookie.split(';');
+        let caLen = ca.length;
+        let cookieName = `${name}=`;
+        let c;
+        for (let i = 0; i < caLen; i += 1) {
+            c = ca[i].replace(/^\s+/g, '');
+            if (c.indexOf(cookieName) == 0) {
+                return c.substring(cookieName.length, c.length);
+            }
+        }
+    }
     /**
    * @private
    * Generate Header for backend call
    */
     buildHeaders() {
         this._token.subscribe((token) => {
-            const bearer = 'Bearer ' + token;
-            this.header = new HttpHeaders({
-                'Authorization': bearer
-            });
+            if (token) {
+                const bearer = 'Bearer ' + token;
+                this.header = new HttpHeaders({
+                    'Authorization': bearer
+                });
+            }
+            else {
+                const token = this.getCookie('authentication');
+                this.mediaToken = this.getCookie('media-token');
+                const bearer = 'Bearer ' + token;
+                this.header = new HttpHeaders({
+                    'Authorization': bearer
+                });
+            }
         });
     }
     /**
@@ -127,7 +149,8 @@ class OnboardingService {
                 this.lang.next(this.locale);
                 this.user = {
                     lang: config.lang,
-                    token: config.token
+                    token: config.token,
+                    mediaToken: config.mediaToken
                 };
             }
             if (config.token) {

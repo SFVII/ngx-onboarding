@@ -11,4 +11,5 @@ export interface OnboardingInterface {
 export interface OnboardingUser {
     lang: string;
     token: string;
+    mediaToken: string;
 }
