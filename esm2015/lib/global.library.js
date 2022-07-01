@@ -1,0 +1,27 @@
+export const downLoadFile = (x, type, filename) => {
+    const newBlob = new Blob([x], { type: 'binary' });
+    // IE doesn't allow using a blob object directly as link href
+    // instead it is necessary to use msSaveOrOpenBlob
+    if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+        window.navigator.msSaveOrOpenBlob(newBlob);
+        return;
+    }
+    // For other browsers:
+    // Create a link pointing to the ObjectURL containing the blob.
+    const data = window.URL.createObjectURL(newBlob);
+    const link = document.createElement('a');
+    link.href = data;
+    link.download = filename;
+    // this is necessary as link.click() does not work on the latest firefox
+    link.dispatchEvent(new MouseEvent('click', {
+        bubbles: true,
+        cancelable: true,
+        view: window
+    }));
+    setTimeout(() => {
+        // For Firefox it is necessary to delay revoking the ObjectURL
+        window.URL.revokeObjectURL(data);
+        link.remove();
+    }, 100);
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2xvYmFsLmxpYnJhcnkuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9vbmJvYXJkaW5nLyIsInNvdXJjZXMiOlsibGliL2dsb2JhbC5saWJyYXJ5LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE1BQU0sQ0FBQyxNQUFNLFlBQVksR0FBRyxDQUFDLENBQU0sRUFBRSxJQUFZLEVBQUUsUUFBZ0IsRUFBRSxFQUFFO0lBQ25FLE1BQU0sT0FBTyxHQUFHLElBQUksSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLEVBQUUsRUFBRSxJQUFJLEVBQUUsUUFBUSxFQUFFLENBQUMsQ0FBQztJQUNsRCw2REFBNkQ7SUFDN0Qsa0RBQWtEO0lBQ2xELElBQUksTUFBTSxDQUFDLFNBQVMsSUFBSSxNQUFNLENBQUMsU0FBUyxDQUFDLGdCQUFnQixFQUFFO1FBQ3ZELE1BQU0sQ0FBQyxTQUFTLENBQUMsZ0JBQWdCLENBQUMsT0FBTyxDQUFDLENBQUM7UUFDM0MsT0FBTztLQUNWO0lBQ0Qsc0JBQXNCO0lBQ3RCLCtEQUErRDtJQUMvRCxNQUFNLElBQUksR0FBRyxNQUFNLENBQUMsR0FBRyxDQUFDLGVBQWUsQ0FBQyxPQUFPLENBQUMsQ0FBQztJQUNqRCxNQUFNLElBQUksR0FBRyxRQUFRLENBQUMsYUFBYSxDQUFDLEdBQUcsQ0FBQyxDQUFDO0lBQ3pDLElBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDO0lBQ2pCLElBQUksQ0FBQyxRQUFRLEdBQUcsUUFBUSxDQUFDO0lBQ3pCLHdFQUF3RTtJQUN4RSxJQUFJLENBQUMsYUFBYSxDQUFDLElBQUksVUFBVSxDQUFDLE9BQU8sRUFBRTtRQUN2QyxPQUFPLEVBQUUsSUFBSTtRQUNiLFVBQVUsRUFBRSxJQUFJO1FBQ2hCLElBQUksRUFBRSxNQUFNO0tBQ2YsQ0FBQyxDQUFDLENBQUM7SUFDSixVQUFVLENBQUMsR0FBRyxFQUFFO1FBQ1osOERBQThEO1FBQzlELE1BQU0sQ0FBQyxHQUFHLENBQUMsZUFBZSxDQUFDLElBQUksQ0FBQyxDQUFDO1FBQ2pDLElBQUksQ0FBQyxNQUFNLEVBQUUsQ0FBQztJQUNsQixDQUFDLEVBQUUsR0FBRyxDQUFDLENBQUM7QUFDWixDQUFDLENBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY29uc3QgZG93bkxvYWRGaWxlID0gKHg6IGFueSwgdHlwZTogc3RyaW5nLCBmaWxlbmFtZTogc3RyaW5nKSA9PiB7XHJcbiAgICBjb25zdCBuZXdCbG9iID0gbmV3IEJsb2IoW3hdLCB7IHR5cGU6ICdiaW5hcnknIH0pO1xyXG4gICAgLy8gSUUgZG9lc24ndCBhbGxvdyB1c2luZyBhIGJsb2Igb2JqZWN0IGRpcmVjdGx5IGFzIGxpbmsgaHJlZlxyXG4gICAgLy8gaW5zdGVhZCBpdCBpcyBuZWNlc3NhcnkgdG8gdXNlIG1zU2F2ZU9yT3BlbkJsb2JcclxuICAgIGlmICh3aW5kb3cubmF2aWdhdG9yICYmIHdpbmRvdy5uYXZpZ2F0b3IubXNTYXZlT3JPcGVuQmxvYikge1xyXG4gICAgICAgIHdpbmRvdy5uYXZpZ2F0b3IubXNTYXZlT3JPcGVuQmxvYihuZXdCbG9iKTtcclxuICAgICAgICByZXR1cm47XHJcbiAgICB9XHJcbiAgICAvLyBGb3Igb3RoZXIgYnJvd3NlcnM6XHJcbiAgICAvLyBDcmVhdGUgYSBsaW5rIHBvaW50aW5nIHRvIHRoZSBPYmplY3RVUkwgY29udGFpbmluZyB0aGUgYmxvYi5cclxuICAgIGNvbnN0IGRhdGEgPSB3aW5kb3cuVVJMLmNyZWF0ZU9iamVjdFVSTChuZXdCbG9iKTtcclxuICAgIGNvbnN0IGxpbmsgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdhJyk7XHJcbiAgICBsaW5rLmhyZWYgPSBkYXRhO1xyXG4gICAgbGluay5kb3dubG9hZCA9IGZpbGVuYW1lO1xyXG4gICAgLy8gdGhpcyBpcyBuZWNlc3NhcnkgYXMgbGluay5jbGljaygpIGRvZXMgbm90IHdvcmsgb24gdGhlIGxhdGVzdCBmaXJlZm94XHJcbiAgICBsaW5rLmRpc3BhdGNoRXZlbnQobmV3IE1vdXNlRXZlbnQoJ2NsaWNrJywge1xyXG4gICAgICAgIGJ1YmJsZXM6IHRydWUsXHJcbiAgICAgICAgY2FuY2VsYWJsZTogdHJ1ZSxcclxuICAgICAgICB2aWV3OiB3aW5kb3dcclxuICAgIH0pKTtcclxuICAgIHNldFRpbWVvdXQoKCkgPT4ge1xyXG4gICAgICAgIC8vIEZvciBGaXJlZm94IGl0IGlzIG5lY2Vzc2FyeSB0byBkZWxheSByZXZva2luZyB0aGUgT2JqZWN0VVJMXHJcbiAgICAgICAgd2luZG93LlVSTC5yZXZva2VPYmplY3RVUkwoZGF0YSk7XHJcbiAgICAgICAgbGluay5yZW1vdmUoKTtcclxuICAgIH0sIDEwMCk7XHJcbn0iXX0=

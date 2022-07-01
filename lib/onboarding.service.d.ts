@@ -22,6 +22,7 @@ export declare class OnboardingService {
     private header;
     locale: string;
     private endpoint;
+    private mediaToken;
     private user;
     lang: BehaviorSubject<string>;
     _auth: boolean;
@@ -50,6 +51,7 @@ export declare class OnboardingService {
     createProfil(data: any): Promise<string | any>;
     updateProfil(data: any): Promise<string | any>;
     deleteProfil(id: any): Promise<string | any>;
+    getBuffer(endpoint: string): import("rxjs").Observable<ArrayBuffer>;
     getProfil(id: any): Promise<string | any>;
     getAllProfil(): Promise<string | any>;
     getAllTags(): Promise<string | any>;
@@ -62,6 +64,7 @@ export declare class OnboardingService {
     deleteOnboarding(id: any): Promise<string | any>;
     getOnboarding(id: any): Promise<string | any>;
     getAllOnboarding(): Promise<string | any>;
+    downloadAttachment(url: string, contentType: string, name: string): Promise<void>;
     static ɵfac: i0.ɵɵFactoryDef<OnboardingService>;
     static ɵprov: i0.ɵɵInjectableDef<OnboardingService>;
 }

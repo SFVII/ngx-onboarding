@@ -17,6 +17,7 @@ export declare class TemplateProfileListComponent implements OnInit {
     dataSource: MatTableDataSource<any>;
     defaultElevation: number;
     raisedElevation: number;
+    toTemplateCopyId: string;
     currentFilter: string;
     paginator: MatPaginator;
     sort: MatSort;
@@ -25,6 +26,7 @@ export declare class TemplateProfileListComponent implements OnInit {
     tags: any[];
     constructor(service: OnboardingService, router: Router, dialog: MatDialog);
     ngOnInit(): Promise<void>;
+    onScroll(event: any): void;
     onAddProfil(): void;
     onEditProfil(id: any): void;
     onChangeStatus(data: any, Status: any): Promise<void>;

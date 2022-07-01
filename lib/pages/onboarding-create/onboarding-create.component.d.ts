@@ -47,15 +47,16 @@ export declare class OnboardingCreateComponent implements OnInit {
     existSubForm(forms: any): boolean;
     private scrollToFirstInvalidControl;
     onChangeCategory(): any;
-    onSubmit(): Promise<void>;
-    onResumeLater(): Promise<void>;
+    onSubmit(submit?: boolean): Promise<void>;
+    checkOnboardingPath(): string;
     ingoreDefaultAction(e: any): void;
-    onCheckConditionLocationValue(iscondition: any, location: any, conditionValue: any): boolean;
+    onCheckConditionLocationValue(iscondition: any, condition: any): boolean;
     checkSubForm(forms: any): boolean;
     onSelectMenu(i: any): void;
     onCheckValue(event: boolean): void;
     onLink(e: any): void;
     onShowMode(): void;
+    onCreateConfirm(): void;
     static ɵfac: i0.ɵɵFactoryDef<OnboardingCreateComponent>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<OnboardingCreateComponent, "create-onboarding", never, {}, {}, never>;
 }

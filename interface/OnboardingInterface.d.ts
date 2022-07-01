@@ -6,6 +6,7 @@ export interface OnboardingInterface {
     token?: string;
     auth?: boolean;
     lang?: string;
+    mediaToken?: string;
 }
 export interface OnboardingUser {
     lang: string;

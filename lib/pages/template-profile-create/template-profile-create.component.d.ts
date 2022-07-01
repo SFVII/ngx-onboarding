@@ -27,12 +27,19 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     liveLabel: string;
     draftLabel: string;
     invalideValue: boolean;
-    matIconList: {
-        name: string;
-    }[];
     isPictoListShow: boolean;
     picto: string;
-    conditionData: any[];
+    all: string;
+    s1: string;
+    s2: string;
+    s3: string;
+    conditionData: {
+        all: any[];
+        s1: any[];
+        s2: any[];
+        s3: any[];
+        defaultValue: any[];
+    };
     categories: any[];
     isBlock: boolean;
     isSection: boolean;
@@ -42,12 +49,15 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     paramsIndex: any[];
     historics: any[];
     currentCanceledIndex: any;
+    newFieldIndex: any;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog, scrollToService: ScrollToService);
     defaultCategorie: any;
     canDeactivate(): true | import("rxjs").Subject<boolean>;
     initForm(): void;
     ngOnInit(): Promise<void>;
     onAddNewCategory(e: any): void;
+    onChangeCategoryName(): void;
+    checkBlink(index: any, level: any): string;
     onAddNewField(...params: any[]): void;
     onAddNewSubLevelField(...params: any[]): void;
     onRemoveField(...params: any[]): void;
@@ -73,6 +83,8 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onEditCategoryName(i: any, name: any): void;
     onAcrelink(e: any): void;
     getConditionValues(): void;
+    onSelectCondition(level: any, subLevel: any, value: any): void;
+    onGetDefaultValue(): any;
     onActiveMenu(cat: any, i: any, event?: any): void;
     catNameStart(str: string): boolean;
     onShowSection(e: any): void;
@@ -89,7 +101,6 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onChangeTypeBlock(field: any): void;
     onAddNewSubLevelFieldBlock(event: any): void;
     onOpenTypeDialog(field: any): void;
-    onSelectCondition(conditionLocation: any): void;
     fieldWidth(type: string, length: number, index: number): "100%" | "50%" | "33%";
     onCancel(left: boolean): void;
     onCheckValue(event: boolean): void;

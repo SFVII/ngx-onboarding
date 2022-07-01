@@ -5,6 +5,9 @@ export declare class DialogConfirmation implements OnInit {
     private data;
     private dialogRef;
     message: string;
+    icon: string;
+    confirmText: string;
+    cancelText: string;
     constructor(data: any, dialogRef: MatDialogRef<DialogConfirmation>);
     ngOnInit(): void;
     close(status: any): void;
