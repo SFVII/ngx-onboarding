@@ -71,6 +71,8 @@ class OnboardingService {
         this.canExit$ = new Subject();
         this.token = new BehaviorSubject(null);
         this._token = this.token.asObservable();
+        this.mediaTokenSubject = new BehaviorSubject(null);
+        this._mediaTokenSubject = this.mediaTokenSubject.asObservable();
         this.templates = new BehaviorSubject(null);
         this._templates = this.templates.asObservable();
         this.currentTemplate = new BehaviorSubject(null);
@@ -113,11 +115,18 @@ class OnboardingService {
             }
             else {
                 const token = this.getCookie('authentication');
-                this.mediaToken = this.getCookie('media-token');
                 const bearer = 'Bearer ' + token;
                 this.header = new HttpHeaders({
                     'Authorization': bearer
                 });
+            }
+        });
+        this._mediaTokenSubject.subscribe((token) => {
+            if (token) {
+                this.mediaToken = token;
+            }
+            else {
+                this.mediaToken = this.getCookie('media-token');
             }
         });
     }
@@ -140,6 +149,9 @@ class OnboardingService {
                     this.lang.next(this.locale);
                     if (user.token) {
                         this.token.next(user.token);
+                    }
+                    if (user.mediaToken) {
+                        this.mediaTokenSubject.next(user.mediaToken);
                     }
                     this.user = user;
                 });

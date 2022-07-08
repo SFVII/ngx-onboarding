@@ -256,6 +256,8 @@
             this.canExit$ = new rxjs.Subject();
             this.token = new rxjs.BehaviorSubject(null);
             this._token = this.token.asObservable();
+            this.mediaTokenSubject = new rxjs.BehaviorSubject(null);
+            this._mediaTokenSubject = this.mediaTokenSubject.asObservable();
             this.templates = new rxjs.BehaviorSubject(null);
             this._templates = this.templates.asObservable();
             this.currentTemplate = new rxjs.BehaviorSubject(null);
@@ -299,11 +301,18 @@
                 }
                 else {
                     var token_1 = _this.getCookie('authentication');
-                    _this.mediaToken = _this.getCookie('media-token');
                     var bearer = 'Bearer ' + token_1;
                     _this.header = new http.HttpHeaders({
                         'Authorization': bearer
                     });
+                }
+            });
+            this._mediaTokenSubject.subscribe(function (token) {
+                if (token) {
+                    _this.mediaToken = token;
+                }
+                else {
+                    _this.mediaToken = _this.getCookie('media-token');
                 }
             });
         };
@@ -327,6 +336,9 @@
                         _this.lang.next(_this.locale);
                         if (user.token) {
                             _this.token.next(user.token);
+                        }
+                        if (user.mediaToken) {
+                            _this.mediaTokenSubject.next(user.mediaToken);
                         }
                         _this.user = user;
                     });

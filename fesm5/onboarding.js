@@ -71,6 +71,8 @@ var OnboardingService = /** @class */ (function () {
         this.canExit$ = new Subject();
         this.token = new BehaviorSubject(null);
         this._token = this.token.asObservable();
+        this.mediaTokenSubject = new BehaviorSubject(null);
+        this._mediaTokenSubject = this.mediaTokenSubject.asObservable();
         this.templates = new BehaviorSubject(null);
         this._templates = this.templates.asObservable();
         this.currentTemplate = new BehaviorSubject(null);
@@ -114,11 +116,18 @@ var OnboardingService = /** @class */ (function () {
             }
             else {
                 var token_1 = _this.getCookie('authentication');
-                _this.mediaToken = _this.getCookie('media-token');
                 var bearer = 'Bearer ' + token_1;
                 _this.header = new HttpHeaders({
                     'Authorization': bearer
                 });
+            }
+        });
+        this._mediaTokenSubject.subscribe(function (token) {
+            if (token) {
+                _this.mediaToken = token;
+            }
+            else {
+                _this.mediaToken = _this.getCookie('media-token');
             }
         });
     };
@@ -142,6 +151,9 @@ var OnboardingService = /** @class */ (function () {
                     _this.lang.next(_this.locale);
                     if (user.token) {
                         _this.token.next(user.token);
+                    }
+                    if (user.mediaToken) {
+                        _this.mediaTokenSubject.next(user.mediaToken);
                     }
                     _this.user = user;
                 });

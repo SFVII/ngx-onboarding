@@ -8,6 +8,8 @@ export declare class OnboardingService {
     canExit$: Subject<boolean>;
     private token;
     private _token;
+    private mediaTokenSubject;
+    private _mediaTokenSubject;
     templates: BehaviorSubject<any>;
     _templates: import("rxjs").Observable<any>;
     currentTemplate: BehaviorSubject<any>;
