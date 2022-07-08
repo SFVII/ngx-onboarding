@@ -22,6 +22,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     tags: any[];
     id: string;
     parent: any[];
+    loading: boolean;
     editIndex: any;
     showProfileName: boolean;
     liveLabel: string;
@@ -33,6 +34,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     s1: string;
     s2: string;
     s3: string;
+    s4: string;
     conditionData: {
         all: any[];
         s1: any[];
