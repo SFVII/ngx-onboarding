@@ -16,10 +16,10 @@ function DialogCreateOnboardingComponent_mat_option_7_Template(rf, ctx) { if (rf
     i0.ɵɵtext(1);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const template_r457 = ctx.$implicit;
-    i0.ɵɵproperty("value", template_r457._id);
+    const template_r465 = ctx.$implicit;
+    i0.ɵɵproperty("value", template_r465._id);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate(template_r457.Name);
+    i0.ɵɵtextInterpolate(template_r465.Name);
 } }
 export class DialogCreateOnboardingComponent {
     constructor(data, dialogRef, service) {

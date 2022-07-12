@@ -52,6 +52,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     historics: any[];
     currentCanceledIndex: any;
     newFieldIndex: any;
+    isSubmitted: boolean;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog, scrollToService: ScrollToService);
     defaultCategorie: any;
     canDeactivate(): true | import("rxjs").Subject<boolean>;

@@ -18,6 +18,7 @@ export declare class TemplateProfileListComponent implements OnInit {
     defaultElevation: number;
     raisedElevation: number;
     loading: boolean;
+    cpId: any;
     toTemplateCopyId: string;
     currentFilter: string;
     paginator: MatPaginator;

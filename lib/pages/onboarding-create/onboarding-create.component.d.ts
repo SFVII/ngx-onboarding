@@ -35,6 +35,7 @@ export declare class OnboardingCreateComponent implements OnInit {
     categories: any;
     submitLabel: string;
     resumeLabel: string;
+    isSubmitted: boolean;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog);
     isObject(obj: any): boolean;
     canDeactivate(): true | import("rxjs").Subject<boolean>;
