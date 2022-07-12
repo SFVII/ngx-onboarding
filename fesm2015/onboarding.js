@@ -6264,6 +6264,7 @@ class OnboardingCreateComponent {
     onLoadViewDetail(categories) {
         var _a, _b, _c, _d, _e, _f;
         const user = {};
+        const displayUser = ["Salutation", "Type_de_profil_Nowboard__c", "Acc_s_au_portail_client_NowBoard__c", "Langue_maternelle__c"];
         const categoriesView = categories.map((category) => {
             const { name, expandOnboarding } = category;
             let categoryForm = [];
@@ -6338,6 +6339,10 @@ class OnboardingCreateComponent {
                 fieldLength
             };
         });
+        const index = categoriesView.findIndex((cat) => cat.name === "Utilisateur");
+        if (index !== -1) {
+            categoriesView[index].forms = categoriesView[index].forms.filter((form) => displayUser.includes(form.key));
+        }
         this.detailView = {
             Finished: (_a = this.currentOnboarding) === null || _a === void 0 ? void 0 : _a.Finished,
             categories: categoriesView,

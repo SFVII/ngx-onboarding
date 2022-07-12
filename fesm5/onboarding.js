@@ -6529,6 +6529,7 @@ var OnboardingCreateComponent = /** @class */ (function () {
     OnboardingCreateComponent.prototype.onLoadViewDetail = function (categories) {
         var _a, _b, _c, _d, _e, _f;
         var user = {};
+        var displayUser = ["Salutation", "Type_de_profil_Nowboard__c", "Acc_s_au_portail_client_NowBoard__c", "Langue_maternelle__c"];
         var categoriesView = categories.map(function (category) {
             var name = category.name, expandOnboarding = category.expandOnboarding;
             var categoryForm = [];
@@ -6603,6 +6604,10 @@ var OnboardingCreateComponent = /** @class */ (function () {
                 fieldLength: fieldLength
             };
         });
+        var index = categoriesView.findIndex(function (cat) { return cat.name === "Utilisateur"; });
+        if (index !== -1) {
+            categoriesView[index].forms = categoriesView[index].forms.filter(function (form) { return displayUser.includes(form.key); });
+        }
         this.detailView = {
             Finished: (_a = this.currentOnboarding) === null || _a === void 0 ? void 0 : _a.Finished,
             categories: categoriesView,
