@@ -5,8 +5,8 @@ import * as i2 from "table";
 function OnboardingTableComponent_ngx_design_table_0_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelement(0, "ngx-design-table", 1);
 } if (rf & 2) {
-    var ctx_r1008 = i0.ɵɵnextContext();
-    i0.ɵɵproperty("columnDefinitions", ctx_r1008.columnDefinitions)("data", ctx_r1008.data)("lang", ctx_r1008.lang)("btnOverride", true)("displayDetail", false);
+    var ctx_r1044 = i0.ɵɵnextContext();
+    i0.ɵɵproperty("columnDefinitions", ctx_r1044.columnDefinitions)("data", ctx_r1044.data)("lang", ctx_r1044.lang)("btnOverride", true)("displayDetail", false);
 } }
 var OnboardingTableComponent = /** @class */ (function () {
     function OnboardingTableComponent() {

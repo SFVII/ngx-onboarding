@@ -17,7 +17,10 @@ export declare class OnboardingDetailComponent implements OnInit {
     onEdit(): void;
     progress(completed: any, length: any): number;
     onViewTicket(CaseNumber: any): void;
-    onFormatDisplayValue(value: any): any;
+    onFormatDisplayValue(value: any): {
+        value: any;
+        type: string;
+    };
     static ɵfac: i0.ɵɵFactoryDef<OnboardingDetailComponent>;
     static ɵcmp: i0.ɵɵComponentDefWithMeta<OnboardingDetailComponent, "lib-onboarding-detail", never, { "detailView": "detailView"; }, { "onShowMode": "onShowMode"; }, never>;
 }
