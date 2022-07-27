@@ -9063,7 +9063,7 @@ var onBoardingRoutes = [
         children: [
             {
                 path: 'template/:id',
-                component: TemplateProfileFormComponent,
+                component: TemplateProfileCreateComponent,
                 canDeactivate: [CanDeactivateGuard],
             },
             {
