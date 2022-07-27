@@ -5905,19 +5905,7 @@ class OnboardingDetailComponent {
     }
     openBottomSheet(Attachement) {
         this._bottomSheet.open(BottomSheet, {
-            data: Attachement ? Attachement[0] : {
-                ContentType: "image/jpeg",
-                CreatedById: "0052o000009FBvvAAG",
-                CreatedDate: "2022-07-01T13:12:54.467Z",
-                Extension: "jpeg",
-                Id: "0691q0000061cyFAAQ",
-                IdContact__c: "0031q00000nwsQyAAI",
-                LastModifiedDate: "2022-07-01T13:12:54.467Z",
-                Name: "How-To-Become-A-Full-Stack-JavaScript-Developer",
-                Origin: "Web",
-                ParentId: "5001q00000IisuTAAR",
-                Url: "/assets/5001q00000IisuTAAR_1656681172298.jpeg",
-            }
+            data: Attachement && Attachement.length > 1 ? Attachement.find((attach) => attach.Name.includes("Configuration")) : Attachement[0]
         });
     }
     onScroll(event) {
