@@ -57,11 +57,10 @@ import { MatCardModule } from '@angular/material/card';
 import * as i3 from '@angular/material/bottom-sheet';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import * as moment from 'moment';
-import { CellsComponentList, CoreMatTable } from 'table';
+import * as i2$1 from 'ngx-table';
+import { CellsComponentList, CoreMatTable, TableModule } from 'ngx-table';
 import * as i6 from '@angular/material/tabs';
 import { MatTabsModule } from '@angular/material/tabs';
-import * as i2$1 from 'ngx-table';
-import { TableModule } from 'ngx-table';
 
 const downLoadFile = (x, type, filename) => {
     const newBlob = new Blob([x], { type: 'binary' });
