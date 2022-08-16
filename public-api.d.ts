@@ -8,3 +8,6 @@ export * from './lib/pages/onboarding-list/onboarding-list.component';
 export * from './lib/pages/onboarding-create/onboarding-create.component';
 export * from './lib/components/onboarding/dialog-create-onboarding/dialog-create-onboarding.component';
 export * from './lib/components/dialog-confirmation/dialog-confirmation.component';
+export * from './lib/module/scroll-to/scroll-to.service';
+export * from './lib/module/scroll-to/scroll-to.module';
+export * from './lib/module/scroll-to/scroll-to.directive';

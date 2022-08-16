@@ -5,7 +5,7 @@ import { FormBuilder, FormGroup } from "@angular/forms";
 import { MatChipInputEvent } from "@angular/material/chips";
 import { MatDialog } from "@angular/material/dialog";
 import { OnboardingService } from "../../onboarding.service";
-import { ScrollToService } from "@nicky-lenaers/ngx-scroll-to";
+import { ScrollToService } from "../../module/scroll-to/scroll-to.service";
 import * as i0 from "@angular/core";
 export declare class TemplateProfileCreateComponent implements OnInit {
     private fb;
@@ -108,6 +108,6 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onCancel(left: boolean): void;
     onCheckValue(event: boolean): void;
     onHistorics(data: any): void;
-    static ɵfac: i0.ɵɵFactoryDef<TemplateProfileCreateComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<TemplateProfileCreateComponent, "onboarding-create-profile-template", never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<TemplateProfileCreateComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<TemplateProfileCreateComponent, "onboarding-create-profile-template", never, {}, {}, never, never>;
 }

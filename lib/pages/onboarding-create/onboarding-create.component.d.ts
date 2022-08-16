@@ -58,6 +58,6 @@ export declare class OnboardingCreateComponent implements OnInit {
     onLink(e: any): void;
     onShowMode(): void;
     onCreateConfirm(): void;
-    static ɵfac: i0.ɵɵFactoryDef<OnboardingCreateComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<OnboardingCreateComponent, "create-onboarding", never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingCreateComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingCreateComponent, "create-onboarding", never, {}, {}, never, never>;
 }

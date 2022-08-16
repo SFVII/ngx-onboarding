@@ -69,6 +69,6 @@ export declare class OnboardingService {
     getAllOnboarding(): Promise<string | any>;
     downloadAttachment(url: string, contentType: string, name: string): Promise<void>;
     createContact(data: any): Promise<string | any>;
-    static ɵfac: i0.ɵɵFactoryDef<OnboardingService>;
-    static ɵprov: i0.ɵɵInjectableDef<OnboardingService>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<OnboardingService>;
 }

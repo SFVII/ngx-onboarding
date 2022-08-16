@@ -15,6 +15,6 @@ export declare class TypeComponent implements OnInit {
     constructor(data: any, dialogRef: MatDialogRef<TypeComponent>, service: OnboardingService);
     ngOnInit(): void;
     onSelect(type: any): void;
-    static ɵfac: i0.ɵɵFactoryDef<TypeComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<TypeComponent, "lib-type", never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<TypeComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<TypeComponent, "lib-type", never, {}, {}, never, never>;
 }

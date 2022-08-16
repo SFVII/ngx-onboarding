@@ -10,6 +10,6 @@ export declare class ExitConfirmComponent implements OnInit {
     ngOnInit(): void;
     confirm(): void;
     cancel(): void;
-    static ɵfac: i0.ɵɵFactoryDef<ExitConfirmComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<ExitConfirmComponent, "lib-exit-confirm", never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ExitConfirmComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ExitConfirmComponent, "lib-exit-confirm", never, {}, {}, never, never>;
 }

@@ -10,6 +10,6 @@ export declare class MaterialElevationDirective implements OnChanges {
     onMouseEnter(): void;
     onMouseLeave(): void;
     setElevation(amount: number): void;
-    static ɵfac: i0.ɵɵFactoryDef<MaterialElevationDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<MaterialElevationDirective, "[appMaterialElevation]", never, { "defaultElevation": "defaultElevation"; "raisedElevation": "raisedElevation"; }, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<MaterialElevationDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<MaterialElevationDirective, "[appMaterialElevation]", never, { "defaultElevation": "defaultElevation"; "raisedElevation": "raisedElevation"; }, {}, never>;
 }

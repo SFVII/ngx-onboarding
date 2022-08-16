@@ -30,6 +30,6 @@ export declare class OnboardingListComponent implements OnInit {
     ngOnInit(): Promise<void>;
     triggerChange($event: any): void;
     openDialog(): void;
-    static ɵfac: i0.ɵɵFactoryDef<OnboardingListComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<OnboardingListComponent, "lib-onboarding-list", never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingListComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingListComponent, "lib-onboarding-list", never, {}, {}, never, never>;
 }

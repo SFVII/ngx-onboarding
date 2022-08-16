@@ -17,6 +17,6 @@ export declare class DialogCreateTemplateComponent implements OnInit {
     createProfil(): void;
     close(): void;
     disabled(): boolean;
-    static ɵfac: i0.ɵɵFactoryDef<DialogCreateTemplateComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<DialogCreateTemplateComponent, "lib-dialog-create-template", never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DialogCreateTemplateComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<DialogCreateTemplateComponent, "lib-dialog-create-template", never, {}, {}, never, never>;
 }

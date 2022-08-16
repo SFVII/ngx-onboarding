@@ -37,6 +37,6 @@ export declare class TemplateProfileListComponent implements OnInit {
     filterTemplate(value: any, name: any): void;
     copyTemplate(data: any): Promise<void>;
     openDialog(): void;
-    static ɵfac: i0.ɵɵFactoryDef<TemplateProfileListComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<TemplateProfileListComponent, "onboarding-profile-list", never, {}, {}, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<TemplateProfileListComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<TemplateProfileListComponent, "onboarding-profile-list", never, {}, {}, never, never>;
 }

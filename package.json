@@ -2,26 +2,37 @@
   "name": "onboarding",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "~9.0.7",
-    "@angular/core": "~9.0.7",
-    "@angular/material": "^9.2.4",
+    "@angular/common": ">=10.x && <= 13.x",
+    "@angular/core": ">=10.x && <= 13.x",
+    "@angular/material": ">=10.x && <= 13.x",
     "ngx-intl-tel-input": "2.6.0",
+    "mustache": "^4.2.0",
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0"
   },
   "dependencies": {
-    "mustache": "^4.2.0",
-    "tslib": "~1.10.0"
+    "tslib": ">=2.x && <= 2.3.x"
   },
-  "main": "bundles/onboarding.umd.js",
-  "module": "fesm5/onboarding.js",
-  "es2015": "fesm2015/onboarding.js",
-  "esm5": "esm5/onboarding.js",
-  "esm2015": "esm2015/onboarding.js",
-  "fesm5": "fesm5/onboarding.js",
-  "fesm2015": "fesm2015/onboarding.js",
+  "module": "fesm2015/onboarding.mjs",
+  "es2020": "fesm2020/onboarding.mjs",
+  "esm2020": "esm2020/onboarding.mjs",
+  "fesm2020": "fesm2020/onboarding.mjs",
+  "fesm2015": "fesm2015/onboarding.mjs",
   "typings": "onboarding.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./onboarding.d.ts",
+      "esm2020": "./esm2020/onboarding.mjs",
+      "es2020": "./fesm2020/onboarding.mjs",
+      "es2015": "./fesm2015/onboarding.mjs",
+      "node": "./fesm2015/onboarding.mjs",
+      "default": "./fesm2020/onboarding.mjs"
+    }
+  },
   "sideEffects": false,
   "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
   }
 }
