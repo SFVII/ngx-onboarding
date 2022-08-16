@@ -1,5 +1,5 @@
 import { ActivatedRoute, Router } from '@angular/router';
-import { displayedColumnsInterface } from "table";
+import { displayedColumnsInterface } from "ngx-table";
 import { OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { OnboardingService } from '../../onboarding.service';
