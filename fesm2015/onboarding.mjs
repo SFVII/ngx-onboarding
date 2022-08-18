@@ -7822,12 +7822,12 @@ class OnboardingListComponent {
         this.columnDefinitions = [
             {
                 key: 'Name',
-                // subTitle: "date",
+                subTitle: "date",
                 value: 'Nom de famille',
                 order: 1,
                 class: 'u-7',
-                // addClass: 'lastNameClass',
-                // module: CellsComponentList.CustomCell,
+                addClass: 'lastNameClass',
+                module: CellsComponentList.CustomCell,
                 sort: true,
             },
             {
@@ -7856,21 +7856,20 @@ class OnboardingListComponent {
                 sort: true,
             },
             {
-                key: 'createdAt',
+                key: 'creationDate',
                 value: 'Date de création',
                 order: 6,
                 class: 'u-6',
-                module: CellsComponentList.DateFormat,
                 sort: true
             },
             {
                 key: 'Status',
                 value: "Statut",
                 order: 7,
-                // addClass: 'CustomClass',
+                addClass: 'CustomClass',
                 class: 'u-4',
                 sort: true,
-                // module: CellsComponentList.CustomCell,
+                module: CellsComponentList.CustomCell,
             },
             {
                 key: 'Action',
@@ -7917,9 +7916,9 @@ class OnboardingListComponent {
                         row.Title = (formUser === null || formUser === void 0 ? void 0 : formUser.Title) || "";
                         row.Email = (formUser === null || formUser === void 0 ? void 0 : formUser.Email) || '';
                         row.date = moment(row.createdAt).format('DD/MM/YY');
+                        row.creationDate = moment(row.createdAt).format('DD/MM/YY');
                         row.TemplateName = row.vtemplates.length > 0 ? row.vtemplates[0].Name : '';
                         row.Id = index + 1;
-                        // row.mainPath = this.service.mainPath.includes('onboarding') ? `${this.service.mainPath}/requests/` : `/onboarding/requests/`
                         return row;
                     });
                     this.onboardingFormatList = x;
