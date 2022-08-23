@@ -56,7 +56,6 @@ import * as i4$2 from '@angular/material/card';
 import { MatCardModule } from '@angular/material/card';
 import * as i3 from '@angular/material/bottom-sheet';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
-import * as moment from 'moment';
 import * as i2$1 from 'ngx-table';
 import { CellsComponentList, CoreMatTable, TableModule } from 'ngx-table';
 import * as i6 from '@angular/material/tabs';
@@ -6905,8 +6904,9 @@ class OnboardingListComponent {
                     row.Name = row.ContactName = formUser?.LastName + " " + formUser?.FirstName || "";
                     row.Title = formUser?.Title || "";
                     row.Email = formUser?.Email || '';
-                    row.date = moment(row.createdAt).format('DD/MM/YY');
-                    row.creationDate = moment(row.createdAt).format('DD/MM/YY');
+                    row.date = row.createdA;
+                    // row.date = moment(row.createdAt).format('DD/MM/YY')
+                    row.creationDate = row.createdA;
                     row.TemplateName = row?.vtemplates?.length > 0 ? row?.vtemplates[0].Name : '';
                     row.Id = index + 1;
                     // row.mainPath = this.service.mainPath.includes('onboarding') ? `${this.service.mainPath}/requests/` : `/onboarding/requests/`
