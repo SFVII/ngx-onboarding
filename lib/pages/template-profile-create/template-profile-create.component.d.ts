@@ -5,7 +5,7 @@ import { FormBuilder, FormGroup } from "@angular/forms";
 import { MatChipInputEvent } from "@angular/material/chips";
 import { MatDialog } from "@angular/material/dialog";
 import { OnboardingService } from "../../onboarding.service";
-import { ScrollToService } from "../../module/scroll-to/scroll-to.service";
+import { ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
 import * as i0 from "@angular/core";
 export declare class TemplateProfileCreateComponent implements OnInit {
     private fb;
