@@ -56,6 +56,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog, scrollToService: ScrollToService);
     defaultCategorie: any;
     canDeactivate(): true | import("rxjs").Subject<boolean>;
+    onScroll(event: any): void;
     initForm(): void;
     ngOnInit(): Promise<void>;
     onAddNewCategory(e: any): void;
