@@ -71,6 +71,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onChangeType(type: string, ...params: any[]): void;
     onKeyPress(event: any, ...params: any[]): void;
     removeKeyword(keyword: any, ...params: any[]): void;
+    scrollTo(category: any, i: any): void;
     onExpendMore(event: any, ...params: any[]): void;
     onCheckedDefault(event: any, ...params: any[]): void;
     addKeywordFromInput(event: MatChipInputEvent, prev: any, ...params: any[]): void;
