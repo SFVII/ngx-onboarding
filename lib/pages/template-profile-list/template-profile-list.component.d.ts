@@ -19,6 +19,14 @@ export declare class TemplateProfileListComponent implements OnInit {
     raisedElevation: number;
     loading: boolean;
     cpId: any;
+    filterData: {
+        Status: any;
+        sortNameAsc: boolean;
+        start_date: any;
+        end_date: any;
+        searchText: string;
+        service: string;
+    };
     toTemplateCopyId: string;
     currentFilter: string;
     paginator: MatPaginator;
@@ -34,7 +42,8 @@ export declare class TemplateProfileListComponent implements OnInit {
     onChangeStatus(data: any, Status: any): Promise<void>;
     onDelete(id: any): Promise<void>;
     getAllProfils(): Promise<void>;
-    filterTemplate(value: any, name: any): void;
+    onFilterTemplate(): void;
+    onSort(): void;
     copyTemplate(data: any): Promise<void>;
     openDialog(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<TemplateProfileListComponent, never>;

@@ -13,23 +13,35 @@ export declare class OnboardingListComponent implements OnInit {
     inputSearch: string;
     currentLength: number;
     currentFilter: string;
+    onboarding: any[];
     search: string;
     onboardingFormatList: any[];
     onboardingFinished: any;
     onboardingToFinish: any;
     templates: any[];
+    filterData: {
+        TemplateId: string;
+        start_date: any;
+        end_date: any;
+        searchText: string;
+        Finished: string;
+    };
     columnDefinitions: displayedColumnsInterface[];
     localService: any;
     _loading_table: boolean;
     private HiddenIndex;
     index: number;
     lang: string;
+    dataFiltered: any[];
     cancelSearch(): void;
     constructor(service: OnboardingService, router: Router, route: ActivatedRoute, dialog: MatDialog);
     checkOnboardingPath(): string;
     ngOnInit(): Promise<void>;
+    onForamtList(datas: any): void;
+    onFilterTemplate(): void;
     triggerChange($event: any): void;
     openDialog(): void;
+    onExportToCSV(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingListComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingListComponent, "lib-onboarding-list", never, {}, {}, never, never>;
 }

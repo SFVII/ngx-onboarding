@@ -90,7 +90,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     getConditionValues(): void;
     onSelectCondition(level: any, subLevel: any, value: any): void;
     onGetDefaultValue(): any;
-    onActiveMenu(cat: any, i: any, event?: any): void;
+    onActiveMenu(cat: any, i: any): void;
     catNameStart(str: string): boolean;
     onShowSection(e: any): void;
     onEditBlock(block: any, ...params: any[]): void;
