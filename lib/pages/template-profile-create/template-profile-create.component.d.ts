@@ -92,7 +92,6 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onGetDefaultValue(): any;
     onActiveMenu(cat: any, i: any): void;
     catNameStart(str: string): boolean;
-    onShowSection(e: any): void;
     onEditBlock(block: any, ...params: any[]): void;
     onRemoveblock(event: any, block: any): void;
     onRemoveFieldBlock(event: any): void;
