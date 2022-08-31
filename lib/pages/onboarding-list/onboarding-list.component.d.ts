@@ -18,6 +18,7 @@ export declare class OnboardingListComponent implements OnInit {
     onboardingFormatList: any[];
     onboardingFinished: any;
     onboardingToFinish: any;
+    showSearch: false;
     templates: any[];
     filterData: {
         TemplateId: string;
