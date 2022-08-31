@@ -6853,7 +6853,7 @@ class OnboardingListComponent {
                 sort: true,
             },
             {
-                key: 'date',
+                key: 'createdAt',
                 value: "Date de création",
                 order: 6,
                 module: CellsComponentList.DateFormat,
@@ -6916,9 +6916,7 @@ class OnboardingListComponent {
                     row.Title = formUser?.Title || "";
                     row.Email = formUser?.Email || '';
                     row.date_of_entry = formUser.date_of_entry ? new Date(formUser.date_of_entry).toLocaleDateString("fr-FR") : "";
-                    // row.date = moment(row.createdAt).format('DD/MM/YY')
-                    row.creationDate = row.createdAt;
-                    row.creationDate = row.createdAt;
+                    // row.date = moment(row.createdAt).format('DD/MM/YY') 
                     row.TemplateName = row?.vtemplates?.length > 0 ? row?.vtemplates[0].Name : '';
                     row.Id = index + 1;
                     // row.mainPath = this.service.mainPath.includes('onboarding') ? `${this.service.mainPath}/requests/` : `/onboarding/requests/`
