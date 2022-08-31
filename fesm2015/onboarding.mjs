@@ -56,7 +56,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatCardModule } from '@angular/material/card';
 import * as i3 from '@angular/material/bottom-sheet';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
-import * as moment_ from 'moment';
+import * as moment from 'moment';
 import * as i2$1 from 'ngx-table';
 import { CellsComponentList, CoreMatTable, TableModule } from 'ngx-table';
 import json2csv from 'json2csv';
@@ -7307,7 +7307,6 @@ function OnboardingListComponent_div_49_Template(rf, ctx) {
         i0.ɵɵproperty("columnDefinitions", ctx_r3.columnDefinitions)("data", ctx_r3.onboardingList)("lang", ctx_r3.lang)("inputSearch", ctx_r3.inputSearch);
     }
 }
-const moment = moment_;
 // save the file
 class OnboardingListComponent {
     constructor(service, router, route, dialog) {
@@ -7430,7 +7429,7 @@ class OnboardingListComponent {
                         row.Name = row.ContactName = (formUser === null || formUser === void 0 ? void 0 : formUser.LastName) + " " + (formUser === null || formUser === void 0 ? void 0 : formUser.FirstName) || "";
                         row.Title = (formUser === null || formUser === void 0 ? void 0 : formUser.Title) || "";
                         row.Email = (formUser === null || formUser === void 0 ? void 0 : formUser.Email) || '';
-                        row.date_of_entry = formUser.date_of_entry ? moment(new Date(formUser.date_of_entry)) : "";
+                        row.date_of_entry = formUser.date_of_entry ? new Date(formUser.date_of_entry).toLocaleDateString("fr-FR") : "";
                         // row.date = moment(row.createdAt).format('DD/MM/YY')
                         row.creationDate = row.createdAt;
                         row.creationDate = row.createdAt;
