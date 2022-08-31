@@ -7434,7 +7434,7 @@ class OnboardingListComponent {
                         row.Name = row.ContactName = (formUser === null || formUser === void 0 ? void 0 : formUser.LastName) + " " + (formUser === null || formUser === void 0 ? void 0 : formUser.FirstName) || "";
                         row.Title = (formUser === null || formUser === void 0 ? void 0 : formUser.Title) || "";
                         row.Email = (formUser === null || formUser === void 0 ? void 0 : formUser.Email) || '';
-                        row.date_of_entry = formUser.date_of_entry ? moment(new Date(formUser.date_of_entry).toISOString()).format('DD/MM/YY') : "";
+                        row.date_of_entry = formUser.date_of_entry ? new Date(formUser.date_of_entry) : "";
                         // row.date = moment(row.createdAt).format('DD/MM/YY')
                         row.creationDate = row.createdAt;
                         row.creationDate = row.createdAt;
