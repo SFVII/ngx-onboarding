@@ -1,6 +1,7 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { displayedColumnsInterface } from "ngx-table";
 import { OnInit } from '@angular/core';
+import { IFilterConfiguration } from 'ngx-filter';
 import { MatDialog } from '@angular/material/dialog';
 import { OnboardingService } from '../../onboarding.service';
 import * as i0 from "@angular/core";
@@ -27,6 +28,7 @@ export declare class OnboardingListComponent implements OnInit {
         searchText: string;
         Finished: string;
     };
+    ngxFilterData: IFilterConfiguration[];
     columnDefinitions: displayedColumnsInterface[];
     localService: any;
     _loading_table: boolean;
@@ -36,6 +38,7 @@ export declare class OnboardingListComponent implements OnInit {
     dataFiltered: any[];
     cancelSearch(): void;
     constructor(service: OnboardingService, router: Router, route: ActivatedRoute, dialog: MatDialog);
+    onFilter(event: any): void;
     checkOnboardingPath(): string;
     ngOnInit(): Promise<void>;
     onForamtList(datas: any): void;
