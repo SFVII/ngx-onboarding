@@ -1,4 +1,5 @@
 import { OnInit } from "@angular/core";
+import { IFilterConfiguration } from 'ngx-filter';
 import { MatDialog } from "@angular/material/dialog";
 import { MatPaginator } from "@angular/material/paginator";
 import { MatSort } from "@angular/material/sort";
@@ -27,6 +28,7 @@ export declare class TemplateProfileListComponent implements OnInit {
         searchText: string;
         service: string;
     };
+    ngxFilterData: IFilterConfiguration[];
     toTemplateCopyId: string;
     currentFilter: string;
     paginator: MatPaginator;
@@ -36,6 +38,7 @@ export declare class TemplateProfileListComponent implements OnInit {
     tags: any[];
     constructor(service: OnboardingService, router: Router, dialog: MatDialog);
     ngOnInit(): Promise<void>;
+    onFilter(event: any): void;
     onScroll(event: any): void;
     onAddProfil(): void;
     onEditProfil(id: any): void;

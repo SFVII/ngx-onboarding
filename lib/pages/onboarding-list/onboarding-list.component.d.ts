@@ -21,13 +21,6 @@ export declare class OnboardingListComponent implements OnInit {
     onboardingToFinish: any;
     showSearch: false;
     templates: any[];
-    filterData: {
-        TemplateId: string;
-        start_date: any;
-        end_date: any;
-        searchText: string;
-        Finished: string;
-    };
     ngxFilterData: IFilterConfiguration[];
     columnDefinitions: displayedColumnsInterface[];
     localService: any;
@@ -36,6 +29,7 @@ export declare class OnboardingListComponent implements OnInit {
     index: number;
     lang: string;
     dataFiltered: any[];
+    searchText: string;
     cancelSearch(): void;
     constructor(service: OnboardingService, router: Router, route: ActivatedRoute, dialog: MatDialog);
     onFilter(event: any): void;
