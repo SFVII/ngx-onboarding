@@ -22,6 +22,7 @@ export declare class OnboardingListComponent implements OnInit {
     showSearch: false;
     templates: any[];
     ngxFilterData: IFilterConfiguration[];
+    ngxFilterInit: string;
     columnDefinitions: displayedColumnsInterface[];
     localService: any;
     _loading_table: boolean;
@@ -33,6 +34,7 @@ export declare class OnboardingListComponent implements OnInit {
     cancelSearch(): void;
     constructor(service: OnboardingService, router: Router, route: ActivatedRoute, dialog: MatDialog);
     onFilter(event: any): void;
+    onRefresh(event: any): void;
     checkOnboardingPath(): string;
     ngOnInit(): Promise<void>;
     onForamtList(datas: any): void;

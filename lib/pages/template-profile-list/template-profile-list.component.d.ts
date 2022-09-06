@@ -36,9 +36,11 @@ export declare class TemplateProfileListComponent implements OnInit {
     publishTemplateLength: any;
     draftTemplateLength: any;
     tags: any[];
+    ngxFilterInit: string;
     constructor(service: OnboardingService, router: Router, dialog: MatDialog);
     ngOnInit(): Promise<void>;
     onFilter(event: any): void;
+    onRefresh(event: any): void;
     onScroll(event: any): void;
     onAddProfil(): void;
     onEditProfil(id: any): void;
