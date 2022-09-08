@@ -4786,10 +4786,10 @@ class TemplateProfileListComponent {
     }
     onRefresh(event) {
         this.ngxFilterData = JSON.parse(this.ngxFilterInit);
-        if (event.datas) {
-            this.publishTemplate = event.datas.filter((d) => d.Status === true);
-            this.draftTemplate = event.datas.filter((d) => d.Status === false);
-        }
+        // if (event.datas) {
+        //   this.publishTemplate = event.datas.filter((d) => d.Status === true);
+        //   this.draftTemplate = event.datas.filter((d) => d.Status === false);
+        // }
     }
     onScroll(event) {
         const sections = document.querySelectorAll("section");
@@ -7398,10 +7398,11 @@ class OnboardingListComponent {
         }
     }
     onRefresh(event) {
+        this.ngxFilterData = JSON.parse(this.ngxFilterInit);
         if (event.datas) {
-            this.dataFiltered = event.datas;
-            this.onForamtList(this.dataFiltered);
-            this.ngxFilterData = JSON.parse(this.ngxFilterInit);
+            // this.dataFiltered = event.datas;
+            // this.onForamtList(this.dataFiltered)
+            // this.ngxFilterData = JSON.parse(this.ngxFilterInit);
         }
     }
     checkOnboardingPath() {
