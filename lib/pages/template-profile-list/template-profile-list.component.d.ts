@@ -47,8 +47,6 @@ export declare class TemplateProfileListComponent implements OnInit {
     onChangeStatus(data: any, Status: any): Promise<void>;
     onDelete(id: any): Promise<void>;
     getAllProfils(): Promise<void>;
-    onFilterTemplate(): void;
-    onSort(): void;
     copyTemplate(data: any): Promise<void>;
     openDialog(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<TemplateProfileListComponent, never>;
