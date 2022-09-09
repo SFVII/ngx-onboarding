@@ -2,6 +2,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { displayedColumnsInterface } from "ngx-table";
 import { OnInit } from '@angular/core';
 import { IFilterConfiguration } from 'ngx-filter';
+import { DatePipe } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
 import { OnboardingService } from '../../onboarding.service';
 import * as i0 from "@angular/core";
@@ -10,6 +11,7 @@ export declare class OnboardingListComponent implements OnInit {
     private router;
     private route;
     private dialog;
+    datepipe: DatePipe;
     onboardingList: any;
     inputSearch: string;
     currentLength: number;
@@ -32,7 +34,7 @@ export declare class OnboardingListComponent implements OnInit {
     dataFiltered: any[];
     searchText: string;
     cancelSearch(): void;
-    constructor(service: OnboardingService, router: Router, route: ActivatedRoute, dialog: MatDialog);
+    constructor(service: OnboardingService, router: Router, route: ActivatedRoute, dialog: MatDialog, datepipe: DatePipe);
     onFilter(event: any): void;
     onRefresh(event: any): void;
     checkOnboardingPath(): string;
@@ -41,7 +43,7 @@ export declare class OnboardingListComponent implements OnInit {
     onFilterTemplate(): void;
     triggerChange($event: any): void;
     openDialog(): void;
-    onExportToCSV(): void;
+    onExportToXLSX(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingListComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingListComponent, "lib-onboarding-list", never, {}, {}, never, never>;
 }

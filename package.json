@@ -8,8 +8,6 @@
     "ngx-intl-tel-input": "2.6.0",
     "mustache": "^4.2.0",
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
-    "file-saver": "^2.0.5",
-    "json2csv": "^5.0.7",
     "ngx-filter": "github:diarynar/ngx-filter"
   },
   "dependencies": {
