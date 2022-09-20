@@ -28,6 +28,7 @@ export declare class TemplateProfileListComponent implements OnInit {
         searchText: string;
         service: string;
     };
+    locale: any;
     ngxFilterData: IFilterConfiguration[];
     toTemplateCopyId: string;
     currentFilter: string;

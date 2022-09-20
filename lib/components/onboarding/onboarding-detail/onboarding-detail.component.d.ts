@@ -16,7 +16,7 @@ export declare class OnboardingDetailComponent implements OnInit {
     catNameStart(str: string): boolean;
     onEdit(): void;
     progress(completed: any, length: any): number;
-    onViewTicket(CaseNumber: any): void;
+    onViewTicket(Case: any): void;
     onFormatDisplayValue(value: any): {
         value: any;
         type: string;

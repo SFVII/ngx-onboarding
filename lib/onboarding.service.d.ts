@@ -26,7 +26,8 @@ export declare class OnboardingService {
     private endpoint;
     private mediaToken;
     private user;
-    lang: BehaviorSubject<string>;
+    lang: BehaviorSubject<any>;
+    _lang: import("rxjs").Observable<any>;
     _auth: boolean;
     mainPath: string;
     constructor(config: OnboardingInterface, http: HttpClient);
