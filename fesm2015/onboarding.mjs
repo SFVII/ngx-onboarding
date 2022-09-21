@@ -4450,6 +4450,13 @@ const locales = {
         PROFILES_LIST: {
             PROFILES: 'Profils',
             STATUS: 'Statut',
+            DRAFT: 'Brouillons',
+            PUBLISH: 'Publiés',
+            DATE_MIN: 'Date min',
+            DATE_MAX: 'Date max',
+            NAME: 'Nom',
+            CREATE_PROFILE: 'Créer un profil',
+            LIVE: 'Live',
         }
     }
 };
