@@ -52,7 +52,6 @@ import { FilterModule } from 'ngx-filter';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatStepperModule } from '@angular/material/stepper';
-import { TRANSLOCO_SCOPE } from '@ngneat/transloco';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { CdkTableModule } from '@angular/cdk/table';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
@@ -7581,7 +7580,7 @@ class OnboardingModule {
 }
 OnboardingModule.ɵfac = function OnboardingModule_Factory(t) { return new (t || OnboardingModule)(i0.ɵɵinject(OnboardingModule, 12)); };
 OnboardingModule.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: OnboardingModule });
-OnboardingModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({ providers: [OnboardingService, CanDeactivateGuard, MatDatepickerModule, DatePipe, { provide: TRANSLOCO_SCOPE, useValue: 'onboarding' },], imports: [[
+OnboardingModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({ providers: [OnboardingService, CanDeactivateGuard, MatDatepickerModule, DatePipe,], imports: [[
             FormsModule,
             MatFormFieldModule,
             MatButtonModule,
@@ -7682,7 +7681,7 @@ OnboardingModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({ providers: [Onboa
                         MatNativeDateModule,
                         MatBottomSheetModule,
                     ],
-                    providers: [OnboardingService, CanDeactivateGuard, MatDatepickerModule, DatePipe, { provide: TRANSLOCO_SCOPE, useValue: 'onboarding' },],
+                    providers: [OnboardingService, CanDeactivateGuard, MatDatepickerModule, DatePipe,],
                     entryComponents: [ExitConfirmComponent, TypeComponent, DialogCreateTemplateComponent, DialogCreateOnboardingComponent, DialogConfirmation],
                     exports: [
                         OnboardingComponent,
