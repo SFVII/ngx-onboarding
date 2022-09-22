@@ -5632,7 +5632,7 @@ class OnboardingDetailComponent {
         return 100 * completed / length;
     }
     onViewTicket(Case) {
-        this.router.navigate([`ticket?state=open&id=${Case._id}`]);
+        this.router.navigate([`reporting/dashboard/${Case._id}`]);
     }
     onFormatDisplayValue(value) {
         if (Array.isArray(value)) {
