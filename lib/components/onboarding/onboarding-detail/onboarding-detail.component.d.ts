@@ -11,6 +11,7 @@ export declare class OnboardingDetailComponent implements OnInit {
     onShowMode: EventEmitter<boolean>;
     constructor(router: Router, service: OnboardingService, _bottomSheet: MatBottomSheet);
     ngOnInit(): void;
+    ngOnChanges(): void;
     openBottomSheet(Attachement: any): void;
     onScroll(event: any): void;
     catNameStart(str: string): boolean;
