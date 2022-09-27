@@ -26,9 +26,10 @@ export declare class SubOnboardingCreateComponent implements OnInit {
     invalideValue: boolean;
     currentChip: string;
     separateDialCode: boolean;
+    accounts: any[];
     prevValue: string;
     constructor();
-    ngOnInit(): void;
+    ngOnInit(): Promise<void>;
     drop(event: any): void;
     addKeywordFromInput(event: any, i: any, j: any): void;
     keyUp(event: any, i: any, j: any): void;

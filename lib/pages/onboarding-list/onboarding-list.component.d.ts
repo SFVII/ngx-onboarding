@@ -17,6 +17,7 @@ export declare class OnboardingListComponent implements OnInit {
     currentLength: number;
     currentFilter: string;
     onboarding: any[];
+    accounts: any;
     search: string;
     onboardingFormatList: any[];
     onboardingFinished: any;
@@ -39,6 +40,7 @@ export declare class OnboardingListComponent implements OnInit {
     onRefresh(event: any): void;
     checkOnboardingPath(): string;
     ngOnInit(): Promise<void>;
+    findAccount(account: any): any;
     onForamtList(datas: any): void;
     onFilterTemplate(): void;
     triggerChange($event: any): void;

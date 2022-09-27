@@ -36,12 +36,15 @@ export declare class OnboardingCreateComponent implements OnInit {
     submitLabel: string;
     resumeLabel: string;
     isSubmitted: boolean;
+    accounts: any;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog);
     isObject(obj: any): boolean;
     canDeactivate(): true | import("rxjs").Subject<boolean>;
     onScroll(event: any): void;
     ngOnInit(): Promise<void>;
+    loadCategories(categories: any): Promise<void>;
     onLoadViewDetail(categories: any): void;
+    findAccount(account: any): any;
     onCreateDynamicForm(): void;
     catNameStart(str: string): boolean;
     onSelect(id: any, onboarding: any): Promise<void>;

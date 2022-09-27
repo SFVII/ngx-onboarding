@@ -70,6 +70,7 @@ export declare class OnboardingService {
     getAllOnboarding(): Promise<string | any>;
     downloadAttachment(attach: any): Promise<unknown>;
     createContact(data: any): Promise<string | any>;
+    getAccounts(): Promise<string | any>;
     static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingService, never>;
     static ɵprov: i0.ɵɵInjectableDeclaration<OnboardingService>;
 }

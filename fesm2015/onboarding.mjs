@@ -433,10 +433,25 @@ class OnboardingService {
                 const options = {
                     headers: this.header
                 };
-                this.http.post(`${this.endpoint}/contact`, data, options)
+                this.http.post(`${this.endpoint.split('cases/onboarding')[0]}/contacts`, data, options)
                     .subscribe((data) => {
                     resolve({ data, success: true });
                 }, error => resolve({ error, success: false }));
+            });
+        });
+    }
+    getAccounts() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return new Promise((resolve, reject) => {
+                const options = {
+                    headers: this.header
+                };
+                this.http.get(`${this.endpoint.split('cases/onboarding')[0]}/accounts`, options)
+                    .subscribe((data) => {
+                    resolve(data.data.accounts);
+                }, error => {
+                    resolve(null);
+                });
             });
         });
     }
@@ -5088,290 +5103,359 @@ function getIntesectFilterBy(groupResult, textResult, key) {
 
 const _c0$1 = function () { return { standalone: true }; };
 const _c1 = function () { return { display: "inine-block" }; };
-function SubOnboardingCreateComponent_div_2_Template(rf, ctx) {
+function SubOnboardingCreateComponent_ng_container_1_div_1_Template(rf, ctx) {
     if (rf & 1) {
-        const _r10 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 9)(1, "span");
+        const _r12 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 11)(1, "span");
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "mat-slide-toggle", 10);
-        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_2_Template_mat_slide_toggle_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r10); const ctx_r9 = i0.ɵɵnextContext(); return ctx_r9.field.defaultValue = $event; });
+        i0.ɵɵelementStart(3, "mat-slide-toggle", 12);
+        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_ng_container_1_div_1_Template_mat_slide_toggle_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r12); const ctx_r11 = i0.ɵɵnextContext(2); return ctx_r11.field.defaultValue = $event; });
         i0.ɵɵelementEnd()();
     }
     if (rf & 2) {
-        const ctx_r0 = i0.ɵɵnextContext();
+        const ctx_r2 = i0.ɵɵnextContext(2);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(ctx_r0.field.label);
+        i0.ɵɵtextInterpolate(ctx_r2.field.label);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModel", ctx_r0.field.defaultValue)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0$1))("ngStyle", ctx_r0.field.selector && i0.ɵɵpureFunction0(5, _c1));
+        i0.ɵɵproperty("ngModel", ctx_r2.field.defaultValue)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0$1))("ngStyle", ctx_r2.field.selector && i0.ɵɵpureFunction0(5, _c1));
     }
 }
-function SubOnboardingCreateComponent_div_3_mat_select_3_mat_option_1_Template(rf, ctx) {
+function SubOnboardingCreateComponent_ng_container_1_div_2_mat_select_3_mat_option_1_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "mat-option", 16);
+        i0.ɵɵelementStart(0, "mat-option", 18);
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const select_r13 = ctx.$implicit;
-        i0.ɵɵproperty("value", select_r13.value);
+        const select_r15 = ctx.$implicit;
+        i0.ɵɵproperty("value", select_r15.value);
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1(" ", select_r13.value, "");
+        i0.ɵɵtextInterpolate1(" ", select_r15.value, "");
     }
 }
-function SubOnboardingCreateComponent_div_3_mat_select_3_Template(rf, ctx) {
+function SubOnboardingCreateComponent_ng_container_1_div_2_mat_select_3_Template(rf, ctx) {
     if (rf & 1) {
-        const _r15 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-select", 14);
-        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_3_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r15); const ctx_r14 = i0.ɵɵnextContext(2); return ctx_r14.field.selector.value = $event; });
-        i0.ɵɵtemplate(1, SubOnboardingCreateComponent_div_3_mat_select_3_mat_option_1_Template, 2, 2, "mat-option", 15);
+        const _r17 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-select", 16);
+        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_ng_container_1_div_2_mat_select_3_Template_mat_select_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r17); const ctx_r16 = i0.ɵɵnextContext(3); return ctx_r16.field.selector.value = $event; });
+        i0.ɵɵtemplate(1, SubOnboardingCreateComponent_ng_container_1_div_2_mat_select_3_mat_option_1_Template, 2, 2, "mat-option", 17);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const ctx_r11 = i0.ɵɵnextContext(2);
-        i0.ɵɵproperty("ngModel", ctx_r11.field.selector.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$1));
+        const ctx_r13 = i0.ɵɵnextContext(3);
+        i0.ɵɵproperty("ngModel", ctx_r13.field.selector.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$1));
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", ctx_r11.field.selector.defaultValue);
+        i0.ɵɵproperty("ngForOf", ctx_r13.field.selector.defaultValue);
     }
 }
 const _c2 = function () { return { "display": "inine-block" }; };
-function SubOnboardingCreateComponent_div_3_Template(rf, ctx) {
+function SubOnboardingCreateComponent_ng_container_1_div_2_Template(rf, ctx) {
     if (rf & 1) {
-        const _r17 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 11)(1, "mat-checkbox", 12);
-        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_3_Template_mat_checkbox_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r17); const ctx_r16 = i0.ɵɵnextContext(); return ctx_r16.field.value = $event; });
+        const _r19 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 13)(1, "mat-checkbox", 14);
+        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_ng_container_1_div_2_Template_mat_checkbox_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r19); const ctx_r18 = i0.ɵɵnextContext(2); return ctx_r18.field.value = $event; });
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd();
-        i0.ɵɵtemplate(3, SubOnboardingCreateComponent_div_3_mat_select_3_Template, 2, 4, "mat-select", 13);
+        i0.ɵɵtemplate(3, SubOnboardingCreateComponent_ng_container_1_div_2_mat_select_3_Template, 2, 4, "mat-select", 15);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const ctx_r1 = i0.ɵɵnextContext();
+        const ctx_r3 = i0.ɵɵnextContext(2);
         i0.ɵɵadvance(1);
-        i0.ɵɵclassMap(ctx_r1.checkSubForm(ctx_r1.field) ? "checkbox-title-active" : "");
-        i0.ɵɵproperty("ngModel", ctx_r1.field.value)("required", ctx_r1.field.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(8, _c0$1))("ngStyle", ctx_r1.field.selector && i0.ɵɵpureFunction0(9, _c2));
+        i0.ɵɵclassMap(ctx_r3.checkSubForm(ctx_r3.field) ? "checkbox-title-active" : "");
+        i0.ɵɵproperty("ngModel", ctx_r3.field.value)("required", ctx_r3.field.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(8, _c0$1))("ngStyle", ctx_r3.field.selector && i0.ɵɵpureFunction0(9, _c2));
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1(" ", ctx_r1.field.label, " ");
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r1.field.selector);
-    }
-}
-function SubOnboardingCreateComponent_div_4_mat_checkbox_4_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r21 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-checkbox", 19);
-        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_4_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r21); const opt_r19 = restoredCtx.$implicit; return opt_r19.checked = $event; });
-        i0.ɵɵtext(1);
-        i0.ɵɵelementEnd();
-    }
-    if (rf & 2) {
-        const opt_r19 = ctx.$implicit;
-        const ctx_r18 = i0.ɵɵnextContext(2);
-        i0.ɵɵproperty("checked", opt_r19.checked)("ngModel", opt_r19.checked)("required", ctx_r18.field.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(5, _c0$1));
-        i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1(" ", opt_r19.value, " ");
-    }
-}
-function SubOnboardingCreateComponent_div_4_Template(rf, ctx) {
-    if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 11)(1, "label");
-        i0.ɵɵtext(2);
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "div", 17);
-        i0.ɵɵtemplate(4, SubOnboardingCreateComponent_div_4_mat_checkbox_4_Template, 2, 6, "mat-checkbox", 18);
-        i0.ɵɵelementEnd()();
-    }
-    if (rf & 2) {
-        const ctx_r2 = i0.ɵɵnextContext();
-        i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(ctx_r2.field.label);
-        i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngForOf", ctx_r2.field.defaultValue);
-    }
-}
-function SubOnboardingCreateComponent_div_5_mat_radio_button_4_Template(rf, ctx) {
-    if (rf & 1) {
-        i0.ɵɵelementStart(0, "mat-radio-button", 16);
-        i0.ɵɵtext(1);
-        i0.ɵɵelementEnd();
-    }
-    if (rf & 2) {
-        const opt_r24 = ctx.$implicit;
-        i0.ɵɵproperty("value", opt_r24.value);
-        i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1("", opt_r24.value, " ");
-    }
-}
-function SubOnboardingCreateComponent_div_5_mat_form_field_5_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r26 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-form-field", 24)(1, "mat-label");
-        i0.ɵɵtext(2, "Autre option");
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "input", 25);
-        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_5_mat_form_field_5_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r26); const ctx_r25 = i0.ɵɵnextContext(2); return ctx_r25.field.otherValue = $event; });
-        i0.ɵɵelementEnd()();
-    }
-    if (rf & 2) {
-        const ctx_r23 = i0.ɵɵnextContext(2);
-        i0.ɵɵadvance(3);
-        i0.ɵɵproperty("required", ctx_r23.field.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$1))("ngModel", ctx_r23.field.otherValue);
-    }
-}
-function SubOnboardingCreateComponent_div_5_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r28 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 20)(1, "label", 21);
-        i0.ɵɵtext(2);
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "mat-radio-group", 22);
-        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_5_Template_mat_radio_group_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r28); const ctx_r27 = i0.ɵɵnextContext(); return ctx_r27.field.value = $event; });
-        i0.ɵɵtemplate(4, SubOnboardingCreateComponent_div_5_mat_radio_button_4_Template, 2, 2, "mat-radio-button", 15);
-        i0.ɵɵelementEnd();
-        i0.ɵɵtemplate(5, SubOnboardingCreateComponent_div_5_mat_form_field_5_Template, 4, 4, "mat-form-field", 23);
-        i0.ɵɵelementEnd();
-    }
-    if (rf & 2) {
-        const ctx_r3 = i0.ɵɵnextContext();
-        i0.ɵɵadvance(2);
         i0.ɵɵtextInterpolate1(" ", ctx_r3.field.label, " ");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModel", ctx_r3.field.value)("required", ctx_r3.field.isMandatory);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", ctx_r3.field.defaultValue);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", "autre" === ctx_r3.formatOther(ctx_r3.field.value));
+        i0.ɵɵproperty("ngIf", ctx_r3.field.selector);
     }
 }
-function SubOnboardingCreateComponent_div_6_mat_option_5_Template(rf, ctx) {
+function SubOnboardingCreateComponent_ng_container_1_div_3_mat_checkbox_4_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "mat-option", 16);
+        const _r23 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-checkbox", 21);
+        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_ng_container_1_div_3_mat_checkbox_4_Template_mat_checkbox_ngModelChange_0_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r23); const opt_r21 = restoredCtx.$implicit; return opt_r21.checked = $event; });
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const opt_r31 = ctx.$implicit;
-        i0.ɵɵproperty("value", opt_r31.value);
+        const opt_r21 = ctx.$implicit;
+        const ctx_r20 = i0.ɵɵnextContext(3);
+        i0.ɵɵproperty("checked", opt_r21.checked)("ngModel", opt_r21.checked)("required", ctx_r20.field.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(5, _c0$1));
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1(" ", opt_r31.value, "");
+        i0.ɵɵtextInterpolate1(" ", opt_r21.value, " ");
     }
 }
-function SubOnboardingCreateComponent_div_6_mat_form_field_6_Template(rf, ctx) {
+function SubOnboardingCreateComponent_ng_container_1_div_3_Template(rf, ctx) {
     if (rf & 1) {
-        const _r33 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-form-field", 24)(1, "mat-label");
-        i0.ɵɵtext(2, "Autre option");
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "input", 25);
-        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_6_mat_form_field_6_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r33); const ctx_r32 = i0.ɵɵnextContext(2); return ctx_r32.field.otherValue = $event; });
-        i0.ɵɵelementEnd()();
-    }
-    if (rf & 2) {
-        const ctx_r30 = i0.ɵɵnextContext(2);
-        i0.ɵɵadvance(3);
-        i0.ɵɵproperty("required", ctx_r30.field.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$1))("ngModel", ctx_r30.field.otherValue);
-    }
-}
-function SubOnboardingCreateComponent_div_6_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r35 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 20)(1, "mat-form-field", 26)(2, "mat-label");
-        i0.ɵɵtext(3);
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(4, "mat-select", 27);
-        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_6_Template_mat_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r35); const ctx_r34 = i0.ɵɵnextContext(); return ctx_r34.field.value = $event; });
-        i0.ɵɵtemplate(5, SubOnboardingCreateComponent_div_6_mat_option_5_Template, 2, 2, "mat-option", 15);
-        i0.ɵɵelementEnd()();
-        i0.ɵɵtemplate(6, SubOnboardingCreateComponent_div_6_mat_form_field_6_Template, 4, 4, "mat-form-field", 23);
-        i0.ɵɵelementEnd();
-    }
-    if (rf & 2) {
-        const ctx_r4 = i0.ɵɵnextContext();
-        i0.ɵɵadvance(3);
-        i0.ɵɵtextInterpolate1(" ", ctx_r4.field.label, " ");
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModel", ctx_r4.field.value)("ngModelOptions", i0.ɵɵpureFunction0(6, _c0$1))("required", ctx_r4.field.isMandatory);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", ctx_r4.field.defaultValue);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", "autre" === ctx_r4.formatOther(ctx_r4.field.value));
-    }
-}
-function SubOnboardingCreateComponent_mat_form_field_7_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r37 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-form-field", 28)(1, "mat-label");
+        i0.ɵɵelementStart(0, "div", 13)(1, "label");
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "textarea", 29);
-        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_mat_form_field_7_Template_textarea_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r37); const ctx_r36 = i0.ɵɵnextContext(); return ctx_r36.field.value = $event; });
+        i0.ɵɵelementStart(3, "div", 19);
+        i0.ɵɵtemplate(4, SubOnboardingCreateComponent_ng_container_1_div_3_mat_checkbox_4_Template, 2, 6, "mat-checkbox", 20);
         i0.ɵɵelementEnd()();
     }
     if (rf & 2) {
-        const ctx_r5 = i0.ɵɵnextContext();
+        const ctx_r4 = i0.ɵɵnextContext(2);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(ctx_r5.field.label);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("required", ctx_r5.field.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0$1))("ngModel", ctx_r5.field.value);
+        i0.ɵɵtextInterpolate(ctx_r4.field.label);
+        i0.ɵɵadvance(2);
+        i0.ɵɵproperty("ngForOf", ctx_r4.field.defaultValue);
     }
 }
-function SubOnboardingCreateComponent_div_8_mat_error_4_Template(rf, ctx) {
+function SubOnboardingCreateComponent_ng_container_1_div_4_mat_radio_button_4_Template(rf, ctx) {
+    if (rf & 1) {
+        i0.ɵɵelementStart(0, "mat-radio-button", 18);
+        i0.ɵɵtext(1);
+        i0.ɵɵelementEnd();
+    }
+    if (rf & 2) {
+        const opt_r26 = ctx.$implicit;
+        i0.ɵɵproperty("value", opt_r26.value);
+        i0.ɵɵadvance(1);
+        i0.ɵɵtextInterpolate1("", opt_r26.value, " ");
+    }
+}
+function SubOnboardingCreateComponent_ng_container_1_div_4_mat_form_field_5_Template(rf, ctx) {
+    if (rf & 1) {
+        const _r28 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-form-field", 26)(1, "mat-label");
+        i0.ɵɵtext(2, "Autre option");
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(3, "input", 27);
+        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_ng_container_1_div_4_mat_form_field_5_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r28); const ctx_r27 = i0.ɵɵnextContext(3); return ctx_r27.field.otherValue = $event; });
+        i0.ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+        const ctx_r25 = i0.ɵɵnextContext(3);
+        i0.ɵɵadvance(3);
+        i0.ɵɵproperty("required", ctx_r25.field.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$1))("ngModel", ctx_r25.field.otherValue);
+    }
+}
+function SubOnboardingCreateComponent_ng_container_1_div_4_Template(rf, ctx) {
+    if (rf & 1) {
+        const _r30 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 22)(1, "label", 23);
+        i0.ɵɵtext(2);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(3, "mat-radio-group", 24);
+        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_ng_container_1_div_4_Template_mat_radio_group_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r30); const ctx_r29 = i0.ɵɵnextContext(2); return ctx_r29.field.value = $event; });
+        i0.ɵɵtemplate(4, SubOnboardingCreateComponent_ng_container_1_div_4_mat_radio_button_4_Template, 2, 2, "mat-radio-button", 17);
+        i0.ɵɵelementEnd();
+        i0.ɵɵtemplate(5, SubOnboardingCreateComponent_ng_container_1_div_4_mat_form_field_5_Template, 4, 4, "mat-form-field", 25);
+        i0.ɵɵelementEnd();
+    }
+    if (rf & 2) {
+        const ctx_r5 = i0.ɵɵnextContext(2);
+        i0.ɵɵadvance(2);
+        i0.ɵɵtextInterpolate1(" ", ctx_r5.field.label, " ");
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngModel", ctx_r5.field.value)("required", ctx_r5.field.isMandatory);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngForOf", ctx_r5.field.defaultValue);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngIf", "autre" === ctx_r5.formatOther(ctx_r5.field.value));
+    }
+}
+function SubOnboardingCreateComponent_ng_container_1_div_5_mat_option_5_Template(rf, ctx) {
+    if (rf & 1) {
+        i0.ɵɵelementStart(0, "mat-option", 18);
+        i0.ɵɵtext(1);
+        i0.ɵɵelementEnd();
+    }
+    if (rf & 2) {
+        const opt_r33 = ctx.$implicit;
+        i0.ɵɵproperty("value", opt_r33.value);
+        i0.ɵɵadvance(1);
+        i0.ɵɵtextInterpolate1(" ", opt_r33.value, "");
+    }
+}
+function SubOnboardingCreateComponent_ng_container_1_div_5_mat_form_field_6_Template(rf, ctx) {
+    if (rf & 1) {
+        const _r35 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-form-field", 26)(1, "mat-label");
+        i0.ɵɵtext(2, "Autre option");
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(3, "input", 27);
+        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_ng_container_1_div_5_mat_form_field_6_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r35); const ctx_r34 = i0.ɵɵnextContext(3); return ctx_r34.field.otherValue = $event; });
+        i0.ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+        const ctx_r32 = i0.ɵɵnextContext(3);
+        i0.ɵɵadvance(3);
+        i0.ɵɵproperty("required", ctx_r32.field.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$1))("ngModel", ctx_r32.field.otherValue);
+    }
+}
+function SubOnboardingCreateComponent_ng_container_1_div_5_Template(rf, ctx) {
+    if (rf & 1) {
+        const _r37 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 22)(1, "mat-form-field", 28)(2, "mat-label");
+        i0.ɵɵtext(3);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(4, "mat-select", 29);
+        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_ng_container_1_div_5_Template_mat_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r37); const ctx_r36 = i0.ɵɵnextContext(2); return ctx_r36.field.value = $event; });
+        i0.ɵɵtemplate(5, SubOnboardingCreateComponent_ng_container_1_div_5_mat_option_5_Template, 2, 2, "mat-option", 17);
+        i0.ɵɵelementEnd()();
+        i0.ɵɵtemplate(6, SubOnboardingCreateComponent_ng_container_1_div_5_mat_form_field_6_Template, 4, 4, "mat-form-field", 25);
+        i0.ɵɵelementEnd();
+    }
+    if (rf & 2) {
+        const ctx_r6 = i0.ɵɵnextContext(2);
+        i0.ɵɵadvance(3);
+        i0.ɵɵtextInterpolate1(" ", ctx_r6.field.label, " ");
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngModel", ctx_r6.field.value)("ngModelOptions", i0.ɵɵpureFunction0(6, _c0$1))("required", ctx_r6.field.isMandatory);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngForOf", ctx_r6.field.defaultValue);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngIf", "autre" === ctx_r6.formatOther(ctx_r6.field.value));
+    }
+}
+function SubOnboardingCreateComponent_ng_container_1_mat_form_field_6_Template(rf, ctx) {
+    if (rf & 1) {
+        const _r39 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-form-field", 30)(1, "mat-label");
+        i0.ɵɵtext(2);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(3, "textarea", 31);
+        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_ng_container_1_mat_form_field_6_Template_textarea_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r39); const ctx_r38 = i0.ɵɵnextContext(2); return ctx_r38.field.value = $event; });
+        i0.ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+        const ctx_r7 = i0.ɵɵnextContext(2);
+        i0.ɵɵadvance(2);
+        i0.ɵɵtextInterpolate(ctx_r7.field.label);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("required", ctx_r7.field.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0$1))("ngModel", ctx_r7.field.value);
+    }
+}
+function SubOnboardingCreateComponent_ng_container_1_div_7_mat_error_4_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "mat-error");
         i0.ɵɵtext(1, "Le t\u00E9l\u00E9phone est invalide");
         i0.ɵɵelementEnd();
     }
 }
-function SubOnboardingCreateComponent_div_8_Template(rf, ctx) {
+function SubOnboardingCreateComponent_ng_container_1_div_7_Template(rf, ctx) {
     if (rf & 1) {
-        const _r40 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 30)(1, "mat-label", 31);
+        const _r42 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 32)(1, "mat-label", 33);
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "ngx-intl-tel-input", 32);
-        i0.ɵɵlistener("input", function SubOnboardingCreateComponent_div_8_Template_ngx_intl_tel_input_input_3_listener() { i0.ɵɵrestoreView(_r40); const ctx_r39 = i0.ɵɵnextContext(); return ctx_r39.checkPhone(ctx_r39.field.value); })("ngModelChange", function SubOnboardingCreateComponent_div_8_Template_ngx_intl_tel_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r40); const ctx_r41 = i0.ɵɵnextContext(); return ctx_r41.field.value = $event; });
+        i0.ɵɵelementStart(3, "ngx-intl-tel-input", 34);
+        i0.ɵɵlistener("input", function SubOnboardingCreateComponent_ng_container_1_div_7_Template_ngx_intl_tel_input_input_3_listener() { i0.ɵɵrestoreView(_r42); const ctx_r41 = i0.ɵɵnextContext(2); return ctx_r41.checkPhone(ctx_r41.field.value); })("ngModelChange", function SubOnboardingCreateComponent_ng_container_1_div_7_Template_ngx_intl_tel_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r42); const ctx_r43 = i0.ɵɵnextContext(2); return ctx_r43.field.value = $event; });
         i0.ɵɵelementEnd();
-        i0.ɵɵtemplate(4, SubOnboardingCreateComponent_div_8_mat_error_4_Template, 2, 0, "mat-error", 33);
-        i0.ɵɵelementEnd();
-    }
-    if (rf & 2) {
-        const ctx_r6 = i0.ɵɵnextContext();
-        i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(ctx_r6.field.label);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("cssClass", "input-phone")("preferredCountries", ctx_r6.preferredCountries)("enableAutoCountrySelect", false)("enablePlaceholder", true)("customPlaceholder", "Phone")("selectFirstCountry", false)("selectedCountryISO", ctx_r6.flag(ctx_r6.field.value))("maxLength", 15)("inputId", ctx_r6.field.key)("phoneValidation", true)("separateDialCode", ctx_r6.separateDialCode)("numberFormat", ctx_r6.PhoneNumberFormat.National)("ngModelOptions", i0.ɵɵpureFunction0(16, _c0$1))("ngModel", ctx_r6.field.value);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r6.invalideValue);
-    }
-}
-function SubOnboardingCreateComponent_mat_form_field_9_Template(rf, ctx) {
-    if (rf & 1) {
-        i0.ɵɵelementStart(0, "mat-form-field", 34);
-        i0.ɵɵelement(1, "mat-label")(2, "input", 35);
+        i0.ɵɵtemplate(4, SubOnboardingCreateComponent_ng_container_1_div_7_mat_error_4_Template, 2, 0, "mat-error", 35);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const ctx_r7 = i0.ɵɵnextContext();
-        i0.ɵɵadvance(2);
-        i0.ɵɵproperty("type", ctx_r7.field.type);
-    }
-}
-function SubOnboardingCreateComponent_mat_form_field_10_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r43 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-form-field", 36)(1, "mat-label");
-        i0.ɵɵtext(2);
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "input", 37);
-        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_mat_form_field_10_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r43); const ctx_r42 = i0.ɵɵnextContext(); return ctx_r42.field.value = $event; });
-        i0.ɵɵelementEnd()();
-    }
-    if (rf & 2) {
-        const ctx_r8 = i0.ɵɵnextContext();
+        const ctx_r8 = i0.ɵɵnextContext(2);
         i0.ɵɵadvance(2);
         i0.ɵɵtextInterpolate(ctx_r8.field.label);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("type", ctx_r8.field.type)("required", ctx_r8.field.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(5, _c0$1))("ngModel", ctx_r8.field.value);
+        i0.ɵɵproperty("cssClass", "input-phone")("preferredCountries", ctx_r8.preferredCountries)("enableAutoCountrySelect", false)("enablePlaceholder", true)("customPlaceholder", "Phone")("selectFirstCountry", false)("selectedCountryISO", ctx_r8.flag(ctx_r8.field.value))("maxLength", 15)("inputId", ctx_r8.field.key)("phoneValidation", true)("separateDialCode", ctx_r8.separateDialCode)("numberFormat", ctx_r8.PhoneNumberFormat.National)("ngModelOptions", i0.ɵɵpureFunction0(16, _c0$1))("ngModel", ctx_r8.field.value);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngIf", ctx_r8.invalideValue);
+    }
+}
+function SubOnboardingCreateComponent_ng_container_1_mat_form_field_8_Template(rf, ctx) {
+    if (rf & 1) {
+        i0.ɵɵelementStart(0, "mat-form-field", 36);
+        i0.ɵɵelement(1, "mat-label")(2, "input", 37);
+        i0.ɵɵelementEnd();
+    }
+    if (rf & 2) {
+        const ctx_r9 = i0.ɵɵnextContext(2);
+        i0.ɵɵadvance(2);
+        i0.ɵɵproperty("type", ctx_r9.field.type);
+    }
+}
+function SubOnboardingCreateComponent_ng_container_1_mat_form_field_9_Template(rf, ctx) {
+    if (rf & 1) {
+        const _r45 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-form-field", 38)(1, "mat-label");
+        i0.ɵɵtext(2);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(3, "input", 39);
+        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_ng_container_1_mat_form_field_9_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r45); const ctx_r44 = i0.ɵɵnextContext(2); return ctx_r44.field.value = $event; });
+        i0.ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+        const ctx_r10 = i0.ɵɵnextContext(2);
+        i0.ɵɵadvance(2);
+        i0.ɵɵtextInterpolate(ctx_r10.field.label);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("type", ctx_r10.field.type)("required", ctx_r10.field.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(5, _c0$1))("ngModel", ctx_r10.field.value);
+    }
+}
+function SubOnboardingCreateComponent_ng_container_1_Template(rf, ctx) {
+    if (rf & 1) {
+        i0.ɵɵelementContainerStart(0, 3);
+        i0.ɵɵtemplate(1, SubOnboardingCreateComponent_ng_container_1_div_1_Template, 4, 6, "div", 4);
+        i0.ɵɵtemplate(2, SubOnboardingCreateComponent_ng_container_1_div_2_Template, 4, 10, "div", 5);
+        i0.ɵɵtemplate(3, SubOnboardingCreateComponent_ng_container_1_div_3_Template, 5, 2, "div", 5);
+        i0.ɵɵtemplate(4, SubOnboardingCreateComponent_ng_container_1_div_4_Template, 6, 5, "div", 6);
+        i0.ɵɵtemplate(5, SubOnboardingCreateComponent_ng_container_1_div_5_Template, 7, 7, "div", 6);
+        i0.ɵɵtemplate(6, SubOnboardingCreateComponent_ng_container_1_mat_form_field_6_Template, 4, 5, "mat-form-field", 7);
+        i0.ɵɵtemplate(7, SubOnboardingCreateComponent_ng_container_1_div_7_Template, 5, 17, "div", 8);
+        i0.ɵɵtemplate(8, SubOnboardingCreateComponent_ng_container_1_mat_form_field_8_Template, 3, 1, "mat-form-field", 9);
+        i0.ɵɵtemplate(9, SubOnboardingCreateComponent_ng_container_1_mat_form_field_9_Template, 4, 6, "mat-form-field", 10);
+        i0.ɵɵelementContainerEnd();
+    }
+    if (rf & 2) {
+        const ctx_r0 = i0.ɵɵnextContext();
+        i0.ɵɵproperty("ngSwitch", ctx_r0.field.type);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngSwitchCase", "toggle");
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngSwitchCase", "checkbox");
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngSwitchCase", "checkbox_multiple");
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngSwitchCase", "radio");
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngSwitchCase", "select");
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngSwitchCase", "textarea");
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngSwitchCase", "tel");
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngSwitchCase", "none");
+    }
+}
+function SubOnboardingCreateComponent_div_2_mat_option_5_Template(rf, ctx) {
+    if (rf & 1) {
+        i0.ɵɵelementStart(0, "mat-option", 18);
+        i0.ɵɵtext(1);
+        i0.ɵɵelementEnd();
+    }
+    if (rf & 2) {
+        const opt_r47 = ctx.$implicit;
+        i0.ɵɵproperty("value", opt_r47._id);
+        i0.ɵɵadvance(1);
+        i0.ɵɵtextInterpolate1(" ", opt_r47.Name, "");
+    }
+}
+function SubOnboardingCreateComponent_div_2_Template(rf, ctx) {
+    if (rf & 1) {
+        const _r49 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 22)(1, "mat-form-field", 28)(2, "mat-label");
+        i0.ɵɵtext(3);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(4, "mat-select", 29);
+        i0.ɵɵlistener("ngModelChange", function SubOnboardingCreateComponent_div_2_Template_mat_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r49); const ctx_r48 = i0.ɵɵnextContext(); return ctx_r48.field.value = $event; });
+        i0.ɵɵtemplate(5, SubOnboardingCreateComponent_div_2_mat_option_5_Template, 2, 2, "mat-option", 17);
+        i0.ɵɵelementEnd()()();
+    }
+    if (rf & 2) {
+        const ctx_r1 = i0.ɵɵnextContext();
+        i0.ɵɵadvance(3);
+        i0.ɵɵtextInterpolate1(" ", ctx_r1.field.label, " ");
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngModel", ctx_r1.field.value)("ngModelOptions", i0.ɵɵpureFunction0(5, _c0$1))("required", ctx_r1.field.isMandatory);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngForOf", ctx_r1.field.defaultValue);
     }
 }
 const _c3 = [[["", 8, "child"]]];
@@ -5397,6 +5481,7 @@ class SubOnboardingCreateComponent {
         this.invalideValue = false;
         this.currentChip = "";
         this.separateDialCode = false;
+        this.accounts = [];
         this.prevValue = "";
         this.toggleChip = (chip) => {
             this.onCheckedChip.emit(chip);
@@ -5406,6 +5491,8 @@ class SubOnboardingCreateComponent {
         };
     }
     ngOnInit() {
+        return __awaiter(this, void 0, void 0, function* () {
+        });
     }
     drop(event) {
         this.onDrop.emit(event);
@@ -5494,49 +5581,26 @@ class SubOnboardingCreateComponent {
     }
 }
 SubOnboardingCreateComponent.ɵfac = function SubOnboardingCreateComponent_Factory(t) { return new (t || SubOnboardingCreateComponent)(); };
-SubOnboardingCreateComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: SubOnboardingCreateComponent, selectors: [["lib-sub-create-onboarding"]], inputs: { field: "field", length: "length", i: "i", j: "j" }, outputs: { onAddKeywordFromInput: "onAddKeywordFromInput", onKeyPress: "onKeyPress", onDrop: "onDrop", onAddNewField: "onAddNewField", onRemoveField: "onRemoveField", onChangeType: "onChangeType", onRemoveKeyword: "onRemoveKeyword", onAddNewSubLevelField: "onAddNewSubLevelField", onExpendMore: "onExpendMore", onChangeLabel: "onChangeLabel", onCheckedChip: "onCheckedChip", onCheckValue: "onCheckValue" }, ngContentSelectors: _c4, decls: 12, vars: 9, consts: [[1, "field-item"], [3, "ngSwitch"], ["class", "flex-auto field-size toggle-button", 4, "ngSwitchCase"], ["class", "flex-auto w-30", 4, "ngSwitchCase"], ["class", "flex-auto w-30 field-size", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width tel-input", 4, "ngSwitchCase"], ["class", "form-field field-size", "appearance", "outline", "style", "opacity:0 ;", 4, "ngSwitchCase"], ["class", "form-field field-size", "appearance", "outline", 4, "ngSwitchDefault"], [1, "flex-auto", "field-size", "toggle-button"], [1, "form-field", 3, "ngModel", "ngModelOptions", "ngStyle", "ngModelChange"], [1, "flex-auto", "w-30"], [1, "form-field", 2, "margin-right", "10px", 3, "ngModel", "required", "ngModelOptions", "ngStyle", "ngModelChange"], ["placeholder", "Company", "required", "", "style", "display: inline-block; width: 50%;", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], ["placeholder", "Company", "required", "", 2, "display", "inline-block", "width", "50%", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], [1, "onboarding-select", 2, "margin-top", "20px"], ["class", "form-field", "style", "display: block; margin-bottom: 5px; margin-top: 10px;margin-right: 10px;", 3, "checked", "ngModel", "required", "ngModelOptions", "ngModelChange", 4, "ngFor", "ngForOf"], [1, "form-field", 2, "display", "block", "margin-bottom", "5px", "margin-top", "10px", "margin-right", "10px", 3, "checked", "ngModel", "required", "ngModelOptions", "ngModelChange"], [1, "flex-auto", "w-30", "field-size"], [2, "display", "block"], ["aria-label", "Select an option", 1, "form-field", "radio-group", "field-size", 3, "ngModel", "required", "ngModelChange"], ["class", "form-field field-size other-option", "appearance", "outline", 4, "ngIf"], ["appearance", "outline", 1, "form-field", "field-size", "other-option"], ["type", "text", "matInput", "", "placeholder", "", 3, "required", "ngModelOptions", "ngModel", "ngModelChange"], ["appearance", "outline", 1, "mat-select", "flex-auto", "w-30", "field-size"], [3, "ngModel", "ngModelOptions", "required", "ngModelChange"], ["appearance", "outline", 1, "form-field", "full-width"], ["type", "text", "rows", "5", "matInput", "", "placeholder", "Description...", 3, "required", "ngModelOptions", "ngModel", "ngModelChange"], [1, "form-field", "full-width", "tel-input"], [1, "tel-label"], ["id", "onboarding-phone-input", "name", "phone", 1, "phone-input-profile", 3, "cssClass", "preferredCountries", "enableAutoCountrySelect", "enablePlaceholder", "customPlaceholder", "selectFirstCountry", "selectedCountryISO", "maxLength", "inputId", "phoneValidation", "separateDialCode", "numberFormat", "ngModelOptions", "ngModel", "input", "ngModelChange"], [4, "ngIf"], ["appearance", "outline", 1, "form-field", "field-size", 2, "opacity", "0"], ["disabled", "true", "matInput", "", 3, "type"], ["appearance", "outline", 1, "form-field", "field-size"], ["matInput", "", "placeholder", "", 3, "type", "required", "ngModelOptions", "ngModel", "ngModelChange"]], template: function SubOnboardingCreateComponent_Template(rf, ctx) {
+SubOnboardingCreateComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: SubOnboardingCreateComponent, selectors: [["lib-sub-create-onboarding"]], inputs: { field: "field", length: "length", i: "i", j: "j" }, outputs: { onAddKeywordFromInput: "onAddKeywordFromInput", onKeyPress: "onKeyPress", onDrop: "onDrop", onAddNewField: "onAddNewField", onRemoveField: "onRemoveField", onChangeType: "onChangeType", onRemoveKeyword: "onRemoveKeyword", onAddNewSubLevelField: "onAddNewSubLevelField", onExpendMore: "onExpendMore", onChangeLabel: "onChangeLabel", onCheckedChip: "onCheckedChip", onCheckValue: "onCheckValue" }, ngContentSelectors: _c4, decls: 4, vars: 2, consts: [[1, "field-item"], [3, "ngSwitch", 4, "ngIf"], ["class", "flex-auto w-30 field-size", 4, "ngIf"], [3, "ngSwitch"], ["class", "flex-auto field-size toggle-button", 4, "ngSwitchCase"], ["class", "flex-auto w-30", 4, "ngSwitchCase"], ["class", "flex-auto w-30 field-size", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width tel-input", 4, "ngSwitchCase"], ["class", "form-field field-size", "appearance", "outline", "style", "opacity:0 ;", 4, "ngSwitchCase"], ["class", "form-field field-size", "appearance", "outline", 4, "ngSwitchDefault"], [1, "flex-auto", "field-size", "toggle-button"], [1, "form-field", 3, "ngModel", "ngModelOptions", "ngStyle", "ngModelChange"], [1, "flex-auto", "w-30"], [1, "form-field", 2, "margin-right", "10px", 3, "ngModel", "required", "ngModelOptions", "ngStyle", "ngModelChange"], ["placeholder", "Company", "required", "", "style", "display: inline-block; width: 50%;", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], ["placeholder", "Company", "required", "", 2, "display", "inline-block", "width", "50%", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], [1, "onboarding-select", 2, "margin-top", "20px"], ["class", "form-field", "style", "display: block; margin-bottom: 5px; margin-top: 10px;margin-right: 10px;", 3, "checked", "ngModel", "required", "ngModelOptions", "ngModelChange", 4, "ngFor", "ngForOf"], [1, "form-field", 2, "display", "block", "margin-bottom", "5px", "margin-top", "10px", "margin-right", "10px", 3, "checked", "ngModel", "required", "ngModelOptions", "ngModelChange"], [1, "flex-auto", "w-30", "field-size"], [2, "display", "block"], ["aria-label", "Select an option", 1, "form-field", "radio-group", "field-size", 3, "ngModel", "required", "ngModelChange"], ["class", "form-field field-size other-option", "appearance", "outline", 4, "ngIf"], ["appearance", "outline", 1, "form-field", "field-size", "other-option"], ["type", "text", "matInput", "", "placeholder", "", 3, "required", "ngModelOptions", "ngModel", "ngModelChange"], ["appearance", "outline", 1, "mat-select", "flex-auto", "w-30", "field-size"], [3, "ngModel", "ngModelOptions", "required", "ngModelChange"], ["appearance", "outline", 1, "form-field", "full-width"], ["type", "text", "rows", "5", "matInput", "", "placeholder", "Description...", 3, "required", "ngModelOptions", "ngModel", "ngModelChange"], [1, "form-field", "full-width", "tel-input"], [1, "tel-label"], ["id", "onboarding-phone-input", "name", "phone", 1, "phone-input-profile", 3, "cssClass", "preferredCountries", "enableAutoCountrySelect", "enablePlaceholder", "customPlaceholder", "selectFirstCountry", "selectedCountryISO", "maxLength", "inputId", "phoneValidation", "separateDialCode", "numberFormat", "ngModelOptions", "ngModel", "input", "ngModelChange"], [4, "ngIf"], ["appearance", "outline", 1, "form-field", "field-size", 2, "opacity", "0"], ["disabled", "true", "matInput", "", 3, "type"], ["appearance", "outline", 1, "form-field", "field-size"], ["matInput", "", "placeholder", "", 3, "type", "required", "ngModelOptions", "ngModel", "ngModelChange"]], template: function SubOnboardingCreateComponent_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵprojectionDef(_c3);
             i0.ɵɵelementStart(0, "div", 0);
-            i0.ɵɵelementContainerStart(1, 1);
-            i0.ɵɵtemplate(2, SubOnboardingCreateComponent_div_2_Template, 4, 6, "div", 2);
-            i0.ɵɵtemplate(3, SubOnboardingCreateComponent_div_3_Template, 4, 10, "div", 3);
-            i0.ɵɵtemplate(4, SubOnboardingCreateComponent_div_4_Template, 5, 2, "div", 3);
-            i0.ɵɵtemplate(5, SubOnboardingCreateComponent_div_5_Template, 6, 5, "div", 4);
-            i0.ɵɵtemplate(6, SubOnboardingCreateComponent_div_6_Template, 7, 7, "div", 4);
-            i0.ɵɵtemplate(7, SubOnboardingCreateComponent_mat_form_field_7_Template, 4, 5, "mat-form-field", 5);
-            i0.ɵɵtemplate(8, SubOnboardingCreateComponent_div_8_Template, 5, 17, "div", 6);
-            i0.ɵɵtemplate(9, SubOnboardingCreateComponent_mat_form_field_9_Template, 3, 1, "mat-form-field", 7);
-            i0.ɵɵtemplate(10, SubOnboardingCreateComponent_mat_form_field_10_Template, 4, 6, "mat-form-field", 8);
-            i0.ɵɵelementContainerEnd();
+            i0.ɵɵtemplate(1, SubOnboardingCreateComponent_ng_container_1_Template, 10, 9, "ng-container", 1);
+            i0.ɵɵtemplate(2, SubOnboardingCreateComponent_div_2_Template, 6, 6, "div", 2);
             i0.ɵɵelementEnd();
-            i0.ɵɵprojection(11);
+            i0.ɵɵprojection(3);
         }
         if (rf & 2) {
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngSwitch", ctx.field.type);
+            i0.ɵɵproperty("ngIf", ctx.field.key !== "AccountName");
             i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngSwitchCase", "toggle");
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngSwitchCase", "checkbox");
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngSwitchCase", "checkbox_multiple");
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngSwitchCase", "radio");
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngSwitchCase", "select");
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngSwitchCase", "textarea");
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngSwitchCase", "tel");
-            i0.ɵɵadvance(1);
-            i0.ɵɵproperty("ngSwitchCase", "none");
+            i0.ɵɵproperty("ngIf", ctx.field.key === "AccountName");
         }
-    }, directives: [i1$3.NgSwitch, i1$3.NgSwitchCase, i5.MatSlideToggle, i1$2.NgControlStatus, i1$2.NgModel, i7.NativeElementInjectorDirective, i1$3.NgStyle, i5$1.MatCheckbox, i5$1.MatCheckboxRequiredValidator, i1$2.RequiredValidator, i1$3.NgIf, i10.MatSelect, i1$3.NgForOf, i11.MatOption, i12.MatRadioGroup, i12.MatRadioButton, i8.MatFormField, i8.MatLabel, i4.MatInput, i1$2.DefaultValueAccessor, i7.NgxIntlTelInputComponent, i8.MatError, i1$3.NgSwitchDefault], styles: [".container[_ngcontent-%COMP%]{max-width:98%;margin:50px auto auto;padding-bottom:50px}.container[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.input-category-name[_ngcontent-%COMP%]{font-size:15px;font-weight:500}.full-width[_ngcontent-%COMP%]{width:100%}.field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;position:relative}.field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]   mat-checkbox[_ngcontent-%COMP%]{margin:20px}hr[_ngcontent-%COMP%]{margin:50px 0}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}.category-action[_ngcontent-%COMP%]{display:flex;width:100%}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%]{display:flex;align-items:baseline;width:100%;border:1px solid #dce4e9;border-radius:8px}  .readonly.mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}.field-content[_ngcontent-%COMP%]{width:100%}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;box-shadow:0 5px 5px -3px #0003,0 8px 10px 1px #00000024,0 3px 14px 2px #0000001f}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%]{transition:transform .25s cubic-bezier(0,0,.2,1)}.example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.add-button-container[_ngcontent-%COMP%]{background:#ffffff 0% 0% no-repeat padding-box;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98%;margin-left:0;margin-bottom:22px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;letter-spacing:0px;color:#c2c8d5;box-shadow:none}.expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:48px;margin-top:-20px;margin-right:15px}.transparent-button[_ngcontent-%COMP%]{background-color:transparent!important;box-shadow:none!important;width:40px!important;padding:0!important;margin:0!important;min-width:auto!important}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.checkbox-title-active[_ngcontent-%COMP%]{font-weight:700}.other-option[_ngcontent-%COMP%]{margin-left:10px}.flex-auto[_ngcontent-%COMP%]{width:100%}  .country-dropdown{min-width:unset!important}  .tel-input{position:relative}  .tel-input .tel-label{font-size:12px;color:#0009;position:absolute;z-index:1;background-color:#fff;padding:0 2px;left:8px;top:-3px}  .phone-input-profile{padding-bottom:0;padding-top:0;display:block!important;max-width:100%;width:100%}  .phone-input-profile .iti{width:100%!important}  .phone-input-profile .iti input[type=tel]{margin-top:4px!important}  .phone-input-profile input{outline:none;padding:17px;border-radius:5px;border-color:#0000001f;border-width:1px;width:100%;border:1px solid rgba(0,0,0,.12)}.toggle-button[_ngcontent-%COMP%]{padding-top:15px;display:flex;align-items:center}.toggle-button[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{margin-right:10px}.onboarding-select[_ngcontent-%COMP%]{display:grid;grid-template-columns:repeat(6,1fr)}"] });
+    }, directives: [i1$3.NgIf, i1$3.NgSwitch, i1$3.NgSwitchCase, i5.MatSlideToggle, i1$2.NgControlStatus, i1$2.NgModel, i7.NativeElementInjectorDirective, i1$3.NgStyle, i5$1.MatCheckbox, i5$1.MatCheckboxRequiredValidator, i1$2.RequiredValidator, i10.MatSelect, i1$3.NgForOf, i11.MatOption, i12.MatRadioGroup, i12.MatRadioButton, i8.MatFormField, i8.MatLabel, i4.MatInput, i1$2.DefaultValueAccessor, i7.NgxIntlTelInputComponent, i8.MatError, i1$3.NgSwitchDefault], styles: [".container[_ngcontent-%COMP%]{max-width:98%;margin:50px auto auto;padding-bottom:50px}.container[_ngcontent-%COMP%]   .action[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between}.input-category-name[_ngcontent-%COMP%]{font-size:15px;font-weight:500}.full-width[_ngcontent-%COMP%]{width:100%}.field-item[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;position:relative}.field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.field-item[_ngcontent-%COMP%]   .button-action[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{box-shadow:none;background-color:transparent;color:#fff}.field-action[_ngcontent-%COMP%]{width:10%}.field-size[_ngcontent-%COMP%]   mat-checkbox[_ngcontent-%COMP%]{margin:20px}hr[_ngcontent-%COMP%]{margin:50px 0}  .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}.category-action[_ngcontent-%COMP%]{display:flex;width:100%}.delete-field[_ngcontent-%COMP%]{margin:auto 2%}.radio-group[_ngcontent-%COMP%]   .mat-radio-button[_ngcontent-%COMP%]{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary[_ngcontent-%COMP%]{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons[_ngcontent-%COMP%]{cursor:move}.category-item[_ngcontent-%COMP%]{display:flex;align-items:baseline;width:100%;border:1px solid #dce4e9;border-radius:8px}  .readonly.mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}.field-content[_ngcontent-%COMP%]{width:100%}.cdk-drag-preview[_ngcontent-%COMP%]{box-sizing:border-box;border-radius:4px;box-shadow:0 5px 5px -3px #0003,0 8px 10px 1px #00000024,0 3px 14px 2px #0000001f}.cdk-drag-placeholder[_ngcontent-%COMP%]{opacity:0}.cdk-drag-animating[_ngcontent-%COMP%]{transition:transform .25s cubic-bezier(0,0,.2,1)}.example-list.cdk-drop-list-dragging[_ngcontent-%COMP%]   .category-item[_ngcontent-%COMP%]:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.add-button-container[_ngcontent-%COMP%]{background:#ffffff 0% 0% no-repeat padding-box;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98%;margin-left:0;margin-bottom:22px}.add-button-container[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;letter-spacing:0px;color:#c2c8d5;box-shadow:none}.expand-button[_ngcontent-%COMP%]   .material-icons[_ngcontent-%COMP%]{font-size:48px;margin-top:-20px;margin-right:15px}.transparent-button[_ngcontent-%COMP%]{background-color:transparent!important;box-shadow:none!important;width:40px!important;padding:0!important;margin:0!important;min-width:auto!important}.expand-button[_ngcontent-%COMP%]{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.checkbox-title-active[_ngcontent-%COMP%]{font-weight:700}.other-option[_ngcontent-%COMP%]{margin-left:10px}.flex-auto[_ngcontent-%COMP%]{width:100%}  .country-dropdown{min-width:unset!important}  .tel-input{position:relative}  .tel-input .tel-label{font-size:12px;color:#0009;position:absolute;z-index:1;background-color:#fff;padding:0 2px;left:8px;top:-3px}  .phone-input-profile{padding-bottom:0;padding-top:0;display:block!important;max-width:100%;width:100%}  .phone-input-profile .iti{width:100%!important}  .phone-input-profile .iti input[type=tel]{margin-top:4px!important}  .phone-input-profile input{outline:none;padding:17px;border-radius:5px;border-color:#0000001f;border-width:1px;width:100%;border:1px solid rgba(0,0,0,.12)}.toggle-button[_ngcontent-%COMP%]{padding-top:15px;display:flex;align-items:center}.toggle-button[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{margin-right:10px}.onboarding-select[_ngcontent-%COMP%]{display:grid;grid-template-columns:repeat(6,1fr)}"] });
 (function () {
     (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(SubOnboardingCreateComponent, [{
             type: Component,
-            args: [{ selector: 'lib-sub-create-onboarding', template: "<div class=\"field-item\">\r\n    <ng-container [ngSwitch]=\"field.type\">\r\n        <div *ngSwitchCase=\"'toggle'\" class=\"flex-auto field-size toggle-button\">\r\n            <span>{{ field.label }}</span>\r\n            <mat-slide-toggle class=\"form-field\" [(ngModel)]=\"field.defaultValue\"\r\n                [ngModelOptions]=\"{ standalone: true }\" [ngStyle]=\"field.selector && { display: 'inine-block' }\">\r\n            </mat-slide-toggle>\r\n        </div>\r\n        <div *ngSwitchCase=\"'checkbox'\" class=\"flex-auto w-30\">\r\n            <mat-checkbox class=\"form-field\" style=\"margin-right: 10px;\"\r\n                [class]=\"checkSubForm(field) ? 'checkbox-title-active':''\" [(ngModel)]=\"field.value\"\r\n                [required]=\"field.isMandatory\" [ngModelOptions]=\"{standalone: true}\"\r\n                [ngStyle]=\"field.selector && {'display': 'inine-block'}\">\r\n                {{field.label}}\r\n            </mat-checkbox>\r\n\r\n\r\n            <mat-select placeholder=\"Company\" [(ngModel)]=\"field.selector.value\" [ngModelOptions]=\"{standalone: true}\"\r\n                required *ngIf=\"field.selector\" style=\"display: inline-block; width: 50%;\">\r\n                <mat-option *ngFor=\"let select of field.selector.defaultValue\" [value]=\"select.value\">\r\n                    {{select.value}}</mat-option>\r\n            </mat-select>\r\n        </div>\r\n        <div *ngSwitchCase=\"'checkbox_multiple'\" class=\"flex-auto w-30\">\r\n            <label>{{field.label}}</label>\r\n            <div class=\"onboarding-select\" style=\"margin-top: 20px;\">\r\n                <mat-checkbox class=\"form-field\"\r\n                    style=\"display: block; margin-bottom: 5px; margin-top: 10px;margin-right: 10px;\"\r\n                    *ngFor=\"let opt of field.defaultValue\" [checked]=\"opt.checked\" [(ngModel)]=\"opt.checked\"\r\n                    [required]=\"field.isMandatory\" [ngModelOptions]=\"{standalone: true}\">\r\n                    {{opt.value}}\r\n                </mat-checkbox>\r\n            </div>\r\n        </div>\r\n        <div *ngSwitchCase=\"'radio'\" class=\"flex-auto w-30 field-size\">\r\n            <label style=\"display: block;\"> {{field.label}} </label>\r\n            <mat-radio-group class=\"form-field radio-group field-size\" [(ngModel)]=\"field.value\"\r\n                [required]=\"field.isMandatory\" aria-label=\"Select an option\">\r\n                <mat-radio-button *ngFor=\"let opt of field.defaultValue\" [value]=\"opt.value\">{{opt.value}}\r\n                </mat-radio-button>\r\n            </mat-radio-group>\r\n            <mat-form-field *ngIf=\"'autre'===formatOther(field.value)\" class=\"form-field field-size other-option\"\r\n                appearance=\"outline\">\r\n                <mat-label>Autre option</mat-label>\r\n                <input type=\"text\" [required]=\"field.isMandatory\" matInput [ngModelOptions]=\"{standalone: true}\"\r\n                    [(ngModel)]=\"field.otherValue\" placeholder=\"\">\r\n            </mat-form-field>\r\n        </div>\r\n        <div *ngSwitchCase=\"'select'\" class=\"flex-auto w-30 field-size\">\r\n            <mat-form-field class=\" mat-select flex-auto w-30 field-size\" appearance=\"outline\">\r\n                <mat-label> {{field.label}} </mat-label>\r\n                <mat-select [(ngModel)]=\"field.value\" [ngModelOptions]=\"{standalone: true}\"\r\n                    [required]=\"field.isMandatory\">\r\n                    <mat-option *ngFor=\"let opt of field.defaultValue\" [value]=\"opt.value\">\r\n                        {{opt.value}}</mat-option>\r\n                </mat-select>\r\n            </mat-form-field>\r\n            <mat-form-field *ngIf=\"'autre'===formatOther(field.value)\" class=\"form-field field-size other-option\"\r\n                appearance=\"outline\">\r\n                <mat-label>Autre option</mat-label>\r\n                <input type=\"text\" [required]=\"field.isMandatory\" matInput [ngModelOptions]=\"{standalone: true}\"\r\n                    [(ngModel)]=\"field.otherValue\" placeholder=\"\">\r\n            </mat-form-field>\r\n        </div>\r\n        <mat-form-field *ngSwitchCase=\"'textarea'\" class=\"form-field full-width\" appearance=\"outline\">\r\n            <mat-label>{{field.label}}</mat-label>\r\n            <textarea type=\"text\" rows=\"5\" matInput [required]=\"field.isMandatory\" [ngModelOptions]=\"{standalone: true}\"\r\n                [(ngModel)]=\"field.value\" placeholder=\"Description...\"></textarea>\r\n        </mat-form-field>\r\n        <div *ngSwitchCase=\"'tel'\" class=\"form-field full-width tel-input\">\r\n            <mat-label class=\"tel-label\">{{field.label}}</mat-label>\r\n            <ngx-intl-tel-input id=\"onboarding-phone-input\" class=\"phone-input-profile\" [cssClass]=\"'input-phone'\"\r\n                [preferredCountries]=\"preferredCountries\" [enableAutoCountrySelect]=\"false\" [enablePlaceholder]=\"true\"\r\n                [customPlaceholder]=\"'Phone'\" [selectFirstCountry]=\"false\" [selectedCountryISO]=\"flag(field.value)\"\r\n                [maxLength]=\"15\" [inputId]=\"field.key\" [phoneValidation]=\"true\" [separateDialCode]=\"separateDialCode\"\r\n                [numberFormat]=\"PhoneNumberFormat.National\" name=\"phone\" (input)=\"checkPhone(field.value)\"\r\n                [ngModelOptions]=\"{standalone: true}\" [(ngModel)]=\"field.value\">\r\n            </ngx-intl-tel-input>\r\n            <mat-error *ngIf=\"invalideValue\">Le t\u00E9l\u00E9phone est invalide</mat-error>\r\n        </div>\r\n        <mat-form-field *ngSwitchCase=\"'none'\" class=\"form-field field-size\" appearance=\"outline\" style=\"opacity:0 ;\">\r\n            <mat-label></mat-label>\r\n            <input [type]=\"field.type\" disabled=\"true\" matInput />\r\n        </mat-form-field>\r\n        <mat-form-field *ngSwitchDefault class=\"form-field field-size\" appearance=\"outline\">\r\n            <mat-label>{{field.label}}</mat-label>\r\n            <input [type]=\"field.type\" [required]=\"field.isMandatory\" matInput [ngModelOptions]=\"{standalone: true}\"\r\n                [(ngModel)]=\"field.value\" placeholder=\"\">\r\n        </mat-form-field>\r\n    </ng-container>\r\n</div>\r\n<ng-content select=\".child\"></ng-content>", styles: [".container{max-width:98%;margin:50px auto auto;padding-bottom:50px}.container .action{width:100%;display:flex;justify-content:space-between}.input-category-name{font-size:15px;font-weight:500}.full-width{width:100%}.field-item{display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;position:relative}.field-item .button-action{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.field-item .button-action button{box-shadow:none;background-color:transparent;color:#fff}.field-action{width:10%}.field-size mat-checkbox{margin:20px}hr{margin:50px 0}::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}.category-action{display:flex;width:100%}.delete-field{margin:auto 2%}.radio-group .mat-radio-button{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons{cursor:move}.category-item{display:flex;align-items:baseline;width:100%;border:1px solid #dce4e9;border-radius:8px}::ng-deep .readonly.mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}.field-content{width:100%}.cdk-drag-preview{box-sizing:border-box;border-radius:4px;box-shadow:0 5px 5px -3px #0003,0 8px 10px 1px #00000024,0 3px 14px 2px #0000001f}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating{transition:transform .25s cubic-bezier(0,0,.2,1)}.example-list.cdk-drop-list-dragging .category-item:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.add-button-container{background:#ffffff 0% 0% no-repeat padding-box;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98%;margin-left:0;margin-bottom:22px}.add-button-container button{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;letter-spacing:0px;color:#c2c8d5;box-shadow:none}.expand-button .material-icons{font-size:48px;margin-top:-20px;margin-right:15px}.transparent-button{background-color:transparent!important;box-shadow:none!important;width:40px!important;padding:0!important;margin:0!important;min-width:auto!important}.expand-button{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.checkbox-title-active{font-weight:700}.other-option{margin-left:10px}.flex-auto{width:100%}::ng-deep .country-dropdown{min-width:unset!important}::ng-deep .tel-input{position:relative}::ng-deep .tel-input .tel-label{font-size:12px;color:#0009;position:absolute;z-index:1;background-color:#fff;padding:0 2px;left:8px;top:-3px}::ng-deep .phone-input-profile{padding-bottom:0;padding-top:0;display:block!important;max-width:100%;width:100%}::ng-deep .phone-input-profile .iti{width:100%!important}::ng-deep .phone-input-profile .iti input[type=tel]{margin-top:4px!important}::ng-deep .phone-input-profile input{outline:none;padding:17px;border-radius:5px;border-color:#0000001f;border-width:1px;width:100%;border:1px solid rgba(0,0,0,.12)}.toggle-button{padding-top:15px;display:flex;align-items:center}.toggle-button span{margin-right:10px}.onboarding-select{display:grid;grid-template-columns:repeat(6,1fr)}\n"] }]
+            args: [{ selector: 'lib-sub-create-onboarding', template: "<div class=\"field-item\">\r\n    <ng-container *ngIf=\"field.key!=='AccountName'\" [ngSwitch]=\"field.type\">\r\n        <div *ngSwitchCase=\"'toggle'\" class=\"flex-auto field-size toggle-button\">\r\n            <span>{{ field.label }}</span>\r\n            <mat-slide-toggle class=\"form-field\" [(ngModel)]=\"field.defaultValue\"\r\n                [ngModelOptions]=\"{ standalone: true }\" [ngStyle]=\"field.selector && { display: 'inine-block' }\">\r\n            </mat-slide-toggle>\r\n        </div>\r\n        <div *ngSwitchCase=\"'checkbox'\" class=\"flex-auto w-30\">\r\n            <mat-checkbox class=\"form-field\" style=\"margin-right: 10px;\"\r\n                [class]=\"checkSubForm(field) ? 'checkbox-title-active':''\" [(ngModel)]=\"field.value\"\r\n                [required]=\"field.isMandatory\" [ngModelOptions]=\"{standalone: true}\"\r\n                [ngStyle]=\"field.selector && {'display': 'inine-block'}\">\r\n                {{field.label}}\r\n            </mat-checkbox>\r\n\r\n\r\n            <mat-select placeholder=\"Company\" [(ngModel)]=\"field.selector.value\" [ngModelOptions]=\"{standalone: true}\"\r\n                required *ngIf=\"field.selector\" style=\"display: inline-block; width: 50%;\">\r\n                <mat-option *ngFor=\"let select of field.selector.defaultValue\" [value]=\"select.value\">\r\n                    {{select.value}}</mat-option>\r\n            </mat-select>\r\n        </div>\r\n        <div *ngSwitchCase=\"'checkbox_multiple'\" class=\"flex-auto w-30\">\r\n            <label>{{field.label}}</label>\r\n            <div class=\"onboarding-select\" style=\"margin-top: 20px;\">\r\n                <mat-checkbox class=\"form-field\"\r\n                    style=\"display: block; margin-bottom: 5px; margin-top: 10px;margin-right: 10px;\"\r\n                    *ngFor=\"let opt of field.defaultValue\" [checked]=\"opt.checked\" [(ngModel)]=\"opt.checked\"\r\n                    [required]=\"field.isMandatory\" [ngModelOptions]=\"{standalone: true}\">\r\n                    {{opt.value}}\r\n                </mat-checkbox>\r\n            </div>\r\n        </div>\r\n        <div *ngSwitchCase=\"'radio'\" class=\"flex-auto w-30 field-size\">\r\n            <label style=\"display: block;\"> {{field.label}} </label>\r\n            <mat-radio-group class=\"form-field radio-group field-size\" [(ngModel)]=\"field.value\"\r\n                [required]=\"field.isMandatory\" aria-label=\"Select an option\">\r\n                <mat-radio-button *ngFor=\"let opt of field.defaultValue\" [value]=\"opt.value\">{{opt.value}}\r\n                </mat-radio-button>\r\n            </mat-radio-group>\r\n            <mat-form-field *ngIf=\"'autre'===formatOther(field.value)\" class=\"form-field field-size other-option\"\r\n                appearance=\"outline\">\r\n                <mat-label>Autre option</mat-label>\r\n                <input type=\"text\" [required]=\"field.isMandatory\" matInput [ngModelOptions]=\"{standalone: true}\"\r\n                    [(ngModel)]=\"field.otherValue\" placeholder=\"\">\r\n            </mat-form-field>\r\n        </div>\r\n        <div *ngSwitchCase=\"'select'\" class=\"flex-auto w-30 field-size\">\r\n            <mat-form-field class=\" mat-select flex-auto w-30 field-size\" appearance=\"outline\">\r\n                <mat-label> {{field.label}} </mat-label>\r\n                <mat-select [(ngModel)]=\"field.value\" [ngModelOptions]=\"{standalone: true}\"\r\n                    [required]=\"field.isMandatory\">\r\n                    <mat-option *ngFor=\"let opt of field.defaultValue\" [value]=\"opt.value\">\r\n                        {{opt.value}}</mat-option>\r\n                </mat-select>\r\n            </mat-form-field>\r\n            <mat-form-field *ngIf=\"'autre'===formatOther(field.value)\" class=\"form-field field-size other-option\"\r\n                appearance=\"outline\">\r\n                <mat-label>Autre option</mat-label>\r\n                <input type=\"text\" [required]=\"field.isMandatory\" matInput [ngModelOptions]=\"{standalone: true}\"\r\n                    [(ngModel)]=\"field.otherValue\" placeholder=\"\">\r\n            </mat-form-field>\r\n        </div>\r\n        <mat-form-field *ngSwitchCase=\"'textarea'\" class=\"form-field full-width\" appearance=\"outline\">\r\n            <mat-label>{{field.label}}</mat-label>\r\n            <textarea type=\"text\" rows=\"5\" matInput [required]=\"field.isMandatory\" [ngModelOptions]=\"{standalone: true}\"\r\n                [(ngModel)]=\"field.value\" placeholder=\"Description...\"></textarea>\r\n        </mat-form-field>\r\n        <div *ngSwitchCase=\"'tel'\" class=\"form-field full-width tel-input\">\r\n            <mat-label class=\"tel-label\">{{field.label}}</mat-label>\r\n            <ngx-intl-tel-input id=\"onboarding-phone-input\" class=\"phone-input-profile\" [cssClass]=\"'input-phone'\"\r\n                [preferredCountries]=\"preferredCountries\" [enableAutoCountrySelect]=\"false\" [enablePlaceholder]=\"true\"\r\n                [customPlaceholder]=\"'Phone'\" [selectFirstCountry]=\"false\" [selectedCountryISO]=\"flag(field.value)\"\r\n                [maxLength]=\"15\" [inputId]=\"field.key\" [phoneValidation]=\"true\" [separateDialCode]=\"separateDialCode\"\r\n                [numberFormat]=\"PhoneNumberFormat.National\" name=\"phone\" (input)=\"checkPhone(field.value)\"\r\n                [ngModelOptions]=\"{standalone: true}\" [(ngModel)]=\"field.value\">\r\n            </ngx-intl-tel-input>\r\n            <mat-error *ngIf=\"invalideValue\">Le t\u00E9l\u00E9phone est invalide</mat-error>\r\n        </div>\r\n        <mat-form-field *ngSwitchCase=\"'none'\" class=\"form-field field-size\" appearance=\"outline\" style=\"opacity:0 ;\">\r\n            <mat-label></mat-label>\r\n            <input [type]=\"field.type\" disabled=\"true\" matInput />\r\n        </mat-form-field>\r\n        <mat-form-field *ngSwitchDefault class=\"form-field field-size\" appearance=\"outline\">\r\n            <mat-label>{{field.label}}</mat-label>\r\n            <input [type]=\"field.type\" [required]=\"field.isMandatory\" matInput [ngModelOptions]=\"{standalone: true}\"\r\n                [(ngModel)]=\"field.value\" placeholder=\"\">\r\n        </mat-form-field>\r\n    </ng-container>\r\n    <div *ngIf=\"field.key==='AccountName'\" class=\"flex-auto w-30 field-size\">\r\n        <mat-form-field class=\" mat-select flex-auto w-30 field-size\" appearance=\"outline\">\r\n            <mat-label> {{field.label}} </mat-label>\r\n            <mat-select [(ngModel)]=\"field.value\" [ngModelOptions]=\"{standalone: true}\" [required]=\"field.isMandatory\">\r\n                <mat-option *ngFor=\"let opt of field.defaultValue\" [value]=\"opt._id\">\r\n                    {{opt.Name}}</mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n\r\n    </div>\r\n</div>\r\n<ng-content select=\".child\"></ng-content>", styles: [".container{max-width:98%;margin:50px auto auto;padding-bottom:50px}.container .action{width:100%;display:flex;justify-content:space-between}.input-category-name{font-size:15px;font-weight:500}.full-width{width:100%}.field-item{display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;position:relative}.field-item .button-action{background-color:#6fe8d7;height:100%;margin:auto 15px auto auto;display:flex}.field-item .button-action button{box-shadow:none;background-color:transparent;color:#fff}.field-action{width:10%}.field-size mat-checkbox{margin:20px}hr{margin:50px 0}::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}.category-action{display:flex;width:100%}.delete-field{margin:auto 2%}.radio-group .mat-radio-button{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons{cursor:move}.category-item{display:flex;align-items:baseline;width:100%;border:1px solid #dce4e9;border-radius:8px}::ng-deep .readonly.mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}.field-content{width:100%}.cdk-drag-preview{box-sizing:border-box;border-radius:4px;box-shadow:0 5px 5px -3px #0003,0 8px 10px 1px #00000024,0 3px 14px 2px #0000001f}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating{transition:transform .25s cubic-bezier(0,0,.2,1)}.example-list.cdk-drop-list-dragging .category-item:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.add-button-container{background:#ffffff 0% 0% no-repeat padding-box;border:1px dashed #dce4e9;border-radius:8px;margin-top:10px;padding:10px;display:flex;justify-content:center;align-items:center;width:98%;margin-left:0;margin-bottom:22px}.add-button-container button{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;letter-spacing:0px;color:#c2c8d5;box-shadow:none}.expand-button .material-icons{font-size:48px;margin-top:-20px;margin-right:15px}.transparent-button{background-color:transparent!important;box-shadow:none!important;width:40px!important;padding:0!important;margin:0!important;min-width:auto!important}.expand-button{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.checkbox-title-active{font-weight:700}.other-option{margin-left:10px}.flex-auto{width:100%}::ng-deep .country-dropdown{min-width:unset!important}::ng-deep .tel-input{position:relative}::ng-deep .tel-input .tel-label{font-size:12px;color:#0009;position:absolute;z-index:1;background-color:#fff;padding:0 2px;left:8px;top:-3px}::ng-deep .phone-input-profile{padding-bottom:0;padding-top:0;display:block!important;max-width:100%;width:100%}::ng-deep .phone-input-profile .iti{width:100%!important}::ng-deep .phone-input-profile .iti input[type=tel]{margin-top:4px!important}::ng-deep .phone-input-profile input{outline:none;padding:17px;border-radius:5px;border-color:#0000001f;border-width:1px;width:100%;border:1px solid rgba(0,0,0,.12)}.toggle-button{padding-top:15px;display:flex;align-items:center}.toggle-button span{margin-right:10px}.onboarding-select{display:grid;grid-template-columns:repeat(6,1fr)}\n"] }]
         }], function () { return []; }, { field: [{
                 type: Input
             }], length: [{
@@ -5572,28 +5636,21 @@ SubOnboardingCreateComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type
             }] });
 })();
 
-function OnboardingDetailComponent_ng_container_20_Template(rf, ctx) {
+function OnboardingDetailComponent_mat_icon_4_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementContainerStart(0);
-        i0.ɵɵelement(1, "span");
-        i0.ɵɵelementStart(2, "mat-icon", 6);
-        i0.ɵɵtext(3, "phone");
+        const _r8 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-icon", 19);
+        i0.ɵɵlistener("click", function OnboardingDetailComponent_mat_icon_4_Template_mat_icon_click_0_listener() { i0.ɵɵrestoreView(_r8); const ctx_r7 = i0.ɵɵnextContext(); return ctx_r7.onEdit(); });
+        i0.ɵɵtext(1, "edit ");
         i0.ɵɵelementEnd();
-        i0.ɵɵtext(4);
-        i0.ɵɵelementContainerEnd();
-    }
-    if (rf & 2) {
-        const ctx_r0 = i0.ɵɵnextContext();
-        i0.ɵɵadvance(4);
-        i0.ɵɵtextInterpolate1(" ", ctx_r0.detailView == null ? null : ctx_r0.detailView.user == null ? null : ctx_r0.detailView.user.MobilePhone == null ? null : ctx_r0.detailView.user.MobilePhone.internationalNumber, " ");
     }
 }
-function OnboardingDetailComponent_ng_container_21_Template(rf, ctx) {
+function OnboardingDetailComponent_ng_container_24_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementContainerStart(0);
         i0.ɵɵelement(1, "span");
-        i0.ɵɵelementStart(2, "mat-icon", 6);
-        i0.ɵɵtext(3, "smartphone");
+        i0.ɵɵelementStart(2, "mat-icon", 8);
+        i0.ɵɵtext(3, "phone");
         i0.ɵɵelementEnd();
         i0.ɵɵtext(4);
         i0.ɵɵelementContainerEnd();
@@ -5601,461 +5658,477 @@ function OnboardingDetailComponent_ng_container_21_Template(rf, ctx) {
     if (rf & 2) {
         const ctx_r1 = i0.ɵɵnextContext();
         i0.ɵɵadvance(4);
-        i0.ɵɵtextInterpolate1(" ", ctx_r1.detailView == null ? null : ctx_r1.detailView.user == null ? null : ctx_r1.detailView.user.Phone == null ? null : ctx_r1.detailView.user.Phone.internationalNumber, " ");
+        i0.ɵɵtextInterpolate1(" ", ctx_r1.detailView == null ? null : ctx_r1.detailView.user == null ? null : ctx_r1.detailView.user.MobilePhone == null ? null : ctx_r1.detailView.user.MobilePhone.internationalNumber, " ");
     }
 }
-function OnboardingDetailComponent_li_24_Template(rf, ctx) {
+function OnboardingDetailComponent_ng_container_25_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "li", 17)(1, "a");
+        i0.ɵɵelementContainerStart(0);
+        i0.ɵɵelement(1, "span");
+        i0.ɵɵelementStart(2, "mat-icon", 8);
+        i0.ɵɵtext(3, "smartphone");
+        i0.ɵɵelementEnd();
+        i0.ɵɵtext(4);
+        i0.ɵɵelementContainerEnd();
+    }
+    if (rf & 2) {
+        const ctx_r2 = i0.ɵɵnextContext();
+        i0.ɵɵadvance(4);
+        i0.ɵɵtextInterpolate1(" ", ctx_r2.detailView == null ? null : ctx_r2.detailView.user == null ? null : ctx_r2.detailView.user.Phone == null ? null : ctx_r2.detailView.user.Phone.internationalNumber, " ");
+    }
+}
+function OnboardingDetailComponent_li_28_Template(rf, ctx) {
+    if (rf & 1) {
+        i0.ɵɵelementStart(0, "li", 20)(1, "a");
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd()();
     }
     if (rf & 2) {
-        const category_r6 = ctx.$implicit;
-        const i_r7 = ctx.index;
-        i0.ɵɵclassMap(i_r7 === 0 ? "active" : "");
-        i0.ɵɵproperty("ngxScrollTo", "#" + category_r6.name)("id", category_r6.name + "x");
+        const category_r9 = ctx.$implicit;
+        const i_r10 = ctx.index;
+        i0.ɵɵclassMap(i_r10 === 0 ? "active" : "");
+        i0.ɵɵproperty("ngxScrollTo", "#" + category_r9.name)("id", category_r9.name + "x");
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(category_r6.name);
+        i0.ɵɵtextInterpolate(category_r9.name);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_1_ng_container_3_li_2_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_1_ng_container_3_li_2_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "li");
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const item_r17 = ctx.$implicit;
+        const item_r20 = ctx.$implicit;
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate(item_r17);
+        i0.ɵɵtextInterpolate(item_r20);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_1_ng_container_3_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_1_ng_container_3_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementContainerStart(0);
-        i0.ɵɵelementStart(1, "ul", 27);
-        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_26_div_9_ng_container_1_ng_container_3_li_2_Template, 2, 1, "li", 28);
+        i0.ɵɵelementStart(1, "ul", 30);
+        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_30_div_9_ng_container_1_ng_container_3_li_2_Template, 2, 1, "li", 31);
         i0.ɵɵelementEnd();
         i0.ɵɵelementContainerEnd();
     }
     if (rf & 2) {
-        const forms_r11 = i0.ɵɵnextContext(2).$implicit;
+        const forms_r14 = i0.ɵɵnextContext(2).$implicit;
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngForOf", forms_r11.value);
+        i0.ɵɵproperty("ngForOf", forms_r14.value);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_1_h4_4_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_1_h4_4_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "h4");
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const forms_r11 = i0.ɵɵnextContext(2).$implicit;
+        const forms_r14 = i0.ɵɵnextContext(2).$implicit;
+        const ctx_r18 = i0.ɵɵnextContext(2);
+        i0.ɵɵadvance(1);
+        i0.ɵɵtextInterpolate1(" ", ctx_r18.onFormatDisplayValue(forms_r14.value).value, " ");
+    }
+}
+function OnboardingDetailComponent_section_30_div_9_ng_container_1_Template(rf, ctx) {
+    if (rf & 1) {
+        i0.ɵɵelementContainerStart(0);
+        i0.ɵɵelementStart(1, "p", 29);
+        i0.ɵɵtext(2);
+        i0.ɵɵelementEnd();
+        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_30_div_9_ng_container_1_ng_container_3_Template, 3, 1, "ng-container", 9);
+        i0.ɵɵtemplate(4, OnboardingDetailComponent_section_30_div_9_ng_container_1_h4_4_Template, 2, 1, "h4", 9);
+        i0.ɵɵelementContainerEnd();
+    }
+    if (rf & 2) {
+        const forms_r14 = i0.ɵɵnextContext().$implicit;
         const ctx_r15 = i0.ɵɵnextContext(2);
-        i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1(" ", ctx_r15.onFormatDisplayValue(forms_r11.value).value, " ");
-    }
-}
-function OnboardingDetailComponent_section_26_div_9_ng_container_1_Template(rf, ctx) {
-    if (rf & 1) {
-        i0.ɵɵelementContainerStart(0);
-        i0.ɵɵelementStart(1, "p", 26);
-        i0.ɵɵtext(2);
-        i0.ɵɵelementEnd();
-        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_26_div_9_ng_container_1_ng_container_3_Template, 3, 1, "ng-container", 7);
-        i0.ɵɵtemplate(4, OnboardingDetailComponent_section_26_div_9_ng_container_1_h4_4_Template, 2, 1, "h4", 7);
-        i0.ɵɵelementContainerEnd();
-    }
-    if (rf & 2) {
-        const forms_r11 = i0.ɵɵnextContext().$implicit;
-        const ctx_r12 = i0.ɵɵnextContext(2);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(forms_r11.label);
+        i0.ɵɵtextInterpolate(forms_r14.label);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r12.onFormatDisplayValue(forms_r11.value).type === "array");
+        i0.ɵɵproperty("ngIf", ctx_r15.onFormatDisplayValue(forms_r14.value).type === "array");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r12.onFormatDisplayValue(forms_r11.value).type !== "array");
+        i0.ɵɵproperty("ngIf", ctx_r15.onFormatDisplayValue(forms_r14.value).type !== "array");
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_1_ng_container_3_li_2_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_1_ng_container_3_li_2_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "li");
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const item_r28 = ctx.$implicit;
+        const item_r31 = ctx.$implicit;
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate(item_r28);
+        i0.ɵɵtextInterpolate(item_r31);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_1_ng_container_3_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_1_ng_container_3_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementContainerStart(0);
-        i0.ɵɵelementStart(1, "ul", 27);
-        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_1_ng_container_3_li_2_Template, 2, 1, "li", 28);
+        i0.ɵɵelementStart(1, "ul", 30);
+        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_1_ng_container_3_li_2_Template, 2, 1, "li", 31);
         i0.ɵɵelementEnd();
         i0.ɵɵelementContainerEnd();
     }
     if (rf & 2) {
-        const sub_r22 = i0.ɵɵnextContext(2).$implicit;
+        const sub_r25 = i0.ɵɵnextContext(2).$implicit;
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngForOf", sub_r22.value);
+        i0.ɵɵproperty("ngForOf", sub_r25.value);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_1_h4_4_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_1_h4_4_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "h4");
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const sub_r22 = i0.ɵɵnextContext(2).$implicit;
+        const sub_r25 = i0.ɵɵnextContext(2).$implicit;
+        const ctx_r29 = i0.ɵɵnextContext(4);
+        i0.ɵɵadvance(1);
+        i0.ɵɵtextInterpolate1(" ", ctx_r29.onFormatDisplayValue(sub_r25.value).value, "");
+    }
+}
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_1_Template(rf, ctx) {
+    if (rf & 1) {
+        i0.ɵɵelementContainerStart(0);
+        i0.ɵɵelementStart(1, "p", 29);
+        i0.ɵɵtext(2);
+        i0.ɵɵelementEnd();
+        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_1_ng_container_3_Template, 3, 1, "ng-container", 9);
+        i0.ɵɵtemplate(4, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_1_h4_4_Template, 2, 1, "h4", 9);
+        i0.ɵɵelementContainerEnd();
+    }
+    if (rf & 2) {
+        const sub_r25 = i0.ɵɵnextContext().$implicit;
         const ctx_r26 = i0.ɵɵnextContext(4);
-        i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1(" ", ctx_r26.onFormatDisplayValue(sub_r22.value).value, "");
-    }
-}
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_1_Template(rf, ctx) {
-    if (rf & 1) {
-        i0.ɵɵelementContainerStart(0);
-        i0.ɵɵelementStart(1, "p", 26);
-        i0.ɵɵtext(2);
-        i0.ɵɵelementEnd();
-        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_1_ng_container_3_Template, 3, 1, "ng-container", 7);
-        i0.ɵɵtemplate(4, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_1_h4_4_Template, 2, 1, "h4", 7);
-        i0.ɵɵelementContainerEnd();
-    }
-    if (rf & 2) {
-        const sub_r22 = i0.ɵɵnextContext().$implicit;
-        const ctx_r23 = i0.ɵɵnextContext(4);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(sub_r22.label);
+        i0.ɵɵtextInterpolate(sub_r25.label);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r23.onFormatDisplayValue(sub_r22.value).type === "array");
+        i0.ɵɵproperty("ngIf", ctx_r26.onFormatDisplayValue(sub_r25.value).type === "array");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r23.onFormatDisplayValue(sub_r22.value).type !== "array");
+        i0.ɵɵproperty("ngIf", ctx_r26.onFormatDisplayValue(sub_r25.value).type !== "array");
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_ng_container_3_li_2_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_ng_container_3_li_2_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "li");
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const item_r39 = ctx.$implicit;
+        const item_r42 = ctx.$implicit;
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate(item_r39);
+        i0.ɵɵtextInterpolate(item_r42);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_ng_container_3_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_ng_container_3_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementContainerStart(0);
-        i0.ɵɵelementStart(1, "ul", 27);
-        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_ng_container_3_li_2_Template, 2, 1, "li", 28);
+        i0.ɵɵelementStart(1, "ul", 30);
+        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_ng_container_3_li_2_Template, 2, 1, "li", 31);
         i0.ɵɵelementEnd();
         i0.ɵɵelementContainerEnd();
     }
     if (rf & 2) {
-        const child_r33 = i0.ɵɵnextContext(2).$implicit;
+        const child_r36 = i0.ɵɵnextContext(2).$implicit;
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngForOf", child_r33.value);
+        i0.ɵɵproperty("ngForOf", child_r36.value);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_h4_4_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_h4_4_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "h4");
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const child_r33 = i0.ɵɵnextContext(2).$implicit;
+        const child_r36 = i0.ɵɵnextContext(2).$implicit;
+        const ctx_r40 = i0.ɵɵnextContext(6);
+        i0.ɵɵadvance(1);
+        i0.ɵɵtextInterpolate1(" ", ctx_r40.onFormatDisplayValue(child_r36.value).value, "");
+    }
+}
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_Template(rf, ctx) {
+    if (rf & 1) {
+        i0.ɵɵelementContainerStart(0);
+        i0.ɵɵelementStart(1, "p", 29);
+        i0.ɵɵtext(2);
+        i0.ɵɵelementEnd();
+        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_ng_container_3_Template, 3, 1, "ng-container", 9);
+        i0.ɵɵtemplate(4, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_h4_4_Template, 2, 1, "h4", 9);
+        i0.ɵɵelementContainerEnd();
+    }
+    if (rf & 2) {
+        const child_r36 = i0.ɵɵnextContext().$implicit;
         const ctx_r37 = i0.ɵɵnextContext(6);
-        i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1(" ", ctx_r37.onFormatDisplayValue(child_r33.value).value, "");
-    }
-}
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_Template(rf, ctx) {
-    if (rf & 1) {
-        i0.ɵɵelementContainerStart(0);
-        i0.ɵɵelementStart(1, "p", 26);
-        i0.ɵɵtext(2);
-        i0.ɵɵelementEnd();
-        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_ng_container_3_Template, 3, 1, "ng-container", 7);
-        i0.ɵɵtemplate(4, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_h4_4_Template, 2, 1, "h4", 7);
-        i0.ɵɵelementContainerEnd();
-    }
-    if (rf & 2) {
-        const child_r33 = i0.ɵɵnextContext().$implicit;
-        const ctx_r34 = i0.ɵɵnextContext(6);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(child_r33.label);
+        i0.ɵɵtextInterpolate(child_r36.label);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r34.onFormatDisplayValue(child_r33.value).type === "array");
+        i0.ɵɵproperty("ngIf", ctx_r37.onFormatDisplayValue(child_r36.value).type === "array");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r34.onFormatDisplayValue(child_r33.value).type !== "array");
+        i0.ɵɵproperty("ngIf", ctx_r37.onFormatDisplayValue(child_r36.value).type !== "array");
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_ng_container_3_li_2_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_ng_container_3_li_2_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "li");
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const item_r48 = ctx.$implicit;
+        const item_r51 = ctx.$implicit;
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate(item_r48);
+        i0.ɵɵtextInterpolate(item_r51);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_ng_container_3_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_ng_container_3_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementContainerStart(0);
-        i0.ɵɵelementStart(1, "ul", 27);
-        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_ng_container_3_li_2_Template, 2, 1, "li", 28);
+        i0.ɵɵelementStart(1, "ul", 30);
+        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_ng_container_3_li_2_Template, 2, 1, "li", 31);
         i0.ɵɵelementEnd();
         i0.ɵɵelementContainerEnd();
     }
     if (rf & 2) {
-        const c2_r44 = i0.ɵɵnextContext().$implicit;
+        const c2_r47 = i0.ɵɵnextContext().$implicit;
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngForOf", c2_r44.value);
+        i0.ɵɵproperty("ngForOf", c2_r47.value);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_h4_4_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_h4_4_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "h4");
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const c2_r44 = i0.ɵɵnextContext().$implicit;
+        const c2_r47 = i0.ɵɵnextContext().$implicit;
+        const ctx_r49 = i0.ɵɵnextContext(8);
+        i0.ɵɵadvance(1);
+        i0.ɵɵtextInterpolate1(" ", ctx_r49.onFormatDisplayValue(c2_r47.value).value, "");
+    }
+}
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_Template(rf, ctx) {
+    if (rf & 1) {
+        i0.ɵɵelementStart(0, "div", 28)(1, "p", 29);
+        i0.ɵɵtext(2);
+        i0.ɵɵelementEnd();
+        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_ng_container_3_Template, 3, 1, "ng-container", 9);
+        i0.ɵɵtemplate(4, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_h4_4_Template, 2, 1, "h4", 9);
+        i0.ɵɵelementEnd();
+    }
+    if (rf & 2) {
+        const c2_r47 = ctx.$implicit;
         const ctx_r46 = i0.ɵɵnextContext(8);
-        i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1(" ", ctx_r46.onFormatDisplayValue(c2_r44.value).value, "");
-    }
-}
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_Template(rf, ctx) {
-    if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 25)(1, "p", 26);
-        i0.ɵɵtext(2);
-        i0.ɵɵelementEnd();
-        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_ng_container_3_Template, 3, 1, "ng-container", 7);
-        i0.ɵɵtemplate(4, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_h4_4_Template, 2, 1, "h4", 7);
-        i0.ɵɵelementEnd();
-    }
-    if (rf & 2) {
-        const c2_r44 = ctx.$implicit;
-        const ctx_r43 = i0.ɵɵnextContext(8);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(c2_r44.label);
+        i0.ɵɵtextInterpolate(c2_r47.label);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r43.onFormatDisplayValue(c2_r44.value).type === "array");
+        i0.ɵɵproperty("ngIf", ctx_r46.onFormatDisplayValue(c2_r47.value).type === "array");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r43.onFormatDisplayValue(c2_r44.value).type !== "array");
+        i0.ɵɵproperty("ngIf", ctx_r46.onFormatDisplayValue(c2_r47.value).type !== "array");
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementContainerStart(0);
         i0.ɵɵelementStart(1, "h3");
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd();
-        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_Template, 5, 3, "div", 24);
+        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_div_3_Template, 5, 3, "div", 27);
         i0.ɵɵelementContainerEnd();
     }
     if (rf & 2) {
-        const child_r33 = i0.ɵɵnextContext().$implicit;
+        const child_r36 = i0.ɵɵnextContext().$implicit;
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(child_r33.label);
+        i0.ɵɵtextInterpolate(child_r36.label);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", child_r33.forms);
+        i0.ɵɵproperty("ngForOf", child_r36.forms);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 25);
-        i0.ɵɵtemplate(1, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_Template, 5, 3, "ng-container", 7);
-        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_Template, 4, 2, "ng-container", 7);
+        i0.ɵɵelementStart(0, "div", 28);
+        i0.ɵɵtemplate(1, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_1_Template, 5, 3, "ng-container", 9);
+        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_ng_container_2_Template, 4, 2, "ng-container", 9);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const child_r33 = ctx.$implicit;
+        const child_r36 = ctx.$implicit;
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", !child_r33.forms);
+        i0.ɵɵproperty("ngIf", !child_r36.forms);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", child_r33.forms);
+        i0.ɵɵproperty("ngIf", child_r36.forms);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementContainerStart(0);
         i0.ɵɵelementStart(1, "h3");
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd();
-        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_div_3_Template, 3, 2, "div", 24);
+        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_div_3_Template, 3, 2, "div", 27);
         i0.ɵɵelementContainerEnd();
     }
     if (rf & 2) {
-        const sub_r22 = i0.ɵɵnextContext().$implicit;
+        const sub_r25 = i0.ɵɵnextContext().$implicit;
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(sub_r22.label);
+        i0.ɵɵtextInterpolate(sub_r25.label);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", sub_r22.forms);
+        i0.ɵɵproperty("ngForOf", sub_r25.forms);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 25);
-        i0.ɵɵtemplate(1, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_1_Template, 5, 3, "ng-container", 7);
-        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_ng_container_2_Template, 4, 2, "ng-container", 7);
+        i0.ɵɵelementStart(0, "div", 28);
+        i0.ɵɵtemplate(1, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_1_Template, 5, 3, "ng-container", 9);
+        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_ng_container_2_Template, 4, 2, "ng-container", 9);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const sub_r22 = ctx.$implicit;
+        const sub_r25 = ctx.$implicit;
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", !sub_r22.forms);
+        i0.ɵɵproperty("ngIf", !sub_r25.forms);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", sub_r22.forms);
+        i0.ɵɵproperty("ngIf", sub_r25.forms);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_ng_container_2_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_ng_container_2_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementContainerStart(0);
         i0.ɵɵelementStart(1, "h3");
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd();
-        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_26_div_9_ng_container_2_div_3_Template, 3, 2, "div", 24);
+        i0.ɵɵtemplate(3, OnboardingDetailComponent_section_30_div_9_ng_container_2_div_3_Template, 3, 2, "div", 27);
         i0.ɵɵelementContainerEnd();
     }
     if (rf & 2) {
-        const forms_r11 = i0.ɵɵnextContext().$implicit;
+        const forms_r14 = i0.ɵɵnextContext().$implicit;
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(forms_r11.label);
+        i0.ɵɵtextInterpolate(forms_r14.label);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", forms_r11.forms);
+        i0.ɵɵproperty("ngForOf", forms_r14.forms);
     }
 }
-function OnboardingDetailComponent_section_26_div_9_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_div_9_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 25);
-        i0.ɵɵtemplate(1, OnboardingDetailComponent_section_26_div_9_ng_container_1_Template, 5, 3, "ng-container", 7);
-        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_26_div_9_ng_container_2_Template, 4, 2, "ng-container", 7);
+        i0.ɵɵelementStart(0, "div", 28);
+        i0.ɵɵtemplate(1, OnboardingDetailComponent_section_30_div_9_ng_container_1_Template, 5, 3, "ng-container", 9);
+        i0.ɵɵtemplate(2, OnboardingDetailComponent_section_30_div_9_ng_container_2_Template, 4, 2, "ng-container", 9);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const forms_r11 = ctx.$implicit;
+        const forms_r14 = ctx.$implicit;
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", !forms_r11.forms);
+        i0.ɵɵproperty("ngIf", !forms_r14.forms);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", forms_r11.forms);
+        i0.ɵɵproperty("ngIf", forms_r14.forms);
     }
 }
-function OnboardingDetailComponent_section_26_Template(rf, ctx) {
+function OnboardingDetailComponent_section_30_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "section", 18)(1, "div", 19)(2, "div", 20)(3, "div", 21)(4, "h2");
+        i0.ɵɵelementStart(0, "section", 21)(1, "div", 22)(2, "div", 23)(3, "div", 24)(4, "h2");
         i0.ɵɵtext(5);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(6, "p", 22);
+        i0.ɵɵelementStart(6, "p", 25);
         i0.ɵɵtext(7);
         i0.ɵɵelementEnd()();
-        i0.ɵɵelement(8, "div", 23);
+        i0.ɵɵelement(8, "div", 26);
         i0.ɵɵelementEnd();
-        i0.ɵɵtemplate(9, OnboardingDetailComponent_section_26_div_9_Template, 3, 2, "div", 24);
+        i0.ɵɵtemplate(9, OnboardingDetailComponent_section_30_div_9_Template, 3, 2, "div", 27);
         i0.ɵɵelementEnd()();
     }
     if (rf & 2) {
-        const category_r8 = ctx.$implicit;
-        const ctx_r3 = i0.ɵɵnextContext();
-        i0.ɵɵproperty("id", category_r8.name);
+        const category_r11 = ctx.$implicit;
+        const ctx_r4 = i0.ɵɵnextContext();
+        i0.ɵɵproperty("id", category_r11.name);
         i0.ɵɵadvance(5);
-        i0.ɵɵtextInterpolate(category_r8.name);
+        i0.ɵɵtextInterpolate(category_r11.name);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r3.catNameStart(category_r8.name) ? "l'" + category_r8.name : category_r8.name, " ");
+        i0.ɵɵtextInterpolate1(" Listes des informations n\u00E9cessaires pour la cr\u00E9ation de ", ctx_r4.catNameStart(category_r11.name) ? "l'" + category_r11.name : category_r11.name, " ");
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngForOf", category_r8.forms);
+        i0.ɵɵproperty("ngForOf", category_r11.forms);
     }
 }
-function OnboardingDetailComponent_ng_container_34_div_1_button_19_Template(rf, ctx) {
+function OnboardingDetailComponent_ng_container_38_div_1_button_19_Template(rf, ctx) {
     if (rf & 1) {
-        const _r59 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "button", 42);
-        i0.ɵɵlistener("click", function OnboardingDetailComponent_ng_container_34_div_1_button_19_Template_button_click_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r59); const attach_r57 = restoredCtx.$implicit; const ctx_r58 = i0.ɵɵnextContext(3); return ctx_r58.openBottomSheet(attach_r57); });
+        const _r62 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "button", 45);
+        i0.ɵɵlistener("click", function OnboardingDetailComponent_ng_container_38_div_1_button_19_Template_button_click_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r62); const attach_r60 = restoredCtx.$implicit; const ctx_r61 = i0.ɵɵnextContext(3); return ctx_r61.openBottomSheet(attach_r60); });
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const attach_r57 = ctx.$implicit;
-        const ctx_r56 = i0.ɵɵnextContext(3);
+        const attach_r60 = ctx.$implicit;
+        const ctx_r59 = i0.ɵɵnextContext(3);
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1("T\u00E9l\u00E9charger (", ctx_r56.substr(attach_r57.Name), ".pdf) ");
+        i0.ɵɵtextInterpolate1("T\u00E9l\u00E9charger (", ctx_r59.substr(attach_r60.Name), ".pdf) ");
     }
 }
-function OnboardingDetailComponent_ng_container_34_div_1_Template(rf, ctx) {
+function OnboardingDetailComponent_ng_container_38_div_1_Template(rf, ctx) {
     if (rf & 1) {
-        const _r61 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 30)(1, "div", 31)(2, "button", 32);
-        i0.ɵɵlistener("click", function OnboardingDetailComponent_ng_container_34_div_1_Template_button_click_2_listener() { const restoredCtx = i0.ɵɵrestoreView(_r61); const ticket_r55 = restoredCtx.$implicit; const ctx_r60 = i0.ɵɵnextContext(2); return ctx_r60.onViewTicket(ticket_r55); });
-        i0.ɵɵelementStart(3, "mat-icon", 6);
+        const _r64 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 33)(1, "div", 34)(2, "button", 35);
+        i0.ɵɵlistener("click", function OnboardingDetailComponent_ng_container_38_div_1_Template_button_click_2_listener() { const restoredCtx = i0.ɵɵrestoreView(_r64); const ticket_r58 = restoredCtx.$implicit; const ctx_r63 = i0.ɵɵnextContext(2); return ctx_r63.onViewTicket(ticket_r58); });
+        i0.ɵɵelementStart(3, "mat-icon", 8);
         i0.ɵɵtext(4, "list_alt");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(5, "span", 33);
+        i0.ɵɵelementStart(5, "span", 36);
         i0.ɵɵtext(6);
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(7, "button", 34);
+        i0.ɵɵelementStart(7, "button", 37);
         i0.ɵɵtext(8);
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(9, "p", 35);
+        i0.ɵɵelementStart(9, "p", 38);
         i0.ɵɵtext(10);
         i0.ɵɵpipe(11, "date");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(12, "div", 36)(13, "h3", 37);
+        i0.ɵɵelementStart(12, "div", 39)(13, "h3", 40);
         i0.ɵɵtext(14);
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(15, "div", 38);
-        i0.ɵɵelement(16, "progress", 39);
-        i0.ɵɵelementStart(17, "span", 40);
+        i0.ɵɵelementStart(15, "div", 41);
+        i0.ɵɵelement(16, "progress", 42);
+        i0.ɵɵelementStart(17, "span", 43);
         i0.ɵɵtext(18);
         i0.ɵɵelementEnd()();
-        i0.ɵɵtemplate(19, OnboardingDetailComponent_ng_container_34_div_1_button_19_Template, 2, 1, "button", 41);
+        i0.ɵɵtemplate(19, OnboardingDetailComponent_ng_container_38_div_1_button_19_Template, 2, 1, "button", 44);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const ticket_r55 = ctx.$implicit;
+        const ticket_r58 = ctx.$implicit;
         i0.ɵɵadvance(6);
-        i0.ɵɵtextInterpolate1("Ticket ", ticket_r55.CaseNumber, "");
+        i0.ɵɵtextInterpolate1("Ticket ", ticket_r58.CaseNumber, "");
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(ticket_r55.Status);
+        i0.ɵɵtextInterpolate(ticket_r58.Status);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(i0.ɵɵpipeBind2(11, 7, ticket_r55.CreatedDate, "dd/MM/yy"));
+        i0.ɵɵtextInterpolate(i0.ɵɵpipeBind2(11, 7, ticket_r58.CreatedDate, "dd/MM/yy"));
         i0.ɵɵadvance(4);
-        i0.ɵɵtextInterpolate(ticket_r55.Subject);
+        i0.ɵɵtextInterpolate(ticket_r58.Subject);
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("value", ticket_r55.WorkflowProgress || 0);
+        i0.ɵɵproperty("value", ticket_r58.WorkflowProgress || 0);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate1("", ticket_r55.WorkflowProgress, " %");
+        i0.ɵɵtextInterpolate1("", ticket_r58.WorkflowProgress, " %");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", ticket_r55.Attachments);
+        i0.ɵɵproperty("ngForOf", ticket_r58.Attachments);
     }
 }
-function OnboardingDetailComponent_ng_container_34_Template(rf, ctx) {
+function OnboardingDetailComponent_ng_container_38_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementContainerStart(0);
-        i0.ɵɵtemplate(1, OnboardingDetailComponent_ng_container_34_div_1_Template, 20, 10, "div", 29);
+        i0.ɵɵtemplate(1, OnboardingDetailComponent_ng_container_38_div_1_Template, 20, 10, "div", 32);
         i0.ɵɵelementContainerEnd();
     }
     if (rf & 2) {
-        const ctx_r4 = i0.ɵɵnextContext();
+        const ctx_r5 = i0.ɵɵnextContext();
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", ctx_r4.detailView == null ? null : ctx_r4.detailView.tickets);
+        i0.ɵɵproperty("ngForOf", ctx_r5.detailView == null ? null : ctx_r5.detailView.tickets);
     }
 }
-function OnboardingDetailComponent_div_35_Template(rf, ctx) {
+function OnboardingDetailComponent_div_39_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 30)(1, "p", 43);
+        i0.ɵɵelementStart(0, "div", 33)(1, "p", 46);
         i0.ɵɵtext(2, "\"Aucun tickets\"");
         i0.ɵɵelementEnd()();
     }
@@ -6130,55 +6203,64 @@ OnboardingDetailComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: O
         if (rf & 1) {
             i0.ɵɵlistener("scroll", function OnboardingDetailComponent_scroll_HostBindingHandler($event) { return ctx.onScroll($event); });
         }
-    }, inputs: { detailView: "detailView" }, outputs: { onShowMode: "onShowMode" }, features: [i0.ɵɵNgOnChangesFeature], decls: 36, vars: 15, consts: [[1, "onboarding-detail"], [1, "view-content"], [1, "left-content"], [1, "user-info"], [1, "user-name"], [1, "contact"], ["fontSet", "material-icons-outlined"], [4, "ngIf"], ["id", "fields", 1, "fields"], ["class", "menu-item", 3, "ngxScrollTo", "class", "id", 4, "ngFor", "ngForOf"], [1, "category-view-container", 3, "scroll"], ["class", "category-item", 3, "id", 4, "ngFor", "ngForOf"], [2, "background-color", "transparent"], [2, "height", "450px"], [1, "right-content"], [1, "subtitle"], ["class", "box-ticket-info", 4, "ngIf"], [1, "menu-item", 3, "ngxScrollTo", "id"], [1, "category-item", 3, "id"], [1, "category-item-inner"], [1, "category-header"], [1, "title-content"], [1, "category-description"], [1, "progress-status"], ["class", "category-item-forms", 4, "ngFor", "ngForOf"], [1, "category-item-forms"], [1, "label"], [1, "ul-list"], [4, "ngFor", "ngForOf"], ["class", "box-ticket-info", 4, "ngFor", "ngForOf"], [1, "box-ticket-info"], [1, "d-flex-row", "box-header"], ["mat-button", "", 1, "d-flex-row", 2, "color", "#575F6E", "padding-left", "0", 3, "click"], [2, "font-weight", "400"], ["mat-button", "", 1, "progress"], [1, "date"], [1, "box-header"], [2, "width", "70%", "margin-top", "10px"], [1, "d-flex-row", 2, "gap", "10px", "width", "70%", "margin-top", "10px", "margin-top", "10px"], ["id", "file", "max", "100", 2, "width", "88%", 3, "value"], [1, "percentage"], ["mat-button", "", "class", "download-ticket", 3, "click", 4, "ngFor", "ngForOf"], ["mat-button", "", 1, "download-ticket", 3, "click"], [1, "description"]], template: function OnboardingDetailComponent_Template(rf, ctx) {
+    }, inputs: { detailView: "detailView" }, outputs: { onShowMode: "onShowMode" }, features: [i0.ɵɵNgOnChangesFeature], decls: 40, vars: 17, consts: [[1, "onboarding-detail"], [1, "title"], ["style", "margin-left: 20px; cursor: pointer;", 3, "click", 4, "ngIf"], [1, "view-content"], [1, "left-content"], [1, "user-info"], [1, "user-name"], [1, "contact"], ["fontSet", "material-icons-outlined"], [4, "ngIf"], ["id", "fields", 1, "fields"], ["class", "menu-item", 3, "ngxScrollTo", "class", "id", 4, "ngFor", "ngForOf"], [1, "category-view-container", 3, "scroll"], ["class", "category-item", 3, "id", 4, "ngFor", "ngForOf"], [2, "background-color", "transparent"], [2, "height", "450px"], [1, "right-content"], [1, "subtitle"], ["class", "box-ticket-info", 4, "ngIf"], [2, "margin-left", "20px", "cursor", "pointer", 3, "click"], [1, "menu-item", 3, "ngxScrollTo", "id"], [1, "category-item", 3, "id"], [1, "category-item-inner"], [1, "category-header"], [1, "title-content"], [1, "category-description"], [1, "progress-status"], ["class", "category-item-forms", 4, "ngFor", "ngForOf"], [1, "category-item-forms"], [1, "label"], [1, "ul-list"], [4, "ngFor", "ngForOf"], ["class", "box-ticket-info", 4, "ngFor", "ngForOf"], [1, "box-ticket-info"], [1, "d-flex-row", "box-header"], ["mat-button", "", 1, "d-flex-row", 2, "color", "#575F6E", "padding-left", "0", 3, "click"], [2, "font-weight", "400"], ["mat-button", "", 1, "progress"], [1, "date"], [1, "box-header"], [2, "width", "70%", "margin-top", "10px"], [1, "d-flex-row", 2, "gap", "10px", "width", "70%", "margin-top", "10px", "margin-top", "10px"], ["id", "file", "max", "100", 2, "width", "88%", 3, "value"], [1, "percentage"], ["mat-button", "", "class", "download-ticket", 3, "click", 4, "ngFor", "ngForOf"], ["mat-button", "", 1, "download-ticket", 3, "click"], [1, "description"]], template: function OnboardingDetailComponent_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵelementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4)(5, "h2");
-            i0.ɵɵtext(6);
-            i0.ɵɵelementStart(7, "span");
-            i0.ɵɵtext(8, "arriv\u00E9 le ");
+            i0.ɵɵelementStart(0, "div", 0)(1, "h1", 1)(2, "p");
+            i0.ɵɵtext(3);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(9, "p");
+            i0.ɵɵtemplate(4, OnboardingDetailComponent_mat_icon_4_Template, 2, 0, "mat-icon", 2);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(5, "div", 3)(6, "div", 4)(7, "div", 5)(8, "div", 6)(9, "h2");
             i0.ɵɵtext(10);
-            i0.ɵɵpipe(11, "date");
+            i0.ɵɵelementStart(11, "span");
+            i0.ɵɵtext(12, "arriv\u00E9 le ");
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(13, "p");
+            i0.ɵɵtext(14);
+            i0.ɵɵpipe(15, "date");
             i0.ɵɵelementEnd()()();
-            i0.ɵɵelementStart(12, "p", 5);
-            i0.ɵɵtext(13);
-            i0.ɵɵelement(14, "span");
-            i0.ɵɵtext(15);
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(16, "p", 5)(17, "mat-icon", 6);
-            i0.ɵɵtext(18, "email");
-            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(16, "p", 7);
+            i0.ɵɵtext(17);
+            i0.ɵɵelement(18, "span");
             i0.ɵɵtext(19);
-            i0.ɵɵtemplate(20, OnboardingDetailComponent_ng_container_20_Template, 5, 1, "ng-container", 7);
-            i0.ɵɵtemplate(21, OnboardingDetailComponent_ng_container_21_Template, 5, 1, "ng-container", 7);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(20, "p", 7)(21, "mat-icon", 8);
+            i0.ɵɵtext(22, "email");
+            i0.ɵɵelementEnd();
+            i0.ɵɵtext(23);
+            i0.ɵɵtemplate(24, OnboardingDetailComponent_ng_container_24_Template, 5, 1, "ng-container", 9);
+            i0.ɵɵtemplate(25, OnboardingDetailComponent_ng_container_25_Template, 5, 1, "ng-container", 9);
             i0.ɵɵelementEnd()();
-            i0.ɵɵelementStart(22, "div", 8)(23, "ul");
-            i0.ɵɵtemplate(24, OnboardingDetailComponent_li_24_Template, 3, 5, "li", 9);
+            i0.ɵɵelementStart(26, "div", 10)(27, "ul");
+            i0.ɵɵtemplate(28, OnboardingDetailComponent_li_28_Template, 3, 5, "li", 11);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(25, "div", 10);
-            i0.ɵɵlistener("scroll", function OnboardingDetailComponent_Template_div_scroll_25_listener($event) { return ctx.onScroll($event); });
-            i0.ɵɵtemplate(26, OnboardingDetailComponent_section_26_Template, 10, 4, "section", 11);
-            i0.ɵɵelementStart(27, "section", 12);
-            i0.ɵɵelement(28, "div", 13);
+            i0.ɵɵelementStart(29, "div", 12);
+            i0.ɵɵlistener("scroll", function OnboardingDetailComponent_Template_div_scroll_29_listener($event) { return ctx.onScroll($event); });
+            i0.ɵɵtemplate(30, OnboardingDetailComponent_section_30_Template, 10, 4, "section", 13);
+            i0.ɵɵelementStart(31, "section", 14);
+            i0.ɵɵelement(32, "div", 15);
             i0.ɵɵelementEnd()()()();
-            i0.ɵɵelementStart(29, "div", 14)(30, "h2");
-            i0.ɵɵtext(31, "Tickets li\u00E9s \u00E0 votre demande");
+            i0.ɵɵelementStart(33, "div", 16)(34, "h2");
+            i0.ɵɵtext(35, "Tickets li\u00E9s \u00E0 votre demande");
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(32, "p", 15);
-            i0.ɵɵtext(33, "Vous retrouverez ici tous les tickets cr\u00E9\u00E9s lors de la cr\u00E9ation de votre fiche d\u2019int\u00E9gration.");
+            i0.ɵɵelementStart(36, "p", 17);
+            i0.ɵɵtext(37, "Vous retrouverez ici tous les tickets cr\u00E9\u00E9s lors de la cr\u00E9ation de votre fiche d\u2019int\u00E9gration.");
             i0.ɵɵelementEnd();
-            i0.ɵɵtemplate(34, OnboardingDetailComponent_ng_container_34_Template, 2, 1, "ng-container", 7);
-            i0.ɵɵtemplate(35, OnboardingDetailComponent_div_35_Template, 3, 0, "div", 16);
+            i0.ɵɵtemplate(38, OnboardingDetailComponent_ng_container_38_Template, 2, 1, "ng-container", 9);
+            i0.ɵɵtemplate(39, OnboardingDetailComponent_div_39_Template, 3, 0, "div", 18);
             i0.ɵɵelementEnd()()();
         }
         if (rf & 2) {
+            i0.ɵɵadvance(3);
+            i0.ɵɵtextInterpolate1("Int\u00E9gration profil ", ctx.detailView == null ? null : ctx.detailView.Name, "");
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", !(ctx.detailView == null ? null : ctx.detailView.Finished));
             i0.ɵɵadvance(6);
             i0.ɵɵtextInterpolate2("", ctx.detailView == null ? null : ctx.detailView.user.FirstName, " ", ctx.detailView == null ? null : ctx.detailView.user.LastName, " ");
             i0.ɵɵadvance(4);
-            i0.ɵɵtextInterpolate(i0.ɵɵpipeBind2(11, 12, ctx.detailView == null ? null : ctx.detailView.createdAt, "dd/MM/yy"));
+            i0.ɵɵtextInterpolate(i0.ɵɵpipeBind2(15, 14, ctx.detailView == null ? null : ctx.detailView.createdAt, "dd/MM/yy"));
             i0.ɵɵadvance(3);
-            i0.ɵɵtextInterpolate1("", ctx.detailView == null ? null : ctx.detailView.AccountName, " ");
+            i0.ɵɵtextInterpolate1("", ctx.detailView == null ? null : ctx.detailView.user == null ? null : ctx.detailView.user.AccountName, " ");
             i0.ɵɵadvance(2);
             i0.ɵɵtextInterpolate1(" ", ctx.detailView == null ? null : ctx.detailView.user == null ? null : ctx.detailView.user.Title, "");
             i0.ɵɵadvance(4);
@@ -6196,11 +6278,11 @@ OnboardingDetailComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: O
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", !(ctx.detailView == null ? null : ctx.detailView.tickets));
         }
-    }, directives: [i6.MatIcon, i1$3.NgIf, i1$3.NgForOf, i5$2.ScrollToDirective, i7$1.MatButton], pipes: [i1$3.DatePipe], styles: [_c0] });
+    }, directives: [i1$3.NgIf, i6.MatIcon, i1$3.NgForOf, i5$2.ScrollToDirective, i7$1.MatButton], pipes: [i1$3.DatePipe], styles: [_c0] });
 (function () {
     (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(OnboardingDetailComponent, [{
             type: Component,
-            args: [{ selector: 'lib-onboarding-detail', template: "<div class=\"onboarding-detail\">\n    <!-- <h1 class=\"title\">\n        <p>Int\u00E9gration profil {{detailView?.Name}}</p>\n        <mat-icon *ngIf=\"!detailView?.Finished\" style=\"margin-left: 20px; cursor: pointer;\" (click)=\"onEdit()\">edit\n        </mat-icon>\n    </h1> -->\n    <div class=\"view-content\">\n        <div class=\"left-content\">\n            <div class=\"user-info\">\n                <div class=\"user-name\">\n                    <h2>{{detailView?.user.FirstName }} {{detailView?.user.LastName }} <span>arriv\u00E9 le\n                        </span>\n                        <p>{{detailView?.createdAt | date:'dd/MM/yy' }}</p>\n                    </h2>\n                </div>\n                <p class=\"contact\">{{detailView?.AccountName }} <span></span> {{detailView?.user?.Title}}</p>\n                <p class=\"contact\">\n                    <mat-icon fontSet=\"material-icons-outlined\">email</mat-icon>{{detailView?.user?.Email }}\n                    <ng-container *ngIf=\"detailView?.user?.MobilePhone?.internationalNumber\">\n                        <span></span>\n                        <mat-icon fontSet=\"material-icons-outlined\">phone</mat-icon>\n                        {{detailView?.user?.MobilePhone?.internationalNumber}}\n                    </ng-container>\n\n                    <ng-container *ngIf=\"detailView?.user?.Phone?.internationalNumber\">\n                        <span></span>\n                        <mat-icon fontSet=\"material-icons-outlined\">smartphone</mat-icon>\n                        {{detailView?.user?.Phone?.internationalNumber}}\n                    </ng-container>\n\n                </p>\n\n            </div>\n\n            <div id=\"fields\" class=\"fields\">\n                <ul>\n                    <li [ngxScrollTo]=\"'#'+category.name\" class=\"menu-item\" [class]=\"i===0 ? 'active':''\"\n                        *ngFor=\"let category of detailView?.categories;  let i=index\" [id]=\"category.name+'x'\">\n                        <a>{{category.name}}</a>\n                    </li>\n                </ul>\n                <div class=\"category-view-container\" (scroll)=\"onScroll($event)\">\n                    <section class=\"category-item\" *ngFor=\"let category of detailView?.categories;  let i=index\"\n                        [id]=\"category.name\">\n                        <div class=\"category-item-inner\">\n                            <div class=\"category-header\">\n                                <div class=\"title-content\">\n                                    <h2>{{category.name}}</h2>\n                                    <p class=\"category-description\">\n                                        Listes des informations n\u00E9cessaires pour la cr\u00E9ation de {{\n                                        catNameStart(category.name) ? \"l'\" + category.name :\n                                        category.name }}\n                                    </p>\n                                </div>\n                                <div class=\"progress-status\">\n                                    <!-- {{category?.fieldCompleted}} / {{category?.fieldLength}} -->\n                                    <!-- <div *ngIf=\"category?.fieldCompleted===category?.fieldLength\"\n                                        class=\"status in-progress\">\n                                        <span>En cours de traitement</span>\n                                        <lib-loading></lib-loading>\n                                    </div> -->\n                                    <!-- <div *ngIf=\"category?.fieldCompleted ===category?.fieldLength\"\n                                        class=\"status ongoing\">\n                                        <span style=\"margin-right: 10px;\">En cours</span>\n                                        <mat-icon>check</mat-icon>\n                                    </div> -->\n                                    <!-- <div *ngIf=\"category?.fieldCompleted < category?.fieldLength\"\n                                        class=\"status progress-bar\">\n                                        <span style=\"width: 300px;\">{{progress(category?.fieldCompleted ,\n                                            category?.fieldLength)}}% Termin\u00E9</span>\n                                        <mat-progress-bar mode=\"determinate\"\n                                            [value]=\"progress(category?.fieldCompleted , category?.fieldLength)\">\n                                        </mat-progress-bar>\n                                    </div> -->\n                                </div>\n                            </div>\n                            <div class=\"category-item-forms\" *ngFor=\"let forms of category.forms\">\n                                <ng-container *ngIf=\"!forms.forms\">\n                                    <p class=\"label\">{{forms.label}}</p>\n                                    <ng-container *ngIf=\"onFormatDisplayValue(forms.value).type==='array'\">\n                                        <ul class=\"ul-list\">\n                                            <li *ngFor=\"let item of forms.value \">{{item}}</li>\n                                        </ul>\n                                    </ng-container>\n\n                                    <h4 *ngIf=\"onFormatDisplayValue(forms.value).type!=='array'\">\n                                        {{onFormatDisplayValue(forms.value).value}}\n                                    </h4>\n                                </ng-container>\n                                <ng-container *ngIf=\"forms.forms\">\n                                    <h3>{{forms.label}}</h3>\n                                    <div class=\"category-item-forms\" *ngFor=\"let sub of forms.forms\">\n                                        <ng-container *ngIf=\"!sub.forms\">\n                                            <p class=\"label\">{{sub.label}}</p>\n                                            <ng-container *ngIf=\"onFormatDisplayValue(sub.value).type==='array'\">\n                                                <ul class=\"ul-list\">\n                                                    <li *ngFor=\"let item of sub.value \">{{item}}</li>\n                                                </ul>\n                                            </ng-container>\n                                            <h4 *ngIf=\"onFormatDisplayValue(sub.value).type!=='array'\">\n                                                {{onFormatDisplayValue(sub.value).value}}</h4>\n                                        </ng-container>\n                                        <ng-container *ngIf=\"sub.forms\">\n                                            <h3>{{sub.label}}</h3>\n                                            <div class=\"category-item-forms\" *ngFor=\"let child of sub.forms\">\n                                                <ng-container *ngIf=\"!child.forms\">\n                                                    <p class=\"label\">{{child.label}}</p>\n                                                    <ng-container\n                                                        *ngIf=\"onFormatDisplayValue(child.value).type==='array'\">\n                                                        <ul class=\"ul-list\">\n                                                            <li *ngFor=\"let item of child.value\">{{item}}</li>\n                                                        </ul>\n                                                    </ng-container>\n                                                    <h4 *ngIf=\"onFormatDisplayValue(child.value).type!=='array'\">\n                                                        {{onFormatDisplayValue(child.value).value}}</h4>\n                                                </ng-container>\n                                                <ng-container *ngIf=\"child.forms\">\n                                                    <h3>{{child.label}}</h3>\n                                                    <div class=\"category-item-forms\" *ngFor=\"let c2 of child.forms\">\n                                                        <p class=\"label\">{{c2.label}}</p>\n                                                        <ng-container\n                                                            *ngIf=\"onFormatDisplayValue(c2.value).type==='array'\">\n                                                            <ul class=\"ul-list\">\n                                                                <li *ngFor=\"let item of c2.value \">{{item}}</li>\n                                                            </ul>\n                                                        </ng-container>\n                                                        <h4 *ngIf=\"onFormatDisplayValue(c2.value).type!=='array'\">\n                                                            {{onFormatDisplayValue(c2.value).value}}</h4>\n                                                    </div>\n                                                </ng-container>\n                                            </div>\n                                        </ng-container>\n                                    </div>\n                                </ng-container>\n                            </div>\n                        </div>\n                    </section>\n                    <section style=\"background-color: transparent\">\n                        <div style=\"height: 450px;\"></div>\n                    </section>\n                </div>\n            </div>\n        </div>\n        <div class=\"right-content\">\n            <h2>Tickets li\u00E9s \u00E0 votre demande</h2>\n            <p class=\"subtitle\">Vous retrouverez ici tous les tickets cr\u00E9\u00E9s lors de la cr\u00E9ation de votre fiche\n                d\u2019int\u00E9gration.</p>\n            <ng-container *ngIf=\"detailView?.tickets && detailView?.tickets.length>0\">\n                <div class=\"box-ticket-info\" *ngFor=\"let ticket of detailView?.tickets\">\n                    <div class=\"d-flex-row box-header\">\n                        <button mat-button class=\"d-flex-row\" style=\"color: #575F6E;padding-left: 0;\"\n                            (click)=\"onViewTicket(ticket)\">\n                            <mat-icon fontSet=\"material-icons-outlined\">list_alt</mat-icon><span\n                                style=\"font-weight: 400;\">Ticket\n                                {{ticket.CaseNumber}}</span>\n                        </button>\n                        <button mat-button class=\"progress\">{{ticket.Status}}</button>\n                    </div>\n                    <p class=\"date\">{{ticket.CreatedDate | date :'dd/MM/yy'}}</p>\n                    <div class=\"box-header\">\n                        <h3 style=\"width: 70%;margin-top: 10px;\">{{ticket.Subject}}</h3>\n                    </div>\n                    <div class=\"d-flex-row\" style=\"gap: 10px;width: 70%;margin-top: 10px;margin-top: 10px;\">\n                        <progress style=\"width: 88%;\" id=\"file\" max=\"100\"\n                            [value]=\"ticket.WorkflowProgress || 0\"></progress>\n                        <span class=\"percentage\">{{ticket.WorkflowProgress}} %</span>\n                    </div>\n                    <!-- <button *ngIf=\"ticket.Attachments && ticket.Attachments.length>0\" mat-button class=\"download-ticket\" -->\n                    <button *ngFor=\"let attach of ticket.Attachments\" mat-button class=\"download-ticket\"\n                        (click)=\"openBottomSheet(attach)\">T\u00E9l\u00E9charger ({{substr(attach.Name)}}.pdf)\n                    </button>\n                </div>\n            </ng-container>\n            <div class=\"box-ticket-info\" *ngIf=\"!detailView?.tickets\">\n                <p class=\"description\">\"Aucun tickets\"</p>\n            </div>\n        </div>\n    </div>\n</div>", styles: [".onboarding-detail{padding-top:30px}.onboarding-detail h1,.onboarding-detail h2,.onboarding-detail h3,.onboarding-detail h4,.onboarding-detail h5,.onboarding-detail h6{margin:0;font-style:normal;font-weight:700;line-height:110%;display:flex;align-items:center;color:#242731}.onboarding-detail p{margin:0}.onboarding-detail h1{font-size:24px}.onboarding-detail h1.title{margin-bottom:33px;margin-top:10px}.onboarding-detail h2{font-size:20px}.onboarding-detail h3{font-size:18px}.onboarding-detail h4{font-size:16px}.onboarding-detail h5{font-size:14px}.onboarding-detail h6{font-size:12px}.onboarding-detail .view-content{display:flex;flex-direction:row;justify-content:space-between;background-color:#f4f7f9}.onboarding-detail .view-content .left-content{width:70%;border-radius:6px;margin-right:2%}@media (max-width: 1200px){.onboarding-detail .view-content .left-content{width:50%}}.onboarding-detail .view-content .left-content .user-info{background:transparent;border-radius:6px;padding:10px 10px 10px 0}.onboarding-detail .view-content .left-content .user-info span:before{content:\".\";font-size:25px;margin:0 10px}.onboarding-detail .view-content .left-content .user-info p{font-weight:400;display:flex;align-items:center}.onboarding-detail .view-content .left-content .user-info p mat-icon{padding-right:5px}.onboarding-detail .view-content .left-content .user-info p.contact{margin-top:10px}.onboarding-detail .view-content .left-content .user-info .user-name{line-height:30px}.onboarding-detail .view-content .left-content .user-info .user-name span{font-weight:400;font-size:12px;margin-right:10px}.onboarding-detail .view-content .left-content .user-info .user-contact{line-height:30px}.onboarding-detail .view-content .left-content section{background:#FFFFFF;border-radius:8px;padding:15px;margin-bottom:30px}.onboarding-detail .view-content .left-content section .category-item-inner .category-description{font-style:normal;font-weight:250;font-size:14px;line-height:16px;color:#575f6e;margin-top:5px}.onboarding-detail .view-content .left-content section .category-item-inner .category-item-forms{margin-top:20px}.onboarding-detail .view-content .left-content section .category-item-inner .category-item-forms .label{font-style:normal;font-weight:250;font-size:12px;line-height:16px;display:flex;align-items:center;color:#575f6e}.onboarding-detail .view-content .right-content{background-color:#fff;border-radius:6px;padding:15px;overflow:auto;max-height:85.5vh;margin-right:20px}.onboarding-detail .view-content .right-content p{color:#575f6e}.onboarding-detail .view-content .right-content .box-ticket-info{padding-bottom:20px;padding-top:20px;border-bottom:2px solid #E2E4E5}.onboarding-detail .view-content .right-content .box-ticket-info .box-header{display:flex;justify-content:space-between;align-items:center}.onboarding-detail .view-content .right-content .box-ticket-info .box-header button{min-width:auto;height:36px;border-radius:4px;font-weight:500;font-size:16px;display:flex;align-items:center;text-transform:capitalize;color:#fff}.onboarding-detail .view-content .right-content .box-ticket-info .box-header .finished{background:#6FE8D7}.onboarding-detail .view-content .right-content .box-ticket-info .box-header .progress{background:#F3A124}.onboarding-detail .view-content .right-content .box-ticket-info .download-ticket{margin-top:20px;background-color:#fff;border:1px solid #171F26;display:block}.onboarding-detail .view-content .category-view-container{display:flex;flex-direction:column;max-height:70vh;overflow:auto}.onboarding-detail .view-content .right-content::-webkit-scrollbar,.onboarding-detail .view-content .category-view-container::-webkit-scrollbar{display:none}.onboarding-detail .view-content .right-content,.onboarding-detail .view-content .category-view-container{-ms-overflow-style:none;scrollbar-width:none}.fields{height:84%}.fields ul{list-style:none;display:flex;margin:33px 0;padding:0;overflow:auto}.fields ul li{margin-right:20px;padding-bottom:5px;border-bottom:3px solid transparent}.fields ul li a{text-decoration:none;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26;opacity:.5;overflow:hidden;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}.fields ul li.menu-item:hover,.fields ul li.menu-item.active{cursor:pointer;border-bottom:3px solid #3C4252}.fields ul li.menu-item:hover a,.fields ul li.menu-item.active a{font-style:normal;font-weight:700;font-size:14px;line-height:120%;opacity:1;text-decoration:none!important}.progress-status .status{display:flex;align-items:center}.progress-status .ongoing{color:#6fe8d7}.progress-status .in-progress{padding-right:25px;color:#f3a124;font-weight:500;font-size:16px}::ng-deep .progress-status{font-size:16px}::ng-deep .progress-status .mat-progress-bar{display:block;height:20px;overflow:hidden;border-radius:50px;position:relative;transition:opacity .25s linear;width:100%}::ng-deep .progress-status .mat-progress-bar-fill:after{background-color:#6fe8d7}::ng-deep .progress-status .mat-progress-bar-buffer{background-color:#ecf3f7}.category-header{display:flex;align-items:center;justify-content:space-between}.d-flex-row{display:flex;align-items:center}.d-flex-row mat-icon{margin-right:5px}::ng-deep mat-bottom-sheet-container{width:100vw;max-width:100vw!important;height:150px;background:#F4F7F9!important;display:flex!important;flex-direction:column;justify-content:center}::ng-deep mat-bottom-sheet-container .sheet-content{display:flex;align-items:center;justify-content:center}::ng-deep mat-bottom-sheet-container h3{font-style:normal;font-weight:700;font-size:20px;line-height:100%;color:#171f26;margin-bottom:0!important;margin-top:0!important}::ng-deep mat-bottom-sheet-container button.download-button{width:277px;height:48px;background:#171F26;box-shadow:0 0 #0003;border-radius:7px;color:#fff;margin:0 25px}::ng-deep mat-bottom-sheet-container button.close-button{height:48px;background:#fff;box-shadow:0 0 #0003;border-radius:7px;color:#171f26;border:1px solid #171F26}.ul-list{list-style:disc!important;display:block!important;margin-left:0!important;padding-left:0!important;margin-top:0!important}.ul-list li:before{content:\".\";font-size:40px}\n"] }]
+            args: [{ selector: 'lib-onboarding-detail', template: "<div class=\"onboarding-detail\">\n    <h1 class=\"title\">\n        <p>Int\u00E9gration profil {{detailView?.Name}}</p>\n        <mat-icon *ngIf=\"!detailView?.Finished\" style=\"margin-left: 20px; cursor: pointer;\" (click)=\"onEdit()\">edit\n        </mat-icon>\n    </h1>\n    <div class=\"view-content\">\n        <div class=\"left-content\">\n            <div class=\"user-info\">\n                <div class=\"user-name\">\n                    <h2>{{detailView?.user.FirstName }} {{detailView?.user.LastName }} <span>arriv\u00E9 le\n                        </span>\n                        <p>{{detailView?.createdAt | date:'dd/MM/yy' }}</p>\n                    </h2>\n                </div>\n                <p class=\"contact\">{{detailView?.user?.AccountName }} <span></span> {{detailView?.user?.Title}}</p>\n                <p class=\"contact\">\n                    <mat-icon fontSet=\"material-icons-outlined\">email</mat-icon>{{detailView?.user?.Email }}\n                    <ng-container *ngIf=\"detailView?.user?.MobilePhone?.internationalNumber\">\n                        <span></span>\n                        <mat-icon fontSet=\"material-icons-outlined\">phone</mat-icon>\n                        {{detailView?.user?.MobilePhone?.internationalNumber}}\n                    </ng-container>\n\n                    <ng-container *ngIf=\"detailView?.user?.Phone?.internationalNumber\">\n                        <span></span>\n                        <mat-icon fontSet=\"material-icons-outlined\">smartphone</mat-icon>\n                        {{detailView?.user?.Phone?.internationalNumber}}\n                    </ng-container>\n\n                </p>\n\n            </div>\n\n            <div id=\"fields\" class=\"fields\">\n                <ul>\n                    <li [ngxScrollTo]=\"'#'+category.name\" class=\"menu-item\" [class]=\"i===0 ? 'active':''\"\n                        *ngFor=\"let category of detailView?.categories;  let i=index\" [id]=\"category.name+'x'\">\n                        <a>{{category.name}}</a>\n                    </li>\n                </ul>\n                <div class=\"category-view-container\" (scroll)=\"onScroll($event)\">\n                    <section class=\"category-item\" *ngFor=\"let category of detailView?.categories;  let i=index\"\n                        [id]=\"category.name\">\n                        <div class=\"category-item-inner\">\n                            <div class=\"category-header\">\n                                <div class=\"title-content\">\n                                    <h2>{{category.name}}</h2>\n                                    <p class=\"category-description\">\n                                        Listes des informations n\u00E9cessaires pour la cr\u00E9ation de {{\n                                        catNameStart(category.name) ? \"l'\" + category.name :\n                                        category.name }}\n                                    </p>\n                                </div>\n                                <div class=\"progress-status\">\n                                    <!-- {{category?.fieldCompleted}} / {{category?.fieldLength}} -->\n                                    <!-- <div *ngIf=\"category?.fieldCompleted===category?.fieldLength\"\n                                        class=\"status in-progress\">\n                                        <span>En cours de traitement</span>\n                                        <lib-loading></lib-loading>\n                                    </div> -->\n                                    <!-- <div *ngIf=\"category?.fieldCompleted ===category?.fieldLength\"\n                                        class=\"status ongoing\">\n                                        <span style=\"margin-right: 10px;\">En cours</span>\n                                        <mat-icon>check</mat-icon>\n                                    </div> -->\n                                    <!-- <div *ngIf=\"category?.fieldCompleted < category?.fieldLength\"\n                                        class=\"status progress-bar\">\n                                        <span style=\"width: 300px;\">{{progress(category?.fieldCompleted ,\n                                            category?.fieldLength)}}% Termin\u00E9</span>\n                                        <mat-progress-bar mode=\"determinate\"\n                                            [value]=\"progress(category?.fieldCompleted , category?.fieldLength)\">\n                                        </mat-progress-bar>\n                                    </div> -->\n                                </div>\n                            </div>\n                            <div class=\"category-item-forms\" *ngFor=\"let forms of category.forms\">\n                                <ng-container *ngIf=\"!forms.forms\">\n                                    <p class=\"label\">{{forms.label}}</p>\n                                    <ng-container *ngIf=\"onFormatDisplayValue(forms.value).type==='array'\">\n                                        <ul class=\"ul-list\">\n                                            <li *ngFor=\"let item of forms.value \">{{item}}</li>\n                                        </ul>\n                                    </ng-container>\n\n                                    <h4 *ngIf=\"onFormatDisplayValue(forms.value).type!=='array'\">\n                                        {{onFormatDisplayValue(forms.value).value}}\n                                    </h4>\n                                </ng-container>\n                                <ng-container *ngIf=\"forms.forms\">\n                                    <h3>{{forms.label}}</h3>\n                                    <div class=\"category-item-forms\" *ngFor=\"let sub of forms.forms\">\n                                        <ng-container *ngIf=\"!sub.forms\">\n                                            <p class=\"label\">{{sub.label}}</p>\n                                            <ng-container *ngIf=\"onFormatDisplayValue(sub.value).type==='array'\">\n                                                <ul class=\"ul-list\">\n                                                    <li *ngFor=\"let item of sub.value \">{{item}}</li>\n                                                </ul>\n                                            </ng-container>\n                                            <h4 *ngIf=\"onFormatDisplayValue(sub.value).type!=='array'\">\n                                                {{onFormatDisplayValue(sub.value).value}}</h4>\n                                        </ng-container>\n                                        <ng-container *ngIf=\"sub.forms\">\n                                            <h3>{{sub.label}}</h3>\n                                            <div class=\"category-item-forms\" *ngFor=\"let child of sub.forms\">\n                                                <ng-container *ngIf=\"!child.forms\">\n                                                    <p class=\"label\">{{child.label}}</p>\n                                                    <ng-container\n                                                        *ngIf=\"onFormatDisplayValue(child.value).type==='array'\">\n                                                        <ul class=\"ul-list\">\n                                                            <li *ngFor=\"let item of child.value\">{{item}}</li>\n                                                        </ul>\n                                                    </ng-container>\n                                                    <h4 *ngIf=\"onFormatDisplayValue(child.value).type!=='array'\">\n                                                        {{onFormatDisplayValue(child.value).value}}</h4>\n                                                </ng-container>\n                                                <ng-container *ngIf=\"child.forms\">\n                                                    <h3>{{child.label}}</h3>\n                                                    <div class=\"category-item-forms\" *ngFor=\"let c2 of child.forms\">\n                                                        <p class=\"label\">{{c2.label}}</p>\n                                                        <ng-container\n                                                            *ngIf=\"onFormatDisplayValue(c2.value).type==='array'\">\n                                                            <ul class=\"ul-list\">\n                                                                <li *ngFor=\"let item of c2.value \">{{item}}</li>\n                                                            </ul>\n                                                        </ng-container>\n                                                        <h4 *ngIf=\"onFormatDisplayValue(c2.value).type!=='array'\">\n                                                            {{onFormatDisplayValue(c2.value).value}}</h4>\n                                                    </div>\n                                                </ng-container>\n                                            </div>\n                                        </ng-container>\n                                    </div>\n                                </ng-container>\n                            </div>\n                        </div>\n                    </section>\n                    <section style=\"background-color: transparent\">\n                        <div style=\"height: 450px;\"></div>\n                    </section>\n                </div>\n            </div>\n        </div>\n        <div class=\"right-content\">\n            <h2>Tickets li\u00E9s \u00E0 votre demande</h2>\n            <p class=\"subtitle\">Vous retrouverez ici tous les tickets cr\u00E9\u00E9s lors de la cr\u00E9ation de votre fiche\n                d\u2019int\u00E9gration.</p>\n            <ng-container *ngIf=\"detailView?.tickets && detailView?.tickets.length>0\">\n                <div class=\"box-ticket-info\" *ngFor=\"let ticket of detailView?.tickets\">\n                    <div class=\"d-flex-row box-header\">\n                        <button mat-button class=\"d-flex-row\" style=\"color: #575F6E;padding-left: 0;\"\n                            (click)=\"onViewTicket(ticket)\">\n                            <mat-icon fontSet=\"material-icons-outlined\">list_alt</mat-icon><span\n                                style=\"font-weight: 400;\">Ticket\n                                {{ticket.CaseNumber}}</span>\n                        </button>\n                        <button mat-button class=\"progress\">{{ticket.Status}}</button>\n                    </div>\n                    <p class=\"date\">{{ticket.CreatedDate | date :'dd/MM/yy'}}</p>\n                    <div class=\"box-header\">\n                        <h3 style=\"width: 70%;margin-top: 10px;\">{{ticket.Subject}}</h3>\n                    </div>\n                    <div class=\"d-flex-row\" style=\"gap: 10px;width: 70%;margin-top: 10px;margin-top: 10px;\">\n                        <progress style=\"width: 88%;\" id=\"file\" max=\"100\"\n                            [value]=\"ticket.WorkflowProgress || 0\"></progress>\n                        <span class=\"percentage\">{{ticket.WorkflowProgress}} %</span>\n                    </div>\n                    <!-- <button *ngIf=\"ticket.Attachments && ticket.Attachments.length>0\" mat-button class=\"download-ticket\" -->\n                    <button *ngFor=\"let attach of ticket.Attachments\" mat-button class=\"download-ticket\"\n                        (click)=\"openBottomSheet(attach)\">T\u00E9l\u00E9charger ({{substr(attach.Name)}}.pdf)\n                    </button>\n                </div>\n            </ng-container>\n            <div class=\"box-ticket-info\" *ngIf=\"!detailView?.tickets\">\n                <p class=\"description\">\"Aucun tickets\"</p>\n            </div>\n        </div>\n    </div>\n</div>", styles: [".onboarding-detail{padding-top:30px}.onboarding-detail h1,.onboarding-detail h2,.onboarding-detail h3,.onboarding-detail h4,.onboarding-detail h5,.onboarding-detail h6{margin:0;font-style:normal;font-weight:700;line-height:110%;display:flex;align-items:center;color:#242731}.onboarding-detail p{margin:0}.onboarding-detail h1{font-size:24px}.onboarding-detail h1.title{margin-bottom:33px;margin-top:10px}.onboarding-detail h2{font-size:20px}.onboarding-detail h3{font-size:18px}.onboarding-detail h4{font-size:16px}.onboarding-detail h5{font-size:14px}.onboarding-detail h6{font-size:12px}.onboarding-detail .view-content{display:flex;flex-direction:row;justify-content:space-between;background-color:#f4f7f9}.onboarding-detail .view-content .left-content{width:70%;border-radius:6px;margin-right:2%}@media (max-width: 1200px){.onboarding-detail .view-content .left-content{width:50%}}.onboarding-detail .view-content .left-content .user-info{background:transparent;border-radius:6px;padding:10px 10px 10px 0}.onboarding-detail .view-content .left-content .user-info span:before{content:\".\";font-size:25px;margin:0 10px}.onboarding-detail .view-content .left-content .user-info p{font-weight:400;display:flex;align-items:center}.onboarding-detail .view-content .left-content .user-info p mat-icon{padding-right:5px}.onboarding-detail .view-content .left-content .user-info p.contact{margin-top:10px}.onboarding-detail .view-content .left-content .user-info .user-name{line-height:30px}.onboarding-detail .view-content .left-content .user-info .user-name span{font-weight:400;font-size:12px;margin-right:10px}.onboarding-detail .view-content .left-content .user-info .user-contact{line-height:30px}.onboarding-detail .view-content .left-content section{background:#FFFFFF;border-radius:8px;padding:15px;margin-bottom:30px}.onboarding-detail .view-content .left-content section .category-item-inner .category-description{font-style:normal;font-weight:250;font-size:14px;line-height:16px;color:#575f6e;margin-top:5px}.onboarding-detail .view-content .left-content section .category-item-inner .category-item-forms{margin-top:20px}.onboarding-detail .view-content .left-content section .category-item-inner .category-item-forms .label{font-style:normal;font-weight:250;font-size:12px;line-height:16px;display:flex;align-items:center;color:#575f6e}.onboarding-detail .view-content .right-content{background-color:#fff;border-radius:6px;padding:15px;overflow:auto;max-height:85.5vh;margin-right:20px}.onboarding-detail .view-content .right-content p{color:#575f6e}.onboarding-detail .view-content .right-content .box-ticket-info{padding-bottom:20px;padding-top:20px;border-bottom:2px solid #E2E4E5}.onboarding-detail .view-content .right-content .box-ticket-info .box-header{display:flex;justify-content:space-between;align-items:center}.onboarding-detail .view-content .right-content .box-ticket-info .box-header button{min-width:auto;height:36px;border-radius:4px;font-weight:500;font-size:16px;display:flex;align-items:center;text-transform:capitalize;color:#fff}.onboarding-detail .view-content .right-content .box-ticket-info .box-header .finished{background:#6FE8D7}.onboarding-detail .view-content .right-content .box-ticket-info .box-header .progress{background:#F3A124}.onboarding-detail .view-content .right-content .box-ticket-info .download-ticket{margin-top:20px;background-color:#fff;border:1px solid #171F26;display:block}.onboarding-detail .view-content .category-view-container{display:flex;flex-direction:column;max-height:70vh;overflow:auto}.onboarding-detail .view-content .right-content::-webkit-scrollbar,.onboarding-detail .view-content .category-view-container::-webkit-scrollbar{display:none}.onboarding-detail .view-content .right-content,.onboarding-detail .view-content .category-view-container{-ms-overflow-style:none;scrollbar-width:none}.fields{height:84%}.fields ul{list-style:none;display:flex;margin:33px 0;padding:0;overflow:auto}.fields ul li{margin-right:20px;padding-bottom:5px;border-bottom:3px solid transparent}.fields ul li a{text-decoration:none;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26;opacity:.5;overflow:hidden;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}.fields ul li.menu-item:hover,.fields ul li.menu-item.active{cursor:pointer;border-bottom:3px solid #3C4252}.fields ul li.menu-item:hover a,.fields ul li.menu-item.active a{font-style:normal;font-weight:700;font-size:14px;line-height:120%;opacity:1;text-decoration:none!important}.progress-status .status{display:flex;align-items:center}.progress-status .ongoing{color:#6fe8d7}.progress-status .in-progress{padding-right:25px;color:#f3a124;font-weight:500;font-size:16px}::ng-deep .progress-status{font-size:16px}::ng-deep .progress-status .mat-progress-bar{display:block;height:20px;overflow:hidden;border-radius:50px;position:relative;transition:opacity .25s linear;width:100%}::ng-deep .progress-status .mat-progress-bar-fill:after{background-color:#6fe8d7}::ng-deep .progress-status .mat-progress-bar-buffer{background-color:#ecf3f7}.category-header{display:flex;align-items:center;justify-content:space-between}.d-flex-row{display:flex;align-items:center}.d-flex-row mat-icon{margin-right:5px}::ng-deep mat-bottom-sheet-container{width:100vw;max-width:100vw!important;height:150px;background:#F4F7F9!important;display:flex!important;flex-direction:column;justify-content:center}::ng-deep mat-bottom-sheet-container .sheet-content{display:flex;align-items:center;justify-content:center}::ng-deep mat-bottom-sheet-container h3{font-style:normal;font-weight:700;font-size:20px;line-height:100%;color:#171f26;margin-bottom:0!important;margin-top:0!important}::ng-deep mat-bottom-sheet-container button.download-button{width:277px;height:48px;background:#171F26;box-shadow:0 0 #0003;border-radius:7px;color:#fff;margin:0 25px}::ng-deep mat-bottom-sheet-container button.close-button{height:48px;background:#fff;box-shadow:0 0 #0003;border-radius:7px;color:#171f26;border:1px solid #171F26}.ul-list{list-style:disc!important;display:block!important;margin-left:0!important;padding-left:0!important;margin-top:0!important}.ul-list li:before{content:\".\";font-size:40px}\n"] }]
         }], function () { return [{ type: i2.Router }, { type: OnboardingService }, { type: i3.MatBottomSheet }]; }, { detailView: [{
                 type: Input
             }], onShowMode: [{
@@ -6608,13 +6690,29 @@ class OnboardingCreateComponent {
                 this.showMode = true;
                 this.currentOnboarding = yield this.service.getOnboarding(this.onboardingId);
                 this.form.patchValue(this.currentOnboarding);
-                this.categories = this.currentOnboarding.categories;
+                yield this.loadCategories(this.currentOnboarding.categories);
                 this.onLoadViewDetail(this.categories);
                 this.currentTemplate = (_a = this.currentOnboarding) === null || _a === void 0 ? void 0 : _a.vtemplates[0];
                 if (this.currentOnboarding.TemplateId) {
                     this.isSelected = true;
                 }
             }
+        });
+    }
+    loadCategories(categories) {
+        return __awaiter(this, void 0, void 0, function* () {
+            this.accounts = yield this.service.getAccounts();
+            this.categories = categories.map((cat) => {
+                const forms = cat.forms.map((form) => {
+                    if (form.key === 'AccountName') {
+                        form.defaultValue = this.accounts;
+                        form.type = 'select';
+                    }
+                    return form;
+                });
+                return Object.assign(Object.assign({}, cat), { forms });
+            });
+            console.log('---------- this.categories---------------', this.categories);
         });
     }
     onLoadViewDetail(categories) {
@@ -6706,9 +6804,15 @@ class OnboardingCreateComponent {
             // view: this.currentOnboarding.view,
             tickets: (_d = this.currentOnboarding) === null || _d === void 0 ? void 0 : _d.vtickets,
             createdAt: ((_e = this.currentOnboarding) === null || _e === void 0 ? void 0 : _e.createdAt) || new Date().toISOString(),
-            user: user,
+            user: Object.assign(Object.assign({}, user), { AccountName: this.findAccount(user.AccountName) }),
             Name: ((_g = (_f = this.currentOnboarding) === null || _f === void 0 ? void 0 : _f.vtemplates[0]) === null || _g === void 0 ? void 0 : _g.Name) || ((_h = this.currentTemplate) === null || _h === void 0 ? void 0 : _h.Name)
         };
+    }
+    findAccount(account) {
+        const result = this.accounts.find((acc) => acc._id === account);
+        if (result)
+            return result.Name;
+        return account;
     }
     onCreateDynamicForm() {
         this.form = this.fb.group({
@@ -6723,7 +6827,8 @@ class OnboardingCreateComponent {
         return __awaiter(this, void 0, void 0, function* () {
             if (id) {
                 this.currentTemplate = yield this.service.getProfil(id);
-                this.categories = onboarding ? onboarding.categories : this.currentTemplate.categories
+                yield this.loadCategories(onboarding ? onboarding.categories : this.currentTemplate.categories);
+                this.categories = this.categories
                     .filter((cat) => cat.expandOnboarding)
                     .map((cat) => {
                     if (cat.forms) {
@@ -6786,7 +6891,7 @@ class OnboardingCreateComponent {
         }));
     }
     onSubmit(submit = false) {
-        var _a, _b, _c;
+        var _a, _b, _c, _d, _e;
         return __awaiter(this, void 0, void 0, function* () {
             if (this.form.valid && this.onChangeCategory() && submit || !submit) {
                 this.isSubmitted = submit;
@@ -6798,21 +6903,22 @@ class OnboardingCreateComponent {
                 this.loading = true;
                 this.submitLabel = "Chargement...";
                 const result = this.onboardingId && this.onboardingId !== "0"
-                    ? yield this.service.updateOnboarding(Object.assign(Object.assign({}, this.form.value), { user: userData, categories: this.categories, Finished: submit, _id: this.onboardingId, tickets: (_c = (_b = this.currentOnboarding) === null || _b === void 0 ? void 0 : _b.vtickets) === null || _c === void 0 ? void 0 : _c.map((ticket) => ticket.Id) }))
-                    : yield this.service.createOnboarding(Object.assign(Object.assign({}, this.form.value), { user: userData, categories: this.categories, Finished: submit }));
+                    ? yield this.service.updateOnboarding(Object.assign(Object.assign({}, this.form.value), { user: userData, categories: this.categories, Finished: submit, _id: this.onboardingId, AccountName: this.findAccount(userData.AccountName), tickets: (_c = (_b = this.currentOnboarding) === null || _b === void 0 ? void 0 : _b.vtickets) === null || _c === void 0 ? void 0 : _c.map((ticket) => ticket.Id) }))
+                    : yield this.service.createOnboarding(Object.assign(Object.assign({}, this.form.value), { user: userData, categories: this.categories, Finished: submit, AccountName: this.findAccount(userData.AccountName) }));
                 if (result) {
                     if (this.onboardingId && this.onboardingId !== "0") {
-                        this.categories = result.categories;
+                        yield this.loadCategories(result.categories);
                         this.currentOnboarding = result;
                     }
-                    yield this.service.getAllProfil();
+                    // await this.service.getAllProfil();
                     this.onboardingId = result._id;
                     this.loading = false;
                     this.submitLabel = "Envoyer ma fiche";
                     this.canExit = true;
                     this.showMode = true;
+                    const { AccountName: Account, date_of_entry } = userData, rest = __rest(userData, ["AccountName", "date_of_entry"]);
                     if (submit) {
-                        // const resultContact = await this.service.createContact({ ...userData, A_quitt_la_soci_t__c: "false", Phone: userData?.Phone?.e164Number, MobilePhone: userData?.MobilePhone?.e164Number });
+                        yield this.service.createContact(Object.assign(Object.assign({}, rest), { A_quitt_la_soci_t__c: "false", Phone: (_d = userData === null || userData === void 0 ? void 0 : userData.Phone) === null || _d === void 0 ? void 0 : _d.e164Number, MobilePhone: (_e = userData === null || userData === void 0 ? void 0 : userData.MobilePhone) === null || _e === void 0 ? void 0 : _e.e164Number, Account, ServiceOrigin: 'Salesforce' }));
                         this.router.navigate([`${this.checkOnboardingPath()}`, result.TemplateId, result._id]);
                         this.ngOnInit();
                         // this.onCreateConfirm();
@@ -7433,25 +7539,27 @@ class OnboardingListComponent {
         return __awaiter(this, void 0, void 0, function* () {
             yield this.service.getAllProfil();
             yield this.service.getAllOnboarding();
+            this.accounts = yield this.service.getAccounts();
             this.service.onboarding.subscribe((onboarding) => {
                 setTimeout(() => {
                     this._loading_table = false;
                 }, 2000);
                 if (onboarding) {
                     this.onboarding = onboarding.map((row, index) => {
-                        var _a, _b, _c;
+                        var _a, _b;
                         const user = row.categories.find((cat) => cat.name === "Utilisateur");
                         const formUser = user.forms.map((form) => ({ key: form.key, value: form.value })).reduce((a, v) => (Object.assign(Object.assign({}, a), { [v.key]: v.value })), {});
                         row.Status = row.Finished ? "Terminée" : "A finaliser";
                         row.CustomClass = row.Finished ? "custom-status finished" : "custom-status to-finish";
                         row.lastNameClass = "last-name";
                         row.requestor = ((_a = row === null || row === void 0 ? void 0 : row.vcontacts[0]) === null || _a === void 0 ? void 0 : _a.Name) || '';
-                        row.AccountName = ((_b = row === null || row === void 0 ? void 0 : row.vcontacts[0]) === null || _b === void 0 ? void 0 : _b.Account.Name) || '';
+                        // row.AccountName = row?.vcontacts[0]?.Account.Name || '';
+                        row.AccountName = this.findAccount(formUser.AccountName);
                         row.Name = row.ContactName = (formUser === null || formUser === void 0 ? void 0 : formUser.LastName) + " " + (formUser === null || formUser === void 0 ? void 0 : formUser.FirstName) || "";
                         row.Title = (formUser === null || formUser === void 0 ? void 0 : formUser.Title) || "";
                         row.Email = (formUser === null || formUser === void 0 ? void 0 : formUser.Email) || '';
                         row.date_of_entry = formUser.date_of_entry ? formUser.date_of_entry : null;
-                        row.TemplateName = ((_c = row === null || row === void 0 ? void 0 : row.vtemplates) === null || _c === void 0 ? void 0 : _c.length) > 0 ? row === null || row === void 0 ? void 0 : row.vtemplates[0].Name : '';
+                        row.TemplateName = ((_b = row === null || row === void 0 ? void 0 : row.vtemplates) === null || _b === void 0 ? void 0 : _b.length) > 0 ? row === null || row === void 0 ? void 0 : row.vtemplates[0].Name : '';
                         row.Id = index + 1;
                         row.createdAt = this.lang === 'fr' ? new Date(row.createdAt).toLocaleDateString("fr-FR") : new Date(row.createdAt).toLocaleDateString("en-GB");
                         return row;
@@ -7462,6 +7570,12 @@ class OnboardingListComponent {
                 }
             });
         });
+    }
+    findAccount(account) {
+        const result = this.accounts.find((acc) => acc._id === account);
+        if (result)
+            return result.Name;
+        return account;
     }
     onForamtList(datas) {
         this.onboardingFormatList = datas;
