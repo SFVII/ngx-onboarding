@@ -12,11 +12,12 @@ export declare class OnboardingDetailComponent implements OnInit {
     constructor(router: Router, service: OnboardingService, _bottomSheet: MatBottomSheet);
     ngOnInit(): void;
     ngOnChanges(): void;
-    openBottomSheet(Attachement: any): void;
+    openBottomSheet(attach: any): void;
     onScroll(event: any): void;
     catNameStart(str: string): boolean;
     onEdit(): void;
     progress(completed: any, length: any): number;
+    substr(name: string): string;
     onViewTicket(Case: any): void;
     onFormatDisplayValue(value: any): {
         value: any;
@@ -31,6 +32,7 @@ export declare class BottomSheet implements OnInit {
     constructor(_bottomSheetRef: MatBottomSheetRef<BottomSheet>, service: OnboardingService);
     attach: any;
     filename: string;
+    not_found: string;
     ngOnInit(): void;
     close(): void;
     onDownloadFile(): Promise<void>;
