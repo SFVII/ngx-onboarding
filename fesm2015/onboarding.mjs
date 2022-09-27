@@ -7451,11 +7451,9 @@ class OnboardingListComponent {
                         row.Title = (formUser === null || formUser === void 0 ? void 0 : formUser.Title) || "";
                         row.Email = (formUser === null || formUser === void 0 ? void 0 : formUser.Email) || '';
                         row.date_of_entry = formUser.date_of_entry ? formUser.date_of_entry : null;
-                        // row.date = moment(row.createdAt).format('DD/MM/YY') 
                         row.TemplateName = ((_c = row === null || row === void 0 ? void 0 : row.vtemplates) === null || _c === void 0 ? void 0 : _c.length) > 0 ? row === null || row === void 0 ? void 0 : row.vtemplates[0].Name : '';
                         row.Id = index + 1;
                         row.createdAt = this.lang === 'fr' ? new Date(row.createdAt).toLocaleDateString("fr-FR") : new Date(row.createdAt).toLocaleDateString("en-GB");
-                        // row.mainPath = this.service.mainPath.includes('onboarding') ? `${this.service.mainPath}/requests/` : `/onboarding/requests/`
                         return row;
                     });
                     console.log(this.onboarding);
