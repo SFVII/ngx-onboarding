@@ -5,6 +5,7 @@ import * as i0 from "@angular/core";
 export declare class SubOnboardingCreateComponent implements OnInit {
     field: any;
     length: any;
+    locale: any;
     i: any;
     j: any;
     onAddKeywordFromInput: EventEmitter<any>;
@@ -49,5 +50,5 @@ export declare class SubOnboardingCreateComponent implements OnInit {
     flag(value: any): CountryISO.France | import("libphonenumber-js").CountryCode;
     checkPhone(phone: any): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<SubOnboardingCreateComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<SubOnboardingCreateComponent, "lib-sub-create-onboarding", never, { "field": "field"; "length": "length"; "i": "i"; "j": "j"; }, { "onAddKeywordFromInput": "onAddKeywordFromInput"; "onKeyPress": "onKeyPress"; "onDrop": "onDrop"; "onAddNewField": "onAddNewField"; "onRemoveField": "onRemoveField"; "onChangeType": "onChangeType"; "onRemoveKeyword": "onRemoveKeyword"; "onAddNewSubLevelField": "onAddNewSubLevelField"; "onExpendMore": "onExpendMore"; "onChangeLabel": "onChangeLabel"; "onCheckedChip": "onCheckedChip"; "onCheckValue": "onCheckValue"; }, never, [".child"]>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<SubOnboardingCreateComponent, "lib-sub-create-onboarding", never, { "field": "field"; "length": "length"; "locale": "locale"; "i": "i"; "j": "j"; }, { "onAddKeywordFromInput": "onAddKeywordFromInput"; "onKeyPress": "onKeyPress"; "onDrop": "onDrop"; "onAddNewField": "onAddNewField"; "onRemoveField": "onRemoveField"; "onChangeType": "onChangeType"; "onRemoveKeyword": "onRemoveKeyword"; "onAddNewSubLevelField": "onAddNewSubLevelField"; "onExpendMore": "onExpendMore"; "onChangeLabel": "onChangeLabel"; "onCheckedChip": "onCheckedChip"; "onCheckValue": "onCheckValue"; }, never, [".child"]>;
 }

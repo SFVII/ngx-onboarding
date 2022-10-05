@@ -1,1 +1,1 @@
-export declare const downLoadFile: (x: any, type: string, filename: string) => void;
+export declare const downLoadFile: (x: any, filename: string) => void;

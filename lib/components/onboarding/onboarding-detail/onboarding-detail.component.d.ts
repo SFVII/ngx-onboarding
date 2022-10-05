@@ -9,9 +9,9 @@ export declare class OnboardingDetailComponent implements OnInit {
     private _bottomSheet;
     detailView: any;
     onShowMode: EventEmitter<boolean>;
+    locale: any;
     constructor(router: Router, service: OnboardingService, _bottomSheet: MatBottomSheet);
     ngOnInit(): void;
-    ngOnChanges(): void;
     openBottomSheet(attach: any): void;
     onScroll(event: any): void;
     catNameStart(str: string): boolean;
@@ -29,10 +29,11 @@ export declare class OnboardingDetailComponent implements OnInit {
 export declare class BottomSheet implements OnInit {
     private _bottomSheetRef;
     private service;
-    constructor(_bottomSheetRef: MatBottomSheetRef<BottomSheet>, service: OnboardingService);
     attach: any;
     filename: string;
     not_found: string;
+    locale: any;
+    constructor(_bottomSheetRef: MatBottomSheetRef<BottomSheet>, service: OnboardingService);
     ngOnInit(): void;
     close(): void;
     onDownloadFile(): Promise<void>;

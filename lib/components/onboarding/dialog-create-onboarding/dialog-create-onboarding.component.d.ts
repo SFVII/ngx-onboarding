@@ -26,6 +26,7 @@ export declare class DialogCreateOnboardingComponent implements OnInit {
         expandMore: boolean;
     }[];
     userForm: any[];
+    locale: any;
     onboarding: {
         TemplateId: number;
     };

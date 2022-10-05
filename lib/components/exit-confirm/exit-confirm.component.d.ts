@@ -6,6 +6,7 @@ export declare class ExitConfirmComponent implements OnInit {
     private data;
     private dialogRef;
     private service;
+    locale: any;
     constructor(data: any, dialogRef: MatDialogRef<ExitConfirmComponent>, service: OnboardingService);
     ngOnInit(): void;
     confirm(): void;

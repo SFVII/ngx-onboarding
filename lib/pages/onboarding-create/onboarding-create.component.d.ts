@@ -21,6 +21,7 @@ export declare class OnboardingCreateComponent implements OnInit {
     selectedMenu: number;
     templates: any;
     contacts: any;
+    locale: any;
     currentOnboarding: any;
     currentTemplate: any;
     isSelected: boolean;
@@ -37,6 +38,7 @@ export declare class OnboardingCreateComponent implements OnInit {
     resumeLabel: string;
     isSubmitted: boolean;
     accounts: any;
+    lang: string;
     constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog);
     isObject(obj: any): boolean;
     canDeactivate(): true | import("rxjs").Subject<boolean>;

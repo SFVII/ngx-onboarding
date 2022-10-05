@@ -24,6 +24,7 @@ export declare class OnboardingListComponent implements OnInit {
     onboardingToFinish: any;
     showSearch: false;
     templates: any[];
+    locale: any;
     ngxFilterData: IFilterConfiguration[];
     ngxFilterInit: string;
     columnDefinitions: displayedColumnsInterface[];

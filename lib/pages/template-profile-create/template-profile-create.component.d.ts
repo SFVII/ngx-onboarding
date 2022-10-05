@@ -25,8 +25,9 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     loading: boolean;
     editIndex: any;
     showProfileName: boolean;
-    liveLabel: string;
-    draftLabel: string;
+    locale: any;
+    liveLabel: any;
+    draftLabel: any;
     invalideValue: boolean;
     isPictoListShow: boolean;
     picto: string;

@@ -12,6 +12,7 @@ export declare class TypeComponent implements OnInit {
         value: string;
     }[];
     selectedType: string;
+    locale: any;
     constructor(data: any, dialogRef: MatDialogRef<TypeComponent>, service: OnboardingService);
     ngOnInit(): void;
     onSelect(type: any): void;

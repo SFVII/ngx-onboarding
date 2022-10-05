@@ -6,12 +6,13 @@ export declare class DialogCreateTemplateComponent implements OnInit {
     private data;
     private dialogRef;
     private service;
-    constructor(data: any, dialogRef: MatDialogRef<DialogCreateTemplateComponent>, service: OnboardingService);
     tags: any[];
     profil: {
         Name: string;
         Tags: string;
     };
+    locale: any;
+    constructor(data: any, dialogRef: MatDialogRef<DialogCreateTemplateComponent>, service: OnboardingService);
     ngOnInit(): void;
     onSelect(type: any): void;
     createProfil(): void;
