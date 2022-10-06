@@ -91,7 +91,7 @@ export declare const locales: {
             INVALID_PHONE: string;
             CLOSE: string;
         };
-        COMFIRM: {
+        CONFIRM: {
             TEXT: string;
             CANCEL: string;
             CONFIRM: string;
@@ -190,7 +190,7 @@ export declare const locales: {
             INVALID_PHONE: string;
             CLOSE: string;
         };
-        COMFIRM: {
+        CONFIRM: {
             TEXT: string;
             CANCEL: string;
             CONFIRM: string;
