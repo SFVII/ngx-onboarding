@@ -48,5 +48,5 @@ export declare class OnboardingListComponent implements OnInit {
     openDialog(): void;
     onExportToXLSX(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingListComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingListComponent, "lib-onboarding-list", never, {}, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingListComponent, "lib-onboarding-list", never, {}, {}, never, never, false>;
 }

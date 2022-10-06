@@ -12,5 +12,5 @@ export declare class ExitConfirmComponent implements OnInit {
     confirm(): void;
     cancel(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<ExitConfirmComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<ExitConfirmComponent, "lib-exit-confirm", never, {}, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ExitConfirmComponent, "lib-exit-confirm", never, {}, {}, never, never, false>;
 }

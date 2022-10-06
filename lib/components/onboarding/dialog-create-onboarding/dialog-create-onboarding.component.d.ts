@@ -36,5 +36,5 @@ export declare class DialogCreateOnboardingComponent implements OnInit {
     close(): void;
     disabled(): boolean;
     static ɵfac: i0.ɵɵFactoryDeclaration<DialogCreateOnboardingComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<DialogCreateOnboardingComponent, "lib-dialog-create-onboarding", never, {}, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<DialogCreateOnboardingComponent, "lib-dialog-create-onboarding", never, {}, {}, never, never, false>;
 }

@@ -1,6 +1,6 @@
 import { ActivatedRoute, Router } from "@angular/router";
 import { OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from "@angular/forms";
+import { UntypedFormBuilder, UntypedFormGroup } from "@angular/forms";
 import { MatDialog } from "@angular/material/dialog";
 import { OnboardingService } from "../../onboarding.service";
 import { fieldWidth } from "../../utils/utils";
@@ -11,7 +11,7 @@ export declare class OnboardingCreateComponent implements OnInit {
     private route;
     private router;
     private dialog;
-    form: FormGroup;
+    form: UntypedFormGroup;
     currentProfil: any;
     canExit: boolean;
     tags: any[];
@@ -39,7 +39,7 @@ export declare class OnboardingCreateComponent implements OnInit {
     isSubmitted: boolean;
     accounts: any;
     lang: string;
-    constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog);
+    constructor(fb: UntypedFormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog);
     isObject(obj: any): boolean;
     canDeactivate(): true | import("rxjs").Subject<boolean>;
     onScroll(event: any): void;
@@ -64,5 +64,5 @@ export declare class OnboardingCreateComponent implements OnInit {
     onShowMode(): void;
     onCreateConfirm(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingCreateComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingCreateComponent, "create-onboarding", never, {}, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingCreateComponent, "create-onboarding", never, {}, {}, never, never, false>;
 }
