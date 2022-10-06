@@ -12,5 +12,5 @@ export declare class DialogConfirmation implements OnInit {
     ngOnInit(): void;
     close(status: any): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<DialogConfirmation, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<DialogConfirmation, "lib-dialog-confirmation", never, {}, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<DialogConfirmation, "lib-dialog-confirmation", never, {}, {}, never, never, false>;
 }
