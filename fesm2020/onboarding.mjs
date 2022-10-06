@@ -164,6 +164,7 @@ class OnboardingService {
    * Initialize Data for User Instance
    */
     initInstance(config) {
+        console.log('-----------------CONFIG----------', config);
         this._auth = !!config.auth;
         if (config.endpoint) {
             this.endpoint = config.endpoint;
@@ -217,6 +218,9 @@ class OnboardingService {
                 .substring(1);
         };
         return random() + random() + '-' + random() + '-' + random() + '-' + random() + '-' + random() + random() + random();
+    }
+    onSetLocal(locale) {
+        this.lang.next(locale);
     }
     /**
    * Send Profil To backend

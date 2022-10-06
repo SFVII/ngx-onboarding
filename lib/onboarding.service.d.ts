@@ -48,6 +48,7 @@ export declare class OnboardingService {
    * Generate Random uniq Id for Konverso Instance
    */
     private guid;
+    onSetLocal(locale: any): void;
     /**
    * Send Profil To backend
    * @Post Profil
