@@ -4,5 +4,5 @@ export declare class LoadingComponent implements OnInit {
     constructor();
     ngOnInit(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<LoadingComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<LoadingComponent, "lib-loading", never, {}, {}, never, never, false>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<LoadingComponent, "lib-loading", never, {}, {}, never, never>;
 }

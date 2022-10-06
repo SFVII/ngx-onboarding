@@ -1,7 +1,7 @@
 import { ActivatedRoute, Router } from "@angular/router";
 import { CdkDragDrop } from "@angular/cdk/drag-drop";
 import { OnInit } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup } from "@angular/forms";
+import { FormBuilder, FormGroup } from "@angular/forms";
 import { MatChipInputEvent } from "@angular/material/chips";
 import { MatDialog } from "@angular/material/dialog";
 import { OnboardingService } from "../../onboarding.service";
@@ -14,7 +14,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     private router;
     private dialog;
     private scrollToService;
-    form: UntypedFormGroup;
+    form: FormGroup;
     validCategory: boolean;
     separatorKeysCodes: number[];
     currentProfil: any;
@@ -54,7 +54,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     currentCanceledIndex: any;
     newFieldIndex: any;
     isSubmitted: boolean;
-    constructor(fb: UntypedFormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog, scrollToService: ScrollToService);
+    constructor(fb: FormBuilder, service: OnboardingService, route: ActivatedRoute, router: Router, dialog: MatDialog, scrollToService: ScrollToService);
     defaultCategorie: any;
     canDeactivate(): true | import("rxjs").Subject<boolean>;
     onScroll(event: any): void;
@@ -111,5 +111,5 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onCheckValue(event: boolean): void;
     onHistorics(data: any): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<TemplateProfileCreateComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<TemplateProfileCreateComponent, "onboarding-create-profile-template", never, {}, {}, never, never, false>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<TemplateProfileCreateComponent, "onboarding-create-profile-template", never, {}, {}, never, never>;
 }

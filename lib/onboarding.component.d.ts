@@ -8,5 +8,5 @@ export declare class OnboardingComponent implements OnInit {
     constructor(service: OnboardingService, router: Router);
     ngOnInit(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingComponent, "ngx-onboarding", never, {}, {}, never, never, false>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingComponent, "ngx-onboarding", never, {}, {}, never, never>;
 }

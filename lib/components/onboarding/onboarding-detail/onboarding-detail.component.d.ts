@@ -24,7 +24,7 @@ export declare class OnboardingDetailComponent implements OnInit {
         type: string;
     };
     static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingDetailComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingDetailComponent, "lib-onboarding-detail", never, { "detailView": "detailView"; }, { "onShowMode": "onShowMode"; }, never, never, false>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingDetailComponent, "lib-onboarding-detail", never, { "detailView": "detailView"; }, { "onShowMode": "onShowMode"; }, never, never>;
 }
 export declare class BottomSheet implements OnInit {
     private _bottomSheetRef;
@@ -38,5 +38,5 @@ export declare class BottomSheet implements OnInit {
     close(): void;
     onDownloadFile(): Promise<void>;
     static ɵfac: i0.ɵɵFactoryDeclaration<BottomSheet, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<BottomSheet, "bottom-sheet", never, {}, {}, never, never, false>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<BottomSheet, "bottom-sheet", never, {}, {}, never, never>;
 }

@@ -9,5 +9,5 @@ export declare class NoDataComponent implements OnInit {
     ngOnInit(): void;
     onShowPopup(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<NoDataComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<NoDataComponent, "lib-no-data", never, {}, { "showPopup": "showPopup"; }, never, never, false>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<NoDataComponent, "lib-no-data", never, {}, { "showPopup": "showPopup"; }, never, never>;
 }

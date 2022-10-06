@@ -1,6 +1,6 @@
 import { EventEmitter, OnInit } from '@angular/core';
 import { CountryISO, PhoneNumberFormat } from 'ngx-intl-tel-input';
-import { UntypedFormControl } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 import * as i0 from "@angular/core";
 export declare class SubTemplateProfileComponent implements OnInit {
     field: any;
@@ -24,7 +24,7 @@ export declare class SubTemplateProfileComponent implements OnInit {
     conditionData: any[];
     onCheckValue: EventEmitter<any>;
     blink: boolean;
-    chipControl: UntypedFormControl;
+    chipControl: FormControl;
     preferredCountries: CountryISO[];
     PhoneNumberFormat: typeof PhoneNumberFormat;
     separatorKeysCodes: number[];
@@ -60,5 +60,5 @@ export declare class SubTemplateProfileComponent implements OnInit {
     flag(value: any): CountryISO.France | import("libphonenumber-js").CountryCode;
     checkPhone(phone: any): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<SubTemplateProfileComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<SubTemplateProfileComponent, "lib-sub-category", never, { "field": "field"; "length": "length"; "i": "i"; "j": "j"; "conditionData": "conditionData"; "blink": "blink"; }, { "onAddKeywordFromInput": "onAddKeywordFromInput"; "onKeyPress": "onKeyPress"; "onDrop": "onDrop"; "onAddNewField": "onAddNewField"; "onRemoveField": "onRemoveField"; "onChangeType": "onChangeType"; "onRemoveKeyword": "onRemoveKeyword"; "onAddNewSubLevelField": "onAddNewSubLevelField"; "onExpendMore": "onExpendMore"; "onChangeLabel": "onChangeLabel"; "onCheckedChip": "onCheckedChip"; "onCheckedDefault": "onCheckedDefault"; "onGetConditionValues": "onGetConditionValues"; "onEditBlock": "onEditBlock"; "onCheckValue": "onCheckValue"; }, never, [".child"], false>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<SubTemplateProfileComponent, "lib-sub-category", never, { "field": "field"; "length": "length"; "i": "i"; "j": "j"; "conditionData": "conditionData"; "blink": "blink"; }, { "onAddKeywordFromInput": "onAddKeywordFromInput"; "onKeyPress": "onKeyPress"; "onDrop": "onDrop"; "onAddNewField": "onAddNewField"; "onRemoveField": "onRemoveField"; "onChangeType": "onChangeType"; "onRemoveKeyword": "onRemoveKeyword"; "onAddNewSubLevelField": "onAddNewSubLevelField"; "onExpendMore": "onExpendMore"; "onChangeLabel": "onChangeLabel"; "onCheckedChip": "onCheckedChip"; "onCheckedDefault": "onCheckedDefault"; "onGetConditionValues": "onGetConditionValues"; "onEditBlock": "onEditBlock"; "onCheckValue": "onCheckValue"; }, never, [".child"]>;
 }

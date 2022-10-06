@@ -25,5 +25,5 @@ export declare class ScrollToDirective implements AfterViewInit {
      */
     ngAfterViewInit(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<ScrollToDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDeclaration<ScrollToDirective, "[ngxScrollTo]", never, { "ngxScrollTo": "ngxScrollTo"; "ngxScrollToEvent": "ngxScrollToEvent"; "ngxScrollToDuration": "ngxScrollToDuration"; "ngxScrollToEasing": "ngxScrollToEasing"; "ngxScrollToOffset": "ngxScrollToOffset"; "ngxScrollToOffsetMap": "ngxScrollToOffsetMap"; }, {}, never, never, false>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<ScrollToDirective, "[ngxScrollTo]", never, { "ngxScrollTo": "ngxScrollTo"; "ngxScrollToEvent": "ngxScrollToEvent"; "ngxScrollToDuration": "ngxScrollToDuration"; "ngxScrollToEasing": "ngxScrollToEasing"; "ngxScrollToOffset": "ngxScrollToOffset"; "ngxScrollToOffsetMap": "ngxScrollToOffsetMap"; }, {}, never>;
 }
