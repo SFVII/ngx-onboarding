@@ -197,7 +197,6 @@ class OnboardingService {
             if (config.lang) {
                 this.locale = config.lang;
                 this.lang.next(this.locale || 'fr');
-                console.log('langue-------------------', this.locale);
             }
             if (config.token) {
                 this.token.next(config.token);
@@ -405,7 +404,6 @@ class OnboardingService {
                 headers: this.header
             }).subscribe((data) => {
                 this.onboarding.next(data);
-                console.log('-------------data-------------', data);
             }, err => {
                 this.onboarding.next([]);
             });
@@ -417,7 +415,6 @@ class OnboardingService {
                 const path = `${this.endpoint.split('cases/onboarding')[0]}files-manager/attachment/${attach._id}`;
                 this.getBuffer(path)
                     .subscribe(response => {
-                    console.log('-----------res-----ssssss', response);
                     downLoadFile(response, `${attach.Name}.pdf`);
                     resolve(true);
                 }, err => {
@@ -5383,7 +5380,6 @@ function fieldWidth(type, length, index) {
     return '100%';
 }
 function getIntesectFilterBy(groupResult, textResult, key) {
-    console.log('_.intersectionBy(groupResult, textResult, key)', _.intersectionBy(groupResult, textResult, key));
     return _.intersectionBy(groupResult, textResult, key);
 }
 
@@ -7038,7 +7034,6 @@ class OnboardingCreateComponent {
                 });
                 return Object.assign(Object.assign({}, cat), { forms });
             });
-            console.log('---------- this.categories---------------', this.categories);
         });
     }
     onLoadViewDetail(categories) {
@@ -7254,7 +7249,6 @@ class OnboardingCreateComponent {
                     }
                 }
                 else {
-                    console.log("errror......");
                     this.loading = false;
                     this.submitLabel = this.locale.SEND_MY_FORM;
                 }
@@ -7907,7 +7901,6 @@ class OnboardingListComponent {
                         row.createdAt = this.lang === 'fr' ? new Date(row.createdAt).toLocaleDateString("fr-FR") : new Date(row.createdAt).toLocaleDateString("en-GB");
                         return row;
                     });
-                    console.log(this.onboarding);
                     this.dataFiltered = this.onboarding;
                     this.onForamtList(this.onboarding);
                 }
