@@ -6142,22 +6142,22 @@ class BottomSheet {
         });
     }
     ngOnInit() {
-        // this.attach = this._bottomSheetRef.containerInstance.bottomSheetConfig.data
+        this.attach = this._bottomSheetRef.containerInstance._config.data;
     }
     close() {
         this._bottomSheetRef.dismiss();
     }
     async onDownloadFile() {
-        // if (this.attach) {
-        const result = await this.service.downloadAttachment(this.attach);
-        if (!result) {
-            this.not_found = "fichier non trouvé";
-            setTimeout(() => {
-                this._bottomSheetRef.dismiss();
-                this.not_found = "";
-            }, 3000);
+        if (this.attach) {
+            const result = await this.service.downloadAttachment(this.attach);
+            if (!result) {
+                this.not_found = "fichier non trouvé";
+                setTimeout(() => {
+                    this._bottomSheetRef.dismiss();
+                    this.not_found = "";
+                }, 3000);
+            }
         }
-        //    }
     }
 }
 BottomSheet.ɵfac = function BottomSheet_Factory(t) { return new (t || BottomSheet)(i0.ɵɵdirectiveInject(i3.MatBottomSheetRef), i0.ɵɵdirectiveInject(OnboardingService)); };

@@ -6612,23 +6612,23 @@ class BottomSheet {
         });
     }
     ngOnInit() {
-        // this.attach = this._bottomSheetRef.containerInstance.bottomSheetConfig.data
+        this.attach = this._bottomSheetRef.containerInstance._config.data;
     }
     close() {
         this._bottomSheetRef.dismiss();
     }
     onDownloadFile() {
         return __awaiter(this, void 0, void 0, function* () {
-            // if (this.attach) {
-            const result = yield this.service.downloadAttachment(this.attach);
-            if (!result) {
-                this.not_found = "fichier non trouvé";
-                setTimeout(() => {
-                    this._bottomSheetRef.dismiss();
-                    this.not_found = "";
-                }, 3000);
+            if (this.attach) {
+                const result = yield this.service.downloadAttachment(this.attach);
+                if (!result) {
+                    this.not_found = "fichier non trouvé";
+                    setTimeout(() => {
+                        this._bottomSheetRef.dismiss();
+                        this.not_found = "";
+                    }, 3000);
+                }
             }
-            //    }
         });
     }
 }
