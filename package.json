@@ -2,16 +2,16 @@
   "name": "onboarding",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": ">=10.x && <= 13.x",
-    "@angular/core": ">=10.x && <= 13.x",
-    "@angular/material": ">=10.x && <= 13.x",
+    "@angular/common": ">=14.x",
+    "@angular/core": ">=14.x",
+    "@angular/material": ">=14.x",
     "ngx-intl-tel-input": "2.6.0",
     "mustache": "^4.2.0",
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
     "ngx-filter": "github:diarynar/ngx-filter"
   },
   "dependencies": {
-    "tslib": ">=2.x && <= 2.3.x"
+    "tslib": ">=2.x"
   },
   "module": "fesm2015/onboarding.mjs",
   "es2020": "fesm2020/onboarding.mjs",
