@@ -7648,7 +7648,7 @@ function OnboardingTableComponent_ngx_design_table_0_Template(rf, ctx) {
     }
     if (rf & 2) {
         const ctx_r0 = i0.ɵɵnextContext();
-        i0.ɵɵproperty("columnDefinitions", ctx_r0.columnDefinitions)("data", ctx_r0.data)("lang", ctx_r0.lang)("btnOverride", true)("lang", ctx_r0.lang)("EmptyRow", true)("displayDetail", true)("blockDetails", true);
+        i0.ɵɵproperty("columnDefinitions", ctx_r0.columnDefinitions)("data", ctx_r0.data)("lang", ctx_r0.lang)("EmptyRow", true)("displayDetail", true)("blockDetails", true);
     }
 }
 class OnboardingTableComponent {
@@ -7657,9 +7657,9 @@ class OnboardingTableComponent {
     }
 }
 OnboardingTableComponent.ɵfac = function OnboardingTableComponent_Factory(t) { return new (t || OnboardingTableComponent)(); };
-OnboardingTableComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: OnboardingTableComponent, selectors: [["lib-onboarding-table"]], inputs: { _loading_table: "_loading_table", data: "data", columnDefinitions: "columnDefinitions", lang: "lang", inputSearch: "inputSearch" }, decls: 1, vars: 1, consts: [[3, "columnDefinitions", "data", "lang", "btnOverride", "EmptyRow", "displayDetail", "blockDetails", 4, "ngIf"], [3, "columnDefinitions", "data", "lang", "btnOverride", "EmptyRow", "displayDetail", "blockDetails"]], template: function OnboardingTableComponent_Template(rf, ctx) {
+OnboardingTableComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: OnboardingTableComponent, selectors: [["lib-onboarding-table"]], inputs: { _loading_table: "_loading_table", data: "data", columnDefinitions: "columnDefinitions", lang: "lang", inputSearch: "inputSearch" }, decls: 1, vars: 1, consts: [["class", "custom-table", 3, "columnDefinitions", "data", "lang", "EmptyRow", "displayDetail", "blockDetails", 4, "ngIf"], [1, "custom-table", 3, "columnDefinitions", "data", "lang", "EmptyRow", "displayDetail", "blockDetails"]], template: function OnboardingTableComponent_Template(rf, ctx) {
         if (rf & 1) {
-            i0.ɵɵtemplate(0, OnboardingTableComponent_ngx_design_table_0_Template, 1, 8, "ngx-design-table", 0);
+            i0.ɵɵtemplate(0, OnboardingTableComponent_ngx_design_table_0_Template, 1, 6, "ngx-design-table", 0);
         }
         if (rf & 2) {
             i0.ɵɵproperty("ngIf", ctx.data);
@@ -7668,7 +7668,7 @@ OnboardingTableComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: On
 (function () {
     (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(OnboardingTableComponent, [{
             type: Component,
-            args: [{ selector: 'lib-onboarding-table', template: "<ngx-design-table *ngIf=\"data\" [columnDefinitions]=\"columnDefinitions\" [data]=\"data\" [lang]=\"lang\" [btnOverride]=\"true\"\n  [lang]=\"lang\" [EmptyRow]=\"true\" [displayDetail]=\"true\" [blockDetails]=\"true\">\n</ngx-design-table>", styles: ["::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .table-wrapper>table{border-collapse:separate!important;border-spacing:0px 20px!important}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table th span{margin:auto;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-header-row{background:#E5E8EE}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .empty-row{height:0px!important;background:0% 0% no-repeat padding-box padding-box rgb(244,247,249)}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .no-display-detail-empty-row{display:none}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table{background:0% 0% no-repeat padding-box padding-box rgb(244,247,249)}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody tr.element-row{height:83px!important;border-radius:6px;margin:10px 0}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td.mat-cell{background:#fff!important}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td.mat-cell a{text-decoration:none!important}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td.mat-cell span{font-style:normal;font-weight:400}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td.mat-cell app-is-mat-icon{width:100px}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td:has(.mat-column-expandedDetailX){border-top:0px solid #f4f7f9!important;border-radius:0 0 14px 14px/0px 0px 14px 14px}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td.mat-cell:first-of-type{border-bottom-left-radius:14px;border-top-left-radius:14px}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td.mat-cell:last-of-type{border-bottom-right-radius:14px;border-top-right-radius:14px}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table lib-custom-cell .custom-status{width:109px;height:36px;border-radius:4px;text-transform:capitalize;color:#fff;font-weight:500!important;font-size:16px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table lib-custom-cell .custom-cell.finished{background:#6FE8D7}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table lib-custom-cell .custom-cell.to-finish{background:#F3A124}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table lib-custom-cell .custom-cell.last-name{display:flex;flex-direction:column}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table lib-custom-cell .custom-cell.last-name span:first-child{font-style:normal;font-weight:700;font-size:14px;line-height:120%;display:flex;align-items:center;color:#242731}\n"] }]
+            args: [{ selector: 'lib-onboarding-table', template: "<ngx-design-table *ngIf=\"data\" [columnDefinitions]=\"columnDefinitions\" [data]=\"data\" [lang]=\"lang\" [EmptyRow]=\"true\"\n  [displayDetail]=\"true\" [blockDetails]=\"true\" class=\"custom-table\">\n</ngx-design-table>", styles: ["::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .table-wrapper>table{border-collapse:separate!important;border-spacing:0px 20px!important}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table th span{margin:auto;font-style:normal;font-weight:700;font-size:14px;line-height:120%;color:#171f26}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-header-row{background:#E5E8EE}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .empty-row{height:0px!important;background:0% 0% no-repeat padding-box padding-box rgb(244,247,249)}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .no-display-detail-empty-row{display:none}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table{background:0% 0% no-repeat padding-box padding-box rgb(244,247,249)}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody tr.element-row{height:83px!important;border-radius:6px;margin:10px 0}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td.mat-cell{background:#fff!important}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td.mat-cell a{text-decoration:none!important}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td.mat-cell span{font-style:normal;font-weight:400}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td.mat-cell app-is-mat-icon{width:100px}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td:has(.mat-column-expandedDetailX){border-top:0px solid #f4f7f9!important;border-radius:0 0 14px 14px/0px 0px 14px 14px}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td.mat-cell:first-of-type{border-bottom-left-radius:14px;border-top-left-radius:14px}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table .mat-table tbody td.mat-cell:last-of-type{border-bottom-right-radius:14px;border-top-right-radius:14px}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table lib-custom-cell .custom-status{width:109px;height:36px;border-radius:4px;text-transform:capitalize;color:#fff;font-weight:500!important;font-size:16px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table lib-custom-cell .custom-cell.finished{background:#6FE8D7}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table lib-custom-cell .custom-cell.to-finish{background:#F3A124}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table lib-custom-cell .custom-cell.last-name{display:flex;flex-direction:column}::ng-deep ngx-onboarding lib-onboarding-table ngx-design-table lib-custom-cell .custom-cell.last-name span:first-child{font-style:normal;font-weight:700;font-size:14px;line-height:120%;display:flex;align-items:center;color:#242731}\n"] }]
         }], function () { return []; }, { _loading_table: [{
                 type: Input
             }], data: [{
@@ -7782,7 +7782,7 @@ class OnboardingListComponent {
                     value: (_a = this.locale) === null || _a === void 0 ? void 0 : _a.COLLABORATOR,
                     // subTitleFormat: "date",
                     order: 1,
-                    class: 'u-5',
+                    class: 'u-6',
                     // addClass: 'lastNameClass',
                     // module: CellsComponentList.CustomCell,
                     sort: true,
@@ -7791,14 +7791,14 @@ class OnboardingListComponent {
                     key: 'Id',
                     value: (_b = this.locale) === null || _b === void 0 ? void 0 : _b.ID,
                     order: 2,
-                    class: 'u-4',
+                    class: 'u-5',
                     sort: true,
                 },
                 {
                     key: 'Title',
                     value: (_c = this.locale) === null || _c === void 0 ? void 0 : _c.PROFILE,
                     order: 2,
-                    class: 'u-4',
+                    class: 'u-5',
                     sort: true,
                 },
                 {
@@ -7812,7 +7812,7 @@ class OnboardingListComponent {
                     key: 'AccountName',
                     value: (_e = this.locale) === null || _e === void 0 ? void 0 : _e.SITE,
                     order: 5,
-                    class: 'u-7',
+                    class: 'u-6',
                     sort: true,
                 },
                 {
@@ -7827,7 +7827,7 @@ class OnboardingListComponent {
                     value: (_g = this.locale) === null || _g === void 0 ? void 0 : _g.CREATION_DATE,
                     order: 7,
                     // module: CellsComponentList.DateFormat,
-                    class: 'u-6',
+                    class: 'u-4',
                     sort: true,
                     align: 'left',
                 },
@@ -7836,7 +7836,7 @@ class OnboardingListComponent {
                     value: (_h = this.locale) === null || _h === void 0 ? void 0 : _h.STATUS,
                     order: 8,
                     addClass: 'CustomClass',
-                    class: 'u-4',
+                    class: 'u-3',
                     sort: true,
                     module: CellsComponentList.CustomCell,
                 },
@@ -7844,7 +7844,7 @@ class OnboardingListComponent {
                     key: 'Action',
                     value: '',
                     order: 9,
-                    class: 'u-4',
+                    class: 'u-3',
                     module: CellsComponentList.ButtonLink,
                     display: (_j = this.locale) === null || _j === void 0 ? void 0 : _j.DETAIL,
                     override: [`${this.checkOnboardingPath()}`, 'TemplateId', '_id'],
