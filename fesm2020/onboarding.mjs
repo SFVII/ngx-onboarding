@@ -7257,7 +7257,7 @@ class OnboardingListComponent {
                     value: this.locale?.COLLABORATOR,
                     // subTitleFormat: "date",
                     order: 1,
-                    class: 'u-7',
+                    class: 'u-5',
                     // addClass: 'lastNameClass',
                     // module: CellsComponentList.CustomCell,
                     sort: true,
