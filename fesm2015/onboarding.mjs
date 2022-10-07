@@ -7842,7 +7842,7 @@ class OnboardingListComponent {
                 },
                 {
                     key: 'Action',
-                    value: '',
+                    value: 'Action',
                     order: 9,
                     class: 'u-3',
                     module: CellsComponentList.ButtonLink,
