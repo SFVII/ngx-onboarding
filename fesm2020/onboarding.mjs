@@ -7266,7 +7266,7 @@ class OnboardingListComponent {
                     key: 'Id',
                     value: this.locale?.ID,
                     order: 2,
-                    class: 'u-5',
+                    class: 'u-3',
                     sort: true,
                 },
                 {

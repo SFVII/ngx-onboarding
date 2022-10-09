@@ -7791,7 +7791,7 @@ class OnboardingListComponent {
                     key: 'Id',
                     value: (_b = this.locale) === null || _b === void 0 ? void 0 : _b.ID,
                     order: 2,
-                    class: 'u-5',
+                    class: 'u-3',
                     sort: true,
                 },
                 {
