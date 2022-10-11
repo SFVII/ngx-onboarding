@@ -5383,6 +5383,29 @@ function fieldWidth(type, length, index) {
 function getIntesectFilterBy(groupResult, textResult, key) {
     return _.intersectionBy(groupResult, textResult, key);
 }
+const filterParse = (filterConfig, active = 'CreatedDate') => {
+    var _a;
+    if (filterConfig) {
+        const filterData = {};
+        const filterDate = {};
+        for (const data of filterConfig) {
+            if (data.filterData.type !== 'divider' && data.filterData.type !== 'date' && !!((_a = data.filterData) === null || _a === void 0 ? void 0 : _a.value)) {
+                filterData[data.filterData.key] = data.filterData.value;
+            }
+            else if (data.filterData.type !== 'divider') {
+                filterDate.active = active;
+                if (data.filterData.operator === "gte") {
+                    filterDate["valueStart"] = !!data.filterData.value ? data.filterData.value : null;
+                }
+                else {
+                    filterDate["valueEnd"] = !!data.filterData.value ? data.filterData.value : null;
+                }
+            }
+        }
+        return { filterData, filterDate };
+    }
+    return {};
+};
 
 const _c0$1 = function () { return { standalone: true }; };
 const _c1 = function () { return { display: "inine-block" }; };
@@ -7693,7 +7716,7 @@ function OnboardingListComponent_div_16_Template(rf, ctx) {
         i0.ɵɵadvance(1);
         i0.ɵɵclassProp("ticket-list", !ctx_r0._loading_table);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("columnDefinitions", ctx_r0.columnDefinitions)("data", ctx_r0.onboardingList)("lang", ctx_r0.lang)("inputSearch", ctx_r0.inputSearch);
+        i0.ɵɵproperty("columnDefinitions", ctx_r0.columnDefinitions)("data", ctx_r0.onboarding)("lang", ctx_r0.lang)("inputSearch", ctx_r0.inputSearch);
     }
 }
 // save the file
@@ -7707,7 +7730,6 @@ class OnboardingListComponent {
         this.inputSearch = '';
         this.currentLength = 0;
         this.currentFilter = 'all';
-        this.onboarding = [];
         this.search = '';
         this.onboardingFormatList = [];
         this.templates = [];
@@ -7728,15 +7750,15 @@ class OnboardingListComponent {
                     filterData: {
                         type: "select",
                         value: "",
-                        key: 'Finished',
+                        key: 'FinishedStatus',
                         label: this.locale.STATUS,
                         options: [
                             {
-                                value: true,
+                                value: 'finished',
                                 label: this.locale.FINISHED
                             },
                             {
-                                value: false,
+                                value: 'to-finish',
                                 label: this.locale.TO_FINISHED
                             },
                         ],
@@ -7858,17 +7880,12 @@ class OnboardingListComponent {
     }
     onFilter(event) {
         if (event.datas) {
-            this.dataFiltered = event.datas;
-            this.onForamtList(this.dataFiltered);
+            this.onForamtList(event.filterConfig, event.searchInput);
         }
     }
     onRefresh(event) {
         this.ngxFilterData = JSON.parse(this.ngxFilterInit);
-        if (event.datas) {
-            // this.dataFiltered = event.datas;
-            // this.onForamtList(this.dataFiltered)
-            // this.ngxFilterData = JSON.parse(this.ngxFilterInit);
-        }
+        this.onForamtList(this.ngxFilterData);
     }
     checkOnboardingPath() {
         return this.service.mainPath.includes('onboarding') ? `${this.service.mainPath}/requests/` : `/onboarding/requests/`;
@@ -7883,10 +7900,12 @@ class OnboardingListComponent {
                     this._loading_table = false;
                 }, 2000);
                 if (onboarding) {
-                    this.onboarding = onboarding.map((row, index) => {
+                    this.onboardingList = onboarding.map((row, index) => {
                         var _a, _b;
                         const user = row.categories.find((cat) => cat.name === "Utilisateur");
                         const formUser = user.forms.map((form) => ({ key: form.key, value: form.value })).reduce((a, v) => (Object.assign(Object.assign({}, a), { [v.key]: v.value })), {});
+                        row.Finished = !!row.Finished;
+                        row.FinishedStatus = !!row.Finished ? 'finished' : 'to-finish';
                         row.Status = row.Finished ? (this.locale === 'fr' ? "Terminée" : 'Finished') : (this.locale === 'fr' ? "A finaliser" : 'To finished');
                         row.CustomClass = row.Finished ? "custom-status finished" : "custom-status to-finish";
                         row.lastNameClass = "last-name";
@@ -7899,11 +7918,12 @@ class OnboardingListComponent {
                         row.date_of_entry = formUser.date_of_entry ? formUser.date_of_entry : null;
                         row.TemplateName = ((_b = row === null || row === void 0 ? void 0 : row.vtemplates) === null || _b === void 0 ? void 0 : _b.length) > 0 ? row === null || row === void 0 ? void 0 : row.vtemplates[0].Name : '';
                         row.Id = index + 1;
+                        row.CreatedDate = row.createdAt;
                         row.createdAt = this.lang === 'fr' ? new Date(row.createdAt).toLocaleDateString("fr-FR") : new Date(row.createdAt).toLocaleDateString("en-GB");
                         return row;
                     });
-                    this.dataFiltered = this.onboarding;
-                    this.onForamtList(this.onboarding);
+                    this.dataFiltered = this.onboardingList;
+                    this.onForamtList(this.ngxFilterData);
                 }
             });
         });
@@ -7914,39 +7934,21 @@ class OnboardingListComponent {
             return result.Name;
         return account;
     }
-    onForamtList(datas) {
-        this.onboardingFormatList = datas;
-        this.onboardingList = new CoreMatTable(datas, {
-            active: 'Id', direction: 'desc'
-        }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
-    }
-    onFilterTemplate() {
-        this.dataFiltered = this.searchText !== '' ? this.onboarding.filter((d) => d.Name.toLowerCase().search(this.searchText.toLocaleLowerCase()) > -1) : this.onboarding;
-        this.onForamtList(this.dataFiltered);
-    }
-    triggerChange($event) {
-        if ($event.index === 0) {
-            this.currentLength = this.onboardingList.data.length;
+    onForamtList(params, inputSearch = '') {
+        const filterParams = filterParse(params);
+        if (!!inputSearch) {
+            filterParams.filterData.inputSearch = inputSearch;
         }
-        else if ($event.index === 1) {
-            this.currentLength = this.onboardingFinished.data.length;
+        if (!this.onboarding) {
+            this.onboarding = new CoreMatTable(this.onboardingList, {
+                active: 'Id', direction: 'desc'
+            }, { active: '', valueStart: null, valueEnd: null }, 15, true, true);
         }
-        else if ($event.index === 2) {
-            this.currentLength = this.onboardingToFinish.data.length;
+        else {
+            this.onboarding.setData(this.onboardingList);
         }
-        if ($event.index !== this.HiddenIndex) {
-            this._loading_table = true;
-            this.index = $event.index;
-            this.router.navigate([], {
-                relativeTo: this.route,
-                queryParams: { page: null, tab: $event.index + 1 },
-                queryParamsHandling: 'merge', // remove to replace all query params by provided
-            });
-            this.HiddenIndex = $event.index;
-            setTimeout(() => {
-                this._loading_table = false;
-            }, 2000);
-        }
+        this.onboarding.filter((filterParams === null || filterParams === void 0 ? void 0 : filterParams.filterData) || {});
+        this.onboarding.filterDate((filterParams === null || filterParams === void 0 ? void 0 : filterParams.filterDate) || {});
     }
     openDialog() {
         const dialogRef = this.dialog.open(DialogCreateOnboardingComponent, {
@@ -8017,7 +8019,7 @@ OnboardingListComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: Onb
         }
         if (rf & 2) {
             i0.ɵɵadvance(3);
-            i0.ɵɵtextInterpolate2(" ", ctx.locale == null ? null : ctx.locale.REQUEST_FOR_INTEGRATION, " (", ctx.onboarding.length, ") ");
+            i0.ɵɵtextInterpolate2(" ", ctx.locale == null ? null : ctx.locale.REQUEST_FOR_INTEGRATION, " (", ctx.onboardingList == null ? null : ctx.onboardingList.length, ") ");
             i0.ɵɵadvance(4);
             i0.ɵɵtextInterpolate1(" ", ctx.locale == null ? null : ctx.locale.NEW, " ");
             i0.ɵɵadvance(2);
@@ -8025,7 +8027,7 @@ OnboardingListComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: Onb
             i0.ɵɵadvance(2);
             i0.ɵɵproperty("icon", "download")("size", 2);
             i0.ɵɵadvance(4);
-            i0.ɵɵtextInterpolate2("", ctx.dataFiltered == null ? null : ctx.dataFiltered.length, " ", ctx.locale == null ? null : ctx.locale.RESULTS, "");
+            i0.ɵɵtextInterpolate2("", ctx.onboarding == null ? null : ctx.onboarding.totalElements, " ", ctx.locale == null ? null : ctx.locale.RESULTS, "");
             i0.ɵɵadvance(1);
             i0.ɵɵproperty("ngIf", ctx.onboardingList);
         }
@@ -8033,7 +8035,7 @@ OnboardingListComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: Onb
 (function () {
     (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(OnboardingListComponent, [{
             type: Component,
-            args: [{ selector: 'lib-onboarding-list', template: "<div class=\"main-all-ticket-list onboarding-list-container\">\r\n    <div class=\"header-top\">\r\n        <h2 style=\"margin: 0;\">\r\n            {{locale?.REQUEST_FOR_INTEGRATION}} ({{onboarding.length}})\r\n        </h2>\r\n        <a role=\"button\" class=\"add-onboarding\" mat-raised-button color=\"primary\" (click)=\"openDialog()\">\r\n            <mat-icon>add</mat-icon> {{locale?.NEW}}\r\n        </a>\r\n    </div>\r\n    <div class=\"list-title\">\r\n        <ngx-filter [filterConfig]=\"ngxFilterData\" lang=\"fr\" (onFilter)=\"onFilter($event)\"\r\n            (onRefresh)=\"onRefresh($event)\" [datas]=\"onboarding\" [withRefresh]=\"true\" [placeholder]=\"locale?.SEARCH\">\r\n            <button mat-flat-button appearance=\"text\" class=\"export-to-csv rounded secondary download-btn mr30\"\r\n                (click)=\"onExportToXLSX()\">\r\n                <nb-icon [icon]=\"'download'\" [size]=\"2\" class=\"mr5\"></nb-icon>\r\n                (.xlsx)\r\n            </button>\r\n        </ngx-filter>\r\n\r\n    </div>\r\n    <div class=\"content-view-list-ticket\">\r\n        <p class=\"header-result\">{{dataFiltered?.length}} {{locale?.RESULTS}}</p>\r\n        <!-- <div *ngIf=\"_loading_table || !onboardingList\" class=\"bt-spinner\"></div> -->\r\n        <div *ngIf=\"onboardingList\">\r\n            <div [class.ticket-list]=\"!_loading_table\">\r\n                <lib-onboarding-table [columnDefinitions]=\"columnDefinitions\" [data]=\"onboardingList\" [lang]=\"lang\"\r\n                    [inputSearch]=\"inputSearch\">\r\n                </lib-onboarding-table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>", styles: ["mat-card{display:block;width:98%}md-tooltip.tt-multiline ._md-content{height:auto}md-tooltip ._md-content{height:auto}table{width:100%}.element-detail .inline{display:table;width:90%}.element-detail .inline .block1{display:inline-table;float:left;width:50%;text-align:left}.element-detail .inline .block1 strong{letter-spacing:0px;color:#171f26}.element-detail .inline .block1 p,.element-detail .inline .block1 small{font-size:13px!important;letter-spacing:0px;color:#171f26}.main-all-ticket-list{display:block;grid-column-gap:0px;grid-row-gap:0px;animation:fadein .7s!important;-moz-animation:fadein .7s!important;-webkit-animation:fadein .7s!important;-o-animation:fadein .7s!important}.main-all-ticket-list .component-title{grid-area:1/1/1/3;padding-left:5px;padding-top:40px;padding-bottom:40px;vertical-align:middle;width:100%}.main-all-ticket-list .content-view-list-ticket{grid-area:2/1/4/3;padding-left:0;padding-right:0}.main-all-ticket-list .content-view-list-ticket table{width:100%}.main-all-ticket-list .content-view-list-ticket table thead{position:sticky;top:-1px;z-index:999}app-list-preview{width:100%}::ng-deep .mat-tab-label-active{background:#b6d1cd;opacity:1!important}::ng-deep .ticket-list thead{position:sticky;top:-1px;z-index:999}.col-lg-6{width:50%;vertical-align:top;display:inline-table}@keyframes three-quarters-loader{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.three-quarters-loader:not(:required){animation:three-quarters-loader 1.25s infinite linear;border:4px solid #4285F4;border-right-color:transparent;border-radius:16px;box-sizing:border-box;display:inline-block;margin-left:10px;position:relative;overflow:hidden;text-indent:-9999px;width:20px;height:20px}@keyframes fadein{0%{opacity:0;margin-top:20px}to{opacity:1;margin-top:0}}.mat-tab-left{color:#171f26;font-size:18px;letter-spacing:0px;margin-left:48px;margin-top:15px;position:absolute;text-align:left}.mat-tab-left-count{color:#171f26;letter-spacing:0px;text-align:left}.page-title-container{display:flex;margin-right:48px}.page-title{text-align:left;letter-spacing:0px;color:#171f26;margin-left:2em;margin-top:-8px}.page-search{margin-left:auto;position:relative;width:400px}.page-search mat-icon{left:18%;margin-top:10px;position:absolute}.page-search img{cursor:pointer;margin-top:10px;position:absolute;right:10px}.list-ticket-tab{padding-left:48px;padding-right:48px}.detail-view-ticket{float:right;margin-right:20px;margin-top:-30px}@media (min-width: 1800px){.page-search mat-icon{left:16%}}.ticket-list{max-height:75vh;overflow:auto;animation:fadein .7s!important;-moz-animation:fadein .7s!important;-webkit-animation:fadein .7s!important;-o-animation:fadein .7s!important}.ticket-list::-webkit-scrollbar{width:5px}.ticket-list::-webkit-scrollbar-track{box-shadow:inset 0 0 2px transparent;border-radius:10px}.bt-spinner{width:75px;height:75px;border-radius:50%;background-color:transparent;border:none;border-top:2px solid #03A9F4;animation:1s spin linear infinite;position:relative;margin:auto;top:25vh}@keyframes spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.list-ticket-tab>.mat-tab-header>.mat-tab-label-container>.mat-tab-list>.mat-tab-labels>.mat-tab-label-active,.site-view-tab>.mat-tab-header>.mat-tab-label-container>.mat-tab-list>.mat-tab-labels>.mat-tab-label-active{background-image:none!important;color:#171f26!important}::ng-deep .mat-tab-header{display:flex;overflow:hidden;position:relative;flex-shrink:0;width:500px;border:none;left:350px}::ng-deep .mat-tab-header .mat-tab-label-active{background:transparent}::ng-deep .mat-tab-header mat-ink-bar{height:4px;border-radius:3px;background-color:#171f26!important}::ng-deep lib-onboarding-table{background-color:red!important}::ng-deep lib-onboarding-table .link-btn{background:#E5E8EE!important;padding:2px!important;box-shadow:0 0 #0003!important;border-radius:4px!important;color:#707070!important;font-weight:700!important;font-size:16px!important;margin-left:10px!important}.onboarding-list-container{position:relative;padding:30px;display:flex;flex-direction:column;gap:25px;min-height:100vh}.onboarding-list-container .header-top{display:flex;align-items:center;justify-content:space-between}.onboarding-list-container .title-table{font-weight:700;font-size:14px;position:absolute;left:72px;top:36px}.onboarding-list-container .add-onboarding{background:#171F26;box-shadow:0 0 #0003;border-radius:7px}.onboarding-list-container .list-title{font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:space-between}.onboarding-list-container .list-title ul{display:flex;align-items:center;list-style:none;padding-left:0;gap:15px;margin:0}.onboarding-list-container .list-title ul li{cursor:pointer}.onboarding-list-container .list-title ul li.active{border-bottom:4px solid #3c4252}::ng-deep .filter-item{display:flex;align-items:center}::ng-deep .filter-item .mat-form-field-infix{display:block;position:relative;flex:auto;min-width:0;width:85px;padding:8px 15px;border-top:0}::ng-deep .filter-item .mat-form-field-flex{display:inline-flex;align-items:center;box-sizing:border-box;width:100%;border-radius:50px;background:rgba(128,128,128,.517)}::ng-deep .filter-item .mat-form-field-wrapper{padding-bottom:0}::ng-deep .filter-item .filter-item-inner{border-radius:50px;padding:5px 10px;display:inline-flex;align-items:center;box-sizing:border-box}::ng-deep .filter-item .search-text .mat-form-field-infix{padding:10px 15px 10px 0}::ng-deep .right-action{display:flex;align-items:center}.header-result{font-style:normal;font-weight:400;font-size:12px;color:#d1dbea;padding:0;margin:0}::ng-deep ngx-filter{width:100%}::ng-deep ngx-filter ngx-filter-group ul{padding:0}\n"] }]
+            args: [{ selector: 'lib-onboarding-list', template: "<div class=\"main-all-ticket-list onboarding-list-container\">\r\n    <div class=\"header-top\">\r\n        <h2 style=\"margin: 0;\">\r\n            {{locale?.REQUEST_FOR_INTEGRATION}} ({{onboardingList?.length}})\r\n        </h2>\r\n        <a role=\"button\" class=\"add-onboarding\" mat-raised-button color=\"primary\" (click)=\"openDialog()\">\r\n            <mat-icon>add</mat-icon> {{locale?.NEW}}\r\n        </a>\r\n    </div>\r\n    <div class=\"list-title\">\r\n        <ngx-filter [filterConfig]=\"ngxFilterData\" lang=\"fr\" (onFilter)=\"onFilter($event)\"\r\n            (onRefresh)=\"onRefresh($event)\" [datas]=\"onboarding\" [withRefresh]=\"true\" [placeholder]=\"locale?.SEARCH\">\r\n            <button mat-flat-button appearance=\"text\" class=\"export-to-csv rounded secondary download-btn mr30\"\r\n                (click)=\"onExportToXLSX()\">\r\n                <nb-icon [icon]=\"'download'\" [size]=\"2\" class=\"mr5\"></nb-icon>\r\n                (.xlsx)\r\n            </button>\r\n        </ngx-filter>\r\n\r\n    </div>\r\n    <div class=\"content-view-list-ticket\">\r\n        <p class=\"header-result\">{{onboarding?.totalElements}} {{locale?.RESULTS}}</p>\r\n        <div *ngIf=\"onboardingList\">\r\n            <div [class.ticket-list]=\"!_loading_table\">\r\n                <lib-onboarding-table [columnDefinitions]=\"columnDefinitions\" [data]=\"onboarding\" [lang]=\"lang\"\r\n                    [inputSearch]=\"inputSearch\">\r\n                </lib-onboarding-table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>", styles: ["mat-card{display:block;width:98%}md-tooltip.tt-multiline ._md-content{height:auto}md-tooltip ._md-content{height:auto}table{width:100%}.element-detail .inline{display:table;width:90%}.element-detail .inline .block1{display:inline-table;float:left;width:50%;text-align:left}.element-detail .inline .block1 strong{letter-spacing:0px;color:#171f26}.element-detail .inline .block1 p,.element-detail .inline .block1 small{font-size:13px!important;letter-spacing:0px;color:#171f26}.main-all-ticket-list{display:block;grid-column-gap:0px;grid-row-gap:0px;animation:fadein .7s!important;-moz-animation:fadein .7s!important;-webkit-animation:fadein .7s!important;-o-animation:fadein .7s!important}.main-all-ticket-list .component-title{grid-area:1/1/1/3;padding-left:5px;padding-top:40px;padding-bottom:40px;vertical-align:middle;width:100%}.main-all-ticket-list .content-view-list-ticket{grid-area:2/1/4/3;padding-left:0;padding-right:0}.main-all-ticket-list .content-view-list-ticket table{width:100%}.main-all-ticket-list .content-view-list-ticket table thead{position:sticky;top:-1px;z-index:999}app-list-preview{width:100%}::ng-deep .mat-tab-label-active{background:#b6d1cd;opacity:1!important}::ng-deep .ticket-list thead{position:sticky;top:-1px;z-index:999}.col-lg-6{width:50%;vertical-align:top;display:inline-table}@keyframes three-quarters-loader{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.three-quarters-loader:not(:required){animation:three-quarters-loader 1.25s infinite linear;border:4px solid #4285F4;border-right-color:transparent;border-radius:16px;box-sizing:border-box;display:inline-block;margin-left:10px;position:relative;overflow:hidden;text-indent:-9999px;width:20px;height:20px}@keyframes fadein{0%{opacity:0;margin-top:20px}to{opacity:1;margin-top:0}}.mat-tab-left{color:#171f26;font-size:18px;letter-spacing:0px;margin-left:48px;margin-top:15px;position:absolute;text-align:left}.mat-tab-left-count{color:#171f26;letter-spacing:0px;text-align:left}.page-title-container{display:flex;margin-right:48px}.page-title{text-align:left;letter-spacing:0px;color:#171f26;margin-left:2em;margin-top:-8px}.page-search{margin-left:auto;position:relative;width:400px}.page-search mat-icon{left:18%;margin-top:10px;position:absolute}.page-search img{cursor:pointer;margin-top:10px;position:absolute;right:10px}.list-ticket-tab{padding-left:48px;padding-right:48px}.detail-view-ticket{float:right;margin-right:20px;margin-top:-30px}@media (min-width: 1800px){.page-search mat-icon{left:16%}}.ticket-list{max-height:75vh;overflow:auto;animation:fadein .7s!important;-moz-animation:fadein .7s!important;-webkit-animation:fadein .7s!important;-o-animation:fadein .7s!important}.ticket-list::-webkit-scrollbar{width:5px}.ticket-list::-webkit-scrollbar-track{box-shadow:inset 0 0 2px transparent;border-radius:10px}.bt-spinner{width:75px;height:75px;border-radius:50%;background-color:transparent;border:none;border-top:2px solid #03A9F4;animation:1s spin linear infinite;position:relative;margin:auto;top:25vh}@keyframes spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.list-ticket-tab>.mat-tab-header>.mat-tab-label-container>.mat-tab-list>.mat-tab-labels>.mat-tab-label-active,.site-view-tab>.mat-tab-header>.mat-tab-label-container>.mat-tab-list>.mat-tab-labels>.mat-tab-label-active{background-image:none!important;color:#171f26!important}::ng-deep .mat-tab-header{display:flex;overflow:hidden;position:relative;flex-shrink:0;width:500px;border:none;left:350px}::ng-deep .mat-tab-header .mat-tab-label-active{background:transparent}::ng-deep .mat-tab-header mat-ink-bar{height:4px;border-radius:3px;background-color:#171f26!important}::ng-deep lib-onboarding-table{background-color:red!important}::ng-deep lib-onboarding-table .link-btn{background:#E5E8EE!important;padding:2px!important;box-shadow:0 0 #0003!important;border-radius:4px!important;color:#707070!important;font-weight:700!important;font-size:16px!important;margin-left:10px!important}.onboarding-list-container{position:relative;padding:30px;display:flex;flex-direction:column;gap:25px;min-height:100vh}.onboarding-list-container .header-top{display:flex;align-items:center;justify-content:space-between}.onboarding-list-container .title-table{font-weight:700;font-size:14px;position:absolute;left:72px;top:36px}.onboarding-list-container .add-onboarding{background:#171F26;box-shadow:0 0 #0003;border-radius:7px}.onboarding-list-container .list-title{font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:space-between}.onboarding-list-container .list-title ul{display:flex;align-items:center;list-style:none;padding-left:0;gap:15px;margin:0}.onboarding-list-container .list-title ul li{cursor:pointer}.onboarding-list-container .list-title ul li.active{border-bottom:4px solid #3c4252}::ng-deep .filter-item{display:flex;align-items:center}::ng-deep .filter-item .mat-form-field-infix{display:block;position:relative;flex:auto;min-width:0;width:85px;padding:8px 15px;border-top:0}::ng-deep .filter-item .mat-form-field-flex{display:inline-flex;align-items:center;box-sizing:border-box;width:100%;border-radius:50px;background:rgba(128,128,128,.517)}::ng-deep .filter-item .mat-form-field-wrapper{padding-bottom:0}::ng-deep .filter-item .filter-item-inner{border-radius:50px;padding:5px 10px;display:inline-flex;align-items:center;box-sizing:border-box}::ng-deep .filter-item .search-text .mat-form-field-infix{padding:10px 15px 10px 0}::ng-deep .right-action{display:flex;align-items:center}.header-result{font-style:normal;font-weight:400;font-size:12px;color:#d1dbea;padding:0;margin:0}::ng-deep ngx-filter{width:100%}::ng-deep ngx-filter ngx-filter-group ul{padding:0}\n"] }]
         }], function () { return [{ type: OnboardingService }, { type: i2.Router }, { type: i2.ActivatedRoute }, { type: i1$1.MatDialog }, { type: i4.DatePipe }]; }, null);
 })();
 
