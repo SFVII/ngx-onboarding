@@ -1,5 +1,5 @@
 import { ActivatedRoute, Router } from '@angular/router';
-import { CoreMatTableInterface, displayedColumnsInterface } from "ngx-table";
+import { displayedColumnsInterface } from "ngx-table";
 import { OnInit } from '@angular/core';
 import { IFilterConfiguration } from 'ngx-filter';
 import { DatePipe } from '@angular/common';
@@ -16,7 +16,7 @@ export declare class OnboardingListComponent implements OnInit {
     inputSearch: string;
     currentLength: number;
     currentFilter: string;
-    onboarding: CoreMatTableInterface | undefined;
+    onboarding: any[];
     accounts: any;
     search: string;
     onboardingFormatList: any[];
@@ -42,7 +42,9 @@ export declare class OnboardingListComponent implements OnInit {
     checkOnboardingPath(): string;
     ngOnInit(): Promise<void>;
     findAccount(account: any): any;
-    onForamtList(params: any, inputSearch?: string): void;
+    onForamtList(datas: any): void;
+    onFilterTemplate(): void;
+    triggerChange($event: any): void;
     openDialog(): void;
     onExportToXLSX(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingListComponent, never>;
