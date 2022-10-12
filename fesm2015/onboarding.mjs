@@ -7742,7 +7742,7 @@ class OnboardingListComponent {
         this.index = 0;
         this.lang = 'fr';
         this.service._lang.subscribe((locale) => {
-            var _a, _b, _c, _d, _e, _f, _g, _h;
+            var _a, _b, _c, _d, _e, _f, _g, _h, _j;
             this.lang = locale;
             this.locale = locales[locale].REQUEST;
             this.ngxFilterData = [
@@ -7827,7 +7827,7 @@ class OnboardingListComponent {
                     key: 'requestor',
                     value: (_d = this.locale) === null || _d === void 0 ? void 0 : _d.REQUESTOR,
                     order: 4,
-                    class: 'w-pmin10',
+                    class: 'w-pmin15',
                     sort: true,
                 },
                 {
@@ -7868,7 +7868,7 @@ class OnboardingListComponent {
                     order: 9,
                     class: 'w-pmin10',
                     module: CellsComponentList.ButtonLink,
-                    // display: this.locale?.DETAIL,
+                    display: (_j = this.locale) === null || _j === void 0 ? void 0 : _j.DETAIL,
                     override: [`${this.checkOnboardingPath()}`, 'TemplateId', '_id'],
                     align: 'center'
                 }

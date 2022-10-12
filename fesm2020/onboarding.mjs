@@ -7301,7 +7301,7 @@ class OnboardingListComponent {
                     key: 'requestor',
                     value: this.locale?.REQUESTOR,
                     order: 4,
-                    class: 'w-pmin10',
+                    class: 'w-pmin15',
                     sort: true,
                 },
                 {
@@ -7342,7 +7342,7 @@ class OnboardingListComponent {
                     order: 9,
                     class: 'w-pmin10',
                     module: CellsComponentList.ButtonLink,
-                    // display: this.locale?.DETAIL,
+                    display: this.locale?.DETAIL,
                     override: [`${this.checkOnboardingPath()}`, 'TemplateId', '_id'],
                     align: 'center'
                 }
