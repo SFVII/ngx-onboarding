@@ -7340,9 +7340,9 @@ class OnboardingListComponent {
                     key: 'Action',
                     value: '',
                     order: 9,
-                    class: 'w-pmin5',
+                    class: 'w-pmin10',
                     module: CellsComponentList.ButtonLink,
-                    display: this.locale?.DETAIL,
+                    // display: this.locale?.DETAIL,
                     override: [`${this.checkOnboardingPath()}`, 'TemplateId', '_id'],
                     align: 'center'
                 }
