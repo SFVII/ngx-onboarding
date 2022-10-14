@@ -8065,7 +8065,7 @@ class OnboardingListComponent {
                     Name: d.Name,
                     Title: d.Title,
                     Email: d.Email,
-                    CreationDate: this.datepipe.transform(d.createdAt, 'dd-MM-yyyy'),
+                    CreationDate: d.createdAt,
                     TemplateName: ((_a = d.vtemplates) === null || _a === void 0 ? void 0 : _a.length) ? d.vtemplates[0].Name : '',
                     CaseId: ((_b = d.vtickets) === null || _b === void 0 ? void 0 : _b.length) ? d.vtickets[0].CaseNumber : ''
                 });
