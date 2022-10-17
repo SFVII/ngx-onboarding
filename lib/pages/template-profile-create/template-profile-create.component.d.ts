@@ -77,6 +77,7 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onCheckedDefault(event: any, ...params: any[]): void;
     addKeywordFromInput(event: MatChipInputEvent, prev: any, ...params: any[]): void;
     drop(event: CdkDragDrop<string[]>): void;
+    dropField(event: CdkDragDrop<string[]>): void;
     ingoreDefaultAction(e: any): void;
     onShowCategory(): void;
     onSelectPicto(e: any, picto: any): void;
