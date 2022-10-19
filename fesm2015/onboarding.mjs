@@ -1559,146 +1559,129 @@ LoadingPageComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: Loadin
         }], function () { return []; }, null);
 })();
 
-function TemplateProfileCreateComponent_button_9_lib_loading_page_1_Template(rf, ctx) {
+function TemplateProfileCreateComponent_lib_loading_page_10_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelement(0, "lib-loading-page");
     }
 }
-function TemplateProfileCreateComponent_button_9_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r8 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "button", 21);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_button_9_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r8); const ctx_r7 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r7.onSubmit(false)); });
-        i0.ɵɵtemplate(1, TemplateProfileCreateComponent_button_9_lib_loading_page_1_Template, 1, 0, "lib-loading-page", 6);
-        i0.ɵɵtext(2);
-        i0.ɵɵelementEnd();
-    }
-    if (rf & 2) {
-        const ctx_r0 = i0.ɵɵnextContext();
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r0.loading && !ctx_r0.isSubmitted);
-        i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1("", ctx_r0.draftLabel, " ");
-    }
-}
-function TemplateProfileCreateComponent_lib_loading_page_11_Template(rf, ctx) {
+function TemplateProfileCreateComponent_lib_loading_page_13_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelement(0, "lib-loading-page");
     }
 }
-function TemplateProfileCreateComponent_li_21_Template(rf, ctx) {
+function TemplateProfileCreateComponent_li_23_Template(rf, ctx) {
     if (rf & 1) {
-        const _r12 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "li", 22);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_li_21_Template_li_click_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r12); const cat_r9 = restoredCtx.$implicit; const i_r10 = restoredCtx.index; const ctx_r11 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r11.scrollTo(cat_r9, i_r10)); });
+        const _r9 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "li", 21);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_li_23_Template_li_click_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r9); const cat_r6 = restoredCtx.$implicit; const i_r7 = restoredCtx.index; const ctx_r8 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r8.scrollTo(cat_r6, i_r7)); });
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const cat_r9 = ctx.$implicit;
-        const i_r10 = ctx.index;
+        const cat_r6 = ctx.$implicit;
+        const i_r7 = ctx.index;
         const ctx_r2 = i0.ɵɵnextContext();
-        i0.ɵɵclassMap(ctx_r2.editIndex === i_r10 ? "active" : "");
-        i0.ɵɵproperty("id", cat_r9.name + "x");
+        i0.ɵɵclassMap(ctx_r2.editIndex === i_r7 ? "active" : "");
+        i0.ɵɵproperty("id", cat_r6.name + "x");
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1(" ", cat_r9.name, " ");
+        i0.ɵɵtextInterpolate1(" ", cat_r6.name, " ");
     }
 }
-function TemplateProfileCreateComponent_section_30_mat_icon_13_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_mat_icon_13_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "mat-icon");
         i0.ɵɵtext(1, "chevron_right");
         i0.ɵɵelementEnd();
     }
 }
-function TemplateProfileCreateComponent_section_30_mat_icon_14_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_mat_icon_14_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "mat-icon");
         i0.ɵɵtext(1, "expand_more");
         i0.ɵɵelementEnd();
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_3_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_3_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelement(0, "div", 45);
+        i0.ɵɵelement(0, "div", 44);
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_5_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_5_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 46)(1, "button", 25);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_5_Template_button_click_1_listener($event) { $event.stopPropagation(); return $event.preventDefault(); });
-        i0.ɵɵelementStart(2, "mat-icon", 26);
+        i0.ɵɵelementStart(0, "div", 45)(1, "button", 24);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_5_Template_button_click_1_listener($event) { $event.stopPropagation(); return $event.preventDefault(); });
+        i0.ɵɵelementStart(2, "mat-icon", 25);
         i0.ɵɵtext(3, "drag_indicator");
         i0.ɵɵelementEnd()()();
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_7_mat_icon_11_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_7_mat_icon_11_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "mat-icon");
         i0.ɵɵtext(1, "expand_less ");
         i0.ɵɵelementEnd();
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_7_mat_icon_12_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_7_mat_icon_12_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "mat-icon");
         i0.ɵɵtext(1, "expand_more ");
         i0.ɵɵelementEnd();
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_7_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_7_Template(rf, ctx) {
     if (rf & 1) {
-        const _r32 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 47)(1, "div", 28)(2, "div")(3, "p", 29);
+        const _r29 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 46)(1, "div", 27)(2, "div")(3, "p", 28);
         i0.ɵɵtext(4);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(5, "p", 30);
+        i0.ɵɵelementStart(5, "p", 29);
         i0.ɵɵtext(6);
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(7, "button", 48);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_7_Template_button_click_7_listener($event) { i0.ɵɵrestoreView(_r32); const ctx_r31 = i0.ɵɵnextContext(); const field_r20 = ctx_r31.$implicit; const j_r21 = ctx_r31.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r30 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r30.onEditBlock(field_r20, i_r14, j_r21)); });
-        i0.ɵɵelementStart(8, "mat-icon", 49);
+        i0.ɵɵelementStart(7, "button", 47);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_7_Template_button_click_7_listener($event) { i0.ɵɵrestoreView(_r29); const ctx_r28 = i0.ɵɵnextContext(); const field_r17 = ctx_r28.$implicit; const j_r18 = ctx_r28.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r27 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r27.onEditBlock(field_r17, i_r11, j_r18)); });
+        i0.ɵɵelementStart(8, "mat-icon", 48);
         i0.ɵɵtext(9, "settings");
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(10, "button", 50);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_7_Template_button_click_10_listener($event) { i0.ɵɵrestoreView(_r32); const ctx_r35 = i0.ɵɵnextContext(); const field_r20 = ctx_r35.$implicit; const j_r21 = ctx_r35.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r34 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r34.onExpendMore({ event: $event, field: field_r20 }, i_r14, j_r21)); });
-        i0.ɵɵtemplate(11, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_7_mat_icon_11_Template, 2, 0, "mat-icon", 6);
-        i0.ɵɵtemplate(12, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_7_mat_icon_12_Template, 2, 0, "mat-icon", 6);
+        i0.ɵɵelementStart(10, "button", 49);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_7_Template_button_click_10_listener($event) { i0.ɵɵrestoreView(_r29); const ctx_r32 = i0.ɵɵnextContext(); const field_r17 = ctx_r32.$implicit; const j_r18 = ctx_r32.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r31 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r31.onExpendMore({ event: $event, field: field_r17 }, i_r11, j_r18)); });
+        i0.ɵɵtemplate(11, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_7_mat_icon_11_Template, 2, 0, "mat-icon", 5);
+        i0.ɵɵtemplate(12, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_7_mat_icon_12_Template, 2, 0, "mat-icon", 5);
         i0.ɵɵelementEnd()()();
     }
     if (rf & 2) {
-        const field_r20 = i0.ɵɵnextContext().$implicit;
-        const ctx_r24 = i0.ɵɵnextContext(4);
+        const field_r17 = i0.ɵɵnextContext().$implicit;
+        const ctx_r21 = i0.ɵɵnextContext(4);
         i0.ɵɵadvance(4);
-        i0.ɵɵtextInterpolate1(" ", field_r20.label, " ");
+        i0.ɵɵtextInterpolate1(" ", field_r17.label, " ");
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate2(" ", ctx_r24.locale == null ? null : ctx_r24.locale.CATEGORY_SUBTITLE, " ", ctx_r24.catNameStart(field_r20.label) ? "l'" + field_r20.label : field_r20.label, " ");
+        i0.ɵɵtextInterpolate2(" ", ctx_r21.locale == null ? null : ctx_r21.locale.CATEGORY_SUBTITLE, " ", ctx_r21.catNameStart(field_r17.label) ? "l'" + field_r17.label : field_r17.label, " ");
         i0.ɵɵadvance(4);
-        i0.ɵɵstyleProp("opacity", field_r20.forms && field_r20.forms.length > 0 ? 1 : 0);
-        i0.ɵɵproperty("disabled", !(field_r20.forms && field_r20.forms.length > 0));
+        i0.ɵɵstyleProp("opacity", field_r17.forms && field_r17.forms.length > 0 ? 1 : 0);
+        i0.ɵɵproperty("disabled", !(field_r17.forms && field_r17.forms.length > 0));
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", !field_r20.expandMore);
+        i0.ɵɵproperty("ngIf", !field_r17.expandMore);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", field_r20.expandMore);
+        i0.ɵɵproperty("ngIf", field_r17.expandMore);
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_3_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_3_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 61)(1, "button", 25);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_3_Template_button_click_1_listener($event) { $event.stopPropagation(); return $event.preventDefault(); });
-        i0.ɵɵelementStart(2, "mat-icon", 26);
+        i0.ɵɵelementStart(0, "div", 60)(1, "button", 24);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_3_Template_button_click_1_listener($event) { $event.stopPropagation(); return $event.preventDefault(); });
+        i0.ɵɵelementStart(2, "mat-icon", 25);
         i0.ɵɵtext(3, " drag_indicator");
         i0.ɵɵelementEnd()()();
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_mat_icon_10_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_mat_icon_10_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "mat-icon");
         i0.ɵɵtext(1, " expand_less ");
         i0.ɵɵelementEnd();
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_mat_icon_11_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_mat_icon_11_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementStart(0, "mat-icon");
         i0.ɵɵtext(1, " expand_more ");
@@ -1706,57 +1689,57 @@ function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_cont
     }
 }
 const _c0$3 = function () { return { standalone: true }; };
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_Template(rf, ctx) {
     if (rf & 1) {
-        const _r52 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 47)(1, "div", 28)(2, "div")(3, "input", 62);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r52); const child_r41 = i0.ɵɵnextContext().$implicit; return i0.ɵɵresetView(child_r41.label = $event); });
+        const _r49 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 46)(1, "div", 27)(2, "div")(3, "input", 61);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r49); const child_r38 = i0.ɵɵnextContext().$implicit; return i0.ɵɵresetView(child_r38.label = $event); });
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(4, "p", 30);
+        i0.ɵɵelementStart(4, "p", 29);
         i0.ɵɵtext(5);
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(6, "button", 48);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_Template_button_click_6_listener($event) { i0.ɵɵrestoreView(_r52); const ctx_r54 = i0.ɵɵnextContext(); const child_r41 = ctx_r54.$implicit; const k_r42 = ctx_r54.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r53 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r53.onEditBlock(child_r41, i_r14, j_r21, k_r42)); });
-        i0.ɵɵelementStart(7, "mat-icon", 49);
+        i0.ɵɵelementStart(6, "button", 47);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_Template_button_click_6_listener($event) { i0.ɵɵrestoreView(_r49); const ctx_r51 = i0.ɵɵnextContext(); const child_r38 = ctx_r51.$implicit; const k_r39 = ctx_r51.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r50 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r50.onEditBlock(child_r38, i_r11, j_r18, k_r39)); });
+        i0.ɵɵelementStart(7, "mat-icon", 48);
         i0.ɵɵtext(8, "settings");
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(9, "button", 50);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_Template_button_click_9_listener($event) { i0.ɵɵrestoreView(_r52); const ctx_r58 = i0.ɵɵnextContext(); const child_r41 = ctx_r58.$implicit; const k_r42 = ctx_r58.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r57 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r57.onExpendMore({ event: $event, field: child_r41 }, i_r14, j_r21, k_r42)); });
-        i0.ɵɵtemplate(10, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_mat_icon_10_Template, 2, 0, "mat-icon", 6);
-        i0.ɵɵtemplate(11, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_mat_icon_11_Template, 2, 0, "mat-icon", 6);
+        i0.ɵɵelementStart(9, "button", 49);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_Template_button_click_9_listener($event) { i0.ɵɵrestoreView(_r49); const ctx_r55 = i0.ɵɵnextContext(); const child_r38 = ctx_r55.$implicit; const k_r39 = ctx_r55.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r54 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r54.onExpendMore({ event: $event, field: child_r38 }, i_r11, j_r18, k_r39)); });
+        i0.ɵɵtemplate(10, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_mat_icon_10_Template, 2, 0, "mat-icon", 5);
+        i0.ɵɵtemplate(11, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_mat_icon_11_Template, 2, 0, "mat-icon", 5);
         i0.ɵɵelementEnd()()();
     }
     if (rf & 2) {
-        const child_r41 = i0.ɵɵnextContext().$implicit;
-        const category_r13 = i0.ɵɵnextContext(6).$implicit;
-        const ctx_r44 = i0.ɵɵnextContext();
+        const child_r38 = i0.ɵɵnextContext().$implicit;
+        const category_r10 = i0.ɵɵnextContext(6).$implicit;
+        const ctx_r41 = i0.ɵɵnextContext();
         i0.ɵɵadvance(3);
-        i0.ɵɵproperty("readonly", ctx_r44.categories.length < 4 || !category_r13.editable)("readonly", !category_r13.editable)("ngModel", child_r41.label)("ngModelOptions", i0.ɵɵpureFunction0(11, _c0$3));
+        i0.ɵɵproperty("readonly", ctx_r41.categories.length < 4 || !category_r10.editable)("readonly", !category_r10.editable)("ngModel", child_r38.label)("ngModelOptions", i0.ɵɵpureFunction0(11, _c0$3));
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate2(" ", ctx_r44.locale == null ? null : ctx_r44.locale.CATEGORY_SUBTITLE, " ", ctx_r44.catNameStart(child_r41.label) ? "l'" + child_r41.label : child_r41.label, " ");
+        i0.ɵɵtextInterpolate2(" ", ctx_r41.locale == null ? null : ctx_r41.locale.CATEGORY_SUBTITLE, " ", ctx_r41.catNameStart(child_r38.label) ? "l'" + child_r38.label : child_r38.label, " ");
         i0.ɵɵadvance(4);
-        i0.ɵɵstyleProp("opacity", child_r41.forms && child_r41.forms.length > 0 ? 1 : 0);
-        i0.ɵɵproperty("disabled", !(child_r41.forms && child_r41.forms.length > 0));
+        i0.ɵɵstyleProp("opacity", child_r38.forms && child_r38.forms.length > 0 ? 1 : 0);
+        i0.ɵɵproperty("disabled", !(child_r38.forms && child_r38.forms.length > 0));
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", !child_r41.expandMore);
+        i0.ɵɵproperty("ngIf", !child_r38.expandMore);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", child_r41.expandMore);
+        i0.ɵɵproperty("ngIf", child_r38.expandMore);
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_div_3_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_div_3_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 67)(1, "button", 25);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_div_3_Template_button_click_1_listener($event) { return $event.stopPropagation(); });
-        i0.ɵɵelementStart(2, "mat-icon", 26);
+        i0.ɵɵelementStart(0, "div", 66)(1, "button", 24);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_div_3_Template_button_click_1_listener($event) { return $event.stopPropagation(); });
+        i0.ɵɵelementStart(2, "mat-icon", 25);
         i0.ɵɵtext(3, " drag_indicator ");
         i0.ɵɵelementEnd()()();
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_div_7_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_div_7_Template(rf, ctx) {
     if (rf & 1) {
-        const _r73 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 68)(1, "button", 69);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_div_7_Template_button_click_1_listener($event) { i0.ɵɵrestoreView(_r73); const k_r42 = i0.ɵɵnextContext(4).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r71 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r71.onAddNewField(i_r14, j_r21, k_r42)); });
+        const _r70 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 67)(1, "button", 68);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_div_7_Template_button_click_1_listener($event) { i0.ɵɵrestoreView(_r70); const k_r39 = i0.ɵɵnextContext(4).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r68 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r68.onAddNewField(i_r11, j_r18, k_r39)); });
         i0.ɵɵelementStart(2, "span");
         i0.ɵɵtext(3);
         i0.ɵɵelementEnd();
@@ -1765,156 +1748,156 @@ function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_cont
         i0.ɵɵelementEnd()()();
     }
     if (rf & 2) {
-        const ctx_r69 = i0.ɵɵnextContext(11);
+        const ctx_r66 = i0.ɵɵnextContext(11);
         i0.ɵɵadvance(3);
-        i0.ɵɵtextInterpolate(ctx_r69.locale == null ? null : ctx_r69.locale.ADD_FIELD);
+        i0.ɵɵtextInterpolate(ctx_r66.locale == null ? null : ctx_r66.locale.ADD_FIELD);
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template(rf, ctx) {
     if (rf & 1) {
-        const _r77 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 64)(1, "div", 57)(2, "div", 38);
-        i0.ɵɵtemplate(3, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_div_3_Template, 4, 0, "div", 65);
-        i0.ɵɵelementStart(4, "div", 40)(5, "lib-sub-category", 66);
-        i0.ɵɵlistener("onCheckValue", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckValue_5_listener($event) { i0.ɵɵrestoreView(_r77); const ctx_r76 = i0.ɵɵnextContext(10); return i0.ɵɵresetView(ctx_r76.onCheckValue($event)); })("onAddKeywordFromInput", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddKeywordFromInput_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r77); const l_r67 = restoredCtx.index; const k_r42 = i0.ɵɵnextContext(3).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r78 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r78.addKeywordFromInput($event.event, $event.prev, i_r14, j_r21, k_r42, l_r67)); })("onKeyPress", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onKeyPress_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r77); const l_r67 = restoredCtx.index; const k_r42 = i0.ɵɵnextContext(3).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r82 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r82.onKeyPress($event.event, i_r14, j_r21, k_r42, l_r67)); })("onAddNewField", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddNewField_5_listener() { i0.ɵɵrestoreView(_r77); const k_r42 = i0.ɵɵnextContext(3).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r86 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r86.onAddNewField(i_r14, j_r21, k_r42)); })("onRemoveField", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onRemoveField_5_listener() { const restoredCtx = i0.ɵɵrestoreView(_r77); const l_r67 = restoredCtx.index; const k_r42 = i0.ɵɵnextContext(3).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r90 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r90.onRemoveField(i_r14, j_r21, k_r42, l_r67)); })("onChangeType", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onChangeType_5_listener() { const restoredCtx = i0.ɵɵrestoreView(_r77); const c2_r66 = restoredCtx.$implicit; const l_r67 = restoredCtx.index; const k_r42 = i0.ɵɵnextContext(3).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r94 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r94.onChangeType(c2_r66.type, i_r14, j_r21, k_r42, l_r67)); })("onRemoveKeyword", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onRemoveKeyword_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r77); const l_r67 = restoredCtx.index; const k_r42 = i0.ɵɵnextContext(3).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r98 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r98.removeKeyword($event.event, i_r14, j_r21, k_r42, l_r67)); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddNewSubLevelField_5_listener() { const restoredCtx = i0.ɵɵrestoreView(_r77); const l_r67 = restoredCtx.index; const k_r42 = i0.ɵɵnextContext(3).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r102 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r102.onAddNewSubLevelField(i_r14, j_r21, k_r42, l_r67)); })("onExpendMore", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onExpendMore_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r77); const l_r67 = restoredCtx.index; const k_r42 = i0.ɵɵnextContext(3).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r106 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r106.onExpendMore($event, i_r14, j_r21, k_r42, l_r67)); })("onChangeLabel", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onChangeLabel_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r77); const l_r67 = restoredCtx.index; const k_r42 = i0.ɵɵnextContext(3).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r110 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r110.onChangeLabel($event, i_r14, j_r21, k_r42, l_r67)); })("onCheckedChip", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckedChip_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r77); const l_r67 = restoredCtx.index; const k_r42 = i0.ɵɵnextContext(3).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r114 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r114.onCheckedChip($event, i_r14, j_r21, k_r42, l_r67)); })("onDrop", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onDrop_5_listener($event) { i0.ɵɵrestoreView(_r77); const ctx_r118 = i0.ɵɵnextContext(10); return i0.ɵɵresetView(ctx_r118.drop($event)); })("onCheckedDefault", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckedDefault_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r77); const l_r67 = restoredCtx.index; const k_r42 = i0.ɵɵnextContext(3).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r119 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r119.onCheckedDefault($event, i_r14, j_r21, k_r42, l_r67)); })("onEditBlock", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onEditBlock_5_listener() { const restoredCtx = i0.ɵɵrestoreView(_r77); const c2_r66 = restoredCtx.$implicit; const l_r67 = restoredCtx.index; const k_r42 = i0.ɵɵnextContext(3).index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r123 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r123.onEditBlock(c2_r66, i_r14, j_r21, k_r42, l_r67)); });
-        i0.ɵɵelement(6, "div", 51);
+        const _r74 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 63)(1, "div", 56)(2, "div", 37);
+        i0.ɵɵtemplate(3, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_div_3_Template, 4, 0, "div", 64);
+        i0.ɵɵelementStart(4, "div", 39)(5, "lib-sub-category", 65);
+        i0.ɵɵlistener("onCheckValue", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckValue_5_listener($event) { i0.ɵɵrestoreView(_r74); const ctx_r73 = i0.ɵɵnextContext(10); return i0.ɵɵresetView(ctx_r73.onCheckValue($event)); })("onAddKeywordFromInput", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddKeywordFromInput_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r74); const l_r64 = restoredCtx.index; const k_r39 = i0.ɵɵnextContext(3).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r75 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r75.addKeywordFromInput($event.event, $event.prev, i_r11, j_r18, k_r39, l_r64)); })("onKeyPress", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onKeyPress_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r74); const l_r64 = restoredCtx.index; const k_r39 = i0.ɵɵnextContext(3).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r79 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r79.onKeyPress($event.event, i_r11, j_r18, k_r39, l_r64)); })("onAddNewField", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddNewField_5_listener() { i0.ɵɵrestoreView(_r74); const k_r39 = i0.ɵɵnextContext(3).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r83 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r83.onAddNewField(i_r11, j_r18, k_r39)); })("onRemoveField", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onRemoveField_5_listener() { const restoredCtx = i0.ɵɵrestoreView(_r74); const l_r64 = restoredCtx.index; const k_r39 = i0.ɵɵnextContext(3).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r87 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r87.onRemoveField(i_r11, j_r18, k_r39, l_r64)); })("onChangeType", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onChangeType_5_listener() { const restoredCtx = i0.ɵɵrestoreView(_r74); const c2_r63 = restoredCtx.$implicit; const l_r64 = restoredCtx.index; const k_r39 = i0.ɵɵnextContext(3).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r91 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r91.onChangeType(c2_r63.type, i_r11, j_r18, k_r39, l_r64)); })("onRemoveKeyword", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onRemoveKeyword_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r74); const l_r64 = restoredCtx.index; const k_r39 = i0.ɵɵnextContext(3).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r95 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r95.removeKeyword($event.event, i_r11, j_r18, k_r39, l_r64)); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onAddNewSubLevelField_5_listener() { const restoredCtx = i0.ɵɵrestoreView(_r74); const l_r64 = restoredCtx.index; const k_r39 = i0.ɵɵnextContext(3).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r99 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r99.onAddNewSubLevelField(i_r11, j_r18, k_r39, l_r64)); })("onExpendMore", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onExpendMore_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r74); const l_r64 = restoredCtx.index; const k_r39 = i0.ɵɵnextContext(3).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r103 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r103.onExpendMore($event, i_r11, j_r18, k_r39, l_r64)); })("onChangeLabel", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onChangeLabel_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r74); const l_r64 = restoredCtx.index; const k_r39 = i0.ɵɵnextContext(3).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r107 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r107.onChangeLabel($event, i_r11, j_r18, k_r39, l_r64)); })("onCheckedChip", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckedChip_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r74); const l_r64 = restoredCtx.index; const k_r39 = i0.ɵɵnextContext(3).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r111 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r111.onCheckedChip($event, i_r11, j_r18, k_r39, l_r64)); })("onDrop", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onDrop_5_listener($event) { i0.ɵɵrestoreView(_r74); const ctx_r115 = i0.ɵɵnextContext(10); return i0.ɵɵresetView(ctx_r115.drop($event)); })("onCheckedDefault", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onCheckedDefault_5_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r74); const l_r64 = restoredCtx.index; const k_r39 = i0.ɵɵnextContext(3).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r116 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r116.onCheckedDefault($event, i_r11, j_r18, k_r39, l_r64)); })("onEditBlock", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template_lib_sub_category_onEditBlock_5_listener() { const restoredCtx = i0.ɵɵrestoreView(_r74); const c2_r63 = restoredCtx.$implicit; const l_r64 = restoredCtx.index; const k_r39 = i0.ɵɵnextContext(3).index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r120 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r120.onEditBlock(c2_r63, i_r11, j_r18, k_r39, l_r64)); });
+        i0.ɵɵelement(6, "div", 50);
         i0.ɵɵelementEnd()()()();
-        i0.ɵɵtemplate(7, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_div_7_Template, 6, 1, "div", 60);
+        i0.ɵɵtemplate(7, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_div_7_Template, 6, 1, "div", 59);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const c2_r66 = ctx.$implicit;
-        const l_r67 = ctx.index;
-        const ctx_r127 = i0.ɵɵnextContext(3);
-        const child_r41 = ctx_r127.$implicit;
-        const k_r42 = ctx_r127.index;
-        const ctx_r65 = i0.ɵɵnextContext(7);
-        i0.ɵɵstyleProp("width", c2_r66.forms && c2_r66.forms.length > 0 ? "100%" : ctx_r65.fieldWidth(c2_r66.type, child_r41.forms.length, l_r67));
-        i0.ɵɵproperty("id", c2_r66.key);
+        const c2_r63 = ctx.$implicit;
+        const l_r64 = ctx.index;
+        const ctx_r124 = i0.ɵɵnextContext(3);
+        const child_r38 = ctx_r124.$implicit;
+        const k_r39 = ctx_r124.index;
+        const ctx_r62 = i0.ɵɵnextContext(7);
+        i0.ɵɵstyleProp("width", c2_r63.forms && c2_r63.forms.length > 0 ? "100%" : ctx_r62.fieldWidth(c2_r63.type, child_r38.forms.length, l_r64));
+        i0.ɵɵproperty("id", c2_r63.key);
         i0.ɵɵadvance(2);
-        i0.ɵɵclassMap(c2_r66.forms && c2_r66.forms.length > 0 ? "sub-category-forms" : "");
+        i0.ɵɵclassMap(c2_r63.forms && c2_r63.forms.length > 0 ? "sub-category-forms" : "");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", c2_r66.forms && c2_r66.forms.length > 0);
+        i0.ɵɵproperty("ngIf", c2_r63.forms && c2_r63.forms.length > 0);
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("field", c2_r66)("length", child_r41 == null ? null : child_r41.forms == null ? null : child_r41.forms.length)("blink", ctx_r65.checkBlink(l_r67, 3) === ctx_r65.newFieldIndex)("i", k_r42)("j", l_r67)("conditionData", ctx_r65.conditionData);
+        i0.ɵɵproperty("field", c2_r63)("length", child_r38 == null ? null : child_r38.forms == null ? null : child_r38.forms.length)("blink", ctx_r62.checkBlink(l_r64, 3) === ctx_r62.newFieldIndex)("i", k_r39)("j", l_r64)("conditionData", ctx_r62.conditionData);
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngIf", (child_r41 == null ? null : child_r41.forms == null ? null : child_r41.forms.length) - 1 === l_r67);
+        i0.ɵɵproperty("ngIf", (child_r38 == null ? null : child_r38.forms == null ? null : child_r38.forms.length) - 1 === l_r64);
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_Template(rf, ctx) {
     if (rf & 1) {
-        const _r129 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 53, 54);
-        i0.ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_Template_div_cdkDropListDropped_0_listener($event) { i0.ɵɵrestoreView(_r129); const ctx_r128 = i0.ɵɵnextContext(9); return i0.ɵɵresetView(ctx_r128.drop($event)); });
-        i0.ɵɵtemplate(2, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template, 8, 13, "div", 63);
+        const _r126 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 52, 53);
+        i0.ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_Template_div_cdkDropListDropped_0_listener($event) { i0.ɵɵrestoreView(_r126); const ctx_r125 = i0.ɵɵnextContext(9); return i0.ɵɵresetView(ctx_r125.drop($event)); });
+        i0.ɵɵtemplate(2, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_div_2_Template, 8, 13, "div", 62);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const child_r41 = i0.ɵɵnextContext(2).$implicit;
-        i0.ɵɵproperty("cdkDropListData", child_r41.forms);
+        const child_r38 = i0.ɵɵnextContext(2).$implicit;
+        i0.ɵɵproperty("cdkDropListData", child_r38.forms);
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngForOf", child_r41.forms);
+        i0.ɵɵproperty("ngForOf", child_r38.forms);
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 51);
-        i0.ɵɵtemplate(1, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_Template, 3, 2, "div", 52);
+        i0.ɵɵelementStart(0, "div", 50);
+        i0.ɵɵtemplate(1, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_div_1_Template, 3, 2, "div", 51);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const child_r41 = i0.ɵɵnextContext().$implicit;
+        const child_r38 = i0.ɵɵnextContext().$implicit;
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", child_r41.forms && child_r41.forms.length > 0);
+        i0.ɵɵproperty("ngIf", child_r38.forms && child_r38.forms.length > 0);
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_8_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_8_Template(rf, ctx) {
+    if (rf & 1) {
+        const _r131 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 67)(1, "button", 68);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_8_Template_button_click_1_listener($event) { i0.ɵɵrestoreView(_r131); const j_r18 = i0.ɵɵnextContext(4).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r129 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r129.onAddNewField(i_r11, j_r18)); });
+        i0.ɵɵelementStart(2, "span");
+        i0.ɵɵtext(3);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(4, "mat-icon");
+        i0.ɵɵtext(5, "add");
+        i0.ɵɵelementEnd()()();
+    }
+    if (rf & 2) {
+        const ctx_r43 = i0.ɵɵnextContext(8);
+        i0.ɵɵadvance(3);
+        i0.ɵɵtextInterpolate(ctx_r43.locale == null ? null : ctx_r43.locale.ADD_FIELD);
+    }
+}
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template(rf, ctx) {
     if (rf & 1) {
         const _r134 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 68)(1, "button", 69);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_8_Template_button_click_1_listener($event) { i0.ɵɵrestoreView(_r134); const j_r21 = i0.ɵɵnextContext(4).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r132 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r132.onAddNewField(i_r14, j_r21)); });
-        i0.ɵɵelementStart(2, "span");
-        i0.ɵɵtext(3);
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(4, "mat-icon");
-        i0.ɵɵtext(5, "add");
-        i0.ɵɵelementEnd()()();
-    }
-    if (rf & 2) {
-        const ctx_r46 = i0.ɵɵnextContext(8);
-        i0.ɵɵadvance(3);
-        i0.ɵɵtextInterpolate(ctx_r46.locale == null ? null : ctx_r46.locale.ADD_FIELD);
-    }
-}
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r137 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 56)(1, "div", 57)(2, "div", 38);
-        i0.ɵɵtemplate(3, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_3_Template, 4, 0, "div", 58);
-        i0.ɵɵelementStart(4, "div", 40);
-        i0.ɵɵtemplate(5, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_Template, 12, 12, "div", 41);
-        i0.ɵɵelementStart(6, "lib-sub-category", 59);
-        i0.ɵɵlistener("onCheckValue", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onCheckValue_6_listener($event) { i0.ɵɵrestoreView(_r137); const ctx_r136 = i0.ɵɵnextContext(7); return i0.ɵɵresetView(ctx_r136.onCheckValue($event)); })("onAddKeywordFromInput", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onAddKeywordFromInput_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r137); const k_r42 = restoredCtx.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r138 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r138.addKeywordFromInput($event.event, $event.prev, i_r14, j_r21, k_r42)); })("onKeyPress", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onKeyPress_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r137); const k_r42 = restoredCtx.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r141 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r141.onKeyPress($event.event, i_r14, j_r21, k_r42)); })("onAddNewField", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onAddNewField_6_listener() { i0.ɵɵrestoreView(_r137); const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r144 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r144.onAddNewField(i_r14, j_r21)); })("onRemoveField", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onRemoveField_6_listener() { const restoredCtx = i0.ɵɵrestoreView(_r137); const k_r42 = restoredCtx.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r147 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r147.onRemoveField(i_r14, j_r21, k_r42)); })("onChangeType", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onChangeType_6_listener() { const restoredCtx = i0.ɵɵrestoreView(_r137); const child_r41 = restoredCtx.$implicit; const k_r42 = restoredCtx.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r150 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r150.onChangeType(child_r41.type, i_r14, j_r21, k_r42)); })("onRemoveKeyword", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onRemoveKeyword_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r137); const k_r42 = restoredCtx.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r153 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r153.removeKeyword($event.event, i_r14, j_r21, k_r42)); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onAddNewSubLevelField_6_listener() { const restoredCtx = i0.ɵɵrestoreView(_r137); const k_r42 = restoredCtx.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r156 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r156.onAddNewSubLevelField(i_r14, j_r21, k_r42)); })("onExpendMore", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onExpendMore_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r137); const k_r42 = restoredCtx.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r159 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r159.onExpendMore($event, i_r14, j_r21, k_r42)); })("onChangeLabel", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onChangeLabel_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r137); const k_r42 = restoredCtx.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r162 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r162.onChangeLabel($event, i_r14, j_r21, k_r42)); })("onCheckedChip", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onCheckedChip_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r137); const k_r42 = restoredCtx.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r165 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r165.onCheckedChip($event, i_r14, j_r21, k_r42)); })("onDrop", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onDrop_6_listener($event) { i0.ɵɵrestoreView(_r137); const ctx_r168 = i0.ɵɵnextContext(7); return i0.ɵɵresetView(ctx_r168.drop($event)); })("onCheckedDefault", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onCheckedDefault_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r137); const k_r42 = restoredCtx.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r169 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r169.onCheckedDefault($event, i_r14, j_r21, k_r42)); })("onEditBlock", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onEditBlock_6_listener() { const restoredCtx = i0.ɵɵrestoreView(_r137); const child_r41 = restoredCtx.$implicit; const k_r42 = restoredCtx.index; const j_r21 = i0.ɵɵnextContext(3).index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r172 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r172.onEditBlock(child_r41, i_r14, j_r21, k_r42)); });
-        i0.ɵɵtemplate(7, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_Template, 2, 1, "div", 43);
+        i0.ɵɵelementStart(0, "div", 55)(1, "div", 56)(2, "div", 37);
+        i0.ɵɵtemplate(3, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_3_Template, 4, 0, "div", 57);
+        i0.ɵɵelementStart(4, "div", 39);
+        i0.ɵɵtemplate(5, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_5_Template, 12, 12, "div", 40);
+        i0.ɵɵelementStart(6, "lib-sub-category", 58);
+        i0.ɵɵlistener("onCheckValue", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onCheckValue_6_listener($event) { i0.ɵɵrestoreView(_r134); const ctx_r133 = i0.ɵɵnextContext(7); return i0.ɵɵresetView(ctx_r133.onCheckValue($event)); })("onAddKeywordFromInput", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onAddKeywordFromInput_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r134); const k_r39 = restoredCtx.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r135 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r135.addKeywordFromInput($event.event, $event.prev, i_r11, j_r18, k_r39)); })("onKeyPress", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onKeyPress_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r134); const k_r39 = restoredCtx.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r138 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r138.onKeyPress($event.event, i_r11, j_r18, k_r39)); })("onAddNewField", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onAddNewField_6_listener() { i0.ɵɵrestoreView(_r134); const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r141 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r141.onAddNewField(i_r11, j_r18)); })("onRemoveField", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onRemoveField_6_listener() { const restoredCtx = i0.ɵɵrestoreView(_r134); const k_r39 = restoredCtx.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r144 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r144.onRemoveField(i_r11, j_r18, k_r39)); })("onChangeType", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onChangeType_6_listener() { const restoredCtx = i0.ɵɵrestoreView(_r134); const child_r38 = restoredCtx.$implicit; const k_r39 = restoredCtx.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r147 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r147.onChangeType(child_r38.type, i_r11, j_r18, k_r39)); })("onRemoveKeyword", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onRemoveKeyword_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r134); const k_r39 = restoredCtx.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r150 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r150.removeKeyword($event.event, i_r11, j_r18, k_r39)); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onAddNewSubLevelField_6_listener() { const restoredCtx = i0.ɵɵrestoreView(_r134); const k_r39 = restoredCtx.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r153 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r153.onAddNewSubLevelField(i_r11, j_r18, k_r39)); })("onExpendMore", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onExpendMore_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r134); const k_r39 = restoredCtx.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r156 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r156.onExpendMore($event, i_r11, j_r18, k_r39)); })("onChangeLabel", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onChangeLabel_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r134); const k_r39 = restoredCtx.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r159 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r159.onChangeLabel($event, i_r11, j_r18, k_r39)); })("onCheckedChip", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onCheckedChip_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r134); const k_r39 = restoredCtx.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r162 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r162.onCheckedChip($event, i_r11, j_r18, k_r39)); })("onDrop", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onDrop_6_listener($event) { i0.ɵɵrestoreView(_r134); const ctx_r165 = i0.ɵɵnextContext(7); return i0.ɵɵresetView(ctx_r165.drop($event)); })("onCheckedDefault", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onCheckedDefault_6_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r134); const k_r39 = restoredCtx.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r166 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r166.onCheckedDefault($event, i_r11, j_r18, k_r39)); })("onEditBlock", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template_lib_sub_category_onEditBlock_6_listener() { const restoredCtx = i0.ɵɵrestoreView(_r134); const child_r38 = restoredCtx.$implicit; const k_r39 = restoredCtx.index; const j_r18 = i0.ɵɵnextContext(3).index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r169 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r169.onEditBlock(child_r38, i_r11, j_r18, k_r39)); });
+        i0.ɵɵtemplate(7, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_7_Template, 2, 1, "div", 42);
         i0.ɵɵelementEnd()()()();
-        i0.ɵɵtemplate(8, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_8_Template, 6, 1, "div", 60);
+        i0.ɵɵtemplate(8, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_div_8_Template, 6, 1, "div", 59);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const child_r41 = ctx.$implicit;
-        const k_r42 = ctx.index;
-        const ctx_r175 = i0.ɵɵnextContext(3);
-        const field_r20 = ctx_r175.$implicit;
-        const j_r21 = ctx_r175.index;
-        const ctx_r40 = i0.ɵɵnextContext(4);
-        i0.ɵɵstyleProp("width", child_r41.forms && child_r41.forms.length > 0 ? "100%" : ctx_r40.fieldWidth(child_r41.type, field_r20.forms.length, k_r42));
-        i0.ɵɵproperty("id", child_r41.key);
+        const child_r38 = ctx.$implicit;
+        const k_r39 = ctx.index;
+        const ctx_r172 = i0.ɵɵnextContext(3);
+        const field_r17 = ctx_r172.$implicit;
+        const j_r18 = ctx_r172.index;
+        const ctx_r37 = i0.ɵɵnextContext(4);
+        i0.ɵɵstyleProp("width", child_r38.forms && child_r38.forms.length > 0 ? "100%" : ctx_r37.fieldWidth(child_r38.type, field_r17.forms.length, k_r39));
+        i0.ɵɵproperty("id", child_r38.key);
         i0.ɵɵadvance(2);
-        i0.ɵɵclassMap(child_r41.forms && child_r41.forms.length > 0 ? "sub-category-forms" : "");
+        i0.ɵɵclassMap(child_r38.forms && child_r38.forms.length > 0 ? "sub-category-forms" : "");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", child_r41.forms && child_r41.forms.length > 0);
+        i0.ɵɵproperty("ngIf", child_r38.forms && child_r38.forms.length > 0);
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngIf", child_r41.forms && child_r41.forms.length > 0);
+        i0.ɵɵproperty("ngIf", child_r38.forms && child_r38.forms.length > 0);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("field", child_r41)("length", field_r20 == null ? null : field_r20.forms == null ? null : field_r20.forms.length)("i", j_r21)("blink", ctx_r40.checkBlink(k_r42, 2) === ctx_r40.newFieldIndex)("j", k_r42)("conditionData", ctx_r40.conditionData);
+        i0.ɵɵproperty("field", child_r38)("length", field_r17 == null ? null : field_r17.forms == null ? null : field_r17.forms.length)("i", j_r18)("blink", ctx_r37.checkBlink(k_r39, 2) === ctx_r37.newFieldIndex)("j", k_r39)("conditionData", ctx_r37.conditionData);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", child_r41.expandMore);
+        i0.ɵɵproperty("ngIf", child_r38.expandMore);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", (field_r20 == null ? null : field_r20.forms == null ? null : field_r20.forms.length) - 1 === k_r42);
+        i0.ɵɵproperty("ngIf", (field_r17 == null ? null : field_r17.forms == null ? null : field_r17.forms.length) - 1 === k_r39);
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_Template(rf, ctx) {
     if (rf & 1) {
-        const _r177 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 53, 54);
-        i0.ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_Template_div_cdkDropListDropped_0_listener($event) { i0.ɵɵrestoreView(_r177); const ctx_r176 = i0.ɵɵnextContext(6); return i0.ɵɵresetView(ctx_r176.drop($event)); });
-        i0.ɵɵtemplate(2, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template, 9, 15, "div", 55);
+        const _r174 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 52, 53);
+        i0.ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_Template_div_cdkDropListDropped_0_listener($event) { i0.ɵɵrestoreView(_r174); const ctx_r173 = i0.ɵɵnextContext(6); return i0.ɵɵresetView(ctx_r173.drop($event)); });
+        i0.ɵɵtemplate(2, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_div_2_Template, 9, 15, "div", 54);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const field_r20 = i0.ɵɵnextContext(2).$implicit;
-        i0.ɵɵproperty("cdkDropListData", field_r20.forms);
+        const field_r17 = i0.ɵɵnextContext(2).$implicit;
+        i0.ɵɵproperty("cdkDropListData", field_r17.forms);
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngForOf", field_r20.forms);
+        i0.ɵɵproperty("ngForOf", field_r17.forms);
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 51);
-        i0.ɵɵtemplate(1, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_div_1_Template, 3, 2, "div", 52);
+        i0.ɵɵelementStart(0, "div", 50);
+        i0.ɵɵtemplate(1, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_div_1_Template, 3, 2, "div", 51);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const field_r20 = i0.ɵɵnextContext().$implicit;
+        const field_r17 = i0.ɵɵnextContext().$implicit;
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", field_r20.forms);
+        i0.ɵɵproperty("ngIf", field_r17.forms);
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_10_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_10_Template(rf, ctx) {
     if (rf & 1) {
-        const _r182 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 70)(1, "button", 71);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_10_Template_button_click_1_listener($event) { i0.ɵɵrestoreView(_r182); const i_r14 = i0.ɵɵnextContext(4).index; const ctx_r180 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r180.onAddNewField(i_r14)); });
+        const _r179 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 69)(1, "button", 70);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_10_Template_button_click_1_listener($event) { i0.ɵɵrestoreView(_r179); const i_r11 = i0.ɵɵnextContext(4).index; const ctx_r177 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r177.onAddNewField(i_r11)); });
         i0.ɵɵelementStart(2, "span");
         i0.ɵɵtext(3);
         i0.ɵɵelementEnd();
@@ -1923,479 +1906,479 @@ function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_cont
         i0.ɵɵelementEnd()()();
     }
     if (rf & 2) {
-        const j_r21 = i0.ɵɵnextContext().index;
-        const category_r13 = i0.ɵɵnextContext(3).$implicit;
-        const ctx_r26 = i0.ɵɵnextContext();
+        const j_r18 = i0.ɵɵnextContext().index;
+        const category_r10 = i0.ɵɵnextContext(3).$implicit;
+        const ctx_r23 = i0.ɵɵnextContext();
         i0.ɵɵadvance(1);
-        i0.ɵɵstyleProp("opacity", (category_r13 == null ? null : category_r13.forms == null ? null : category_r13.forms.length) - 1 === j_r21 ? 1 : 0);
-        i0.ɵɵproperty("disabled", (category_r13 == null ? null : category_r13.forms == null ? null : category_r13.forms.length) - 1 !== j_r21);
+        i0.ɵɵstyleProp("opacity", (category_r10 == null ? null : category_r10.forms == null ? null : category_r10.forms.length) - 1 === j_r18 ? 1 : 0);
+        i0.ɵɵproperty("disabled", (category_r10 == null ? null : category_r10.forms == null ? null : category_r10.forms.length) - 1 !== j_r18);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(ctx_r26.locale == null ? null : ctx_r26.locale.ADD_FIELD);
+        i0.ɵɵtextInterpolate(ctx_r23.locale == null ? null : ctx_r23.locale.ADD_FIELD);
     }
 }
 const _c1$1 = function (a0, a1, a2) { return { field: a0, index: a1, category: a2 }; };
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template(rf, ctx) {
     if (rf & 1) {
-        const _r186 = i0.ɵɵgetCurrentView();
+        const _r183 = i0.ɵɵgetCurrentView();
         i0.ɵɵelementContainerStart(0);
-        i0.ɵɵelementStart(1, "div", 35);
-        i0.ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_div_cdkDropListDropped_1_listener($event) { i0.ɵɵrestoreView(_r186); const ctx_r185 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r185.dropField($event)); });
-        i0.ɵɵelementStart(2, "div", 36);
-        i0.ɵɵtemplate(3, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_3_Template, 1, 0, "div", 37);
-        i0.ɵɵelementStart(4, "div", 38);
-        i0.ɵɵtemplate(5, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_5_Template, 4, 0, "div", 39);
-        i0.ɵɵelementStart(6, "div", 40);
-        i0.ɵɵtemplate(7, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_7_Template, 13, 8, "div", 41);
-        i0.ɵɵelementStart(8, "lib-sub-category", 42);
-        i0.ɵɵlistener("onCheckValue", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onCheckValue_8_listener($event) { i0.ɵɵrestoreView(_r186); const ctx_r187 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r187.onCheckValue($event)); })("onAddKeywordFromInput", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onAddKeywordFromInput_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r186); const j_r21 = restoredCtx.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r188 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r188.addKeywordFromInput($event.event, $event.prev, i_r14, j_r21)); })("onKeyPress", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onKeyPress_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r186); const j_r21 = restoredCtx.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r190 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r190.onKeyPress($event.event, i_r14, j_r21)); })("onAddNewField", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onAddNewField_8_listener() { i0.ɵɵrestoreView(_r186); const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r192 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r192.onAddNewField(i_r14)); })("onRemoveField", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onRemoveField_8_listener() { const restoredCtx = i0.ɵɵrestoreView(_r186); const j_r21 = restoredCtx.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r194 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r194.onRemoveField(i_r14, j_r21)); })("onChangeType", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onChangeType_8_listener() { const restoredCtx = i0.ɵɵrestoreView(_r186); const field_r20 = restoredCtx.$implicit; const j_r21 = restoredCtx.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r196 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r196.onChangeType(field_r20.type, i_r14, j_r21)); })("onRemoveKeyword", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onRemoveKeyword_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r186); const j_r21 = restoredCtx.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r198 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r198.removeKeyword($event.event, i_r14, j_r21)); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onAddNewSubLevelField_8_listener() { const restoredCtx = i0.ɵɵrestoreView(_r186); const j_r21 = restoredCtx.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r200 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r200.onAddNewSubLevelField(i_r14, j_r21)); })("onExpendMore", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onExpendMore_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r186); const j_r21 = restoredCtx.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r202 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r202.onExpendMore($event, i_r14, j_r21)); })("onChangeLabel", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onChangeLabel_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r186); const j_r21 = restoredCtx.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r204 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r204.onChangeLabel($event, i_r14, j_r21)); })("onCheckedChip", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onCheckedChip_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r186); const j_r21 = restoredCtx.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r206 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r206.onCheckedChip($event, i_r14, j_r21)); })("onDrop", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onDrop_8_listener($event) { i0.ɵɵrestoreView(_r186); const ctx_r208 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r208.drop($event)); })("onCheckedDefault", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onCheckedDefault_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r186); const j_r21 = restoredCtx.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r209 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r209.onCheckedDefault($event, i_r14, j_r21)); })("onEditBlock", function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onEditBlock_8_listener() { const restoredCtx = i0.ɵɵrestoreView(_r186); const field_r20 = restoredCtx.$implicit; const j_r21 = restoredCtx.index; const i_r14 = i0.ɵɵnextContext(3).index; const ctx_r211 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r211.onEditBlock(field_r20, i_r14, j_r21)); });
-        i0.ɵɵtemplate(9, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_9_Template, 2, 1, "div", 43);
+        i0.ɵɵelementStart(1, "div", 34);
+        i0.ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_div_cdkDropListDropped_1_listener($event) { i0.ɵɵrestoreView(_r183); const ctx_r182 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r182.dropField($event)); });
+        i0.ɵɵelementStart(2, "div", 35);
+        i0.ɵɵtemplate(3, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_3_Template, 1, 0, "div", 36);
+        i0.ɵɵelementStart(4, "div", 37);
+        i0.ɵɵtemplate(5, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_5_Template, 4, 0, "div", 38);
+        i0.ɵɵelementStart(6, "div", 39);
+        i0.ɵɵtemplate(7, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_7_Template, 13, 8, "div", 40);
+        i0.ɵɵelementStart(8, "lib-sub-category", 41);
+        i0.ɵɵlistener("onCheckValue", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onCheckValue_8_listener($event) { i0.ɵɵrestoreView(_r183); const ctx_r184 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r184.onCheckValue($event)); })("onAddKeywordFromInput", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onAddKeywordFromInput_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r183); const j_r18 = restoredCtx.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r185 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r185.addKeywordFromInput($event.event, $event.prev, i_r11, j_r18)); })("onKeyPress", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onKeyPress_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r183); const j_r18 = restoredCtx.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r187 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r187.onKeyPress($event.event, i_r11, j_r18)); })("onAddNewField", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onAddNewField_8_listener() { i0.ɵɵrestoreView(_r183); const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r189 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r189.onAddNewField(i_r11)); })("onRemoveField", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onRemoveField_8_listener() { const restoredCtx = i0.ɵɵrestoreView(_r183); const j_r18 = restoredCtx.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r191 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r191.onRemoveField(i_r11, j_r18)); })("onChangeType", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onChangeType_8_listener() { const restoredCtx = i0.ɵɵrestoreView(_r183); const field_r17 = restoredCtx.$implicit; const j_r18 = restoredCtx.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r193 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r193.onChangeType(field_r17.type, i_r11, j_r18)); })("onRemoveKeyword", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onRemoveKeyword_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r183); const j_r18 = restoredCtx.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r195 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r195.removeKeyword($event.event, i_r11, j_r18)); })("onAddNewSubLevelField", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onAddNewSubLevelField_8_listener() { const restoredCtx = i0.ɵɵrestoreView(_r183); const j_r18 = restoredCtx.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r197 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r197.onAddNewSubLevelField(i_r11, j_r18)); })("onExpendMore", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onExpendMore_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r183); const j_r18 = restoredCtx.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r199 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r199.onExpendMore($event, i_r11, j_r18)); })("onChangeLabel", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onChangeLabel_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r183); const j_r18 = restoredCtx.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r201 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r201.onChangeLabel($event, i_r11, j_r18)); })("onCheckedChip", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onCheckedChip_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r183); const j_r18 = restoredCtx.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r203 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r203.onCheckedChip($event, i_r11, j_r18)); })("onDrop", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onDrop_8_listener($event) { i0.ɵɵrestoreView(_r183); const ctx_r205 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r205.drop($event)); })("onCheckedDefault", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onCheckedDefault_8_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r183); const j_r18 = restoredCtx.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r206 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r206.onCheckedDefault($event, i_r11, j_r18)); })("onEditBlock", function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template_lib_sub_category_onEditBlock_8_listener() { const restoredCtx = i0.ɵɵrestoreView(_r183); const field_r17 = restoredCtx.$implicit; const j_r18 = restoredCtx.index; const i_r11 = i0.ɵɵnextContext(3).index; const ctx_r208 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r208.onEditBlock(field_r17, i_r11, j_r18)); });
+        i0.ɵɵtemplate(9, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_9_Template, 2, 1, "div", 42);
         i0.ɵɵelementEnd()()()();
-        i0.ɵɵtemplate(10, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_div_10_Template, 6, 4, "div", 44);
+        i0.ɵɵtemplate(10, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_div_10_Template, 6, 4, "div", 43);
         i0.ɵɵelementEnd();
         i0.ɵɵelementContainerEnd();
     }
     if (rf & 2) {
-        const field_r20 = ctx.$implicit;
-        const j_r21 = ctx.index;
-        const ctx_r213 = i0.ɵɵnextContext(3);
-        const category_r13 = ctx_r213.$implicit;
-        const i_r14 = ctx_r213.index;
-        const ctx_r19 = i0.ɵɵnextContext();
+        const field_r17 = ctx.$implicit;
+        const j_r18 = ctx.index;
+        const ctx_r210 = i0.ɵɵnextContext(3);
+        const category_r10 = ctx_r210.$implicit;
+        const i_r11 = ctx_r210.index;
+        const ctx_r16 = i0.ɵɵnextContext();
         i0.ɵɵadvance(1);
-        i0.ɵɵstyleProp("width", field_r20.forms && field_r20.forms.length > 0 ? "100%" : ctx_r19.fieldWidth(field_r20.type, category_r13.forms.length, j_r21));
-        i0.ɵɵproperty("id", field_r20.key)("cdkDropListData", i0.ɵɵpureFunction3(16, _c1$1, field_r20, j_r21, category_r13));
+        i0.ɵɵstyleProp("width", field_r17.forms && field_r17.forms.length > 0 ? "100%" : ctx_r16.fieldWidth(field_r17.type, category_r10.forms.length, j_r18));
+        i0.ɵɵproperty("id", field_r17.key)("cdkDropListData", i0.ɵɵpureFunction3(16, _c1$1, field_r17, j_r18, category_r10));
         i0.ɵɵadvance(3);
-        i0.ɵɵclassMap(field_r20.forms && field_r20.forms.length > 0 ? "sub-category-forms" : "");
+        i0.ɵɵclassMap(field_r17.forms && field_r17.forms.length > 0 ? "sub-category-forms" : "");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", field_r20.forms);
+        i0.ɵɵproperty("ngIf", field_r17.forms);
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngIf", field_r20.forms);
+        i0.ɵɵproperty("ngIf", field_r17.forms);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("field", field_r20)("length", category_r13 == null ? null : category_r13.forms == null ? null : category_r13.forms.length)("i", i_r14)("j", j_r21)("blink", ctx_r19.checkBlink(j_r21, 1) === ctx_r19.newFieldIndex)("conditionData", ctx_r19.conditionData);
+        i0.ɵɵproperty("field", field_r17)("length", category_r10 == null ? null : category_r10.forms == null ? null : category_r10.forms.length)("i", i_r11)("j", j_r18)("blink", ctx_r16.checkBlink(j_r18, 1) === ctx_r16.newFieldIndex)("conditionData", ctx_r16.conditionData);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", field_r20.expandMore);
+        i0.ɵɵproperty("ngIf", field_r17.expandMore);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", (category_r13 == null ? null : category_r13.forms == null ? null : category_r13.forms.length) - 1 === j_r21);
+        i0.ɵɵproperty("ngIf", (category_r10 == null ? null : category_r10.forms == null ? null : category_r10.forms.length) - 1 === j_r18);
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_ng_container_1_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_ng_container_1_Template(rf, ctx) {
     if (rf & 1) {
         i0.ɵɵelementContainerStart(0);
-        i0.ɵɵtemplate(1, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_ng_container_1_Template, 11, 20, "ng-container", 34);
+        i0.ɵɵtemplate(1, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_ng_container_1_Template, 11, 20, "ng-container", 33);
         i0.ɵɵelementContainerEnd();
     }
     if (rf & 2) {
-        const category_r13 = i0.ɵɵnextContext(2).$implicit;
+        const category_r10 = i0.ɵɵnextContext(2).$implicit;
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", category_r13.forms);
+        i0.ɵɵproperty("ngForOf", category_r10.forms);
     }
 }
-function TemplateProfileCreateComponent_section_30_div_15_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_div_15_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 33);
-        i0.ɵɵtemplate(1, TemplateProfileCreateComponent_section_30_div_15_ng_container_1_Template, 2, 1, "ng-container", 6);
+        i0.ɵɵelementStart(0, "div", 32);
+        i0.ɵɵtemplate(1, TemplateProfileCreateComponent_section_32_div_15_ng_container_1_Template, 2, 1, "ng-container", 5);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const category_r13 = i0.ɵɵnextContext().$implicit;
+        const category_r10 = i0.ɵɵnextContext().$implicit;
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", category_r13.expandMore);
+        i0.ɵɵproperty("ngIf", category_r10.expandMore);
     }
 }
-function TemplateProfileCreateComponent_section_30_Template(rf, ctx) {
+function TemplateProfileCreateComponent_section_32_Template(rf, ctx) {
     if (rf & 1) {
-        const _r217 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "section", 23);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_Template_section_click_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r217); const category_r13 = restoredCtx.$implicit; const i_r14 = restoredCtx.index; const ctx_r216 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r216.scrollTo(category_r13, i_r14)); });
-        i0.ɵɵelementStart(1, "div", 24)(2, "button", 25);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_Template_button_click_2_listener($event) { $event.preventDefault(); return $event.stopPropagation(); });
-        i0.ɵɵelementStart(3, "mat-icon", 26);
+        const _r214 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "section", 22);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_Template_section_click_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r214); const category_r10 = restoredCtx.$implicit; const i_r11 = restoredCtx.index; const ctx_r213 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r213.scrollTo(category_r10, i_r11)); });
+        i0.ɵɵelementStart(1, "div", 23)(2, "button", 24);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_Template_button_click_2_listener($event) { $event.preventDefault(); return $event.stopPropagation(); });
+        i0.ɵɵelementStart(3, "mat-icon", 25);
         i0.ɵɵtext(4, "drag_indicator");
         i0.ɵɵelementEnd()()();
-        i0.ɵɵelementStart(5, "div", 27)(6, "div", 28)(7, "div")(8, "p", 29);
+        i0.ɵɵelementStart(5, "div", 26)(6, "div", 27)(7, "div")(8, "p", 28);
         i0.ɵɵtext(9);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(10, "p", 30);
+        i0.ɵɵelementStart(10, "p", 29);
         i0.ɵɵtext(11);
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(12, "button", 31);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_30_Template_button_click_12_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r217); const category_r13 = restoredCtx.$implicit; const i_r14 = restoredCtx.index; const ctx_r219 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r219.onExpendMore({ event: $event, field: category_r13 }, i_r14)); });
-        i0.ɵɵtemplate(13, TemplateProfileCreateComponent_section_30_mat_icon_13_Template, 2, 0, "mat-icon", 6);
-        i0.ɵɵtemplate(14, TemplateProfileCreateComponent_section_30_mat_icon_14_Template, 2, 0, "mat-icon", 6);
+        i0.ɵɵelementStart(12, "button", 30);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_section_32_Template_button_click_12_listener($event) { const restoredCtx = i0.ɵɵrestoreView(_r214); const category_r10 = restoredCtx.$implicit; const i_r11 = restoredCtx.index; const ctx_r216 = i0.ɵɵnextContext(); $event.stopPropagation(); return i0.ɵɵresetView(ctx_r216.onExpendMore({ event: $event, field: category_r10 }, i_r11)); });
+        i0.ɵɵtemplate(13, TemplateProfileCreateComponent_section_32_mat_icon_13_Template, 2, 0, "mat-icon", 5);
+        i0.ɵɵtemplate(14, TemplateProfileCreateComponent_section_32_mat_icon_14_Template, 2, 0, "mat-icon", 5);
         i0.ɵɵelementEnd()();
-        i0.ɵɵtemplate(15, TemplateProfileCreateComponent_section_30_div_15_Template, 2, 1, "div", 32);
+        i0.ɵɵtemplate(15, TemplateProfileCreateComponent_section_32_div_15_Template, 2, 1, "div", 31);
         i0.ɵɵelementEnd()();
     }
     if (rf & 2) {
-        const category_r13 = ctx.$implicit;
-        const i_r14 = ctx.index;
+        const category_r10 = ctx.$implicit;
+        const i_r11 = ctx.index;
         const ctx_r3 = i0.ɵɵnextContext();
-        i0.ɵɵclassMap(ctx_r3.editIndex === i_r14 ? "active" : "");
-        i0.ɵɵstyleProp("padding-bottom", category_r13.expandMore ? "50px" : "10px");
-        i0.ɵɵproperty("id", category_r13.name);
+        i0.ɵɵclassMap(ctx_r3.editIndex === i_r11 ? "active" : "");
+        i0.ɵɵstyleProp("padding-bottom", category_r10.expandMore ? "50px" : "10px");
+        i0.ɵɵproperty("id", category_r10.name);
         i0.ɵɵadvance(9);
-        i0.ɵɵtextInterpolate1(" ", category_r13.name, " ");
+        i0.ɵɵtextInterpolate1(" ", category_r10.name, " ");
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate2(" ", ctx_r3.locale == null ? null : ctx_r3.locale.CATEGORY_SUBTITLE, " ", ctx_r3.catNameStart(category_r13.name) ? "l'" + category_r13.name : category_r13.name, " ");
+        i0.ɵɵtextInterpolate2(" ", ctx_r3.locale == null ? null : ctx_r3.locale.CATEGORY_SUBTITLE, " ", ctx_r3.catNameStart(category_r10.name) ? "l'" + category_r10.name : category_r10.name, " ");
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngIf", !category_r13.expandMore);
+        i0.ɵɵproperty("ngIf", !category_r10.expandMore);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", category_r13.expandMore);
+        i0.ɵɵproperty("ngIf", category_r10.expandMore);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", category_r13.forms);
+        i0.ɵɵproperty("ngIf", category_r10.forms);
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_div_6_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_div_6_Template(rf, ctx) {
     if (rf & 1) {
-        const _r230 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 105)(1, "mat-slide-toggle", 106);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_div_6_Template_mat_slide_toggle_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r230); const ctx_r229 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r229.currentEditBlock.defaultValue = $event); });
+        const _r227 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 104)(1, "mat-slide-toggle", 105);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_div_6_Template_mat_slide_toggle_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r227); const ctx_r226 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r226.currentEditBlock.defaultValue = $event); });
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(2, "span", 107);
+        i0.ɵɵelementStart(2, "span", 106);
         i0.ɵɵtext(3);
+        i0.ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+        const ctx_r218 = i0.ɵɵnextContext(3);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngModel", ctx_r218.currentEditBlock.defaultValue)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$3));
+        i0.ɵɵadvance(2);
+        i0.ɵɵtextInterpolate(ctx_r218.locale == null ? null : ctx_r218.locale.DEFAULT_VALUE);
+    }
+}
+function TemplateProfileCreateComponent_div_41_ng_container_32_div_7_Template(rf, ctx) {
+    if (rf & 1) {
+        const _r229 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 107)(1, "mat-checkbox", 108);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_div_7_Template_mat_checkbox_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r229); const ctx_r228 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r228.currentEditBlock.value = $event); });
+        i0.ɵɵtext(2);
+        i0.ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+        const ctx_r219 = i0.ɵɵnextContext(3);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngModel", ctx_r219.currentEditBlock.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$3));
+        i0.ɵɵadvance(1);
+        i0.ɵɵtextInterpolate1(" ", ctx_r219.locale == null ? null : ctx_r219.locale.DEFAULT_CHECKED, " ");
+    }
+}
+function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_8_mat_chip_6_Template(rf, ctx) {
+    if (rf & 1) {
+        const _r236 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-chip", 115);
+        i0.ɵɵlistener("dblclick", function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_8_mat_chip_6_Template_mat_chip_dblclick_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r236); const option_r234 = restoredCtx.$implicit; const ctx_r235 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r235.onCheckedChipBlock(option_r234, ctx_r235.currentEditBlock)); })("click", function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_8_mat_chip_6_Template_mat_chip_click_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r236); const option_r234 = restoredCtx.$implicit; const ctx_r237 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r237.onEditChip(option_r234)); })("removed", function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_8_mat_chip_6_Template_mat_chip_removed_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r236); const option_r234 = restoredCtx.$implicit; const ctx_r238 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r238.removeKeywordBlock(option_r234, ctx_r238.currentEditBlock)); });
+        i0.ɵɵtext(1);
+        i0.ɵɵelementStart(2, "mat-icon", 116);
+        i0.ɵɵtext(3);
+        i0.ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+        const option_r234 = ctx.$implicit;
+        const ctx_r232 = i0.ɵɵnextContext(4);
+        i0.ɵɵproperty("selected", option_r234.checked)("value", option_r234.value)("removable", true);
+        i0.ɵɵadvance(1);
+        i0.ɵɵtextInterpolate1(" ", option_r234.value, " ");
+        i0.ɵɵadvance(2);
+        i0.ɵɵtextInterpolate(ctx_r232.locale == null ? null : ctx_r232.locale.CANCEL);
+    }
+}
+function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_8_Template(rf, ctx) {
+    if (rf & 1) {
+        const _r240 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-form-field", 109)(1, "mat-label");
+        i0.ɵɵtext(2);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(3, "mat-chip-list", 110, 111);
+        i0.ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_8_Template_mat_chip_list_cdkDropListDropped_3_listener($event) { i0.ɵɵrestoreView(_r240); const ctx_r239 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r239.drop($event)); });
+        i0.ɵɵtemplate(6, TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_8_mat_chip_6_Template, 4, 5, "mat-chip", 112);
+        i0.ɵɵelementStart(7, "input", 113, 114);
+        i0.ɵɵlistener("matChipInputTokenEnd", function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_8_Template_input_matChipInputTokenEnd_7_listener($event) { i0.ɵɵrestoreView(_r240); const ctx_r241 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r241.addKeywordFromInputBlock($event, ctx_r241.currentEditBlock, ctx_r241.prevValue)); })("keyup", function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_8_Template_input_keyup_7_listener($event) { i0.ɵɵrestoreView(_r240); const ctx_r242 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r242.onKeyUpChip($event, ctx_r242.currentEditBlock)); })("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_8_Template_input_ngModelChange_7_listener($event) { i0.ɵɵrestoreView(_r240); const ctx_r243 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r243.currentChip = $event); });
+        i0.ɵɵelementEnd()()();
+    }
+    if (rf & 2) {
+        const _r231 = i0.ɵɵreference(5);
+        const ctx_r220 = i0.ɵɵnextContext(3);
+        i0.ɵɵadvance(2);
+        i0.ɵɵtextInterpolate1(" ", ctx_r220.locale == null ? null : ctx_r220.locale.DEFAULT_VALUE, " ");
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("cdkDropListData", ctx_r220.currentEditBlock.defaultValue);
+        i0.ɵɵadvance(3);
+        i0.ɵɵproperty("ngForOf", ctx_r220.currentEditBlock.defaultValue);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("matChipInputFor", _r231)("matChipInputAddOnBlur", true)("matChipInputSeparatorKeyCodes", ctx_r220.separatorKeysCodes)("ngModel", ctx_r220.currentChip)("ngModelOptions", i0.ɵɵpureFunction0(8, _c0$3));
+    }
+}
+function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_9_Template(rf, ctx) {
+    if (rf & 1) {
+        const _r245 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-form-field", 87)(1, "mat-label");
+        i0.ɵɵtext(2);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(3, "input", 117);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_9_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r245); const ctx_r244 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r244.currentEditBlock.defaultValue = $event); });
         i0.ɵɵelementEnd()();
     }
     if (rf & 2) {
         const ctx_r221 = i0.ɵɵnextContext(3);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModel", ctx_r221.currentEditBlock.defaultValue)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$3));
         i0.ɵɵadvance(2);
         i0.ɵɵtextInterpolate(ctx_r221.locale == null ? null : ctx_r221.locale.DEFAULT_VALUE);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$3))("ngModel", ctx_r221.currentEditBlock.defaultValue);
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_div_7_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_10_Template(rf, ctx) {
     if (rf & 1) {
-        const _r232 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 108)(1, "mat-checkbox", 109);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_div_7_Template_mat_checkbox_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r232); const ctx_r231 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r231.currentEditBlock.value = $event); });
+        const _r247 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-form-field", 87)(1, "mat-label");
         i0.ɵɵtext(2);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(3, "input", 118);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_10_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r247); const ctx_r246 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r246.currentEditBlock.defaultValue = $event); });
         i0.ɵɵelementEnd()();
     }
     if (rf & 2) {
         const ctx_r222 = i0.ɵɵnextContext(3);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModel", ctx_r222.currentEditBlock.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$3));
-        i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1(" ", ctx_r222.locale == null ? null : ctx_r222.locale.DEFAULT_CHECKED, " ");
-    }
-}
-function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_8_mat_chip_6_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r239 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-chip", 116);
-        i0.ɵɵlistener("dblclick", function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_8_mat_chip_6_Template_mat_chip_dblclick_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r239); const option_r237 = restoredCtx.$implicit; const ctx_r238 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r238.onCheckedChipBlock(option_r237, ctx_r238.currentEditBlock)); })("click", function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_8_mat_chip_6_Template_mat_chip_click_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r239); const option_r237 = restoredCtx.$implicit; const ctx_r240 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r240.onEditChip(option_r237)); })("removed", function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_8_mat_chip_6_Template_mat_chip_removed_0_listener() { const restoredCtx = i0.ɵɵrestoreView(_r239); const option_r237 = restoredCtx.$implicit; const ctx_r241 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r241.removeKeywordBlock(option_r237, ctx_r241.currentEditBlock)); });
-        i0.ɵɵtext(1);
-        i0.ɵɵelementStart(2, "mat-icon", 117);
-        i0.ɵɵtext(3);
-        i0.ɵɵelementEnd()();
-    }
-    if (rf & 2) {
-        const option_r237 = ctx.$implicit;
-        const ctx_r235 = i0.ɵɵnextContext(4);
-        i0.ɵɵproperty("selected", option_r237.checked)("value", option_r237.value)("removable", true);
-        i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1(" ", option_r237.value, " ");
+        i0.ɵɵstyleProp("opacity", ctx_r222.currentEditBlock.type !== "tel" ? 1 : 0);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(ctx_r235.locale == null ? null : ctx_r235.locale.CANCEL);
+        i0.ɵɵtextInterpolate(ctx_r222.locale == null ? null : ctx_r222.locale.DEFAULT_VALUE);
+        i0.ɵɵadvance(1);
+        i0.ɵɵproperty("type", ctx_r222.currentEditBlock.type)("disabled", ctx_r222.currentEditBlock.type === "tel")("ngModelOptions", i0.ɵɵpureFunction0(7, _c0$3))("ngModel", ctx_r222.currentEditBlock.defaultValue);
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_8_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_option_5_Template(rf, ctx) {
     if (rf & 1) {
-        const _r243 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-form-field", 110)(1, "mat-label");
-        i0.ɵɵtext(2);
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "mat-chip-list", 111, 112);
-        i0.ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_8_Template_mat_chip_list_cdkDropListDropped_3_listener($event) { i0.ɵɵrestoreView(_r243); const ctx_r242 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r242.drop($event)); });
-        i0.ɵɵtemplate(6, TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_8_mat_chip_6_Template, 4, 5, "mat-chip", 113);
-        i0.ɵɵelementStart(7, "input", 114, 115);
-        i0.ɵɵlistener("matChipInputTokenEnd", function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_8_Template_input_matChipInputTokenEnd_7_listener($event) { i0.ɵɵrestoreView(_r243); const ctx_r244 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r244.addKeywordFromInputBlock($event, ctx_r244.currentEditBlock, ctx_r244.prevValue)); })("keyup", function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_8_Template_input_keyup_7_listener($event) { i0.ɵɵrestoreView(_r243); const ctx_r245 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r245.onKeyUpChip($event, ctx_r245.currentEditBlock)); })("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_8_Template_input_ngModelChange_7_listener($event) { i0.ɵɵrestoreView(_r243); const ctx_r246 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r246.currentChip = $event); });
-        i0.ɵɵelementEnd()()();
-    }
-    if (rf & 2) {
-        const _r234 = i0.ɵɵreference(5);
-        const ctx_r223 = i0.ɵɵnextContext(3);
-        i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate1(" ", ctx_r223.locale == null ? null : ctx_r223.locale.DEFAULT_VALUE, " ");
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("cdkDropListData", ctx_r223.currentEditBlock.defaultValue);
-        i0.ɵɵadvance(3);
-        i0.ɵɵproperty("ngForOf", ctx_r223.currentEditBlock.defaultValue);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("matChipInputFor", _r234)("matChipInputAddOnBlur", true)("matChipInputSeparatorKeyCodes", ctx_r223.separatorKeysCodes)("ngModel", ctx_r223.currentChip)("ngModelOptions", i0.ɵɵpureFunction0(8, _c0$3));
-    }
-}
-function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_9_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r248 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-form-field", 88)(1, "mat-label");
-        i0.ɵɵtext(2);
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "input", 118);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_9_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r248); const ctx_r247 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r247.currentEditBlock.defaultValue = $event); });
-        i0.ɵɵelementEnd()();
-    }
-    if (rf & 2) {
-        const ctx_r224 = i0.ɵɵnextContext(3);
-        i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(ctx_r224.locale == null ? null : ctx_r224.locale.DEFAULT_VALUE);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$3))("ngModel", ctx_r224.currentEditBlock.defaultValue);
-    }
-}
-function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_10_Template(rf, ctx) {
-    if (rf & 1) {
-        const _r250 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-form-field", 88)(1, "mat-label");
-        i0.ɵɵtext(2);
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "input", 119);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_10_Template_input_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r250); const ctx_r249 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r249.currentEditBlock.defaultValue = $event); });
-        i0.ɵɵelementEnd()();
-    }
-    if (rf & 2) {
-        const ctx_r225 = i0.ɵɵnextContext(3);
-        i0.ɵɵstyleProp("opacity", ctx_r225.currentEditBlock.type !== "tel" ? 1 : 0);
-        i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate(ctx_r225.locale == null ? null : ctx_r225.locale.DEFAULT_VALUE);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("type", ctx_r225.currentEditBlock.type)("disabled", ctx_r225.currentEditBlock.type === "tel")("ngModelOptions", i0.ɵɵpureFunction0(7, _c0$3))("ngModel", ctx_r225.currentEditBlock.defaultValue);
-    }
-}
-function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_option_5_Template(rf, ctx) {
-    if (rf & 1) {
-        i0.ɵɵelementStart(0, "mat-option", 124);
+        i0.ɵɵelementStart(0, "mat-option", 123);
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const item_r255 = ctx.$implicit;
-        i0.ɵɵproperty("value", item_r255.key);
+        const item_r252 = ctx.$implicit;
+        i0.ɵɵproperty("value", item_r252.key);
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1("", item_r255.label, " ");
+        i0.ɵɵtextInterpolate1("", item_r252.label, " ");
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_6_mat_option_4_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_6_mat_option_4_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "mat-option", 124);
+        i0.ɵɵelementStart(0, "mat-option", 123);
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const item_r257 = ctx.$implicit;
-        i0.ɵɵproperty("value", item_r257.key);
+        const item_r254 = ctx.$implicit;
+        i0.ɵɵproperty("value", item_r254.key);
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1("", item_r257.label, " ");
+        i0.ɵɵtextInterpolate1("", item_r254.label, " ");
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_6_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_6_Template(rf, ctx) {
     if (rf & 1) {
-        const _r259 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-form-field", 120)(1, "mat-label");
+        const _r256 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-form-field", 119)(1, "mat-label");
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "mat-select", 121);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_6_Template_mat_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r259); const ctx_r258 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r258.s1 = $event); })("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_6_Template_mat_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r259); const ctx_r260 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r260.onSelectCondition("s1", "s2", $event.value)); })("selectionChange", function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_6_Template_mat_select_selectionChange_3_listener($event) { i0.ɵɵrestoreView(_r259); const ctx_r261 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r261.onSelectCondition("s1", "s2", $event.value)); });
-        i0.ɵɵtemplate(4, TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_6_mat_option_4_Template, 2, 2, "mat-option", 122);
+        i0.ɵɵelementStart(3, "mat-select", 120);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_6_Template_mat_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r256); const ctx_r255 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r255.s1 = $event); })("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_6_Template_mat_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r256); const ctx_r257 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r257.onSelectCondition("s1", "s2", $event.value)); })("selectionChange", function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_6_Template_mat_select_selectionChange_3_listener($event) { i0.ɵɵrestoreView(_r256); const ctx_r258 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r258.onSelectCondition("s1", "s2", $event.value)); });
+        i0.ɵɵtemplate(4, TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_6_mat_option_4_Template, 2, 2, "mat-option", 121);
         i0.ɵɵelementEnd()();
     }
     if (rf & 2) {
-        const ctx_r252 = i0.ɵɵnextContext(4);
+        const ctx_r249 = i0.ɵɵnextContext(4);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate1("", ctx_r252.locale == null ? null : ctx_r252.locale.SELECT_SUB_CATEGORY, " (s1)");
+        i0.ɵɵtextInterpolate1("", ctx_r249.locale == null ? null : ctx_r249.locale.SELECT_SUB_CATEGORY, " (s1)");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModel", ctx_r252.s1)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0$3));
+        i0.ɵɵproperty("ngModel", ctx_r249.s1)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0$3));
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", ctx_r252.conditionData.s1);
+        i0.ɵɵproperty("ngForOf", ctx_r249.conditionData.s1);
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_7_mat_option_4_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_7_mat_option_4_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "mat-option", 124);
+        i0.ɵɵelementStart(0, "mat-option", 123);
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const item_r263 = ctx.$implicit;
-        i0.ɵɵproperty("value", item_r263.key);
+        const item_r260 = ctx.$implicit;
+        i0.ɵɵproperty("value", item_r260.key);
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1("", item_r263.label, " ");
+        i0.ɵɵtextInterpolate1("", item_r260.label, " ");
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_7_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_7_Template(rf, ctx) {
     if (rf & 1) {
-        const _r265 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-form-field", 120)(1, "mat-label");
+        const _r262 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-form-field", 119)(1, "mat-label");
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "mat-select", 121);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_7_Template_mat_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r265); const ctx_r264 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r264.s2 = $event); })("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_7_Template_mat_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r265); const ctx_r266 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r266.onSelectCondition("s2", "s3", $event.value)); })("selectionChange", function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_7_Template_mat_select_selectionChange_3_listener($event) { i0.ɵɵrestoreView(_r265); const ctx_r267 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r267.onSelectCondition("s2", "s3", $event.value)); });
-        i0.ɵɵtemplate(4, TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_7_mat_option_4_Template, 2, 2, "mat-option", 122);
+        i0.ɵɵelementStart(3, "mat-select", 120);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_7_Template_mat_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r262); const ctx_r261 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r261.s2 = $event); })("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_7_Template_mat_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r262); const ctx_r263 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r263.onSelectCondition("s2", "s3", $event.value)); })("selectionChange", function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_7_Template_mat_select_selectionChange_3_listener($event) { i0.ɵɵrestoreView(_r262); const ctx_r264 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r264.onSelectCondition("s2", "s3", $event.value)); });
+        i0.ɵɵtemplate(4, TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_7_mat_option_4_Template, 2, 2, "mat-option", 121);
         i0.ɵɵelementEnd()();
     }
     if (rf & 2) {
-        const ctx_r253 = i0.ɵɵnextContext(4);
+        const ctx_r250 = i0.ɵɵnextContext(4);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate1("", ctx_r253.locale == null ? null : ctx_r253.locale.SELECT_SUB_CATEGORY, " (s2)");
+        i0.ɵɵtextInterpolate1("", ctx_r250.locale == null ? null : ctx_r250.locale.SELECT_SUB_CATEGORY, " (s2)");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModel", ctx_r253.s2)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0$3));
+        i0.ɵɵproperty("ngModel", ctx_r250.s2)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0$3));
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", ctx_r253.conditionData.s2);
+        i0.ɵɵproperty("ngForOf", ctx_r250.conditionData.s2);
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_8_mat_option_4_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_8_mat_option_4_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "mat-option", 124);
+        i0.ɵɵelementStart(0, "mat-option", 123);
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const item_r269 = ctx.$implicit;
-        i0.ɵɵproperty("value", item_r269.key);
+        const item_r266 = ctx.$implicit;
+        i0.ɵɵproperty("value", item_r266.key);
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1("", item_r269.label, " ");
+        i0.ɵɵtextInterpolate1("", item_r266.label, " ");
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_8_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_8_Template(rf, ctx) {
     if (rf & 1) {
-        const _r271 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-form-field", 120)(1, "mat-label");
+        const _r268 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-form-field", 119)(1, "mat-label");
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "mat-select", 121);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_8_Template_mat_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r271); const ctx_r270 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r270.s3 = $event); })("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_8_Template_mat_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r271); const ctx_r272 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r272.onSelectCondition("s3", "s4", $event.value)); })("selectionChange", function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_8_Template_mat_select_selectionChange_3_listener($event) { i0.ɵɵrestoreView(_r271); const ctx_r273 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r273.onSelectCondition("s3", "s4", $event.value)); });
-        i0.ɵɵtemplate(4, TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_8_mat_option_4_Template, 2, 2, "mat-option", 122);
+        i0.ɵɵelementStart(3, "mat-select", 120);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_8_Template_mat_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r268); const ctx_r267 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r267.s3 = $event); })("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_8_Template_mat_select_ngModelChange_3_listener($event) { i0.ɵɵrestoreView(_r268); const ctx_r269 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r269.onSelectCondition("s3", "s4", $event.value)); })("selectionChange", function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_8_Template_mat_select_selectionChange_3_listener($event) { i0.ɵɵrestoreView(_r268); const ctx_r270 = i0.ɵɵnextContext(4); return i0.ɵɵresetView(ctx_r270.onSelectCondition("s3", "s4", $event.value)); });
+        i0.ɵɵtemplate(4, TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_8_mat_option_4_Template, 2, 2, "mat-option", 121);
         i0.ɵɵelementEnd()();
     }
     if (rf & 2) {
-        const ctx_r254 = i0.ɵɵnextContext(4);
+        const ctx_r251 = i0.ɵɵnextContext(4);
         i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate1("", ctx_r254.locale == null ? null : ctx_r254.locale.SELECT_SUB_CATEGORY, " (s3)");
+        i0.ɵɵtextInterpolate1("", ctx_r251.locale == null ? null : ctx_r251.locale.SELECT_SUB_CATEGORY, " (s3)");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModel", ctx_r254.s3)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0$3));
+        i0.ɵɵproperty("ngModel", ctx_r251.s3)("ngModelOptions", i0.ɵɵpureFunction0(4, _c0$3));
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", ctx_r254.conditionData.s3);
+        i0.ɵɵproperty("ngForOf", ctx_r251.conditionData.s3);
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_Template(rf, ctx) {
     if (rf & 1) {
-        const _r275 = i0.ɵɵgetCurrentView();
+        const _r272 = i0.ɵɵgetCurrentView();
         i0.ɵɵelementContainerStart(0);
-        i0.ɵɵelementStart(1, "mat-form-field", 120)(2, "mat-label");
+        i0.ɵɵelementStart(1, "mat-form-field", 119)(2, "mat-label");
         i0.ɵɵtext(3);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(4, "mat-select", 121);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_Template_mat_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r275); const ctx_r274 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r274.all = $event); })("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_Template_mat_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r275); const ctx_r276 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r276.onSelectCondition("all", "s1", $event.value)); })("selectionChange", function TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_Template_mat_select_selectionChange_4_listener($event) { i0.ɵɵrestoreView(_r275); const ctx_r277 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r277.onSelectCondition("all", "s1", $event.value)); });
-        i0.ɵɵtemplate(5, TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_option_5_Template, 2, 2, "mat-option", 122);
+        i0.ɵɵelementStart(4, "mat-select", 120);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_Template_mat_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r272); const ctx_r271 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r271.all = $event); })("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_Template_mat_select_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r272); const ctx_r273 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r273.onSelectCondition("all", "s1", $event.value)); })("selectionChange", function TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_Template_mat_select_selectionChange_4_listener($event) { i0.ɵɵrestoreView(_r272); const ctx_r274 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r274.onSelectCondition("all", "s1", $event.value)); });
+        i0.ɵɵtemplate(5, TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_option_5_Template, 2, 2, "mat-option", 121);
         i0.ɵɵelementEnd()();
-        i0.ɵɵtemplate(6, TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_6_Template, 5, 5, "mat-form-field", 123);
-        i0.ɵɵtemplate(7, TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_7_Template, 5, 5, "mat-form-field", 123);
-        i0.ɵɵtemplate(8, TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_mat_form_field_8_Template, 5, 5, "mat-form-field", 123);
+        i0.ɵɵtemplate(6, TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_6_Template, 5, 5, "mat-form-field", 122);
+        i0.ɵɵtemplate(7, TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_7_Template, 5, 5, "mat-form-field", 122);
+        i0.ɵɵtemplate(8, TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_mat_form_field_8_Template, 5, 5, "mat-form-field", 122);
         i0.ɵɵelementContainerEnd();
     }
     if (rf & 2) {
-        const ctx_r226 = i0.ɵɵnextContext(3);
+        const ctx_r223 = i0.ɵɵnextContext(3);
         i0.ɵɵadvance(3);
-        i0.ɵɵtextInterpolate(ctx_r226.locale == null ? null : ctx_r226.locale.SELECT_CATEGORY);
+        i0.ɵɵtextInterpolate(ctx_r223.locale == null ? null : ctx_r223.locale.SELECT_CATEGORY);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModel", ctx_r226.all)("ngModelOptions", i0.ɵɵpureFunction0(7, _c0$3));
+        i0.ɵɵproperty("ngModel", ctx_r223.all)("ngModelOptions", i0.ɵɵpureFunction0(7, _c0$3));
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", ctx_r226.conditionData.all);
+        i0.ɵɵproperty("ngForOf", ctx_r223.conditionData.all);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", (ctx_r226.conditionData.s1 == null ? null : ctx_r226.conditionData.s1.length) > 0);
+        i0.ɵɵproperty("ngIf", (ctx_r223.conditionData.s1 == null ? null : ctx_r223.conditionData.s1.length) > 0);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", (ctx_r226.conditionData.s2 == null ? null : ctx_r226.conditionData.s2.length) > 0);
+        i0.ɵɵproperty("ngIf", (ctx_r223.conditionData.s2 == null ? null : ctx_r223.conditionData.s2.length) > 0);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", (ctx_r226.conditionData.s3 == null ? null : ctx_r226.conditionData.s3.length) > 0);
+        i0.ɵɵproperty("ngIf", (ctx_r223.conditionData.s3 == null ? null : ctx_r223.conditionData.s3.length) > 0);
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_mat_radio_group_22_mat_radio_button_1_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_mat_radio_group_22_mat_radio_button_1_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "mat-radio-button", 127);
+        i0.ɵɵelementStart(0, "mat-radio-button", 126);
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const item_r279 = ctx.$implicit;
-        i0.ɵɵproperty("value", item_r279.value);
+        const item_r276 = ctx.$implicit;
+        i0.ɵɵproperty("value", item_r276.value);
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1(" ", item_r279.value, " ");
+        i0.ɵɵtextInterpolate1(" ", item_r276.value, " ");
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_mat_radio_group_22_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_mat_radio_group_22_Template(rf, ctx) {
     if (rf & 1) {
-        const _r281 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "mat-radio-group", 125);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_mat_radio_group_22_Template_mat_radio_group_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r281); const ctx_r280 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r280.currentEditBlock.condition.value = $event); });
-        i0.ɵɵtemplate(1, TemplateProfileCreateComponent_div_39_ng_container_32_mat_radio_group_22_mat_radio_button_1_Template, 2, 2, "mat-radio-button", 126);
+        const _r278 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "mat-radio-group", 124);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_mat_radio_group_22_Template_mat_radio_group_ngModelChange_0_listener($event) { i0.ɵɵrestoreView(_r278); const ctx_r277 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r277.currentEditBlock.condition.value = $event); });
+        i0.ɵɵtemplate(1, TemplateProfileCreateComponent_div_41_ng_container_32_mat_radio_group_22_mat_radio_button_1_Template, 2, 2, "mat-radio-button", 125);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const ctx_r227 = i0.ɵɵnextContext(3);
-        i0.ɵɵproperty("ngModel", ctx_r227.currentEditBlock.condition.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$3));
+        const ctx_r224 = i0.ɵɵnextContext(3);
+        i0.ɵɵproperty("ngModel", ctx_r224.currentEditBlock.condition.value)("ngModelOptions", i0.ɵɵpureFunction0(3, _c0$3));
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngForOf", ctx_r227.onGetDefaultValue());
+        i0.ɵɵproperty("ngForOf", ctx_r224.onGetDefaultValue());
     }
 }
-function TemplateProfileCreateComponent_div_39_ng_container_32_button_24_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_button_24_Template(rf, ctx) {
     if (rf & 1) {
-        const _r283 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "button", 103);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_39_ng_container_32_button_24_Template_button_click_0_listener($event) { i0.ɵɵrestoreView(_r283); const ctx_r282 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r282.onAddNewSubLevelFieldBlock($event)); });
+        const _r280 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "button", 102);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_41_ng_container_32_button_24_Template_button_click_0_listener($event) { i0.ɵɵrestoreView(_r280); const ctx_r279 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r279.onAddNewSubLevelFieldBlock($event)); });
         i0.ɵɵtext(1);
         i0.ɵɵelementStart(2, "mat-icon");
         i0.ɵɵtext(3, "device_hub ");
         i0.ɵɵelementEnd()();
     }
     if (rf & 2) {
-        const ctx_r228 = i0.ɵɵnextContext(3);
-        i0.ɵɵproperty("disabled", !ctx_r228.currentEditBlock.editable);
+        const ctx_r225 = i0.ɵɵnextContext(3);
+        i0.ɵɵproperty("disabled", !ctx_r225.currentEditBlock.editable);
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1("", ctx_r228.locale == null ? null : ctx_r228.locale.SUB_CATEGORY, " ");
+        i0.ɵɵtextInterpolate1("", ctx_r225.locale == null ? null : ctx_r225.locale.SUB_CATEGORY, " ");
     }
 }
 const _c2$1 = function () { return ["select", "radio", "checkbox_multiple"]; };
-function TemplateProfileCreateComponent_div_39_ng_container_32_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_ng_container_32_Template(rf, ctx) {
     if (rf & 1) {
-        const _r285 = i0.ɵɵgetCurrentView();
+        const _r282 = i0.ɵɵgetCurrentView();
         i0.ɵɵelementContainerStart(0);
-        i0.ɵɵelementStart(1, "mat-form-field", 88)(2, "mat-label");
+        i0.ɵɵelementStart(1, "mat-form-field", 87)(2, "mat-label");
         i0.ɵɵtext(3);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(4, "input", 89);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_Template_input_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r285); const ctx_r284 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r284.currentEditBlock.label = $event); })("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_Template_input_ngModelChange_4_listener() { i0.ɵɵrestoreView(_r285); const ctx_r286 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r286.onChangeKey(ctx_r286.currentEditBlock)); });
+        i0.ɵɵelementStart(4, "input", 88);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_Template_input_ngModelChange_4_listener($event) { i0.ɵɵrestoreView(_r282); const ctx_r281 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r281.currentEditBlock.label = $event); })("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_Template_input_ngModelChange_4_listener() { i0.ɵɵrestoreView(_r282); const ctx_r283 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r283.onChangeKey(ctx_r283.currentEditBlock)); });
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementContainerStart(5, 90);
-        i0.ɵɵtemplate(6, TemplateProfileCreateComponent_div_39_ng_container_32_div_6_Template, 4, 4, "div", 91);
-        i0.ɵɵtemplate(7, TemplateProfileCreateComponent_div_39_ng_container_32_div_7_Template, 3, 4, "div", 92);
-        i0.ɵɵtemplate(8, TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_8_Template, 9, 9, "mat-form-field", 93);
-        i0.ɵɵtemplate(9, TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_9_Template, 4, 4, "mat-form-field", 94);
-        i0.ɵɵtemplate(10, TemplateProfileCreateComponent_div_39_ng_container_32_mat_form_field_10_Template, 4, 8, "mat-form-field", 95);
+        i0.ɵɵelementContainerStart(5, 89);
+        i0.ɵɵtemplate(6, TemplateProfileCreateComponent_div_41_ng_container_32_div_6_Template, 4, 4, "div", 90);
+        i0.ɵɵtemplate(7, TemplateProfileCreateComponent_div_41_ng_container_32_div_7_Template, 3, 4, "div", 91);
+        i0.ɵɵtemplate(8, TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_8_Template, 9, 9, "mat-form-field", 92);
+        i0.ɵɵtemplate(9, TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_9_Template, 4, 4, "mat-form-field", 93);
+        i0.ɵɵtemplate(10, TemplateProfileCreateComponent_div_41_ng_container_32_mat_form_field_10_Template, 4, 8, "mat-form-field", 94);
         i0.ɵɵelementContainerEnd();
-        i0.ɵɵelementStart(11, "div", 96)(12, "div", 97)(13, "span");
+        i0.ɵɵelementStart(11, "div", 95)(12, "div", 96)(13, "span");
         i0.ɵɵtext(14);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(15, "mat-slide-toggle", 98);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_Template_mat_slide_toggle_ngModelChange_15_listener($event) { i0.ɵɵrestoreView(_r285); const ctx_r287 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r287.currentEditBlock.isMandatory = $event); });
+        i0.ɵɵelementStart(15, "mat-slide-toggle", 97);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_Template_mat_slide_toggle_ngModelChange_15_listener($event) { i0.ɵɵrestoreView(_r282); const ctx_r284 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r284.currentEditBlock.isMandatory = $event); });
         i0.ɵɵelementEnd()()();
-        i0.ɵɵelementStart(16, "div", 99)(17, "div", 97)(18, "span");
+        i0.ɵɵelementStart(16, "div", 98)(17, "div", 96)(18, "span");
         i0.ɵɵtext(19);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(20, "mat-slide-toggle", 98);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_39_ng_container_32_Template_mat_slide_toggle_ngModelChange_20_listener($event) { i0.ɵɵrestoreView(_r285); const ctx_r288 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r288.currentEditBlock.isConditional = $event); });
+        i0.ɵɵelementStart(20, "mat-slide-toggle", 97);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_41_ng_container_32_Template_mat_slide_toggle_ngModelChange_20_listener($event) { i0.ɵɵrestoreView(_r282); const ctx_r285 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r285.currentEditBlock.isConditional = $event); });
         i0.ɵɵelementEnd()()();
-        i0.ɵɵtemplate(21, TemplateProfileCreateComponent_div_39_ng_container_32_ng_container_21_Template, 9, 8, "ng-container", 6);
-        i0.ɵɵtemplate(22, TemplateProfileCreateComponent_div_39_ng_container_32_mat_radio_group_22_Template, 2, 4, "mat-radio-group", 100);
-        i0.ɵɵelementStart(23, "div", 101);
-        i0.ɵɵtemplate(24, TemplateProfileCreateComponent_div_39_ng_container_32_button_24_Template, 4, 2, "button", 102);
-        i0.ɵɵelementStart(25, "button", 103);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_39_ng_container_32_Template_button_click_25_listener($event) { i0.ɵɵrestoreView(_r285); const ctx_r289 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r289.onDuplicatedBlock($event)); });
+        i0.ɵɵtemplate(21, TemplateProfileCreateComponent_div_41_ng_container_32_ng_container_21_Template, 9, 8, "ng-container", 5);
+        i0.ɵɵtemplate(22, TemplateProfileCreateComponent_div_41_ng_container_32_mat_radio_group_22_Template, 2, 4, "mat-radio-group", 99);
+        i0.ɵɵelementStart(23, "div", 100);
+        i0.ɵɵtemplate(24, TemplateProfileCreateComponent_div_41_ng_container_32_button_24_Template, 4, 2, "button", 101);
+        i0.ɵɵelementStart(25, "button", 102);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_41_ng_container_32_Template_button_click_25_listener($event) { i0.ɵɵrestoreView(_r282); const ctx_r286 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r286.onDuplicatedBlock($event)); });
         i0.ɵɵtext(26);
         i0.ɵɵelementStart(27, "mat-icon");
         i0.ɵɵtext(28, "filter_none");
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(29, "button", 104);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_39_ng_container_32_Template_button_click_29_listener($event) { i0.ɵɵrestoreView(_r285); const ctx_r290 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r290.onRemoveFieldBlock($event)); });
+        i0.ɵɵelementStart(29, "button", 103);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_41_ng_container_32_Template_button_click_29_listener($event) { i0.ɵɵrestoreView(_r282); const ctx_r287 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r287.onRemoveFieldBlock($event)); });
         i0.ɵɵtext(30);
         i0.ɵɵelementStart(31, "mat-icon");
         i0.ɵɵtext(32, " delete ");
@@ -2403,94 +2386,94 @@ function TemplateProfileCreateComponent_div_39_ng_container_32_Template(rf, ctx)
         i0.ɵɵelementContainerEnd();
     }
     if (rf & 2) {
-        const ctx_r220 = i0.ɵɵnextContext(2);
+        const ctx_r217 = i0.ɵɵnextContext(2);
         let tmp_15_0;
         i0.ɵɵadvance(3);
-        i0.ɵɵtextInterpolate(ctx_r220.locale == null ? null : ctx_r220.locale.NAME_LABEL);
+        i0.ɵɵtextInterpolate(ctx_r217.locale == null ? null : ctx_r217.locale.NAME_LABEL);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModel", ctx_r220.currentEditBlock.label)("ngModelOptions", i0.ɵɵpureFunction0(21, _c0$3));
+        i0.ɵɵproperty("ngModel", ctx_r217.currentEditBlock.label)("ngModelOptions", i0.ɵɵpureFunction0(21, _c0$3));
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngSwitch", ctx_r220.currentEditBlock.type);
+        i0.ɵɵproperty("ngSwitch", ctx_r217.currentEditBlock.type);
         i0.ɵɵadvance(1);
         i0.ɵɵproperty("ngSwitchCase", "toggle");
         i0.ɵɵadvance(1);
         i0.ɵɵproperty("ngSwitchCase", "checkbox");
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngSwitchCase", i0.ɵɵpureFunction0(22, _c2$1).includes(ctx_r220.currentEditBlock.type) ? ctx_r220.currentEditBlock.type : !ctx_r220.currentEditBlock.type);
+        i0.ɵɵproperty("ngSwitchCase", i0.ɵɵpureFunction0(22, _c2$1).includes(ctx_r217.currentEditBlock.type) ? ctx_r217.currentEditBlock.type : !ctx_r217.currentEditBlock.type);
         i0.ɵɵadvance(1);
         i0.ɵɵproperty("ngSwitchCase", "textarea");
         i0.ɵɵadvance(5);
-        i0.ɵɵtextInterpolate(ctx_r220.locale == null ? null : ctx_r220.locale.REQUIRED);
+        i0.ɵɵtextInterpolate(ctx_r217.locale == null ? null : ctx_r217.locale.REQUIRED);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModel", ctx_r220.currentEditBlock.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(23, _c0$3));
+        i0.ɵɵproperty("ngModel", ctx_r217.currentEditBlock.isMandatory)("ngModelOptions", i0.ɵɵpureFunction0(23, _c0$3));
         i0.ɵɵadvance(4);
-        i0.ɵɵtextInterpolate(ctx_r220.locale == null ? null : ctx_r220.locale.CONDITIONAL_VISIBILITY);
+        i0.ɵɵtextInterpolate(ctx_r217.locale == null ? null : ctx_r217.locale.CONDITIONAL_VISIBILITY);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngModel", ctx_r220.currentEditBlock.isConditional)("ngModelOptions", i0.ɵɵpureFunction0(24, _c0$3));
+        i0.ɵɵproperty("ngModel", ctx_r217.currentEditBlock.isConditional)("ngModelOptions", i0.ɵɵpureFunction0(24, _c0$3));
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r220.currentEditBlock == null ? null : ctx_r220.currentEditBlock.isConditional);
+        i0.ɵɵproperty("ngIf", ctx_r217.currentEditBlock == null ? null : ctx_r217.currentEditBlock.isConditional);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx_r220.currentEditBlock.isConditional && ctx_r220.onGetDefaultValue() && ((tmp_15_0 = ctx_r220.onGetDefaultValue()) == null ? null : tmp_15_0.length) > 0);
+        i0.ɵɵproperty("ngIf", ctx_r217.currentEditBlock.isConditional && ctx_r217.onGetDefaultValue() && ((tmp_15_0 = ctx_r217.onGetDefaultValue()) == null ? null : tmp_15_0.length) > 0);
         i0.ɵɵadvance(2);
-        i0.ɵɵproperty("ngIf", ctx_r220.paramsIndex.length < 4);
+        i0.ɵɵproperty("ngIf", ctx_r217.paramsIndex.length < 4);
         i0.ɵɵadvance(1);
-        i0.ɵɵproperty("disabled", !ctx_r220.currentEditBlock.editable);
+        i0.ɵɵproperty("disabled", !ctx_r217.currentEditBlock.editable);
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate(ctx_r220.locale == null ? null : ctx_r220.locale.DUPLICATE_BLOCK);
+        i0.ɵɵtextInterpolate(ctx_r217.locale == null ? null : ctx_r217.locale.DUPLICATE_BLOCK);
         i0.ɵɵadvance(3);
-        i0.ɵɵproperty("disabled", !ctx_r220.currentEditBlock.editable);
+        i0.ɵɵproperty("disabled", !ctx_r217.currentEditBlock.editable);
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate1("", ctx_r220.locale == null ? null : ctx_r220.locale.DELETE_BLOCK, " ");
+        i0.ɵɵtextInterpolate1("", ctx_r217.locale == null ? null : ctx_r217.locale.DELETE_BLOCK, " ");
     }
 }
-function TemplateProfileCreateComponent_div_39_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_41_Template(rf, ctx) {
     if (rf & 1) {
-        const _r292 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 72)(1, "h3");
+        const _r289 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 71)(1, "h3");
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "div", 73)(4, "mat-form-field", 74)(5, "mat-label");
+        i0.ɵɵelementStart(3, "div", 72)(4, "mat-form-field", 73)(5, "mat-label");
         i0.ɵɵtext(6);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(7, "mat-select", 75);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_39_Template_mat_select_click_7_listener() { i0.ɵɵrestoreView(_r292); const ctx_r291 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r291.onOpenTypeDialog(ctx_r291.currentEditBlock)); })("ngModelChange", function TemplateProfileCreateComponent_div_39_Template_mat_select_ngModelChange_7_listener($event) { i0.ɵɵrestoreView(_r292); const ctx_r293 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r293.currentEditBlock.type = $event); })("ngModelChange", function TemplateProfileCreateComponent_div_39_Template_mat_select_ngModelChange_7_listener() { i0.ɵɵrestoreView(_r292); const ctx_r294 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r294.onChangeTypeBlock(ctx_r294.currentEditBlock)); });
-        i0.ɵɵelementStart(8, "mat-option", 76);
+        i0.ɵɵelementStart(7, "mat-select", 74);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_41_Template_mat_select_click_7_listener() { i0.ɵɵrestoreView(_r289); const ctx_r288 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r288.onOpenTypeDialog(ctx_r288.currentEditBlock)); })("ngModelChange", function TemplateProfileCreateComponent_div_41_Template_mat_select_ngModelChange_7_listener($event) { i0.ɵɵrestoreView(_r289); const ctx_r290 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r290.currentEditBlock.type = $event); })("ngModelChange", function TemplateProfileCreateComponent_div_41_Template_mat_select_ngModelChange_7_listener() { i0.ɵɵrestoreView(_r289); const ctx_r291 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r291.onChangeTypeBlock(ctx_r291.currentEditBlock)); });
+        i0.ɵɵelementStart(8, "mat-option", 75);
         i0.ɵɵtext(9, "Text(80)");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(10, "mat-option", 77);
+        i0.ɵɵelementStart(10, "mat-option", 76);
         i0.ɵɵtext(11, "Text(80+)");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(12, "mat-option", 78);
+        i0.ɵɵelementStart(12, "mat-option", 77);
         i0.ɵɵtext(13, "Radio");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(14, "mat-option", 79);
+        i0.ɵɵelementStart(14, "mat-option", 78);
         i0.ɵɵtext(15, "Selector");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(16, "mat-option", 80);
+        i0.ɵɵelementStart(16, "mat-option", 79);
         i0.ɵɵtext(17, "Toggle");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(18, "mat-option", 81);
+        i0.ɵɵelementStart(18, "mat-option", 80);
         i0.ɵɵtext(19, "Checkbox");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(20, "mat-option", 82);
+        i0.ɵɵelementStart(20, "mat-option", 81);
         i0.ɵɵtext(21, "Checkbox multiple");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(22, "mat-option", 83);
+        i0.ɵɵelementStart(22, "mat-option", 82);
         i0.ɵɵtext(23, "Email");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(24, "mat-option", 84);
+        i0.ɵɵelementStart(24, "mat-option", 83);
         i0.ɵɵtext(25, "Password");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(26, "mat-option", 85);
+        i0.ɵɵelementStart(26, "mat-option", 84);
         i0.ɵɵtext(27, "Date");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(28, "mat-option", 86);
+        i0.ɵɵelementStart(28, "mat-option", 85);
         i0.ɵɵtext(29, "Phone");
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(30, "mat-option", 87);
+        i0.ɵɵelementStart(30, "mat-option", 86);
         i0.ɵɵtext(31, "None");
         i0.ɵɵelementEnd()()();
-        i0.ɵɵtemplate(32, TemplateProfileCreateComponent_div_39_ng_container_32_Template, 33, 25, "ng-container", 6);
+        i0.ɵɵtemplate(32, TemplateProfileCreateComponent_div_41_ng_container_32_Template, 33, 25, "ng-container", 5);
         i0.ɵɵelementEnd()();
     }
     if (rf & 2) {
@@ -2505,52 +2488,52 @@ function TemplateProfileCreateComponent_div_39_Template(rf, ctx) {
         i0.ɵɵproperty("ngIf", ctx_r4.currentEditBlock.type !== "none");
     }
 }
-function TemplateProfileCreateComponent_div_40_mat_option_12_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_42_mat_option_12_Template(rf, ctx) {
     if (rf & 1) {
-        i0.ɵɵelementStart(0, "mat-option", 124);
+        i0.ɵɵelementStart(0, "mat-option", 123);
         i0.ɵɵtext(1);
         i0.ɵɵelementEnd();
     }
     if (rf & 2) {
-        const item_r296 = ctx.$implicit;
-        i0.ɵɵproperty("value", item_r296.value);
+        const item_r293 = ctx.$implicit;
+        i0.ɵɵproperty("value", item_r293.value);
         i0.ɵɵadvance(1);
-        i0.ɵɵtextInterpolate(item_r296.value);
+        i0.ɵɵtextInterpolate(item_r293.value);
     }
 }
-function TemplateProfileCreateComponent_div_40_Template(rf, ctx) {
+function TemplateProfileCreateComponent_div_42_Template(rf, ctx) {
     if (rf & 1) {
-        const _r298 = i0.ɵɵgetCurrentView();
-        i0.ɵɵelementStart(0, "div", 72)(1, "h3");
+        const _r295 = i0.ɵɵgetCurrentView();
+        i0.ɵɵelementStart(0, "div", 71)(1, "h3");
         i0.ɵɵtext(2);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(3, "div", 128)(4, "mat-form-field", 88)(5, "mat-label");
+        i0.ɵɵelementStart(3, "div", 127)(4, "mat-form-field", 87)(5, "mat-label");
         i0.ɵɵtext(6);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(7, "input", 89);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_40_Template_input_ngModelChange_7_listener() { i0.ɵɵrestoreView(_r298); const ctx_r297 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r297.onChangeCategoryName()); })("ngModelChange", function TemplateProfileCreateComponent_div_40_Template_input_ngModelChange_7_listener($event) { i0.ɵɵrestoreView(_r298); const ctx_r299 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r299.currentEditBlock.name = $event); });
+        i0.ɵɵelementStart(7, "input", 88);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_42_Template_input_ngModelChange_7_listener() { i0.ɵɵrestoreView(_r295); const ctx_r294 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r294.onChangeCategoryName()); })("ngModelChange", function TemplateProfileCreateComponent_div_42_Template_input_ngModelChange_7_listener($event) { i0.ɵɵrestoreView(_r295); const ctx_r296 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r296.currentEditBlock.name = $event); });
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(8, "mat-form-field", 120)(9, "mat-label");
+        i0.ɵɵelementStart(8, "mat-form-field", 119)(9, "mat-label");
         i0.ɵɵtext(10);
         i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(11, "mat-select", 129);
-        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_40_Template_mat_select_ngModelChange_11_listener($event) { i0.ɵɵrestoreView(_r298); const ctx_r300 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r300.currentEditBlock.selector.value = $event); });
-        i0.ɵɵtemplate(12, TemplateProfileCreateComponent_div_40_mat_option_12_Template, 2, 2, "mat-option", 122);
+        i0.ɵɵelementStart(11, "mat-select", 128);
+        i0.ɵɵlistener("ngModelChange", function TemplateProfileCreateComponent_div_42_Template_mat_select_ngModelChange_11_listener($event) { i0.ɵɵrestoreView(_r295); const ctx_r297 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r297.currentEditBlock.selector.value = $event); });
+        i0.ɵɵtemplate(12, TemplateProfileCreateComponent_div_42_mat_option_12_Template, 2, 2, "mat-option", 121);
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(13, "div", 101)(14, "button", 130);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_40_Template_button_click_14_listener($event) { i0.ɵɵrestoreView(_r298); const ctx_r301 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r301.onAddNewSubLevelFieldBlock($event)); });
+        i0.ɵɵelementStart(13, "div", 100)(14, "button", 129);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_42_Template_button_click_14_listener($event) { i0.ɵɵrestoreView(_r295); const ctx_r298 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r298.onAddNewSubLevelFieldBlock($event)); });
         i0.ɵɵtext(15);
         i0.ɵɵelementStart(16, "mat-icon");
         i0.ɵɵtext(17, " device_hub ");
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(18, "button", 130);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_40_Template_button_click_18_listener($event) { i0.ɵɵrestoreView(_r298); const ctx_r302 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r302.onDuplicatedBlock($event)); });
+        i0.ɵɵelementStart(18, "button", 129);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_42_Template_button_click_18_listener($event) { i0.ɵɵrestoreView(_r295); const ctx_r299 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r299.onDuplicatedBlock($event)); });
         i0.ɵɵtext(19);
         i0.ɵɵelementStart(20, "mat-icon");
         i0.ɵɵtext(21, "filter_none ");
         i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(22, "button", 104);
-        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_40_Template_button_click_22_listener($event) { i0.ɵɵrestoreView(_r298); const ctx_r303 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r303.onRemoveFieldBlock($event)); });
+        i0.ɵɵelementStart(22, "button", 103);
+        i0.ɵɵlistener("click", function TemplateProfileCreateComponent_div_42_Template_button_click_22_listener($event) { i0.ɵɵrestoreView(_r295); const ctx_r300 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r300.onRemoveFieldBlock($event)); });
         i0.ɵɵtext(23);
         i0.ɵɵelementStart(24, "mat-icon");
         i0.ɵɵtext(25, " delete");
@@ -3893,7 +3876,9 @@ class TemplateProfileCreateComponent {
         return String(index) + String(level);
     }
     onChangeKey(editBlok) {
-        editBlok.key = this.onCreateKey(editBlok.label);
+        if (editBlok.editable) {
+            editBlok.key = this.onCreateKey(editBlok.label);
+        }
     }
     onAddNewField(...params) {
         this.canExit = false;
@@ -4735,7 +4720,7 @@ TemplateProfileCreateComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ ty
         if (rf & 1) {
             i0.ɵɵlistener("scroll", function TemplateProfileCreateComponent_scroll_HostBindingHandler($event) { return ctx.onScroll($event); });
         }
-    }, decls: 41, vars: 13, consts: [[1, "header-create-profile"], [1, "header-create-profile-top"], [3, "click"], [1, "create-profile-action"], ["mat-button", "", "class", "register-button", "type", "submit", 3, "click", 4, "ngIf"], ["mat-button", "", "type", "submit", 1, "register-button", "live-button", 3, "click"], [4, "ngIf"], ["mat-button", "", "type", "submit", 1, "register-button", "live-button", "forward", 3, "disabled", "click"], [1, "create-profile-menus"], ["class", "li-title", 3, "class", "id", "click", 4, "ngFor", "ngForOf"], ["mat-mini-fab", "", "color", "transparent", 3, "click"], [3, "formGroup"], ["cdkDropListGroup", "", 1, "category"], [1, "fields"], ["cdkDropList", "", "id", "categories-id", 1, "fields-inner", "example-list", "mt-10", 3, "cdkDropListData", "cdkDropListDropped", "scroll"], ["class", "category-item section-item", "cdkDrag", "", 3, "id", "paddingBottom", "class", "click", 4, "ngFor", "ngForOf"], [1, "add-button-container", "add-category-button", "add-step"], [2, "background-color", "transparent"], [2, "height", "400px"], [1, "field-property"], ["class", "property-content", 4, "ngIf"], ["mat-button", "", "type", "submit", 1, "register-button", 3, "click"], [1, "li-title", 3, "id", "click"], ["cdkDrag", "", 1, "category-item", "section-item", 3, "id", "click"], ["cdkDragHandle", "", 1, "left-action", "move-icons"], ["mat-raised-button", "", 1, "transparent-button", 3, "click"], [1, "drag-icon"], [1, "field-content"], [1, "field-item"], [1, "full-width", "input-category-name"], [1, "sub-category-name"], ["mat-mini-fab", "", "color", "primary", 1, "expand-button", 3, "click"], ["class", "child-list", "cdkDropListGroup", "", 4, "ngIf"], ["cdkDropListGroup", "", 1, "child-list"], [4, "ngFor", "ngForOf"], ["cdkDropList", "", "cdkDropListOrientation", "horizontal'", 1, "field-box", 3, "id", "cdkDropListData", "cdkDropListDropped"], ["cdkDrag", "", 1, "dnd-box"], ["class", "dnd-placeholder", 4, "cdkDragPlaceholder"], [1, "fields-content"], ["class", "button-action", 4, "ngIf"], [1, "fields-container"], ["class", "sub-header", 4, "ngIf"], [3, "field", "length", "i", "j", "blink", "conditionData", "onCheckValue", "onAddKeywordFromInput", "onKeyPress", "onAddNewField", "onRemoveField", "onChangeType", "onRemoveKeyword", "onAddNewSubLevelField", "onExpendMore", "onChangeLabel", "onCheckedChip", "onDrop", "onCheckedDefault", "onEditBlock"], ["class", "child", 4, "ngIf"], ["class", "add-button-container add-button-sub-category", 4, "ngIf"], [1, "dnd-placeholder"], [1, "button-action"], [1, "sub-header"], ["mat-raised-button", "", 1, "transparent-button", "setting", 3, "click"], [1, "setting-icon"], ["mat-mini-fab", "", "color", "primary", 1, "expand-button", 3, "disabled", "click"], [1, "child"], ["class", "child-content", "cdkDropList", "", 3, "cdkDropListData", "cdkDropListDropped", 4, "ngIf"], ["cdkDropList", "", 1, "child-content", 3, "cdkDropListData", "cdkDropListDropped"], ["childList", "cdkDropList"], ["class", "", "style", "margin-bottom: 20px", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "", 2, "margin-bottom", "20px", 3, "id"], ["cdkDrag", ""], ["class", "button-action child-2-background", 4, "ngIf"], [3, "field", "length", "i", "blink", "j", "conditionData", "onCheckValue", "onAddKeywordFromInput", "onKeyPress", "onAddNewField", "onRemoveField", "onChangeType", "onRemoveKeyword", "onAddNewSubLevelField", "onExpendMore", "onChangeLabel", "onCheckedChip", "onDrop", "onCheckedDefault", "onEditBlock"], ["class", "add-button-sub-category", 4, "ngIf"], [1, "button-action", "child-2-background"], ["type", "text", "required", "", "placeholder", "Saisir le nom de la sous cat\u00E9gorie", 1, "full-width", "input-category-name", 3, "readonly", "ngModel", "ngModelOptions", "ngModelChange"], ["class", "", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "", 3, "id"], ["class", "button-action child-3-background", 4, "ngIf"], [3, "field", "length", "blink", "i", "j", "conditionData", "onCheckValue", "onAddKeywordFromInput", "onKeyPress", "onAddNewField", "onRemoveField", "onChangeType", "onRemoveKeyword", "onAddNewSubLevelField", "onExpendMore", "onChangeLabel", "onCheckedChip", "onDrop", "onCheckedDefault", "onEditBlock"], [1, "button-action", "child-3-background"], [1, "add-button-sub-category"], ["mat-raised-button", "", "color", "primary", 2, "margin", "10px auto", 3, "click"], [1, "add-button-container", "add-button-sub-category"], ["mat-raised-button", "", "color", "primary", 1, "add-button", 2, "margin", "10px auto", "padding", "10px 0", 3, "disabled", "click"], [1, "property-content"], [1, "property-content-inner", 2, "width", "100%"], ["appearance", "outline", 1, "form-field", "mat-select", "full-width", 2, "cursor", "pointer"], ["disabled", "true", "required", "", 1, "select-type-class", 3, "ngModel", "ngModelOptions", "click", "ngModelChange"], ["value", "text"], ["value", "textarea"], ["value", "radio"], ["value", "select"], ["value", "toggle"], ["value", "checkbox"], ["value", "checkbox_multiple"], ["value", "email"], ["value", "password"], ["value", "date"], ["value", "tel"], ["value", "none"], ["appearance", "outline", 1, "form-field", "full-width"], ["type", "text", "matInput", "", "required", "", "placeholder", "", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "ngSwitch"], ["class", "flex-auto", "style", "display: flex;align-items: flex-end;margin: 10px 0;", 4, "ngSwitchCase"], ["class", "flex-auto", 4, "ngSwitchCase"], ["class", "flex-auto full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 3, "opacity", 4, "ngSwitchDefault"], [1, "mandatory", "top-10", "bottom-10"], [1, "toogle-button"], ["color", "#6FE8D7", 3, "ngModel", "ngModelOptions", "ngModelChange"], [1, "mandatory", "top-10"], ["aria-labelledby", "example-radio-group-label", "class", "example-radio-group", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], [1, "bloc-action"], ["mat-button", "", 3, "disabled", "click", 4, "ngIf"], ["mat-button", "", 3, "disabled", "click"], ["mat-button", "", 1, "delete-bloc", 3, "disabled", "click"], [1, "flex-auto", 2, "display", "flex", "align-items", "flex-end", "margin", "10px 0"], ["color", "#6FE8D7", 1, "form-field", 3, "ngModel", "ngModelOptions", "ngModelChange"], [2, "margin-left", "10px"], [1, "flex-auto"], [1, "form-field", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["appearance", "outline", 1, "flex-auto", "full-width"], ["cdkDropList", "", "aria-label", "Video keywords; let index=index", "multiple", "", "selectable", "", 3, "cdkDropListData", "cdkDropListDropped"], ["childList", "cdkDropList", "chipList", ""], ["style", "min-height: 25px;width: auto;", "cdkDrag", "", 3, "selected", "value", "removable", "dblclick", "click", "removed", 4, "ngFor", "ngForOf"], ["placeholder", "add...", 3, "matChipInputFor", "matChipInputAddOnBlur", "matChipInputSeparatorKeyCodes", "ngModel", "ngModelOptions", "matChipInputTokenEnd", "keyup", "ngModelChange"], ["chipsInput", ""], ["cdkDrag", "", 2, "min-height", "25px", "width", "auto", 3, "selected", "value", "removable", "dblclick", "click", "removed"], ["matChipRemove", ""], ["type", "text", "matInput", "", "placeholder", "Description...", 3, "ngModelOptions", "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", 3, "type", "disabled", "ngModelOptions", "ngModel", "ngModelChange"], ["appearance", "outline", 1, "form-field", "mat-select", "full-width"], [3, "ngModel", "ngModelOptions", "ngModelChange", "selectionChange"], [3, "value", 4, "ngFor", "ngForOf"], ["class", "form-field mat-select full-width", "appearance", "outline", 4, "ngIf"], [3, "value"], ["aria-labelledby", "example-radio-group-label", 1, "example-radio-group", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["class", "example-radio-button", "style", "margin-right: 10px", 3, "value", 4, "ngFor", "ngForOf"], [1, "example-radio-button", 2, "margin-right", "10px", 3, "value"], [1, "property-content-inner"], ["required", "", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["mat-button", "", 3, "click"]], template: function TemplateProfileCreateComponent_Template(rf, ctx) {
+    }, decls: 43, vars: 14, consts: [[1, "header-create-profile"], [1, "header-create-profile-top"], [3, "click"], [1, "create-profile-action"], ["mat-button", "", "type", "submit", 1, "register-button", 3, "click"], [4, "ngIf"], ["mat-button", "", "type", "submit", 1, "register-button", "live-button", 3, "click"], ["mat-button", "", "type", "submit", 1, "register-button", "live-button", "forward", 3, "disabled", "click"], [1, "create-profile-menus"], ["class", "li-title", 3, "class", "id", "click", 4, "ngFor", "ngForOf"], ["mat-mini-fab", "", "color", "transparent", 3, "click"], [3, "formGroup"], ["cdkDropListGroup", "", 1, "category"], [1, "fields"], ["cdkDropList", "", "id", "categories-id", 1, "fields-inner", "example-list", "mt-10", 3, "cdkDropListData", "cdkDropListDropped", "scroll"], ["class", "category-item section-item", "cdkDrag", "", 3, "id", "paddingBottom", "class", "click", 4, "ngFor", "ngForOf"], [1, "add-button-container", "add-category-button", "add-step"], [2, "background-color", "transparent"], [2, "height", "400px"], [1, "field-property"], ["class", "property-content", 4, "ngIf"], [1, "li-title", 3, "id", "click"], ["cdkDrag", "", 1, "category-item", "section-item", 3, "id", "click"], ["cdkDragHandle", "", 1, "left-action", "move-icons"], ["mat-raised-button", "", 1, "transparent-button", 3, "click"], [1, "drag-icon"], [1, "field-content"], [1, "field-item"], [1, "full-width", "input-category-name"], [1, "sub-category-name"], ["mat-mini-fab", "", "color", "primary", 1, "expand-button", 3, "click"], ["class", "child-list", "cdkDropListGroup", "", 4, "ngIf"], ["cdkDropListGroup", "", 1, "child-list"], [4, "ngFor", "ngForOf"], ["cdkDropList", "", "cdkDropListOrientation", "horizontal'", 1, "field-box", 3, "id", "cdkDropListData", "cdkDropListDropped"], ["cdkDrag", "", 1, "dnd-box"], ["class", "dnd-placeholder", 4, "cdkDragPlaceholder"], [1, "fields-content"], ["class", "button-action", 4, "ngIf"], [1, "fields-container"], ["class", "sub-header", 4, "ngIf"], [3, "field", "length", "i", "j", "blink", "conditionData", "onCheckValue", "onAddKeywordFromInput", "onKeyPress", "onAddNewField", "onRemoveField", "onChangeType", "onRemoveKeyword", "onAddNewSubLevelField", "onExpendMore", "onChangeLabel", "onCheckedChip", "onDrop", "onCheckedDefault", "onEditBlock"], ["class", "child", 4, "ngIf"], ["class", "add-button-container add-button-sub-category", 4, "ngIf"], [1, "dnd-placeholder"], [1, "button-action"], [1, "sub-header"], ["mat-raised-button", "", 1, "transparent-button", "setting", 3, "click"], [1, "setting-icon"], ["mat-mini-fab", "", "color", "primary", 1, "expand-button", 3, "disabled", "click"], [1, "child"], ["class", "child-content", "cdkDropList", "", 3, "cdkDropListData", "cdkDropListDropped", 4, "ngIf"], ["cdkDropList", "", 1, "child-content", 3, "cdkDropListData", "cdkDropListDropped"], ["childList", "cdkDropList"], ["class", "", "style", "margin-bottom: 20px", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "", 2, "margin-bottom", "20px", 3, "id"], ["cdkDrag", ""], ["class", "button-action child-2-background", 4, "ngIf"], [3, "field", "length", "i", "blink", "j", "conditionData", "onCheckValue", "onAddKeywordFromInput", "onKeyPress", "onAddNewField", "onRemoveField", "onChangeType", "onRemoveKeyword", "onAddNewSubLevelField", "onExpendMore", "onChangeLabel", "onCheckedChip", "onDrop", "onCheckedDefault", "onEditBlock"], ["class", "add-button-sub-category", 4, "ngIf"], [1, "button-action", "child-2-background"], ["type", "text", "required", "", "placeholder", "Saisir le nom de la sous cat\u00E9gorie", 1, "full-width", "input-category-name", 3, "readonly", "ngModel", "ngModelOptions", "ngModelChange"], ["class", "", 3, "id", "width", 4, "ngFor", "ngForOf"], [1, "", 3, "id"], ["class", "button-action child-3-background", 4, "ngIf"], [3, "field", "length", "blink", "i", "j", "conditionData", "onCheckValue", "onAddKeywordFromInput", "onKeyPress", "onAddNewField", "onRemoveField", "onChangeType", "onRemoveKeyword", "onAddNewSubLevelField", "onExpendMore", "onChangeLabel", "onCheckedChip", "onDrop", "onCheckedDefault", "onEditBlock"], [1, "button-action", "child-3-background"], [1, "add-button-sub-category"], ["mat-raised-button", "", "color", "primary", 2, "margin", "10px auto", 3, "click"], [1, "add-button-container", "add-button-sub-category"], ["mat-raised-button", "", "color", "primary", 1, "add-button", 2, "margin", "10px auto", "padding", "10px 0", 3, "disabled", "click"], [1, "property-content"], [1, "property-content-inner", 2, "width", "100%"], ["appearance", "outline", 1, "form-field", "mat-select", "full-width", 2, "cursor", "pointer"], ["disabled", "true", "required", "", 1, "select-type-class", 3, "ngModel", "ngModelOptions", "click", "ngModelChange"], ["value", "text"], ["value", "textarea"], ["value", "radio"], ["value", "select"], ["value", "toggle"], ["value", "checkbox"], ["value", "checkbox_multiple"], ["value", "email"], ["value", "password"], ["value", "date"], ["value", "tel"], ["value", "none"], ["appearance", "outline", 1, "form-field", "full-width"], ["type", "text", "matInput", "", "required", "", "placeholder", "", 3, "ngModel", "ngModelOptions", "ngModelChange"], [3, "ngSwitch"], ["class", "flex-auto", "style", "display: flex;align-items: flex-end;margin: 10px 0;", 4, "ngSwitchCase"], ["class", "flex-auto", 4, "ngSwitchCase"], ["class", "flex-auto full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 4, "ngSwitchCase"], ["class", "form-field full-width", "appearance", "outline", 3, "opacity", 4, "ngSwitchDefault"], [1, "mandatory", "top-10", "bottom-10"], [1, "toogle-button"], ["color", "#6FE8D7", 3, "ngModel", "ngModelOptions", "ngModelChange"], [1, "mandatory", "top-10"], ["aria-labelledby", "example-radio-group-label", "class", "example-radio-group", 3, "ngModel", "ngModelOptions", "ngModelChange", 4, "ngIf"], [1, "bloc-action"], ["mat-button", "", 3, "disabled", "click", 4, "ngIf"], ["mat-button", "", 3, "disabled", "click"], ["mat-button", "", 1, "delete-bloc", 3, "disabled", "click"], [1, "flex-auto", 2, "display", "flex", "align-items", "flex-end", "margin", "10px 0"], ["color", "#6FE8D7", 1, "form-field", 3, "ngModel", "ngModelOptions", "ngModelChange"], [2, "margin-left", "10px"], [1, "flex-auto"], [1, "form-field", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["appearance", "outline", 1, "flex-auto", "full-width"], ["cdkDropList", "", "aria-label", "Video keywords; let index=index", "multiple", "", "selectable", "", 3, "cdkDropListData", "cdkDropListDropped"], ["childList", "cdkDropList", "chipList", ""], ["style", "min-height: 25px;width: auto;", "cdkDrag", "", 3, "selected", "value", "removable", "dblclick", "click", "removed", 4, "ngFor", "ngForOf"], ["placeholder", "add...", 3, "matChipInputFor", "matChipInputAddOnBlur", "matChipInputSeparatorKeyCodes", "ngModel", "ngModelOptions", "matChipInputTokenEnd", "keyup", "ngModelChange"], ["chipsInput", ""], ["cdkDrag", "", 2, "min-height", "25px", "width", "auto", 3, "selected", "value", "removable", "dblclick", "click", "removed"], ["matChipRemove", ""], ["type", "text", "matInput", "", "placeholder", "Description...", 3, "ngModelOptions", "ngModel", "ngModelChange"], ["matInput", "", "placeholder", "", 3, "type", "disabled", "ngModelOptions", "ngModel", "ngModelChange"], ["appearance", "outline", 1, "form-field", "mat-select", "full-width"], [3, "ngModel", "ngModelOptions", "ngModelChange", "selectionChange"], [3, "value", 4, "ngFor", "ngForOf"], ["class", "form-field mat-select full-width", "appearance", "outline", 4, "ngIf"], [3, "value"], ["aria-labelledby", "example-radio-group-label", 1, "example-radio-group", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["class", "example-radio-button", "style", "margin-right: 10px", 3, "value", 4, "ngFor", "ngForOf"], [1, "example-radio-button", 2, "margin-right", "10px", 3, "value"], [1, "property-content-inner"], ["required", "", 3, "ngModel", "ngModelOptions", "ngModelChange"], ["mat-button", "", 3, "click"]], template: function TemplateProfileCreateComponent_Template(rf, ctx) {
         if (rf & 1) {
             i0.ɵɵelementStart(0, "main")(1, "div", 0)(2, "div", 1)(3, "h3")(4, "span");
             i0.ɵɵtext(5);
@@ -4744,52 +4729,57 @@ TemplateProfileCreateComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ ty
             i0.ɵɵlistener("click", function TemplateProfileCreateComponent_Template_mat_icon_click_6_listener() { return ctx.openDialog(); });
             i0.ɵɵtext(7, "edit");
             i0.ɵɵelementEnd()();
-            i0.ɵɵelementStart(8, "div", 3);
-            i0.ɵɵtemplate(9, TemplateProfileCreateComponent_button_9_Template, 3, 2, "button", 4);
-            i0.ɵɵelementStart(10, "button", 5);
-            i0.ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_10_listener() { return ctx.onSubmit(true); });
-            i0.ɵɵtemplate(11, TemplateProfileCreateComponent_lib_loading_page_11_Template, 1, 0, "lib-loading-page", 6);
-            i0.ɵɵtext(12);
+            i0.ɵɵelementStart(8, "div", 3)(9, "button", 4);
+            i0.ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_9_listener() { return ctx.onSubmit(false); });
+            i0.ɵɵtemplate(10, TemplateProfileCreateComponent_lib_loading_page_10_Template, 1, 0, "lib-loading-page", 5);
+            i0.ɵɵtext(11);
             i0.ɵɵelementEnd();
-            i0.ɵɵelementStart(13, "button", 7);
-            i0.ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_13_listener() { return ctx.onCancel(true); });
-            i0.ɵɵelementStart(14, "mat-icon");
-            i0.ɵɵtext(15, "rotate_left");
+            i0.ɵɵelementStart(12, "button", 6);
+            i0.ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_12_listener() { return ctx.onSubmit(true); });
+            i0.ɵɵtemplate(13, TemplateProfileCreateComponent_lib_loading_page_13_Template, 1, 0, "lib-loading-page", 5);
+            i0.ɵɵtext(14);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementStart(15, "button", 7);
+            i0.ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_15_listener() { return ctx.onCancel(true); });
+            i0.ɵɵelementStart(16, "mat-icon");
+            i0.ɵɵtext(17, "rotate_left");
             i0.ɵɵelementEnd()();
-            i0.ɵɵelementStart(16, "button", 7);
-            i0.ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_16_listener() { return ctx.onCancel(false); });
-            i0.ɵɵelementStart(17, "mat-icon");
-            i0.ɵɵtext(18, "rotate_right");
+            i0.ɵɵelementStart(18, "button", 7);
+            i0.ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_18_listener() { return ctx.onCancel(false); });
+            i0.ɵɵelementStart(19, "mat-icon");
+            i0.ɵɵtext(20, "rotate_right");
             i0.ɵɵelementEnd()()()();
-            i0.ɵɵelementStart(19, "div", 8)(20, "ul");
-            i0.ɵɵtemplate(21, TemplateProfileCreateComponent_li_21_Template, 2, 4, "li", 9);
-            i0.ɵɵelementStart(22, "li")(23, "button", 10);
-            i0.ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_23_listener($event) { return ctx.onAddNewCategory($event); });
-            i0.ɵɵelementStart(24, "mat-icon");
-            i0.ɵɵtext(25, "add");
+            i0.ɵɵelementStart(21, "div", 8)(22, "ul");
+            i0.ɵɵtemplate(23, TemplateProfileCreateComponent_li_23_Template, 2, 4, "li", 9);
+            i0.ɵɵelementStart(24, "li")(25, "button", 10);
+            i0.ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_25_listener($event) { return ctx.onAddNewCategory($event); });
+            i0.ɵɵelementStart(26, "mat-icon");
+            i0.ɵɵtext(27, "add");
             i0.ɵɵelementEnd()()()()()();
-            i0.ɵɵelementStart(26, "form", 11)(27, "div", 12)(28, "div", 13)(29, "div", 14);
-            i0.ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_Template_div_cdkDropListDropped_29_listener($event) { return ctx.drop($event); })("scroll", function TemplateProfileCreateComponent_Template_div_scroll_29_listener($event) { return ctx.onScroll($event); });
-            i0.ɵɵtemplate(30, TemplateProfileCreateComponent_section_30_Template, 16, 11, "section", 15);
-            i0.ɵɵelementStart(31, "div", 16)(32, "button", 2);
-            i0.ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_32_listener($event) { return ctx.onAddNewCategory($event); });
-            i0.ɵɵtext(33);
-            i0.ɵɵelementStart(34, "mat-icon");
-            i0.ɵɵtext(35, "add");
+            i0.ɵɵelementStart(28, "form", 11)(29, "div", 12)(30, "div", 13)(31, "div", 14);
+            i0.ɵɵlistener("cdkDropListDropped", function TemplateProfileCreateComponent_Template_div_cdkDropListDropped_31_listener($event) { return ctx.drop($event); })("scroll", function TemplateProfileCreateComponent_Template_div_scroll_31_listener($event) { return ctx.onScroll($event); });
+            i0.ɵɵtemplate(32, TemplateProfileCreateComponent_section_32_Template, 16, 11, "section", 15);
+            i0.ɵɵelementStart(33, "div", 16)(34, "button", 2);
+            i0.ɵɵlistener("click", function TemplateProfileCreateComponent_Template_button_click_34_listener($event) { return ctx.onAddNewCategory($event); });
+            i0.ɵɵtext(35);
+            i0.ɵɵelementStart(36, "mat-icon");
+            i0.ɵɵtext(37, "add");
             i0.ɵɵelementEnd()()();
-            i0.ɵɵelementStart(36, "section", 17);
-            i0.ɵɵelement(37, "div", 18);
+            i0.ɵɵelementStart(38, "section", 17);
+            i0.ɵɵelement(39, "div", 18);
             i0.ɵɵelementEnd()()();
-            i0.ɵɵelementStart(38, "div", 19);
-            i0.ɵɵtemplate(39, TemplateProfileCreateComponent_div_39_Template, 33, 7, "div", 20);
-            i0.ɵɵtemplate(40, TemplateProfileCreateComponent_div_40_Template, 26, 15, "div", 20);
+            i0.ɵɵelementStart(40, "div", 19);
+            i0.ɵɵtemplate(41, TemplateProfileCreateComponent_div_41_Template, 33, 7, "div", 20);
+            i0.ɵɵtemplate(42, TemplateProfileCreateComponent_div_42_Template, 26, 15, "div", 20);
             i0.ɵɵelementEnd()()()();
         }
         if (rf & 2) {
             i0.ɵɵadvance(5);
             i0.ɵɵtextInterpolate(ctx.form.get("Name").value);
-            i0.ɵɵadvance(4);
-            i0.ɵɵproperty("ngIf", !(ctx.currentProfil == null ? null : ctx.currentProfil.Status));
+            i0.ɵɵadvance(5);
+            i0.ɵɵproperty("ngIf", ctx.loading && !ctx.isSubmitted);
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate1("", ctx.draftLabel, " ");
             i0.ɵɵadvance(2);
             i0.ɵɵproperty("ngIf", ctx.loading && ctx.isSubmitted);
             i0.ɵɵadvance(1);
@@ -4817,7 +4807,7 @@ TemplateProfileCreateComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ ty
 (function () {
     (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(TemplateProfileCreateComponent, [{
             type: Component,
-            args: [{ selector: "onboarding-create-profile-template", template: "<main>\r\n  <div class=\"header-create-profile\">\r\n    <div class=\"header-create-profile-top\">\r\n      <h3>\r\n        <span>{{ form.get(\"Name\").value }}</span>\r\n        <mat-icon (click)=\"openDialog()\">edit</mat-icon>\r\n      </h3>\r\n      <div class=\"create-profile-action\">\r\n        <button mat-button class=\"register-button\" type=\"submit\" (click)=\"onSubmit(false)\"\r\n          *ngIf=\"!currentProfil?.Status\">\r\n          <lib-loading-page *ngIf=\"loading && !isSubmitted\"></lib-loading-page>{{draftLabel}}\r\n        </button>\r\n        <button mat-button class=\"register-button live-button\" type=\"submit\" (click)=\"onSubmit(true)\">\r\n          <lib-loading-page *ngIf=\"loading && isSubmitted\"></lib-loading-page>\r\n          {{liveLabel}}\r\n        </button>\r\n\r\n        <button [disabled]=\"currentCanceledIndex < 0 || historics.length===0\" mat-button\r\n          class=\"register-button live-button forward\" type=\"submit\" (click)=\"onCancel(true)\">\r\n          <mat-icon>rotate_left</mat-icon>\r\n        </button>\r\n        <button [disabled]=\"currentCanceledIndex===historics.length-1 || currentCanceledIndex===null\" mat-button\r\n          class=\"register-button live-button forward\" type=\"submit\" (click)=\"onCancel(false)\">\r\n          <mat-icon>rotate_right</mat-icon>\r\n        </button>\r\n      </div>\r\n    </div>\r\n    <div class=\"create-profile-menus\">\r\n      <ul>\r\n        <li class=\"li-title\" [class]=\"editIndex === i ? 'active' : ''\" *ngFor=\"let cat of categories; let i = index\"\r\n          (click)=\"scrollTo(cat, i)\" [id]=\"cat.name+'x'\">\r\n          <!-- (click)=\"onActiveMenu(cat, i,true)\" [ngxScrollTo]=\"'#' + cat.name\" [id]=\"cat.name+'x'\"> -->\r\n          {{ cat.name }}\r\n        </li>\r\n        <li>\r\n          <button mat-mini-fab color=\"transparent\" (click)=\"onAddNewCategory($event)\">\r\n            <mat-icon>add</mat-icon>\r\n          </button>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n  <form [formGroup]=\"form\">\r\n    <div class=\"category\" cdkDropListGroup>\r\n      <div class=\"fields\">\r\n        <div cdkDropList (cdkDropListDropped)=\"drop($event)\" [cdkDropListData]=\"categories\"\r\n          class=\"fields-inner example-list mt-10\" id=\"categories-id\" (scroll)=\"onScroll($event)\">\r\n          <section class=\"category-item section-item\" *ngFor=\"let category of categories; let i = index\" cdkDrag\r\n            [id]=\"category.name\" [style.paddingBottom]=\"category.expandMore ? '50px' : '10px'\"\r\n            [class]=\"editIndex === i ? 'active' : ''\" (click)=\"scrollTo(category, i)\">\r\n            <!-- [class]=\"editIndex === i ? 'active' : ''\" [ngxScrollTo]=\"'#' + category.name\"> -->\r\n            <div class=\"left-action move-icons\" cdkDragHandle>\r\n              <button class=\"transparent-button\" mat-raised-button\r\n                (click)=\"$event.preventDefault();$event.stopPropagation()\">\r\n                <mat-icon class=\"drag-icon\">drag_indicator</mat-icon>\r\n              </button>\r\n            </div>\r\n            <div class=\"field-content\">\r\n              <div class=\"field-item\">\r\n                <!-- <div class=\"field-item\" (click)=\" onExpendMore({ event: $event, field: category }, i)\"> -->\r\n                <div>\r\n                  <p class=\"full-width input-category-name\">\r\n                    {{ category.name }}\r\n                  </p>\r\n                  <p class=\"sub-category-name\">\r\n                    {{locale?.CATEGORY_SUBTITLE}} {{ catNameStart(category.name) ? \"l'\" +\r\n                    category.name : category.name }}\r\n                  </p>\r\n                </div>\r\n                <button mat-mini-fab color=\"primary\" class=\"expand-button\"\r\n                  (click)=\"$event.stopPropagation();onExpendMore({ event: $event, field: category }, i)\">\r\n                  <mat-icon *ngIf=\"!category.expandMore\">chevron_right</mat-icon>\r\n                  <mat-icon *ngIf=\"category.expandMore\">expand_more</mat-icon>\r\n                </button>\r\n              </div>\r\n              <div class=\"child-list\" *ngIf=\"category.forms\" cdkDropListGroup>\r\n                <ng-container *ngIf=\"category.expandMore\">\r\n                  <ng-container *ngFor=\"let field of category.forms; let j = index\">\r\n                    <div class=\"field-box\" [id]=\"field.key\" cdkDropList cdkDropListOrientation=\"horizontal'\"\r\n                      (cdkDropListDropped)=\"dropField($event)\"\r\n                      [cdkDropListData]=\"{ field: field, index: j, category: category }\"\r\n                      [style.width]=\"field.forms && field.forms.length>0 ? '100%' : fieldWidth(field.type,category.forms.length,j)\">\r\n                      <div cdkDrag class=\"dnd-box\">\r\n                        <div class=\"dnd-placeholder\" *cdkDragPlaceholder></div>\r\n                        <div class=\"fields-content\"\r\n                          [class]=\"field.forms && field.forms.length>0 ? 'sub-category-forms' :''\">\r\n                          <div class=\"button-action\" *ngIf=\"field.forms\">\r\n                            <button class=\"transparent-button\" mat-raised-button\r\n                              (click)=\"$event.stopPropagation();$event.preventDefault()\">\r\n                              <mat-icon class=\"drag-icon\">drag_indicator</mat-icon>\r\n                            </button>\r\n                          </div>\r\n                          <div class=\"fields-container\">\r\n                            <div class=\"sub-header\" *ngIf=\"field.forms\">\r\n                              <div class=\"field-item\">\r\n                                <div>\r\n                                  <p class=\"full-width input-category-name\">\r\n                                    {{ field.label }}\r\n                                  </p>\r\n                                  <p class=\"sub-category-name\">\r\n                                    {{locale?.CATEGORY_SUBTITLE}}\r\n                                    {{ catNameStart(field.label) ? \"l'\" + field.label : field.label }}\r\n                                  </p>\r\n                                </div>\r\n                                <button class=\"transparent-button setting\" mat-raised-button\r\n                                  (click)=\"$event.stopPropagation();onEditBlock(field, i, j)\">\r\n                                  <mat-icon class=\"setting-icon\">settings</mat-icon>\r\n                                </button>\r\n                                <button class=\"expand-button\" [disabled]=\"!(field.forms && field.forms.length > 0)\"\r\n                                  [style.opacity]=\"field.forms && field.forms.length > 0 ? 1 : 0\" mat-mini-fab\r\n                                  color=\"primary\"\r\n                                  (click)=\"$event.stopPropagation();onExpendMore({ event: $event, field: field }, i, j)\">\r\n                                  <mat-icon *ngIf=\"!field.expandMore\">expand_less </mat-icon>\r\n                                  <mat-icon *ngIf=\"field.expandMore\">expand_more </mat-icon>\r\n                                </button>\r\n                              </div>\r\n                            </div>\r\n                            <lib-sub-category [field]=\"field\" [length]=\"category?.forms?.length\" [i]=\"i\" [j]=\"j\"\r\n                              [blink]=\"checkBlink(j,1)===newFieldIndex\" (onCheckValue)=\"onCheckValue($event)\"\r\n                              (onAddKeywordFromInput)=\"addKeywordFromInput($event.event, $event.prev, i, j)\"\r\n                              (onKeyPress)=\"onKeyPress($event.event, i, j)\" (onAddNewField)=\"onAddNewField(i)\"\r\n                              (onRemoveField)=\"onRemoveField(i, j)\" (onChangeType)=\"onChangeType(field.type, i, j)\"\r\n                              (onRemoveKeyword)=\"removeKeyword($event.event, i, j)\"\r\n                              (onAddNewSubLevelField)=\"onAddNewSubLevelField(i, j)\"\r\n                              (onExpendMore)=\"onExpendMore($event, i, j)\" (onChangeLabel)=\"onChangeLabel($event, i, j)\"\r\n                              (onCheckedChip)=\"onCheckedChip($event, i, j)\" (onDrop)=\"drop($event)\"\r\n                              (onCheckedDefault)=\"onCheckedDefault($event, i, j)\"\r\n                              (onEditBlock)=\"onEditBlock(field, i, j)\" [conditionData]=\"conditionData\">\r\n                              <div *ngIf=\"field.expandMore\" class=\"child\">\r\n                                <div #childList=\"cdkDropList\" class=\"child-content\" *ngIf=\"field.forms\"\r\n                                  [cdkDropListData]=\"field.forms\" cdkDropList (cdkDropListDropped)=\"drop($event)\">\r\n                                  <div class=\"\" style=\"margin-bottom: 20px\"\r\n                                    *ngFor=\"let child of field.forms; let k = index\" [id]=\"child.key\"\r\n                                    [style.width]=\"child.forms && child.forms.length>0 ? '100%' : fieldWidth(child.type,field.forms.length,k)\">\r\n                                    <div cdkDrag>\r\n                                      <div class=\"fields-content\"\r\n                                        [class]=\"child.forms && child.forms.length>0 ? 'sub-category-forms' :''\">\r\n                                        <div class=\"button-action child-2-background\"\r\n                                          *ngIf=\"child.forms && child.forms.length>0\">\r\n                                          <button class=\"transparent-button\" mat-raised-button\r\n                                            (click)=\"$event.stopPropagation();$event.preventDefault()\">\r\n                                            <mat-icon class=\"drag-icon\"> drag_indicator</mat-icon>\r\n                                          </button>\r\n                                        </div>\r\n                                        <div class=\"fields-container\">\r\n                                          <div class=\"sub-header\" *ngIf=\"child.forms && child.forms.length>0\">\r\n                                            <div class=\"field-item\">\r\n                                              <div>\r\n                                                <input class=\"full-width input-category-name\" type=\"text\" required\r\n                                                  [readonly]=\"categories.length < 4 || !category.editable\"\r\n                                                  [readonly]=\"!category.editable\" [(ngModel)]=\"child.label\"\r\n                                                  [ngModelOptions]=\"{ standalone: true }\"\r\n                                                  placeholder=\"Saisir le nom de la sous cat\u00E9gorie\" />\r\n                                                <p class=\"sub-category-name\">\r\n                                                  {{locale?.CATEGORY_SUBTITLE}}\r\n                                                  {{ catNameStart(child.label) ? \"l'\" + child.label : child.label }}\r\n                                                </p>\r\n                                              </div>\r\n                                              <button class=\"transparent-button setting\" mat-raised-button\r\n                                                (click)=\"$event.stopPropagation();onEditBlock(child, i, j, k)\">\r\n                                                <mat-icon class=\"setting-icon\">settings</mat-icon>\r\n                                              </button>\r\n                                              <button class=\"expand-button\"\r\n                                                [disabled]=\"!(child.forms && child.forms.length > 0)\"\r\n                                                [style.opacity]=\"child.forms && child.forms.length > 0 ? 1 : 0\"\r\n                                                mat-mini-fab color=\"primary\"\r\n                                                (click)=\"$event.stopPropagation();onExpendMore({ event: $event, field: child }, i, j, k)\">\r\n                                                <mat-icon *ngIf=\"!child.expandMore\"> expand_less </mat-icon>\r\n                                                <mat-icon *ngIf=\"child.expandMore\"> expand_more </mat-icon>\r\n                                              </button>\r\n                                            </div>\r\n                                          </div>\r\n                                          <lib-sub-category [field]=\"child\" [length]=\"field?.forms?.length\" [i]=\"j\"\r\n                                            [blink]=\"checkBlink(k,2)===newFieldIndex\" [j]=\"k\"\r\n                                            (onCheckValue)=\"onCheckValue($event)\"\r\n                                            (onAddKeywordFromInput)=\"addKeywordFromInput($event.event, $event.prev, i, j, k)\"\r\n                                            (onKeyPress)=\"onKeyPress($event.event, i, j, k)\"\r\n                                            (onAddNewField)=\"onAddNewField(i, j)\"\r\n                                            (onRemoveField)=\"onRemoveField(i, j, k)\"\r\n                                            (onChangeType)=\"onChangeType(child.type, i, j, k)\"\r\n                                            (onRemoveKeyword)=\"removeKeyword($event.event, i, j, k)\"\r\n                                            (onAddNewSubLevelField)=\"onAddNewSubLevelField(i, j, k)\"\r\n                                            (onExpendMore)=\"onExpendMore($event, i, j, k)\"\r\n                                            (onChangeLabel)=\"onChangeLabel($event, i, j, k)\"\r\n                                            (onCheckedChip)=\"onCheckedChip($event, i, j, k)\" (onDrop)=\"drop($event)\"\r\n                                            (onCheckedDefault)=\"onCheckedDefault($event, i, j, k)\"\r\n                                            [conditionData]=\"conditionData\" (onEditBlock)=\"onEditBlock(child, i, j, k)\">\r\n                                            <div *ngIf=\"child.expandMore\" class=\"child\">\r\n                                              <div class=\"child-content\" #childList=\"cdkDropList\"\r\n                                                *ngIf=\"child.forms && child.forms.length>0\"\r\n                                                [cdkDropListData]=\"child.forms\" cdkDropList\r\n                                                (cdkDropListDropped)=\"drop($event)\">\r\n                                                <div class=\"\" *ngFor=\"let c2 of child.forms; let l = index\"\r\n                                                  [id]=\"c2.key\"\r\n                                                  [style.width]=\"c2.forms && c2.forms.length>0 ? '100%' : fieldWidth(c2.type,child.forms.length,l)\">\r\n                                                  <div cdkDrag>\r\n                                                    <div class=\"fields-content\"\r\n                                                      [class]=\"c2.forms && c2.forms.length>0 ? 'sub-category-forms' :''\">\r\n                                                      <div class=\"button-action child-3-background\"\r\n                                                        *ngIf=\"c2.forms && c2.forms.length>0\">\r\n                                                        <button class=\"transparent-button\" mat-raised-button\r\n                                                          (click)=\"$event.stopPropagation()\">\r\n                                                          <mat-icon class=\"drag-icon\"> drag_indicator </mat-icon>\r\n                                                        </button>\r\n                                                      </div>\r\n                                                      <div class=\"fields-container\">\r\n                                                        <lib-sub-category [field]=\"c2\" [length]=\"child?.forms?.length\"\r\n                                                          [blink]=\"checkBlink(l,3)===newFieldIndex\" [i]=\"k\" [j]=\"l\"\r\n                                                          (onCheckValue)=\"onCheckValue($event)\"\r\n                                                          (onAddKeywordFromInput)=\"addKeywordFromInput($event.event, $event.prev, i, j, k, l)\"\r\n                                                          (onKeyPress)=\"onKeyPress($event.event, i, j, k, l)\"\r\n                                                          (onAddNewField)=\"onAddNewField(i, j, k)\"\r\n                                                          (onRemoveField)=\"onRemoveField(i, j, k, l)\"\r\n                                                          (onChangeType)=\"onChangeType(c2.type, i, j, k, l)\"\r\n                                                          (onRemoveKeyword)=\"removeKeyword($event.event, i, j, k, l)\"\r\n                                                          (onAddNewSubLevelField)=\"onAddNewSubLevelField(i, j, k, l)\"\r\n                                                          (onExpendMore)=\"onExpendMore($event, i, j, k, l)\"\r\n                                                          (onChangeLabel)=\"onChangeLabel($event, i, j, k, l)\"\r\n                                                          (onCheckedChip)=\"onCheckedChip($event, i, j, k, l)\"\r\n                                                          (onDrop)=\"drop($event)\"\r\n                                                          (onCheckedDefault)=\"onCheckedDefault($event, i, j, k, l)\"\r\n                                                          (onEditBlock)=\"onEditBlock(c2, i, j, k, l)\"\r\n                                                          [conditionData]=\"conditionData\">\r\n                                                          <div class=\"child\"></div>\r\n                                                        </lib-sub-category>\r\n                                                      </div>\r\n                                                    </div>\r\n                                                  </div>\r\n                                                  <div class=\"add-button-sub-category\"\r\n                                                    *ngIf=\"child?.forms?.length - 1 === l\">\r\n                                                    <button style=\"margin: 10px auto\" mat-raised-button color=\"primary\"\r\n                                                      (click)=\"$event.stopPropagation();onAddNewField(i, j, k)\">\r\n                                                      <span>{{locale?.ADD_FIELD}}</span>\r\n                                                      <mat-icon> add </mat-icon>\r\n                                                    </button>\r\n                                                  </div>\r\n                                                </div>\r\n                                              </div>\r\n                                            </div>\r\n                                          </lib-sub-category>\r\n                                        </div>\r\n                                      </div>\r\n                                    </div>\r\n                                    <div class=\"add-button-sub-category\" *ngIf=\"field?.forms?.length - 1 === k\">\r\n                                      <button style=\"margin: 10px auto\" mat-raised-button color=\"primary\"\r\n                                        (click)=\"$event.stopPropagation();onAddNewField(i, j)\">\r\n                                        <span>{{locale?.ADD_FIELD}}</span>\r\n                                        <mat-icon>add</mat-icon>\r\n                                      </button>\r\n                                    </div>\r\n                                  </div>\r\n                                </div>\r\n                              </div>\r\n                            </lib-sub-category>\r\n                          </div>\r\n                        </div>\r\n                      </div>\r\n                      <div class=\"add-button-container add-button-sub-category\"\r\n                        *ngIf=\"category?.forms?.length - 1 === j\">\r\n                        <button style=\"margin: 10px auto; padding:10px 0\" class=\"add-button\"\r\n                          [disabled]=\"category?.forms?.length - 1 !== j\"\r\n                          [style.opacity]=\"category?.forms?.length - 1 === j ? 1 : 0\" mat-raised-button color=\"primary\"\r\n                          (click)=\"$event.stopPropagation();onAddNewField(i)\">\r\n                          <span>{{locale?.ADD_FIELD}}</span>\r\n                          <mat-icon>add</mat-icon>\r\n                        </button>\r\n                      </div>\r\n                    </div>\r\n                  </ng-container>\r\n                </ng-container>\r\n              </div>\r\n            </div>\r\n          </section>\r\n\r\n          <div class=\"add-button-container add-category-button add-step\">\r\n            <button (click)=\"onAddNewCategory($event)\">\r\n              {{locale?.ADD_STEP}}\r\n              <mat-icon>add</mat-icon>\r\n            </button>\r\n          </div>\r\n          <section style=\"background-color: transparent\">\r\n            <div style=\"height: 400px;\"></div>\r\n          </section>\r\n        </div>\r\n      </div>\r\n      <div class=\"field-property\">\r\n        <div class=\"property-content\" *ngIf=\"isBlock && currentEditBlock\">\r\n          <h3>{{locale?.SETTING_OF_BLOCK}} {{ currentEditBlock.label }}</h3>\r\n          <div class=\"property-content-inner\" style=\"width: 100%;\">\r\n            <mat-form-field class=\"form-field mat-select full-width\" style=\"cursor: pointer\" appearance=\"outline\">\r\n              <mat-label>{{locale?.TYPE_OF_BLOCK}}</mat-label>\r\n              <mat-select (click)=\"onOpenTypeDialog(currentEditBlock)\" disabled=\"true\" required\r\n                [(ngModel)]=\"currentEditBlock.type\" (ngModelChange)=\"onChangeTypeBlock(currentEditBlock)\"\r\n                [ngModelOptions]=\"{ standalone: true }\" class=\"select-type-class\">\r\n                <mat-option value=\"text\">Text(80)</mat-option>\r\n                <mat-option value=\"textarea\">Text(80+)</mat-option>\r\n                <mat-option value=\"radio\">Radio</mat-option>\r\n                <mat-option value=\"select\">Selector</mat-option>\r\n                <mat-option value=\"toggle\">Toggle</mat-option>\r\n                <mat-option value=\"checkbox\">Checkbox</mat-option>\r\n                <mat-option value=\"checkbox_multiple\">Checkbox multiple</mat-option>\r\n                <mat-option value=\"email\">Email</mat-option>\r\n                <mat-option value=\"password\">Password</mat-option>\r\n                <mat-option value=\"date\">Date</mat-option>\r\n                <mat-option value=\"tel\">Phone</mat-option>\r\n                <mat-option value=\"none\">None</mat-option>\r\n              </mat-select>\r\n            </mat-form-field>\r\n            <ng-container *ngIf=\"currentEditBlock.type!=='none'\">\r\n              <mat-form-field class=\"form-field full-width\" appearance=\"outline\">\r\n                <mat-label>{{locale?.NAME_LABEL}}</mat-label>\r\n                <input type=\"text\" [(ngModel)]=\"currentEditBlock.label\" (ngModelChange)=\"onChangeKey(currentEditBlock)\"\r\n                  [ngModelOptions]=\"{ standalone: true }\" matInput required placeholder=\"\" />\r\n              </mat-form-field>\r\n              <ng-container [ngSwitch]=\"currentEditBlock.type\">\r\n                <div *ngSwitchCase=\"'toggle'\" class=\"flex-auto\"\r\n                  style=\"display: flex;align-items: flex-end;margin: 10px 0;\">\r\n                  <mat-slide-toggle class=\"form-field\" color=\"#6FE8D7\" [(ngModel)]=\"currentEditBlock.defaultValue\"\r\n                    [ngModelOptions]=\"{ standalone: true }\">\r\n                  </mat-slide-toggle>\r\n                  <span style=\"margin-left: 10px;\">{{locale?.DEFAULT_VALUE}}</span>\r\n                </div>\r\n                <div *ngSwitchCase=\"'checkbox'\" class=\"flex-auto\">\r\n                  <mat-checkbox class=\"form-field\" [(ngModel)]=\"currentEditBlock.value\"\r\n                    [ngModelOptions]=\"{ standalone: true }\">\r\n                    {{locale?.DEFAULT_CHECKED}}\r\n                  </mat-checkbox>\r\n                </div>\r\n                <mat-form-field *ngSwitchCase=\"\r\n                                ['select', 'radio', 'checkbox_multiple'].includes(currentEditBlock.type) ? currentEditBlock.type : !currentEditBlock.type\r\n                              \" class=\"flex-auto full-width\" appearance=\"outline\">\r\n                  <mat-label> {{locale?.DEFAULT_VALUE}} </mat-label>\r\n                  <mat-chip-list #childList=\"cdkDropList\" [cdkDropListData]=\"currentEditBlock.defaultValue\" cdkDropList\r\n                    (cdkDropListDropped)=\"drop($event)\" #chipList aria-label=\"Video keywords; let index=index\" multiple\r\n                    selectable>\r\n                    <mat-chip style=\"min-height: 25px;width: auto;\" *ngFor=\"let option of currentEditBlock.defaultValue\"\r\n                      [selected]=\"option.checked\" [value]=\"option.value\" [removable]=\"true\"\r\n                      (dblclick)=\"onCheckedChipBlock(option, currentEditBlock)\" (click)=\"onEditChip(option)\"\r\n                      (removed)=\"removeKeywordBlock(option, currentEditBlock)\" cdkDrag>\r\n                      {{ option.value }}\r\n                      <mat-icon matChipRemove>{{locale?.CANCEL}}</mat-icon>\r\n                    </mat-chip>\r\n                    <input #chipsInput placeholder=\"add...\" [matChipInputFor]=\"chipList\" [matChipInputAddOnBlur]=\"true\"\r\n                      (matChipInputTokenEnd)=\"addKeywordFromInputBlock($event, currentEditBlock, prevValue)\"\r\n                      [matChipInputSeparatorKeyCodes]=\"separatorKeysCodes\"\r\n                      (keyup)=\"onKeyUpChip($event, currentEditBlock)\" [(ngModel)]=\"currentChip\"\r\n                      [ngModelOptions]=\"{ standalone: true }\" />\r\n                  </mat-chip-list>\r\n                </mat-form-field>\r\n                <mat-form-field *ngSwitchCase=\"'textarea'\" class=\"form-field full-width\" appearance=\"outline\">\r\n                  <mat-label>{{locale?.DEFAULT_VALUE}}</mat-label>\r\n                  <input type=\"text\" matInput [ngModelOptions]=\"{ standalone: true }\"\r\n                    [(ngModel)]=\"currentEditBlock.defaultValue\" placeholder=\"Description...\" />\r\n                </mat-form-field>\r\n\r\n                <mat-form-field *ngSwitchDefault class=\"form-field full-width\"\r\n                  [style.opacity]=\"currentEditBlock.type !== 'tel' ? 1 : 0\" appearance=\"outline\">\r\n                  <mat-label>{{locale?.DEFAULT_VALUE}}</mat-label>\r\n                  <input [type]=\"currentEditBlock.type\" [disabled]=\"currentEditBlock.type === 'tel'\" matInput\r\n                    [ngModelOptions]=\"{ standalone: true }\" [(ngModel)]=\"currentEditBlock.defaultValue\"\r\n                    placeholder=\"\" />\r\n                </mat-form-field>\r\n              </ng-container>\r\n\r\n              <div class=\"mandatory top-10 bottom-10\">\r\n                <div class=\"toogle-button\">\r\n                  <span>{{locale?.REQUIRED}}</span>\r\n                  <mat-slide-toggle color=\"#6FE8D7\" [(ngModel)]=\"currentEditBlock.isMandatory\"\r\n                    [ngModelOptions]=\"{ standalone: true }\">\r\n                  </mat-slide-toggle>\r\n                </div>\r\n              </div>\r\n              <div class=\"mandatory top-10\">\r\n                <div class=\"toogle-button\">\r\n                  <span>{{locale?.CONDITIONAL_VISIBILITY}}</span>\r\n                  <mat-slide-toggle color=\"#6FE8D7\" [(ngModel)]=\"currentEditBlock.isConditional\"\r\n                    [ngModelOptions]=\"{ standalone: true }\">\r\n                  </mat-slide-toggle>\r\n                </div>\r\n              </div>\r\n              <ng-container *ngIf=\"currentEditBlock?.isConditional\">\r\n                <mat-form-field class=\"form-field mat-select full-width\" appearance=\"outline\">\r\n                  <mat-label>{{locale?.SELECT_CATEGORY}}</mat-label>\r\n                  <mat-select [(ngModel)]=\"all\" [ngModelOptions]=\"{ standalone: true }\"\r\n                    (ngModelChange)=\"onSelectCondition('all','s1', $event.value)\"\r\n                    (selectionChange)=\"onSelectCondition('all','s1', $event.value)\">\r\n                    <mat-option *ngFor=\"let item of conditionData.all\" [value]=\"item.key\">{{\r\n                      item.label }}\r\n                    </mat-option>\r\n                  </mat-select>\r\n                </mat-form-field>\r\n                <mat-form-field *ngIf=\"conditionData.s1?.length > 0\" class=\"form-field mat-select full-width\"\r\n                  appearance=\"outline\">\r\n                  <mat-label>{{locale?.SELECT_SUB_CATEGORY}} (s1)</mat-label>\r\n                  <mat-select [(ngModel)]=\"s1\" [ngModelOptions]=\"{ standalone: true }\"\r\n                    (ngModelChange)=\"onSelectCondition('s1','s2', $event.value)\"\r\n                    (selectionChange)=\"onSelectCondition('s1','s2', $event.value)\">\r\n                    <mat-option *ngFor=\"let item of conditionData.s1\" [value]=\"item.key\">{{\r\n                      item.label }}\r\n                    </mat-option>\r\n                  </mat-select>\r\n                </mat-form-field>\r\n                <mat-form-field class=\"form-field mat-select full-width\" *ngIf=\"conditionData.s2?.length>0\"\r\n                  appearance=\"outline\">\r\n                  <mat-label>{{locale?.SELECT_SUB_CATEGORY}} (s2)</mat-label>\r\n                  <mat-select [(ngModel)]=\"s2\" [ngModelOptions]=\"{ standalone: true }\"\r\n                    (ngModelChange)=\"onSelectCondition('s2','s3', $event.value)\"\r\n                    (selectionChange)=\"onSelectCondition('s2','s3', $event.value)\">\r\n                    <mat-option *ngFor=\"let item of conditionData.s2\" [value]=\"item.key\">{{\r\n                      item.label }}\r\n                    </mat-option>\r\n                  </mat-select>\r\n                </mat-form-field>\r\n                <mat-form-field class=\"form-field mat-select full-width\" *ngIf=\"conditionData.s3?.length>0\"\r\n                  appearance=\"outline\">\r\n                  <mat-label>{{locale?.SELECT_SUB_CATEGORY}} (s3)</mat-label>\r\n                  <mat-select [(ngModel)]=\"s3\" [ngModelOptions]=\"{ standalone: true }\"\r\n                    (ngModelChange)=\"onSelectCondition('s3','s4', $event.value)\"\r\n                    (selectionChange)=\"onSelectCondition('s3','s4', $event.value)\">\r\n                    <mat-option *ngFor=\"let item of conditionData.s3\" [value]=\"item.key\">{{\r\n                      item.label }}\r\n                    </mat-option>\r\n                  </mat-select>\r\n                </mat-form-field>\r\n              </ng-container>\r\n\r\n              <mat-radio-group\r\n                *ngIf=\"currentEditBlock.isConditional && onGetDefaultValue() && onGetDefaultValue()?.length>0\"\r\n                aria-labelledby=\"example-radio-group-label\" class=\"example-radio-group\"\r\n                [(ngModel)]=\"currentEditBlock.condition.value\" [ngModelOptions]=\"{ standalone: true }\">\r\n                <mat-radio-button class=\"example-radio-button\" style=\"margin-right: 10px\"\r\n                  *ngFor=\"let item of onGetDefaultValue()\" [value]=\"item.value\">\r\n                  {{ item.value }}\r\n                </mat-radio-button>\r\n              </mat-radio-group>\r\n              <div class=\"bloc-action\">\r\n                <button *ngIf=\"paramsIndex.length<4\" mat-button [disabled]=\"!currentEditBlock.editable\"\r\n                  (click)=\"onAddNewSubLevelFieldBlock($event)\">{{locale?.SUB_CATEGORY}} <mat-icon>device_hub\r\n                  </mat-icon></button>\r\n                <button mat-button [disabled]=\"!currentEditBlock.editable\"\r\n                  (click)=\"onDuplicatedBlock($event)\">{{locale?.DUPLICATE_BLOCK}}<mat-icon>filter_none</mat-icon>\r\n                </button>\r\n                <button mat-button [disabled]=\"!currentEditBlock.editable\" class=\"delete-bloc\"\r\n                  (click)=\"onRemoveFieldBlock($event)\">{{locale?.DELETE_BLOCK}} <mat-icon>\r\n                    delete </mat-icon></button>\r\n              </div>\r\n            </ng-container>\r\n          </div>\r\n        </div>\r\n        <div class=\"property-content\" *ngIf=\"isSection && currentEditBlock\">\r\n          <h3>{{locale?.SECTION_SETTING}} {{ currentEditBlock.name }}</h3>\r\n          <div class=\"property-content-inner\">\r\n            <mat-form-field class=\"form-field full-width\" appearance=\"outline\">\r\n              <mat-label>{{locale?.SECTION_NAME}}</mat-label>\r\n              <input (ngModelChange)=\"onChangeCategoryName()\" type=\"text\" matInput required placeholder=\"\"\r\n                [(ngModel)]=\"currentEditBlock.name\" [ngModelOptions]=\"{ standalone: true }\" />\r\n            </mat-form-field>\r\n            <mat-form-field class=\"form-field mat-select full-width\" appearance=\"outline\">\r\n              <mat-label>{{locale?.MANAGEMENT_TEAM}}</mat-label>\r\n              <mat-select required [(ngModel)]=\"currentEditBlock.selector.value\"\r\n                [ngModelOptions]=\"{ standalone: true }\">\r\n                <mat-option [value]=\"item.value\" *ngFor=\"let item of currentEditBlock.selector.defaultValue\">{{\r\n                  item.value }}</mat-option>\r\n              </mat-select>\r\n            </mat-form-field>\r\n            <div class=\"bloc-action\">\r\n              <button mat-button (click)=\"onAddNewSubLevelFieldBlock($event)\">{{locale?.SUB_CATEGORY}} <mat-icon>\r\n                  device_hub\r\n                </mat-icon></button>\r\n              <button mat-button (click)=\"onDuplicatedBlock($event)\">{{locale?.DUPLICATE_BLOCK}}<mat-icon>filter_none\r\n                </mat-icon>\r\n              </button>\r\n              <button [disabled]=\"!currentEditBlock.editable\" mat-button class=\"delete-bloc\"\r\n                (click)=\"onRemoveFieldBlock($event)\">{{locale?.DELETE_BLOCK}} <mat-icon>\r\n                  delete</mat-icon></button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </form>\r\n</main>", styles: ["main{background:#f4f7f9 0% 0% no-repeat padding-box;height:100vh;display:flex;flex-direction:column;align-items:center;padding:25px}main .disabled label{background-color:transparent!important}main form{display:flex;height:89%;width:100%}main .box-title{width:786px;margin-top:20vh;background:#ffffff 0% 0% no-repeat padding-box;border:1px solid #dce4e9;border-radius:6px;opacity:1;margin:auto;padding:0 25px;align-self:center}main .box-title h3{text-align:center;letter-spacing:0px;color:#171f26}main .box-title label,main .box-title input{letter-spacing:0px;color:#171f26}main .box-title .profil-name-content{display:flex;align-items:center;position:relative}main .box-title .profil-name-content .add-picto{margin-right:15px;min-width:50px;width:30px;padding:9px 12px}main .box-title .profil-name-content .add-picto mat-icon{margin-right:10px}main .box-title .profil-name-content .list-picto{position:absolute;height:200px;width:100%;background:#ffffff 0% 0% no-repeat padding-box;border:1px solid #171f26;border-radius:8px;top:100%;z-index:1}main .box-title .profil-name-content .list-picto mat-icon{margin:15px;border:none;font-size:40px}main .box-title .profil-name-content .list-picto mat-icon:hover{color:#830b6b!important;cursor:pointer}main .box-title .box-title-content{width:100%;margin:25px auto}main .box-title .title{letter-spacing:0px;color:#171f26}main .box-title p{letter-spacing:0px;color:#171f26;text-align:center}main .box-title .link-create-profil{width:100%;display:flex;justify-content:center}main .box-title button{text-align:center;border:1px solid #543cb6;border-radius:7px;color:#fff;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;letter-spacing:0px;color:#543cb6}main .action{width:100%;display:flex;justify-content:space-between}main .header-create-profile{width:100%;margin:10px 15px;border-radius:5px}main .header-create-profile .header-create-profile-top{display:flex;align-items:center;text-align:center;justify-content:space-between}main .header-create-profile .header-create-profile-top .create-profile-action{display:flex;align-items:center;gap:25px}main .header-create-profile h3{font-size:25px;padding-bottom:5px;display:flex;align-items:center;justify-content:center}main .header-create-profile h3 span{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;font-weight:700;font-size:24px;line-height:110%;text-align:center;color:#242731;text-transform:capitalize}main .header-create-profile h3 mat-icon{margin-left:15px;cursor:pointer}main .header-create-profile .create-profile-menus{max-width:100%;overflow:auto}main .header-create-profile .create-profile-menus ul{font-weight:600;font-size:16px;list-style:none;display:flex;align-items:center;gap:20px;padding:0}main .header-create-profile .create-profile-menus ul li{font-weight:400;font-size:12px;cursor:pointer;text-align:left;letter-spacing:0px;color:#535760}main .header-create-profile .create-profile-menus ul li .mat-mini-fab{width:28px;height:28px;line-height:24px}main .header-create-profile .create-profile-menus ul li.li-title:hover{border-bottom:2px solid #723CEB}main .header-create-profile .create-profile-menus ul li.li-title.active{border-bottom:2px solid #723CEB;font-weight:600}.expand-button{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.input-category-name{font-size:15px;font-weight:500;border:none;outline:none;text-align:left;color:#171f26;font-weight:700;font-size:20px;line-height:28px;color:#242731}.sub-category-name{font-style:normal;font-weight:250;font-size:14px;line-height:16px;display:flex;align-items:center;color:#575f6e;word-break:break-word}.full-width{width:100%}.field-action{width:10%}.field-size{width:90%;margin:auto 2% auto auto}::ng-deep .mat-mini-fab .mat-button-wrapper{padding:0!important}::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}::ng-deep .mat-select.mat-form-field-appearance-outline .mat-form-field-infix{padding:.5em 0}::ng-deep .mat-select{padding:8px 0}::ng-deep .mat-form-field-appearance-fill .mat-form-field-underline:before{background-color:transparent}::ng-deep .mat-form-field-wrapper{padding-bottom:0!important}:host ::ng-deep .input-category-name div.mat-form-field-outline-start,:host ::ng-deep .cdk-drag-preview .input-category-name div.mat-form-field-outline-start{border-color:0!important;border-width:0px!important}:host ::ng-deep .input-category-name .mat-form-field-outline-gap{border-color:0!important;border-width:0px!important}:host ::ng-deep .input-category-name .mat-form-field-outline-end{border-color:0!important;border-width:0px!important}:host ::ng-deep .input-category-name .mat-form-field-label-wrapper{display:none}:host ::ng-deep .input-category-name .mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}:host ::ng-deep .input-category-name .mat-form-field-infix{border-top:none}.category-action{display:flex;width:100%}.delete-field{margin:auto 2%}.radio-group .mat-radio-button{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons{cursor:move}:host ::ng-deep .child-list .dnd-box.cdk-drag-preview{width:100%!important;overflow:hidden;box-sizing:border-box;box-shadow:0 5px 5px -3px #0003,0 8px 10px 1px #00000024,0 3px 14px 2px #0000001f}:host ::ng-deep .child-list .cdk-drag-animating{transition:transform .25s cubic-bezier(0,0,.2,1)}:host ::ng-deep .child-list .field-box.cdk-drop-list-dragging .dnd-box:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}:host ::ng-deep .child-list .cdk-drag.dnd-box.cdk-drag-dragging{min-width:185px}:host ::ng-deep .child-list .cdk-drag.dnd-box.cdk-drag-dragging>div{margin-bottom:15px!important;min-width:185px}:host ::ng-deep .child-list .cdk-drag.dnd-box.cdk-drag-dragging>div>div{min-width:185px}:host ::ng-deep .child-list .cdk-drag.dnd-box.cdk-drag-dragging>div .mat-form-field-wrapper{min-width:185px}:host ::ng-deep .child-list .field-box{min-height:84px}:host ::ng-deep .child-list .field-box .dnd-placeholder{margin:0 10px;padding:0;height:44px!important;max-height:44px!important;display:flex;flex-grow:1;align-items:baseline;position:relative;border-radius:8px;opacity:1!important;transform:translateZ(0)!important}:host ::ng-deep .child-list .cdk-drop-list-dragging>div.dnd-box{display:none}::ng-deep .cdk-drag.dnd-box.cdk-drag-preview{height:68px;border-radius:0}::ng-deep .cdk-drag.dnd-box.cdk-drag-preview .fields-container .field-item{margin:0;height:44px}::ng-deep .cdk-drag.dnd-box.cdk-drag-preview .fields-container .field-item .mat-form-field-wrapper{height:44px}::ng-deep .cdk-drag.dnd-box.cdk-drag-preview .fields-container .field-item .mat-form-field-wrapper .input-phone,::ng-deep .cdk-drag.dnd-box.cdk-drag-preview .fields-container .field-item .mat-form-field-wrapper .mat-input-element,::ng-deep .cdk-drag.dnd-box.cdk-drag-preview .fields-container .field-item .mat-form-field-wrapper .mat-select-value,::ng-deep .cdk-drag.dnd-box.cdk-drag-preview .fields-container .field-item .mat-form-field-wrapper .mat-select-arrow-wrapper{opacity:0}.category-item,.cdk-drag-placeholder{display:flex;align-items:baseline;position:relative;width:100%;border-radius:8px;background-color:#fff;margin-bottom:15px;margin-right:5px;padding:6px 15px}.category-item .left-action,.cdk-drag-placeholder .left-action{height:auto;width:40px;align-self:baseline;border-top-left-radius:8px;border-bottom-left-radius:8px}.category-item .left-action .transparent-button,.cdk-drag-placeholder .left-action .transparent-button{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.category-item .left-action .transparent-button .drag-icon,.cdk-drag-placeholder .left-action .transparent-button .drag-icon{color:#171f26;cursor:move;margin-right:15px}.category-item .field-content,.cdk-drag-placeholder .field-content{width:calc(100% - 40px);align-self:center}.category-item .field-content .child-list,.cdk-drag-placeholder .field-content .child-list{display:flex;flex-wrap:wrap;background-color:transparent;width:103%;position:relative;margin-left:-1.5%}.category-item .field-content .field-item,.cdk-drag-placeholder .field-content .field-item{display:flex;justify-content:space-between;align-items:baseline;border:transparent!important}.category-item .field-content .field-item mat-form-field .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-outline,.cdk-drag-placeholder .field-content .field-item mat-form-field .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-outline{color:transparent!important}.category-item .field-content .mat-form-field-outline,.cdk-drag-placeholder .field-content .mat-form-field-outline{color:transparent!important}.field-box{margin-bottom:15px;display:flex;align-items:center}.cdk-drag-preview{box-sizing:border-box;border-radius:4px;opacity:1}.cdk-drag-preview .expand-button{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:6px!important}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating{transition:transform .25s cubic-bezier(0,0,.2,1)}.example-list.cdk-drop-list-dragging .category-item:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.child{margin-left:0}.child-content{display:flex;flex-wrap:wrap;margin-bottom:30px}.sub-category-forms{margin-bottom:0!important;margin-top:10px!important}.category{display:flex;flex-direction:row;width:100%;height:100%}.category .fields{width:100%;overflow:hidden;overflow-x:hidden;position:relative;padding-top:10px;height:calc(100% - 10px)}.category .fields .fields-inner{max-height:100%;height:100%;width:100%;overflow:auto}.category .fields .add-category-button{position:relative!important;width:calc(100% - 40px)!important;padding:20px 0}.category .fields .add-category-button mat-icon{margin-left:10px}.category .fields .add-step{bottom:0!important;top:0!important;width:100%!important}.category .disabled{background-color:#f4f7f9!important}.category .expand-button{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:6px!important}.category .expand-button .material-icons{font-size:40px}.category .transparent-button{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;margin-left:0!important;min-width:auto;color:#fff}.add-button-sub-category{width:93%;position:absolute;left:3%;bottom:-13px}.add-button-sub-category button span{width:100%}.add-button-container{background:#ffffff 0% 0% no-repeat padding-box;border-radius:8px;margin-top:10px;padding:10px 0;display:flex;justify-content:center;align-items:center;width:100%;margin-bottom:22px;position:absolute;left:0;top:100%}.add-button-container button{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;letter-spacing:0px;color:#000;box-shadow:none}.add-button-container button span{width:100%}.add-category{background-color:#fcfcfe;border-radius:5px;line-height:26px;margin-left:10px;margin-bottom:10px;letter-spacing:0px;color:#c2c8d5;width:92%}.field-content .cdk-drag{width:100%}.cdk-drag{width:auto;position:relative}.cdk-drag .fields-content{display:flex;height:100%;width:100%;margin:0}.cdk-drag .fields-content .button-action{align-self:baseline;margin-top:0;margin-left:3px;border-bottom-left-radius:8px;border-top-left-radius:8px}.cdk-drag .fields-content .button-action .transparent-button{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.cdk-drag .fields-content .button-action .transparent-button .drag-icon{color:#171f26;cursor:move;margin-right:15px}.cdk-drag .fields-content .child-3-background{background-color:#e5e8ee!important}.cdk-drag .fields-content .fields-container{border-radius:0 8px 8px 0;background-color:#fff;width:100%;padding-left:10px;padding-right:10px;padding-top:5px;position:relative;margin-bottom:10px}.cdk-drag .fields-content .fields-container lib-sub-category .field-item{display:flex;justify-content:space-between;align-items:center;width:100%}.cdk-drag .fields-content .fields-container lib-sub-category .field-item .button-action{background-color:#039be5!important;height:100%;margin:auto 15px auto auto;display:flex}.cdk-drag .fields-content .fields-container lib-sub-category .field-item .button-action button{box-shadow:none;background-color:transparent;color:#fff}.side-bar{display:flex;flex-direction:column}.register-button{background:no-repeat padding-box #171f26!important;border:2px solid #171f26!important;color:#fff!important;box-shadow:0 0 #0003;border-radius:7px}.forward{padding:6px}.live-button{background-color:#fff!important;color:#171f26!important;border:2px solid #171f26!important}.content-item{transition-property:border-image-slice border-image-source border-width;transition-timing-function:ease-in-out;transition-duration:.5s}.active-content{border-image-slice:1;border-width:2px;border-image-source:linear-gradient(to left,#9d107d,#4862ab)}.field-property{padding:11px;height:calc(100% - 22px);width:400px}.field-property h3{font-size:20px;line-height:110%;padding-top:10px;display:flex;align-items:center;color:#242731}.field-property .property-content{display:flex;flex-direction:column;align-items:flex-start;padding:0 20px;background:#ffffff;border-radius:8px 8px 0 0;min-height:100%;height:auto;width:400px}.field-property .property-content button{text-align:center}.field-property .property-content .property-content-inner{display:flex;flex-direction:column;gap:25px;overflow:auto;max-height:700px;padding-bottom:25px}.field-property .bloc-action{text-align:center}.field-property .bloc-action button{width:100%;padding:6px;margin-top:10px}.field-property .bloc-action button mat-icon{margin-left:5px}.field-property .bloc-action .delete-bloc{background:#f44336;box-shadow:0 0 #0003;border-radius:7px;color:#fff}.fields-inner::-webkit-scrollbar{width:5px}.fields-inner::-webkit-scrollbar-track{box-shadow:inset 0 0 2px transparent;border-radius:10px}.fields-inner::-webkit-scrollbar-thumb{background:transparent;border-radius:10px}.fields-inner::-webkit-scrollbar-thumb:hover{background:transparent}.toogle-button{color:#707273!important;display:flex;align-items:center;font-style:normal;font-weight:400;font-size:18px;line-height:18px}.toogle-button span{padding-right:10px}:host ::ng-deep .category .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}:host ::ng-deep .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273}:host ::ng-deep .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar{position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}:host ::ng-deep .category .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{background-color:#fff;margin-top:4px}:host ::ng-deep .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-thumb{margin-top:4px;margin-left:4px}:host ::ng-deep .category .mat-slide-toggle.draft:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273}:host ::ng-deep .category .mat-slide-toggle.draft.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5}.top-10{margin-top:10px}.bottom-10{margin-bottom:10px}.section-item{border:2px solid transparent;overflow:hidden}.section-item:hover,.section-item.active{border:2px solid #242731;border-radius:8px;cursor:pointer}::ng-deep .select-type-class.mat-select-disabled .mat-select-value{color:#000!important;cursor:pointer}::ng-deep button .mat-button-wrapper{display:flex;align-items:center;justify-content:center}::ng-deep .field-content .mat-form-field,::ng-deep .field-content .select-content{width:100%}::ng-deep .field-content .mat-form-field-infix{display:block;position:relative;flex:auto;min-width:0;width:100%!important}::ng-deep .fields-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle,::ng-deep .property-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{border-color:#039be5!important}::ng-deep .fields-content .mat-radio-button.mat-accent .mat-radio-inner-circle,::ng-deep .fields-content .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),::ng-deep .fields-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,::ng-deep .fields-content .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple,::ng-deep .property-content .mat-radio-button.mat-accent .mat-radio-inner-circle,::ng-deep .property-content .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),::ng-deep .property-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,::ng-deep .property-content .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{background-color:#039be5!important}::ng-deep .fields-content .mat-checkbox-checkmark-path,::ng-deep .property-content .mat-checkbox-checkmark-path{stroke:#039be5!important}::ng-deep .fields-content .mat-checkbox-frame,::ng-deep .property-content .mat-checkbox-frame{border:2px solid #039BE5!important}::ng-deep .fields-content .mat-checkbox-inner-container,::ng-deep .property-content .mat-checkbox-inner-container{height:20px!important;width:20px!important}.setting{z-index:1;background-color:#d5d6d7!important;border-radius:40px;width:42px!important;height:40px!important;padding:0 10px!important;display:flex;align-items:center;justify-content:center;display:none}.setting .setting-icon,.setting .transparent-button{color:#171f26}.sub-header:hover .setting{display:flex}.add-button-sub-category button{margin:10px auto;width:100%;background-color:transparent;color:#000;box-shadow:none;background-color:#fcfcfe;padding:5px span;padding-width:100%!important}::ng-deep .add-button{padding:10px 0}::ng-deep .add-button span{width:100%}::ng-deep .mat-button[disabled]{opacity:.5!important}\n"] }]
+            args: [{ selector: "onboarding-create-profile-template", template: "<main>\r\n  <div class=\"header-create-profile\">\r\n    <div class=\"header-create-profile-top\">\r\n      <h3>\r\n        <span>{{ form.get(\"Name\").value }}</span>\r\n        <mat-icon (click)=\"openDialog()\">edit</mat-icon>\r\n      </h3>\r\n      <div class=\"create-profile-action\">\r\n        <button mat-button class=\"register-button\" type=\"submit\" (click)=\"onSubmit(false)\">\r\n          <lib-loading-page *ngIf=\"loading && !isSubmitted\"></lib-loading-page>{{draftLabel}}\r\n        </button>\r\n        <button mat-button class=\"register-button live-button\" type=\"submit\" (click)=\"onSubmit(true)\">\r\n          <lib-loading-page *ngIf=\"loading && isSubmitted\"></lib-loading-page>\r\n          {{liveLabel}}\r\n        </button>\r\n\r\n        <button [disabled]=\"currentCanceledIndex < 0 || historics.length===0\" mat-button\r\n          class=\"register-button live-button forward\" type=\"submit\" (click)=\"onCancel(true)\">\r\n          <mat-icon>rotate_left</mat-icon>\r\n        </button>\r\n        <button [disabled]=\"currentCanceledIndex===historics.length-1 || currentCanceledIndex===null\" mat-button\r\n          class=\"register-button live-button forward\" type=\"submit\" (click)=\"onCancel(false)\">\r\n          <mat-icon>rotate_right</mat-icon>\r\n        </button>\r\n      </div>\r\n    </div>\r\n    <div class=\"create-profile-menus\">\r\n      <ul>\r\n        <li class=\"li-title\" [class]=\"editIndex === i ? 'active' : ''\" *ngFor=\"let cat of categories; let i = index\"\r\n          (click)=\"scrollTo(cat, i)\" [id]=\"cat.name+'x'\">\r\n          <!-- (click)=\"onActiveMenu(cat, i,true)\" [ngxScrollTo]=\"'#' + cat.name\" [id]=\"cat.name+'x'\"> -->\r\n          {{ cat.name }}\r\n        </li>\r\n        <li>\r\n          <button mat-mini-fab color=\"transparent\" (click)=\"onAddNewCategory($event)\">\r\n            <mat-icon>add</mat-icon>\r\n          </button>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n  <form [formGroup]=\"form\">\r\n    <div class=\"category\" cdkDropListGroup>\r\n      <div class=\"fields\">\r\n        <div cdkDropList (cdkDropListDropped)=\"drop($event)\" [cdkDropListData]=\"categories\"\r\n          class=\"fields-inner example-list mt-10\" id=\"categories-id\" (scroll)=\"onScroll($event)\">\r\n          <section class=\"category-item section-item\" *ngFor=\"let category of categories; let i = index\" cdkDrag\r\n            [id]=\"category.name\" [style.paddingBottom]=\"category.expandMore ? '50px' : '10px'\"\r\n            [class]=\"editIndex === i ? 'active' : ''\" (click)=\"scrollTo(category, i)\">\r\n            <!-- [class]=\"editIndex === i ? 'active' : ''\" [ngxScrollTo]=\"'#' + category.name\"> -->\r\n            <div class=\"left-action move-icons\" cdkDragHandle>\r\n              <button class=\"transparent-button\" mat-raised-button\r\n                (click)=\"$event.preventDefault();$event.stopPropagation()\">\r\n                <mat-icon class=\"drag-icon\">drag_indicator</mat-icon>\r\n              </button>\r\n            </div>\r\n            <div class=\"field-content\">\r\n              <div class=\"field-item\">\r\n                <!-- <div class=\"field-item\" (click)=\" onExpendMore({ event: $event, field: category }, i)\"> -->\r\n                <div>\r\n                  <p class=\"full-width input-category-name\">\r\n                    {{ category.name }}\r\n                  </p>\r\n                  <p class=\"sub-category-name\">\r\n                    {{locale?.CATEGORY_SUBTITLE}} {{ catNameStart(category.name) ? \"l'\" +\r\n                    category.name : category.name }}\r\n                  </p>\r\n                </div>\r\n                <button mat-mini-fab color=\"primary\" class=\"expand-button\"\r\n                  (click)=\"$event.stopPropagation();onExpendMore({ event: $event, field: category }, i)\">\r\n                  <mat-icon *ngIf=\"!category.expandMore\">chevron_right</mat-icon>\r\n                  <mat-icon *ngIf=\"category.expandMore\">expand_more</mat-icon>\r\n                </button>\r\n              </div>\r\n              <div class=\"child-list\" *ngIf=\"category.forms\" cdkDropListGroup>\r\n                <ng-container *ngIf=\"category.expandMore\">\r\n                  <ng-container *ngFor=\"let field of category.forms; let j = index\">\r\n                    <div class=\"field-box\" [id]=\"field.key\" cdkDropList cdkDropListOrientation=\"horizontal'\"\r\n                      (cdkDropListDropped)=\"dropField($event)\"\r\n                      [cdkDropListData]=\"{ field: field, index: j, category: category }\"\r\n                      [style.width]=\"field.forms && field.forms.length>0 ? '100%' : fieldWidth(field.type,category.forms.length,j)\">\r\n                      <div cdkDrag class=\"dnd-box\">\r\n                        <div class=\"dnd-placeholder\" *cdkDragPlaceholder></div>\r\n                        <div class=\"fields-content\"\r\n                          [class]=\"field.forms && field.forms.length>0 ? 'sub-category-forms' :''\">\r\n                          <div class=\"button-action\" *ngIf=\"field.forms\">\r\n                            <button class=\"transparent-button\" mat-raised-button\r\n                              (click)=\"$event.stopPropagation();$event.preventDefault()\">\r\n                              <mat-icon class=\"drag-icon\">drag_indicator</mat-icon>\r\n                            </button>\r\n                          </div>\r\n                          <div class=\"fields-container\">\r\n                            <div class=\"sub-header\" *ngIf=\"field.forms\">\r\n                              <div class=\"field-item\">\r\n                                <div>\r\n                                  <p class=\"full-width input-category-name\">\r\n                                    {{ field.label }}\r\n                                  </p>\r\n                                  <p class=\"sub-category-name\">\r\n                                    {{locale?.CATEGORY_SUBTITLE}}\r\n                                    {{ catNameStart(field.label) ? \"l'\" + field.label : field.label }}\r\n                                  </p>\r\n                                </div>\r\n                                <button class=\"transparent-button setting\" mat-raised-button\r\n                                  (click)=\"$event.stopPropagation();onEditBlock(field, i, j)\">\r\n                                  <mat-icon class=\"setting-icon\">settings</mat-icon>\r\n                                </button>\r\n                                <button class=\"expand-button\" [disabled]=\"!(field.forms && field.forms.length > 0)\"\r\n                                  [style.opacity]=\"field.forms && field.forms.length > 0 ? 1 : 0\" mat-mini-fab\r\n                                  color=\"primary\"\r\n                                  (click)=\"$event.stopPropagation();onExpendMore({ event: $event, field: field }, i, j)\">\r\n                                  <mat-icon *ngIf=\"!field.expandMore\">expand_less </mat-icon>\r\n                                  <mat-icon *ngIf=\"field.expandMore\">expand_more </mat-icon>\r\n                                </button>\r\n                              </div>\r\n                            </div>\r\n                            <lib-sub-category [field]=\"field\" [length]=\"category?.forms?.length\" [i]=\"i\" [j]=\"j\"\r\n                              [blink]=\"checkBlink(j,1)===newFieldIndex\" (onCheckValue)=\"onCheckValue($event)\"\r\n                              (onAddKeywordFromInput)=\"addKeywordFromInput($event.event, $event.prev, i, j)\"\r\n                              (onKeyPress)=\"onKeyPress($event.event, i, j)\" (onAddNewField)=\"onAddNewField(i)\"\r\n                              (onRemoveField)=\"onRemoveField(i, j)\" (onChangeType)=\"onChangeType(field.type, i, j)\"\r\n                              (onRemoveKeyword)=\"removeKeyword($event.event, i, j)\"\r\n                              (onAddNewSubLevelField)=\"onAddNewSubLevelField(i, j)\"\r\n                              (onExpendMore)=\"onExpendMore($event, i, j)\" (onChangeLabel)=\"onChangeLabel($event, i, j)\"\r\n                              (onCheckedChip)=\"onCheckedChip($event, i, j)\" (onDrop)=\"drop($event)\"\r\n                              (onCheckedDefault)=\"onCheckedDefault($event, i, j)\"\r\n                              (onEditBlock)=\"onEditBlock(field, i, j)\" [conditionData]=\"conditionData\">\r\n                              <div *ngIf=\"field.expandMore\" class=\"child\">\r\n                                <div #childList=\"cdkDropList\" class=\"child-content\" *ngIf=\"field.forms\"\r\n                                  [cdkDropListData]=\"field.forms\" cdkDropList (cdkDropListDropped)=\"drop($event)\">\r\n                                  <div class=\"\" style=\"margin-bottom: 20px\"\r\n                                    *ngFor=\"let child of field.forms; let k = index\" [id]=\"child.key\"\r\n                                    [style.width]=\"child.forms && child.forms.length>0 ? '100%' : fieldWidth(child.type,field.forms.length,k)\">\r\n                                    <div cdkDrag>\r\n                                      <div class=\"fields-content\"\r\n                                        [class]=\"child.forms && child.forms.length>0 ? 'sub-category-forms' :''\">\r\n                                        <div class=\"button-action child-2-background\"\r\n                                          *ngIf=\"child.forms && child.forms.length>0\">\r\n                                          <button class=\"transparent-button\" mat-raised-button\r\n                                            (click)=\"$event.stopPropagation();$event.preventDefault()\">\r\n                                            <mat-icon class=\"drag-icon\"> drag_indicator</mat-icon>\r\n                                          </button>\r\n                                        </div>\r\n                                        <div class=\"fields-container\">\r\n                                          <div class=\"sub-header\" *ngIf=\"child.forms && child.forms.length>0\">\r\n                                            <div class=\"field-item\">\r\n                                              <div>\r\n                                                <input class=\"full-width input-category-name\" type=\"text\" required\r\n                                                  [readonly]=\"categories.length < 4 || !category.editable\"\r\n                                                  [readonly]=\"!category.editable\" [(ngModel)]=\"child.label\"\r\n                                                  [ngModelOptions]=\"{ standalone: true }\"\r\n                                                  placeholder=\"Saisir le nom de la sous cat\u00E9gorie\" />\r\n                                                <p class=\"sub-category-name\">\r\n                                                  {{locale?.CATEGORY_SUBTITLE}}\r\n                                                  {{ catNameStart(child.label) ? \"l'\" + child.label : child.label }}\r\n                                                </p>\r\n                                              </div>\r\n                                              <button class=\"transparent-button setting\" mat-raised-button\r\n                                                (click)=\"$event.stopPropagation();onEditBlock(child, i, j, k)\">\r\n                                                <mat-icon class=\"setting-icon\">settings</mat-icon>\r\n                                              </button>\r\n                                              <button class=\"expand-button\"\r\n                                                [disabled]=\"!(child.forms && child.forms.length > 0)\"\r\n                                                [style.opacity]=\"child.forms && child.forms.length > 0 ? 1 : 0\"\r\n                                                mat-mini-fab color=\"primary\"\r\n                                                (click)=\"$event.stopPropagation();onExpendMore({ event: $event, field: child }, i, j, k)\">\r\n                                                <mat-icon *ngIf=\"!child.expandMore\"> expand_less </mat-icon>\r\n                                                <mat-icon *ngIf=\"child.expandMore\"> expand_more </mat-icon>\r\n                                              </button>\r\n                                            </div>\r\n                                          </div>\r\n                                          <lib-sub-category [field]=\"child\" [length]=\"field?.forms?.length\" [i]=\"j\"\r\n                                            [blink]=\"checkBlink(k,2)===newFieldIndex\" [j]=\"k\"\r\n                                            (onCheckValue)=\"onCheckValue($event)\"\r\n                                            (onAddKeywordFromInput)=\"addKeywordFromInput($event.event, $event.prev, i, j, k)\"\r\n                                            (onKeyPress)=\"onKeyPress($event.event, i, j, k)\"\r\n                                            (onAddNewField)=\"onAddNewField(i, j)\"\r\n                                            (onRemoveField)=\"onRemoveField(i, j, k)\"\r\n                                            (onChangeType)=\"onChangeType(child.type, i, j, k)\"\r\n                                            (onRemoveKeyword)=\"removeKeyword($event.event, i, j, k)\"\r\n                                            (onAddNewSubLevelField)=\"onAddNewSubLevelField(i, j, k)\"\r\n                                            (onExpendMore)=\"onExpendMore($event, i, j, k)\"\r\n                                            (onChangeLabel)=\"onChangeLabel($event, i, j, k)\"\r\n                                            (onCheckedChip)=\"onCheckedChip($event, i, j, k)\" (onDrop)=\"drop($event)\"\r\n                                            (onCheckedDefault)=\"onCheckedDefault($event, i, j, k)\"\r\n                                            [conditionData]=\"conditionData\" (onEditBlock)=\"onEditBlock(child, i, j, k)\">\r\n                                            <div *ngIf=\"child.expandMore\" class=\"child\">\r\n                                              <div class=\"child-content\" #childList=\"cdkDropList\"\r\n                                                *ngIf=\"child.forms && child.forms.length>0\"\r\n                                                [cdkDropListData]=\"child.forms\" cdkDropList\r\n                                                (cdkDropListDropped)=\"drop($event)\">\r\n                                                <div class=\"\" *ngFor=\"let c2 of child.forms; let l = index\"\r\n                                                  [id]=\"c2.key\"\r\n                                                  [style.width]=\"c2.forms && c2.forms.length>0 ? '100%' : fieldWidth(c2.type,child.forms.length,l)\">\r\n                                                  <div cdkDrag>\r\n                                                    <div class=\"fields-content\"\r\n                                                      [class]=\"c2.forms && c2.forms.length>0 ? 'sub-category-forms' :''\">\r\n                                                      <div class=\"button-action child-3-background\"\r\n                                                        *ngIf=\"c2.forms && c2.forms.length>0\">\r\n                                                        <button class=\"transparent-button\" mat-raised-button\r\n                                                          (click)=\"$event.stopPropagation()\">\r\n                                                          <mat-icon class=\"drag-icon\"> drag_indicator </mat-icon>\r\n                                                        </button>\r\n                                                      </div>\r\n                                                      <div class=\"fields-container\">\r\n                                                        <lib-sub-category [field]=\"c2\" [length]=\"child?.forms?.length\"\r\n                                                          [blink]=\"checkBlink(l,3)===newFieldIndex\" [i]=\"k\" [j]=\"l\"\r\n                                                          (onCheckValue)=\"onCheckValue($event)\"\r\n                                                          (onAddKeywordFromInput)=\"addKeywordFromInput($event.event, $event.prev, i, j, k, l)\"\r\n                                                          (onKeyPress)=\"onKeyPress($event.event, i, j, k, l)\"\r\n                                                          (onAddNewField)=\"onAddNewField(i, j, k)\"\r\n                                                          (onRemoveField)=\"onRemoveField(i, j, k, l)\"\r\n                                                          (onChangeType)=\"onChangeType(c2.type, i, j, k, l)\"\r\n                                                          (onRemoveKeyword)=\"removeKeyword($event.event, i, j, k, l)\"\r\n                                                          (onAddNewSubLevelField)=\"onAddNewSubLevelField(i, j, k, l)\"\r\n                                                          (onExpendMore)=\"onExpendMore($event, i, j, k, l)\"\r\n                                                          (onChangeLabel)=\"onChangeLabel($event, i, j, k, l)\"\r\n                                                          (onCheckedChip)=\"onCheckedChip($event, i, j, k, l)\"\r\n                                                          (onDrop)=\"drop($event)\"\r\n                                                          (onCheckedDefault)=\"onCheckedDefault($event, i, j, k, l)\"\r\n                                                          (onEditBlock)=\"onEditBlock(c2, i, j, k, l)\"\r\n                                                          [conditionData]=\"conditionData\">\r\n                                                          <div class=\"child\"></div>\r\n                                                        </lib-sub-category>\r\n                                                      </div>\r\n                                                    </div>\r\n                                                  </div>\r\n                                                  <div class=\"add-button-sub-category\"\r\n                                                    *ngIf=\"child?.forms?.length - 1 === l\">\r\n                                                    <button style=\"margin: 10px auto\" mat-raised-button color=\"primary\"\r\n                                                      (click)=\"$event.stopPropagation();onAddNewField(i, j, k)\">\r\n                                                      <span>{{locale?.ADD_FIELD}}</span>\r\n                                                      <mat-icon> add </mat-icon>\r\n                                                    </button>\r\n                                                  </div>\r\n                                                </div>\r\n                                              </div>\r\n                                            </div>\r\n                                          </lib-sub-category>\r\n                                        </div>\r\n                                      </div>\r\n                                    </div>\r\n                                    <div class=\"add-button-sub-category\" *ngIf=\"field?.forms?.length - 1 === k\">\r\n                                      <button style=\"margin: 10px auto\" mat-raised-button color=\"primary\"\r\n                                        (click)=\"$event.stopPropagation();onAddNewField(i, j)\">\r\n                                        <span>{{locale?.ADD_FIELD}}</span>\r\n                                        <mat-icon>add</mat-icon>\r\n                                      </button>\r\n                                    </div>\r\n                                  </div>\r\n                                </div>\r\n                              </div>\r\n                            </lib-sub-category>\r\n                          </div>\r\n                        </div>\r\n                      </div>\r\n                      <div class=\"add-button-container add-button-sub-category\"\r\n                        *ngIf=\"category?.forms?.length - 1 === j\">\r\n                        <button style=\"margin: 10px auto; padding:10px 0\" class=\"add-button\"\r\n                          [disabled]=\"category?.forms?.length - 1 !== j\"\r\n                          [style.opacity]=\"category?.forms?.length - 1 === j ? 1 : 0\" mat-raised-button color=\"primary\"\r\n                          (click)=\"$event.stopPropagation();onAddNewField(i)\">\r\n                          <span>{{locale?.ADD_FIELD}}</span>\r\n                          <mat-icon>add</mat-icon>\r\n                        </button>\r\n                      </div>\r\n                    </div>\r\n                  </ng-container>\r\n                </ng-container>\r\n              </div>\r\n            </div>\r\n          </section>\r\n\r\n          <div class=\"add-button-container add-category-button add-step\">\r\n            <button (click)=\"onAddNewCategory($event)\">\r\n              {{locale?.ADD_STEP}}\r\n              <mat-icon>add</mat-icon>\r\n            </button>\r\n          </div>\r\n          <section style=\"background-color: transparent\">\r\n            <div style=\"height: 400px;\"></div>\r\n          </section>\r\n        </div>\r\n      </div>\r\n      <div class=\"field-property\">\r\n        <div class=\"property-content\" *ngIf=\"isBlock && currentEditBlock\">\r\n          <h3>{{locale?.SETTING_OF_BLOCK}} {{ currentEditBlock.label }}</h3>\r\n          <div class=\"property-content-inner\" style=\"width: 100%;\">\r\n            <mat-form-field class=\"form-field mat-select full-width\" style=\"cursor: pointer\" appearance=\"outline\">\r\n              <mat-label>{{locale?.TYPE_OF_BLOCK}}</mat-label>\r\n              <mat-select (click)=\"onOpenTypeDialog(currentEditBlock)\" disabled=\"true\" required\r\n                [(ngModel)]=\"currentEditBlock.type\" (ngModelChange)=\"onChangeTypeBlock(currentEditBlock)\"\r\n                [ngModelOptions]=\"{ standalone: true }\" class=\"select-type-class\">\r\n                <mat-option value=\"text\">Text(80)</mat-option>\r\n                <mat-option value=\"textarea\">Text(80+)</mat-option>\r\n                <mat-option value=\"radio\">Radio</mat-option>\r\n                <mat-option value=\"select\">Selector</mat-option>\r\n                <mat-option value=\"toggle\">Toggle</mat-option>\r\n                <mat-option value=\"checkbox\">Checkbox</mat-option>\r\n                <mat-option value=\"checkbox_multiple\">Checkbox multiple</mat-option>\r\n                <mat-option value=\"email\">Email</mat-option>\r\n                <mat-option value=\"password\">Password</mat-option>\r\n                <mat-option value=\"date\">Date</mat-option>\r\n                <mat-option value=\"tel\">Phone</mat-option>\r\n                <mat-option value=\"none\">None</mat-option>\r\n              </mat-select>\r\n            </mat-form-field>\r\n            <ng-container *ngIf=\"currentEditBlock.type!=='none'\">\r\n              <mat-form-field class=\"form-field full-width\" appearance=\"outline\">\r\n                <mat-label>{{locale?.NAME_LABEL}}</mat-label>\r\n                <input type=\"text\" [(ngModel)]=\"currentEditBlock.label\" (ngModelChange)=\"onChangeKey(currentEditBlock)\"\r\n                  [ngModelOptions]=\"{ standalone: true }\" matInput required placeholder=\"\" />\r\n              </mat-form-field>\r\n              <ng-container [ngSwitch]=\"currentEditBlock.type\">\r\n                <div *ngSwitchCase=\"'toggle'\" class=\"flex-auto\"\r\n                  style=\"display: flex;align-items: flex-end;margin: 10px 0;\">\r\n                  <mat-slide-toggle class=\"form-field\" color=\"#6FE8D7\" [(ngModel)]=\"currentEditBlock.defaultValue\"\r\n                    [ngModelOptions]=\"{ standalone: true }\">\r\n                  </mat-slide-toggle>\r\n                  <span style=\"margin-left: 10px;\">{{locale?.DEFAULT_VALUE}}</span>\r\n                </div>\r\n                <div *ngSwitchCase=\"'checkbox'\" class=\"flex-auto\">\r\n                  <mat-checkbox class=\"form-field\" [(ngModel)]=\"currentEditBlock.value\"\r\n                    [ngModelOptions]=\"{ standalone: true }\">\r\n                    {{locale?.DEFAULT_CHECKED}}\r\n                  </mat-checkbox>\r\n                </div>\r\n                <mat-form-field *ngSwitchCase=\"\r\n                                ['select', 'radio', 'checkbox_multiple'].includes(currentEditBlock.type) ? currentEditBlock.type : !currentEditBlock.type\r\n                              \" class=\"flex-auto full-width\" appearance=\"outline\">\r\n                  <mat-label> {{locale?.DEFAULT_VALUE}} </mat-label>\r\n                  <mat-chip-list #childList=\"cdkDropList\" [cdkDropListData]=\"currentEditBlock.defaultValue\" cdkDropList\r\n                    (cdkDropListDropped)=\"drop($event)\" #chipList aria-label=\"Video keywords; let index=index\" multiple\r\n                    selectable>\r\n                    <mat-chip style=\"min-height: 25px;width: auto;\" *ngFor=\"let option of currentEditBlock.defaultValue\"\r\n                      [selected]=\"option.checked\" [value]=\"option.value\" [removable]=\"true\"\r\n                      (dblclick)=\"onCheckedChipBlock(option, currentEditBlock)\" (click)=\"onEditChip(option)\"\r\n                      (removed)=\"removeKeywordBlock(option, currentEditBlock)\" cdkDrag>\r\n                      {{ option.value }}\r\n                      <mat-icon matChipRemove>{{locale?.CANCEL}}</mat-icon>\r\n                    </mat-chip>\r\n                    <input #chipsInput placeholder=\"add...\" [matChipInputFor]=\"chipList\" [matChipInputAddOnBlur]=\"true\"\r\n                      (matChipInputTokenEnd)=\"addKeywordFromInputBlock($event, currentEditBlock, prevValue)\"\r\n                      [matChipInputSeparatorKeyCodes]=\"separatorKeysCodes\"\r\n                      (keyup)=\"onKeyUpChip($event, currentEditBlock)\" [(ngModel)]=\"currentChip\"\r\n                      [ngModelOptions]=\"{ standalone: true }\" />\r\n                  </mat-chip-list>\r\n                </mat-form-field>\r\n                <mat-form-field *ngSwitchCase=\"'textarea'\" class=\"form-field full-width\" appearance=\"outline\">\r\n                  <mat-label>{{locale?.DEFAULT_VALUE}}</mat-label>\r\n                  <input type=\"text\" matInput [ngModelOptions]=\"{ standalone: true }\"\r\n                    [(ngModel)]=\"currentEditBlock.defaultValue\" placeholder=\"Description...\" />\r\n                </mat-form-field>\r\n\r\n                <mat-form-field *ngSwitchDefault class=\"form-field full-width\"\r\n                  [style.opacity]=\"currentEditBlock.type !== 'tel' ? 1 : 0\" appearance=\"outline\">\r\n                  <mat-label>{{locale?.DEFAULT_VALUE}}</mat-label>\r\n                  <input [type]=\"currentEditBlock.type\" [disabled]=\"currentEditBlock.type === 'tel'\" matInput\r\n                    [ngModelOptions]=\"{ standalone: true }\" [(ngModel)]=\"currentEditBlock.defaultValue\"\r\n                    placeholder=\"\" />\r\n                </mat-form-field>\r\n              </ng-container>\r\n\r\n              <div class=\"mandatory top-10 bottom-10\">\r\n                <div class=\"toogle-button\">\r\n                  <span>{{locale?.REQUIRED}}</span>\r\n                  <mat-slide-toggle color=\"#6FE8D7\" [(ngModel)]=\"currentEditBlock.isMandatory\"\r\n                    [ngModelOptions]=\"{ standalone: true }\">\r\n                  </mat-slide-toggle>\r\n                </div>\r\n              </div>\r\n              <div class=\"mandatory top-10\">\r\n                <div class=\"toogle-button\">\r\n                  <span>{{locale?.CONDITIONAL_VISIBILITY}}</span>\r\n                  <mat-slide-toggle color=\"#6FE8D7\" [(ngModel)]=\"currentEditBlock.isConditional\"\r\n                    [ngModelOptions]=\"{ standalone: true }\">\r\n                  </mat-slide-toggle>\r\n                </div>\r\n              </div>\r\n              <ng-container *ngIf=\"currentEditBlock?.isConditional\">\r\n                <mat-form-field class=\"form-field mat-select full-width\" appearance=\"outline\">\r\n                  <mat-label>{{locale?.SELECT_CATEGORY}}</mat-label>\r\n                  <mat-select [(ngModel)]=\"all\" [ngModelOptions]=\"{ standalone: true }\"\r\n                    (ngModelChange)=\"onSelectCondition('all','s1', $event.value)\"\r\n                    (selectionChange)=\"onSelectCondition('all','s1', $event.value)\">\r\n                    <mat-option *ngFor=\"let item of conditionData.all\" [value]=\"item.key\">{{\r\n                      item.label }}\r\n                    </mat-option>\r\n                  </mat-select>\r\n                </mat-form-field>\r\n                <mat-form-field *ngIf=\"conditionData.s1?.length > 0\" class=\"form-field mat-select full-width\"\r\n                  appearance=\"outline\">\r\n                  <mat-label>{{locale?.SELECT_SUB_CATEGORY}} (s1)</mat-label>\r\n                  <mat-select [(ngModel)]=\"s1\" [ngModelOptions]=\"{ standalone: true }\"\r\n                    (ngModelChange)=\"onSelectCondition('s1','s2', $event.value)\"\r\n                    (selectionChange)=\"onSelectCondition('s1','s2', $event.value)\">\r\n                    <mat-option *ngFor=\"let item of conditionData.s1\" [value]=\"item.key\">{{\r\n                      item.label }}\r\n                    </mat-option>\r\n                  </mat-select>\r\n                </mat-form-field>\r\n                <mat-form-field class=\"form-field mat-select full-width\" *ngIf=\"conditionData.s2?.length>0\"\r\n                  appearance=\"outline\">\r\n                  <mat-label>{{locale?.SELECT_SUB_CATEGORY}} (s2)</mat-label>\r\n                  <mat-select [(ngModel)]=\"s2\" [ngModelOptions]=\"{ standalone: true }\"\r\n                    (ngModelChange)=\"onSelectCondition('s2','s3', $event.value)\"\r\n                    (selectionChange)=\"onSelectCondition('s2','s3', $event.value)\">\r\n                    <mat-option *ngFor=\"let item of conditionData.s2\" [value]=\"item.key\">{{\r\n                      item.label }}\r\n                    </mat-option>\r\n                  </mat-select>\r\n                </mat-form-field>\r\n                <mat-form-field class=\"form-field mat-select full-width\" *ngIf=\"conditionData.s3?.length>0\"\r\n                  appearance=\"outline\">\r\n                  <mat-label>{{locale?.SELECT_SUB_CATEGORY}} (s3)</mat-label>\r\n                  <mat-select [(ngModel)]=\"s3\" [ngModelOptions]=\"{ standalone: true }\"\r\n                    (ngModelChange)=\"onSelectCondition('s3','s4', $event.value)\"\r\n                    (selectionChange)=\"onSelectCondition('s3','s4', $event.value)\">\r\n                    <mat-option *ngFor=\"let item of conditionData.s3\" [value]=\"item.key\">{{\r\n                      item.label }}\r\n                    </mat-option>\r\n                  </mat-select>\r\n                </mat-form-field>\r\n              </ng-container>\r\n\r\n              <mat-radio-group\r\n                *ngIf=\"currentEditBlock.isConditional && onGetDefaultValue() && onGetDefaultValue()?.length>0\"\r\n                aria-labelledby=\"example-radio-group-label\" class=\"example-radio-group\"\r\n                [(ngModel)]=\"currentEditBlock.condition.value\" [ngModelOptions]=\"{ standalone: true }\">\r\n                <mat-radio-button class=\"example-radio-button\" style=\"margin-right: 10px\"\r\n                  *ngFor=\"let item of onGetDefaultValue()\" [value]=\"item.value\">\r\n                  {{ item.value }}\r\n                </mat-radio-button>\r\n              </mat-radio-group>\r\n              <div class=\"bloc-action\">\r\n                <button *ngIf=\"paramsIndex.length<4\" mat-button [disabled]=\"!currentEditBlock.editable\"\r\n                  (click)=\"onAddNewSubLevelFieldBlock($event)\">{{locale?.SUB_CATEGORY}} <mat-icon>device_hub\r\n                  </mat-icon></button>\r\n                <button mat-button [disabled]=\"!currentEditBlock.editable\"\r\n                  (click)=\"onDuplicatedBlock($event)\">{{locale?.DUPLICATE_BLOCK}}<mat-icon>filter_none</mat-icon>\r\n                </button>\r\n                <button mat-button [disabled]=\"!currentEditBlock.editable\" class=\"delete-bloc\"\r\n                  (click)=\"onRemoveFieldBlock($event)\">{{locale?.DELETE_BLOCK}} <mat-icon>\r\n                    delete </mat-icon></button>\r\n              </div>\r\n            </ng-container>\r\n          </div>\r\n        </div>\r\n        <div class=\"property-content\" *ngIf=\"isSection && currentEditBlock\">\r\n          <h3>{{locale?.SECTION_SETTING}} {{ currentEditBlock.name }}</h3>\r\n          <div class=\"property-content-inner\">\r\n            <mat-form-field class=\"form-field full-width\" appearance=\"outline\">\r\n              <mat-label>{{locale?.SECTION_NAME}}</mat-label>\r\n              <input (ngModelChange)=\"onChangeCategoryName()\" type=\"text\" matInput required placeholder=\"\"\r\n                [(ngModel)]=\"currentEditBlock.name\" [ngModelOptions]=\"{ standalone: true }\" />\r\n            </mat-form-field>\r\n            <mat-form-field class=\"form-field mat-select full-width\" appearance=\"outline\">\r\n              <mat-label>{{locale?.MANAGEMENT_TEAM}}</mat-label>\r\n              <mat-select required [(ngModel)]=\"currentEditBlock.selector.value\"\r\n                [ngModelOptions]=\"{ standalone: true }\">\r\n                <mat-option [value]=\"item.value\" *ngFor=\"let item of currentEditBlock.selector.defaultValue\">{{\r\n                  item.value }}</mat-option>\r\n              </mat-select>\r\n            </mat-form-field>\r\n            <div class=\"bloc-action\">\r\n              <button mat-button (click)=\"onAddNewSubLevelFieldBlock($event)\">{{locale?.SUB_CATEGORY}} <mat-icon>\r\n                  device_hub\r\n                </mat-icon></button>\r\n              <button mat-button (click)=\"onDuplicatedBlock($event)\">{{locale?.DUPLICATE_BLOCK}}<mat-icon>filter_none\r\n                </mat-icon>\r\n              </button>\r\n              <button [disabled]=\"!currentEditBlock.editable\" mat-button class=\"delete-bloc\"\r\n                (click)=\"onRemoveFieldBlock($event)\">{{locale?.DELETE_BLOCK}} <mat-icon>\r\n                  delete</mat-icon></button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </form>\r\n</main>", styles: ["main{background:#f4f7f9 0% 0% no-repeat padding-box;height:100vh;display:flex;flex-direction:column;align-items:center;padding:25px}main .disabled label{background-color:transparent!important}main form{display:flex;height:89%;width:100%}main .box-title{width:786px;margin-top:20vh;background:#ffffff 0% 0% no-repeat padding-box;border:1px solid #dce4e9;border-radius:6px;opacity:1;margin:auto;padding:0 25px;align-self:center}main .box-title h3{text-align:center;letter-spacing:0px;color:#171f26}main .box-title label,main .box-title input{letter-spacing:0px;color:#171f26}main .box-title .profil-name-content{display:flex;align-items:center;position:relative}main .box-title .profil-name-content .add-picto{margin-right:15px;min-width:50px;width:30px;padding:9px 12px}main .box-title .profil-name-content .add-picto mat-icon{margin-right:10px}main .box-title .profil-name-content .list-picto{position:absolute;height:200px;width:100%;background:#ffffff 0% 0% no-repeat padding-box;border:1px solid #171f26;border-radius:8px;top:100%;z-index:1}main .box-title .profil-name-content .list-picto mat-icon{margin:15px;border:none;font-size:40px}main .box-title .profil-name-content .list-picto mat-icon:hover{color:#830b6b!important;cursor:pointer}main .box-title .box-title-content{width:100%;margin:25px auto}main .box-title .title{letter-spacing:0px;color:#171f26}main .box-title p{letter-spacing:0px;color:#171f26;text-align:center}main .box-title .link-create-profil{width:100%;display:flex;justify-content:center}main .box-title button{text-align:center;border:1px solid #543cb6;border-radius:7px;color:#fff;padding:.7em 2em .5em;display:flex;align-items:center;background-color:transparent;letter-spacing:0px;color:#543cb6}main .action{width:100%;display:flex;justify-content:space-between}main .header-create-profile{width:100%;margin:10px 15px;border-radius:5px}main .header-create-profile .header-create-profile-top{display:flex;align-items:center;text-align:center;justify-content:space-between}main .header-create-profile .header-create-profile-top .create-profile-action{display:flex;align-items:center;gap:25px}main .header-create-profile h3{font-size:25px;padding-bottom:5px;display:flex;align-items:center;justify-content:center}main .header-create-profile h3 span{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;font-weight:700;font-size:24px;line-height:110%;text-align:center;color:#242731;text-transform:capitalize}main .header-create-profile h3 mat-icon{margin-left:15px;cursor:pointer}main .header-create-profile .create-profile-menus{max-width:100%;overflow:auto}main .header-create-profile .create-profile-menus ul{font-weight:600;font-size:16px;list-style:none;display:flex;align-items:center;gap:20px;padding:0}main .header-create-profile .create-profile-menus ul li{font-weight:400;font-size:12px;cursor:pointer;text-align:left;letter-spacing:0px;color:#535760}main .header-create-profile .create-profile-menus ul li .mat-mini-fab{width:28px;height:28px;line-height:24px}main .header-create-profile .create-profile-menus ul li.li-title:hover{border-bottom:2px solid #723CEB}main .header-create-profile .create-profile-menus ul li.li-title.active{border-bottom:2px solid #723CEB;font-weight:600}.expand-button{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important}.input-category-name{font-size:15px;font-weight:500;border:none;outline:none;text-align:left;color:#171f26;font-weight:700;font-size:20px;line-height:28px;color:#242731}.sub-category-name{font-style:normal;font-weight:250;font-size:14px;line-height:16px;display:flex;align-items:center;color:#575f6e;word-break:break-word}.full-width{width:100%}.field-action{width:10%}.field-size{width:90%;margin:auto 2% auto auto}::ng-deep .mat-mini-fab .mat-button-wrapper{padding:0!important}::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{background-color:#fff}::ng-deep .mat-select.mat-form-field-appearance-outline .mat-form-field-infix{padding:.5em 0}::ng-deep .mat-select{padding:8px 0}::ng-deep .mat-form-field-appearance-fill .mat-form-field-underline:before{background-color:transparent}::ng-deep .mat-form-field-wrapper{padding-bottom:0!important}:host ::ng-deep .input-category-name div.mat-form-field-outline-start,:host ::ng-deep .cdk-drag-preview .input-category-name div.mat-form-field-outline-start{border-color:0!important;border-width:0px!important}:host ::ng-deep .input-category-name .mat-form-field-outline-gap{border-color:0!important;border-width:0px!important}:host ::ng-deep .input-category-name .mat-form-field-outline-end{border-color:0!important;border-width:0px!important}:host ::ng-deep .input-category-name .mat-form-field-label-wrapper{display:none}:host ::ng-deep .input-category-name .mat-form-field-appearance-outline .mat-form-field-outline{color:transparent!important}:host ::ng-deep .input-category-name .mat-form-field-infix{border-top:none}.category-action{display:flex;width:100%}.delete-field{margin:auto 2%}.radio-group .mat-radio-button{margin-right:10px}.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary{background-color:#3f51b5;color:#fff;min-height:20px;font-size:10px}.move-icons{cursor:move}:host ::ng-deep .child-list .dnd-box.cdk-drag-preview{width:100%!important;overflow:hidden;box-sizing:border-box;box-shadow:0 5px 5px -3px #0003,0 8px 10px 1px #00000024,0 3px 14px 2px #0000001f}:host ::ng-deep .child-list .cdk-drag-animating{transition:transform .25s cubic-bezier(0,0,.2,1)}:host ::ng-deep .child-list .field-box.cdk-drop-list-dragging .dnd-box:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}:host ::ng-deep .child-list .cdk-drag.dnd-box.cdk-drag-dragging{min-width:185px}:host ::ng-deep .child-list .cdk-drag.dnd-box.cdk-drag-dragging>div{margin-bottom:15px!important;min-width:185px}:host ::ng-deep .child-list .cdk-drag.dnd-box.cdk-drag-dragging>div>div{min-width:185px}:host ::ng-deep .child-list .cdk-drag.dnd-box.cdk-drag-dragging>div .mat-form-field-wrapper{min-width:185px}:host ::ng-deep .child-list .field-box{min-height:84px}:host ::ng-deep .child-list .field-box .dnd-placeholder{margin:0 10px;padding:0;height:44px!important;max-height:44px!important;display:flex;flex-grow:1;align-items:baseline;position:relative;border-radius:8px;opacity:1!important;transform:translateZ(0)!important}:host ::ng-deep .child-list .cdk-drop-list-dragging>div.dnd-box{display:none}::ng-deep .cdk-drag.dnd-box.cdk-drag-preview{height:68px;border-radius:0}::ng-deep .cdk-drag.dnd-box.cdk-drag-preview .fields-container .field-item{margin:0;height:44px}::ng-deep .cdk-drag.dnd-box.cdk-drag-preview .fields-container .field-item .mat-form-field-wrapper{height:44px}::ng-deep .cdk-drag.dnd-box.cdk-drag-preview .fields-container .field-item .mat-form-field-wrapper .input-phone,::ng-deep .cdk-drag.dnd-box.cdk-drag-preview .fields-container .field-item .mat-form-field-wrapper .mat-input-element,::ng-deep .cdk-drag.dnd-box.cdk-drag-preview .fields-container .field-item .mat-form-field-wrapper .mat-select-value,::ng-deep .cdk-drag.dnd-box.cdk-drag-preview .fields-container .field-item .mat-form-field-wrapper .mat-select-arrow-wrapper{opacity:0}.category-item,.cdk-drag-placeholder{display:flex;align-items:baseline;position:relative;width:100%;border-radius:8px;background-color:#fff;margin-bottom:15px;margin-right:5px;padding:6px 15px}.category-item .left-action,.cdk-drag-placeholder .left-action{height:auto;width:40px;align-self:baseline;border-top-left-radius:8px;border-bottom-left-radius:8px}.category-item .left-action .transparent-button,.cdk-drag-placeholder .left-action .transparent-button{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.category-item .left-action .transparent-button .drag-icon,.cdk-drag-placeholder .left-action .transparent-button .drag-icon{color:#171f26;cursor:move;margin-right:15px}.category-item .field-content,.cdk-drag-placeholder .field-content{width:calc(100% - 40px);align-self:center}.category-item .field-content .child-list,.cdk-drag-placeholder .field-content .child-list{display:flex;flex-wrap:wrap;background-color:transparent;width:103%;position:relative;margin-left:-1.5%}.category-item .field-content .field-item,.cdk-drag-placeholder .field-content .field-item{display:flex;justify-content:space-between;align-items:baseline;border:transparent!important}.category-item .field-content .field-item mat-form-field .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-outline,.cdk-drag-placeholder .field-content .field-item mat-form-field .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-outline{color:transparent!important}.category-item .field-content .mat-form-field-outline,.cdk-drag-placeholder .field-content .mat-form-field-outline{color:transparent!important}.field-box{margin-bottom:15px;display:flex;align-items:center}.cdk-drag-preview{box-sizing:border-box;border-radius:4px;opacity:1}.cdk-drag-preview .expand-button{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:6px!important}.cdk-drag-placeholder{opacity:0}.cdk-drag-animating{transition:transform .25s cubic-bezier(0,0,.2,1)}.example-list.cdk-drop-list-dragging .category-item:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}.child{margin-left:0}.child-content{display:flex;flex-wrap:wrap;margin-bottom:30px}.sub-category-forms{margin-bottom:0!important;margin-top:10px!important}.category{display:flex;flex-direction:row;width:100%;height:100%}.category .fields{width:100%;overflow:hidden;overflow-x:hidden;position:relative;padding-top:10px;height:calc(100% - 10px)}.category .fields .fields-inner{max-height:100%;height:100%;width:100%;overflow:auto}.category .fields .add-category-button{position:relative!important;width:calc(100% - 40px)!important;padding:20px 0}.category .fields .add-category-button mat-icon{margin-left:10px}.category .fields .add-step{bottom:0!important;top:0!important;width:100%!important}.category .disabled{background-color:#f4f7f9!important}.category .expand-button{color:#5a607f!important;background-color:transparent!important;box-shadow:none!important;margin-right:6px!important}.category .expand-button .material-icons{font-size:40px}.category .transparent-button{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;margin-left:0!important;min-width:auto;color:#fff}.add-button-sub-category{width:93%;position:absolute;left:3%;bottom:-13px}.add-button-sub-category button span{width:100%}.add-button-container{background:#ffffff 0% 0% no-repeat padding-box;border-radius:8px;margin-top:10px;padding:10px 0;display:flex;justify-content:center;align-items:center;width:100%;margin-bottom:22px;position:absolute;left:0;top:100%}.add-button-container button{display:flex;align-items:center;background-color:transparent;border:none;cursor:pointer;letter-spacing:0px;color:#000;box-shadow:none}.add-button-container button span{width:100%}.add-category{background-color:#fcfcfe;border-radius:5px;line-height:26px;margin-left:10px;margin-bottom:10px;letter-spacing:0px;color:#c2c8d5;width:92%}.field-content .cdk-drag{width:100%}.cdk-drag{width:auto;position:relative}.cdk-drag .fields-content{display:flex;height:100%;width:100%;margin:0}.cdk-drag .fields-content .button-action{align-self:baseline;margin-top:0;margin-left:3px;border-bottom-left-radius:8px;border-top-left-radius:8px}.cdk-drag .fields-content .button-action .transparent-button{background-color:transparent;box-shadow:none;width:40px;padding:0;margin:0;min-width:auto;color:#fff}.cdk-drag .fields-content .button-action .transparent-button .drag-icon{color:#171f26;cursor:move;margin-right:15px}.cdk-drag .fields-content .child-3-background{background-color:#e5e8ee!important}.cdk-drag .fields-content .fields-container{border-radius:0 8px 8px 0;background-color:#fff;width:100%;padding-left:10px;padding-right:10px;padding-top:5px;position:relative;margin-bottom:10px}.cdk-drag .fields-content .fields-container lib-sub-category .field-item{display:flex;justify-content:space-between;align-items:center;width:100%}.cdk-drag .fields-content .fields-container lib-sub-category .field-item .button-action{background-color:#039be5!important;height:100%;margin:auto 15px auto auto;display:flex}.cdk-drag .fields-content .fields-container lib-sub-category .field-item .button-action button{box-shadow:none;background-color:transparent;color:#fff}.side-bar{display:flex;flex-direction:column}.register-button{background:no-repeat padding-box #171f26!important;border:2px solid #171f26!important;color:#fff!important;box-shadow:0 0 #0003;border-radius:7px}.forward{padding:6px}.live-button{background-color:#fff!important;color:#171f26!important;border:2px solid #171f26!important}.content-item{transition-property:border-image-slice border-image-source border-width;transition-timing-function:ease-in-out;transition-duration:.5s}.active-content{border-image-slice:1;border-width:2px;border-image-source:linear-gradient(to left,#9d107d,#4862ab)}.field-property{padding:11px;height:calc(100% - 22px);width:400px}.field-property h3{font-size:20px;line-height:110%;padding-top:10px;display:flex;align-items:center;color:#242731}.field-property .property-content{display:flex;flex-direction:column;align-items:flex-start;padding:0 20px;background:#ffffff;border-radius:8px 8px 0 0;min-height:100%;height:auto;width:400px}.field-property .property-content button{text-align:center}.field-property .property-content .property-content-inner{display:flex;flex-direction:column;gap:25px;overflow:auto;max-height:700px;padding-bottom:25px}.field-property .bloc-action{text-align:center}.field-property .bloc-action button{width:100%;padding:6px;margin-top:10px}.field-property .bloc-action button mat-icon{margin-left:5px}.field-property .bloc-action .delete-bloc{background:#f44336;box-shadow:0 0 #0003;border-radius:7px;color:#fff}.fields-inner::-webkit-scrollbar{width:5px}.fields-inner::-webkit-scrollbar-track{box-shadow:inset 0 0 2px transparent;border-radius:10px}.fields-inner::-webkit-scrollbar-thumb{background:transparent;border-radius:10px}.fields-inner::-webkit-scrollbar-thumb:hover{background:transparent}.toogle-button{color:#707273!important;display:flex;align-items:center;font-style:normal;font-weight:400;font-size:18px;line-height:18px}.toogle-button span{padding-right:10px}:host ::ng-deep .category .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5;position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}:host ::ng-deep .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273}:host ::ng-deep .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar{position:relative;width:42px;height:23px;flex-shrink:0;border-radius:14px}:host ::ng-deep .category .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{background-color:#fff;margin-top:4px}:host ::ng-deep .category .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-thumb{margin-top:4px;margin-left:4px}:host ::ng-deep .category .mat-slide-toggle.draft:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#707273}:host ::ng-deep .category .mat-slide-toggle.draft.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar{background-color:#039be5}.top-10{margin-top:10px}.bottom-10{margin-bottom:10px}.section-item{border:2px solid transparent;overflow:hidden}.section-item:hover,.section-item.active{border:2px solid #242731;border-radius:8px;cursor:pointer}::ng-deep .select-type-class.mat-select-disabled .mat-select-value{color:#000!important;cursor:pointer}::ng-deep button .mat-button-wrapper{display:flex;align-items:center;justify-content:center}::ng-deep .field-content .mat-form-field,::ng-deep .field-content .select-content{width:100%}::ng-deep .field-content .mat-form-field-infix{display:block;position:relative;flex:auto;min-width:0;width:100%!important}::ng-deep .fields-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle,::ng-deep .property-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{border-color:#039be5!important}::ng-deep .fields-content .mat-radio-button.mat-accent .mat-radio-inner-circle,::ng-deep .fields-content .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),::ng-deep .fields-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,::ng-deep .fields-content .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple,::ng-deep .property-content .mat-radio-button.mat-accent .mat-radio-inner-circle,::ng-deep .property-content .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),::ng-deep .property-content .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,::ng-deep .property-content .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{background-color:#039be5!important}::ng-deep .fields-content .mat-checkbox-checkmark-path,::ng-deep .property-content .mat-checkbox-checkmark-path{stroke:#039be5!important}::ng-deep .fields-content .mat-checkbox-frame,::ng-deep .property-content .mat-checkbox-frame{border:2px solid #039BE5!important}::ng-deep .fields-content .mat-checkbox-inner-container,::ng-deep .property-content .mat-checkbox-inner-container{height:20px!important;width:20px!important}.setting{z-index:1;background-color:#d5d6d7!important;border-radius:40px;width:42px!important;height:40px!important;padding:0 10px!important;display:flex;align-items:center;justify-content:center;display:none}.setting .setting-icon,.setting .transparent-button{color:#171f26}.sub-header:hover .setting{display:flex}.add-button-sub-category button{margin:10px auto;width:100%;background-color:transparent;color:#000;box-shadow:none;background-color:#fcfcfe;padding:5px span;padding-width:100%!important}::ng-deep .add-button{padding:10px 0}::ng-deep .add-button span{width:100%}::ng-deep .mat-button[disabled]{opacity:.5!important}\n"] }]
         }], function () { return [{ type: i1$2.UntypedFormBuilder }, { type: OnboardingService }, { type: i2.ActivatedRoute }, { type: i2.Router }, { type: i1$1.MatDialog }, { type: i5$1.ScrollToService }]; }, { onScroll: [{
                 type: HostListener,
                 args: ['scroll', ['$event']]
@@ -7307,7 +7297,6 @@ class OnboardingCreateComponent {
         let form = document.getElementById('form');
         let firstInvalidControl = form.getElementsByClassName('ng-invalid')[0];
         firstInvalidControl === null || firstInvalidControl === void 0 ? void 0 : firstInvalidControl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        console.log('---------------firstInvalidControl-------------------', firstInvalidControl);
         if (firstInvalidControl) {
             firstInvalidControl.focus();
         }
