@@ -60,9 +60,12 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onScroll(event: any): void;
     initForm(): void;
     ngOnInit(): Promise<void>;
+    private getProfileCategories;
     onAddNewCategory(e: any): void;
     onChangeCategoryName(): void;
     checkBlink(index: any, level: any): string;
+    onChangeKey(editBlok: any): void;
+    onCreateKey: (name: string) => string;
     onAddNewField(...params: any[]): void;
     onAddNewSubLevelField(...params: any[]): void;
     onRemoveField(...params: any[]): void;
@@ -77,6 +80,8 @@ export declare class TemplateProfileCreateComponent implements OnInit {
     onCheckedDefault(event: any, ...params: any[]): void;
     addKeywordFromInput(event: MatChipInputEvent, prev: any, ...params: any[]): void;
     drop(event: CdkDragDrop<string[]>): void;
+    dropField(event: CdkDragDrop<string[]>): void;
+    private saveCategoriesToSessionStorage;
     ingoreDefaultAction(e: any): void;
     onShowCategory(): void;
     onSelectPicto(e: any, picto: any): void;
