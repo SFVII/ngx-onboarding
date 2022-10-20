@@ -62,6 +62,7 @@ export declare class OnboardingCreateComponent implements OnInit {
     onCheckValue(event: boolean): void;
     onLink(e: any): void;
     onShowMode(): void;
+    onChange(event: any): void;
     onCreateConfirm(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<OnboardingCreateComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<OnboardingCreateComponent, "create-onboarding", never, {}, {}, never, never, false>;
