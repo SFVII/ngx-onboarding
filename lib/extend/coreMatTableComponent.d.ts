@@ -1,4 +1,4 @@
-import { CoreMatTableInterface, FilterDateInterface, Sort } from 'ngx-table';
+import { CoreMatTableInterface, FilterDateInterface, Sort } from '@nowbrains/ngx-table';
 import { OnInit, SimpleChanges } from "@angular/core";
 import { DateAdapter } from '@angular/material/core';
 import * as i0 from "@angular/core";

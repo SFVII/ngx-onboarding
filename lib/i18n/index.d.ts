@@ -6,6 +6,7 @@ export declare const locales: {
             DRAFT: string;
             ADD_FIELD: string;
             ADD_STEP: string;
+            ADD: string;
             SETTING_OF_BLOCK: string;
             TYPE_OF_BLOCK: string;
             NAME_LABEL: string;
@@ -105,6 +106,7 @@ export declare const locales: {
             DRAFT: string;
             ADD_FIELD: string;
             ADD_STEP: string;
+            ADD: string;
             SETTING_OF_BLOCK: string;
             TYPE_OF_BLOCK: string;
             NAME_LABEL: string;

@@ -1,5 +1,5 @@
 {
-  "name": "onboarding",
+  "name": "@nowbrains/onboarding",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": ">=14.x",
@@ -13,11 +13,11 @@
   "dependencies": {
     "tslib": ">=2.x"
   },
-  "module": "fesm2015/onboarding.mjs",
-  "es2020": "fesm2020/onboarding.mjs",
-  "esm2020": "esm2020/onboarding.mjs",
-  "fesm2020": "fesm2020/onboarding.mjs",
-  "fesm2015": "fesm2015/onboarding.mjs",
+  "module": "fesm2015/nowbrains-onboarding.mjs",
+  "es2020": "fesm2020/nowbrains-onboarding.mjs",
+  "esm2020": "esm2020/nowbrains-onboarding.mjs",
+  "fesm2020": "fesm2020/nowbrains-onboarding.mjs",
+  "fesm2015": "fesm2015/nowbrains-onboarding.mjs",
   "typings": "index.d.ts",
   "exports": {
     "./package.json": {
@@ -25,15 +25,12 @@
     },
     ".": {
       "types": "./index.d.ts",
-      "esm2020": "./esm2020/onboarding.mjs",
-      "es2020": "./fesm2020/onboarding.mjs",
-      "es2015": "./fesm2015/onboarding.mjs",
-      "node": "./fesm2015/onboarding.mjs",
-      "default": "./fesm2020/onboarding.mjs"
+      "esm2020": "./esm2020/nowbrains-onboarding.mjs",
+      "es2020": "./fesm2020/nowbrains-onboarding.mjs",
+      "es2015": "./fesm2015/nowbrains-onboarding.mjs",
+      "node": "./fesm2015/nowbrains-onboarding.mjs",
+      "default": "./fesm2020/nowbrains-onboarding.mjs"
     }
   },
-  "sideEffects": false,
-  "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
-  }
+  "sideEffects": false
 }

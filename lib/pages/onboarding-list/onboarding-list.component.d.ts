@@ -1,5 +1,5 @@
 import { ActivatedRoute, Router } from '@angular/router';
-import { displayedColumnsInterface } from "ngx-table";
+import { displayedColumnsInterface } from "@nowbrains/ngx-table";
 import { OnInit } from '@angular/core';
 import { IFilterConfiguration } from 'ngx-filter';
 import { DatePipe } from '@angular/common';

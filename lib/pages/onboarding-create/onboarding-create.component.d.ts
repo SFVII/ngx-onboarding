@@ -56,7 +56,8 @@ export declare class OnboardingCreateComponent implements OnInit {
     onSubmit(submit?: boolean): Promise<void>;
     checkOnboardingPath(): string;
     ingoreDefaultAction(e: any): void;
-    onCheckConditionLocationValue(iscondition: any, condition: any): boolean;
+    onCheckConditionLocationValue(field: any): any;
+    isCheckedMultiple: (currentData: any, condition: any) => any;
     checkSubForm(forms: any): boolean;
     onSelectMenu(i: any): void;
     onCheckValue(event: boolean): void;

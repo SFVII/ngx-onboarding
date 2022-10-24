@@ -1,4 +1,4 @@
-import { FilterDateInterface, Sort } from 'ngx-table';
+import { FilterDateInterface, Sort } from '@nowbrains/ngx-table';
 import { CoreMatTableComponent } from '../../../extend/coreMatTableComponent';
 import { DateAdapter } from '@angular/material/core';
 import * as i0 from "@angular/core";
